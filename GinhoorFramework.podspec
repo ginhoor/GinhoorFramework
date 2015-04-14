@@ -36,15 +36,15 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'CustomView' do |ss|
-    ss.source_files = 'CustomView/**/*.{h,m}','CustomView/**/**/*.{h,m}',
+    ss.source_files = 'CustomView/**/*.{h,m}','CustomView/**/**/*.{h,m}'
   end
 
   s.subspec 'CustomViewController' do |ss|
-    ss.source_files = 'CustomViewController/**/*.{h,m}','CustomViewController/**/**/*.{h,m}',
+    ss.source_files = 'CustomViewController/**/*.{h,m}','CustomViewController/**/**/*.{h,m}'
   end
 
   s.subspec 'GinSysInfo' do |ss|
-    ss.source_files = 'GinSysInfo/**/*.{h,m}','GinSysInfo/**/**/*.{h,m}',
+    ss.source_files = 'GinSysInfo/**/*.{h,m}','GinSysInfo/**/**/*.{h,m}'
   end
 
 end
