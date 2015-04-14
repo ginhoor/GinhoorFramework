@@ -1,0 +1,45 @@
+{
+  "name": "GinhoorFramework",
+  "version": "0.0.1",
+  "summary": "This is one of my personal library.",
+  "description": "                   A longer description of GinFramework in Markdown format.\n\n                   * Think: Why did you write this? What is the focus? What does it do?\n                   * CocoaPods will be using this to generate tags, and improve search results.\n                   * Try to keep it short, snappy and to the point.\n                   * Finally, don't worry about the indent, CocoaPods strips it!\n",
+  "homepage": "https://github.com/ginhoor/GinhoorFramework",
+  "license": "MIT",
+  "authors": {
+    "JunhuaShao": "ginhoor@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/ginhoor/GinhoorFramework.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "Category/*.{h,m}",
+    "GinSysInfo/*.{h,m}"
+  ],
+  "frameworks": [
+    "Foundation",
+    "CoreGraphics",
+    "UIKit"
+  ],
+  "requires_arc": true,
+  "dependencies": {
+    "BlocksKit": [
+      "~> 2.2.5"
+    ],
+    "Masonry": [
+      "~> 0.6.1"
+    ],
+    "AFNetworking": [
+      "~> 2.5.1"
+    ],
+    "CocoaLumberjack": [
+      "~> 2.0.0"
+    ],
+    "libextobjc": [
+      "~> 0.4.1"
+    ]
+  }
+}

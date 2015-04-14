@@ -6,7 +6,6 @@
 //  Copyright (c) 2013年 ginhoor_home. All rights reserved.
 //
 
-#import "AppDelegate.h"
 
 ///////////////////////////////////////////
 // Device & OS
@@ -47,8 +46,6 @@
 #define FILE_MANAGER ([NSFileManager defaultManager])
 //notification center
 #define NOTIFICATION_CENTER ([NSNotificationCenter defaultCenter])
-//UIApplication
-#define APP_DELEGATE ((AppDelegate*)[[UIApplication sharedApplication] delegate])
 
 
 ///////////////////////////////////////////
@@ -61,6 +58,8 @@
 //image
 #define ImageByName(name)           [UIImage imageNamed:name]
 #define UIColorFromRGBA(r,g,b,a)    [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+#define PointValue(x,y) [NSValue valueWithCGPoint:CGPointMake(x, y)]
 
 ///////////////////////////////////////////
 // degrees/radian
