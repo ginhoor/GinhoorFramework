@@ -1,0 +1,1 @@
+../../../GinhoorFramework/Category/NSData/NSString+NSData.h

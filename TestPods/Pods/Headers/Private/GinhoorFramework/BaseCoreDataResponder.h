@@ -1,0 +1,1 @@
+../../../GinhoorFramework/Category/BaseClass/CoreData/BaseCoreDataResponder.h

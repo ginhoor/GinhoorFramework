@@ -24,6 +24,7 @@
 		000B54811ADC981F00946853 /* GinQRCodePickerBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B54691ADC981F00946853 /* GinQRCodePickerBaseController.m */; };
 		000B54821ADC981F00946853 /* GinScanQRCoderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B546C1ADC981F00946853 /* GinScanQRCoderController.m */; };
 		000B54831ADC981F00946853 /* GinScanQRCoderController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000B546D1ADC981F00946853 /* GinScanQRCoderController.storyboard */; };
+		006A92C71ADCC6A00093BEBE /* UITextField+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A92C61ADCC6A00093BEBE /* UITextField+Keyboard.m */; };
 		00B749231ADCAC810087E490 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B748C51ADCAC810087E490 /* NSString+Base64.m */; };
 		00B749241ADCAC810087E490 /* UIImage+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B748C71ADCAC810087E490 /* UIImage+Base64.m */; };
 		00B749251ADCAC810087E490 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B748CA1ADCAC810087E490 /* BaseView.m */; };
@@ -54,7 +55,6 @@
 		00B7493F1ADCAC810087E490 /* UIAlertView+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7490E1ADCAC810087E490 /* UIAlertView+Unit.m */; };
 		00B749401ADCAC810087E490 /* UIImage+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B749111ADCAC810087E490 /* UIImage+GinUnit.m */; };
 		00B749411ADCAC810087E490 /* UIResponder+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B749141ADCAC810087E490 /* UIResponder+Unit.m */; };
-		00B749421ADCAC810087E490 /* UITextField+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B749171ADCAC810087E490 /* UITextField+Keyboard.m */; };
 		00B749431ADCAC810087E490 /* UIView+CGRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7491A1ADCAC810087E490 /* UIView+CGRect.m */; };
 		00B749441ADCAC810087E490 /* UIView+Layer.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7491C1ADCAC810087E490 /* UIView+Layer.m */; };
 		00B749451ADCAC810087E490 /* UIView+view2Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7491E1ADCAC810087E490 /* UIView+view2Image.m */; };
@@ -107,7 +107,8 @@
 		000B546B1ADC981F00946853 /* GinScanQRCoderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinScanQRCoderController.h; sourceTree = "<group>"; };
 		000B546C1ADC981F00946853 /* GinScanQRCoderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinScanQRCoderController.m; sourceTree = "<group>"; };
 		000B546D1ADC981F00946853 /* GinScanQRCoderController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GinScanQRCoderController.storyboard; sourceTree = "<group>"; };
-		000B54DA1ADCA09500946853 /* Gin_Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gin_Macro.h; path = ../Gin_Macro.h; sourceTree = "<group>"; };
+		006A92C51ADCC6A00093BEBE /* UITextField+Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Keyboard.h"; sourceTree = "<group>"; };
+		006A92C61ADCC6A00093BEBE /* UITextField+Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Keyboard.m"; sourceTree = "<group>"; };
 		00B748C31ADCAC810087E490 /* GinCategory_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCategory_Base64.h; sourceTree = "<group>"; };
 		00B748C41ADCAC810087E490 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		00B748C51ADCAC810087E490 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
@@ -170,8 +171,6 @@
 		00B749111ADCAC810087E490 /* UIImage+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GinUnit.m"; sourceTree = "<group>"; };
 		00B749131ADCAC810087E490 /* UIResponder+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Unit.h"; sourceTree = "<group>"; };
 		00B749141ADCAC810087E490 /* UIResponder+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Unit.m"; sourceTree = "<group>"; };
-		00B749161ADCAC810087E490 /* UITextField+Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Keyboard.h"; sourceTree = "<group>"; };
-		00B749171ADCAC810087E490 /* UITextField+Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Keyboard.m"; sourceTree = "<group>"; };
 		00B749191ADCAC810087E490 /* UIView+CGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CGRect.h"; sourceTree = "<group>"; };
 		00B7491A1ADCAC810087E490 /* UIView+CGRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CGRect.m"; sourceTree = "<group>"; };
 		00B7491B1ADCAC810087E490 /* UIView+Layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layer.h"; sourceTree = "<group>"; };
@@ -182,6 +181,7 @@
 		00B749221ADCAC810087E490 /* UIWindow+fullScreenshots.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+fullScreenshots.m"; sourceTree = "<group>"; };
 		00B7494A1ADCACF90087E490 /* UIAlertController+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Unit.h"; sourceTree = "<group>"; };
 		00B7494B1ADCACF90087E490 /* UIAlertController+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Unit.m"; sourceTree = "<group>"; };
+		00CF2B1A1ADCC15F00DF5BD3 /* Gin_Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gin_Macro.h; sourceTree = "<group>"; };
 		4AED559755DDFC3C93282E3E /* Pods-FrameworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5CEA7F50353C1F94BBA57D65 /* Pods-FrameworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8F9888BAC7F9314A74456E85 /* libPods-FrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,9 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				000B528A1ADBCF8100946853 /* FrameworkDemo */,
-				000B54DA1ADCA09500946853 /* Gin_Macro.h */,
-				000B52B11ADBDF1500946853 /* Category */,
 				000B53171ADBEAD900946853 /* GinSysInfo */,
+				000B52B11ADBDF1500946853 /* Category */,
 				000B543A1ADC981F00946853 /* CustomVIew */,
 				000B54561ADC981F00946853 /* CustomViewController */,
 				000B52A41ADBCF8100946853 /* FrameworkDemoTests */,
@@ -238,6 +237,7 @@
 				000B52901ADBCF8100946853 /* AppDelegate.m */,
 				000B52921ADBCF8100946853 /* ViewController.h */,
 				000B52931ADBCF8100946853 /* ViewController.m */,
+				00CF2AE71ADCBCE300DF5BD3 /* PageViewController */,
 				000B52951ADBCF8100946853 /* Main.storyboard */,
 				000B52981ADBCF8100946853 /* Images.xcassets */,
 				000B529A1ADBCF8100946853 /* LaunchScreen.xib */,
@@ -288,7 +288,6 @@
 				00B7490B1ADCAC810087E490 /* UIAlertController */,
 				00B7490F1ADCAC810087E490 /* UIImage */,
 				00B749121ADCAC810087E490 /* UIResponder */,
-				00B749151ADCAC810087E490 /* UITextFiled */,
 				00B749181ADCAC810087E490 /* UIView */,
 				00B7491F1ADCAC810087E490 /* UIViewController */,
 				00B749201ADCAC810087E490 /* UIWindow */,
@@ -300,6 +299,7 @@
 		000B53171ADBEAD900946853 /* GinSysInfo */ = {
 			isa = PBXGroup;
 			children = (
+				00CF2B1A1ADCC15F00DF5BD3 /* Gin_Macro.h */,
 				000B53181ADBEAD900946853 /* GinSysInfo.h */,
 				000B53191ADBEAD900946853 /* GinSysInfo.m */,
 			);
@@ -310,6 +310,7 @@
 		000B543A1ADC981F00946853 /* CustomVIew */ = {
 			isa = PBXGroup;
 			children = (
+				006A92C41ADCC6A00093BEBE /* UITextFiled */,
 				000B543B1ADC981F00946853 /* Button */,
 			);
 			name = CustomVIew;
@@ -378,6 +379,16 @@
 				000B546D1ADC981F00946853 /* GinScanQRCoderController.storyboard */,
 			);
 			path = GinScanQRCoderController;
+			sourceTree = "<group>";
+		};
+		006A92C41ADCC6A00093BEBE /* UITextFiled */ = {
+			isa = PBXGroup;
+			children = (
+				006A92C51ADCC6A00093BEBE /* UITextField+Keyboard.h */,
+				006A92C61ADCC6A00093BEBE /* UITextField+Keyboard.m */,
+			);
+			name = UITextFiled;
+			path = ../CustomView/UITextFiled;
 			sourceTree = "<group>";
 		};
 		00B748C21ADCAC810087E490 /* Base64 */ = {
@@ -592,15 +603,6 @@
 			path = UIResponder;
 			sourceTree = "<group>";
 		};
-		00B749151ADCAC810087E490 /* UITextFiled */ = {
-			isa = PBXGroup;
-			children = (
-				00B749161ADCAC810087E490 /* UITextField+Keyboard.h */,
-				00B749171ADCAC810087E490 /* UITextField+Keyboard.m */,
-			);
-			path = UITextFiled;
-			sourceTree = "<group>";
-		};
 		00B749181ADCAC810087E490 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
@@ -628,6 +630,13 @@
 				00B749221ADCAC810087E490 /* UIWindow+fullScreenshots.m */,
 			);
 			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		00CF2AE71ADCBCE300DF5BD3 /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PageViewController;
 			sourceTree = "<group>";
 		};
 		75E79BE1465D23ACB47BEC14 /* Frameworks */ = {
@@ -803,11 +812,11 @@
 				00B7493A1ADCAC810087E490 /* NSString+formatContentString.m in Sources */,
 				00B749301ADCAC810087E490 /* BaseTitleSectionView.m in Sources */,
 				00B749331ADCAC810087E490 /* UIView+Debugger.m in Sources */,
+				006A92C71ADCC6A00093BEBE /* UITextField+Keyboard.m in Sources */,
 				000B52941ADBCF8100946853 /* ViewController.m in Sources */,
 				00B7493B1ADCAC810087E490 /* NSString+Size.m in Sources */,
 				00B749411ADCAC810087E490 /* UIResponder+Unit.m in Sources */,
 				00B749341ADCAC810087E490 /* NSObject+CoreGraphic.m in Sources */,
-				00B749421ADCAC810087E490 /* UITextField+Keyboard.m in Sources */,
 				000B52911ADBCF8100946853 /* AppDelegate.m in Sources */,
 				000B547F1ADC981F00946853 /* GinPopupGradientView.m in Sources */,
 				000B547D1ADC981F00946853 /* GinPopup.m in Sources */,

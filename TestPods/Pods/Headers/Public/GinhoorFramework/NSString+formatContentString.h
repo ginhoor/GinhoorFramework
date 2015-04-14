@@ -1,0 +1,1 @@
+../../../GinhoorFramework/Category/NSString/NSString+formatContentString.h

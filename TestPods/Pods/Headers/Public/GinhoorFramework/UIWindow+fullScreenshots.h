@@ -1,0 +1,1 @@
+../../../GinhoorFramework/Category/UIWindow/UIWindow+fullScreenshots.h

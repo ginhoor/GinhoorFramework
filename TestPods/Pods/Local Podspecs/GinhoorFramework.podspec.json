@@ -1,0 +1,74 @@
+{
+  "name": "GinhoorFramework",
+  "version": "0.0.3",
+  "summary": "This is one of my personal library.",
+  "requires_arc": true,
+  "homepage": "https://github.com/ginhoor/GinhoorFramework",
+  "license": "MIT",
+  "authors": {
+    "JunhuaShao": "ginhoor@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/ginhoor/GinhoorFramework.git",
+    "tag": "0.0.3"
+  },
+  "source_files": "*.{h,m}",
+  "frameworks": [
+    "Foundation",
+    "CoreGraphics",
+    "UIKit"
+  ],
+  "dependencies": {
+    "BlocksKit": [
+      "~> 2.2.5"
+    ],
+    "Masonry": [
+      "~> 0.6.1"
+    ],
+    "AFNetworking": [
+      "~> 2.5.1"
+    ],
+    "CocoaLumberjack": [
+      "~> 2.0.0"
+    ],
+    "libextobjc": [
+      "~> 0.4.1"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Category",
+      "source_files": [
+        "Category/**/*.{h,m}",
+        "Category/**/**/*.{h,m}",
+        "Category/**/**/**/*.{h,m}",
+        "Category/**/**/**/**/*.{h,m}"
+      ]
+    },
+    {
+      "name": "CustomView",
+      "source_files": [
+        "CustomView/**/*.{h,m}",
+        "CustomView/**/**/*.{h,m}"
+      ]
+    },
+    {
+      "name": "CustomViewController",
+      "source_files": [
+        "CustomViewController/**/*.{h,m}",
+        "CustomViewController/**/**/*.{h,m}"
+      ]
+    },
+    {
+      "name": "GinSysInfo",
+      "source_files": [
+        "GinSysInfo/*.{h,m}",
+        "GinSysInfo/**/*.{h,m}",
+        "GinSysInfo/**/**/*.{h,m}"
+      ]
+    }
+  ]
+}
