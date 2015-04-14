@@ -24,6 +24,4 @@
 // 获得新增celldata失败
 - (void (^)())addNewCellDataFailureBlock:(UITableView *)tableView;
 
-- (void)finishLoadData:(UITableView *)tableView;
-
 @end

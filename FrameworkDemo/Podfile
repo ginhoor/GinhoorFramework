@@ -1,7 +1,12 @@
 # Uncomment this line to define a global platform for your project
 
 target 'FrameworkDemo' do
-    pod 'GinhoorFramework', :podspec => '../GinhoorFramework.podspec'  #指定podspec文件
+    #pod 'GinhoorFramework', :podspec => '../GinhoorFramework.podspec'  #指定podspec文件
+    pod 'BlocksKit', '~> 2.2.5'
+    pod 'Masonry', '~> 0.6.1'
+    pod 'AFNetworking', '~> 2.5.1'
+    pod 'CocoaLumberjack', '~> 2.0.0'
+    pod 'libextobjc', '~> 0.4.1'
 end
 
 target 'FrameworkDemoTests' do
