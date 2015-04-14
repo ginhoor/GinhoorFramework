@@ -120,7 +120,7 @@
 + (NSDate *)normalizeDate:(NSDate *)date
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *dateComponents = [calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekdayCalendarUnit)
+    NSDateComponents *dateComponents = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday)
                                                    fromDate:date];
     NSDate* returnDate = [calendar dateFromComponents:dateComponents];
     return returnDate;
@@ -129,7 +129,7 @@
 + (NSDate *)monthDate:(NSDate *)date
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *dateComponents = [calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit)
+    NSDateComponents *dateComponents = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth)
                                                    fromDate:date];
     NSDate* returnDate = [calendar dateFromComponents:dateComponents];
     return returnDate;
@@ -155,8 +155,8 @@
 
 - (NSString *)compareWithAnDate:(NSDate *)anDate
 {
-    NSCalendar *chineseClendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSUInteger unitFlags =  NSHourCalendarUnit|NSMinuteCalendarUnit|NSSecondCalendarUnit;
+    NSCalendar *chineseClendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSUInteger unitFlags =  NSCalendarUnitHour|NSCalendarUnitMinute|NSCalendarUnitSecond;
     
     // 当前系统时间 与 活动结束时间 比较
     NSDateComponents *cps = [ chineseClendar components:unitFlags fromDate:self  toDate:anDate  options:0];
