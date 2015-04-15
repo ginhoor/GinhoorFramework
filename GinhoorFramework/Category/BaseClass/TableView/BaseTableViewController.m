@@ -1,12 +1,13 @@
 //
 //  BaseTableViewController.m
-//  LOLBox
+//  hme.ios.cn
 //
-//  Created by Ginhoor on 14-8-6.
-//  Copyright (c) 2014年 Ginhoor. All rights reserved.
+//  Created by JunhuaShao on 15/3/20.
+//  Copyright (c) 2015年 Byhere. All rights reserved.
 //
 
 #import "BaseTableViewController.h"
+
 
 @interface BaseTableViewController ()
 
@@ -14,68 +15,116 @@
 
 @implementation BaseTableViewController
 
+
 - (void)dealloc
 {
     self.cellDataList = nil;
+}
+
+
+- (void)awakeFromNib
+{
+    [self setup];    
 }
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        // 新开始index = 1，再次加载从index = 2开始。
-        self.currentPageIndex = 1;
+        [self setup];
     }
     return self;
 }
 
+- (void)setup
+{
+    self.currentPageIndex = self.startIndex = 1;
+}
+
+- (UITableView *)tableView
+{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] init];
+        _tableView.backgroundColor = [UIColor whiteColor];
+        _tableView.tableFooterView = [[UIView alloc]init];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    }
+    return _tableView;
+}
+
+
 - (void (^)())setupCellDataSuccessBlock:(UITableView *)tableView
 {
     return ^(NSArray *dataList) {
-        self.cellDataList = dataList;
-        if (self.finishLoadData) {
-            self.finishLoadData(tableView);
+        if (dataList && dataList.count > 0) {
+            self.cellDataList = dataList;
+        } else {
+            self.cellDataList = @[];
         }
-        // 新开始index = 1，再次加载从index = 2开始。
-        self.currentPageIndex = 1;
-    };
-}
-- (void (^)())setupCellDataFailureBlock:(UITableView *)tableView
-{
-    return ^(NSError *error) {
+        [tableView reloadData];
+        [self endRefreshing:tableView];
+
+        self.currentPageIndex = self.startIndex;
+
         if (self.finishLoadData) {
             self.finishLoadData(tableView);
         }
     };
 }
 
+- (void (^)())setupCellDataFailureBlock:(UITableView *)tableView
+{
+    return ^(NSError *error) {
+        [self endRefreshing:tableView];
+        if (self.finishLoadData) {
+            self.finishLoadData(tableView);
+        }
+    };
+}
 
 - (void (^)())addNewCellDataSuccessBlock:(UITableView *)tableView
 {
     return ^(NSArray *dataList) {
         
-        if (dataList.count > 0) {
+        if (dataList && dataList.count > 0) {
             NSMutableArray *mArray = [NSMutableArray arrayWithArray:self.cellDataList];
             [mArray addObjectsFromArray:dataList];
             self.cellDataList = mArray;
             
             [tableView reloadData];
-            if (self.finishLoadData) {
-                self.finishLoadData(tableView);
-            }
-            self.currentPageIndex++;
+            [self endRefreshing:tableView];
+
+        } else {
+            [self endRefreshing:tableView];
         }
-    };
-}
-- (void (^)())addNewCellDataFailureBlock:(UITableView *)tableView
-{
-    return ^(NSError *error) {
+
+        self.currentPageIndex++;
         if (self.finishLoadData) {
             self.finishLoadData(tableView);
         }
     };
 }
 
+- (void (^)())addNewCellDataFailureBlock:(UITableView *)tableView
+{
+    return ^(NSError *error) {
+        
+        [self endRefreshing:tableView];
+        if (self.finishLoadData) {
+            self.finishLoadData(tableView);
+        }
+    };
+}
+
+- (void)endRefreshing:(UITableView *)tableView
+{
+    if (tableView.header.isRefreshing) {
+        [tableView.header endRefreshing];
+    }
+    if (tableView.footer.isRefreshing) {
+        [tableView.footer endRefreshing];
+    }
+}
 
 
 @end

@@ -1,19 +1,26 @@
 //
 //  BaseTableViewController.h
-//  LOLBox
+//  hme.ios.cn
 //
-//  Created by Ginhoor on 14-8-6.
-//  Copyright (c) 2014年 Ginhoor. All rights reserved.
+//  Created by JunhuaShao on 15/3/20.
+//  Copyright (c) 2015年 Byhere. All rights reserved.
 //
 
-#import "BaseViewController.h"
-#import "UITableView+DefualtStyle.h"
+#import <UIKit/UIKit.h>
+#import <MJRefresh.h>
+#import "UITableView+BaseClass.h"
 
-@interface BaseTableViewController : BaseViewController
+@interface BaseTableViewController : UIViewController
 
-@property (copy, nonatomic)   NSArray    *cellDataList;
+@property (strong, nonatomic) NSArray *cellDataList;
+@property (strong, nonatomic) UITableView *tableView;
+
+// default is 1
+@property (assign, nonatomic) NSUInteger startIndex;
 @property (assign, nonatomic) NSUInteger currentPageIndex;
+
 @property (copy, nonatomic) void(^finishLoadData)(UITableView *tableView);
+
 
 // 初始化celldata成功
 - (void (^)())setupCellDataSuccessBlock:(UITableView *)tableView;
@@ -24,5 +31,6 @@
 - (void (^)())addNewCellDataSuccessBlock:(UITableView *)tableView;
 // 获得新增celldata失败
 - (void (^)())addNewCellDataFailureBlock:(UITableView *)tableView;
+
 
 @end

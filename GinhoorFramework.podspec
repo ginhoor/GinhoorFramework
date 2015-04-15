@@ -29,6 +29,8 @@ Pod::Spec.new do |s|
   s.dependency 'AFNetworking', '~> 2.5.1'
   s.dependency 'CocoaLumberjack', '~> 2.0.0'
   s.dependency 'libextobjc', '~> 0.4.1'
+  s.dependency 'MJRefresh', '~> 1.4.5'
+
 
   s.subspec 'GinSysInfo' do |ss|
     ss.source_files = 'GinhoorFramework/GinSysInfo/*.{h,m}',
