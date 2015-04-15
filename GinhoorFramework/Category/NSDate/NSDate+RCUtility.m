@@ -10,95 +10,68 @@
 
 @implementation NSDate (RCUtility)
 
-- (NSString *)timeStringWithCurrentLocal
+- (NSString *)customDateString:(NSString *)format
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"HH:mm"];
+    [dateFormatter setDateFormat:format];
     [dateFormatter setLocale:[NSLocale currentLocale]];
     return [dateFormatter stringFromDate:self];
 }
 
-- (NSString *)dateAndTimeStringWithCurrentLocal
+- (NSString *)yearString
 {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"MM月dd日 HH:mm:ss"];
-    [dateFormatter setLocale:[NSLocale currentLocale]];
-    return [dateFormatter stringFromDate:self];
+    return [self customDateString:@"yyyy"];
 }
 
+- (NSString *)dateString
+{
+    return [self customDateString:@"MM-dd"];
+}
 
-
-- (NSString *)weekDayStringWithCurrentLocal
+// EEE,（@"周日"至@"周一"）
+- (NSString *)weekString
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"EEE"];
     [dateFormatter setLocale:[NSLocale currentLocale]];
-    [dateFormatter setWeekdaySymbols:@[@"周日", @"周一", @"周二", @"周三", @"周四", @"周五", @"周六"]];
-    [dateFormatter setShortWeekdaySymbols:dateFormatter.weekdaySymbols];
-    [dateFormatter setVeryShortWeekdaySymbols:dateFormatter.weekdaySymbols];
+    [dateFormatter setWeekdaySymbols:@[@"星期日", @"星期一", @"星期二", @"星期三", @"星期四", @"星期五", @"星期六"]];
+    [dateFormatter setShortWeekdaySymbols:@[@"周日", @"周一", @"周二", @"周三", @"周四", @"周五", @"周六"]];
+    [dateFormatter setVeryShortWeekdaySymbols:@[@"日", @"一", @"二", @"三", @"四", @"五", @"六"]];
     return [dateFormatter stringFromDate:self];
 }
 
-- (NSString *)dayStringWithCurrentLocal
+- (NSString *)timeString
 {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
-    [dateFormatter setLocale:[NSLocale currentLocale]];
-    return [dateFormatter stringFromDate:self];
+    return [self customDateString:@"HH:mm"];
 }
 
-- (NSString *)yearStringWithCurrentLocal
+- (NSString *)dateAndTimeString
 {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy"];
-    [dateFormatter setLocale:[NSLocale currentLocale]];
-    return [dateFormatter stringFromDate:self];
+    return [self customDateString:@"MM-dd HH:mm:ss"];
 }
 
-- (NSString *)dateStringWithCurrentLocal
+- (NSString *)detailDateString
 {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"MM-dd"];
-    [dateFormatter setLocale:[NSLocale currentLocale]];
-    return [dateFormatter stringFromDate:self];
+    return [self customDateString:@"yyyy-MM-dd"];
 }
 
-
-- (NSString *)dateString
+- (NSString *)detailDateAndTimeString
 {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"M月d号"];
-    [dateFormatter setLocale:[NSLocale currentLocale]];
-    return [dateFormatter stringFromDate:self];
+    return [self customDateString:@"yyyy-MM-dd HH:mm:ss"];
 }
 
-- (NSString *)dayString
+- (NSString *)detailDateTimeWeekString
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"d号"];
-    [dateFormatter setLocale:[NSLocale currentLocale]];
-    return [dateFormatter stringFromDate:self];
-}
-
-- (NSString *)detailTimeStringWithCurrentLocal
-{
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy年MM月dd日  HH:mm:ss"];
-    [dateFormatter setLocale:[NSLocale currentLocale]];
-    return [dateFormatter stringFromDate:self];
-}
-
-- (NSString *)detailDateStringWithCurrentLocal
-{
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd EEE"];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss EEE"];
     [dateFormatter setLocale:[NSLocale currentLocale]];
     [dateFormatter setWeekdaySymbols:@[@"星期日", @"星期一", @"星期二", @"星期三", @"星期四", @"星期五", @"星期六"]];
-    [dateFormatter setShortWeekdaySymbols:dateFormatter.weekdaySymbols];
-    [dateFormatter setVeryShortWeekdaySymbols:dateFormatter.weekdaySymbols];
+    [dateFormatter setShortWeekdaySymbols:@[@"周日", @"周一", @"周二", @"周三", @"周四", @"周五", @"周六"]];
+    [dateFormatter setVeryShortWeekdaySymbols:@[@"日", @"一", @"二", @"三", @"四", @"五", @"六"]];
+    
     return [dateFormatter stringFromDate:self];
-}
 
+}
 
 - (BOOL)isToday
 {
@@ -135,23 +108,11 @@
     return returnDate;
 }
 
-+ (NSDate *)dateFromString:(NSString *)dateString formatString:(NSString *)formatString isLocal:(BOOL)isLocal
-{
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:formatString];
-    
-    if (isLocal) {
-        [dateFormatter setLocale:[NSLocale currentLocale]];
-    }
-    
-    return [dateFormatter dateFromString:dateString];
-}
 
 + (NSDate *)yesterdayDate
 {
     return [NSDate dateWithTimeIntervalSinceNow:-3600*24];
 }
-
 
 - (NSString *)compareWithAnDate:(NSDate *)anDate
 {
