@@ -6,8 +6,9 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#ifndef FrameworkDemo_GinhoorFramework_h
-#define FrameworkDemo_GinhoorFramework_h
+#import "Gin_Macro.h"
+#import "GinSysInfo.h"
 
-
-#endif
+#import "GinCategory_BaseClass.h"
+#import "UIResponder+Unit.h"
+#import "UIAlertView+Unit.h"

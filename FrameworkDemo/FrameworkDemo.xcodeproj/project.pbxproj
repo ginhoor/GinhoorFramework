@@ -278,10 +278,10 @@
 		006A93221ADE09090093BEBE /* GinhoorFramework */ = {
 			isa = PBXGroup;
 			children = (
+				006A93A41ADE09090093BEBE /* GinhoorFramework.h */,
 				006A93231ADE09090093BEBE /* Category */,
 				006A93891ADE09090093BEBE /* CustomView */,
 				006A93901ADE09090093BEBE /* CustomViewController */,
-				006A93A41ADE09090093BEBE /* GinhoorFramework.h */,
 				006A93A51ADE09090093BEBE /* GinSysInfo */,
 			);
 			name = GinhoorFramework;
@@ -325,9 +325,9 @@
 		006A932A1ADE09090093BEBE /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				006A933E1ADE09090093BEBE /* GinCategory_BaseClass.h */,
 				006A932B1ADE09090093BEBE /* CollectionView */,
 				006A933B1ADE09090093BEBE /* CoreData */,
-				006A933E1ADE09090093BEBE /* GinCategory_BaseClass.h */,
 				006A933F1ADE09090093BEBE /* TableView */,
 				006A934A1ADE09090093BEBE /* View */,
 				006A934F1ADE09090093BEBE /* ViewController */,
