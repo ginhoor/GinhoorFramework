@@ -11,8 +11,10 @@
 @interface GinPageViewController : UIViewController
 @property (strong, nonatomic) UIPageViewController *pageController;
 @property (strong, nonatomic) UIPageControl *pageControl;
+@property (copy, nonatomic) void(^pageDidChanged)(UIPageViewController *pageViewController,NSUInteger index);
 
 + (instancetype)controllerWithControllers:(NSArray *)contentViewControllers beginIndex:(NSInteger)index;
+
 
 
 @end

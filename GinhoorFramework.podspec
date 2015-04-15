@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GinhoorFramework"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "This is one of my personal library."
   s.requires_arc = true
 
@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/ginhoor/GinhoorFramework.git", :tag => s.version.to_s }
-  # s.source_files  = "*.{h,m}"
+  s.public_header_files = 'GinhoorFramework/*.h'
+  s.source_files  = "GinhoorFramework/GinhoorFramework.h"
 
 
   # s.resource  = "icon.png"
@@ -30,23 +31,30 @@ Pod::Spec.new do |s|
   s.dependency 'libextobjc', '~> 0.4.1'
 
   s.subspec 'GinSysInfo' do |ss|
-    ss.source_files = 'GinSysInfo/*.{h,m}','GinSysInfo/**/*.{h,m}','GinSysInfo/**/**/*.{h,m}'
+    ss.source_files = 'GinhoorFramework/GinSysInfo/*.{h,m}',
+                      'GinhoorFramework/GinSysInfo/**/*.{h,m}',
+                      'GinhoorFramework/GinSysInfo/**/**/*.{h,m}'
   end
 
   s.subspec 'Category' do |ss|
     ss.dependency 'GinhoorFramework/GinSysInfo'
-    ss.source_files = 'Category/**/*.{h,m}','Category/**/**/*.{h,m}','Category/**/**/**/*.{h,m}','Category/**/**/**/**/*.{h,m}'
+    ss.source_files = 'GinhoorFramework/Category/**/*.{h,m}',
+                      'GinhoorFramework/Category/**/**/*.{h,m}',
+                      'GinhoorFramework/Category/**/**/**/*.{h,m}',
+                      'GinhoorFramework/Category/**/**/**/**/*.{h,m}'
   end
 
   s.subspec 'CustomView' do |ss|
     ss.dependency 'GinhoorFramework/GinSysInfo'
     ss.dependency 'GinhoorFramework/Category'
-    ss.source_files = 'CustomView/**/*.{h,m}','CustomView/**/**/*.{h,m}'
+    ss.source_files = 'GinhoorFramework/CustomView/**/*.{h,m}',
+                      'GinhoorFramework/CustomView/**/**/*.{h,m}'
   end
 
   s.subspec 'CustomViewController' do |ss|
     ss.dependency 'GinhoorFramework/GinSysInfo'
     ss.dependency 'GinhoorFramework/Category'
-    ss.source_files = 'CustomViewController/**/*.{h,m}','CustomViewController/**/**/*.{h,m}'
+    ss.source_files = 'GinhoorFramework/CustomViewController/**/*.{h,m}',
+                      'GinhoorFramework/CustomViewController/**/**/*.{h,m}'
   end
 end

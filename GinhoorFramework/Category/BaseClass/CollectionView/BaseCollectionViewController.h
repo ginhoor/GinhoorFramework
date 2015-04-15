@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "BaseViewController.h"
+#import "UICollectionView+DefualtStyle.h"
 
 typedef NS_ENUM(NSInteger, CollectionRefreshControlType) {
     CollectionRefreshControlGrayType,

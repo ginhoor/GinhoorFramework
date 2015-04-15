@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "UITableView+DefualtStyle.h"
 
 @interface BaseTableViewController : BaseViewController
 

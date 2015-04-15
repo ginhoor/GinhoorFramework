@@ -20,7 +20,7 @@
 {
     
     GinPageViewController *controller = [[GinPageViewController alloc] init];
-
+    
     controller.contentViewControllers = contentViewControllers;
     controller.selectedIndex = index;
     return controller;
@@ -29,12 +29,13 @@
 - (void)dealloc
 {
     self.pageController.delegate = nil;
+    self.pageDidChanged = nil;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     [self.view addSubview:self.pageControl];
     self.pageControl.currentPage = self.selectedIndex;
     [self.pageController setViewControllers:@[self.contentViewControllers[self.selectedIndex]]
@@ -102,6 +103,9 @@
 {
     NSUInteger index = [self.contentViewControllers indexOfObject:pendingViewControllers[0]];
     self.pageControl.currentPage = index;
+    if (self.pageDidChanged) {
+        self.pageDidChanged(pageViewController,index);
+    }
 }
 
 - (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed
@@ -109,7 +113,9 @@
     if (!completed) {
         NSUInteger index = [self.contentViewControllers indexOfObject:previousViewControllers[0]];
         self.pageControl.currentPage = index;
-        
+        if (self.pageDidChanged) {
+            self.pageDidChanged(pageViewController,index);
+        }
     }
 }
 

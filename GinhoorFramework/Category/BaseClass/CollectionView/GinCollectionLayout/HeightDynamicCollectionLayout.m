@@ -17,7 +17,7 @@
 
 - (void)prepareLayout
 {
-    
+    [super prepareLayout];
 }
 
 //设置 每个cell 的attribute
