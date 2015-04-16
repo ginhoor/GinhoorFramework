@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 Ginhoor. All rights reserved.
 //
 
-#import "BaseView.h"
+#import "GinBaseView.h"
 
-@implementation BaseView
+@implementation GinBaseView
 
 
 - (instancetype)init

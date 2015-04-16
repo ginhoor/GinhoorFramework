@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseTitleHeader : UICollectionReusableView
+@interface GinBaseTitleHeader : UICollectionReusableView
 
 @property (strong, nonatomic) UILabel *titleLabel;
 

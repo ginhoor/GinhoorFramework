@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <Masonry.h>
-@interface BaseTitleSectionView : UIView
+@interface GinBaseTitleSectionView : UIView
 
 @property (copy, nonatomic) NSString *title;
 

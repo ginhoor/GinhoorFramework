@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 Ginhoor. All rights reserved.
 //
 
-#import "BaseCoreDataResponder.h"
+#import "GinBaseCoreDataResponder.h"
 
-@implementation BaseCoreDataResponder
+@implementation GinBaseCoreDataResponder
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;

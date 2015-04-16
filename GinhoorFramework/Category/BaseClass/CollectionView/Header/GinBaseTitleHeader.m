@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 Ginhoor. All rights reserved.
 //
 
-#import "BaseTitleHeader.h"
+#import "GinBaseTitleHeader.h"
 
-@implementation BaseTitleHeader
+@implementation GinBaseTitleHeader
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

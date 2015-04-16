@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 Ginhoor. All rights reserved.
 //
 
-#import "BaseCollectionViewController.h"
+#import "GinBaseCollectionViewController.h"
 
-@interface BaseCollectionViewController ()
+@interface GinBaseCollectionViewController ()
 
 @end
 
-@implementation BaseCollectionViewController
+@implementation GinBaseCollectionViewController
 
 - (void)dealloc
 {

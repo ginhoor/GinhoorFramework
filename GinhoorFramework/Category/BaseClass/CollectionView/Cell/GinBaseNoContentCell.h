@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface BaseNoContentCell : UICollectionViewCell
+@interface GinBaseNoContentCell : UICollectionViewCell
 
 + (CGSize)cellSize;
 @end

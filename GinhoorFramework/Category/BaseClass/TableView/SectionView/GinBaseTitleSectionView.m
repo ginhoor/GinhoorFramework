@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 Ginhoor. All rights reserved.
 //
 
-#import "BaseTitleSectionView.h"
+#import "GinBaseTitleSectionView.h"
 
-@interface BaseTitleSectionView()
+@interface GinBaseTitleSectionView()
 @property (strong, nonatomic) UILabel *titleLabel;
 @end
 
-@implementation BaseTitleSectionView
+@implementation GinBaseTitleSectionView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

@@ -6,14 +6,14 @@
 //  Copyright (c) 2015年 Byhere. All rights reserved.
 //
 
-#import "BaseTableViewController.h"
+#import "GinBaseTableViewController.h"
 
 
-@interface BaseTableViewController ()
+@interface GinBaseTableViewController ()
 
 @end
 
-@implementation BaseTableViewController
+@implementation GinBaseTableViewController
 
 
 - (void)dealloc

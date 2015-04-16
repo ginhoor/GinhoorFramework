@@ -16,19 +16,19 @@
 		000B52A81ADBCF8100946853 /* FrameworkDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B52A71ADBCF8100946853 /* FrameworkDemoTests.m */; };
 		006A93A91ADE09090093BEBE /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93271ADE09090093BEBE /* NSString+Base64.m */; };
 		006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93291ADE09090093BEBE /* UIImage+Base64.m */; };
-		006A93AB1ADE09090093BEBE /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A932D1ADE09090093BEBE /* BaseCollectionViewController.m */; };
-		006A93AC1ADE09090093BEBE /* BaseNoContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93301ADE09090093BEBE /* BaseNoContentCell.m */; };
+		006A93AB1ADE09090093BEBE /* GinBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A932D1ADE09090093BEBE /* GinBaseCollectionViewController.m */; };
+		006A93AC1ADE09090093BEBE /* GinBaseNoContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93301ADE09090093BEBE /* GinBaseNoContentCell.m */; };
 		006A93AD1ADE09090093BEBE /* GinCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93331ADE09090093BEBE /* GinCollectionLayout.m */; };
 		006A93AE1ADE09090093BEBE /* HeightDynamicCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93351ADE09090093BEBE /* HeightDynamicCollectionLayout.m */; };
-		006A93AF1ADE09090093BEBE /* BaseTitleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93381ADE09090093BEBE /* BaseTitleHeader.m */; };
+		006A93AF1ADE09090093BEBE /* GinBaseTitleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93381ADE09090093BEBE /* GinBaseTitleHeader.m */; };
 		006A93B01ADE09090093BEBE /* UICollectionView+DefualtStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A933A1ADE09090093BEBE /* UICollectionView+DefualtStyle.m */; };
-		006A93B11ADE09090093BEBE /* BaseCoreDataResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A933D1ADE09090093BEBE /* BaseCoreDataResponder.m */; };
-		006A93B21ADE09090093BEBE /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93411ADE09090093BEBE /* BaseTableViewController.m */; };
-		006A93B31ADE09090093BEBE /* BaseNoContentTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93441ADE09090093BEBE /* BaseNoContentTabCell.m */; };
-		006A93B41ADE09090093BEBE /* BaseTitleSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93471ADE09090093BEBE /* BaseTitleSectionView.m */; };
-		006A93B61ADE09090093BEBE /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A934C1ADE09090093BEBE /* BaseView.m */; };
+		006A93B11ADE09090093BEBE /* GinBaseCoreDataResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A933D1ADE09090093BEBE /* GinBaseCoreDataResponder.m */; };
+		006A93B21ADE09090093BEBE /* GinBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93411ADE09090093BEBE /* GinBaseTableViewController.m */; };
+		006A93B31ADE09090093BEBE /* GinBaseNoContentTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93441ADE09090093BEBE /* GinBaseNoContentTabCell.m */; };
+		006A93B41ADE09090093BEBE /* GinBaseTitleSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93471ADE09090093BEBE /* GinBaseTitleSectionView.m */; };
+		006A93B61ADE09090093BEBE /* GinBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A934C1ADE09090093BEBE /* GinBaseView.m */; };
 		006A93B71ADE09090093BEBE /* UIView+CGRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A934E1ADE09090093BEBE /* UIView+CGRect.m */; };
-		006A93B81ADE09090093BEBE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93511ADE09090093BEBE /* BaseViewController.m */; };
+		006A93B81ADE09090093BEBE /* GinBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93511ADE09090093BEBE /* GinBaseViewController.m */; };
 		006A93B91ADE09090093BEBE /* UIViewController+BaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93531ADE09090093BEBE /* UIViewController+BaseClass.m */; };
 		006A93BA1ADE09090093BEBE /* NSString+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93571ADE09090093BEBE /* NSString+Debug.m */; };
 		006A93BB1ADE09090093BEBE /* UIView+Debugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93591ADE09090093BEBE /* UIView+Debugger.m */; };
@@ -94,33 +94,33 @@
 		006A93271ADE09090093BEBE /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		006A93281ADE09090093BEBE /* UIImage+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Base64.h"; sourceTree = "<group>"; };
 		006A93291ADE09090093BEBE /* UIImage+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Base64.m"; sourceTree = "<group>"; };
-		006A932C1ADE09090093BEBE /* BaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewController.h; sourceTree = "<group>"; };
-		006A932D1ADE09090093BEBE /* BaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewController.m; sourceTree = "<group>"; };
-		006A932F1ADE09090093BEBE /* BaseNoContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNoContentCell.h; sourceTree = "<group>"; };
-		006A93301ADE09090093BEBE /* BaseNoContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNoContentCell.m; sourceTree = "<group>"; };
+		006A932C1ADE09090093BEBE /* GinBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseCollectionViewController.h; sourceTree = "<group>"; };
+		006A932D1ADE09090093BEBE /* GinBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseCollectionViewController.m; sourceTree = "<group>"; };
+		006A932F1ADE09090093BEBE /* GinBaseNoContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseNoContentCell.h; sourceTree = "<group>"; };
+		006A93301ADE09090093BEBE /* GinBaseNoContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseNoContentCell.m; sourceTree = "<group>"; };
 		006A93321ADE09090093BEBE /* GinCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCollectionLayout.h; sourceTree = "<group>"; };
 		006A93331ADE09090093BEBE /* GinCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinCollectionLayout.m; sourceTree = "<group>"; };
 		006A93341ADE09090093BEBE /* HeightDynamicCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeightDynamicCollectionLayout.h; sourceTree = "<group>"; };
 		006A93351ADE09090093BEBE /* HeightDynamicCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeightDynamicCollectionLayout.m; sourceTree = "<group>"; };
-		006A93371ADE09090093BEBE /* BaseTitleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTitleHeader.h; sourceTree = "<group>"; };
-		006A93381ADE09090093BEBE /* BaseTitleHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTitleHeader.m; sourceTree = "<group>"; };
+		006A93371ADE09090093BEBE /* GinBaseTitleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseTitleHeader.h; sourceTree = "<group>"; };
+		006A93381ADE09090093BEBE /* GinBaseTitleHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseTitleHeader.m; sourceTree = "<group>"; };
 		006A93391ADE09090093BEBE /* UICollectionView+DefualtStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+DefualtStyle.h"; sourceTree = "<group>"; };
 		006A933A1ADE09090093BEBE /* UICollectionView+DefualtStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+DefualtStyle.m"; sourceTree = "<group>"; };
-		006A933C1ADE09090093BEBE /* BaseCoreDataResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCoreDataResponder.h; sourceTree = "<group>"; };
-		006A933D1ADE09090093BEBE /* BaseCoreDataResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCoreDataResponder.m; sourceTree = "<group>"; };
+		006A933C1ADE09090093BEBE /* GinBaseCoreDataResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseCoreDataResponder.h; sourceTree = "<group>"; };
+		006A933D1ADE09090093BEBE /* GinBaseCoreDataResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseCoreDataResponder.m; sourceTree = "<group>"; };
 		006A933E1ADE09090093BEBE /* GinCategory_BaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCategory_BaseClass.h; sourceTree = "<group>"; };
-		006A93401ADE09090093BEBE /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
-		006A93411ADE09090093BEBE /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
-		006A93431ADE09090093BEBE /* BaseNoContentTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNoContentTabCell.h; sourceTree = "<group>"; };
-		006A93441ADE09090093BEBE /* BaseNoContentTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNoContentTabCell.m; sourceTree = "<group>"; };
-		006A93461ADE09090093BEBE /* BaseTitleSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTitleSectionView.h; sourceTree = "<group>"; };
-		006A93471ADE09090093BEBE /* BaseTitleSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTitleSectionView.m; sourceTree = "<group>"; };
-		006A934B1ADE09090093BEBE /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
-		006A934C1ADE09090093BEBE /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		006A93401ADE09090093BEBE /* GinBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseTableViewController.h; sourceTree = "<group>"; };
+		006A93411ADE09090093BEBE /* GinBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseTableViewController.m; sourceTree = "<group>"; };
+		006A93431ADE09090093BEBE /* GinBaseNoContentTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseNoContentTabCell.h; sourceTree = "<group>"; };
+		006A93441ADE09090093BEBE /* GinBaseNoContentTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseNoContentTabCell.m; sourceTree = "<group>"; };
+		006A93461ADE09090093BEBE /* GinBaseTitleSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseTitleSectionView.h; sourceTree = "<group>"; };
+		006A93471ADE09090093BEBE /* GinBaseTitleSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseTitleSectionView.m; sourceTree = "<group>"; };
+		006A934B1ADE09090093BEBE /* GinBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseView.h; sourceTree = "<group>"; };
+		006A934C1ADE09090093BEBE /* GinBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseView.m; sourceTree = "<group>"; };
 		006A934D1ADE09090093BEBE /* UIView+CGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CGRect.h"; sourceTree = "<group>"; };
 		006A934E1ADE09090093BEBE /* UIView+CGRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CGRect.m"; sourceTree = "<group>"; };
-		006A93501ADE09090093BEBE /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		006A93511ADE09090093BEBE /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		006A93501ADE09090093BEBE /* GinBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseViewController.h; sourceTree = "<group>"; };
+		006A93511ADE09090093BEBE /* GinBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseViewController.m; sourceTree = "<group>"; };
 		006A93521ADE09090093BEBE /* UIViewController+BaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseClass.h"; sourceTree = "<group>"; };
 		006A93531ADE09090093BEBE /* UIViewController+BaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseClass.m"; sourceTree = "<group>"; };
 		006A93551ADE09090093BEBE /* GinCategory_Debugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCategory_Debugger.h; sourceTree = "<group>"; };
@@ -338,8 +338,8 @@
 		006A932B1ADE09090093BEBE /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				006A932C1ADE09090093BEBE /* BaseCollectionViewController.h */,
-				006A932D1ADE09090093BEBE /* BaseCollectionViewController.m */,
+				006A932C1ADE09090093BEBE /* GinBaseCollectionViewController.h */,
+				006A932D1ADE09090093BEBE /* GinBaseCollectionViewController.m */,
 				006A932E1ADE09090093BEBE /* Cell */,
 				006A93311ADE09090093BEBE /* GinCollectionLayout */,
 				006A93361ADE09090093BEBE /* Header */,
@@ -352,8 +352,8 @@
 		006A932E1ADE09090093BEBE /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				006A932F1ADE09090093BEBE /* BaseNoContentCell.h */,
-				006A93301ADE09090093BEBE /* BaseNoContentCell.m */,
+				006A932F1ADE09090093BEBE /* GinBaseNoContentCell.h */,
+				006A93301ADE09090093BEBE /* GinBaseNoContentCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -372,8 +372,8 @@
 		006A93361ADE09090093BEBE /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				006A93371ADE09090093BEBE /* BaseTitleHeader.h */,
-				006A93381ADE09090093BEBE /* BaseTitleHeader.m */,
+				006A93371ADE09090093BEBE /* GinBaseTitleHeader.h */,
+				006A93381ADE09090093BEBE /* GinBaseTitleHeader.m */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -381,8 +381,8 @@
 		006A933B1ADE09090093BEBE /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				006A933C1ADE09090093BEBE /* BaseCoreDataResponder.h */,
-				006A933D1ADE09090093BEBE /* BaseCoreDataResponder.m */,
+				006A933C1ADE09090093BEBE /* GinBaseCoreDataResponder.h */,
+				006A933D1ADE09090093BEBE /* GinBaseCoreDataResponder.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -390,8 +390,8 @@
 		006A933F1ADE09090093BEBE /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				006A93401ADE09090093BEBE /* BaseTableViewController.h */,
-				006A93411ADE09090093BEBE /* BaseTableViewController.m */,
+				006A93401ADE09090093BEBE /* GinBaseTableViewController.h */,
+				006A93411ADE09090093BEBE /* GinBaseTableViewController.m */,
 				006A93421ADE09090093BEBE /* Cell */,
 				006A93451ADE09090093BEBE /* SectionView */,
 				006A94531ADEB3260093BEBE /* UITableView+BaseClass.h */,
@@ -403,8 +403,8 @@
 		006A93421ADE09090093BEBE /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				006A93431ADE09090093BEBE /* BaseNoContentTabCell.h */,
-				006A93441ADE09090093BEBE /* BaseNoContentTabCell.m */,
+				006A93431ADE09090093BEBE /* GinBaseNoContentTabCell.h */,
+				006A93441ADE09090093BEBE /* GinBaseNoContentTabCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -412,8 +412,8 @@
 		006A93451ADE09090093BEBE /* SectionView */ = {
 			isa = PBXGroup;
 			children = (
-				006A93461ADE09090093BEBE /* BaseTitleSectionView.h */,
-				006A93471ADE09090093BEBE /* BaseTitleSectionView.m */,
+				006A93461ADE09090093BEBE /* GinBaseTitleSectionView.h */,
+				006A93471ADE09090093BEBE /* GinBaseTitleSectionView.m */,
 			);
 			path = SectionView;
 			sourceTree = "<group>";
@@ -421,8 +421,8 @@
 		006A934A1ADE09090093BEBE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				006A934B1ADE09090093BEBE /* BaseView.h */,
-				006A934C1ADE09090093BEBE /* BaseView.m */,
+				006A934B1ADE09090093BEBE /* GinBaseView.h */,
+				006A934C1ADE09090093BEBE /* GinBaseView.m */,
 				006A934D1ADE09090093BEBE /* UIView+CGRect.h */,
 				006A934E1ADE09090093BEBE /* UIView+CGRect.m */,
 			);
@@ -432,8 +432,8 @@
 		006A934F1ADE09090093BEBE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				006A93501ADE09090093BEBE /* BaseViewController.h */,
-				006A93511ADE09090093BEBE /* BaseViewController.m */,
+				006A93501ADE09090093BEBE /* GinBaseViewController.h */,
+				006A93511ADE09090093BEBE /* GinBaseViewController.m */,
 				006A93521ADE09090093BEBE /* UIViewController+BaseClass.h */,
 				006A93531ADE09090093BEBE /* UIViewController+BaseClass.m */,
 			);
@@ -815,13 +815,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				006A93B81ADE09090093BEBE /* BaseViewController.m in Sources */,
+				006A93B81ADE09090093BEBE /* GinBaseViewController.m in Sources */,
 				006A93BB1ADE09090093BEBE /* UIView+Debugger.m in Sources */,
 				006A93C81ADE09090093BEBE /* UIImage+GinUnit.m in Sources */,
-				006A93B61ADE09090093BEBE /* BaseView.m in Sources */,
+				006A93B61ADE09090093BEBE /* GinBaseView.m in Sources */,
 				006A93AD1ADE09090093BEBE /* GinCollectionLayout.m in Sources */,
 				006A93C31ADE09090093BEBE /* NSString+Size.m in Sources */,
-				006A93B31ADE09090093BEBE /* BaseNoContentTabCell.m in Sources */,
+				006A93B31ADE09090093BEBE /* GinBaseNoContentTabCell.m in Sources */,
 				006A93AE1ADE09090093BEBE /* HeightDynamicCollectionLayout.m in Sources */,
 				006A93B71ADE09090093BEBE /* UIView+CGRect.m in Sources */,
 				006A93BD1ADE09090093BEBE /* NSObject+Json.m in Sources */,
@@ -829,7 +829,7 @@
 				006A93C61ADE09090093BEBE /* UIAlertController+Unit.m in Sources */,
 				006A93D51ADE09090093BEBE /* GinScanQRCoderController.m in Sources */,
 				006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */,
-				006A93AF1ADE09090093BEBE /* BaseTitleHeader.m in Sources */,
+				006A93AF1ADE09090093BEBE /* GinBaseTitleHeader.m in Sources */,
 				006A93D21ADE09090093BEBE /* GinPopupGradientView.m in Sources */,
 				006A93CE1ADE09090093BEBE /* UITextField+Keyboard.m in Sources */,
 				006A93BA1ADE09090093BEBE /* NSString+Debug.m in Sources */,
@@ -839,7 +839,7 @@
 				006A93D41ADE09090093BEBE /* GinQRCodePickerBaseController.m in Sources */,
 				006A93C41ADE09090093BEBE /* NSURL+Unit.m in Sources */,
 				006A93C21ADE09090093BEBE /* NSString+formatContentString.m in Sources */,
-				006A93AB1ADE09090093BEBE /* BaseCollectionViewController.m in Sources */,
+				006A93AB1ADE09090093BEBE /* GinBaseCollectionViewController.m in Sources */,
 				006A93D01ADE09090093BEBE /* GinPopup.m in Sources */,
 				006A93CD1ADE09090093BEBE /* GinSystemButton.m in Sources */,
 				000B52941ADBCF8100946853 /* ViewController.m in Sources */,
@@ -847,23 +847,23 @@
 				006A93C51ADE09090093BEBE /* NSURL+Videos.m in Sources */,
 				006A94551ADEB3260093BEBE /* UITableView+BaseClass.m in Sources */,
 				006A93C71ADE09090093BEBE /* UIAlertView+Unit.m in Sources */,
-				006A93B11ADE09090093BEBE /* BaseCoreDataResponder.m in Sources */,
+				006A93B11ADE09090093BEBE /* GinBaseCoreDataResponder.m in Sources */,
 				006A93D11ADE09090093BEBE /* GinPopupContentView.m in Sources */,
 				006A93B91ADE09090093BEBE /* UIViewController+BaseClass.m in Sources */,
 				000B52911ADBCF8100946853 /* AppDelegate.m in Sources */,
 				006A93BC1ADE09090093BEBE /* NSObject+CoreGraphic.m in Sources */,
-				006A93B21ADE09090093BEBE /* BaseTableViewController.m in Sources */,
+				006A93B21ADE09090093BEBE /* GinBaseTableViewController.m in Sources */,
 				006A93BE1ADE09090093BEBE /* NSString+Json.m in Sources */,
 				006A93B01ADE09090093BEBE /* UICollectionView+DefualtStyle.m in Sources */,
 				000B528E1ADBCF8100946853 /* main.m in Sources */,
 				006A93C11ADE09090093BEBE /* NSDate+RCUtility.m in Sources */,
 				006A93C91ADE09090093BEBE /* UIResponder+Unit.m in Sources */,
-				006A93AC1ADE09090093BEBE /* BaseNoContentCell.m in Sources */,
+				006A93AC1ADE09090093BEBE /* GinBaseNoContentCell.m in Sources */,
 				006A93CB1ADE09090093BEBE /* UIView+view2Image.m in Sources */,
 				006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */,
 				006A93CA1ADE09090093BEBE /* UIView+Layer.m in Sources */,
 				006A93CF1ADE09090093BEBE /* GinPageViewController.m in Sources */,
-				006A93B41ADE09090093BEBE /* BaseTitleSectionView.m in Sources */,
+				006A93B41ADE09090093BEBE /* GinBaseTitleSectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

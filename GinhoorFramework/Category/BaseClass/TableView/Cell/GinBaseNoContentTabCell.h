@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface BaseNoContentTabCell : UITableViewCell
+@interface GinBaseNoContentTabCell : UITableViewCell
 @property (strong, nonatomic) UILabel *noContentTipLabel;
 
 + (CGSize)cellSize;

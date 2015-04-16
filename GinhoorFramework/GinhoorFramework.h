@@ -12,3 +12,6 @@
 #import "GinCategory_BaseClass.h"
 #import "UIResponder+Unit.h"
 #import "UIAlertView+Unit.h"
+
+
+#import "GinCategory_Json.h"

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "UIViewController+BaseClass.h"
-@interface BaseViewController : UIViewController
+@interface GinBaseViewController : UIViewController
 
 @end

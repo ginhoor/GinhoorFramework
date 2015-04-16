@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import "BaseViewController.h"
+#import "GinBaseViewController.h"
 #import "UICollectionView+DefualtStyle.h"
 
 typedef NS_ENUM(NSInteger, CollectionRefreshControlType) {
@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, CollectionRefreshControlType) {
     CollectionRefreshControlWhiteType
 };
 
-@interface BaseCollectionViewController : BaseViewController
+@interface GinBaseCollectionViewController : GinBaseViewController
 
 @property (copy, nonatomic)   NSArray    *cellDataList;
 @property (assign, nonatomic) NSUInteger currentPageIndex;

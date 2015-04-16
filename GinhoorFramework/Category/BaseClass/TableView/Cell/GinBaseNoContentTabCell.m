@@ -6,15 +6,23 @@
 //  Copyright (c) 2014年 Ginhoor. All rights reserved.
 //
 
-#import "BaseNoContentCell.h"
+#import "GinBaseNoContentTabCell.h"
 
-@interface BaseNoContentCell()
+@interface GinBaseNoContentTabCell()
 
-@property (strong, nonatomic) UILabel *noContentTipLabel;
 
 @end
 
-@implementation BaseNoContentCell
+@implementation GinBaseNoContentTabCell
+
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -24,7 +32,7 @@
     }
     return self;
 }
-
+    
 - (void)setup
 {
     self.backgroundColor = [UIColor whiteColor];
@@ -44,13 +52,14 @@
         _noContentTipLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 260, 20)];
         _noContentTipLabel.text = @"无法获得内容，请下拉刷新!";
         _noContentTipLabel.textAlignment = NSTextAlignmentCenter;
+        _noContentTipLabel.numberOfLines = 0;
     }
     return _noContentTipLabel;
 }
 
 + (CGSize)cellSize
 {
-    return CGSizeMake([UIScreen mainScreen].bounds.size.width, 200);
+    return CGSizeMake([UIScreen mainScreen].bounds.size.width, 120);
 }
 
 

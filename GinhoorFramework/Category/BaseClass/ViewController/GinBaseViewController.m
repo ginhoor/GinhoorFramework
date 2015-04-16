@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "GinBaseViewController.h"
 
-@implementation BaseViewController
+@implementation GinBaseViewController
 
 @end

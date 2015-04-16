@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "UIView+CGRect.h"
 
-@interface BaseView : UIView
+@interface GinBaseView : UIView
 
 @end
