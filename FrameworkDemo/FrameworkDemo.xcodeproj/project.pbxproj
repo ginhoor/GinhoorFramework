@@ -31,7 +31,6 @@
 		006A93BD1ADE09090093BEBE /* NSObject+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93601ADE09090093BEBE /* NSObject+Json.m */; };
 		006A93BE1ADE09090093BEBE /* NSString+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93621ADE09090093BEBE /* NSString+Json.m */; };
 		006A93BF1ADE09090093BEBE /* NSData+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93651ADE09090093BEBE /* NSData+NSString.m */; };
-		006A93C01ADE09090093BEBE /* NSString+NSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93671ADE09090093BEBE /* NSString+NSData.m */; };
 		006A93C11ADE09090093BEBE /* NSDate+RCUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A936A1ADE09090093BEBE /* NSDate+RCUtility.m */; };
 		006A93C21ADE09090093BEBE /* NSString+formatContentString.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A936D1ADE09090093BEBE /* NSString+formatContentString.m */; };
 		006A93C31ADE09090093BEBE /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A936F1ADE09090093BEBE /* NSString+Size.m */; };
@@ -127,8 +126,6 @@
 		006A93621ADE09090093BEBE /* NSString+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Json.m"; sourceTree = "<group>"; };
 		006A93641ADE09090093BEBE /* NSData+NSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NSString.h"; sourceTree = "<group>"; };
 		006A93651ADE09090093BEBE /* NSData+NSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NSString.m"; sourceTree = "<group>"; };
-		006A93661ADE09090093BEBE /* NSString+NSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSData.h"; sourceTree = "<group>"; };
-		006A93671ADE09090093BEBE /* NSString+NSData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSData.m"; sourceTree = "<group>"; };
 		006A93691ADE09090093BEBE /* NSDate+RCUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RCUtility.h"; sourceTree = "<group>"; };
 		006A936A1ADE09090093BEBE /* NSDate+RCUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RCUtility.m"; sourceTree = "<group>"; };
 		006A936C1ADE09090093BEBE /* NSString+formatContentString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+formatContentString.h"; sourceTree = "<group>"; };
@@ -479,8 +476,6 @@
 			children = (
 				006A93641ADE09090093BEBE /* NSData+NSString.h */,
 				006A93651ADE09090093BEBE /* NSData+NSString.m */,
-				006A93661ADE09090093BEBE /* NSString+NSData.h */,
-				006A93671ADE09090093BEBE /* NSString+NSData.m */,
 			);
 			path = NSData;
 			sourceTree = "<group>";
@@ -846,7 +841,6 @@
 				006A93D01ADE09090093BEBE /* GinPopup.m in Sources */,
 				006A93CD1ADE09090093BEBE /* GinSystemButton.m in Sources */,
 				000B52941ADBCF8100946853 /* ViewController.m in Sources */,
-				006A93C01ADE09090093BEBE /* NSString+NSData.m in Sources */,
 				006A93C51ADE09090093BEBE /* NSURL+Videos.m in Sources */,
 				006A94551ADEB3260093BEBE /* UITableView+BaseClass.m in Sources */,
 				006A93C71ADE09090093BEBE /* UIAlertView+Unit.m in Sources */,

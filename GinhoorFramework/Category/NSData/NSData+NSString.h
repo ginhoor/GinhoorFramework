@@ -10,6 +10,8 @@
 
 @interface NSData (NSString)
 
++ (NSData *)stringToData:(NSString)string;
+
 - (NSString *)dataToString;
 
 @end
