@@ -37,6 +37,7 @@
 // 获得新增celldata失败
 - (void (^)())GinAddNewCellDataFailureBlock:(UITableView *)tableView;
 
+- (void)endRefreshing:(UITableView *)tableView;
 
 
 @end
