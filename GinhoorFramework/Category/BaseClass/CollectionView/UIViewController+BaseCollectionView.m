@@ -70,7 +70,7 @@
     };
 }
 
-- (void (^)(NSArray *dataList))GinAddNewCellDataSuccessBlock:(UICollectionView *)collectionView
+- (void (^)(NSArray *dataList))GinAddNewCellDataSuccessBlock
 {
     return ^(NSArray *dataList) {
         
@@ -79,7 +79,7 @@
             [mArray addObjectsFromArray:dataList];
             self.cellDataList = mArray;
             
-            [collectionView reloadData];
+            [self.collectionView reloadData];
             [self endRefreshing];
             
         } else {
@@ -88,7 +88,7 @@
         
         self.currentPageIndex++;
         if (self.finishLoadData) {
-            self.finishLoadData(collectionView);
+            self.finishLoadData(self.collectionView);
         }
         
     };
@@ -114,7 +114,7 @@
 
 #pragma mark- setter&getter
 
-- (void)setFinishLoadData:(void (^)(UICollectionView *))finishLoadData
+- (void)setFinishLoadData:(void (^)(UICollectionView *collectionView))finishLoadData
 {
     [self setValue:finishLoadData key:@"finishLoadData" policy:OBJC_ASSOCIATION_COPY_NONATOMIC owner:self];
 }

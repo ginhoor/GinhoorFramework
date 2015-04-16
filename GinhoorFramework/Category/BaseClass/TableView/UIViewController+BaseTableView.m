@@ -111,7 +111,7 @@
 
 #pragma mark- setter&getter
 
-- (void)setFinishLoadData:(void (^)(UITableView *))finishLoadData
+- (void)setFinishLoadData:(void (^)(UITableView *tableView))finishLoadData
 {
     [self setValue:finishLoadData key:@"finishLoadData" policy:OBJC_ASSOCIATION_COPY_NONATOMIC owner:self];
 }
