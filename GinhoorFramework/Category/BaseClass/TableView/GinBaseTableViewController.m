@@ -19,6 +19,7 @@
 - (void)dealloc
 {
     self.cellDataList = nil;
+    self.tableView.delegate = nil;
 }
 
 
@@ -107,13 +108,7 @@
 
 - (void (^)())addNewCellDataFailureBlock:(UITableView *)tableView
 {
-    return ^(NSError *error) {
-        
-        [self endRefreshing:tableView];
-        if (self.finishLoadData) {
-            self.finishLoadData(tableView);
-        }
-    };
+    return [self setupCellDataFailureBlock:tableView];
 }
 
 - (void)endRefreshing:(UITableView *)tableView

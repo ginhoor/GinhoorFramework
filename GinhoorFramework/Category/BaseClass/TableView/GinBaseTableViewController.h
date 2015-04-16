@@ -7,15 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
 #import <MJRefresh.h>
+#import "GinBaseViewController.h"
 #import "UITableView+BaseClass.h"
 
-@interface GinBaseTableViewController : UIViewController
+@interface GinBaseTableViewController : GinBaseViewController
 
 @property (strong, nonatomic) NSArray *cellDataList;
 @property (strong, nonatomic) UITableView *tableView;
 
-// default is 1
+/**
+ *   default value is 1
+ */
 @property (assign, nonatomic) NSUInteger startIndex;
 @property (assign, nonatomic) NSUInteger currentPageIndex;
 

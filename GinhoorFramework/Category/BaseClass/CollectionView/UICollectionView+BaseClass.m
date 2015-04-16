@@ -1,14 +1,14 @@
 //
-//  UICollectionView+DefualtStyle.m
-//  LOLBox
+//  UICollectionView+BaseClass.m
+//  FrameworkDemo
 //
-//  Created by JunhuaShao on 14/12/17.
-//  Copyright (c) 2014年 Ginhoor. All rights reserved.
+//  Created by JunhuaShao on 15/4/16.
+//  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import "UICollectionView+DefualtStyle.h"
+#import "UICollectionView+BaseClass.h"
 
-@implementation UICollectionView (DefualtStyle)
+@implementation UICollectionView (BaseClass)
 
 + (instancetype)defualtWithItemSize:(CGSize)size
 {
@@ -21,8 +21,15 @@
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     collectionView.alwaysBounceVertical = YES;
     collectionView.backgroundColor = [UIColor clearColor];
-
+    
     return collectionView;
+}
+
+- (void)config:(void (^)(UICollectionView *collectionView))configTableViewBlock
+{
+    if (configTableViewBlock) {
+        configTableViewBlock(self);
+    }
 }
 
 
