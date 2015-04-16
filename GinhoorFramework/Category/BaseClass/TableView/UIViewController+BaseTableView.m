@@ -41,7 +41,7 @@
 }
 
 
-- (void (^)())GinSetupCellDataSuccessBlock:(UITableView *)tableView
+- (void (^)(NSArray *dataList))GinSetupCellDataSuccessBlock
 {
     return ^(NSArray *dataList) {
         if (dataList && dataList.count > 0) {
@@ -49,28 +49,28 @@
         } else {
             self.cellDataList = @[];
         }
-        [tableView reloadData];
+        [self.tableView reloadData];
         [self endRefreshing];
         
         self.currentPageIndex = self.startIndex;
         
         if (self.finishLoadData) {
-            self.finishLoadData(tableView);
+            self.finishLoadData(self.tableView);
         }
     };
 }
 
-- (void (^)())GinSetupCellDataFailureBlock:(UITableView *)tableView
+- (void (^)(NSError *error))GinSetupCellDataFailureBlock
 {
     return ^(NSError *error) {
         [self endRefreshing];
         if (self.finishLoadData) {
-            self.finishLoadData(tableView);
+            self.finishLoadData(self.tableView);
         }
     };
 }
 
-- (void (^)())GinAddNewCellDataSuccessBlock:(UITableView *)tableView
+- (void (^)(NSArray *dataList))GinAddNewCellDataSuccessBlock
 {
     return ^(NSArray *dataList) {
         
@@ -79,7 +79,7 @@
             [mArray addObjectsFromArray:dataList];
             self.cellDataList = mArray;
             
-            [tableView reloadData];
+            [self.tableView reloadData];
             [self endRefreshing];
             
         } else {
@@ -88,14 +88,14 @@
         
         self.currentPageIndex++;
         if (self.finishLoadData) {
-            self.finishLoadData(tableView);
+            self.finishLoadData(self.tableView);
         }
     };
 }
 
-- (void (^)())GinAddNewCellDataFailureBlock:(UITableView *)tableView
+- (void (^)(NSError *error))GinAddNewCellDataFailureBlock
 {
-    return [self GinSetupCellDataFailureBlock:tableView];
+    return [self GinSetupCellDataFailureBlock];
 }
 
 - (void)endRefreshing

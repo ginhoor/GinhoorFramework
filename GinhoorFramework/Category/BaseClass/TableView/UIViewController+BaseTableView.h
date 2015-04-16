@@ -28,14 +28,13 @@
 
 
 // 初始化celldata成功
-- (void (^)())GinSetupCellDataSuccessBlock:(UITableView *)tableView;
+- (void (^)(NSArray *dataList))GinSetupCellDataSuccessBlock;
 // 获得celldata失败
-- (void (^)())GinSetupCellDataFailureBlock:(UITableView *)tableView;
-
+- (void (^)(NSError *error))GinSetupCellDataFailureBlock;
 // 获得新增celldata 成功
-- (void (^)())GinAddNewCellDataSuccessBlock:(UITableView *)tableView;
+- (void (^)(NSArray *dataList))GinAddNewCellDataSuccessBlock;
 // 获得新增celldata失败
-- (void (^)())GinAddNewCellDataFailureBlock:(UITableView *)tableView;
+- (void (^)(NSError *error))GinAddNewCellDataFailureBlock;
 
 - (void)endRefreshing;
 

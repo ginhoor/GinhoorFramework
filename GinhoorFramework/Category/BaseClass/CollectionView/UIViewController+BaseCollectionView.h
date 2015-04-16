@@ -27,13 +27,13 @@
 @property (copy, nonatomic) void(^finishLoadData)(UICollectionView *collectionView);
 
 // 初始化celldata成功
-- (void (^)())GinSetupCellDataSuccessBlock:(UICollectionView *)collectionView;
+- (void (^)(NSArray *dataList))GinSetupCellDataSuccessBlock;
 // 获得celldata失败
-- (void (^)())GinSetupCellDataFailureBlock:(UICollectionView *)collectionView;
+- (void (^)(NSError *error))GinSetupCellDataFailureBlock;
 // 获得新增celldata 成功
-- (void (^)())GinAddNewCellDataSuccessBlock:(UICollectionView *)collectionView;
+- (void (^)(NSArray *dataList))GinAddNewCellDataSuccessBlock;
 // 获得新增celldata失败
-- (void (^)())GinAddNewCellDataFailureBlock:(UICollectionView *)collectionView;
+- (void (^)(NSError *error))GinAddNewCellDataFailureBlock;
 
 - (void)endRefreshing;
 

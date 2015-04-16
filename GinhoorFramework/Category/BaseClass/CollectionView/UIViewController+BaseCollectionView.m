@@ -41,7 +41,7 @@
 }
 
 
-- (void (^)())GinSetupCellDataSuccessBlock:(UICollectionView *)collectionView
+- (void (^)(NSArray *dataList))GinSetupCellDataSuccessBlock
 {
     return ^(NSArray *dataList) {
         if (dataList && dataList.count > 0) {
@@ -49,28 +49,28 @@
         } else {
             self.cellDataList = @[];
         }
-        [collectionView reloadData];
+        [self.collectionView reloadData];
         [self endRefreshing];
         
         self.currentPageIndex = self.startIndex;
         
         if (self.finishLoadData) {
-            self.finishLoadData(collectionView);
+            self.finishLoadData(self.collectionView);
         }
     };
 }
 
-- (void (^)())GinSetupCellDataFailureBlock:(UICollectionView *)collectionView
+- (void (^)(NSError *error))GinSetupCellDataFailureBlock
 {
     return ^(NSError *error) {
         [self endRefreshing];
         if (self.finishLoadData) {
-            self.finishLoadData(collectionView);
+            self.finishLoadData(self.collectionView);
         }
     };
 }
 
-- (void (^)())GinAddNewCellDataSuccessBlock:(UICollectionView *)collectionView
+- (void (^)(NSArray *dataList))GinAddNewCellDataSuccessBlock:(UICollectionView *)collectionView
 {
     return ^(NSArray *dataList) {
         
@@ -94,9 +94,9 @@
     };
 }
 
-- (void (^)())GinAddNewCellDataFailureBlock:(UICollectionView *)collectionView
+- (void (^)(NSError *error))GinAddNewCellDataFailureBlock
 {
-    return [self GinSetupCellDataFailureBlock:collectionView];
+    return [self GinSetupCellDataFailureBlock];
 }
 
 
