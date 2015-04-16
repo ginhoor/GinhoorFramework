@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <Foundation/Foundation.h>
 @interface UITableView (BaseClass)
 
 + (instancetype)defaultTableView;
-
 - (void)config:(void (^)(UITableView *tableView))configTableViewBlock;
 
 @end

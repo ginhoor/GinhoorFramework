@@ -7,8 +7,8 @@
 //
 
 #import "UITableView+BaseClass.h"
-
 @implementation UITableView (BaseClass)
+
 
 + (instancetype)defaultTableView
 {
@@ -26,5 +26,9 @@
         configTableViewBlock(self);
     }
 }
+
+
+
+
 
 @end
