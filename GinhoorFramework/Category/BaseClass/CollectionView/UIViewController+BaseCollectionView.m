@@ -50,7 +50,7 @@
             self.cellDataList = @[];
         }
         [collectionView reloadData];
-        [self endRefreshing:collectionView];
+        [self endRefreshing];
         
         self.currentPageIndex = self.startIndex;
         
@@ -63,7 +63,7 @@
 - (void (^)())GinSetupCellDataFailureBlock:(UICollectionView *)collectionView
 {
     return ^(NSError *error) {
-        [self endRefreshing:collectionView];
+        [self endRefreshing];
         if (self.finishLoadData) {
             self.finishLoadData(collectionView);
         }
@@ -80,10 +80,10 @@
             self.cellDataList = mArray;
             
             [collectionView reloadData];
-            [self endRefreshing:collectionView];
+            [self endRefreshing];
             
         } else {
-            [self endRefreshing:collectionView];
+            [self endRefreshing];
         }
         
         self.currentPageIndex++;
@@ -100,13 +100,13 @@
 }
 
 
-- (void)endRefreshing:(UICollectionView *)collectionView
+- (void)endRefreshing
 {
-    if (collectionView.header.isRefreshing) {
-        [collectionView.header endRefreshing];
+    if (self.collectionView.header.isRefreshing) {
+        [self.collectionView.header endRefreshing];
     }
-    if (collectionView.footer.isRefreshing) {
-        [collectionView.footer endRefreshing];
+    if (self.collectionView.footer.isRefreshing) {
+        [self.collectionView.footer endRefreshing];
     }
 }
 

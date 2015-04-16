@@ -10,6 +10,16 @@
 
 @implementation NSDate (RCUtility)
 
++ (NSDate *)dateFromString:(NSString *)dateString formatString:(NSString *)formatString
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:formatString];
+    [dateFormatter setLocale:[NSLocale currentLocale]];
+    
+    return [dateFormatter dateFromString:dateString];
+}
+
+
 - (NSString *)customDateString:(NSString *)format
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];

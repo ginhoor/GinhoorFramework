@@ -10,8 +10,9 @@
 
 @interface NSDate (RCUtility)
 
-+ (NSDate *)yesterdayDate;
++ (NSDate *)dateFromString:(NSString *)dateFormatString formatString:(NSString *)formatString;
 
++ (NSDate *)yesterdayDate;
 // yyyy
 - (NSString *)yearString;
 // MM-dd

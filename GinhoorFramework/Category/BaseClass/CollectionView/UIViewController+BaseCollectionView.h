@@ -35,6 +35,6 @@
 // 获得新增celldata失败
 - (void (^)())GinAddNewCellDataFailureBlock:(UICollectionView *)collectionView;
 
-- (void)endRefreshing:(UICollectionView *)collectionView;
+- (void)endRefreshing;
 
 @end

@@ -50,7 +50,7 @@
             self.cellDataList = @[];
         }
         [tableView reloadData];
-        [self endRefreshing:tableView];
+        [self endRefreshing];
         
         self.currentPageIndex = self.startIndex;
         
@@ -63,7 +63,7 @@
 - (void (^)())GinSetupCellDataFailureBlock:(UITableView *)tableView
 {
     return ^(NSError *error) {
-        [self endRefreshing:tableView];
+        [self endRefreshing];
         if (self.finishLoadData) {
             self.finishLoadData(tableView);
         }
@@ -80,10 +80,10 @@
             self.cellDataList = mArray;
             
             [tableView reloadData];
-            [self endRefreshing:tableView];
+            [self endRefreshing];
             
         } else {
-            [self endRefreshing:tableView];
+            [self endRefreshing];
         }
         
         self.currentPageIndex++;
@@ -98,13 +98,13 @@
     return [self GinSetupCellDataFailureBlock:tableView];
 }
 
-- (void)endRefreshing:(UITableView *)tableView
+- (void)endRefreshing
 {
-    if (tableView.header.isRefreshing) {
-        [tableView.header endRefreshing];
+    if (self.tableView.header.isRefreshing) {
+        [self.tableView.header endRefreshing];
     }
-    if (tableView.footer.isRefreshing) {
-        [tableView.footer endRefreshing];
+    if (self.tableView.footer.isRefreshing) {
+        [self.tableView.footer endRefreshing];
     }
 }
 
