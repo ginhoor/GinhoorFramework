@@ -7,7 +7,7 @@
 //
 
 
-#import "GinBaseView.h"
-#import "GinBaseViewController.h"
-#import "GinBaseCollectionViewController.h"
-#import "GinBaseTableViewController.h"
+#import "UIView+BaseClass.h"
+#import "UIViewController+BaseClass.h"
+#import "UIViewController+BaseCollectionView.h"
+#import "UIViewController+BaseTableView.h"
