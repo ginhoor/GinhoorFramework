@@ -41,7 +41,7 @@
 }
 
 
-- (void (^)())setupCellDataSuccessBlock:(UITableView *)tableView
+- (void (^)())GinSetupCellDataSuccessBlock:(UITableView *)tableView
 {
     return ^(NSArray *dataList) {
         if (dataList && dataList.count > 0) {
@@ -60,7 +60,7 @@
     };
 }
 
-- (void (^)())setupCellDataFailureBlock:(UITableView *)tableView
+- (void (^)())GinSetupCellDataFailureBlock:(UITableView *)tableView
 {
     return ^(NSError *error) {
         [self endRefreshing:tableView];
@@ -70,7 +70,7 @@
     };
 }
 
-- (void (^)())addNewCellDataSuccessBlock:(UITableView *)tableView
+- (void (^)())GinAddNewCellDataSuccessBlock:(UITableView *)tableView
 {
     return ^(NSArray *dataList) {
         
@@ -93,9 +93,9 @@
     };
 }
 
-- (void (^)())addNewCellDataFailureBlock:(UITableView *)tableView
+- (void (^)())GinAddNewCellDataFailureBlock:(UITableView *)tableView
 {
-    return [self setupCellDataFailureBlock:tableView];
+    return [self GinSetupCellDataFailureBlock:tableView];
 }
 
 - (void)endRefreshing:(UITableView *)tableView

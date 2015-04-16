@@ -28,14 +28,14 @@
 
 
 // 初始化celldata成功
-- (void (^)())setupCellDataSuccessBlock:(UITableView *)tableView;
+- (void (^)())GinSetupCellDataSuccessBlock:(UITableView *)tableView;
 // 获得celldata失败
-- (void (^)())setupCellDataFailureBlock:(UITableView *)tableView;
+- (void (^)())GinSetupCellDataFailureBlock:(UITableView *)tableView;
 
 // 获得新增celldata 成功
-- (void (^)())addNewCellDataSuccessBlock:(UITableView *)tableView;
+- (void (^)())GinAddNewCellDataSuccessBlock:(UITableView *)tableView;
 // 获得新增celldata失败
-- (void (^)())addNewCellDataFailureBlock:(UITableView *)tableView;
+- (void (^)())GinAddNewCellDataFailureBlock:(UITableView *)tableView;
 
 
 

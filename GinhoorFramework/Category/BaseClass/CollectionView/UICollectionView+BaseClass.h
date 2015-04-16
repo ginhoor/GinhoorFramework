@@ -11,6 +11,6 @@
 @interface UICollectionView (BaseClass)
 
 + (instancetype)defualtWithItemSize:(CGSize)size;
-- (void)config:(void (^)(UICollectionView *tableView))configTableViewBlock;
+- (void)config:(void (^)(UICollectionView *collectionView))configTableViewBlock;
 
 @end
