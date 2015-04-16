@@ -105,7 +105,6 @@
 		006A93381ADE09090093BEBE /* GinBaseTitleHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseTitleHeader.m; sourceTree = "<group>"; };
 		006A933C1ADE09090093BEBE /* GinBaseCoreDataResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseCoreDataResponder.h; sourceTree = "<group>"; };
 		006A933D1ADE09090093BEBE /* GinBaseCoreDataResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseCoreDataResponder.m; sourceTree = "<group>"; };
-		006A933E1ADE09090093BEBE /* GinCategory_BaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCategory_BaseClass.h; sourceTree = "<group>"; };
 		006A93431ADE09090093BEBE /* GinBaseNoContentTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseNoContentTabCell.h; sourceTree = "<group>"; };
 		006A93441ADE09090093BEBE /* GinBaseNoContentTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseNoContentTabCell.m; sourceTree = "<group>"; };
 		006A93461ADE09090093BEBE /* GinBaseTitleSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseTitleSectionView.h; sourceTree = "<group>"; };
@@ -328,7 +327,6 @@
 		006A932A1ADE09090093BEBE /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				006A933E1ADE09090093BEBE /* GinCategory_BaseClass.h */,
 				006A932B1ADE09090093BEBE /* CollectionView */,
 				006A933B1ADE09090093BEBE /* CoreData */,
 				006A933F1ADE09090093BEBE /* TableView */,

@@ -9,7 +9,6 @@
 #import "Gin_Macro.h"
 #import "GinSysInfo.h"
 
-#import "GinCategory_BaseClass.h"
 #import "UIResponder+Unit.h"
 #import "UIAlertView+Unit.h"
 
