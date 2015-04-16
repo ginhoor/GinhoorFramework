@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GinhoorFramework"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "This is one of my personal library."
   s.requires_arc = true
 
@@ -30,7 +30,6 @@ Pod::Spec.new do |s|
   s.dependency 'CocoaLumberjack', '~> 2.0.0'
   s.dependency 'libextobjc', '~> 0.4.1'
   s.dependency 'MJRefresh', '~> 1.4.5'
-
 
   s.subspec 'GinSysInfo' do |ss|
     ss.source_files = 'GinhoorFramework/GinSysInfo/*.{h,m}',
