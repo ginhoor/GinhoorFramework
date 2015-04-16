@@ -10,7 +10,7 @@
 
 @implementation NSData (NSString)
 
-+ (NSData *)stringToData:(NSString)string
++ (NSData *)stringToData:(NSString *)string
 {
     return [string dataUsingEncoding:NSUTF8StringEncoding];
 }
