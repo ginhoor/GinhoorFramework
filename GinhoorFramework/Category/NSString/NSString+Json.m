@@ -10,6 +10,16 @@
 
 @implementation NSString (Json)
 
++ (NSString *)JSONString:(NSObject *)object
+{
+    NSError *__autoreleasing error = nil;
+    id result = [NSJSONSerialization dataWithJSONObject:object
+                                                options:kNilOptions error:&error];
+    if (error != nil) return nil;
+    return [[NSString alloc] initWithData:result
+                                 encoding:NSUTF8StringEncoding];
+}
+
 - (NSDictionary *)jsonDictionary
 {
     return [self JSONValue];

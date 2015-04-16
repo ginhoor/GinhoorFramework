@@ -13,4 +13,4 @@
 #import "UIAlertView+Unit.h"
 
 
-#import "GinCategory_Json.h"
+#import "NSString+Json.h"

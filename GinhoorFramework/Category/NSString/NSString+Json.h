@@ -10,6 +10,8 @@
 
 @interface NSString (Json)
 
++ (NSString *)JSONString:(NSObject *)object;
+
 - (NSDictionary *)jsonDictionary;
 - (NSArray *)jsonArray;
 
