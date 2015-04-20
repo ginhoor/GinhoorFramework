@@ -123,7 +123,7 @@
 
 - (void)setCurrentPageIndex:(NSUInteger)currentPageIndex
 {
-    [self setValue:@(currentPageIndex) forKey:@"currentPageIndex"];
+    [self setValue:@(currentPageIndex) key:@"currentPageIndex" policy:OBJC_ASSOCIATION_ASSIGN owner:self];
 }
 - (NSUInteger)currentPageIndex
 {
