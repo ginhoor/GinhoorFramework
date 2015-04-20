@@ -10,7 +10,7 @@
 
 @implementation UICollectionView (BaseClass)
 
-+ (instancetype)defualtWithItemSize:(CGSize)size
++ (instancetype)defaultWithItemSize:(CGSize)size
 {
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
@@ -20,7 +20,7 @@
     
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     collectionView.alwaysBounceVertical = YES;
-    collectionView.backgroundColor = [UIColor clearColor];
+    collectionView.backgroundColor = [UIColor whiteColor];
     
     return collectionView;
 }

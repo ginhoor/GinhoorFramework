@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-@interface UITableView (BaseClass)
+@interface UITableView (GinBaseClass)
 
 + (instancetype)defaultTableView;
 - (void)config:(void (^)(UITableView *tableView))configTableViewBlock;

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (CGRect)
+@interface UIView (GinCGRect)
 
 - (CGFloat)width;
 - (CGFloat)height;

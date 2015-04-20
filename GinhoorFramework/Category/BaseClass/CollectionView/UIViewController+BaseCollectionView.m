@@ -155,15 +155,9 @@
 {
     UICollectionView *collectionView = [self getValueForKey:@"collectionView"];
     if (!collectionView) {
-        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        layout.itemSize = CGSizeMake(78, 100);
-        layout.minimumInteritemSpacing = 1.f;
-        layout.minimumLineSpacing = 1.f;
         
-        collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
-        collectionView.alwaysBounceVertical = YES;
-        collectionView.contentInset = UIEdgeInsetsMake(10, 0, 0, 0);
-        collectionView.backgroundColor = [UIColor clearColor];
+        collectionView = [UICollectionView defaultWithItemSize:CGSizeMake(78, 100)];
+        
         [self setValue:collectionView key:@"collectionView" policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC owner:self];
 
     }

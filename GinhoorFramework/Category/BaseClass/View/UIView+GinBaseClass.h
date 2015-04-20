@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIView+CGRect.h"
+#import "UIView+GinCGRect.h"
 
-@interface UIView (BaseClass)
+@interface UIView (GinBaseClass)
 
 @end

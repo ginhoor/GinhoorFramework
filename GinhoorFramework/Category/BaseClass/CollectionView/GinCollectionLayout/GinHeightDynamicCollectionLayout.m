@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 zhitech. All rights reserved.
 //
 
-#import "HeightDynamicCollectionLayout.h"
+#import "GinHeightDynamicCollectionLayout.h"
 
-@implementation HeightDynamicCollectionLayout
+@implementation GinHeightDynamicCollectionLayout
 
-+ (void)setDelegateByLayout:(UICollectionViewLayout *)layout delegate:(id<HeightDynamicCollectionLayoutDelegate>)delegate
++ (void)setDelegateByLayout:(UICollectionViewLayout *)layout delegate:(id<GinHeightDynamicCollectionLayoutDelegate>)delegate
 {
-    ((HeightDynamicCollectionLayout *)layout).delegate = delegate;
+    ((GinHeightDynamicCollectionLayout *)layout).delegate = delegate;
 }
 
 - (void)prepareLayout

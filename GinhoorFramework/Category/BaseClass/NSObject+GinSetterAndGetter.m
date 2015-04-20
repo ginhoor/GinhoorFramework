@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import "NSObject+SetterAndGetter.h"
+#import "NSObject+GinSetterAndGetter.h"
 
-@implementation NSObject (SetterAndGetter)
+@implementation NSObject (GinSetterAndGetter)
 
 /**
  

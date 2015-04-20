@@ -9,7 +9,7 @@
 #import <Masonry.h>
 #import "NSObject+CoreGraphic.h"
 #import "GinScanQRCoderController.h"
-#import "UIViewController+BaseClass.h"
+#import "UIViewController+GinBaseClass.h"
 #import "Gin_Macro.h"
 
 @interface GinScanQRCoderController ()

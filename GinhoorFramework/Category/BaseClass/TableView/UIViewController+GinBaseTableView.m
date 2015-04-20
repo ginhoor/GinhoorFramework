@@ -6,11 +6,11 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import "NSObject+SetterAndGetter.h"
+#import "NSObject+GinSetterAndGetter.h"
 
-#import "UIViewController+BaseTableView.h"
+#import "UIViewController+GinBaseTableView.h"
 
-@implementation UIViewController (BaseTableView)
+@implementation UIViewController (GinBaseTableView)
 
 - (void)deallocSwizzle
 {
@@ -152,10 +152,8 @@
     UITableView *tableView = [self getValueForKey:@"tableView"];
     
     if (!tableView) {
-        tableView = [[UITableView alloc] init];
-        tableView.backgroundColor = [UIColor whiteColor];
-        tableView.tableFooterView = [[UIView alloc]init];
-        tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        tableView = [UITableView defaultTableView];
+
         [self setValue:tableView key:@"tableView" policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC owner:self];
     }
     return tableView;

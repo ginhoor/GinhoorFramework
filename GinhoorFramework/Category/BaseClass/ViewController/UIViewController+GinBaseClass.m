@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import "UIViewController+BaseClass.h"
+#import "UIViewController+GinBaseClass.h"
 
-@implementation UIViewController (BaseClass)
+@implementation UIViewController (GinBaseClass)
 
 + (instancetype)controller
 {

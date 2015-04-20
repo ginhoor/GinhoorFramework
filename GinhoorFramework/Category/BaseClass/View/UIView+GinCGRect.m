@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 zhitech. All rights reserved.
 //
 
-#import "UIView+CGRect.h"
+#import "UIView+GinCGRect.h"
 
-@implementation UIView (CGRect)
+@implementation UIView (GinCGRect)
 
 - (CGFloat)width
 {

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (BaseClass)
+@interface UIViewController (GinBaseClass)
 
 + (instancetype)controller;
 + (instancetype)controllerByDefaultName;

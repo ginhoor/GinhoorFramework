@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 
-@interface NSObject (SetterAndGetter)
+@interface NSObject (GinSetterAndGetter)
 
 - (void)setValue:(id)value key:(NSString *)key policy:(NSInteger)policy owner:(id)owner;
 

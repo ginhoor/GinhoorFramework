@@ -7,9 +7,9 @@
 //
 
 #import <objc/runtime.h>
-#import "UIView+BaseClass.h"
+#import "UIView+GinBaseClass.h"
 
-@implementation UIView (BaseClass)
+@implementation UIView (GinBaseClass)
 
 #pragma mark- 交换方法实现
 

@@ -10,11 +10,11 @@
 #import <Foundation/Foundation.h>
 
 #import <MJRefresh.h>
-#import "UIViewController+BaseClass.h"
+#import "UIViewController+GinBaseClass.h"
 
-#import "UITableView+BaseClass.h"
+#import "UITableView+GinBaseClass.h"
 
-@interface UIViewController (BaseTableView)
+@interface UIViewController (GinBaseTableView)
 
 @property (strong, nonatomic) NSArray *cellDataList;
 @property (strong, nonatomic) UITableView *tableView;
