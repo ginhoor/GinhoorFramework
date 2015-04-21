@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UICollectionView (BaseClass)
+@interface UICollectionView (GinBaseClass)
 
 + (instancetype)defaultWithItemSize:(CGSize)size;
 - (void)config:(void (^)(UICollectionView *collectionView))configTableViewBlock;

@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import "UICollectionView+BaseClass.h"
+#import "UICollectionView+GinBaseClass.h"
 
-@implementation UICollectionView (BaseClass)
+@implementation UICollectionView (GinBaseClass)
 
 + (instancetype)defaultWithItemSize:(CGSize)size
 {

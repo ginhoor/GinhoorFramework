@@ -6,11 +6,11 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import "NSObject+SetterAndGetter.h"
+#import "NSObject+GinSetterAndGetter.h"
 
-#import "UIViewController+BaseCollectionView.h"
+#import "UIViewController+GinBaseCollectionView.h"
 
-@implementation UIViewController (BaseCollectionView)
+@implementation UIViewController (GinBaseCollectionView)
 
 - (void)deallocSwizzle
 {

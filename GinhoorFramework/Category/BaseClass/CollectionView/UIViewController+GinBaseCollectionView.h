@@ -10,8 +10,8 @@
 #import <Foundation/Foundation.h>
 
 #import <MJRefresh.h>
-#import "UIViewController+BaseClass.h"
-#import "UICollectionView+BaseClass.h"
+#import "UIViewController+GinBaseClass.h"
+#import "UICollectionView+GinBaseClass.h"
 
 @interface UIViewController (BaseCollectionView)
 
