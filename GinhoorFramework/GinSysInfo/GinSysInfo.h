@@ -22,4 +22,7 @@
 
 + (BOOL)iOS8;
 
++ (void)onCheckVersion:(BOOL)needAllTips AppID:(unsigned long)AppID;
++ (void)jumpToAppStore:(unsigned long)App_ID;
+
 @end

@@ -80,13 +80,11 @@
             self.cellDataList = mArray;
             
             [self.tableView reloadData];
-            [self endRefreshing];
-            
-        } else {
-            [self endRefreshing];
+            self.currentPageIndex++;
         }
         
-        self.currentPageIndex++;
+        [self endRefreshing];
+        
         if (self.finishLoadData) {
             self.finishLoadData(self.tableView);
         }
