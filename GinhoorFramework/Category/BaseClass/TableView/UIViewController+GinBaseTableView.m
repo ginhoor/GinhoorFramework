@@ -132,7 +132,8 @@
 
 - (void)setStartIndex:(NSUInteger)startIndex
 {
-    [self setValue:@(startIndex) forKey:@"startIndex"];
+    [self setValue:@(startIndex) key:@"startIndex" policy:OBJC_ASSOCIATION_ASSIGN owner:self];
+
 }
 - (NSUInteger)startIndex
 {

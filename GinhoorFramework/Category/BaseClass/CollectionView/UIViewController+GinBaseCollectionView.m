@@ -126,7 +126,7 @@
 
 - (void)setCurrentPageIndex:(NSUInteger)currentPageIndex
 {
-    [self setValue:@(currentPageIndex) forKey:@"currentPageIndex"];
+    [self setValue:@(currentPageIndex) key:@"currentPageIndex" policy:OBJC_ASSOCIATION_ASSIGN owner:self];
 }
 - (NSUInteger)currentPageIndex
 {
@@ -137,7 +137,8 @@
 
 - (void)setStartIndex:(NSUInteger)startIndex
 {
-    [self setValue:@(startIndex) forKey:@"startIndex"];
+    [self setValue:@(startIndex) key:@"startIndex" policy:OBJC_ASSOCIATION_ASSIGN owner:self];
+
 }
 - (NSUInteger)startIndex
 {
