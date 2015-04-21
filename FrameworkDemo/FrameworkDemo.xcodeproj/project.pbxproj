@@ -62,6 +62,7 @@
 		006A94CF1ADFFF570093BEBE /* NSString+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94CE1ADFFF570093BEBE /* NSString+Json.m */; };
 		00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */; };
 		00F4C9A21AE6361F00B3F485 /* NSString+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9A11AE6361F00B3F485 /* NSString+Type.m */; };
+		00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9AA1AE65BEE00B3F485 /* CheckAppVersion.m */; };
 		4E5845315A651ACF25BD47AB /* libPods-FrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9888BAC7F9314A74456E85 /* libPods-FrameworkDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -188,6 +189,8 @@
 		00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GinPopup+Unit.m"; sourceTree = "<group>"; };
 		00F4C9A01AE6361F00B3F485 /* NSString+Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Type.h"; sourceTree = "<group>"; };
 		00F4C9A11AE6361F00B3F485 /* NSString+Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Type.m"; sourceTree = "<group>"; };
+		00F4C9A91AE65BEE00B3F485 /* CheckAppVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckAppVersion.h; sourceTree = "<group>"; };
+		00F4C9AA1AE65BEE00B3F485 /* CheckAppVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckAppVersion.m; sourceTree = "<group>"; };
 		4AED559755DDFC3C93282E3E /* Pods-FrameworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5CEA7F50353C1F94BBA57D65 /* Pods-FrameworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8F9888BAC7F9314A74456E85 /* libPods-FrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -284,6 +287,7 @@
 				006A93891ADE09090093BEBE /* CustomView */,
 				006A93901ADE09090093BEBE /* CustomViewController */,
 				006A93A51ADE09090093BEBE /* GinSysInfo */,
+				00F4C9A31AE65B4F00B3F485 /* Tools */,
 			);
 			name = GinhoorFramework;
 			path = ../GinhoorFramework;
@@ -653,6 +657,23 @@
 			path = GinSysInfo;
 			sourceTree = "<group>";
 		};
+		00F4C9A31AE65B4F00B3F485 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				00F4C9A81AE65BEE00B3F485 /* CheckAppVersion */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		00F4C9A81AE65BEE00B3F485 /* CheckAppVersion */ = {
+			isa = PBXGroup;
+			children = (
+				00F4C9A91AE65BEE00B3F485 /* CheckAppVersion.h */,
+				00F4C9AA1AE65BEE00B3F485 /* CheckAppVersion.m */,
+			);
+			path = CheckAppVersion;
+			sourceTree = "<group>";
+		};
 		75E79BE1465D23ACB47BEC14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -830,6 +851,7 @@
 				006A94B91ADF9CBD0093BEBE /* UICollectionView+GinBaseClass.m in Sources */,
 				006A93BF1ADE09090093BEBE /* NSData+NSString.m in Sources */,
 				006A93A91ADE09090093BEBE /* NSString+Base64.m in Sources */,
+				00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */,
 				006A93D31ADE09090093BEBE /* GinPopupViewController.m in Sources */,
 				00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */,
 				006A93D41ADE09090093BEBE /* GinQRCodePickerBaseController.m in Sources */,
