@@ -33,6 +33,11 @@
 
 - (void)setup
 {
+    
+}
+
+- (void)prepareForAutoLayout
+{
     self.translatesAutoresizingMaskIntoConstraints = NO;
 }
 

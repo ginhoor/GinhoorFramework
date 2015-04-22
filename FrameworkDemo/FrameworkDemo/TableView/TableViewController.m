@@ -1,27 +1,36 @@
 //
-//  ViewController.m
+//  TableViewController.m
 //  FrameworkDemo
 //
-//  Created by JunhuaShao on 15/4/13.
+//  Created by JunhuaShao on 15/4/22.
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import "ViewController.h"
-#import <Masonry.h>
 #import "TableViewController.h"
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+#import <MJRefresh.h>
+#import <Masonry.h>
 
+@interface TableViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) UITableView *table;
-
 @end
 
-@implementation ViewController
-
+@implementation TableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.table];
+    
+    __weak typeof(self) weak = self;
+    [self.table addLegendHeaderWithRefreshingBlock:^{
+        NSLog(@"呵呵");
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [weak.table.header endRefreshing];
+        });
+    }];
+    
+    [self.view setNeedsUpdateConstraints];
 }
 
 - (void)updateViewConstraints
@@ -31,6 +40,7 @@
         make.edges.equalTo(self.view);
     }];
 }
+
 
 - (UITableView *)table
 {
@@ -51,40 +61,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    cell.textLabel.text = @"事实上";
-    
-    switch (indexPath.row) {
-        case 0:
-        {
-            cell.textLabel.text = @"Base Table Example";
-        }
-            break;
-            
-        default:
-            break;
-    }
+    cell.textLabel.text = @"测试";
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    switch (indexPath.row) {
-        case 0:
-        {
-            TableViewController *exm = [[TableViewController alloc] init];
-            [self.navigationController pushViewController:exm animated:YES];
 
-        }
-            break;
-            
-        default:
-            break;
-    }
-    
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
-
-
-
 @end

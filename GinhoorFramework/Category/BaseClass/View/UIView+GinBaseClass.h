@@ -11,4 +11,6 @@
 
 @interface UIView (GinBaseClass)
 
+- (void)prepareForAutoLayout;
+
 @end
