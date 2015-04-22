@@ -26,6 +26,9 @@
 
 @property (copy, nonatomic) void(^finishLoadData)(UICollectionView *collectionView);
 
+- (void)setup_GinBaseCollectionView;
+- (void)cleanup_GinBaseCollectionView;
+
 // 初始化celldata成功
 - (void (^)(NSArray *dataList))GinSetupCellDataSuccessBlock;
 // 获得celldata失败

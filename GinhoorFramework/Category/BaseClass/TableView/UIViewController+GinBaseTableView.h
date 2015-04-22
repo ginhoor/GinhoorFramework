@@ -27,6 +27,9 @@
 @property (copy, nonatomic) void(^finishLoadData)(UITableView *tableView);
 
 
+- (void)setup_GinBaseTableView;
+- (void)cleanup_GinBaseTableView;
+
 // 初始化celldata成功
 - (void (^)(NSArray *dataList))GinSetupCellDataSuccessBlock;
 // 获得celldata失败
