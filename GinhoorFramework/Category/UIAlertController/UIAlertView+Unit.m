@@ -8,8 +8,6 @@
 
 #import "UIAlertView+Unit.h"
 #import "UIAlertController+Unit.h"
-
-#import "GinSysInfo.h"
 #import <BlocksKit+UIKit.h>
 
 @implementation UIAlertView (Unit)
@@ -17,7 +15,9 @@
 
 + (void)alertView:(NSString *)title message:(NSString *)message cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock
 {
-    if ([GinSysInfo iOS8]) {
+    Class UIAlertControllerClass = NSClassFromString(@"UIAlertController");
+    
+    if (UIAlertControllerClass) {
         
         [UIAlertController defaultAlert:title
                                 message:message
@@ -46,7 +46,10 @@
 
 + (void)alertView:(NSString *)title message:(NSString *)message submitTitle:(NSString *)submitTitle submitBlock:(void(^)())submitBlock cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock
 {
-    if ([GinSysInfo iOS8]) {
+    
+    Class UIAlertControllerClass = NSClassFromString(@"UIAlertController");
+    
+    if (UIAlertControllerClass) {
         
         [UIAlertController defaultAlert:title
                                 message:message
