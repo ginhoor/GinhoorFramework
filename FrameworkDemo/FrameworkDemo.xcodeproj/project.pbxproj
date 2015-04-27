@@ -25,8 +25,6 @@
 		006A93B41ADE09090093BEBE /* GinBaseTitleSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93471ADE09090093BEBE /* GinBaseTitleSectionView.m */; };
 		006A93B71ADE09090093BEBE /* UIView+GinCGRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A934E1ADE09090093BEBE /* UIView+GinCGRect.m */; };
 		006A93B91ADE09090093BEBE /* UIViewController+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93531ADE09090093BEBE /* UIViewController+GinBaseClass.m */; };
-		006A93BA1ADE09090093BEBE /* NSString+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93571ADE09090093BEBE /* NSString+Debug.m */; };
-		006A93BB1ADE09090093BEBE /* UIView+Debugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93591ADE09090093BEBE /* UIView+Debugger.m */; };
 		006A93BC1ADE09090093BEBE /* NSObject+CoreGraphic.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A935C1ADE09090093BEBE /* NSObject+CoreGraphic.m */; };
 		006A93BF1ADE09090093BEBE /* NSData+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93651ADE09090093BEBE /* NSData+NSString.m */; };
 		006A93C11ADE09090093BEBE /* NSDate+RCUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A936A1ADE09090093BEBE /* NSDate+RCUtility.m */; };
@@ -66,6 +64,8 @@
 		00F760B41AE8B0F500AA47C9 /* UITextView+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F760B21AE8B0F500AA47C9 /* UITextView+Keyboard.m */; };
 		00F7FC661AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7FC651AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m */; };
 		00F7FC691AEDDA860080AFC7 /* NSObject+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7FC681AEDDA860080AFC7 /* NSObject+Unit.m */; };
+		00F7FC701AEDEB840080AFC7 /* NSString+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7FC6D1AEDEB840080AFC7 /* NSString+Debug.m */; };
+		00F7FC711AEDEB840080AFC7 /* UIView+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7FC6F1AEDEB840080AFC7 /* UIView+Debug.m */; };
 		4E5845315A651ACF25BD47AB /* libPods-FrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9888BAC7F9314A74456E85 /* libPods-FrameworkDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -117,11 +117,6 @@
 		006A934E1ADE09090093BEBE /* UIView+GinCGRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GinCGRect.m"; sourceTree = "<group>"; };
 		006A93521ADE09090093BEBE /* UIViewController+GinBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GinBaseClass.h"; sourceTree = "<group>"; };
 		006A93531ADE09090093BEBE /* UIViewController+GinBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GinBaseClass.m"; sourceTree = "<group>"; };
-		006A93551ADE09090093BEBE /* GinCategory_Debugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCategory_Debugger.h; sourceTree = "<group>"; };
-		006A93561ADE09090093BEBE /* NSString+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Debug.h"; sourceTree = "<group>"; };
-		006A93571ADE09090093BEBE /* NSString+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Debug.m"; sourceTree = "<group>"; };
-		006A93581ADE09090093BEBE /* UIView+Debugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Debugger.h"; sourceTree = "<group>"; };
-		006A93591ADE09090093BEBE /* UIView+Debugger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Debugger.m"; sourceTree = "<group>"; };
 		006A935B1ADE09090093BEBE /* NSObject+CoreGraphic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CoreGraphic.h"; sourceTree = "<group>"; };
 		006A935C1ADE09090093BEBE /* NSObject+CoreGraphic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CoreGraphic.m"; sourceTree = "<group>"; };
 		006A93641ADE09090093BEBE /* NSData+NSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NSString.h"; sourceTree = "<group>"; };
@@ -200,6 +195,11 @@
 		00F7FC651AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GinSetterAndGetter.m"; sourceTree = "<group>"; };
 		00F7FC671AEDDA860080AFC7 /* NSObject+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Unit.h"; sourceTree = "<group>"; };
 		00F7FC681AEDDA860080AFC7 /* NSObject+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Unit.m"; sourceTree = "<group>"; };
+		00F7FC6B1AEDEB840080AFC7 /* GinCategory_Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCategory_Debug.h; sourceTree = "<group>"; };
+		00F7FC6C1AEDEB840080AFC7 /* NSString+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Debug.h"; sourceTree = "<group>"; };
+		00F7FC6D1AEDEB840080AFC7 /* NSString+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Debug.m"; sourceTree = "<group>"; };
+		00F7FC6E1AEDEB840080AFC7 /* UIView+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Debug.h"; sourceTree = "<group>"; };
+		00F7FC6F1AEDEB840080AFC7 /* UIView+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Debug.m"; sourceTree = "<group>"; };
 		4AED559755DDFC3C93282E3E /* Pods-FrameworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5CEA7F50353C1F94BBA57D65 /* Pods-FrameworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8F9888BAC7F9314A74456E85 /* libPods-FrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				006A93A41ADE09090093BEBE /* GinhoorFramework.h */,
+				00F7FC6A1AEDEB840080AFC7 /* Debug */,
 				006A93231ADE09090093BEBE /* Category */,
 				006A93891ADE09090093BEBE /* CustomView */,
 				006A93901ADE09090093BEBE /* CustomViewController */,
@@ -309,7 +310,6 @@
 				00F7FC631AEDDA6B0080AFC7 /* NSObject */,
 				006A93241ADE09090093BEBE /* Base64 */,
 				006A932A1ADE09090093BEBE /* BaseClass */,
-				006A93541ADE09090093BEBE /* Debug */,
 				006A935A1ADE09090093BEBE /* Draw */,
 				006A93631ADE09090093BEBE /* NSData */,
 				006A93681ADE09090093BEBE /* NSDate */,
@@ -450,18 +450,6 @@
 				006A93531ADE09090093BEBE /* UIViewController+GinBaseClass.m */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		006A93541ADE09090093BEBE /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-				006A93551ADE09090093BEBE /* GinCategory_Debugger.h */,
-				006A93561ADE09090093BEBE /* NSString+Debug.h */,
-				006A93571ADE09090093BEBE /* NSString+Debug.m */,
-				006A93581ADE09090093BEBE /* UIView+Debugger.h */,
-				006A93591ADE09090093BEBE /* UIView+Debugger.m */,
-			);
-			path = Debug;
 			sourceTree = "<group>";
 		};
 		006A935A1ADE09090093BEBE /* Draw */ = {
@@ -705,6 +693,18 @@
 			path = NSObject;
 			sourceTree = "<group>";
 		};
+		00F7FC6A1AEDEB840080AFC7 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				00F7FC6B1AEDEB840080AFC7 /* GinCategory_Debug.h */,
+				00F7FC6C1AEDEB840080AFC7 /* NSString+Debug.h */,
+				00F7FC6D1AEDEB840080AFC7 /* NSString+Debug.m */,
+				00F7FC6E1AEDEB840080AFC7 /* UIView+Debug.h */,
+				00F7FC6F1AEDEB840080AFC7 /* UIView+Debug.m */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
 		75E79BE1465D23ACB47BEC14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -860,7 +860,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				006A94C81ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m in Sources */,
-				006A93BB1ADE09090093BEBE /* UIView+Debugger.m in Sources */,
 				006A93C81ADE09090093BEBE /* UIImage+GinUnit.m in Sources */,
 				006A93AD1ADE09090093BEBE /* GinCollectionLayout.m in Sources */,
 				006A93C31ADE09090093BEBE /* NSString+Size.m in Sources */,
@@ -876,7 +875,6 @@
 				006A93AF1ADE09090093BEBE /* GinBaseTitleHeader.m in Sources */,
 				006A93D21ADE09090093BEBE /* GinPopupGradientView.m in Sources */,
 				00F4C9A21AE6361F00B3F485 /* NSString+Type.m in Sources */,
-				006A93BA1ADE09090093BEBE /* NSString+Debug.m in Sources */,
 				00905F111AE74A09004B5CA1 /* TableViewController.m in Sources */,
 				006A94C51ADFB9C70093BEBE /* UIView+GinBaseClass.m in Sources */,
 				006A94B91ADF9CBD0093BEBE /* UICollectionView+GinBaseClass.m in Sources */,
@@ -896,12 +894,14 @@
 				006A94551ADEB3260093BEBE /* UITableView+GinBaseClass.m in Sources */,
 				00F7FC661AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m in Sources */,
 				006A93C71ADE09090093BEBE /* UIAlertView+Unit.m in Sources */,
+				00F7FC711AEDEB840080AFC7 /* UIView+Debug.m in Sources */,
 				006A93B11ADE09090093BEBE /* GinBaseCoreDataResponder.m in Sources */,
 				006A93D11ADE09090093BEBE /* GinPopupContentView.m in Sources */,
 				006A93B91ADE09090093BEBE /* UIViewController+GinBaseClass.m in Sources */,
 				00F760B31AE8B0F500AA47C9 /* UITextField+Keyboard.m in Sources */,
 				000B52911ADBCF8100946853 /* AppDelegate.m in Sources */,
 				006A93BC1ADE09090093BEBE /* NSObject+CoreGraphic.m in Sources */,
+				00F7FC701AEDEB840080AFC7 /* NSString+Debug.m in Sources */,
 				000B528E1ADBCF8100946853 /* main.m in Sources */,
 				006A93C11ADE09090093BEBE /* NSDate+RCUtility.m in Sources */,
 				006A93C91ADE09090093BEBE /* UIResponder+Unit.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (Debugger)
+@interface UIView (Debug)
 
 - (void)printAutoLayoutTrace;
 

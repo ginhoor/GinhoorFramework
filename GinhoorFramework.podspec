@@ -60,6 +60,12 @@ Pod::Spec.new do |s|
                       'GinhoorFramework/CustomViewController/**/**/*.{h,m}'
   end
 
+  s.subspec 'Debug' do |ss|
+    ss.source_files = 'GinhoorFramework/Debug/*.{h,m}',
+                      'GinhoorFramework/Debug/**/*.{h,m}',
+                      'GinhoorFramework/Debug/**/**/*.{h,m}'
+  end
+
   s.subspec 'Tools' do |ss|
     ss.dependency 'GinhoorFramework/GinSysInfo'
     ss.dependency 'GinhoorFramework/Category'

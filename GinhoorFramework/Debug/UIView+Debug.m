@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 Byhere. All rights reserved.
 //
 
-#import "UIView+Debugger.h"
+#import "UIView+Debug.h"
 
-@implementation UIView (Debugger)
+@implementation UIView (UIView+Debug)
 
 - (void)printAutoLayoutTrace
 {
