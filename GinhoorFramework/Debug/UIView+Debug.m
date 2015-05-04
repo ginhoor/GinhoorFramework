@@ -8,7 +8,7 @@
 
 #import "UIView+Debug.h"
 
-@implementation UIView (UIView+Debug)
+@implementation UIView (Debug)
 
 - (void)printAutoLayoutTrace
 {
