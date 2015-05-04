@@ -7,64 +7,44 @@
 //
 
 #import "ViewController.h"
-#import <Masonry.h>
-#import "TableViewController.h"
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
-
-@property (strong, nonatomic) UITableView *table;
+#import "UIViewController+GinBaseTableView.h"
+#import "GinSystemButtonViewController.h"
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
 @implementation ViewController
 
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    [self.view addSubview:self.table];
-}
-
-- (void)updateViewConstraints
-{
-    [super updateViewConstraints];
-    [self.table mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
+    [self.tableView config:^(UITableView *tableView) {
+        tableView.delegate = self;
+        tableView.dataSource = self;
+        [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+        tableView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
     }];
-}
-
-- (UITableView *)table
-{
-    if (!_table) {
-        _table = [[UITableView alloc] init];
-        _table.delegate = self;
-        _table.dataSource = self;
-        [_table registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    }
-    return _table;
+    
+    self.cellDataList = @[@"自定义按钮"];
+    [self.tableView reloadData];
+    
+    [self.view addSubview:self.tableView];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return self.cellDataList.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    cell.textLabel.text = @"事实上";
-    
-    switch (indexPath.row) {
-        case 0:
-        {
-            cell.textLabel.text = @"Base Table Example";
-        }
-            break;
-            
-        default:
-            break;
-    }
+    cell.textLabel.text = self.cellDataList[indexPath.row];
     return cell;
 }
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -72,11 +52,7 @@
     
     switch (indexPath.row) {
         case 0:
-        {
-            TableViewController *exm = [[TableViewController alloc] init];
-            [self.navigationController pushViewController:exm animated:YES];
-
-        }
+            [self.navigationController pushViewController:[GinSystemButtonViewController controller] animated:YES];
             break;
             
         default:

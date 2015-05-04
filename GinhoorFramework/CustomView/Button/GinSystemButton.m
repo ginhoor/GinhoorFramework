@@ -8,13 +8,19 @@
 
 #import "GinSystemButton.h"
 
+@interface GinSystemButton()
+
+@property (strong, nonatomic) CAKeyframeAnimation *touchInSideAnimation;
+
+@end
+
 @implementation GinSystemButton
 
 - (instancetype)init
 {
     self = [GinSystemButton buttonWithType:UIButtonTypeSystem];
     if (self) {
-        [self applyStyle];
+        [self setup];
     }
     return self;
 }
@@ -22,19 +28,65 @@
 + (id)buttonWithType:(UIButtonType)buttonType
 {
     GinSystemButton *button = [super buttonWithType:buttonType];
-    [button applyStyle];
+    [button setup];
     return button;
 }
 
-- (void)applyStyle
+- (void)setSelected:(BOOL)selected
+{
+    [super setSelected:selected];
+    NSLog(@"选中");
+}
+
+- (void)setup
 {
     self.layer.cornerRadius = 4.0f;
     self.layer.masksToBounds = YES;
     
     self.tintColor = [UIColor whiteColor];
     self.backgroundColor = [UIColor colorWithRed:40/255.f green:35/255.f blue:67/255.f alpha:1.f];
-    self.showsTouchWhenHighlighted = YES;
+    [self addTarget:self action:@selector(touchUpInsideAction:) forControlEvents:UIControlEventTouchUpInside];
 }
+
+- (void)touchUpInsideAction:(id)sender
+{
+    [((UIButton*)sender).layer addAnimation:self.touchInSideAnimation forKey:@"GinPopUpAnimation"];
+}
+
+- (CAKeyframeAnimation *)touchInSideAnimation
+{
+    if (!_touchInSideAnimation) {
+        CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+        
+        CATransform3D scale1 = CATransform3DMakeScale(0.9, 0.9, 1);
+        CATransform3D scale2 = CATransform3DMakeScale(1.05, 1.05, 1);
+        CATransform3D scale3 = CATransform3DMakeScale(0.95, 0.95, 1);
+        CATransform3D scale4 = CATransform3DMakeScale(1.0, 1.0, 1);
+        
+        NSArray *frameValues = [NSArray arrayWithObjects:
+                                [NSValue valueWithCATransform3D:scale1],
+                                [NSValue valueWithCATransform3D:scale2],
+                                [NSValue valueWithCATransform3D:scale3],
+                                [NSValue valueWithCATransform3D:scale4],
+                                nil];
+        
+        [animation setValues:frameValues];
+        
+        NSArray *frameTimes = [NSArray arrayWithObjects:
+                               [NSNumber numberWithFloat:0.0],
+                               [NSNumber numberWithFloat:0.5],
+                               [NSNumber numberWithFloat:0.8],
+                               [NSNumber numberWithFloat:1.0],
+                               nil];
+        [animation setKeyTimes:frameTimes];
+        
+        animation.fillMode = kCAFillModeForwards;
+        animation.duration = .25;
+        _touchInSideAnimation = animation;
+    }
+    return _touchInSideAnimation;
+}
+
 
 
 @end

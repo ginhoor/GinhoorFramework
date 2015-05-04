@@ -62,6 +62,8 @@
 		00A527E81AF720FF00219A98 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527E71AF720FF00219A98 /* BaseTableViewController.m */; };
 		00A527EB1AF7210C00219A98 /* BaseCollectionViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527EA1AF7210C00219A98 /* BaseCollectionViewContoller.m */; };
 		00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527F61AF7259F00219A98 /* GinWebViewController.m */; };
+		00A527FB1AF728B700219A98 /* GinSystemButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527FA1AF728B700219A98 /* GinSystemButtonViewController.m */; };
+		00A527FD1AF7299B00219A98 /* GinSystemButtonViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A527FC1AF7299B00219A98 /* GinSystemButtonViewController.storyboard */; };
 		00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */; };
 		00F4C9A21AE6361F00B3F485 /* NSString+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9A11AE6361F00B3F485 /* NSString+Type.m */; };
 		00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9AA1AE65BEE00B3F485 /* CheckAppVersion.m */; };
@@ -196,6 +198,9 @@
 		00A527EA1AF7210C00219A98 /* BaseCollectionViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewContoller.m; sourceTree = "<group>"; };
 		00A527F51AF7259F00219A98 /* GinWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinWebViewController.h; sourceTree = "<group>"; };
 		00A527F61AF7259F00219A98 /* GinWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinWebViewController.m; sourceTree = "<group>"; };
+		00A527F91AF728B700219A98 /* GinSystemButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinSystemButtonViewController.h; sourceTree = "<group>"; };
+		00A527FA1AF728B700219A98 /* GinSystemButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinSystemButtonViewController.m; sourceTree = "<group>"; };
+		00A527FC1AF7299B00219A98 /* GinSystemButtonViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GinSystemButtonViewController.storyboard; sourceTree = "<group>"; };
 		00F4C9991AE630C300B3F485 /* GinPopup+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GinPopup+Unit.h"; sourceTree = "<group>"; };
 		00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GinPopup+Unit.m"; sourceTree = "<group>"; };
 		00F4C9A01AE6361F00B3F485 /* NSString+Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Type.h"; sourceTree = "<group>"; };
@@ -268,6 +273,7 @@
 				000B52901ADBCF8100946853 /* AppDelegate.m */,
 				000B52921ADBCF8100946853 /* ViewController.h */,
 				000B52931ADBCF8100946853 /* ViewController.m */,
+				00A527F81AF728AC00219A98 /* GinSystemButton */,
 				00905F0E1AE749F4004B5CA1 /* TableView */,
 				000B52951ADBCF8100946853 /* Main.storyboard */,
 				000B52981ADBCF8100946853 /* Images.xcassets */,
@@ -695,6 +701,16 @@
 			path = GinWebViewController;
 			sourceTree = "<group>";
 		};
+		00A527F81AF728AC00219A98 /* GinSystemButton */ = {
+			isa = PBXGroup;
+			children = (
+				00A527F91AF728B700219A98 /* GinSystemButtonViewController.h */,
+				00A527FA1AF728B700219A98 /* GinSystemButtonViewController.m */,
+				00A527FC1AF7299B00219A98 /* GinSystemButtonViewController.storyboard */,
+			);
+			path = GinSystemButton;
+			sourceTree = "<group>";
+		};
 		00F4C9A31AE65B4F00B3F485 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -850,6 +866,7 @@
 				006A93D61ADE09090093BEBE /* GinScanQRCoderController.storyboard in Resources */,
 				000B529C1ADBCF8100946853 /* LaunchScreen.xib in Resources */,
 				000B52991ADBCF8100946853 /* Images.xcassets in Resources */,
+				00A527FD1AF7299B00219A98 /* GinSystemButtonViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -902,6 +919,7 @@
 			files = (
 				00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */,
 				006A94C81ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m in Sources */,
+				00A527FB1AF728B700219A98 /* GinSystemButtonViewController.m in Sources */,
 				006A93C81ADE09090093BEBE /* UIImage+GinUnit.m in Sources */,
 				006A93AD1ADE09090093BEBE /* GinCollectionLayout.m in Sources */,
 				006A93C31ADE09090093BEBE /* NSString+Size.m in Sources */,
