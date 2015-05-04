@@ -61,6 +61,7 @@
 		00A527E51AF720C200219A98 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527E41AF720C200219A98 /* BaseViewController.m */; };
 		00A527E81AF720FF00219A98 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527E71AF720FF00219A98 /* BaseTableViewController.m */; };
 		00A527EB1AF7210C00219A98 /* BaseCollectionViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527EA1AF7210C00219A98 /* BaseCollectionViewContoller.m */; };
+		00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527F61AF7259F00219A98 /* GinWebViewController.m */; };
 		00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */; };
 		00F4C9A21AE6361F00B3F485 /* NSString+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9A11AE6361F00B3F485 /* NSString+Type.m */; };
 		00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9AA1AE65BEE00B3F485 /* CheckAppVersion.m */; };
@@ -193,6 +194,8 @@
 		00A527E71AF720FF00219A98 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		00A527E91AF7210C00219A98 /* BaseCollectionViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewContoller.h; sourceTree = "<group>"; };
 		00A527EA1AF7210C00219A98 /* BaseCollectionViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewContoller.m; sourceTree = "<group>"; };
+		00A527F51AF7259F00219A98 /* GinWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinWebViewController.h; sourceTree = "<group>"; };
+		00A527F61AF7259F00219A98 /* GinWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinWebViewController.m; sourceTree = "<group>"; };
 		00F4C9991AE630C300B3F485 /* GinPopup+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GinPopup+Unit.h"; sourceTree = "<group>"; };
 		00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GinPopup+Unit.m"; sourceTree = "<group>"; };
 		00F4C9A01AE6361F00B3F485 /* NSString+Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Type.h"; sourceTree = "<group>"; };
@@ -595,6 +598,7 @@
 		006A93901ADE09090093BEBE /* CustomViewController */ = {
 			isa = PBXGroup;
 			children = (
+				00A527F41AF7259700219A98 /* GinWebViewController */,
 				006A93911ADE09090093BEBE /* GinPageController */,
 				006A93941ADE09090093BEBE /* GinPopup */,
 				006A939D1ADE09090093BEBE /* GinQRCodePicker */,
@@ -680,6 +684,15 @@
 				00A527EA1AF7210C00219A98 /* BaseCollectionViewContoller.m */,
 			);
 			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		00A527F41AF7259700219A98 /* GinWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				00A527F51AF7259F00219A98 /* GinWebViewController.h */,
+				00A527F61AF7259F00219A98 /* GinWebViewController.m */,
+			);
+			path = GinWebViewController;
 			sourceTree = "<group>";
 		};
 		00F4C9A31AE65B4F00B3F485 /* Tools */ = {
@@ -887,6 +900,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */,
 				006A94C81ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m in Sources */,
 				006A93C81ADE09090093BEBE /* UIImage+GinUnit.m in Sources */,
 				006A93AD1ADE09090093BEBE /* GinCollectionLayout.m in Sources */,
