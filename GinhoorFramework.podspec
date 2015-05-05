@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GinhoorFramework"
-  s.version      = "0.2.1"
+  s.version      = "0.2.2"
   s.summary      = "This is one of my personal library."
   s.requires_arc = true
 
