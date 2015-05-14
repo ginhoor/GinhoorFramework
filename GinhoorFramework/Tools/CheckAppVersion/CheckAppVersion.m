@@ -7,12 +7,21 @@
 //
 
 #import "CheckAppVersion.h"
-#import "GinPopup+Unit.h"
+#import "UIAlertView+Unit.h"
 #import "NSString+Json.h"
 @implementation CheckAppVersion
 
+
 + (void)checkInStore:(BOOL)needAllTips AppID:(unsigned long)AppID
 {
+    NSString *version = [[NSUserDefaults standardUserDefaults] objectForKey:@"CheckAppVersion"];
+    
+    NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    
+    if (version && [version isEqualToString:appVersion]) {
+        return;
+    }
+    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
         //CFShow((__bridge CFTypeRef)(infoDic));
@@ -37,10 +46,13 @@
                 NSString *releaseNotes = [releaseInfo objectForKey:@"releaseNotes"];
                 dispatch_async(dispatch_get_main_queue(),^{
                     
-                    [GinPopup showTitle:@"有新版本更新" text:releaseNotes submitButton:@"更新" onClick:^{
+                    [UIAlertView alertView:@"有新版本" message:releaseNotes submitTitle:@"更新" submitBlock:^{
                         NSString *trackViewUrl = [releaseInfo objectForKey:@"trackViewUrl"];
                         NSURL *url = [NSURL URLWithString:trackViewUrl];
                         [[UIApplication sharedApplication]openURL:url];
+                        [[NSUserDefaults standardUserDefaults] setObject:appVersion forKey:@"CheckAppVersion"];
+                    } cancelTitle:@"取消" cancelBlock:^{
+                        [[NSUserDefaults standardUserDefaults] setObject:appVersion forKey:@"CheckAppVersion"];
                     }];
                 });
             }
@@ -48,7 +60,7 @@
             {
                 dispatch_async(dispatch_get_main_queue(),^{
                     if (needAllTips) {
-                        [GinPopup showTitle:@"此版本为最新版本" text:@"启禀陛下，当前确是最新版本！"];
+                        [UIAlertView alertView:@"版本检测" message:@"此版本为最新版本" cancelTitle:@"确认" cancelBlock:^{}];
                     }
                 });
             }
