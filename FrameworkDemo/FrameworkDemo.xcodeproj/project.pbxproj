@@ -186,6 +186,7 @@
 		006A94C71ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GinBaseCollectionView.m"; sourceTree = "<group>"; };
 		006A94CD1ADFFF570093BEBE /* NSString+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Json.h"; sourceTree = "<group>"; };
 		006A94CE1ADFFF570093BEBE /* NSString+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Json.m"; sourceTree = "<group>"; };
+		006AF4AB1B09EFE00033BCA3 /* GinTypeUnitHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinTypeUnitHeader.h; sourceTree = "<group>"; };
 		00905F0F1AE74A09004B5CA1 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		00905F101AE74A09004B5CA1 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		00A527E01AF720A500219A98 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
@@ -328,6 +329,7 @@
 		006A93231ADE09090093BEBE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				006AF4AA1B09EF290033BCA3 /* Header */,
 				00F7FC631AEDDA6B0080AFC7 /* NSObject */,
 				006A93241ADE09090093BEBE /* Base64 */,
 				006A932A1ADE09090093BEBE /* BaseClass */,
@@ -666,6 +668,14 @@
 				006A93A81ADE09090093BEBE /* GinSysInfo.m */,
 			);
 			path = GinSysInfo;
+			sourceTree = "<group>";
+		};
+		006AF4AA1B09EF290033BCA3 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				006AF4AB1B09EFE00033BCA3 /* GinTypeUnitHeader.h */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		00905F0E1AE749F4004B5CA1 /* TableView */ = {

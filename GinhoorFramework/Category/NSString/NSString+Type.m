@@ -10,6 +10,20 @@
 
 @implementation NSString (Type)
 
+- (BOOL)isBlank{
+    if (self == nil || self == NULL) {
+        return YES;
+    }
+    if ([self isKindOfClass:[NSNull class]]) {
+        return YES;
+    }
+    if ([[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0) {
+        return YES;
+    }
+    return NO;
+}
+
+
 - (BOOL)isImageType
 {
     return

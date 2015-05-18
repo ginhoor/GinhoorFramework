@@ -10,6 +10,8 @@
 
 @interface NSString (Type)
 
+- (BOOL)isBlank;
+
 - (BOOL)isImageType;
 - (BOOL)isGif;
 

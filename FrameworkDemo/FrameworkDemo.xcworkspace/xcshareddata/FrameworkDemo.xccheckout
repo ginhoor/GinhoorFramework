@@ -10,6 +10,8 @@
 	<string>FrameworkDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>C03E844FEB4C4D3A8D6606D70F764C034FA9BDE5</key>
+		<string>code.csdn.net:Ginhoor/funnyjokes.git</string>
 		<key>E680824C3205019E5AC924FE5450CFDD3924EF0C</key>
 		<string>https://github.com/ginhoor/GinhoorFramework.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>FrameworkDemo/FrameworkDemo.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>C03E844FEB4C4D3A8D6606D70F764C034FA9BDE5</key>
+		<string>../../../FunnyJokes</string>
 		<key>E680824C3205019E5AC924FE5450CFDD3924EF0C</key>
 		<string>../..</string>
 	</dict>
@@ -28,6 +32,14 @@
 	<string>E680824C3205019E5AC924FE5450CFDD3924EF0C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C03E844FEB4C4D3A8D6606D70F764C034FA9BDE5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FunnyJokes</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

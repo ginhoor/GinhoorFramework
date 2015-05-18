@@ -6,6 +6,7 @@
 //  Copyright (c) 2013年 ginhoor_home. All rights reserved.
 //
 
+#import "AppDelegate.h"
 
 ///////////////////////////////////////////
 // Device & OS
@@ -18,7 +19,14 @@
 
 #define CurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
 #define isRetina ([UIScreen mainScreen].scale > 1.0f)
+
+#define iPhone6P ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+
 #define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
 #define isPad     ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
 #define isPhone   ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
 
@@ -46,6 +54,8 @@
 #define FILE_MANAGER ([NSFileManager defaultManager])
 //notification center
 #define NOTIFICATION_CENTER ([NSNotificationCenter defaultCenter])
+//UIApplication
+#define APP_DELEGATE ((AppDelegate*)[[UIApplication sharedApplication] delegate])
 
 
 ///////////////////////////////////////////
@@ -58,8 +68,6 @@
 //image
 #define ImageByName(name)           [UIImage imageNamed:name]
 #define UIColorFromRGBA(r,g,b,a)    [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
-
-#define PointValue(x,y) [NSValue valueWithCGPoint:CGPointMake(x, y)]
 
 ///////////////////////////////////////////
 // degrees/radian
@@ -78,8 +86,8 @@
 #define DEFER_STRINGIFY(S) STRINGIFY(S)
 
 #define FORMATTED_MESSAGE(MSG) "[TODO-" DEFER_STRINGIFY(__COUNTER__) "]" MSG "\n" \
-                                DEFER_STRINGIFY(__FILE__) "\n" \
-                                " line " DEFER_STRINGIFY(__LINE__)
+DEFER_STRINGIFY(__FILE__) "\n" \
+" line " DEFER_STRINGIFY(__LINE__)
 #define KEYWORDIFY try{} @catch (...) {}
 
 #define TODO(MSG) KEYWORDIFY PRAGMA_MESSAGE(FORMATTED_MESSAGE(MSG))
