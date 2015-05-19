@@ -57,7 +57,7 @@
     
     CGFloat separatorWidth = 1;
     CGFloat separatorOffset = 10;
-    CGFloat itemWidth = (SCREEN_WIDTH-self.itemSeparators.count*separatorWidth)/self.menuItems.count;
+    CGFloat itemWidth = ([UIScreen mainScreen].bounds.size.width-self.itemSeparators.count*separatorWidth)/self.menuItems.count;
     
     [self.menuItems enumerateObjectsUsingBlock:^(GinPullDownMenuItem *item, NSUInteger idx, BOOL *stop) {
         
