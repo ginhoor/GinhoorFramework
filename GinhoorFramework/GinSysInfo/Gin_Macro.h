@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 ginhoor_home. All rights reserved.
 //
 
-#import "AppDelegate.h"
+
 
 ///////////////////////////////////////////
 // Device & OS
@@ -54,8 +54,10 @@
 #define FILE_MANAGER ([NSFileManager defaultManager])
 //notification center
 #define NOTIFICATION_CENTER ([NSNotificationCenter defaultCenter])
+
 //UIApplication
-#define APP_DELEGATE ((AppDelegate*)[[UIApplication sharedApplication] delegate])
+//#import "AppDelegate.h"
+//#define APP_DELEGATE ((AppDelegate*)[[UIApplication sharedApplication] delegate])
 
 
 ///////////////////////////////////////////
