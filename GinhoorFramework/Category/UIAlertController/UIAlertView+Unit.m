@@ -19,7 +19,7 @@
     
     if (UIAlertControllerClass) {
         
-#warning 在presented的页面上重复present UIAlertController，会crash
+//#warning 在presented的页面上重复present UIAlertController，会crash
         
         [UIAlertController defaultAlert:title
                                 message:message
