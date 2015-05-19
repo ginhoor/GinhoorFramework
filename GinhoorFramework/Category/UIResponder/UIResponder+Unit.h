@@ -10,7 +10,7 @@
 
 @interface UIResponder (Unit)
 
-- (UIViewController*)recentlyController;
+- (UIViewController *)recentlyController;
 - (UIViewController *)controlerByClass:(Class)mClass;
 - (UINavigationController*)recentlyNavigationContoller;
 
