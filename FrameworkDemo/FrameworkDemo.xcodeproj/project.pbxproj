@@ -14,6 +14,7 @@
 		000B52991ADBCF8100946853 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000B52981ADBCF8100946853 /* Images.xcassets */; };
 		000B529C1ADBCF8100946853 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000B529A1ADBCF8100946853 /* LaunchScreen.xib */; };
 		000B52A81ADBCF8100946853 /* FrameworkDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B52A71ADBCF8100946853 /* FrameworkDemoTests.m */; };
+		0018B8F01B0C3AE0001E52D5 /* GinStepperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B8EF1B0C3AE0001E52D5 /* GinStepperView.m */; };
 		006A22111B0AF92E0003059F /* GinPullDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A220C1B0AF92E0003059F /* GinPullDownMenu.m */; };
 		006A22121B0AF92E0003059F /* GinPullDownMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A220E1B0AF92E0003059F /* GinPullDownMenuCell.m */; };
 		006A22131B0AF92E0003059F /* GinPullDownMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A22101B0AF92E0003059F /* GinPullDownMenuItem.m */; };
@@ -104,6 +105,8 @@
 		000B52A61ADBCF8100946853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000B52A71ADBCF8100946853 /* FrameworkDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameworkDemoTests.m; sourceTree = "<group>"; };
 		000B531C1ADBEB8D00946853 /* FrameworkDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrameworkDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		0018B8EE1B0C3AE0001E52D5 /* GinStepperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinStepperView.h; sourceTree = "<group>"; };
+		0018B8EF1B0C3AE0001E52D5 /* GinStepperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinStepperView.m; sourceTree = "<group>"; };
 		006A220B1B0AF92E0003059F /* GinPullDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPullDownMenu.h; sourceTree = "<group>"; };
 		006A220C1B0AF92E0003059F /* GinPullDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinPullDownMenu.m; sourceTree = "<group>"; };
 		006A220D1B0AF92E0003059F /* GinPullDownMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPullDownMenuCell.h; sourceTree = "<group>"; };
@@ -318,6 +321,15 @@
 				000B52A61ADBCF8100946853 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0018B8ED1B0C3AE0001E52D5 /* Stepper */ = {
+			isa = PBXGroup;
+			children = (
+				0018B8EE1B0C3AE0001E52D5 /* GinStepperView.h */,
+				0018B8EF1B0C3AE0001E52D5 /* GinStepperView.m */,
+			);
+			path = Stepper;
 			sourceTree = "<group>";
 		};
 		006A220A1B0AF92E0003059F /* PullDownMenu */ = {
@@ -609,6 +621,7 @@
 		006A93891ADE09090093BEBE /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				0018B8ED1B0C3AE0001E52D5 /* Stepper */,
 				006A220A1B0AF92E0003059F /* PullDownMenu */,
 				00A527DF1AF7209000219A98 /* BaseClass */,
 				00F760AE1AE8B0F500AA47C9 /* Keyboard */,
@@ -1006,6 +1019,7 @@
 				00A527E51AF720C200219A98 /* BaseViewController.m in Sources */,
 				006A93AC1ADE09090093BEBE /* GinBaseNoContentCell.m in Sources */,
 				00A527E21AF720A500219A98 /* BaseView.m in Sources */,
+				0018B8F01B0C3AE0001E52D5 /* GinStepperView.m in Sources */,
 				006A93CB1ADE09090093BEBE /* UIView+view2Image.m in Sources */,
 				006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */,
 				006A93CA1ADE09090093BEBE /* UIView+Layer.m in Sources */,
