@@ -37,6 +37,7 @@
 
 - (void)setup
 {
+    self.translatesAutoresizingMaskIntoConstraints = NO;
     self.layer.masksToBounds = YES;
     self.layer.borderWidth = 1;
     self.layer.borderColor = [UIColor lightGrayColor].CGColor;
@@ -93,34 +94,56 @@
     self.stepper.value = value;
     
     if (self.stepper.value == 0) {
-
-        [UIView animateWithDuration:0.2 animations:^{
-            [self mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.width.offset(30);
-            }];
-            
-            [self.decrease mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.width.offset(0);
-            }];
-            [self layoutIfNeeded];
-            [self.decrease layoutIfNeeded];
-        }];
-
-    } else if (self.stepper.value != 0){
         
-        [UIView animateWithDuration:0.15 animations:^{
-            [self mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.width.offset(90);
+        //        判断当前控件是否需要刷新约束（主要防止影响位置初始化）
+        if (self.needsUpdateConstraints)
+        {
+            [self toggleMode:NO animated:NO];
+        } else {
+            [UIView animateWithDuration:0.2 animations:^{
+                [self toggleMode:NO animated:YES];
+                [self layoutIfNeeded];
+                [self.decrease layoutIfNeeded];
             }];
-            
-            [self.decrease mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.width.offset(30);
+        }
+    } else if (self.stepper.value != 0){
+        if (self.needsUpdateConstraints)
+        {
+            [self toggleMode:YES animated:NO];
+        } else {
+            [UIView animateWithDuration:0.2 animations:^{
+                [self toggleMode:YES animated:YES];
             }];
-            [self layoutIfNeeded];
-            [self.decrease layoutIfNeeded];
-        }];
+        }
     }
     self.valueLabel.text = @(self.stepper.value).stringValue;
+}
+
+- (void)toggleMode:(BOOL)isOpen animated:(BOOL)animated
+{
+    if (isOpen) {
+        [self mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.width.offset(90);
+        }];
+        
+        [self.decrease mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.width.offset(30);
+        }];
+        
+    } else {
+        [self mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.width.offset(30);
+        }];
+        
+        [self.decrease mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.width.offset(0);
+        }];
+    }
+    
+    if (animated) {
+        [self layoutIfNeeded];
+        [self.decrease layoutIfNeeded];
+    }
 }
 
 - (UIControl *)backgroundControl
