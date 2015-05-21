@@ -196,6 +196,8 @@
                 [item animateIndicator:NO completedBlock:^{}];
             }
         }];
+        [self animateBackgroundControl:YES completedBlock:^{}];
+        
         if (self.tableView.superview) {
             [self animateTableView:NO completedBlock:^{
                 [self animateTableView:YES completedBlock:^{}];
@@ -203,15 +205,12 @@
         } else {
             [self animateTableView:YES completedBlock:^{}];
         }
-        
-        [self animateBackgroundControl:YES completedBlock:^{}];
-        
     } else {
         GinPullDownMenuItem *item = self.menuItems[self.selectedIndex];
         [item animateTitleLabel:NO];
         [item animateIndicator:NO completedBlock:^{}];
-        [self animateTableView:NO completedBlock:^{}];
         [self animateBackgroundControl:NO completedBlock:^{}];
+        [self animateTableView:NO completedBlock:^{}];
         self.selectedIndex = -1;
     }
 }
@@ -219,13 +218,11 @@
 - (void)animateBackgroundControl:(BOOL)selected completedBlock:(void(^)())completedBlock
 {
     if (selected) {
-
-//        防止当前view处于底层
-        [self.superview bringSubviewToFront:self];
-        [self.superview insertSubview:self.backgroundControl belowSubview:self.tableView];
-
+        
+        [self.superview addSubview:self.backgroundControl];
+        
         [self.backgroundControl mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self);
+            make.top.equalTo(self.mas_bottom);
             make.left.equalTo(self.backgroundControl.superview);
             make.right.equalTo(self.backgroundControl.superview);
             make.bottom.equalTo(self.backgroundControl.superview);
@@ -237,7 +234,7 @@
             self.backgroundControl.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.3];
             [self.backgroundControl layoutIfNeeded];
         }];
-
+        
     } else {
         [UIView animateWithDuration:0.2 animations:^{
             self.backgroundControl.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
@@ -256,13 +253,10 @@
 {
     if (selected) {
         [self.tableView reloadData];
+        [self.superview addSubview:self.tableView];
         
-//        防止当前view处于底层
-        [self.superview bringSubviewToFront:self];
-        [self.superview insertSubview:self.tableView belowSubview:self];
-
         CGFloat tableViewHeight = ([self.tableView numberOfRowsInSection:0] > 5) ? (5 * self.tableView.rowHeight) : ([self.tableView numberOfRowsInSection:0] * self.tableView.rowHeight);
-
+        
         [self.tableView mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.mas_bottom);
             make.left.equalTo(self);
@@ -281,7 +275,7 @@
             [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.height.offset(tableViewHeight);
             }];
-
+            
             [self.tableView layoutIfNeeded];
         } completion:^(BOOL finished) {
             if (completedBlock) {
@@ -310,7 +304,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     self.categorySeletedIndex[self.selectedIndex] = @(indexPath.row);
-
+    
     GinPullDownMenuItem *item = self.menuItems[self.selectedIndex];
     
     item.titleLabel.text = self.menuCellDataList[self.selectedIndex][indexPath.row];
@@ -342,7 +336,7 @@
     } else {
         [cell setAccessoryType:UITableViewCellAccessoryNone];
     }
-        
+    
     return cell;
 }
 
