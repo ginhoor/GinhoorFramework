@@ -39,7 +39,6 @@
 		006A93C31ADE09090093BEBE /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A936F1ADE09090093BEBE /* NSString+Size.m */; };
 		006A93C41ADE09090093BEBE /* NSURL+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93721ADE09090093BEBE /* NSURL+Unit.m */; };
 		006A93C51ADE09090093BEBE /* NSURL+Videos.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93741ADE09090093BEBE /* NSURL+Videos.m */; };
-		006A93C61ADE09090093BEBE /* UIAlertController+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93771ADE09090093BEBE /* UIAlertController+Unit.m */; };
 		006A93C71ADE09090093BEBE /* UIAlertView+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93791ADE09090093BEBE /* UIAlertView+Unit.m */; };
 		006A93C81ADE09090093BEBE /* UIImage+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A937C1ADE09090093BEBE /* UIImage+GinUnit.m */; };
 		006A93C91ADE09090093BEBE /* UIResponder+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A937F1ADE09090093BEBE /* UIResponder+Unit.m */; };
@@ -158,8 +157,6 @@
 		006A93721ADE09090093BEBE /* NSURL+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Unit.m"; sourceTree = "<group>"; };
 		006A93731ADE09090093BEBE /* NSURL+Videos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Videos.h"; sourceTree = "<group>"; };
 		006A93741ADE09090093BEBE /* NSURL+Videos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Videos.m"; sourceTree = "<group>"; };
-		006A93761ADE09090093BEBE /* UIAlertController+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Unit.h"; sourceTree = "<group>"; };
-		006A93771ADE09090093BEBE /* UIAlertController+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Unit.m"; sourceTree = "<group>"; };
 		006A93781ADE09090093BEBE /* UIAlertView+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Unit.h"; sourceTree = "<group>"; };
 		006A93791ADE09090093BEBE /* UIAlertView+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Unit.m"; sourceTree = "<group>"; };
 		006A937B1ADE09090093BEBE /* UIImage+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GinUnit.h"; sourceTree = "<group>"; };
@@ -593,8 +590,6 @@
 		006A93751ADE09090093BEBE /* UIAlertController */ = {
 			isa = PBXGroup;
 			children = (
-				006A93761ADE09090093BEBE /* UIAlertController+Unit.h */,
-				006A93771ADE09090093BEBE /* UIAlertController+Unit.m */,
 				006A93781ADE09090093BEBE /* UIAlertView+Unit.h */,
 				006A93791ADE09090093BEBE /* UIAlertView+Unit.m */,
 			);
@@ -1007,7 +1002,6 @@
 				006A94BC1ADFAD6D0093BEBE /* UIViewController+GinBaseTableView.m in Sources */,
 				006A93B71ADE09090093BEBE /* UIView+GinCGRect.m in Sources */,
 				006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */,
-				006A93C61ADE09090093BEBE /* UIAlertController+Unit.m in Sources */,
 				006A93D51ADE09090093BEBE /* GinScanQRCoderController.m in Sources */,
 				006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */,
 				006A93AF1ADE09090093BEBE /* GinBaseTitleHeader.m in Sources */,
@@ -1186,6 +1180,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = FrameworkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FrameworkDemo/FrameworkDemo-Bridging-Header.h";
@@ -1199,6 +1194,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = FrameworkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FrameworkDemo/FrameworkDemo-Bridging-Header.h";
