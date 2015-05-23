@@ -19,6 +19,11 @@
 		0018B9141B0EBE12001E52D5 /* HZTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0018B9131B0EBE12001E52D5 /* HZTableViewController.storyboard */; };
 		0018B9221B0EC977001E52D5 /* HZCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B9211B0EC977001E52D5 /* HZCollectionViewLayout.m */; };
 		0018B9851B100883001E52D5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B9841B100883001E52D5 /* UIColor+Hex.m */; };
+		0018B9951B100D66001E52D5 /* GinFloatedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B9881B100D66001E52D5 /* GinFloatedButton.m */; };
+		0018B9961B100D66001E52D5 /* GinImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B98B1B100D66001E52D5 /* GinImageButton.m */; };
+		0018B9971B100D66001E52D5 /* GinSystemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B98E1B100D66001E52D5 /* GinSystemButton.m */; };
+		0018B9981B100D66001E52D5 /* GinTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B9911B100D66001E52D5 /* GinTagButton.m */; };
+		0018B9991B100D66001E52D5 /* GinVerticalLayoutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B9941B100D66001E52D5 /* GinVerticalLayoutButton.m */; };
 		006A22111B0AF92E0003059F /* GinPullDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A220C1B0AF92E0003059F /* GinPullDownMenu.m */; };
 		006A22121B0AF92E0003059F /* GinPullDownMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A220E1B0AF92E0003059F /* GinPullDownMenuCell.m */; };
 		006A22131B0AF92E0003059F /* GinPullDownMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A22101B0AF92E0003059F /* GinPullDownMenuItem.m */; };
@@ -46,7 +51,6 @@
 		006A93CA1ADE09090093BEBE /* UIView+Layer.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93821ADE09090093BEBE /* UIView+Layer.m */; };
 		006A93CB1ADE09090093BEBE /* UIView+view2Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93841ADE09090093BEBE /* UIView+view2Image.m */; };
 		006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93881ADE09090093BEBE /* UIWindow+fullScreenshots.m */; };
-		006A93CD1ADE09090093BEBE /* GinSystemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A938C1ADE09090093BEBE /* GinSystemButton.m */; };
 		006A93CF1ADE09090093BEBE /* GinPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93931ADE09090093BEBE /* GinPageViewController.m */; };
 		006A93D01ADE09090093BEBE /* GinPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93961ADE09090093BEBE /* GinPopup.m */; };
 		006A93D11ADE09090093BEBE /* GinPopupContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93981ADE09090093BEBE /* GinPopupContentView.m */; };
@@ -117,6 +121,16 @@
 		0018B9211B0EC977001E52D5 /* HZCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZCollectionViewLayout.m; sourceTree = "<group>"; };
 		0018B9831B100883001E52D5 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		0018B9841B100883001E52D5 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		0018B9871B100D66001E52D5 /* GinFloatedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinFloatedButton.h; sourceTree = "<group>"; };
+		0018B9881B100D66001E52D5 /* GinFloatedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinFloatedButton.m; sourceTree = "<group>"; };
+		0018B98A1B100D66001E52D5 /* GinImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinImageButton.h; sourceTree = "<group>"; };
+		0018B98B1B100D66001E52D5 /* GinImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinImageButton.m; sourceTree = "<group>"; };
+		0018B98D1B100D66001E52D5 /* GinSystemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinSystemButton.h; sourceTree = "<group>"; };
+		0018B98E1B100D66001E52D5 /* GinSystemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinSystemButton.m; sourceTree = "<group>"; };
+		0018B9901B100D66001E52D5 /* GinTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinTagButton.h; sourceTree = "<group>"; };
+		0018B9911B100D66001E52D5 /* GinTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinTagButton.m; sourceTree = "<group>"; };
+		0018B9931B100D66001E52D5 /* GinVerticalLayoutButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinVerticalLayoutButton.h; sourceTree = "<group>"; };
+		0018B9941B100D66001E52D5 /* GinVerticalLayoutButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinVerticalLayoutButton.m; sourceTree = "<group>"; };
 		006A220B1B0AF92E0003059F /* GinPullDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPullDownMenu.h; sourceTree = "<group>"; };
 		006A220C1B0AF92E0003059F /* GinPullDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinPullDownMenu.m; sourceTree = "<group>"; };
 		006A220D1B0AF92E0003059F /* GinPullDownMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPullDownMenuCell.h; sourceTree = "<group>"; };
@@ -172,8 +186,6 @@
 		006A93841ADE09090093BEBE /* UIView+view2Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+view2Image.m"; sourceTree = "<group>"; };
 		006A93871ADE09090093BEBE /* UIWindow+fullScreenshots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+fullScreenshots.h"; sourceTree = "<group>"; };
 		006A93881ADE09090093BEBE /* UIWindow+fullScreenshots.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+fullScreenshots.m"; sourceTree = "<group>"; };
-		006A938B1ADE09090093BEBE /* GinSystemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinSystemButton.h; sourceTree = "<group>"; };
-		006A938C1ADE09090093BEBE /* GinSystemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinSystemButton.m; sourceTree = "<group>"; };
 		006A93921ADE09090093BEBE /* GinPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPageViewController.h; sourceTree = "<group>"; };
 		006A93931ADE09090093BEBE /* GinPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinPageViewController.m; sourceTree = "<group>"; };
 		006A93951ADE09090093BEBE /* GinPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPopup.h; sourceTree = "<group>"; };
@@ -367,6 +379,51 @@
 				0018B9841B100883001E52D5 /* UIColor+Hex.m */,
 			);
 			path = UIColor;
+			sourceTree = "<group>";
+		};
+		0018B9861B100D66001E52D5 /* GinFloatedButton */ = {
+			isa = PBXGroup;
+			children = (
+				0018B9871B100D66001E52D5 /* GinFloatedButton.h */,
+				0018B9881B100D66001E52D5 /* GinFloatedButton.m */,
+			);
+			path = GinFloatedButton;
+			sourceTree = "<group>";
+		};
+		0018B9891B100D66001E52D5 /* GinImageButton */ = {
+			isa = PBXGroup;
+			children = (
+				0018B98A1B100D66001E52D5 /* GinImageButton.h */,
+				0018B98B1B100D66001E52D5 /* GinImageButton.m */,
+			);
+			path = GinImageButton;
+			sourceTree = "<group>";
+		};
+		0018B98C1B100D66001E52D5 /* GinSystemButton */ = {
+			isa = PBXGroup;
+			children = (
+				0018B98D1B100D66001E52D5 /* GinSystemButton.h */,
+				0018B98E1B100D66001E52D5 /* GinSystemButton.m */,
+			);
+			path = GinSystemButton;
+			sourceTree = "<group>";
+		};
+		0018B98F1B100D66001E52D5 /* GinTagButton */ = {
+			isa = PBXGroup;
+			children = (
+				0018B9901B100D66001E52D5 /* GinTagButton.h */,
+				0018B9911B100D66001E52D5 /* GinTagButton.m */,
+			);
+			path = GinTagButton;
+			sourceTree = "<group>";
+		};
+		0018B9921B100D66001E52D5 /* GinVerticalLayoutButton */ = {
+			isa = PBXGroup;
+			children = (
+				0018B9931B100D66001E52D5 /* GinVerticalLayoutButton.h */,
+				0018B9941B100D66001E52D5 /* GinVerticalLayoutButton.m */,
+			);
+			path = GinVerticalLayoutButton;
 			sourceTree = "<group>";
 		};
 		006A220A1B0AF92E0003059F /* PullDownMenu */ = {
@@ -670,8 +727,11 @@
 		006A938A1ADE09090093BEBE /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				006A938B1ADE09090093BEBE /* GinSystemButton.h */,
-				006A938C1ADE09090093BEBE /* GinSystemButton.m */,
+				0018B9861B100D66001E52D5 /* GinFloatedButton */,
+				0018B9891B100D66001E52D5 /* GinImageButton */,
+				0018B98C1B100D66001E52D5 /* GinSystemButton */,
+				0018B98F1B100D66001E52D5 /* GinTagButton */,
+				0018B9921B100D66001E52D5 /* GinVerticalLayoutButton */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -1002,6 +1062,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */,
+				0018B9991B100D66001E52D5 /* GinVerticalLayoutButton.m in Sources */,
 				006A94C81ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m in Sources */,
 				006A22121B0AF92E0003059F /* GinPullDownMenuCell.m in Sources */,
 				00A527FB1AF728B700219A98 /* GinSystemButtonViewController.m in Sources */,
@@ -1011,6 +1072,7 @@
 				006A93B31ADE09090093BEBE /* GinBaseNoContentTabCell.m in Sources */,
 				006A93AE1ADE09090093BEBE /* GinHeightDynamicCollectionLayout.m in Sources */,
 				006A22111B0AF92E0003059F /* GinPullDownMenu.m in Sources */,
+				0018B9971B100D66001E52D5 /* GinSystemButton.m in Sources */,
 				006A94CF1ADFFF570093BEBE /* NSString+Json.m in Sources */,
 				006A94BC1ADFAD6D0093BEBE /* UIViewController+GinBaseTableView.m in Sources */,
 				006A93B71ADE09090093BEBE /* UIView+GinCGRect.m in Sources */,
@@ -1025,16 +1087,17 @@
 				006A94B91ADF9CBD0093BEBE /* UICollectionView+GinBaseClass.m in Sources */,
 				006A93BF1ADE09090093BEBE /* NSData+NSString.m in Sources */,
 				006A93A91ADE09090093BEBE /* NSString+Base64.m in Sources */,
+				0018B9961B100D66001E52D5 /* GinImageButton.m in Sources */,
 				00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */,
 				006A93D31ADE09090093BEBE /* GinPopupViewController.m in Sources */,
 				00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */,
 				006A93D41ADE09090093BEBE /* GinQRCodePickerBaseController.m in Sources */,
 				0018B90F1B0EB701001E52D5 /* HZTableViewController.m in Sources */,
+				0018B9981B100D66001E52D5 /* GinTagButton.m in Sources */,
 				00F7FC691AEDDA860080AFC7 /* NSObject+Unit.m in Sources */,
 				006A93C41ADE09090093BEBE /* NSURL+Unit.m in Sources */,
 				006A93C21ADE09090093BEBE /* NSString+formatContentString.m in Sources */,
 				006A93D01ADE09090093BEBE /* GinPopup.m in Sources */,
-				006A93CD1ADE09090093BEBE /* GinSystemButton.m in Sources */,
 				000B52941ADBCF8100946853 /* ViewController.m in Sources */,
 				006A93C51ADE09090093BEBE /* NSURL+Videos.m in Sources */,
 				006A94551ADEB3260093BEBE /* UITableView+GinBaseClass.m in Sources */,
@@ -1058,6 +1121,7 @@
 				00A527E51AF720C200219A98 /* BaseViewController.m in Sources */,
 				006A93AC1ADE09090093BEBE /* GinBaseNoContentCell.m in Sources */,
 				00A527E21AF720A500219A98 /* BaseView.m in Sources */,
+				0018B9951B100D66001E52D5 /* GinFloatedButton.m in Sources */,
 				0018B8F01B0C3AE0001E52D5 /* GinStepperView.m in Sources */,
 				006A93CB1ADE09090093BEBE /* UIView+view2Image.m in Sources */,
 				006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */,
