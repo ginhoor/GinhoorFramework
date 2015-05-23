@@ -18,6 +18,7 @@
 		0018B90F1B0EB701001E52D5 /* HZTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B90E1B0EB701001E52D5 /* HZTableViewController.m */; };
 		0018B9141B0EBE12001E52D5 /* HZTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0018B9131B0EBE12001E52D5 /* HZTableViewController.storyboard */; };
 		0018B9221B0EC977001E52D5 /* HZCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B9211B0EC977001E52D5 /* HZCollectionViewLayout.m */; };
+		0018B9851B100883001E52D5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B9841B100883001E52D5 /* UIColor+Hex.m */; };
 		006A22111B0AF92E0003059F /* GinPullDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A220C1B0AF92E0003059F /* GinPullDownMenu.m */; };
 		006A22121B0AF92E0003059F /* GinPullDownMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A220E1B0AF92E0003059F /* GinPullDownMenuCell.m */; };
 		006A22131B0AF92E0003059F /* GinPullDownMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A22101B0AF92E0003059F /* GinPullDownMenuItem.m */; };
@@ -114,6 +115,8 @@
 		0018B9131B0EBE12001E52D5 /* HZTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HZTableViewController.storyboard; sourceTree = "<group>"; };
 		0018B9201B0EC977001E52D5 /* HZCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZCollectionViewLayout.h; sourceTree = "<group>"; };
 		0018B9211B0EC977001E52D5 /* HZCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZCollectionViewLayout.m; sourceTree = "<group>"; };
+		0018B9831B100883001E52D5 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		0018B9841B100883001E52D5 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		006A220B1B0AF92E0003059F /* GinPullDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPullDownMenu.h; sourceTree = "<group>"; };
 		006A220C1B0AF92E0003059F /* GinPullDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinPullDownMenu.m; sourceTree = "<group>"; };
 		006A220D1B0AF92E0003059F /* GinPullDownMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPullDownMenuCell.h; sourceTree = "<group>"; };
@@ -357,6 +360,15 @@
 			path = HZCollectionViewLayout;
 			sourceTree = "<group>";
 		};
+		0018B9821B10083E001E52D5 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				0018B9831B100883001E52D5 /* UIColor+Hex.h */,
+				0018B9841B100883001E52D5 /* UIColor+Hex.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
 		006A220A1B0AF92E0003059F /* PullDownMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,6 +415,7 @@
 				006A93801ADE09090093BEBE /* UIView */,
 				006A93851ADE09090093BEBE /* UIViewController */,
 				006A93861ADE09090093BEBE /* UIWindow */,
+				0018B9821B10083E001E52D5 /* UIColor */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1039,6 +1052,7 @@
 				00F7FC701AEDEB840080AFC7 /* NSString+Debug.m in Sources */,
 				000B528E1ADBCF8100946853 /* main.m in Sources */,
 				006A93C11ADE09090093BEBE /* NSDate+RCUtility.m in Sources */,
+				0018B9851B100883001E52D5 /* UIColor+Hex.m in Sources */,
 				006A93C91ADE09090093BEBE /* UIResponder+Unit.m in Sources */,
 				00A527EB1AF7210C00219A98 /* BaseCollectionViewContoller.m in Sources */,
 				00A527E51AF720C200219A98 /* BaseViewController.m in Sources */,
