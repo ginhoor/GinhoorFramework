@@ -7,7 +7,6 @@
 //
 
 #import "GinVerticalLayoutButton.h"
-
 @interface GinVerticalLayoutButton()
 
 @property (strong, nonatomic) UIView *selectedView;
@@ -39,9 +38,11 @@
 
 - (void)layoutSubviews
 {
+    
+    CGFloat one_px = 1.f/[UIScreen mainScreen].scale;
  
     self.selectedView.frame = //CGRectMake(0, self.imageTopOffset + self.imageView.bounds.size.height+5+20+5, self.bounds.size.width, 2);
-    CGRectMake(- ONE_PHYSICAL_PX, self.bounds.size.height - 2, self.bounds.size.width + 2 * ONE_PHYSICAL_PX, 2);
+    CGRectMake(- one_px, self.bounds.size.height - 2, self.bounds.size.width + 2 * one_px, 2);
 
     if (self.selected) {
         self.selectedView.hidden = NO;
@@ -84,11 +85,17 @@
 }
 
 
+- (void)setSelectedColor:(UIColor *)selectedColor
+{
+    _selectedColor = selectedColor;
+    self.selectedView.backgroundColor = selectedColor;
+}
+
 - (UIView *)selectedView
 {
     if (!_selectedView) {
         _selectedView = [[UIView alloc] init];
-        _selectedView.backgroundColor = [UIColor HMEHighlightTintColor];
+        _selectedView.backgroundColor = [UIColor lightGrayColor];
         _selectedView.hidden = YES;
     }
     return _selectedView;
