@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 Byhere. All rights reserved.
 //
 
+#import <Masonry.h>
 #import "GinTagButton.h"
-#import "UIColor+HMEColors.h"
 @interface GinTagButton()
 
 @property (strong, nonatomic) UILabel *tagLabel;
@@ -75,7 +75,7 @@
     if (!_tagLabel) {
         _tagLabel = [[UILabel alloc] init];
         _tagLabel.textColor = [UIColor whiteColor];
-        _tagLabel.backgroundColor = [UIColor HMEHighlightTintColor];
+        _tagLabel.backgroundColor = [UIColor redColor];
         _tagLabel.layer.masksToBounds = YES;
         _tagLabel.text = @"0";
         _tagLabel.textAlignment = NSTextAlignmentCenter;
