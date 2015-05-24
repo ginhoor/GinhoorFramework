@@ -2,13 +2,15 @@
 source 'https://git.oschina.net/akuandev/Specs.git'
 target 'FrameworkDemo' do
     #pod 'GinhoorFramework', :podspec => '../GinhoorFramework.podspec'  #指定podspec文件
+
+    #pod 'AFNetworking', '~> 2.5.1'
+    pod 'Mantle', '~> 1.5.4'
+    #pod 'libextobjc', '~> 0.4.1'
+    #pod 'CocoaLumberjack', '~> 2.0.0'
+
     pod 'BlocksKit', '~> 2.2.5'
     pod 'Masonry', '~> 0.6.1'
-    pod 'AFNetworking', '~> 2.5.1'
-    pod 'CocoaLumberjack', '~> 2.0.0'
-    pod 'libextobjc', '~> 0.4.1'
     pod 'MJRefresh', '~> 1.4.5'
-
 end
 
 target 'FrameworkDemoTests' do
