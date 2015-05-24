@@ -25,6 +25,7 @@
 		0018B9981B100D66001E52D5 /* GinTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B9911B100D66001E52D5 /* GinTagButton.m */; };
 		0018B9991B100D66001E52D5 /* GinVerticalLayoutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B9941B100D66001E52D5 /* GinVerticalLayoutButton.m */; };
 		0018BA4A1B115DA4001E52D5 /* NSValueTransformer+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BA491B115DA4001E52D5 /* NSValueTransformer+Unit.m */; };
+		0018BC6E1B118C7F001E52D5 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC6D1B118C7F001E52D5 /* NSString+MD5.m */; };
 		006A22111B0AF92E0003059F /* GinPullDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A220C1B0AF92E0003059F /* GinPullDownMenu.m */; };
 		006A22121B0AF92E0003059F /* GinPullDownMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A220E1B0AF92E0003059F /* GinPullDownMenuCell.m */; };
 		006A22131B0AF92E0003059F /* GinPullDownMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A22101B0AF92E0003059F /* GinPullDownMenuItem.m */; };
@@ -134,6 +135,8 @@
 		0018B9941B100D66001E52D5 /* GinVerticalLayoutButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinVerticalLayoutButton.m; sourceTree = "<group>"; };
 		0018BA481B115DA4001E52D5 /* NSValueTransformer+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+Unit.h"; sourceTree = "<group>"; };
 		0018BA491B115DA4001E52D5 /* NSValueTransformer+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+Unit.m"; sourceTree = "<group>"; };
+		0018BC6C1B118C7F001E52D5 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		0018BC6D1B118C7F001E52D5 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		006A220B1B0AF92E0003059F /* GinPullDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPullDownMenu.h; sourceTree = "<group>"; };
 		006A220C1B0AF92E0003059F /* GinPullDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinPullDownMenu.m; sourceTree = "<group>"; };
 		006A220D1B0AF92E0003059F /* GinPullDownMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPullDownMenuCell.h; sourceTree = "<group>"; };
@@ -663,6 +666,8 @@
 				006A936D1ADE09090093BEBE /* NSString+formatContentString.m */,
 				006A936E1ADE09090093BEBE /* NSString+Size.h */,
 				006A936F1ADE09090093BEBE /* NSString+Size.m */,
+				0018BC6C1B118C7F001E52D5 /* NSString+MD5.h */,
+				0018BC6D1B118C7F001E52D5 /* NSString+MD5.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -1116,6 +1121,7 @@
 				0018B90F1B0EB701001E52D5 /* HZTableViewController.m in Sources */,
 				0018B9981B100D66001E52D5 /* GinTagButton.m in Sources */,
 				0018BA4A1B115DA4001E52D5 /* NSValueTransformer+Unit.m in Sources */,
+				0018BC6E1B118C7F001E52D5 /* NSString+MD5.m in Sources */,
 				00F7FC691AEDDA860080AFC7 /* NSObject+Unit.m in Sources */,
 				006A93C41ADE09090093BEBE /* NSURL+Unit.m in Sources */,
 				006A93C21ADE09090093BEBE /* NSString+formatContentString.m in Sources */,
