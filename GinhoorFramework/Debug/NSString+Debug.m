@@ -10,7 +10,7 @@
 
 @implementation NSString (Debug)
 
-- (NSString*)stringForFrame:(CGRect)frame
++ (NSString*)stringForFrame:(CGRect)frame
 {
     return [NSString stringWithFormat:@"%f,%f,%f,%f",frame.origin.x,frame.origin.y,frame.size.width,frame.size.height];
 }

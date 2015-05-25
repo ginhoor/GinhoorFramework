@@ -17,7 +17,7 @@
     
     unsigned char result[CC_MD5_DIGEST_LENGTH];
     
-    CC_MD5(original_str, strlen(original_str), result);
+    CC_MD5(original_str, (CC_LONG)strlen(original_str), result);
     
     NSMutableString *hash = [NSMutableString string];
     

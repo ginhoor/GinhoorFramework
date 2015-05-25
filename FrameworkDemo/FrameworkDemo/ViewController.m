@@ -10,6 +10,7 @@
 #import "UIViewController+GinBaseTableView.h"
 #import "GinSystemButtonViewController.h"
 #import "HZTableViewController.h"
+#import "TabsViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -29,7 +30,7 @@
         tableView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
     }];
     
-    self.cellDataList = @[@"自定义按钮",@"水平的TableView"];
+    self.cellDataList = @[@"自定义按钮",@"水平的TableView",@"带Tabs的PageContrller"];
     [self.tableView reloadData];
     
     [self.view addSubview:self.tableView];
@@ -58,7 +59,9 @@
             break;
         case 1:
             [self.navigationController pushViewController:[HZTableViewController controller] animated:YES];
-            
+        case 2:
+            [self.navigationController pushViewController:[[TabsViewController alloc]init] animated:YES];
+
         default:
             break;
     }
