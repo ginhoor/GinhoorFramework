@@ -40,6 +40,33 @@
     [self.view addSubview:self.segmentedControl];
     [self.segmentedControl addTarget:self action:@selector(segmentedContolValueChangeAction:) forControlEvents:UIControlEventValueChanged];
     
+    
+    self.segmentedControl.selectedSegmentIndex = self.selectedIndex;
+    
+    __weak GinTabsViewController *weakSelf = self;
+    
+    [self.segmentedControl setIndexChangeBlock:^(NSInteger index) {
+
+        UIPageViewControllerNavigationDirection direction;
+        if (index > weakSelf.selectedIndex) {
+            direction = UIPageViewControllerNavigationDirectionForward;
+        } else {
+            direction = UIPageViewControllerNavigationDirectionReverse;
+        }
+        weakSelf.selectedIndex = index;
+        
+        [weakSelf.pageController setViewControllers:@[weakSelf.contentViewControllers[weakSelf.selectedIndex]] direction:direction animated:YES completion:^(BOOL finished) {
+
+            // Set the current page again to obtain synchronisation between tabs and content
+            // 防止标签跳动切换
+
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                [weakSelf.pageController setViewControllers:@[weakSelf.contentViewControllers[weakSelf.selectedIndex]] direction:direction animated:NO completion:nil];
+            });
+        }];
+    }];
+    
     [self addChildViewController:self.pageController];
     [self.view insertSubview:self.pageController.view belowSubview:self.segmentedControl];
     [self.pageController didMoveToParentViewController:self];
@@ -88,8 +115,8 @@
 - (void)setSelectedIndex:(NSInteger)selectedIndex
 {
     if (_selectedIndex == selectedIndex)
+        return;
     _selectedIndex = selectedIndex;
-
     NSAssert(self.contentViewControllers && self.contentViewControllers.count > 0, @"contentViewControllers cann't be set to nil");
 
     [self.pageController setViewControllers:@[self.contentViewControllers[self.selectedIndex]]
