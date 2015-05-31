@@ -7,98 +7,90 @@
 //
 
 #import "NSDate+Range.h"
+#import "NSDate+RCUtility.h"
+
+const static NSTimeInterval oneDayInterval = 24*60*60;
 
 @implementation NSDate (Range)
 
-- (NSArray *)arrayOfDatesByBeginTime:(NSString*)beginTimeString endTime:(NSString*)endTimeString interval:(NSUInteger)interval numberOfdays:(NSUInteger)num constraintsOfCurrentTime:(BOOL)constraint
++ (NSDate *)dateInToday:(NSString *)time
 {
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *currentDateComponents = [calendar components:
-                                        NSCalendarUnitHour|NSCalendarUnitMinute
-                                                   fromDate:[NSDate date]];
+    NSDateFormatter *totalFormatter = [[NSDateFormatter alloc] init];
+    [totalFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    [totalFormatter setLocale:[NSLocale currentLocale]];
+    NSDate *date = [totalFormatter dateFromString:[NSString stringWithFormat:@"%@ %@:00",[[NSDate date] detailDateString],time]];
     
-    
-    NSArray *beginTime = [self timeArray:beginTimeString];
-    NSDateComponents *beginDateComponents = [currentDateComponents copy];
-    beginDateComponents.hour = ((NSString *)beginTime[0]).integerValue;
-    beginDateComponents.minute = ((NSString *)beginTime[1]).integerValue;
+    return date;
+}
 
-    NSArray *endTime = [self timeArray:endTimeString];
-    NSDateComponents *endDateComponents = [currentDateComponents copy];
-    endDateComponents.hour = ((NSString *)endTime[0]).integerValue;
-    endDateComponents.minute = ((NSString *)endTime[1]).integerValue;
++ (NSArray *)dateList:(NSDate *)startDate
+              endDate:(NSDate *)endDate
+         timeInterval:(NSTimeInterval)timeInterval
+            numOfDays:(NSUInteger)numOfDays
+{
+    NSMutableArray *days = [NSMutableArray array];
     
-    
-//    NSDate *beginDate = [calendar dateFromComponents:beginDateComponents];
-//    NSDate *endDate = [calendar dateFromComponents:endDateComponents];
-    
-    
-    NSMutableArray *daysArray = [NSMutableArray array];
-    
-    for (NSUInteger i = 0; i < num; i++ ) {
+    for (NSUInteger i = 0; i < numOfDays; i++){
         
-        NSMutableArray *tempArray = [NSMutableArray array];
-        
-        for (NSUInteger j = beginDateComponents.hour; j < endDateComponents.hour; j++) {
-
-            NSDateComponents *beginTemp = [beginDateComponents copy];
-            NSDateComponents *endTemp = [endDateComponents copy];
-
-            for (NSUInteger k = 0 ; k < 60; k+=interval) {
-                beginTemp.minute = k;
-                [tempArray addObject:beginTemp];
-            }
-            
-        }
-
-        beginDateComponents.day++;
-        endDateComponents.day++;
-        [daysArray addObject:tempArray];
+        [days addObject:[NSDate timeInOneDay:[NSDate dateWithTimeInterval:oneDayInterval*i sinceDate:startDate] endDate:[NSDate dateWithTimeInterval:oneDayInterval*i sinceDate:endDate] timeInterval:timeInterval]];
     }
     
-    
-    
-    
-    return @[];
+    return days;
 }
 
-- (NSArray *)timeArray:(NSString *)timeString
++ (NSArray *)realtimeDateList:(NSDate *)startDate
+                      endDate:(NSDate *)endDate
+                 timeInterval:(NSTimeInterval)timeInterval
+                    numOfDays:(NSUInteger)numOfDays;
 {
-    NSArray *array = [timeString componentsSeparatedByString:@":"];
-    return array;
+    
+    NSMutableArray *days = [NSMutableArray array];
+    
+    [days addObject:[NSDate realtimeInOneDay:startDate endDate:endDate timeInterval:timeInterval]];
+    
+    [days addObjectsFromArray:
+     [NSDate dateList:[NSDate dateWithTimeInterval:oneDayInterval sinceDate:startDate]
+              endDate:[NSDate dateWithTimeInterval:oneDayInterval sinceDate:endDate]
+         timeInterval:timeInterval
+            numOfDays:numOfDays-1]];
+    
+    return days;
+}
+
++ (NSArray *)timeInOneDay:(NSDate *)startDate
+                  endDate:(NSDate *)endDate
+             timeInterval:(NSTimeInterval)timeInterval
+{
+    NSMutableArray *timeInOneDay = [NSMutableArray array];
+    
+    for (NSTimeInterval  i = startDate.timeIntervalSince1970; i <= endDate.timeIntervalSince1970; i+=timeInterval) {
+        NSDate *tempDate = [NSDate dateWithTimeIntervalSince1970:i];
+        [timeInOneDay addObject:tempDate];
+    }
+    return timeInOneDay;
 }
 
 
-//上一个月的日期
-- (NSDate *)lastMonthDate:(NSDate *)date
++ (NSArray *)realtimeInOneDay:(NSDate *)startDate
+                      endDate:(NSDate *)endDate
+                 timeInterval:(NSTimeInterval)timeInterval
 {
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components = [calendar components:(NSCalendarUnitWeekday | NSCalendarUnitMonth |NSCalendarUnitYear | NSCalendarUnitDay) fromDate:date];
-    if ([components month] == 1) {
-        [components setMonth:12];
-        [components setYear:[components year] - 1];
+    NSMutableArray *timeInDayWithRealtimeConstraint = [NSMutableArray array];
+    
+    NSTimeInterval startTimeInterval = 0;
+    
+    if ([startDate compare:[NSDate date]] == NSOrderedAscending) {
+        startTimeInterval = [NSDate dateWithTimeInterval:(ceil(ABS(startDate.timeIntervalSinceNow)/timeInterval))*timeInterval sinceDate:startDate].timeIntervalSince1970;
     } else {
-        [components setMonth:[components month] - 1];
+        startTimeInterval = startDate.timeIntervalSince1970;
     }
-    NSDate *lastMonth = [calendar dateFromComponents:components];
-    return lastMonth;
-}
-
-//下一个月的日期
-- (NSDate *)nextMonthDate:(NSDate *)date
-{
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components = [calendar components:(NSCalendarUnitWeekday|NSCalendarUnitMonth |NSCalendarUnitYear | NSCalendarUnitDay) fromDate:date];
-    if ([components month] == 12) {
-        [components setMonth:1];
-        [components setYear:[components year] + 1];
-    } else {
-        [components setMonth:[components month] + 1];
+    
+    for (NSTimeInterval  i = startTimeInterval; i <= endDate.timeIntervalSince1970; i+=timeInterval) {
         
+        NSDate *tempDate = [NSDate dateWithTimeIntervalSince1970:i];
+        [timeInDayWithRealtimeConstraint addObject:tempDate];
     }
-    NSDate *lastMonth = [calendar dateFromComponents:components];
-    return lastMonth;
+    return timeInDayWithRealtimeConstraint;
 }
-
 
 @end

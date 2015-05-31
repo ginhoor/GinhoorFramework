@@ -14,6 +14,7 @@
 
 @interface PhotoGalleryController()
 
+@property (copy, nonatomic) NSArray *imageUrlList;
 @property (strong, nonatomic) UILabel *numLabel;
 @property (strong, nonatomic) GinPageViewController *pageController;
 @end
@@ -54,6 +55,16 @@
         make.right.offset(0);
         make.height.offset(50);
     }];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
 }
 
 - (void)setImageUrlList:(NSArray *)imageUrlList selectedIndex:(NSUInteger)index

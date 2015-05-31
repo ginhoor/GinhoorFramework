@@ -9,7 +9,7 @@
 #import <UIImageView+WebCache.h>
 #import <Masonry.h>
 #import "ShowPhotoViewController.h"
-#import "NSString+Debug.h"
+
 
 #define kMaxZoomScale 3.f
 

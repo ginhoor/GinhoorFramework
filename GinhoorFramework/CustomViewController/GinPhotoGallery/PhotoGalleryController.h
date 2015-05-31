@@ -11,10 +11,6 @@
 #import "UIResponder+Unit.h"
 @interface PhotoGalleryController : UIViewController
 
-
-@property (copy, nonatomic) NSArray *imageUrlList;
-
 - (void)setImageUrlList:(NSArray *)imageUrlList selectedIndex:(NSUInteger)index;
-
 
 @end
