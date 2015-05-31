@@ -137,12 +137,10 @@
 - (UICollectionView *)collectionView
 {
     UICollectionView *collectionView = [self getValueForKey:@"collectionView"];
+    
     if (!collectionView) {
-        
-        collectionView = [UICollectionView defaultWithItemSize:CGSizeMake(78, 100)];
-        
+        collectionView = [UICollectionView defaultWithItemSize:CGSizeZero];
         [self setValue:collectionView key:@"collectionView" policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC owner:self];
-
     }
     return collectionView;
 }

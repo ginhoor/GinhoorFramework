@@ -13,8 +13,9 @@
 @property (strong, nonatomic) UIPageControl *pageControl;
 @property (copy, nonatomic) void(^pageDidChanged)(UIPageViewController *pageViewController,NSUInteger index);
 
-+ (instancetype)controllerWithControllers:(NSArray *)contentViewControllers beginIndex:(NSInteger)index;
++ (instancetype)controllerWithControllers:(NSArray *)contentViewControllers selectedIndex:(NSInteger)index;
 
+- (void)setContentViewControllers:(NSArray *)contentViewControllers selectedIndex:(NSUInteger)selectedIndex;
 
 
 @end

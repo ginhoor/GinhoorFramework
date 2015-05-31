@@ -27,11 +27,12 @@ Pod::Spec.new do |s|
   s.dependency 'BlocksKit', '~> 2.2.5' 
   s.dependency 'Masonry', '~> 0.6.1'
   s.dependency 'MJRefresh', '~> 1.4.5'
+  s.dependency 'SDWebImage', '~> 3.7.2'
 
+#s.dependency 'Mantle', '~> 1.5.4'
 #s.dependency 'AFNetworking', '~> 2.5.1'
 #s.dependency 'CocoaLumberjack', '~> 2.0.0'
 #s.dependency 'libextobjc', '~> 0.4.1'
-#s.dependency 'Mantle', '~> 1.5.4'
 
   s.subspec 'GinSysInfo' do |ss|
     ss.source_files = 'GinhoorFramework/GinSysInfo/*.{h,m}',

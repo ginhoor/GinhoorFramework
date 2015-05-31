@@ -7,6 +7,7 @@
 //
 
 #import <Masonry.h>
+
 #import "GinTagButton.h"
 @interface GinTagButton()
 
@@ -40,7 +41,7 @@
     [self.tagLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self).offset(self.tagTopOffset);
         make.centerX.equalTo(self).offset(15);
-        make.size.sizeOffset(CGSizeMake(16, 16));
+        make.size.sizeOffset(CGSizeMake(20, 20));
     }];
     [super updateConstraints];
 }
@@ -80,7 +81,7 @@
         _tagLabel.text = @"0";
         _tagLabel.textAlignment = NSTextAlignmentCenter;
         _tagLabel.hidden = YES;
-        [_tagLabel setFont:[UIFont systemFontOfSize:14]];
+        [_tagLabel setFont:[UIFont systemFontOfSize:10]];
     }
     return _tagLabel;
 }

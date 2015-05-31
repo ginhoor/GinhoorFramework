@@ -16,13 +16,13 @@
 
 @implementation GinPageViewController
 
-+ (instancetype)controllerWithControllers:(NSArray *)contentViewControllers beginIndex:(NSInteger)index
++ (instancetype)controllerWithControllers:(NSArray *)contentViewControllers selectedIndex:(NSInteger)index
 {
-    
+    NSAssert(contentViewControllers&&contentViewControllers.count > 0, @"In this initialize method contentViewControllers can't be nil");
+
     GinPageViewController *controller = [[GinPageViewController alloc] init];
+    [controller setContentViewControllers:contentViewControllers selectedIndex:index];
     
-    controller.contentViewControllers = contentViewControllers;
-    controller.selectedIndex = index;
     return controller;
 }
 
@@ -37,14 +37,22 @@
     [super viewDidLoad];
     
     [self.view addSubview:self.pageControl];
-    self.pageControl.currentPage = self.selectedIndex;
-    [self.pageController setViewControllers:@[self.contentViewControllers[self.selectedIndex]]
-                                  direction:UIPageViewControllerNavigationDirectionForward
-                                   animated:NO
-                                 completion:nil];
+    
     [self addChildViewController:self.pageController];
     [self.view insertSubview:self.pageController.view belowSubview:self.pageControl];
     [self.pageController didMoveToParentViewController:self];
+}
+
+- (void)setContentViewControllers:(NSArray *)contentViewControllers selectedIndex:(NSUInteger)selectedIndex
+{
+    self.selectedIndex = selectedIndex;
+    self.pageControl.currentPage = selectedIndex;
+    self.contentViewControllers = contentViewControllers;
+
+    [self.pageController setViewControllers:@[contentViewControllers[selectedIndex]]
+                                  direction:UIPageViewControllerNavigationDirectionForward
+                                   animated:NO
+                                 completion:nil];
 }
 
 - (UIPageViewController *)pageController

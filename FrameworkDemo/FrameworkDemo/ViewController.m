@@ -12,6 +12,10 @@
 #import "HZTableViewController.h"
 #import "TabsViewController.h"
 
+#import "demo4Gallery.h"
+
+#import "GalleryViewController.h"
+
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
@@ -30,7 +34,7 @@
         tableView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
     }];
     
-    self.cellDataList = @[@"自定义按钮",@"水平的TableView",@"带Tabs的PageContrller"];
+    self.cellDataList = @[@"自定义按钮",@"水平的TableView",@"带Tabs的PageContrller",@"相册浏览"];
     [self.tableView reloadData];
     
     [self.view addSubview:self.tableView];
@@ -61,7 +65,10 @@
             [self.navigationController pushViewController:[HZTableViewController controller] animated:YES];
         case 2:
             [self.navigationController pushViewController:[[TabsViewController alloc]init] animated:YES];
-
+        case 3:
+        {
+            [self.navigationController pushViewController:[[demo4Gallery alloc]init] animated:YES];
+        }
         default:
             break;
     }
