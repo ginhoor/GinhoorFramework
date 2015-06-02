@@ -16,6 +16,7 @@
     tableView.backgroundColor = [UIColor whiteColor];
     tableView.separatorColor = [UIColor colorWithRed:78/255.f green:52/255.f blue:91/255.f alpha:1.f];
     tableView.tableFooterView = [[UIView alloc]init];
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     return tableView;
 }

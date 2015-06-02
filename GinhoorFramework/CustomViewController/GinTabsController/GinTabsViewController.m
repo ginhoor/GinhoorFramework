@@ -133,6 +133,7 @@
         _segmentedControl = [[HMSegmentedControl alloc] init];
         _segmentedControl.backgroundColor = [UIColor whiteColor];
         _segmentedControl.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor colorWithWhite:0.7 alpha:1]};
+        _segmentedControl.selectedTitleTextAttributes = @{NSForegroundColorAttributeName: [UIColor greenColor]};
         _segmentedControl.selectionIndicatorColor = [UIColor redColor];
         
         _segmentedControl.selectionStyle = HMSegmentedControlSelectionStyleTextWidthStripe;
