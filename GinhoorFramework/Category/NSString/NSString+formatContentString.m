@@ -10,7 +10,7 @@
 
 @implementation NSString (formatContentString)
 
-- (NSString *)formatContentWithtag:(NSString*)tag
+- (NSString *)formatContentWithTag:(NSString*)tag
 {
     if (self.length > 0) {
         return [NSString stringWithFormat:@"%@：%@",tag,self];

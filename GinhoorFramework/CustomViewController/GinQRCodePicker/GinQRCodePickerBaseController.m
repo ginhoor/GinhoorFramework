@@ -3,6 +3,7 @@
 //  Copyright (c) 2013年 Steven. All rights reserved.
 //
 
+#import <UIAlertView+BlocksKit.h>
 #import "GinQRCodePickerBaseController.h"
 
 @interface GinQRCodePickerBaseController ()<AVCaptureMetadataOutputObjectsDelegate>
@@ -36,6 +37,22 @@
 
 - (void)setupCamera
 {
+    
+    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+    if(authStatus == AVAuthorizationStatusRestricted ||
+       authStatus == AVAuthorizationStatusDenied){
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"相机功能受到限制" message:@"请检查设置中的相机权限是否开启。" delegate:self cancelButtonTitle:@"确认" otherButtonTitles:nil];
+        [alertView show];
+        
+        [alertView bk_setCancelBlock:^{
+            [self.navigationController popViewControllerAnimated:YES];
+            [self.presentingViewController dismissViewControllerAnimated:YES completion:^{}];
+        }];
+        
+        return;
+    }
+
     // Device
     self.device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     

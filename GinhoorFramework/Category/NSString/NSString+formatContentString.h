@@ -10,7 +10,7 @@
 
 @interface NSString (formatContentString)
 
-- (NSString *)formatContentWithtag:(NSString*)tag;
+- (NSString *)formatContentWithTag:(NSString*)tag;
 - (NSString *)formatWebString;
 
 
