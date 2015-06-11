@@ -30,6 +30,8 @@
 		0018BC801B12BD87001E52D5 /* GinTabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC7D1B12BD87001E52D5 /* GinTabsViewController.m */; };
 		0018BC851B12BDCA001E52D5 /* TabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC841B12BDCA001E52D5 /* TabsViewController.m */; };
 		0018BC8B1B12D136001E52D5 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC8A1B12D136001E52D5 /* HMSegmentedControl.m */; };
+		002F31561B299BAA00080B37 /* NSDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31551B299BAA00080B37 /* NSDateViewController.m */; };
+		002F315A1B29BF0D00080B37 /* EmptyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31591B29BF0D00080B37 /* EmptyTableViewController.m */; };
 		0033C7E21B131E6C0022B189 /* page1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7DD1B131E6C0022B189 /* page1Controller.m */; };
 		0033C7E31B131E6C0022B189 /* page2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7DF1B131E6C0022B189 /* page2Controller.m */; };
 		0033C7E41B131E6C0022B189 /* page3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7E11B131E6C0022B189 /* page3Controller.m */; };
@@ -157,6 +159,10 @@
 		0018BC841B12BDCA001E52D5 /* TabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabsViewController.m; sourceTree = "<group>"; };
 		0018BC891B12D136001E52D5 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
 		0018BC8A1B12D136001E52D5 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		002F31541B299BAA00080B37 /* NSDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateViewController.h; sourceTree = "<group>"; };
+		002F31551B299BAA00080B37 /* NSDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateViewController.m; sourceTree = "<group>"; };
+		002F31581B29BF0D00080B37 /* EmptyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyTableViewController.h; sourceTree = "<group>"; };
+		002F31591B29BF0D00080B37 /* EmptyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyTableViewController.m; sourceTree = "<group>"; };
 		0033C7DC1B131E6C0022B189 /* page1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = page1Controller.h; sourceTree = "<group>"; };
 		0033C7DD1B131E6C0022B189 /* page1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = page1Controller.m; sourceTree = "<group>"; };
 		0033C7DE1B131E6C0022B189 /* page2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = page2Controller.h; sourceTree = "<group>"; };
@@ -354,6 +360,8 @@
 				00905F0E1AE749F4004B5CA1 /* TableView */,
 				0018BC821B12BDB3001E52D5 /* GinTabsViewController */,
 				00E5E58A1B17F9700095C7A5 /* PhotoGallery */,
+				002F31531B299B9500080B37 /* NSDate */,
+				002F31571B29BEFB00080B37 /* DZNEmptyDataSet */,
 				000B52951ADBCF8100946853 /* Main.storyboard */,
 				000B52981ADBCF8100946853 /* Images.xcassets */,
 				000B529A1ADBCF8100946853 /* LaunchScreen.xib */,
@@ -512,6 +520,24 @@
 				0033C7E11B131E6C0022B189 /* page3Controller.m */,
 			);
 			path = GinTabsViewController;
+			sourceTree = "<group>";
+		};
+		002F31531B299B9500080B37 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				002F31541B299BAA00080B37 /* NSDateViewController.h */,
+				002F31551B299BAA00080B37 /* NSDateViewController.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		002F31571B29BEFB00080B37 /* DZNEmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				002F31581B29BF0D00080B37 /* EmptyTableViewController.h */,
+				002F31591B29BF0D00080B37 /* EmptyTableViewController.m */,
+			);
+			path = DZNEmptyDataSet;
 			sourceTree = "<group>";
 		};
 		003B327C1B1AAE09001EED5C /* GinPhotoGallery */ = {
@@ -1182,6 +1208,7 @@
 				0018BC851B12BDCA001E52D5 /* TabsViewController.m in Sources */,
 				00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */,
 				0033C7E31B131E6C0022B189 /* page2Controller.m in Sources */,
+				002F31561B299BAA00080B37 /* NSDateViewController.m in Sources */,
 				0018B9991B100D66001E52D5 /* GinVerticalLayoutButton.m in Sources */,
 				006A94C81ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m in Sources */,
 				006A22121B0AF92E0003059F /* GinPullDownMenuCell.m in Sources */,
@@ -1203,6 +1230,7 @@
 				006A94BC1ADFAD6D0093BEBE /* UIViewController+GinBaseTableView.m in Sources */,
 				006A93B71ADE09090093BEBE /* UIView+GinCGRect.m in Sources */,
 				006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */,
+				002F315A1B29BF0D00080B37 /* EmptyTableViewController.m in Sources */,
 				006A93D51ADE09090093BEBE /* GinScanQRCoderController.m in Sources */,
 				006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */,
 				006A93AF1ADE09090093BEBE /* GinBaseTitleHeader.m in Sources */,

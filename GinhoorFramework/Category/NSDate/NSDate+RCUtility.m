@@ -162,9 +162,9 @@
 }
 
 
-- (NSTimeInterval)intervalBetweenAnDate:(NSDate *)date
+- (NSTimeInterval)intervalBetweenDates:(NSDate *)date
 {
-    return self.timeIntervalSinceNow - date.timeIntervalSinceNow;
+    return self.timeIntervalSince1970 - date.timeIntervalSince1970;
 }
 
 @end

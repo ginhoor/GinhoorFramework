@@ -12,7 +12,8 @@ target 'FrameworkDemo' do
     pod 'Masonry', '~> 0.6.1'
     pod 'MJRefresh', '~> 1.4.5'
     pod 'SDWebImage', '~> 3.7.2'
-
+    pod 'DateTools', '~> 1.5.0'
+    pod 'DZNEmptyDataSet', '~> 1.5.2'
 end
 
 target 'FrameworkDemoTests' do
