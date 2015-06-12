@@ -11,6 +11,8 @@
 
 #import "UIResponder+Unit.h"
 #import "UIAlertView+Unit.h"
+#import "NSAttributedString+Unit"
+
 #import "UIView+GinBaseClass.h"
 #import "UIViewController+GinBaseClass.h"
 

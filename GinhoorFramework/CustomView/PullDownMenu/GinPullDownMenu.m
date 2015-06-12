@@ -48,7 +48,9 @@
     self.translatesAutoresizingMaskIntoConstraints = NO;
     self.backgroundColor = [UIColor whiteColor];
     
+    self.menuItemAlingment = NSTextAlignmentCenter;
     self.selectedIndex = -1;
+    self.animateMenuItemSelected = YES;
 }
 
 - (void)updateConstraints
@@ -105,7 +107,7 @@
     self.itemSeparators = [NSMutableArray array];
     
     
-    [self.categoryTitles enumerateObjectsUsingBlock:^(NSString *str, NSUInteger idx, BOOL *stop) {
+    [self.categoryTitles enumerateObjectsUsingBlock:^(NSAttributedString *str, NSUInteger idx, BOOL *stop) {
         GinPullDownMenuItem *item = [[GinPullDownMenuItem alloc] init];
         
         [item setTapBlock:^(GinPullDownMenuItem *item) {
@@ -113,9 +115,8 @@
             self.currentIndex = index;
         }];
         
-        item.titleLabel.text = str;
-        item.titleLabel.textColor = self.menuItemTextColor;
-        
+        item.titleLabel.attributedText = str;
+        item.titleLabel.textAlignment = self.menuItemAlingment;
         [self addSubview:item];
         [self.menuItems addObject:item];
     }];
@@ -189,10 +190,14 @@
     if (selected) {
         [self.menuItems enumerateObjectsUsingBlock:^(GinPullDownMenuItem *item, NSUInteger idx, BOOL *stop) {
             if (idx == self.selectedIndex) {
-                [item animateTitleLabel:YES];
+                if (self.animateMenuItemSelected) {
+                    [item animateTitleLabel:YES];
+                }
                 [item animateIndicator:YES completedBlock:^{}];
             } else {
-                [item animateTitleLabel:NO];
+                if (self.animateMenuItemSelected) {
+                    [item animateTitleLabel:NO];
+                }
                 [item animateIndicator:NO completedBlock:^{}];
             }
         }];
@@ -307,7 +312,7 @@
     
     GinPullDownMenuItem *item = self.menuItems[self.selectedIndex];
     
-    item.titleLabel.text = self.menuCellDataList[self.selectedIndex][indexPath.row];
+    item.titleLabel.attributedText = self.menuCellDataList[self.selectedIndex][indexPath.row];
     [item setNeedsLayout];
     
     [self showMenuList:NO];
@@ -328,7 +333,7 @@
 {
     GinPullDownMenuCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([GinPullDownMenuCell class])];
     
-    cell.textLabel.text = self.menuCellDataList[self.selectedIndex][indexPath.row];
+    cell.textLabel.attributedText = self.menuCellDataList[self.selectedIndex][indexPath.row];
     
     NSInteger selectedIndex = ((NSNumber *)self.categorySeletedIndex[self.selectedIndex]).integerValue;
     if (selectedIndex == indexPath.row) {

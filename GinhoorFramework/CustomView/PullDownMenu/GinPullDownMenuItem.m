@@ -146,9 +146,17 @@
 
 - (void)animateTitleLabel:(BOOL)selected
 {
-    self.titleLabel.font = selected?[UIFont boldSystemFontOfSize:14]:[UIFont systemFontOfSize:14];
+    CGFloat pointSize = self.titleLabel.font.pointSize;
+    
+    if (self.titleLabel.attributedText) {
+        NSRange range = NSMakeRange(0, self.titleLabel.attributedText.length);
+        NSDictionary *dic = [self.titleLabel.attributedText attributesAtIndex:0 effectiveRange:&range];
+        UIFont *font = [dic objectForKey:NSFontAttributeName];
+        pointSize = font.pointSize;
+    }
+    
+    self.titleLabel.font = selected?[UIFont boldSystemFontOfSize:pointSize]:[UIFont systemFontOfSize:pointSize];
 }
-
 - (void)animateIndicator:(BOOL)selected completedBlock:(void(^)())completedBlock
 {
     [CATransaction begin];
@@ -157,7 +165,7 @@
     
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation"];
     animation.values = selected? @[@0,@(M_PI)]:@[@(M_PI),@0];
-
+    
     if (!animation.removedOnCompletion) {
         [self.indicatorShapeLayer addAnimation:animation forKey:animation.keyPath];
     } else {

@@ -32,6 +32,7 @@
 		0018BC8B1B12D136001E52D5 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC8A1B12D136001E52D5 /* HMSegmentedControl.m */; };
 		002F31561B299BAA00080B37 /* NSDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31551B299BAA00080B37 /* NSDateViewController.m */; };
 		002F315A1B29BF0D00080B37 /* EmptyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31591B29BF0D00080B37 /* EmptyTableViewController.m */; };
+		002F315D1B2A72AC00080B37 /* NSAttributedString+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F315C1B2A72AC00080B37 /* NSAttributedString+Unit.m */; };
 		0033C7E21B131E6C0022B189 /* page1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7DD1B131E6C0022B189 /* page1Controller.m */; };
 		0033C7E31B131E6C0022B189 /* page2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7DF1B131E6C0022B189 /* page2Controller.m */; };
 		0033C7E41B131E6C0022B189 /* page3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7E11B131E6C0022B189 /* page3Controller.m */; };
@@ -163,6 +164,8 @@
 		002F31551B299BAA00080B37 /* NSDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateViewController.m; sourceTree = "<group>"; };
 		002F31581B29BF0D00080B37 /* EmptyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyTableViewController.h; sourceTree = "<group>"; };
 		002F31591B29BF0D00080B37 /* EmptyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyTableViewController.m; sourceTree = "<group>"; };
+		002F315B1B2A72AC00080B37 /* NSAttributedString+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Unit.h"; sourceTree = "<group>"; };
+		002F315C1B2A72AC00080B37 /* NSAttributedString+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Unit.m"; sourceTree = "<group>"; };
 		0033C7DC1B131E6C0022B189 /* page1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = page1Controller.h; sourceTree = "<group>"; };
 		0033C7DD1B131E6C0022B189 /* page1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = page1Controller.m; sourceTree = "<group>"; };
 		0033C7DE1B131E6C0022B189 /* page2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = page2Controller.h; sourceTree = "<group>"; };
@@ -771,6 +774,8 @@
 				006A936F1ADE09090093BEBE /* NSString+Size.m */,
 				0018BC6C1B118C7F001E52D5 /* NSString+MD5.h */,
 				0018BC6D1B118C7F001E52D5 /* NSString+MD5.m */,
+				002F315B1B2A72AC00080B37 /* NSAttributedString+Unit.h */,
+				002F315C1B2A72AC00080B37 /* NSAttributedString+Unit.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -1232,6 +1237,7 @@
 				006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */,
 				002F315A1B29BF0D00080B37 /* EmptyTableViewController.m in Sources */,
 				006A93D51ADE09090093BEBE /* GinScanQRCoderController.m in Sources */,
+				002F315D1B2A72AC00080B37 /* NSAttributedString+Unit.m in Sources */,
 				006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */,
 				006A93AF1ADE09090093BEBE /* GinBaseTitleHeader.m in Sources */,
 				006A93D21ADE09090093BEBE /* GinPopupGradientView.m in Sources */,

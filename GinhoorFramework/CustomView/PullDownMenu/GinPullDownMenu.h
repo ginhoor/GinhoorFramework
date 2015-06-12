@@ -11,12 +11,26 @@
 
 @interface GinPullDownMenu : UIView
 
-@property (strong,nonatomic) NSArray *categoryTitles;
-@property (strong,nonatomic) NSMutableArray *menuCellDataList;
+/**
+ *  必须使用NSAttributeString
+ */
+@property (strong, nonatomic) NSArray *categoryTitles;
+/**
+ *  必须使用NSAttributeString
+ */
+@property (strong, nonatomic) NSMutableArray *menuCellDataList;
 
-@property (strong,nonatomic) UIColor *selectedColor;
-@property (strong, nonatomic) UIColor *menuItemTextColor;
+@property (assign, nonatomic) NSTextAlignment menuItemAlingment;
+/**
+ *  会影响menu item selected 动画字体
+ */
+@property (strong, nonatomic) UIFont *menuItemTitleFont;
+@property (assign, nonatomic) BOOL  animateMenuItemSelected;
+
+
+@property (strong, nonatomic) UIColor *selectedColor;
 @property (strong, nonatomic) UIColor *itemSeparatorColor;
+
 
 @property (copy, nonatomic) void(^categorySelectedIndexBlock)(NSArray *categorySeletedIndex);
 
