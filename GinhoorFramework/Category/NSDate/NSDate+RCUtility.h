@@ -50,6 +50,6 @@
 // 比较 与 目标时间相差多久,返回值格式为 HH:MM:SS
 - (NSString *)compareWithAnDate:(NSDate *)anDate;
 // 比较两个date的时间戳相差时间
-- (NSTimeInterval)intervalBetweenAnDate:(NSDate *)date;
+- (NSTimeInterval)intervalBetweenDates:(NSDate *)date;
 
 @end
