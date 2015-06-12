@@ -48,7 +48,6 @@
     self.translatesAutoresizingMaskIntoConstraints = NO;
     self.backgroundColor = [UIColor whiteColor];
     
-    self.menuItemAlingment = NSTextAlignmentCenter;
     self.selectedIndex = -1;
     self.animateMenuItemSelected = YES;
 }
@@ -116,7 +115,6 @@
         }];
         
         item.titleLabel.attributedText = str;
-        item.titleLabel.textAlignment = self.menuItemAlingment;
         [self addSubview:item];
         [self.menuItems addObject:item];
     }];

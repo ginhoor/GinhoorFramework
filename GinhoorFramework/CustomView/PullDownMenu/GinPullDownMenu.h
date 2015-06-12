@@ -19,8 +19,6 @@
  *  必须使用NSAttributeString
  */
 @property (strong, nonatomic) NSMutableArray *menuCellDataList;
-
-@property (assign, nonatomic) NSTextAlignment menuItemAlingment;
 /**
  *  会影响menu item selected 动画字体
  */
