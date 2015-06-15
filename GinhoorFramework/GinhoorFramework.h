@@ -8,12 +8,10 @@
 
 #import "Gin_Macro.h"
 #import "GinSysInfo.h"
-
-#import "UIResponder+Unit.h"
-#import "UIAlertView+Unit.h"
-#import "NSAttributedString+Unit.h"
+#import "GinTypeUnitHeader.h"
 
 #import "UIView+GinBaseClass.h"
 #import "UIViewController+GinBaseClass.h"
 
-#import "NSString+Json.h"
+
+

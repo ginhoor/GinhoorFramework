@@ -34,6 +34,7 @@
 		002F315A1B29BF0D00080B37 /* EmptyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31591B29BF0D00080B37 /* EmptyTableViewController.m */; };
 		002F315D1B2A72AC00080B37 /* NSAttributedString+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F315C1B2A72AC00080B37 /* NSAttributedString+Unit.m */; };
 		002F31671B2A771100080B37 /* PullDownMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31661B2A771100080B37 /* PullDownMenuViewController.m */; };
+		002F31771B2EA6FC00080B37 /* NSArray+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31761B2EA6FC00080B37 /* NSArray+Unit.m */; };
 		0033C7E21B131E6C0022B189 /* page1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7DD1B131E6C0022B189 /* page1Controller.m */; };
 		0033C7E31B131E6C0022B189 /* page2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7DF1B131E6C0022B189 /* page2Controller.m */; };
 		0033C7E41B131E6C0022B189 /* page3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7E11B131E6C0022B189 /* page3Controller.m */; };
@@ -169,6 +170,8 @@
 		002F315C1B2A72AC00080B37 /* NSAttributedString+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Unit.m"; sourceTree = "<group>"; };
 		002F31651B2A771100080B37 /* PullDownMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullDownMenuViewController.h; sourceTree = "<group>"; };
 		002F31661B2A771100080B37 /* PullDownMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullDownMenuViewController.m; sourceTree = "<group>"; };
+		002F31751B2EA6FC00080B37 /* NSArray+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Unit.h"; sourceTree = "<group>"; };
+		002F31761B2EA6FC00080B37 /* NSArray+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Unit.m"; sourceTree = "<group>"; };
 		0033C7DC1B131E6C0022B189 /* page1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = page1Controller.h; sourceTree = "<group>"; };
 		0033C7DD1B131E6C0022B189 /* page1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = page1Controller.m; sourceTree = "<group>"; };
 		0033C7DE1B131E6C0022B189 /* page2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = page2Controller.h; sourceTree = "<group>"; };
@@ -556,6 +559,15 @@
 			path = PullDownMenu;
 			sourceTree = "<group>";
 		};
+		002F31741B2EA6EF00080B37 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				002F31751B2EA6FC00080B37 /* NSArray+Unit.h */,
+				002F31761B2EA6FC00080B37 /* NSArray+Unit.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
 		003B327C1B1AAE09001EED5C /* GinPhotoGallery */ = {
 			isa = PBXGroup;
 			children = (
@@ -606,6 +618,7 @@
 				006A93631ADE09090093BEBE /* NSData */,
 				006A93681ADE09090093BEBE /* NSDate */,
 				006A936B1ADE09090093BEBE /* NSString */,
+				002F31741B2EA6EF00080B37 /* NSArray */,
 				006A93701ADE09090093BEBE /* NSURL */,
 				006A93751ADE09090093BEBE /* UIAlertController */,
 				006A937A1ADE09090093BEBE /* UIImage */,
@@ -1307,6 +1320,7 @@
 				0018B9221B0EC977001E52D5 /* HZCollectionViewLayout.m in Sources */,
 				006A93CA1ADE09090093BEBE /* UIView+Layer.m in Sources */,
 				006A93CF1ADE09090093BEBE /* GinPageViewController.m in Sources */,
+				002F31771B2EA6FC00080B37 /* NSArray+Unit.m in Sources */,
 				00F760B41AE8B0F500AA47C9 /* UITextView+Keyboard.m in Sources */,
 				0033C7E41B131E6C0022B189 /* page3Controller.m in Sources */,
 				006A93B41ADE09090093BEBE /* GinBaseTitleSectionView.m in Sources */,
