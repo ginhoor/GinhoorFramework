@@ -8,10 +8,19 @@
 
 #import "BaseView.h"
 
+typedef NS_ENUM(NSUInteger, GinStepperType) {
+    GinStepperTypeRounded,
+    GinStepperTypeRectangled
+};
+
 @interface GinStepperView : UIView
 
 @property (strong, nonatomic) UIStepper *stepper;
+@property (assign, nonatomic) GinStepperType type;
+@property (assign, nonatomic) BOOL toggleAmianted;
 @property (assign, nonatomic) NSNumber *value;
+
+
 @property (copy, nonatomic) void(^stepperValueChangedBlock)(NSUInteger value);
 
 - (void)setStepperValue:(NSUInteger)value;

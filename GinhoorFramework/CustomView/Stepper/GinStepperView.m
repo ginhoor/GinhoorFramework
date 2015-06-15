@@ -41,11 +41,11 @@
     self.layer.masksToBounds = YES;
     self.layer.borderWidth = 1;
     self.layer.borderColor = [UIColor lightGrayColor].CGColor;
-
+    self.toggleAmianted = YES;
     [self addSubview:self.backgroundControl];
     [self addSubview:self.decrease];
     [self addSubview:self.increase];
-    [self addSubview:self.valueLabel];
+    [self addSubview:self.valueLabel];    
 }
 
 - (void)updateConstraints
@@ -82,40 +82,67 @@
 - (void)layoutSubviews
 {
     if (self.layer.bounds.size.height != self.viewHeight) {
-        self.layer.cornerRadius = self.layer.bounds.size.height/2;
-        self.viewHeight = self.layer.bounds.size.height;
+        switch (self.type) {
+            case GinStepperTypeRounded:{
+                self.layer.cornerRadius = self.layer.bounds.size.height/2;
+                self.viewHeight = self.layer.bounds.size.height;
+            }break;
+             
+            case GinStepperTypeRectangled:{
+                
+            }break;
+                
+            default:
+                break;
+        }
     }
     [super layoutSubviews];
 }
 
 
+- (void)setToggleAmianted:(BOOL)toggleAmianted
+{
+    _toggleAmianted = toggleAmianted;
+    
+    if (toggleAmianted) {
+        [self toggleMode:NO animated:NO];
+    } else {
+        [self toggleMode:YES animated:NO];
+    }
+}
+
 - (void)setStepperValue:(NSUInteger)value
 {
     self.stepper.value = value;
     
-    if (self.stepper.value == 0) {
-        
-        //        判断当前控件是否需要刷新约束（主要防止影响位置初始化）
-        if (self.needsUpdateConstraints)
-        {
-            [self toggleMode:NO animated:NO];
-        } else {
-            [UIView animateWithDuration:0.2 animations:^{
-                [self toggleMode:NO animated:YES];
-                [self layoutIfNeeded];
-                [self.decrease layoutIfNeeded];
-            }];
+    if (self.toggleAmianted) {
+        if (self.stepper.value == 0) {
+            
+            //        判断当前控件是否需要刷新约束（主要防止影响位置初始化）
+            if (self.needsUpdateConstraints)
+            {
+                [self toggleMode:NO animated:NO];
+            } else {
+                [UIView animateWithDuration:0.2 animations:^{
+                    [self toggleMode:NO animated:YES];
+                    [self layoutIfNeeded];
+                    [self.decrease layoutIfNeeded];
+                }];
+            }
+        } else if (self.stepper.value != 0){
+            if (self.needsUpdateConstraints)
+            {
+                [self toggleMode:YES animated:NO];
+            } else {
+                [UIView animateWithDuration:0.2 animations:^{
+                    [self toggleMode:YES animated:YES];
+                }];
+            }
         }
-    } else if (self.stepper.value != 0){
-        if (self.needsUpdateConstraints)
-        {
-            [self toggleMode:YES animated:NO];
-        } else {
-            [UIView animateWithDuration:0.2 animations:^{
-                [self toggleMode:YES animated:YES];
-            }];
-        }
+    } else {
+        [self toggleMode:YES animated:NO];
     }
+    
     self.valueLabel.text = @(self.stepper.value).stringValue;
 }
 
@@ -131,12 +158,12 @@
         }];
         
     } else {
-        [self mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.width.offset(30);
-        }];
-        
         [self.decrease mas_updateConstraints:^(MASConstraintMaker *make) {
             make.width.offset(0);
+        }];
+        
+        [self mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.width.offset(30);
         }];
     }
     
@@ -160,6 +187,7 @@
         _stepper = [[UIStepper alloc] init];
         _stepper.maximumValue = 99;
         _stepper.minimumValue = 0;
+        _stepper.wraps = YES;
     }
     return _stepper;
 }
@@ -191,6 +219,7 @@
     if (!_valueLabel) {
         _valueLabel = [[UILabel alloc] init];
         _valueLabel.textAlignment = NSTextAlignmentCenter;
+        _valueLabel.text = @"0";
     }
     return _valueLabel;
 }
@@ -202,15 +231,19 @@
 
 - (void)valueChangeAction:(id)sender
 {
-    NSUInteger currentValue = self.stepper.value;
+    NSInteger currentValue = self.stepper.value;
     if (sender == self.increase) {
         currentValue ++;
     } else if (sender == self.decrease) {
-        currentValue --;
+
+        currentValue -- ;
+    }
+    
+    if (currentValue < self.stepper.minimumValue) {
+        currentValue = self.stepper.minimumValue;
     }
     
     [self setStepperValue:currentValue];
-    
     if (self.stepperValueChangedBlock) {
         self.stepperValueChangedBlock(currentValue);
     }
