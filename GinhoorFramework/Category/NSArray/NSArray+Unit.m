@@ -15,7 +15,7 @@
     return self.count>0;
 }
 
-- (BOOL)hasElement
+- (BOOL)hasElements
 {
     return (self && self.count>0);
 }

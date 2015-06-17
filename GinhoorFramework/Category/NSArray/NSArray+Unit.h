@@ -11,6 +11,6 @@
 @interface NSArray (Unit)
 
 - (BOOL)isEmpty;
-- (BOOL)hasElement;
+- (BOOL)hasElements;
 
 @end
