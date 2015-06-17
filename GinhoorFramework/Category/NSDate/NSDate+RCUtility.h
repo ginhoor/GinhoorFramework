@@ -38,8 +38,8 @@
 - (NSString *)customDateString:(NSString *)format;
 
 
-// 判断是否是今天
-- (BOOL)isToday;
+// 判断是否是今天 (统一使用Datetools)
+//- (BOOL)isToday;
 
 // 判断两天是否相等
 - (BOOL)isSameDayAsOtherDate:(NSDate *)date;
