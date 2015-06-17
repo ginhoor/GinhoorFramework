@@ -12,7 +12,12 @@
 
 - (BOOL)isEmpty
 {
-    return !(self && self.count>0);
+    return self.count>0;
+}
+
+- (BOOL)hasElement
+{
+    return (self && self.count>0);
 }
 
 @end
