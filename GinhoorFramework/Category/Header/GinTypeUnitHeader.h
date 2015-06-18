@@ -19,3 +19,5 @@
 #import "NSAttributedString+Unit.h"
 
 #import "NSArray+Unit.h"
+
+#import "NSDictionary+Unit.h"

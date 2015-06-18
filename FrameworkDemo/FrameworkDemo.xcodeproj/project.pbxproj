@@ -36,6 +36,7 @@
 		002F31671B2A771100080B37 /* PullDownMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31661B2A771100080B37 /* PullDownMenuViewController.m */; };
 		002F31771B2EA6FC00080B37 /* NSArray+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31761B2EA6FC00080B37 /* NSArray+Unit.m */; };
 		002F317B1B2EAC6700080B37 /* StepperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F317A1B2EAC6700080B37 /* StepperViewController.m */; };
+		002F326D1B32795F00080B37 /* NSDictionary+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F326C1B32795F00080B37 /* NSDictionary+Unit.m */; };
 		0033C7E21B131E6C0022B189 /* page1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7DD1B131E6C0022B189 /* page1Controller.m */; };
 		0033C7E31B131E6C0022B189 /* page2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7DF1B131E6C0022B189 /* page2Controller.m */; };
 		0033C7E41B131E6C0022B189 /* page3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7E11B131E6C0022B189 /* page3Controller.m */; };
@@ -175,6 +176,8 @@
 		002F31761B2EA6FC00080B37 /* NSArray+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Unit.m"; sourceTree = "<group>"; };
 		002F31791B2EAC6700080B37 /* StepperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepperViewController.h; sourceTree = "<group>"; };
 		002F317A1B2EAC6700080B37 /* StepperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepperViewController.m; sourceTree = "<group>"; };
+		002F326B1B32795F00080B37 /* NSDictionary+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Unit.h"; sourceTree = "<group>"; };
+		002F326C1B32795F00080B37 /* NSDictionary+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Unit.m"; sourceTree = "<group>"; };
 		0033C7DC1B131E6C0022B189 /* page1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = page1Controller.h; sourceTree = "<group>"; };
 		0033C7DD1B131E6C0022B189 /* page1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = page1Controller.m; sourceTree = "<group>"; };
 		0033C7DE1B131E6C0022B189 /* page2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = page2Controller.h; sourceTree = "<group>"; };
@@ -581,6 +584,15 @@
 			path = Stepper;
 			sourceTree = "<group>";
 		};
+		002F326A1B32793A00080B37 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				002F326B1B32795F00080B37 /* NSDictionary+Unit.h */,
+				002F326C1B32795F00080B37 /* NSDictionary+Unit.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
 		003B327C1B1AAE09001EED5C /* GinPhotoGallery */ = {
 			isa = PBXGroup;
 			children = (
@@ -624,14 +636,15 @@
 			isa = PBXGroup;
 			children = (
 				006AF4AA1B09EF290033BCA3 /* Header */,
-				00F7FC631AEDDA6B0080AFC7 /* NSObject */,
 				006A93241ADE09090093BEBE /* Base64 */,
 				006A932A1ADE09090093BEBE /* BaseClass */,
 				006A935A1ADE09090093BEBE /* Draw */,
+				00F7FC631AEDDA6B0080AFC7 /* NSObject */,
 				006A93631ADE09090093BEBE /* NSData */,
 				006A93681ADE09090093BEBE /* NSDate */,
 				006A936B1ADE09090093BEBE /* NSString */,
 				002F31741B2EA6EF00080B37 /* NSArray */,
+				002F326A1B32793A00080B37 /* NSDictionary */,
 				006A93701ADE09090093BEBE /* NSURL */,
 				006A93751ADE09090093BEBE /* UIAlertController */,
 				006A937A1ADE09090093BEBE /* UIImage */,
@@ -1251,6 +1264,7 @@
 			files = (
 				0018BC851B12BDCA001E52D5 /* TabsViewController.m in Sources */,
 				00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */,
+				002F326D1B32795F00080B37 /* NSDictionary+Unit.m in Sources */,
 				0033C7E31B131E6C0022B189 /* page2Controller.m in Sources */,
 				002F31561B299BAA00080B37 /* NSDateViewController.m in Sources */,
 				0018B9991B100D66001E52D5 /* GinVerticalLayoutButton.m in Sources */,
