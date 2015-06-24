@@ -20,6 +20,8 @@
 #import "EmptyTableViewController.h"
 #import "StepperViewController.h"
 
+#import "NSString+formatContentString.h"
+
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end

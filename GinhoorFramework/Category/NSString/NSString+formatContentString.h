@@ -12,6 +12,15 @@
 
 - (NSString *)formatContentWithTag:(NSString*)tag;
 - (NSString *)formatWebString;
+- (NSString *)formatUrlString;
+/**
+ *  将0.10，2.00 统一成0.1，2
+ *
+ *  @param number 浮点数
+ *
+ *  @return 处理后的字符串
+ */
++ (NSString *)formatFloatNumber:(NSNumber*)number;
 
 
 @end

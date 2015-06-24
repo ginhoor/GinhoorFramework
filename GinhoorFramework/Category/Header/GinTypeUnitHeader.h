@@ -16,6 +16,7 @@
 
 #import "NSString+Type.h"
 #import "NSString+Json.h"
+#import "NSString+formatContentString.h"
 #import "NSAttributedString+Unit.h"
 
 #import "NSArray+Unit.h"

@@ -34,4 +34,23 @@
     return value;
 }
 
+- (NSString *)formatUrlString
+{
+    return [self stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+}
+
++ (NSString *)formatFloatNumber:(NSNumber*)number
+{
+    NSMutableString *value = [NSMutableString stringWithFormat:@"%.2f",number.doubleValue];
+    NSString *regExStr =@"0$|.00$";
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regExStr options:NSRegularExpressionCaseInsensitive error:nil];
+    
+    NSArray *results = [regex matchesInString:value options:NSMatchingReportCompletion range:NSMakeRange(0, value.length)];
+    
+    for (NSTextCheckingResult *check in results) {
+        [value deleteCharactersInRange:check.range];
+    }
+    return value;
+}
+
 @end
