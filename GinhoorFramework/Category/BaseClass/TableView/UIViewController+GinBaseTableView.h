@@ -31,15 +31,15 @@
 - (void)cleanup_GinBaseTableView;
 
 // 初始化celldata成功
-- (void (^)(NSArray *dataList))GinSetupCellDataSuccessBlock;
+- (void (^)(NSArray *dataList))GinSetupTableDataSuccessBlock;
 // 获得celldata失败
-- (void (^)(NSError *error))GinSetupCellDataFailureBlock;
+- (void (^)(NSError *error))GinSetupTableDataFailureBlock;
 // 获得新增celldata 成功
-- (void (^)(NSArray *dataList))GinAddNewCellDataSuccessBlock;
+- (void (^)(NSArray *dataList))GinAddNewTableDataSuccessBlock;
 // 获得新增celldata失败
-- (void (^)(NSError *error))GinAddNewCellDataFailureBlock;
+- (void (^)(NSError *error))GinAddNewTableDataFailureBlock;
 
-- (void)endRefreshing;
+- (void)endTableDataRefreshing;
 
 
 @end

@@ -30,14 +30,14 @@
 - (void)cleanup_GinBaseCollectionView;
 
 // 初始化celldata成功
-- (void (^)(NSArray *dataList))GinSetupCellDataSuccessBlock;
+- (void (^)(NSArray *dataList))GinSetupCollectionDataSuccessBlock;
 // 获得celldata失败
-- (void (^)(NSError *error))GinSetupCellDataFailureBlock;
+- (void (^)(NSError *error))GinSetupCollectionDataFailureBlock;
 // 获得新增celldata 成功
-- (void (^)(NSArray *dataList))GinAddNewCellDataSuccessBlock;
+- (void (^)(NSArray *dataList))GinAddNewCollectionDataSuccessBlock;
 // 获得新增celldata失败
-- (void (^)(NSError *error))GinAddNewCellDataFailureBlock;
+- (void (^)(NSError *error))GinAddNewCollectionDataFailureBlock;
 
-- (void)endRefreshing;
+- (void)endCollectionDataRefreshing;
 
 @end

@@ -23,7 +23,7 @@
     self.currentPageIndex = self.startIndex = 1;
 }
 
-- (void (^)(NSArray *dataList))GinSetupCellDataSuccessBlock
+- (void (^)(NSArray *dataList))GinSetupTableDataSuccessBlock
 {
     return ^(NSArray *dataList) {
         if (dataList && dataList.count > 0) {
@@ -32,7 +32,7 @@
             self.cellDataList = @[];
         }
         [self.tableView reloadData];
-        [self endRefreshing];
+        [self endTableDataRefreshing];
         
         self.currentPageIndex = self.startIndex;
         
@@ -42,17 +42,17 @@
     };
 }
 
-- (void (^)(NSError *error))GinSetupCellDataFailureBlock
+- (void (^)(NSError *error))GinSetupTableDataFailureBlock
 {
     return ^(NSError *error) {
-        [self endRefreshing];
+        [self endTableDataRefreshing];
         if (self.finishLoadData) {
             self.finishLoadData(self.tableView);
         }
     };
 }
 
-- (void (^)(NSArray *dataList))GinAddNewCellDataSuccessBlock
+- (void (^)(NSArray *dataList))GinAddNewTableDataSuccessBlock
 {
     return ^(NSArray *dataList) {
         
@@ -65,7 +65,7 @@
             self.currentPageIndex++;
         }
         
-        [self endRefreshing];
+        [self endTableDataRefreshing];
         
         if (self.finishLoadData) {
             self.finishLoadData(self.tableView);
@@ -73,12 +73,12 @@
     };
 }
 
-- (void (^)(NSError *error))GinAddNewCellDataFailureBlock
+- (void (^)(NSError *error))GinAddNewTableDataFailureBlock
 {
-    return [self GinSetupCellDataFailureBlock];
+    return [self GinSetupTableDataFailureBlock];
 }
 
-- (void)endRefreshing
+- (void)endTableDataRefreshing
 {
     if (self.tableView.header.isRefreshing) {
         [self.tableView.header endRefreshing];

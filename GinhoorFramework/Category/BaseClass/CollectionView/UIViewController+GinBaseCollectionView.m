@@ -23,7 +23,7 @@
     self.currentPageIndex = self.startIndex = 1;
 }
 
-- (void (^)(NSArray *dataList))GinSetupCellDataSuccessBlock
+- (void (^)(NSArray *dataList))GinSetupCollectionDataSuccessBlock
 {
     return ^(NSArray *dataList) {
         if (dataList && dataList.count > 0) {
@@ -32,7 +32,7 @@
             self.cellDataList = @[];
         }
         [self.collectionView reloadData];
-        [self endRefreshing];
+        [self endCollectionDataRefreshing];
         
         self.currentPageIndex = self.startIndex;
         
@@ -42,17 +42,17 @@
     };
 }
 
-- (void (^)(NSError *error))GinSetupCellDataFailureBlock
+- (void (^)(NSError *error))GinSetupCollectionDataFailureBlock
 {
     return ^(NSError *error) {
-        [self endRefreshing];
+        [self endCollectionDataRefreshing];
         if (self.finishLoadData) {
             self.finishLoadData(self.collectionView);
         }
     };
 }
 
-- (void (^)(NSArray *dataList))GinAddNewCellDataSuccessBlock
+- (void (^)(NSArray *dataList))GinAddNewCollectionDataSuccessBlock
 {
     return ^(NSArray *dataList) {
         
@@ -62,10 +62,10 @@
             self.cellDataList = mArray;
             
             [self.collectionView reloadData];
-            [self endRefreshing];
+            [self endCollectionDataRefreshing];
             
         } else {
-            [self endRefreshing];
+            [self endCollectionDataRefreshing];
         }
         
         self.currentPageIndex++;
@@ -76,13 +76,13 @@
     };
 }
 
-- (void (^)(NSError *error))GinAddNewCellDataFailureBlock
+- (void (^)(NSError *error))GinAddNewCollectionDataFailureBlock
 {
-    return [self GinSetupCellDataFailureBlock];
+    return [self GinSetupCollectionDataFailureBlock];
 }
 
 
-- (void)endRefreshing
+- (void)endCollectionDataRefreshing
 {
     if (self.collectionView.header.isRefreshing) {
         [self.collectionView.header endRefreshing];
