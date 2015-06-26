@@ -35,7 +35,6 @@
 - (void)setSelected:(BOOL)selected
 {
     [super setSelected:selected];
-    NSLog(@"选中");
 }
 
 - (void)setup

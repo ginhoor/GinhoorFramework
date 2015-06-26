@@ -25,7 +25,7 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
         //CFShow((__bridge CFTypeRef)(infoDic));
-        NSString *currentVersion = [infoDic objectForKey:@"CFBundleVersion"];
+        NSString *currentVersion = [infoDic objectForKey:@"CFBundleShortVersionString"];
         
         NSString *URL = [NSString stringWithFormat:@"http://itunes.apple.com/lookup?id=%lu",AppID];
         NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];

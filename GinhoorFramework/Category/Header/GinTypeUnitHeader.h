@@ -14,6 +14,8 @@
 #import "UIResponder+Unit.h"
 #import "UIAlertView+Unit.h"
 
+#import "UIColor+Hex.h"
+
 #import "NSString+Type.h"
 #import "NSString+Json.h"
 #import "NSString+formatContentString.h"
