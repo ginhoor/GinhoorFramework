@@ -12,7 +12,7 @@
 @implementation CheckAppVersion
 
 
-+ (void)checkInStore:(BOOL)needAllTips AppID:(unsigned long)AppID
++ (void)checkInStore:(unsigned long)AppID needAllTips:(BOOL)needAllTips;
 {
     NSString *version = [[NSUserDefaults standardUserDefaults] objectForKey:@"CheckAppVersion"];
     
@@ -68,12 +68,12 @@
     });
 }
 
-+ (void)jumpToAppStore:(unsigned long)App_ID
++ (void)jumpToAppStore:(unsigned long)AppID
 {
     //    [SVProgressHUD showWithStatus:@"页面跳转中" maskType:SVProgressHUDMaskTypeBlack];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
-        NSString *URL = [NSString stringWithFormat:@"http://itunes.apple.com/lookup?id=%lu",App_ID];
+        NSString *URL = [NSString stringWithFormat:@"http://itunes.apple.com/lookup?id=%lu",AppID];
         NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
         [request setURL:[NSURL URLWithString:URL]];
         [request setHTTPMethod:@"POST"];

@@ -11,9 +11,9 @@
 
 @interface CheckAppVersion : NSObject
 
-+ (void)checkInStore:(BOOL)needAllTips AppID:(unsigned long)AppID;
++ (void)checkInStore:(unsigned long)AppID needAllTips:(BOOL)needAllTips;
 
-+ (void)jumpToAppStore:(unsigned long)App_ID;
++ (void)jumpToAppStore:(unsigned long)AppID;
 
 
 @end
