@@ -78,6 +78,8 @@
     self.draggable = YES;
     self.autoDocking = YES;
     self.limitInBounds = YES;
+    self.adjustsImageWhenHighlighted = NO;
+    self.adjustsImageWhenDisabled = NO;
 }
 
 - (void)addButtonToKeyWindow

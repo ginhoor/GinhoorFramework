@@ -14,6 +14,21 @@
 @implementation GinImageButton
 
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (void)setup
+{
+    self.adjustsImageWhenHighlighted = NO;
+    self.adjustsImageWhenDisabled = NO;
+}
+
 - (CGRect)imageRectForContentRect:(CGRect)contentRect
 {
     return CGRectMake(0, 0, contentRect.size.width, contentRect.size.height);

@@ -30,6 +30,9 @@
 - (void)setup
 {
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
+    self.adjustsImageWhenHighlighted = NO;
+    self.adjustsImageWhenDisabled = NO;
+
     [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.titleLabel setFont:[UIFont systemFontOfSize:12]];
     self.imageView.contentMode = UIViewContentModeCenter;

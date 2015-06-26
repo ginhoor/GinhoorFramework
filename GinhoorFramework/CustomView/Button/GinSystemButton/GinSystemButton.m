@@ -41,7 +41,9 @@
 {
     self.layer.cornerRadius = 4.0f;
     self.layer.masksToBounds = YES;
-    
+    self.adjustsImageWhenHighlighted = NO;
+    self.adjustsImageWhenDisabled = NO;
+
     self.tintColor = [UIColor whiteColor];
     self.backgroundColor = [UIColor colorWithRed:40/255.f green:35/255.f blue:67/255.f alpha:1.f];
     [self addTarget:self action:@selector(touchUpInsideAction:) forControlEvents:UIControlEventTouchUpInside];
