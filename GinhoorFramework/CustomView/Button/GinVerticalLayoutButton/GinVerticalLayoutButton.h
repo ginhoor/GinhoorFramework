@@ -11,8 +11,10 @@
 
 @interface GinVerticalLayoutButton : UIButton
 
+@property (assign, nonatomic) BOOL    showSelectedView;
 @property (strong, nonatomic) UIColor *selectedColor;
 @property (assign, nonatomic) CGFloat imageTopOffset;
+
 @property (assign, nonatomic) BOOL hasSelectedBottomBar;
 
 - (void)setup;

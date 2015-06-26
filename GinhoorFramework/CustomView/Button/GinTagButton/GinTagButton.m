@@ -34,6 +34,7 @@
 {
     [super setup];
     [self addSubview:self.tagLabel];
+    self.showSelectedView = YES;
 }
 
 - (void)updateConstraints

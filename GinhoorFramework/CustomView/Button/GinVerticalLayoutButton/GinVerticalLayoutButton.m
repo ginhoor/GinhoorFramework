@@ -32,7 +32,6 @@
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     self.adjustsImageWhenHighlighted = NO;
     self.adjustsImageWhenDisabled = NO;
-
     [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.titleLabel setFont:[UIFont systemFontOfSize:12]];
     self.imageView.contentMode = UIViewContentModeCenter;
@@ -43,17 +42,19 @@
 {
     
     CGFloat one_px = 1.f/[UIScreen mainScreen].scale;
- 
+    
     self.selectedView.frame = //CGRectMake(0, self.imageTopOffset + self.imageView.bounds.size.height+5+20+5, self.bounds.size.width, 2);
     CGRectMake(- one_px, self.bounds.size.height - 2, self.bounds.size.width + 2 * one_px, 2);
-
-    if (self.selected) {
-        self.selectedView.hidden = NO;
-    } else {
-        self.selectedView.hidden = YES;
+    
+    if (self.showSelectedView) {
+        if (self.selected) {
+            self.selectedView.hidden = NO;
+        } else {
+            self.selectedView.hidden = YES;
+        }
     }
     [super layoutSubviews];
-
+    
 }
 
 - (void)setImageTopOffset:(CGFloat)imageTopOffset
@@ -83,7 +84,7 @@
     NSString *content = self.titleLabel.text;
     CGSize size = [content boundingRectWithSize:CGSizeMake(CGRectGetWidth(self.bounds), 0)  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.titleLabel.font} context:nil].size;
     self.titleSize = CGSizeMake(ceilf(size.width), ceilf(size.height));
-
+    
     [super setTitle:title forState:state];
 }
 
