@@ -70,7 +70,10 @@
 
 
 #define isEmptyArray(array) !array || array.count == 0
+#define isHasElementsArray(array) array && array.count > 0
+
 #define isEmptyDictionary(dic) !dic || dic.allKeys.count == 0
+#define isHasElementsDictionary(dic) dic && dic.allKeys.count > 0
 
 ///////////////////////////////////////////
 // degrees/radian
