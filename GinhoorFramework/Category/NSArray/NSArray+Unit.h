@@ -10,7 +10,4 @@
 
 @interface NSArray (Unit)
 
-- (BOOL)isEmpty;
-- (BOOL)hasElements;
-
 @end

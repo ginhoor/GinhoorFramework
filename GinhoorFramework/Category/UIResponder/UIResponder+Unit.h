@@ -12,6 +12,6 @@
 
 - (UIViewController *)recentlyController;
 - (UIViewController *)controlerByClass:(Class)mClass;
-- (UINavigationController*)recentlyNavigationContoller;
+- (UINavigationController *)recentlyNavigationContoller;
 
 @end

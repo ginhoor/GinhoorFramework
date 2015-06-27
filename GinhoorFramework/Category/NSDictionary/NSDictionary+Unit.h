@@ -10,7 +10,4 @@
 
 @interface NSDictionary (Unit)
 
-- (BOOL)isEmpty;
-- (BOOL)hasElements;
-
 @end

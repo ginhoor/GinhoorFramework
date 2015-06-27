@@ -10,14 +10,4 @@
 
 @implementation NSArray (Unit)
 
-- (BOOL)isEmpty
-{
-    return !self || self.count == 0;
-}
-
-- (BOOL)hasElements
-{
-    return (self && self.count>0);
-}
-
 @end

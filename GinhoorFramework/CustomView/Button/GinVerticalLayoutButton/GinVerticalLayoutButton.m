@@ -34,7 +34,7 @@
     self.adjustsImageWhenDisabled = NO;
     [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.titleLabel setFont:[UIFont systemFontOfSize:12]];
-    self.imageView.contentMode = UIViewContentModeCenter;
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:self.selectedView];
 }
 

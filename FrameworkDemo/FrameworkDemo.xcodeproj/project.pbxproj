@@ -85,6 +85,7 @@
 		006A94C51ADFB9C70093BEBE /* UIView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94C41ADFB9C70093BEBE /* UIView+GinBaseClass.m */; };
 		006A94C81ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94C71ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m */; };
 		006A94CF1ADFFF570093BEBE /* NSString+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94CE1ADFFF570093BEBE /* NSString+Json.m */; };
+		007D445C1B3D2BA300EF1E36 /* GinHorizontalLayoutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D445B1B3D2BA300EF1E36 /* GinHorizontalLayoutButton.m */; };
 		0086EE5C1B184309008A42D3 /* demo4Gallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0086EE5B1B184309008A42D3 /* demo4Gallery.m */; };
 		00905F111AE74A09004B5CA1 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00905F101AE74A09004B5CA1 /* TableViewController.m */; };
 		00A527E21AF720A500219A98 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527E11AF720A500219A98 /* BaseView.m */; };
@@ -276,6 +277,8 @@
 		006A94CD1ADFFF570093BEBE /* NSString+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Json.h"; sourceTree = "<group>"; };
 		006A94CE1ADFFF570093BEBE /* NSString+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Json.m"; sourceTree = "<group>"; };
 		006AF4AB1B09EFE00033BCA3 /* GinTypeUnitHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinTypeUnitHeader.h; sourceTree = "<group>"; };
+		007D445A1B3D2BA300EF1E36 /* GinHorizontalLayoutButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinHorizontalLayoutButton.h; sourceTree = "<group>"; };
+		007D445B1B3D2BA300EF1E36 /* GinHorizontalLayoutButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinHorizontalLayoutButton.m; sourceTree = "<group>"; };
 		0086EE5A1B184309008A42D3 /* demo4Gallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo4Gallery.h; sourceTree = "<group>"; };
 		0086EE5B1B184309008A42D3 /* demo4Gallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo4Gallery.m; sourceTree = "<group>"; };
 		00905F0F1AE74A09004B5CA1 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
@@ -917,6 +920,7 @@
 				0018B9891B100D66001E52D5 /* GinImageButton */,
 				0018B98C1B100D66001E52D5 /* GinSystemButton */,
 				0018B98F1B100D66001E52D5 /* GinTagButton */,
+				007D44591B3D2BA300EF1E36 /* GinHorizontalLayoutButton */,
 				0018B9921B100D66001E52D5 /* GinVerticalLayoutButton */,
 			);
 			path = Button;
@@ -997,6 +1001,15 @@
 				006AF4AB1B09EFE00033BCA3 /* GinTypeUnitHeader.h */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		007D44591B3D2BA300EF1E36 /* GinHorizontalLayoutButton */ = {
+			isa = PBXGroup;
+			children = (
+				007D445A1B3D2BA300EF1E36 /* GinHorizontalLayoutButton.h */,
+				007D445B1B3D2BA300EF1E36 /* GinHorizontalLayoutButton.m */,
+			);
+			path = GinHorizontalLayoutButton;
 			sourceTree = "<group>";
 		};
 		00905F0E1AE749F4004B5CA1 /* TableView */ = {
@@ -1347,6 +1360,7 @@
 				0018B9221B0EC977001E52D5 /* HZCollectionViewLayout.m in Sources */,
 				006A93CA1ADE09090093BEBE /* UIView+Layer.m in Sources */,
 				006A93CF1ADE09090093BEBE /* GinPageViewController.m in Sources */,
+				007D445C1B3D2BA300EF1E36 /* GinHorizontalLayoutButton.m in Sources */,
 				002F31771B2EA6FC00080B37 /* NSArray+Unit.m in Sources */,
 				002F317B1B2EAC6700080B37 /* StepperViewController.m in Sources */,
 				00F760B41AE8B0F500AA47C9 /* UITextView+Keyboard.m in Sources */,

@@ -55,11 +55,6 @@
 //notification center
 #define NOTIFICATION_CENTER ([NSNotificationCenter defaultCenter])
 
-//UIApplication
-//#import "AppDelegate.h"
-//#define APP_DELEGATE ((AppDelegate*)[[UIApplication sharedApplication] delegate])
-
-
 ///////////////////////////////////////////
 // Category
 ///////////////////////////////////////////
@@ -72,6 +67,10 @@
 #define UIColorFromRGBA(r,g,b,a)    [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 
 #define PointValue(x,y) [NSValue valueWithCGPoint:CGPointMake(x, y)]
+
+
+#define isEmptyArray(array) !array || array.count == 0
+#define isEmptyDictionary(dic) !dic || dic.allKeys.count == 0
 
 ///////////////////////////////////////////
 // degrees/radian

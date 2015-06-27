@@ -10,14 +10,4 @@
 
 @implementation NSDictionary (Unit)
 
-- (BOOL)isEmpty
-{
-    return !self || self.allKeys.count == 0;
-}
-
-- (BOOL)hasElements
-{
-    return (self && self.allKeys.count>0);
-}
-
 @end
