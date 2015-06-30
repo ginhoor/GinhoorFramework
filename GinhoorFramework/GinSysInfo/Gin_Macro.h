@@ -69,11 +69,11 @@
 #define PointValue(x,y) [NSValue valueWithCGPoint:CGPointMake(x, y)]
 
 
-#define isEmptyArray(array) !array || array.count == 0
-#define isHasElementsArray(array) array && array.count > 0
+#define isEmptyArray(array) !array || ((NSArray*)array).count == 0
+#define isHasElementsArray(array) array && ((NSArray*)array).count > 0
 
-#define isEmptyDictionary(dic) !dic || dic.allKeys.count == 0
-#define isHasElementsDictionary(dic) dic && dic.allKeys.count > 0
+#define isEmptyDictionary(dic) !dic || ((NSDictionary*)dic).allKeys.count == 0
+#define isHasElementsDictionary(dic) dic && ((NSDictionary*)dic).allKeys.count > 0
 
 ///////////////////////////////////////////
 // degrees/radian

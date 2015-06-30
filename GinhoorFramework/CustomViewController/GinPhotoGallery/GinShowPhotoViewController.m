@@ -8,12 +8,12 @@
 
 #import <UIImageView+WebCache.h>
 #import <Masonry.h>
-#import "ShowPhotoViewController.h"
+#import "GinShowPhotoViewController.h"
 
 
 #define kMaxZoomScale 3.f
 
-@interface ShowPhotoViewController()
+@interface GinShowPhotoViewController()
 
 @property (assign, nonatomic) CGFloat   minZoomScale;
 @property (assign, nonatomic) CGFloat   fitZoomScale;
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation ShowPhotoViewController
+@implementation GinShowPhotoViewController
 
 - (void)dealloc
 {
@@ -66,7 +66,7 @@
 
 - (void)setImageByURL:(NSURL *)url
 {
-    ShowPhotoViewController *__weak weak = self;
+    GinShowPhotoViewController *__weak weak = self;
 
     [self.view layoutIfNeeded];
     
@@ -121,10 +121,8 @@
 
 - (void)hideButtonView:(UITapGestureRecognizer *)sender
 {
-    if (!self.scrollView.dragging && !self.scrollView.tracking) {
-        [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
-        [self.navigationController popViewControllerAnimated:YES];
-    }
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)setMinZoomScale:(CGFloat)minZoomScale

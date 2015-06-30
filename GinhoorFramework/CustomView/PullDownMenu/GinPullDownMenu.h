@@ -29,7 +29,9 @@
 @property (strong, nonatomic) UIColor *selectedColor;
 @property (strong, nonatomic) UIColor *itemSeparatorColor;
 
-
+/**
+ * categorySeletedIndex 返回的是一个二维数组 [第几个选项][选择的index]
+ */
 @property (copy, nonatomic) void(^categorySelectedIndexBlock)(NSArray *categorySeletedIndex);
 
 

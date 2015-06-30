@@ -14,7 +14,6 @@ NSString * const GinTimeIntervalValueValueTransformerName = @"GinTimeIntervalVal
 
 @implementation NSValueTransformer (Unit)
 
-
 + (void)setupRelativePathValueTransformer:(NSString *)basePath
 {
     MTLValueTransformer *relativePathTransformer = [MTLValueTransformer reversibleTransformerWithForwardBlock:^NSURL *(NSString *relativePath) {
@@ -30,7 +29,7 @@ NSString * const GinTimeIntervalValueValueTransformerName = @"GinTimeIntervalVal
 + (void)setupTimeIntervalValueTransformer
 {
     MTLValueTransformer *dateValueTransformer = [MTLValueTransformer reversibleTransformerWithForwardBlock:^NSDate *(NSNumber *ts) {
-        return [NSDate dateWithTimeIntervalSince1970:ts.doubleValue];
+        return [NSDate dateWithTimeIntervalSince1970:ts.doubleValue/1000];
     } reverseBlock:^NSNumber *(NSDate *date) {
         return @(date.timeIntervalSince1970);
     }];

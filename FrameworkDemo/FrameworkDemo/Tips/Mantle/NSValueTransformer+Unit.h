@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString * const GinRelativePathTransformerName;
+extern NSString * const GinTimeIntervalValueValueTransformerName;
+
 @interface NSValueTransformer (Unit)
+
++ (void)setupRelativePathValueTransformer:(NSString *)basePath;
++ (void)setupTimeIntervalValueTransformer;
 
 @end

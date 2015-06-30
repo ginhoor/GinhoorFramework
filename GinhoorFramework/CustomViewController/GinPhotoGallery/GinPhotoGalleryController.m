@@ -6,20 +6,20 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import "PhotoGalleryController.h"
+#import "GinPhotoGalleryController.h"
 
 #import <Masonry.h>
 #import "GinPageViewController.h"
-#import "ShowPhotoViewController.h"
+#import "GinShowPhotoViewController.h"
 
-@interface PhotoGalleryController()
+@interface GinPhotoGalleryController()
 
 @property (copy, nonatomic) NSArray *imageUrlList;
 @property (strong, nonatomic) UILabel *numLabel;
 @property (strong, nonatomic) GinPageViewController *pageController;
 @end
 
-@implementation PhotoGalleryController
+@implementation GinPhotoGalleryController
 
 - (void)viewDidLoad
 {
@@ -33,7 +33,7 @@
     [self addChildViewController:self.pageController];
     [self.pageController didMoveToParentViewController:self];
     
-    __weak PhotoGalleryController *weakSelf = self;
+    __weak GinPhotoGalleryController *weakSelf = self;
     
     [self.pageController setPageDidChanged:^(UIPageViewController *controller, NSUInteger index) {
         weakSelf.numLabel.text = [NSString stringWithFormat:@"%@/%@",@(index+1),@(weakSelf.imageUrlList.count)];
@@ -50,7 +50,7 @@
     [super updateViewConstraints];
     
     [self.numLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.offset(0);
+        make.top.offset(20);
         make.left.offset(0);
         make.right.offset(0);
         make.height.offset(50);
@@ -74,7 +74,7 @@
     NSMutableArray *viewControllers = [NSMutableArray array];
     
     for (NSURL *url in imageUrlList) {
-        ShowPhotoViewController *photo = [[ShowPhotoViewController alloc] init];
+        GinShowPhotoViewController *photo = [[GinShowPhotoViewController alloc] init];
         [photo setImageByURL:url];
         [viewControllers addObject:photo];
     }

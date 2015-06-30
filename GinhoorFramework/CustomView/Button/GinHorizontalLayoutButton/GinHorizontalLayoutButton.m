@@ -34,9 +34,7 @@
 
 - (void)layoutSubviews
 {
-    CGSize size = [self.titleLabel.text boundingRectWithSize:CGSizeMake(CGRectGetWidth(self.bounds), 20)  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.titleLabel.font} context:nil].size;
-    self.titleSize = CGSizeMake(ceilf(size.width), ceilf(size.height));
-
+    [self updateTitleSize:self.titleLabel.text];
     [super layoutSubviews];
 }
 
@@ -51,6 +49,7 @@
 
 - (CGRect)titleRectForContentRect:(CGRect)contentRect
 {
+    
     if (self.type == GinHorizontalAlignmentTypeLeft) {
         return CGRectMake(self.imageSize.width+5,0, self.titleSize.width, contentRect.size.height);
     } else {
@@ -67,11 +66,14 @@
 
 - (void)setTitle:(NSString *)title forState:(UIControlState)state
 {
-    NSString *content = self.titleLabel.text;
-    CGSize size = [content boundingRectWithSize:CGSizeMake(CGRectGetWidth(self.bounds), 0)  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.titleLabel.font} context:nil].size;
-    self.titleSize = CGSizeMake(ceilf(size.width), ceilf(size.height));
-    
+    [self updateTitleSize:self.titleLabel.text];
     [super setTitle:title forState:state];
 }
 
+- (void)updateTitleSize:(NSString *)content
+{
+    CGSize size = [content boundingRectWithSize:CGSizeMake(CGRectGetWidth(self.bounds), 0)  options:NSStringDrawingTruncatesLastVisibleLine attributes:@{NSFontAttributeName:self.titleLabel.font} context:nil].size;
+    
+    self.titleSize = CGSizeMake(ceilf(size.width), ceilf(size.height));
+}
 @end

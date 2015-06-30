@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ShowPhotoViewController : UIViewController <UIScrollViewDelegate>
+@interface GinShowPhotoViewController : UIViewController <UIScrollViewDelegate>
 
 
 @property (strong, nonatomic) UIScrollView *scrollView;

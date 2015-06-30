@@ -13,7 +13,7 @@
 #import "GalleryViewController.h"
 #import "HZCollectionViewLayout.h"
 
-#import "PhotoGalleryController.h"
+#import "GinPhotoGalleryController.h"
 
 @interface PhotoGalleryCell : UICollectionViewCell
 @property (strong, nonatomic) UIImageView *imageView;
@@ -108,7 +108,7 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    PhotoGalleryController *vc = [[PhotoGalleryController alloc] init];
+    GinPhotoGalleryController *vc = [[GinPhotoGalleryController alloc] init];
     [vc setImageUrlList:self.cellDataList selectedIndex:indexPath.row];
 
     [self.lastPresentedViewController presentViewController:vc animated:YES completion:^{

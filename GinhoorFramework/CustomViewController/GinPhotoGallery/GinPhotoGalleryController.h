@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIResponder+Unit.h"
-@interface PhotoGalleryController : UIViewController
+@interface GinPhotoGalleryController : UIViewController
 
 - (void)setImageUrlList:(NSArray *)imageUrlList selectedIndex:(NSUInteger)index;
 
