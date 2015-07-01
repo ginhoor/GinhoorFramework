@@ -109,6 +109,11 @@
     [self.categoryTitles enumerateObjectsUsingBlock:^(NSAttributedString *str, NSUInteger idx, BOOL *stop) {
         GinPullDownMenuItem *item = [[GinPullDownMenuItem alloc] init];
         
+        if (self.categoryTitles.count == 1) {
+            item.type = GinPullDownMenuItemTypeSingle;
+            item.titleLabel.textAlignment = NSTextAlignmentLeft;
+        }
+        
         [item setTapBlock:^(GinPullDownMenuItem *item) {
             NSInteger index = [self.menuItems indexOfObject:item];
             self.currentIndex = index;

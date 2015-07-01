@@ -9,7 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <Masonry.h>
 
+typedef NS_ENUM(NSUInteger, GinPullDownMenuItemType) {
+    GinPullDownMenuItemTypeNormal,
+    GinPullDownMenuItemTypeSingle,
+};
+
 @interface GinPullDownMenuItem : UIView
+
+@property (assign, nonatomic) GinPullDownMenuItemType type;
 
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UIColor *indicatorColor;

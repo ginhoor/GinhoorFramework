@@ -15,6 +15,8 @@
 @property (strong, nonatomic) UIView *indicator;
 @property (strong, nonatomic) CAShapeLayer *indicatorShapeLayer;
 
+@property (strong, nonatomic) UIImageView *arrowImageView;
+
 @end
 
 @implementation GinPullDownMenuItem
@@ -39,6 +41,7 @@
     [self addSubview:self.titleLabel];
     [self addSubview:self.indicator];
     [self addSubview:self.control];
+    [self addSubview:self.arrowImageView];
     
     self.indicatorColor = [UIColor lightGrayColor];
     
@@ -50,24 +53,45 @@
         make.edges.equalTo(self);
     }];
     
-    [self.indicator mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.titleLabel.mas_right).offset(3);
-        make.centerY.equalTo(self.titleLabel);
-        make.size.sizeOffset(CGSizeMake(8, 5));
-    }];
+    if (self.type == GinPullDownMenuItemTypeNormal) {
+        [self.indicator mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.titleLabel.mas_right).offset(3);
+            make.centerY.equalTo(self.titleLabel);
+            make.size.sizeOffset(CGSizeMake(8, 5));
+        }];
+    } else {
+        self.indicator.hidden = YES;
+        [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.offset(20);
+            make.right.offset(-20);
+            make.top.offset(0);
+            make.bottom.offset(0);
+        }];
+        
+        [self.arrowImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.right.offset(-10);
+            make.centerY.equalTo(self.titleLabel);
+            make.size.sizeOffset(CGSizeMake(44, 44));
+        }];
+    }
+
+    
+    
     
     [super updateConstraints];
 }
 
 - (void)layoutSubviews
 {
-    CGSize size = [self.titleLabel.text getStringSizeWithfont:self.titleLabel.font height:self.bounds.size.height];
-    
-    [self.titleLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self);
-        make.height.equalTo(self);
-        make.width.offset(size.width);
-    }];
+    if (self.type == GinPullDownMenuItemTypeNormal) {
+        CGSize size = [self.titleLabel.text getStringSizeWithfont:self.titleLabel.font height:self.bounds.size.height];
+        
+        [self.titleLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.center.equalTo(self);
+            make.height.equalTo(self);
+            make.width.offset(size.width);
+        }];
+    }    
     [super layoutSubviews];
 }
 
@@ -107,6 +131,16 @@
         [_control addTarget:self action:@selector(tapAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _control;
+}
+
+- (UIImageView *)arrowImageView
+{
+    if (!_arrowImageView) {
+        _arrowImageView = [[UIImageView alloc] init];
+        _arrowImageView.highlightedImage = [UIImage imageNamed:@"GinExtendMenu.bundle/arrow_up_44x44"];
+        _arrowImageView.image = [UIImage imageNamed:@"GinExtendMenu.bundle/arrow_down_44x44"];
+    }
+    return _arrowImageView;
 }
 
 - (void)setIndicatorColor:(UIColor *)indicatorColor
@@ -159,23 +193,28 @@
 }
 - (void)animateIndicator:(BOOL)selected completedBlock:(void(^)())completedBlock
 {
-    [CATransaction begin];
-    [CATransaction setAnimationDuration:0.25];
-    [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithControlPoints:0.4 :0.0 :0.2 :1.0]];
-    
-    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation"];
-    animation.values = selected? @[@0,@(M_PI)]:@[@(M_PI),@0];
-    
-    if (!animation.removedOnCompletion) {
-        [self.indicatorShapeLayer addAnimation:animation forKey:animation.keyPath];
+    if (self.type == GinPullDownMenuItemTypeNormal) {
+        [CATransaction begin];
+        [CATransaction setAnimationDuration:0.25];
+        [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithControlPoints:0.4 :0.0 :0.2 :1.0]];
+        
+        CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation"];
+        animation.values = selected? @[@0,@(M_PI)]:@[@(M_PI),@0];
+        
+        if (!animation.removedOnCompletion) {
+            [self.indicatorShapeLayer addAnimation:animation forKey:animation.keyPath];
+        } else {
+            [self.indicatorShapeLayer addAnimation:animation forKey:animation.keyPath];
+            [self.indicatorShapeLayer setValue:animation.values.lastObject forKeyPath:animation.keyPath];
+        }
+        
+        [CATransaction commit];
+        
+        self.indicatorShapeLayer.fillColor = self.indicatorColor.CGColor;
     } else {
-        [self.indicatorShapeLayer addAnimation:animation forKey:animation.keyPath];
-        [self.indicatorShapeLayer setValue:animation.values.lastObject forKeyPath:animation.keyPath];
+        self.arrowImageView.highlighted = selected;
     }
     
-    [CATransaction commit];
-    
-    self.indicatorShapeLayer.fillColor = self.indicatorColor.CGColor;
     
     if (completedBlock) {
         completedBlock();

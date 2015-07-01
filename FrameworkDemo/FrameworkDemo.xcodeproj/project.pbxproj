@@ -97,6 +97,7 @@
 		00A527FD1AF7299B00219A98 /* GinSystemButtonViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A527FC1AF7299B00219A98 /* GinSystemButtonViewController.storyboard */; };
 		00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5E5561B15FE340095C7A5 /* NSDate+Range.m */; };
 		00E5E58D1B17F9E60095C7A5 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5E58C1B17F9E60095C7A5 /* GalleryViewController.m */; };
+		00F021D61B4376A900525724 /* GinExtendMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00F021D51B4376A900525724 /* GinExtendMenu.bundle */; };
 		00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */; };
 		00F4C9A21AE6361F00B3F485 /* NSString+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9A11AE6361F00B3F485 /* NSString+Type.m */; };
 		00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9AA1AE65BEE00B3F485 /* CheckAppVersion.m */; };
@@ -300,6 +301,7 @@
 		00E5E5561B15FE340095C7A5 /* NSDate+Range.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Range.m"; sourceTree = "<group>"; };
 		00E5E58B1B17F9E60095C7A5 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
 		00E5E58C1B17F9E60095C7A5 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		00F021D51B4376A900525724 /* GinExtendMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GinExtendMenu.bundle; sourceTree = "<group>"; };
 		00F4C9991AE630C300B3F485 /* GinPopup+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GinPopup+Unit.h"; sourceTree = "<group>"; };
 		00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GinPopup+Unit.m"; sourceTree = "<group>"; };
 		00F4C9A01AE6361F00B3F485 /* NSString+Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Type.h"; sourceTree = "<group>"; };
@@ -610,6 +612,7 @@
 		006A220A1B0AF92E0003059F /* PullDownMenu */ = {
 			isa = PBXGroup;
 			children = (
+				00F021D51B4376A900525724 /* GinExtendMenu.bundle */,
 				006A220B1B0AF92E0003059F /* GinPullDownMenu.h */,
 				006A220C1B0AF92E0003059F /* GinPullDownMenu.m */,
 				006A220D1B0AF92E0003059F /* GinPullDownMenuCell.h */,
@@ -1225,6 +1228,7 @@
 				000B52991ADBCF8100946853 /* Images.xcassets in Resources */,
 				0018B9141B0EBE12001E52D5 /* HZTableViewController.storyboard in Resources */,
 				00A527FD1AF7299B00219A98 /* GinSystemButtonViewController.storyboard in Resources */,
+				00F021D61B4376A900525724 /* GinExtendMenu.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

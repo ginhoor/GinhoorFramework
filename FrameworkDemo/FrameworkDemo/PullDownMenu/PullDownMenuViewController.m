@@ -45,10 +45,23 @@
         _sortTypeMenu.backgroundColor = [UIColor whiteColor];
         
         NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:17]};
-        _sortTypeMenu.categoryTitles = @[[NSAttributedString string:@"距离" attribute:attributes]];
+        
+        _sortTypeMenu.categoryTitles = @[[NSAttributedString string:@"距离" attribute:attributes],
+//                                         [NSAttributedString string:@"评分" attribute:attributes],
+//                                         [NSAttributedString string:@"价格从低到高" attribute:attributes]
+                                         ];
+        
         _sortTypeMenu.menuCellDataList[0] = [@[@"距离",@"评分",@"价格从低到高",@"价格从高到低"] bk_map:^id(id obj) {
             return [NSAttributedString string:obj attribute:attributes];
         }];
+
+        _sortTypeMenu.menuCellDataList[1] = [@[@"距离",@"评分",@"价格从低到高",@"价格从高到低"] bk_map:^id(id obj) {
+            return [NSAttributedString string:obj attribute:attributes];
+        }];
+        _sortTypeMenu.menuCellDataList[2] = [@[@"距离",@"评分",@"价格从低到高",@"价格从高到低"] bk_map:^id(id obj) {
+            return [NSAttributedString string:obj attribute:attributes];
+        }];
+
     }
     return _sortTypeMenu;
 }
