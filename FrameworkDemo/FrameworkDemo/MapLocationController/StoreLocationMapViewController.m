@@ -35,7 +35,7 @@ static NSString *annotationReuseId = @"Annotation";
  DDLogInfo(@"manager start failed!");
  }
  
- 另外，定位需要在info中增加描述字段 Privacy - Location Usage Description
+ 另外，定位需要在info中增加描述字段 NSLocationAlwaysUsageDescription
  
 *****/
 
@@ -67,11 +67,11 @@ static NSString *annotationReuseId = @"Annotation";
 {
     //普通annotation
     if (annotation == self.pointAnnotation) {
-        NSString *AnnotationViewID = @"renameMark";
-        BMKPinAnnotationView *annotationView = (BMKPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:AnnotationViewID];
+
+        BMKPinAnnotationView *annotationView = (BMKPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:annotationReuseId];
         
         if (annotationView == nil) {
-            annotationView = [[BMKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:AnnotationViewID];
+            annotationView = [[BMKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:annotationReuseId];
             annotationView.pinColor = BMKPinAnnotationColorRed;
             [annotationView setSelected:YES animated:NO];
 
