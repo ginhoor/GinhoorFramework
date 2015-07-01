@@ -58,10 +58,12 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "Baidu-Maps-iOS-SDK/mapapi.bundle"
   install_resource "DateTools/DateTools/DateTools.bundle"
   install_resource "MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "Baidu-Maps-iOS-SDK/mapapi.bundle"
   install_resource "DateTools/DateTools/DateTools.bundle"
   install_resource "MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle"
 fi

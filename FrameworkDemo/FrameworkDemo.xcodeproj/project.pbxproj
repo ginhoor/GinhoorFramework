@@ -98,6 +98,11 @@
 		00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5E5561B15FE340095C7A5 /* NSDate+Range.m */; };
 		00E5E58D1B17F9E60095C7A5 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5E58C1B17F9E60095C7A5 /* GalleryViewController.m */; };
 		00F021D61B4376A900525724 /* GinExtendMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00F021D51B4376A900525724 /* GinExtendMenu.bundle */; };
+		00F021E91B4395B300525724 /* BaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F021E41B4395B300525724 /* BaiduMapViewController.m */; };
+		00F021EA1B4395B300525724 /* BaiduMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F021E51B4395B300525724 /* BaiduMapViewController.storyboard */; };
+		00F021EB1B4395B300525724 /* StoreLocationMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F021E71B4395B300525724 /* StoreLocationMapViewController.m */; };
+		00F021EC1B4395B300525724 /* StoreLocationMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F021E81B4395B300525724 /* StoreLocationMapViewController.storyboard */; };
+		00F021F01B43971B00525724 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F021EF1B43971B00525724 /* LocationManager.m */; };
 		00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */; };
 		00F4C9A21AE6361F00B3F485 /* NSString+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9A11AE6361F00B3F485 /* NSString+Type.m */; };
 		00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9AA1AE65BEE00B3F485 /* CheckAppVersion.m */; };
@@ -302,6 +307,14 @@
 		00E5E58B1B17F9E60095C7A5 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
 		00E5E58C1B17F9E60095C7A5 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
 		00F021D51B4376A900525724 /* GinExtendMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GinExtendMenu.bundle; sourceTree = "<group>"; };
+		00F021E31B4395B300525724 /* BaiduMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMapViewController.h; sourceTree = "<group>"; };
+		00F021E41B4395B300525724 /* BaiduMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduMapViewController.m; sourceTree = "<group>"; };
+		00F021E51B4395B300525724 /* BaiduMapViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BaiduMapViewController.storyboard; sourceTree = "<group>"; };
+		00F021E61B4395B300525724 /* StoreLocationMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreLocationMapViewController.h; sourceTree = "<group>"; };
+		00F021E71B4395B300525724 /* StoreLocationMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreLocationMapViewController.m; sourceTree = "<group>"; };
+		00F021E81B4395B300525724 /* StoreLocationMapViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoreLocationMapViewController.storyboard; sourceTree = "<group>"; };
+		00F021EE1B43971B00525724 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		00F021EF1B43971B00525724 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 		00F4C9991AE630C300B3F485 /* GinPopup+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GinPopup+Unit.h"; sourceTree = "<group>"; };
 		00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GinPopup+Unit.m"; sourceTree = "<group>"; };
 		00F4C9A01AE6361F00B3F485 /* NSString+Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Type.h"; sourceTree = "<group>"; };
@@ -384,6 +397,7 @@
 				002F31571B29BEFB00080B37 /* DZNEmptyDataSet */,
 				002F31641B2A770100080B37 /* PullDownMenu */,
 				002F31781B2EAC5900080B37 /* Stepper */,
+				00F021E21B4395B300525724 /* MapLocationController */,
 				000B52951ADBCF8100946853 /* Main.storyboard */,
 				000B52981ADBCF8100946853 /* Images.xcassets */,
 				000B529A1ADBCF8100946853 /* LaunchScreen.xib */,
@@ -1069,6 +1083,29 @@
 			path = PhotoGallery;
 			sourceTree = "<group>";
 		};
+		00F021E21B4395B300525724 /* MapLocationController */ = {
+			isa = PBXGroup;
+			children = (
+				00F021ED1B43971B00525724 /* Location */,
+				00F021E31B4395B300525724 /* BaiduMapViewController.h */,
+				00F021E41B4395B300525724 /* BaiduMapViewController.m */,
+				00F021E51B4395B300525724 /* BaiduMapViewController.storyboard */,
+				00F021E61B4395B300525724 /* StoreLocationMapViewController.h */,
+				00F021E71B4395B300525724 /* StoreLocationMapViewController.m */,
+				00F021E81B4395B300525724 /* StoreLocationMapViewController.storyboard */,
+			);
+			path = MapLocationController;
+			sourceTree = "<group>";
+		};
+		00F021ED1B43971B00525724 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				00F021EE1B43971B00525724 /* LocationManager.h */,
+				00F021EF1B43971B00525724 /* LocationManager.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		00F4C9A31AE65B4F00B3F485 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -1224,8 +1261,10 @@
 				000B52971ADBCF8100946853 /* Main.storyboard in Resources */,
 				006A94B61ADF96920093BEBE /* GinhoorFramework.podspec in Resources */,
 				006A93D61ADE09090093BEBE /* GinScanQRCoderController.storyboard in Resources */,
+				00F021EC1B4395B300525724 /* StoreLocationMapViewController.storyboard in Resources */,
 				000B529C1ADBCF8100946853 /* LaunchScreen.xib in Resources */,
 				000B52991ADBCF8100946853 /* Images.xcassets in Resources */,
+				00F021EA1B4395B300525724 /* BaiduMapViewController.storyboard in Resources */,
 				0018B9141B0EBE12001E52D5 /* HZTableViewController.storyboard in Resources */,
 				00A527FD1AF7299B00219A98 /* GinSystemButtonViewController.storyboard in Resources */,
 				00F021D61B4376A900525724 /* GinExtendMenu.bundle in Resources */,
@@ -1279,6 +1318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F021F01B43971B00525724 /* LocationManager.m in Sources */,
 				0018BC851B12BDCA001E52D5 /* TabsViewController.m in Sources */,
 				00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */,
 				002F326D1B32795F00080B37 /* NSDictionary+Unit.m in Sources */,
@@ -1288,6 +1328,7 @@
 				006A94C81ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m in Sources */,
 				006A22121B0AF92E0003059F /* GinPullDownMenuCell.m in Sources */,
 				00A527FB1AF728B700219A98 /* GinSystemButtonViewController.m in Sources */,
+				00F021E91B4395B300525724 /* BaiduMapViewController.m in Sources */,
 				006A93C81ADE09090093BEBE /* UIImage+GinUnit.m in Sources */,
 				006A93AD1ADE09090093BEBE /* GinCollectionLayout.m in Sources */,
 				0018BC711B118D5B001E52D5 /* NSObject+JSON.m in Sources */,
@@ -1307,6 +1348,7 @@
 				006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */,
 				002F315A1B29BF0D00080B37 /* EmptyTableViewController.m in Sources */,
 				006A93D51ADE09090093BEBE /* GinScanQRCoderController.m in Sources */,
+				00F021EB1B4395B300525724 /* StoreLocationMapViewController.m in Sources */,
 				002F315D1B2A72AC00080B37 /* NSAttributedString+Unit.m in Sources */,
 				006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */,
 				006A93AF1ADE09090093BEBE /* GinBaseTitleHeader.m in Sources */,

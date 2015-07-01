@@ -14,6 +14,7 @@ target 'FrameworkDemo' do
     pod 'SDWebImage', '~> 3.7.2'
     pod 'DateTools', '~> 1.5.0'
     pod 'DZNEmptyDataSet', '~> 1.5.2'
+    pod 'Baidu-Maps-iOS-SDK', '~> 2.6.0'
 end
 
 target 'FrameworkDemoTests' do

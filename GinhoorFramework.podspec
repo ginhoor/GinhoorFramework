@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GinhoorFramework"
-  s.version      = "0.3.43"
+  s.version      = "0.3.44"
   s.summary      = "This is one of my personal library."
   s.requires_arc = true
 
@@ -53,6 +53,7 @@ Pod::Spec.new do |s|
     ss.dependency 'GinhoorFramework/Category'
     ss.source_files = 'GinhoorFramework/CustomView/**/*.{h,m}',
                       'GinhoorFramework/CustomView/**/**/*.{h,m}'
+    ss.resources = "GinhoorFramework/CustomView/**/**/*.png"
   end
 
   s.subspec 'CustomViewController' do |ss|
@@ -61,6 +62,7 @@ Pod::Spec.new do |s|
     ss.dependency 'GinhoorFramework/CustomView'
     ss.source_files = 'GinhoorFramework/CustomViewController/**/*.{h,m}',
                       'GinhoorFramework/CustomViewController/**/**/*.{h,m}'
+    ss.resources = "GinhoorFramework/CustomViewController/**/**/*.png"
   end
 
   s.subspec 'Debug' do |ss|

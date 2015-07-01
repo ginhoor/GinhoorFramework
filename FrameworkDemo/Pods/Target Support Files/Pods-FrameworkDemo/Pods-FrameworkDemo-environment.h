@@ -6,6 +6,12 @@
 // project.
 
 
+// Baidu-Maps-iOS-SDK
+#define COCOAPODS_POD_AVAILABLE_Baidu_Maps_iOS_SDK
+#define COCOAPODS_VERSION_MAJOR_Baidu_Maps_iOS_SDK 2
+#define COCOAPODS_VERSION_MINOR_Baidu_Maps_iOS_SDK 6
+#define COCOAPODS_VERSION_PATCH_Baidu_Maps_iOS_SDK 0
+
 // BlocksKit
 #define COCOAPODS_POD_AVAILABLE_BlocksKit
 #define COCOAPODS_VERSION_MAJOR_BlocksKit 2

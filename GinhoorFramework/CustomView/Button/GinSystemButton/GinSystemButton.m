@@ -18,7 +18,7 @@
 
 - (instancetype)init
 {
-    self = [GinSystemButton buttonWithType:UIButtonTypeSystem];
+    self = [GinSystemButton buttonWithType:UIButtonTypeCustom];
     if (self) {
         [self setup];
     }
@@ -43,9 +43,9 @@
     self.layer.masksToBounds = YES;
     self.adjustsImageWhenHighlighted = NO;
     self.adjustsImageWhenDisabled = NO;
-
+    
     self.tintColor = [UIColor whiteColor];
-    self.backgroundColor = [UIColor colorWithRed:40/255.f green:35/255.f blue:67/255.f alpha:1.f];
+    self.backgroundColor = [UIColor colorWithRed:0.106f green:0.749f blue:0.408f alpha:1.000f];
     [self addTarget:self action:@selector(touchUpInsideAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 

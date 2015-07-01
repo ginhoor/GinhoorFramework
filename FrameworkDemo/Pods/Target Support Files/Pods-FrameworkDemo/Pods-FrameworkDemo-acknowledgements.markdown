@@ -1,6 +1,10 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## Baidu-Maps-iOS-SDK
+
+LICENSE  ©2014 Baidu, Inc. All rights reserved
+
 ## BlocksKit
 
 //
