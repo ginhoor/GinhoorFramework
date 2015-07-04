@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GinhoorFramework"
-  s.version      = "0.3.47"
+  s.version      = "0.3.48"
   s.summary      = "This is one of my personal library."
   s.requires_arc = true
 
@@ -51,18 +51,37 @@ Pod::Spec.new do |s|
   s.subspec 'CustomView' do |ss|
     ss.dependency 'GinhoorFramework/GinSysInfo'
     ss.dependency 'GinhoorFramework/Category'
-    ss.source_files = 'GinhoorFramework/CustomView/**/*.{h,m}',
-                      'GinhoorFramework/CustomView/**/**/*.{h,m}'
-    ss.resources = "GinhoorFramework/CustomView/**/**/*.png"
+    ss.source_files =   'GinhoorFramework/CustomView/**/*.{h,m}',
+                        'GinhoorFramework/CustomView/**/**/*.{h,m}',
+                        'GinhoorFramework/CustomView/**/**/**/*.{h,m}',
+                        'GinhoorFramework/CustomView/**/**/**/**/*.{h,m}',
+                        'GinhoorFramework/CustomView/**/**/**/**/**/*.{h,m}',
+                        'GinhoorFramework/CustomView/**/**/**/**/**/**/*.{h,m}',
+                        'GinhoorFramework/CustomView/**/**/**/**/**/**/**/*.{h,m}'
+
+    ss.resources =  "GinhoorFramework/CustomView/**/**/*.png",
+                    "GinhoorFramework/CustomView/**/**/**/*.png",
+                    "GinhoorFramework/CustomView/**/**/**/**/*.png",
+                    "GinhoorFramework/CustomView/**/**/**/**/**/*.png",
+                    "GinhoorFramework/CustomView/**/**/**/**/**/**/*.png"
+
   end
 
   s.subspec 'CustomViewController' do |ss|
     ss.dependency 'GinhoorFramework/GinSysInfo'
     ss.dependency 'GinhoorFramework/Category'
     ss.dependency 'GinhoorFramework/CustomView'
-    ss.source_files = 'GinhoorFramework/CustomViewController/**/*.{h,m}',
-                      'GinhoorFramework/CustomViewController/**/**/*.{h,m}'
-    ss.resources = "GinhoorFramework/CustomViewController/**/**/*.png"
+    ss.source_files =   'GinhoorFramework/CustomViewController/**/*.{h,m}',
+                        'GinhoorFramework/CustomViewController/**/**/*.{h,m}',
+                        'GinhoorFramework/CustomViewController/**/**/**/*.{h,m}',
+                        'GinhoorFramework/CustomViewController/**/**/**/**/*.{h,m}'
+
+    ss.resources =  "GinhoorFramework/CustomViewController/**/**/*.png",
+                    "GinhoorFramework/CustomViewController/**/**/**/*.png",
+                    "GinhoorFramework/CustomViewController/**/**/**/**/*.png",
+                    "GinhoorFramework/CustomViewController/**/**/**/**/**/*.png",
+                    "GinhoorFramework/CustomViewController/**/**/**/**/**/**/*.png"
+
   end
 
   s.subspec 'Debug' do |ss|
