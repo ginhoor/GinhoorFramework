@@ -28,8 +28,10 @@
     return ^(NSArray *dataList) {
         if (dataList && dataList.count > 0) {
             self.cellDataList = dataList;
+            [self.tableView.footer resetNoMoreData];
         } else {
             self.cellDataList = @[];
+            [self.tableView.footer noticeNoMoreData];
         }
         [self.tableView reloadData];
         [self endTableDataRefreshing];
@@ -60,9 +62,10 @@
             NSMutableArray *mArray = [NSMutableArray arrayWithArray:self.cellDataList];
             [mArray addObjectsFromArray:dataList];
             self.cellDataList = mArray;
-            
             [self.tableView reloadData];
             self.currentPageIndex++;
+        } else {
+            [self.tableView.footer noticeNoMoreData];
         }
         
         [self endTableDataRefreshing];
@@ -115,7 +118,7 @@
 - (void)setStartIndex:(NSUInteger)startIndex
 {
     [self setValue:@(startIndex) key:@"startIndex" policy:OBJC_ASSOCIATION_ASSIGN owner:self];
-
+    
 }
 - (NSUInteger)startIndex
 {
@@ -134,7 +137,7 @@
     
     if (!tableView) {
         tableView = [UITableView defaultTableView];
-
+        
         [self setValue:tableView key:@"tableView" policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC owner:self];
     }
     return tableView;

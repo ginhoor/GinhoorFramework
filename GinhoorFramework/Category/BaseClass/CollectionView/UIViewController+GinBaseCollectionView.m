@@ -28,12 +28,15 @@
     return ^(NSArray *dataList) {
         if (dataList && dataList.count > 0) {
             self.cellDataList = dataList;
+            [self.collectionView.footer resetNoMoreData];
         } else {
             self.cellDataList = @[];
+            [self.collectionView.footer noticeNoMoreData];
         }
-        [self.collectionView reloadData];
-        [self endCollectionDataRefreshing];
         
+        [self.collectionView reloadData];
+        
+        [self endCollectionDataRefreshing];
         self.currentPageIndex = self.startIndex;
         
         if (self.finishLoadData) {
@@ -62,11 +65,10 @@
             self.cellDataList = mArray;
             
             [self.collectionView reloadData];
-            [self endCollectionDataRefreshing];
-            
         } else {
-            [self endCollectionDataRefreshing];
+            [self.collectionView.footer noticeNoMoreData];
         }
+        [self endCollectionDataRefreshing];
         
         self.currentPageIndex++;
         if (self.finishLoadData) {
@@ -120,7 +122,7 @@
 - (void)setStartIndex:(NSUInteger)startIndex
 {
     [self setValue:@(startIndex) key:@"startIndex" policy:OBJC_ASSOCIATION_ASSIGN owner:self];
-
+    
 }
 - (NSUInteger)startIndex
 {
