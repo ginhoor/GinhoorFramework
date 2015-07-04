@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   # s.resources = "GinFramework/Framework/**/*.png"
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
-  s.frameworks = "Foundation", "CoreGraphics", "UIKit"
+  s.frameworks = "Foundation", "CoreGraphics", "UIKit", "AddressBook", "AddressBookUI"
   # s.library   = "libxml2"
   # s.libraries = "iconv", "xml2"
 
