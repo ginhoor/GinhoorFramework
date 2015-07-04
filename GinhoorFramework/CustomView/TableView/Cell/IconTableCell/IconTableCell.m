@@ -13,15 +13,36 @@
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UIImageView *indicator;
 @property (strong, nonatomic) UIView *separator;
-
+@property (strong, nonatomic) UIView *cellContentView;
 @end
 
 @implementation IconTableCell
 
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
 - (void)setup
 {
-    [super setup];
+    self.clipsToBounds = YES;
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    self.backgroundColor = [UIColor clearColor];
+    [self.contentView addSubview:self.cellContentView];
     
     [self.cellContentView addSubview:self.iconImageView];
     [self.cellContentView addSubview:self.titleLabel];
@@ -59,7 +80,7 @@
         make.bottom.offset(0);
         make.left.offset(15);
         make.right.offset(-15);
-        make.height.offset(ONE_PHYSICAL_PX);
+        make.height.offset(1.f/[UIScreen mainScreen].scale);
     }];
     
     [super updateConstraints];
@@ -93,7 +114,7 @@
 - (UIImageView *)indicator
 {
     if (!_indicator) {
-        _indicator = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"list_icon_arrow_44x44"]];
+        _indicator = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"list_indicator_arrow"]];
     }
     return _indicator;
 }

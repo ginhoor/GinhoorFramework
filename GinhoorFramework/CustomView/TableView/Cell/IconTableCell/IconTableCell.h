@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import "BaseTableViewCell.h"
+#import <Masonry.h>
 
-@interface IconTableCell : BaseTableViewCell
+@interface IconTableCell : UITableViewCell
 
 - (void)setIcon:(UIImage *)image title:(NSAttributedString *)title showIndicator:(BOOL)showIndicator showSeparator:(BOOL)showSeparator;
 

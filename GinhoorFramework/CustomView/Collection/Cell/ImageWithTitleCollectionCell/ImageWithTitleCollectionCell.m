@@ -6,6 +6,7 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
+#import <Masonry.h>
 #import "ImageWithTitleCollectionCell.h"
 
 @implementation ImageWithTitleCollectionCell
@@ -62,7 +63,7 @@
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        _titleLabel.textColor = [UIColor colorWithHex:0x999999];
+        _titleLabel.textColor = [UIColor colorWithRed:0.600f green:0.600f blue:0.600f alpha:1.000f];
     }
     return _titleLabel;
 }
