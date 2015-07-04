@@ -29,14 +29,14 @@
 - (void)setup_GinBaseCollectionView;
 - (void)cleanup_GinBaseCollectionView;
 
-// 初始化celldata成功
-- (void (^)(NSArray *dataList))GinSetupCollectionDataSuccessBlock;
+
+// 初始化celldata
+- (void (^)(NSArray *dataList))GinSetupCollectionDataBlock;
 // 获得celldata失败
 - (void (^)(NSError *error))GinSetupCollectionDataFailureBlock;
-// 获得新增celldata 成功
-- (void (^)(NSArray *dataList))GinAddNewCollectionDataSuccessBlock;
-// 获得新增celldata失败
-- (void (^)(NSError *error))GinAddNewCollectionDataFailureBlock;
+// 按页数处理 celldata
+- (void (^)(NSArray *dataList))GinSetupCollectionDataWithPageIndexBlock:(NSUInteger)pageIndex;
+
 
 - (void)endCollectionDataRefreshing;
 

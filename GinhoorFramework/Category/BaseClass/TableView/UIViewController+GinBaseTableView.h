@@ -30,14 +30,12 @@
 - (void)setup_GinBaseTableView;
 - (void)cleanup_GinBaseTableView;
 
-// 初始化celldata成功
-- (void (^)(NSArray *dataList))GinSetupTableDataSuccessBlock;
+// 初始化celldata
+- (void (^)(NSArray *dataList))GinSetupTableDataBlock;
 // 获得celldata失败
 - (void (^)(NSError *error))GinSetupTableDataFailureBlock;
-// 获得新增celldata 成功
-- (void (^)(NSArray *dataList))GinAddNewTableDataSuccessBlock;
-// 获得新增celldata失败
-- (void (^)(NSError *error))GinAddNewTableDataFailureBlock;
+// 按页数处理 celldata
+- (void (^)(NSArray *dataList))GinSetupTableDataWithPageIndexBlock:(NSUInteger)pageIndex;
 
 - (void)endTableDataRefreshing;
 

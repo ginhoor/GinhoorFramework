@@ -23,7 +23,7 @@
     self.currentPageIndex = self.startIndex = 1;
 }
 
-- (void (^)(NSArray *dataList))GinSetupTableDataSuccessBlock
+- (void (^)(NSArray *dataList))GinSetupTableDataBlock
 {
     return ^(NSArray *dataList) {
         if (dataList && dataList.count > 0) {
@@ -54,8 +54,12 @@
     };
 }
 
-- (void (^)(NSArray *dataList))GinAddNewTableDataSuccessBlock
+- (void (^)(NSArray *dataList))GinSetupTableDataWithPageIndexBlock:(NSUInteger)pageIndex
 {
+    
+    if (pageIndex == self.startIndex) {
+        return [self GinSetupTableDataBlock];
+    }
     return ^(NSArray *dataList) {
         
         if (dataList && dataList.count > 0) {
@@ -74,11 +78,6 @@
             self.finishLoadData(self.tableView);
         }
     };
-}
-
-- (void (^)(NSError *error))GinAddNewTableDataFailureBlock
-{
-    return [self GinSetupTableDataFailureBlock];
 }
 
 - (void)endTableDataRefreshing

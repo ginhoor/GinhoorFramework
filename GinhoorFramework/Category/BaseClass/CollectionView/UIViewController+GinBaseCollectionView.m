@@ -23,7 +23,7 @@
     self.currentPageIndex = self.startIndex = 1;
 }
 
-- (void (^)(NSArray *dataList))GinSetupCollectionDataSuccessBlock
+- (void (^)(NSArray *dataList))GinSetupCollectionDataBlock
 {
     return ^(NSArray *dataList) {
         if (dataList && dataList.count > 0) {
@@ -55,8 +55,11 @@
     };
 }
 
-- (void (^)(NSArray *dataList))GinAddNewCollectionDataSuccessBlock
+- (void (^)(NSArray *dataList))GinSetupTableDataWithPageIndexBlock:(NSUInteger)pageIndex
 {
+    if (pageIndex == self.startIndex) {
+        return [self GinSetupCollectionDataBlock];
+    }
     return ^(NSArray *dataList) {
         
         if (dataList && dataList.count > 0) {
