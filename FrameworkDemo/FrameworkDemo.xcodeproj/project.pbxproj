@@ -42,6 +42,10 @@
 		0033C7E41B131E6C0022B189 /* page3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7E11B131E6C0022B189 /* page3Controller.m */; };
 		003B32811B1AAE09001EED5C /* GinPhotoGalleryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B327E1B1AAE09001EED5C /* GinPhotoGalleryController.m */; };
 		003B32821B1AAE09001EED5C /* GinShowPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B32801B1AAE09001EED5C /* GinShowPhotoViewController.m */; };
+		005421C91B4794720028CCE6 /* BaseCollectionViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 005421C21B4794720028CCE6 /* BaseCollectionViewContoller.m */; };
+		005421CA1B4794720028CCE6 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005421C41B4794720028CCE6 /* BaseTableViewController.m */; };
+		005421CB1B4794720028CCE6 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 005421C61B4794720028CCE6 /* BaseView.m */; };
+		005421CC1B4794720028CCE6 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005421C81B4794720028CCE6 /* BaseViewController.m */; };
 		006A22111B0AF92E0003059F /* GinPullDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A220C1B0AF92E0003059F /* GinPullDownMenu.m */; };
 		006A22121B0AF92E0003059F /* GinPullDownMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A220E1B0AF92E0003059F /* GinPullDownMenuCell.m */; };
 		006A22131B0AF92E0003059F /* GinPullDownMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A22101B0AF92E0003059F /* GinPullDownMenuItem.m */; };
@@ -88,10 +92,6 @@
 		007D445C1B3D2BA300EF1E36 /* GinHorizontalLayoutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D445B1B3D2BA300EF1E36 /* GinHorizontalLayoutButton.m */; };
 		0086EE5C1B184309008A42D3 /* demo4Gallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0086EE5B1B184309008A42D3 /* demo4Gallery.m */; };
 		00905F111AE74A09004B5CA1 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00905F101AE74A09004B5CA1 /* TableViewController.m */; };
-		00A527E21AF720A500219A98 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527E11AF720A500219A98 /* BaseView.m */; };
-		00A527E51AF720C200219A98 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527E41AF720C200219A98 /* BaseViewController.m */; };
-		00A527E81AF720FF00219A98 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527E71AF720FF00219A98 /* BaseTableViewController.m */; };
-		00A527EB1AF7210C00219A98 /* BaseCollectionViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527EA1AF7210C00219A98 /* BaseCollectionViewContoller.m */; };
 		00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527F61AF7259F00219A98 /* GinWebViewController.m */; };
 		00A527FB1AF728B700219A98 /* GinSystemButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527FA1AF728B700219A98 /* GinSystemButtonViewController.m */; };
 		00A527FD1AF7299B00219A98 /* GinSystemButtonViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A527FC1AF7299B00219A98 /* GinSystemButtonViewController.storyboard */; };
@@ -195,6 +195,14 @@
 		003B327E1B1AAE09001EED5C /* GinPhotoGalleryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinPhotoGalleryController.m; sourceTree = "<group>"; };
 		003B327F1B1AAE09001EED5C /* GinShowPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinShowPhotoViewController.h; sourceTree = "<group>"; };
 		003B32801B1AAE09001EED5C /* GinShowPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinShowPhotoViewController.m; sourceTree = "<group>"; };
+		005421C11B4794720028CCE6 /* BaseCollectionViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewContoller.h; sourceTree = "<group>"; };
+		005421C21B4794720028CCE6 /* BaseCollectionViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewContoller.m; sourceTree = "<group>"; };
+		005421C31B4794720028CCE6 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		005421C41B4794720028CCE6 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		005421C51B4794720028CCE6 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		005421C61B4794720028CCE6 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		005421C71B4794720028CCE6 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		005421C81B4794720028CCE6 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		006A220B1B0AF92E0003059F /* GinPullDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPullDownMenu.h; sourceTree = "<group>"; };
 		006A220C1B0AF92E0003059F /* GinPullDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinPullDownMenu.m; sourceTree = "<group>"; };
 		006A220D1B0AF92E0003059F /* GinPullDownMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPullDownMenuCell.h; sourceTree = "<group>"; };
@@ -289,14 +297,6 @@
 		0086EE5B1B184309008A42D3 /* demo4Gallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo4Gallery.m; sourceTree = "<group>"; };
 		00905F0F1AE74A09004B5CA1 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		00905F101AE74A09004B5CA1 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		00A527E01AF720A500219A98 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
-		00A527E11AF720A500219A98 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
-		00A527E31AF720C200219A98 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		00A527E41AF720C200219A98 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		00A527E61AF720FF00219A98 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
-		00A527E71AF720FF00219A98 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
-		00A527E91AF7210C00219A98 /* BaseCollectionViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewContoller.h; sourceTree = "<group>"; };
-		00A527EA1AF7210C00219A98 /* BaseCollectionViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewContoller.m; sourceTree = "<group>"; };
 		00A527F51AF7259F00219A98 /* GinWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinWebViewController.h; sourceTree = "<group>"; };
 		00A527F61AF7259F00219A98 /* GinWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinWebViewController.m; sourceTree = "<group>"; };
 		00A527F91AF728B700219A98 /* GinSystemButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinSystemButtonViewController.h; sourceTree = "<group>"; };
@@ -518,6 +518,7 @@
 		0018BA431B115CA7001E52D5 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				005421C01B4794720028CCE6 /* BaseClass */,
 				0018BA441B115CA7001E52D5 /* Mantle */,
 			);
 			path = Tips;
@@ -621,6 +622,21 @@
 				003B32801B1AAE09001EED5C /* GinShowPhotoViewController.m */,
 			);
 			path = GinPhotoGallery;
+			sourceTree = "<group>";
+		};
+		005421C01B4794720028CCE6 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				005421C11B4794720028CCE6 /* BaseCollectionViewContoller.h */,
+				005421C21B4794720028CCE6 /* BaseCollectionViewContoller.m */,
+				005421C31B4794720028CCE6 /* BaseTableViewController.h */,
+				005421C41B4794720028CCE6 /* BaseTableViewController.m */,
+				005421C51B4794720028CCE6 /* BaseView.h */,
+				005421C61B4794720028CCE6 /* BaseView.m */,
+				005421C71B4794720028CCE6 /* BaseViewController.h */,
+				005421C81B4794720028CCE6 /* BaseViewController.m */,
+			);
+			path = BaseClass;
 			sourceTree = "<group>";
 		};
 		006A220A1B0AF92E0003059F /* PullDownMenu */ = {
@@ -923,7 +939,6 @@
 				0018B91F1B0EC965001E52D5 /* HZCollectionViewLayout */,
 				0018B8ED1B0C3AE0001E52D5 /* Stepper */,
 				006A220A1B0AF92E0003059F /* PullDownMenu */,
-				00A527DF1AF7209000219A98 /* BaseClass */,
 				00F760AE1AE8B0F500AA47C9 /* Keyboard */,
 				006A938A1ADE09090093BEBE /* Button */,
 			);
@@ -1036,21 +1051,6 @@
 				00905F101AE74A09004B5CA1 /* TableViewController.m */,
 			);
 			path = TableView;
-			sourceTree = "<group>";
-		};
-		00A527DF1AF7209000219A98 /* BaseClass */ = {
-			isa = PBXGroup;
-			children = (
-				00A527E01AF720A500219A98 /* BaseView.h */,
-				00A527E11AF720A500219A98 /* BaseView.m */,
-				00A527E31AF720C200219A98 /* BaseViewController.h */,
-				00A527E41AF720C200219A98 /* BaseViewController.m */,
-				00A527E61AF720FF00219A98 /* BaseTableViewController.h */,
-				00A527E71AF720FF00219A98 /* BaseTableViewController.m */,
-				00A527E91AF7210C00219A98 /* BaseCollectionViewContoller.h */,
-				00A527EA1AF7210C00219A98 /* BaseCollectionViewContoller.m */,
-			);
-			path = BaseClass;
 			sourceTree = "<group>";
 		};
 		00A527F41AF7259700219A98 /* GinWebViewController */ = {
@@ -1340,12 +1340,14 @@
 				006A93B31ADE09090093BEBE /* GinBaseNoContentTabCell.m in Sources */,
 				006A93AE1ADE09090093BEBE /* GinHeightDynamicCollectionLayout.m in Sources */,
 				006A22111B0AF92E0003059F /* GinPullDownMenu.m in Sources */,
+				005421CA1B4794720028CCE6 /* BaseTableViewController.m in Sources */,
 				00E5E58D1B17F9E60095C7A5 /* GalleryViewController.m in Sources */,
 				0018B9971B100D66001E52D5 /* GinSystemButton.m in Sources */,
 				006A94CF1ADFFF570093BEBE /* NSString+Json.m in Sources */,
 				006A94BC1ADFAD6D0093BEBE /* UIViewController+GinBaseTableView.m in Sources */,
 				006A93B71ADE09090093BEBE /* UIView+GinCGRect.m in Sources */,
 				006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */,
+				005421C91B4794720028CCE6 /* BaseCollectionViewContoller.m in Sources */,
 				002F315A1B29BF0D00080B37 /* EmptyTableViewController.m in Sources */,
 				006A93D51ADE09090093BEBE /* GinScanQRCoderController.m in Sources */,
 				00F021EB1B4395B300525724 /* StoreLocationMapViewController.m in Sources */,
@@ -1363,9 +1365,11 @@
 				0018B9961B100D66001E52D5 /* GinImageButton.m in Sources */,
 				00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */,
 				006A93D31ADE09090093BEBE /* GinPopupViewController.m in Sources */,
+				005421CC1B4794720028CCE6 /* BaseViewController.m in Sources */,
 				00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */,
 				006A93D41ADE09090093BEBE /* GinQRCodePickerBaseController.m in Sources */,
 				0018B90F1B0EB701001E52D5 /* HZTableViewController.m in Sources */,
+				005421CB1B4794720028CCE6 /* BaseView.m in Sources */,
 				0018B9981B100D66001E52D5 /* GinTagButton.m in Sources */,
 				0018BA4A1B115DA4001E52D5 /* NSValueTransformer+Unit.m in Sources */,
 				0018BC6E1B118C7F001E52D5 /* NSString+MD5.m in Sources */,
@@ -1384,7 +1388,6 @@
 				00F7FC711AEDEB840080AFC7 /* UIView+Debug.m in Sources */,
 				006A93B11ADE09090093BEBE /* GinBaseCoreDataResponder.m in Sources */,
 				006A93D11ADE09090093BEBE /* GinPopupContentView.m in Sources */,
-				00A527E81AF720FF00219A98 /* BaseTableViewController.m in Sources */,
 				006A93B91ADE09090093BEBE /* UIViewController+GinBaseClass.m in Sources */,
 				00F760B31AE8B0F500AA47C9 /* UITextField+Keyboard.m in Sources */,
 				006A22131B0AF92E0003059F /* GinPullDownMenuItem.m in Sources */,
@@ -1395,10 +1398,7 @@
 				006A93C11ADE09090093BEBE /* NSDate+RCUtility.m in Sources */,
 				0018B9851B100883001E52D5 /* UIColor+Hex.m in Sources */,
 				006A93C91ADE09090093BEBE /* UIResponder+Unit.m in Sources */,
-				00A527EB1AF7210C00219A98 /* BaseCollectionViewContoller.m in Sources */,
-				00A527E51AF720C200219A98 /* BaseViewController.m in Sources */,
 				006A93AC1ADE09090093BEBE /* GinBaseNoContentCell.m in Sources */,
-				00A527E21AF720A500219A98 /* BaseView.m in Sources */,
 				0018B9951B100D66001E52D5 /* GinFloatedButton.m in Sources */,
 				0018B8F01B0C3AE0001E52D5 /* GinStepperView.m in Sources */,
 				006A93CB1ADE09090093BEBE /* UIView+view2Image.m in Sources */,
