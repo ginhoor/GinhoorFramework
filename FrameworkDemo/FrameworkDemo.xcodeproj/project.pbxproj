@@ -46,6 +46,12 @@
 		005421CA1B4794720028CCE6 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005421C41B4794720028CCE6 /* BaseTableViewController.m */; };
 		005421CB1B4794720028CCE6 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 005421C61B4794720028CCE6 /* BaseView.m */; };
 		005421CC1B4794720028CCE6 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005421C81B4794720028CCE6 /* BaseViewController.m */; };
+		005421D41B47C7100028CCE6 /* arrow_down_44x44.png in Resources */ = {isa = PBXBuildFile; fileRef = 005421CE1B47C7100028CCE6 /* arrow_down_44x44.png */; };
+		005421D51B47C7100028CCE6 /* arrow_down_44x44@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005421CF1B47C7100028CCE6 /* arrow_down_44x44@2x.png */; };
+		005421D61B47C7100028CCE6 /* arrow_down_44x44@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005421D01B47C7100028CCE6 /* arrow_down_44x44@3x.png */; };
+		005421D71B47C7100028CCE6 /* arrow_up_44x44.png in Resources */ = {isa = PBXBuildFile; fileRef = 005421D11B47C7100028CCE6 /* arrow_up_44x44.png */; };
+		005421D81B47C7100028CCE6 /* arrow_up_44x44@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005421D21B47C7100028CCE6 /* arrow_up_44x44@2x.png */; };
+		005421D91B47C7100028CCE6 /* arrow_up_44x44@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005421D31B47C7100028CCE6 /* arrow_up_44x44@3x.png */; };
 		006A22111B0AF92E0003059F /* GinPullDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A220C1B0AF92E0003059F /* GinPullDownMenu.m */; };
 		006A22121B0AF92E0003059F /* GinPullDownMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A220E1B0AF92E0003059F /* GinPullDownMenuCell.m */; };
 		006A22131B0AF92E0003059F /* GinPullDownMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A22101B0AF92E0003059F /* GinPullDownMenuItem.m */; };
@@ -97,7 +103,6 @@
 		00A527FD1AF7299B00219A98 /* GinSystemButtonViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A527FC1AF7299B00219A98 /* GinSystemButtonViewController.storyboard */; };
 		00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5E5561B15FE340095C7A5 /* NSDate+Range.m */; };
 		00E5E58D1B17F9E60095C7A5 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5E58C1B17F9E60095C7A5 /* GalleryViewController.m */; };
-		00F021D61B4376A900525724 /* GinExtendMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00F021D51B4376A900525724 /* GinExtendMenu.bundle */; };
 		00F021E91B4395B300525724 /* BaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F021E41B4395B300525724 /* BaiduMapViewController.m */; };
 		00F021EA1B4395B300525724 /* BaiduMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F021E51B4395B300525724 /* BaiduMapViewController.storyboard */; };
 		00F021EB1B4395B300525724 /* StoreLocationMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F021E71B4395B300525724 /* StoreLocationMapViewController.m */; };
@@ -203,6 +208,12 @@
 		005421C61B4794720028CCE6 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		005421C71B4794720028CCE6 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		005421C81B4794720028CCE6 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		005421CE1B47C7100028CCE6 /* arrow_down_44x44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_down_44x44.png; sourceTree = "<group>"; };
+		005421CF1B47C7100028CCE6 /* arrow_down_44x44@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_down_44x44@2x.png"; sourceTree = "<group>"; };
+		005421D01B47C7100028CCE6 /* arrow_down_44x44@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_down_44x44@3x.png"; sourceTree = "<group>"; };
+		005421D11B47C7100028CCE6 /* arrow_up_44x44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_up_44x44.png; sourceTree = "<group>"; };
+		005421D21B47C7100028CCE6 /* arrow_up_44x44@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_up_44x44@2x.png"; sourceTree = "<group>"; };
+		005421D31B47C7100028CCE6 /* arrow_up_44x44@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_up_44x44@3x.png"; sourceTree = "<group>"; };
 		006A220B1B0AF92E0003059F /* GinPullDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPullDownMenu.h; sourceTree = "<group>"; };
 		006A220C1B0AF92E0003059F /* GinPullDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinPullDownMenu.m; sourceTree = "<group>"; };
 		006A220D1B0AF92E0003059F /* GinPullDownMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPullDownMenuCell.h; sourceTree = "<group>"; };
@@ -306,7 +317,6 @@
 		00E5E5561B15FE340095C7A5 /* NSDate+Range.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Range.m"; sourceTree = "<group>"; };
 		00E5E58B1B17F9E60095C7A5 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
 		00E5E58C1B17F9E60095C7A5 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
-		00F021D51B4376A900525724 /* GinExtendMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GinExtendMenu.bundle; sourceTree = "<group>"; };
 		00F021E31B4395B300525724 /* BaiduMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMapViewController.h; sourceTree = "<group>"; };
 		00F021E41B4395B300525724 /* BaiduMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduMapViewController.m; sourceTree = "<group>"; };
 		00F021E51B4395B300525724 /* BaiduMapViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BaiduMapViewController.storyboard; sourceTree = "<group>"; };
@@ -639,10 +649,23 @@
 			path = BaseClass;
 			sourceTree = "<group>";
 		};
+		005421CD1B47C7100028CCE6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				005421CE1B47C7100028CCE6 /* arrow_down_44x44.png */,
+				005421CF1B47C7100028CCE6 /* arrow_down_44x44@2x.png */,
+				005421D01B47C7100028CCE6 /* arrow_down_44x44@3x.png */,
+				005421D11B47C7100028CCE6 /* arrow_up_44x44.png */,
+				005421D21B47C7100028CCE6 /* arrow_up_44x44@2x.png */,
+				005421D31B47C7100028CCE6 /* arrow_up_44x44@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		006A220A1B0AF92E0003059F /* PullDownMenu */ = {
 			isa = PBXGroup;
 			children = (
-				00F021D51B4376A900525724 /* GinExtendMenu.bundle */,
+				005421CD1B47C7100028CCE6 /* Resource */,
 				006A220B1B0AF92E0003059F /* GinPullDownMenu.h */,
 				006A220C1B0AF92E0003059F /* GinPullDownMenu.m */,
 				006A220D1B0AF92E0003059F /* GinPullDownMenuCell.h */,
@@ -1260,14 +1283,19 @@
 			files = (
 				000B52971ADBCF8100946853 /* Main.storyboard in Resources */,
 				006A94B61ADF96920093BEBE /* GinhoorFramework.podspec in Resources */,
+				005421D41B47C7100028CCE6 /* arrow_down_44x44.png in Resources */,
+				005421D71B47C7100028CCE6 /* arrow_up_44x44.png in Resources */,
+				005421D81B47C7100028CCE6 /* arrow_up_44x44@2x.png in Resources */,
 				006A93D61ADE09090093BEBE /* GinScanQRCoderController.storyboard in Resources */,
 				00F021EC1B4395B300525724 /* StoreLocationMapViewController.storyboard in Resources */,
 				000B529C1ADBCF8100946853 /* LaunchScreen.xib in Resources */,
+				005421D61B47C7100028CCE6 /* arrow_down_44x44@3x.png in Resources */,
 				000B52991ADBCF8100946853 /* Images.xcassets in Resources */,
+				005421D91B47C7100028CCE6 /* arrow_up_44x44@3x.png in Resources */,
 				00F021EA1B4395B300525724 /* BaiduMapViewController.storyboard in Resources */,
 				0018B9141B0EBE12001E52D5 /* HZTableViewController.storyboard in Resources */,
+				005421D51B47C7100028CCE6 /* arrow_down_44x44@2x.png in Resources */,
 				00A527FD1AF7299B00219A98 /* GinSystemButtonViewController.storyboard in Resources */,
-				00F021D61B4376A900525724 /* GinExtendMenu.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

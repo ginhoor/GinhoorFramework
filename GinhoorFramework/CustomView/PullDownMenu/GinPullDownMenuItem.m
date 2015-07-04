@@ -137,8 +137,8 @@
 {
     if (!_arrowImageView) {
         _arrowImageView = [[UIImageView alloc] init];
-        _arrowImageView.highlightedImage = [UIImage imageNamed:@"GinExtendMenu.bundle/arrow_up_44x44"];
-        _arrowImageView.image = [UIImage imageNamed:@"GinExtendMenu.bundle/arrow_down_44x44"];
+        _arrowImageView.highlightedImage = [UIImage imageNamed:@"arrow_up_44x44"];
+        _arrowImageView.image = [UIImage imageNamed:@"arrow_down_44x44"];
     }
     return _arrowImageView;
 }
