@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-
+#import "GinSysInfo.h"
 #import "LocationManager.h"
 
 @interface LocationManager() <CLLocationManagerDelegate>
@@ -112,7 +112,7 @@
 
 + (BOOL)isLocationEnable
 {
-    DDLogInfo(@"location status: %d",[CLLocationManager authorizationStatus]);
+    NSLog(@"location status: %d",[CLLocationManager authorizationStatus]);
     
     CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
     

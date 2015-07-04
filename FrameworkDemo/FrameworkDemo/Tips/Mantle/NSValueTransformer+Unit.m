@@ -29,9 +29,17 @@ NSString * const GinTimeIntervalValueValueTransformerName = @"GinTimeIntervalVal
 + (void)setupTimeIntervalValueTransformer
 {
     MTLValueTransformer *dateValueTransformer = [MTLValueTransformer reversibleTransformerWithForwardBlock:^NSDate *(NSNumber *ts) {
-        return [NSDate dateWithTimeIntervalSince1970:ts.doubleValue/1000];
+        if (ts) {
+            return [NSDate dateWithTimeIntervalSince1970:ts.doubleValue/1000];
+        } else {
+            return nil;
+        }
     } reverseBlock:^NSNumber *(NSDate *date) {
-        return @(date.timeIntervalSince1970);
+        if (date) {
+            return @(date.timeIntervalSince1970*1000);
+        } else {
+            return nil;
+        }
     }];
     
     [NSValueTransformer setValueTransformer:dateValueTransformer forName:GinTimeIntervalValueValueTransformerName];
