@@ -6,7 +6,6 @@
 //  Copyright (c) 2015年 Byhere. All rights reserved.
 //
 
-#import "BaseView.h"
 
 #import "GinVerticalLayoutButton.h"
 
