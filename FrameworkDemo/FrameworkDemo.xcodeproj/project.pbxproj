@@ -77,6 +77,7 @@
 		005422E21B47E9CE0028CCE6 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422DA1B47E9CE0028CCE6 /* BaseTableViewController.m */; };
 		005422E31B47E9CE0028CCE6 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422DC1B47E9CE0028CCE6 /* BaseView.m */; };
 		005422E41B47E9CE0028CCE6 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422DE1B47E9CE0028CCE6 /* BaseViewController.m */; };
+		005422EB1B47F4710028CCE6 /* GinKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422EA1B47F4710028CCE6 /* GinKeyboardManager.m */; };
 		006A93A91ADE09090093BEBE /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93271ADE09090093BEBE /* NSString+Base64.m */; };
 		006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93291ADE09090093BEBE /* UIImage+Base64.m */; };
 		006A93AC1ADE09090093BEBE /* GinBaseNoContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93301ADE09090093BEBE /* GinBaseNoContentCell.m */; };
@@ -280,6 +281,8 @@
 		005422DC1B47E9CE0028CCE6 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		005422DD1B47E9CE0028CCE6 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		005422DE1B47E9CE0028CCE6 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		005422E91B47F4710028CCE6 /* GinKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinKeyboardManager.h; sourceTree = "<group>"; };
+		005422EA1B47F4710028CCE6 /* GinKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinKeyboardManager.m; sourceTree = "<group>"; };
 		006A93251ADE09090093BEBE /* GinCategory_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCategory_Base64.h; sourceTree = "<group>"; };
 		006A93261ADE09090093BEBE /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		006A93271ADE09090093BEBE /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
@@ -945,6 +948,15 @@
 			path = BaseClass;
 			sourceTree = "<group>";
 		};
+		005422E81B47F4710028CCE6 /* KeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				005422E91B47F4710028CCE6 /* GinKeyboardManager.h */,
+				005422EA1B47F4710028CCE6 /* GinKeyboardManager.m */,
+			);
+			path = KeyboardManager;
+			sourceTree = "<group>";
+		};
 		006A93221ADE09090093BEBE /* GinhoorFramework */ = {
 			isa = PBXGroup;
 			children = (
@@ -1367,6 +1379,7 @@
 		00F4C9A31AE65B4F00B3F485 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				005422E81B47F4710028CCE6 /* KeyboardManager */,
 				005421DA1B47DF6F0028CCE6 /* GinContactsBook */,
 				00F4C9A81AE65BEE00B3F485 /* CheckAppVersion */,
 			);
@@ -1638,6 +1651,7 @@
 				006A93D31ADE09090093BEBE /* GinPopupViewController.m in Sources */,
 				00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */,
 				006A93D41ADE09090093BEBE /* GinQRCodePickerBaseController.m in Sources */,
+				005422EB1B47F4710028CCE6 /* GinKeyboardManager.m in Sources */,
 				0018B90F1B0EB701001E52D5 /* HZTableViewController.m in Sources */,
 				0018BA4A1B115DA4001E52D5 /* NSValueTransformer+Unit.m in Sources */,
 				005422E01B47E9CE0028CCE6 /* BaseCollectionViewContoller.m in Sources */,

@@ -95,6 +95,14 @@
     self.separator.hidden = !showSeparator;
 }
 
+- (UIView *)cellContentView
+{
+    if (!_cellContentView) {
+        _cellContentView = [[UIView alloc] init];
+        _cellContentView.backgroundColor = [UIColor whiteColor];
+    }
+    return _cellContentView;
+}
 - (UIImageView *)iconImageView
 {
     if (!_iconImageView) {

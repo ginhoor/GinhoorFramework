@@ -12,5 +12,6 @@
 
 - (void)setIcon:(UIImage *)image title:(NSAttributedString *)title showIndicator:(BOOL)showIndicator showSeparator:(BOOL)showSeparator;
 
++ (CGFloat)viewHeight;
 
 @end
