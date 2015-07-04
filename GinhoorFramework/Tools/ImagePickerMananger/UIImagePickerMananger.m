@@ -92,7 +92,7 @@
         self.didCancelPickingBlock(picker);
     }
     
-    [self.controller.lastPresentedViewController dismissViewControllerAnimated:YES completion:^{}];
+    [self.controller dismissViewControllerAnimated:YES completion:^{}];
 }
 
 @end
