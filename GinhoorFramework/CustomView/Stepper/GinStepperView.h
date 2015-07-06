@@ -17,7 +17,8 @@ typedef NS_ENUM(NSUInteger, GinStepperType) {
 @property (strong, nonatomic) UIStepper *stepper;
 @property (assign, nonatomic) GinStepperType type;
 @property (assign, nonatomic) BOOL toggleAmianted;
-@property (assign, nonatomic) NSNumber *value;
+@property (strong, nonatomic, readonly) NSNumber *value;
+
 
 
 @property (copy, nonatomic) void(^stepperValueChangedBlock)(NSUInteger value);
