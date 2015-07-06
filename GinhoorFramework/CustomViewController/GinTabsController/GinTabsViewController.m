@@ -132,19 +132,18 @@
     if (!_segmentedControl) {
         _segmentedControl = [[HMSegmentedControl alloc] init];
         _segmentedControl.backgroundColor = [UIColor whiteColor];
-        
-        _segmentedControl.selectedSegmentIndex = -1;
-        _segmentedControl.selectionStyle = HMSegmentedControlSelectionStyleTextWidthStripe;
-        // 标题
-        _segmentedControl.sectionTitles = @[@"足浴",@"办公室头颈肩按摩",@"SPA",@"按摩"];
         _segmentedControl.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor colorWithWhite:0.7 alpha:1]};
         _segmentedControl.selectedTitleTextAttributes = @{NSForegroundColorAttributeName: [UIColor greenColor]};
-        _segmentedControl.segmentEdgeInset = UIEdgeInsetsMake(0, 20, 0, 20);
-        _segmentedControl.segmentWidthStyle = HMSegmentedControlSegmentWidthStyleDynamic;
-        // 指示器
         _segmentedControl.selectionIndicatorColor = [UIColor redColor];
+        
+        _segmentedControl.selectionStyle = HMSegmentedControlSelectionStyleTextWidthStripe;
+        
+        _segmentedControl.segmentWidthStyle = HMSegmentedControlSegmentWidthStyleFixed;
+        
         _segmentedControl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
-        _segmentedControl.selectionIndicatorHeight = 2;
+        
+        CGFloat widthOffset = 10;
+        _segmentedControl.selectionIndicatorEdgeInsets = UIEdgeInsetsMake(0, -widthOffset, 0, -widthOffset*2);
         
     }
     return _segmentedControl;
