@@ -9,11 +9,7 @@
 #import "IconTableCell.h"
 
 @interface IconTableCell()
-@property (strong, nonatomic) UIImageView *iconImageView;
-@property (strong, nonatomic) UILabel *titleLabel;
-@property (strong, nonatomic) UIImageView *indicator;
-@property (strong, nonatomic) UIView *separator;
-@property (strong, nonatomic) UIView *cellContentView;
+
 @end
 
 @implementation IconTableCell
@@ -131,7 +127,7 @@
 {
     if (!_separator) {
         _separator = [[UIView alloc] init];
-        _separator.backgroundColor = [UIColor lightGrayColor];
+        _separator.backgroundColor = [UIColor colorWithRed:0.945f green:0.945f blue:0.945f alpha:1.000f];
         _separator.hidden = YES;
     }
     return _separator;
