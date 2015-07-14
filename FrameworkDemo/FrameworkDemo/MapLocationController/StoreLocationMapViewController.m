@@ -88,11 +88,14 @@ static NSString *annotationReuseId = @"Annotation";
             titleLabel.textAlignment = NSTextAlignmentCenter;
             titleLabel.text = annotationView.annotation.title;
             
-            UIButton *navButton = [[UIButton alloc] initWithFrame:CGRectMake(130, 0, 60, 44)];
+            UIButton *navButton = [[UIButton alloc] initWithFrame:CGRectMake(130, 5, 60, 34)];
             [paopaoView addSubview:navButton];
             [navButton addTarget:self action:@selector(navAction:) forControlEvents:UIControlEventTouchUpInside];
-            [navButton setImage:[UIImage imageNamed:@"map_navigation_btn"] forState:UIControlStateNormal];
-            
+            [navButton setTitle:@"导航" forState:UIControlStateNormal];
+            navButton.layer.cornerRadius = 4;
+            navButton.layer.masksToBounds = YES;
+            navButton.backgroundColor = [UIColor lightGrayColor];
+
             annotationView.paopaoView = [[BMKActionPaopaoView alloc] initWithCustomView:paopaoView];
             
         }

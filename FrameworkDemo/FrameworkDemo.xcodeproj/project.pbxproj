@@ -23,6 +23,7 @@
 		0018BC801B12BD87001E52D5 /* GinTabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC7D1B12BD87001E52D5 /* GinTabsViewController.m */; };
 		0018BC851B12BDCA001E52D5 /* TabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC841B12BDCA001E52D5 /* TabsViewController.m */; };
 		0018BC8B1B12D136001E52D5 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC8A1B12D136001E52D5 /* HMSegmentedControl.m */; };
+		002B4DD71B54A37A009586B2 /* BaiduLocationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B4DD61B54A37A009586B2 /* BaiduLocationViewModel.m */; };
 		002F31561B299BAA00080B37 /* NSDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31551B299BAA00080B37 /* NSDateViewController.m */; };
 		002F315A1B29BF0D00080B37 /* EmptyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31591B29BF0D00080B37 /* EmptyTableViewController.m */; };
 		002F315D1B2A72AC00080B37 /* NSAttributedString+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F315C1B2A72AC00080B37 /* NSAttributedString+Unit.m */; };
@@ -183,6 +184,8 @@
 		0018BC841B12BDCA001E52D5 /* TabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabsViewController.m; sourceTree = "<group>"; };
 		0018BC891B12D136001E52D5 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
 		0018BC8A1B12D136001E52D5 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		002B4DD51B54A37A009586B2 /* BaiduLocationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduLocationViewModel.h; sourceTree = "<group>"; };
+		002B4DD61B54A37A009586B2 /* BaiduLocationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduLocationViewModel.m; sourceTree = "<group>"; };
 		002F31541B299BAA00080B37 /* NSDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateViewController.h; sourceTree = "<group>"; };
 		002F31551B299BAA00080B37 /* NSDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateViewController.m; sourceTree = "<group>"; };
 		002F31581B29BF0D00080B37 /* EmptyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyTableViewController.h; sourceTree = "<group>"; };
@@ -1375,6 +1378,8 @@
 				00F021E61B4395B300525724 /* StoreLocationMapViewController.h */,
 				00F021E71B4395B300525724 /* StoreLocationMapViewController.m */,
 				00F021E81B4395B300525724 /* StoreLocationMapViewController.storyboard */,
+				002B4DD51B54A37A009586B2 /* BaiduLocationViewModel.h */,
+				002B4DD61B54A37A009586B2 /* BaiduLocationViewModel.m */,
 			);
 			path = MapLocationController;
 			sourceTree = "<group>";
@@ -1624,6 +1629,7 @@
 				0018BC8B1B12D136001E52D5 /* HMSegmentedControl.m in Sources */,
 				0033C7E21B131E6C0022B189 /* page1Controller.m in Sources */,
 				0086EE5C1B184309008A42D3 /* demo4Gallery.m in Sources */,
+				002B4DD71B54A37A009586B2 /* BaiduLocationViewModel.m in Sources */,
 				006A93C31ADE09090093BEBE /* NSString+Size.m in Sources */,
 				003B32811B1AAE09001EED5C /* GinPhotoGalleryController.m in Sources */,
 				005422F61B480B830028CCE6 /* UIImagePickerMananger.m in Sources */,
