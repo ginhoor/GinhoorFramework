@@ -10,7 +10,7 @@
 #import <MTLValueTransformer.h>
 
 NSString * const GinRelativePathTransformerName = @"GinRelativePathTransformerName";
-NSString * const GinTimeIntervalValueValueTransformerName = @"GinTimeIntervalValueValueTransformerName";
+NSString * const GinTimeIntervalValueTransformerName = @"GinTimeIntervalValueValueTransformerName";
 
 @implementation NSValueTransformer (Unit)
 
@@ -29,7 +29,7 @@ NSString * const GinTimeIntervalValueValueTransformerName = @"GinTimeIntervalVal
 + (void)setupTimeIntervalValueTransformer
 {
     MTLValueTransformer *dateValueTransformer = [MTLValueTransformer reversibleTransformerWithForwardBlock:^NSDate *(NSNumber *ts) {
-        if (ts) {
+        if (ts && ![ts isEqualToNumber:@(0)]) {
             return [NSDate dateWithTimeIntervalSince1970:ts.doubleValue/1000];
         } else {
             return nil;
@@ -42,7 +42,7 @@ NSString * const GinTimeIntervalValueValueTransformerName = @"GinTimeIntervalVal
         }
     }];
     
-    [NSValueTransformer setValueTransformer:dateValueTransformer forName:GinTimeIntervalValueValueTransformerName];
+    [NSValueTransformer setValueTransformer:dateValueTransformer forName:GinTimeIntervalValueTransformerName];
 }
 
 

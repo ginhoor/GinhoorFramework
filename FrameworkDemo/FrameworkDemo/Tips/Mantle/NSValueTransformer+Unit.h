@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 extern NSString * const GinRelativePathTransformerName;
-extern NSString * const GinTimeIntervalValueValueTransformerName;
+extern NSString * const GinTimeIntervalValueTransformerName;
 
 @interface NSValueTransformer (Unit)
 
