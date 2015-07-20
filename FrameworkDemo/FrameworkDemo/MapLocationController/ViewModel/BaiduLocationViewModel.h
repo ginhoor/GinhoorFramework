@@ -11,6 +11,7 @@
 @interface BaiduLocationViewModel : NSObject
 
 
+@property (copy, nonatomic) void(^onGetReverseGeoCodeResultBlock)(BMKGeoCodeSearch *searcher,BMKReverseGeoCodeResult *result,BMKSearchErrorCode error);
 
 - (void)cleanDelegate;
 

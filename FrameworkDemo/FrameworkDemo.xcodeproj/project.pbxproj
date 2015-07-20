@@ -23,7 +23,6 @@
 		0018BC801B12BD87001E52D5 /* GinTabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC7D1B12BD87001E52D5 /* GinTabsViewController.m */; };
 		0018BC851B12BDCA001E52D5 /* TabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC841B12BDCA001E52D5 /* TabsViewController.m */; };
 		0018BC8B1B12D136001E52D5 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC8A1B12D136001E52D5 /* HMSegmentedControl.m */; };
-		002B4DD71B54A37A009586B2 /* BaiduLocationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B4DD61B54A37A009586B2 /* BaiduLocationViewModel.m */; };
 		002F31561B299BAA00080B37 /* NSDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31551B299BAA00080B37 /* NSDateViewController.m */; };
 		002F315A1B29BF0D00080B37 /* EmptyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31591B29BF0D00080B37 /* EmptyTableViewController.m */; };
 		002F315D1B2A72AC00080B37 /* NSAttributedString+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F315C1B2A72AC00080B37 /* NSAttributedString+Unit.m */; };
@@ -121,6 +120,9 @@
 		006A94CF1ADFFF570093BEBE /* NSString+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94CE1ADFFF570093BEBE /* NSString+Json.m */; };
 		0086EE5C1B184309008A42D3 /* demo4Gallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0086EE5B1B184309008A42D3 /* demo4Gallery.m */; };
 		00905F111AE74A09004B5CA1 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00905F101AE74A09004B5CA1 /* TableViewController.m */; };
+		009FF0761B5CE55A00D282E6 /* AddressSearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009FF0751B5CE55A00D282E6 /* AddressSearchResultViewController.m */; };
+		009FF07A1B5CE5B200D282E6 /* BaiduLocationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 009FF0791B5CE5B200D282E6 /* BaiduLocationViewModel.m */; };
+		009FF0821B5CEE4700D282E6 /* CallPhoneMannager.m in Sources */ = {isa = PBXBuildFile; fileRef = 009FF0811B5CEE4700D282E6 /* CallPhoneMannager.m */; };
 		00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527F61AF7259F00219A98 /* GinWebViewController.m */; };
 		00A527FB1AF728B700219A98 /* GinSystemButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527FA1AF728B700219A98 /* GinSystemButtonViewController.m */; };
 		00A527FD1AF7299B00219A98 /* GinSystemButtonViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A527FC1AF7299B00219A98 /* GinSystemButtonViewController.storyboard */; };
@@ -183,8 +185,6 @@
 		0018BC841B12BDCA001E52D5 /* TabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabsViewController.m; sourceTree = "<group>"; };
 		0018BC891B12D136001E52D5 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
 		0018BC8A1B12D136001E52D5 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
-		002B4DD51B54A37A009586B2 /* BaiduLocationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduLocationViewModel.h; sourceTree = "<group>"; };
-		002B4DD61B54A37A009586B2 /* BaiduLocationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduLocationViewModel.m; sourceTree = "<group>"; };
 		002F31541B299BAA00080B37 /* NSDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateViewController.h; sourceTree = "<group>"; };
 		002F31551B299BAA00080B37 /* NSDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateViewController.m; sourceTree = "<group>"; };
 		002F31581B29BF0D00080B37 /* EmptyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyTableViewController.h; sourceTree = "<group>"; };
@@ -373,6 +373,12 @@
 		0086EE5B1B184309008A42D3 /* demo4Gallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo4Gallery.m; sourceTree = "<group>"; };
 		00905F0F1AE74A09004B5CA1 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		00905F101AE74A09004B5CA1 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		009FF0741B5CE55A00D282E6 /* AddressSearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressSearchResultViewController.h; sourceTree = "<group>"; };
+		009FF0751B5CE55A00D282E6 /* AddressSearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSearchResultViewController.m; sourceTree = "<group>"; };
+		009FF0781B5CE5B200D282E6 /* BaiduLocationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduLocationViewModel.h; sourceTree = "<group>"; };
+		009FF0791B5CE5B200D282E6 /* BaiduLocationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduLocationViewModel.m; sourceTree = "<group>"; };
+		009FF0801B5CEE4700D282E6 /* CallPhoneMannager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallPhoneMannager.h; sourceTree = "<group>"; };
+		009FF0811B5CEE4700D282E6 /* CallPhoneMannager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallPhoneMannager.m; sourceTree = "<group>"; };
 		00A527F51AF7259F00219A98 /* GinWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinWebViewController.h; sourceTree = "<group>"; };
 		00A527F61AF7259F00219A98 /* GinWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinWebViewController.m; sourceTree = "<group>"; };
 		00A527F91AF728B700219A98 /* GinSystemButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinSystemButtonViewController.h; sourceTree = "<group>"; };
@@ -1335,6 +1341,33 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		009FF0731B5CE55A00D282E6 /* AddressSearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				009FF0741B5CE55A00D282E6 /* AddressSearchResultViewController.h */,
+				009FF0751B5CE55A00D282E6 /* AddressSearchResultViewController.m */,
+			);
+			path = AddressSearchResult;
+			sourceTree = "<group>";
+		};
+		009FF0771B5CE5B200D282E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				009FF0781B5CE5B200D282E6 /* BaiduLocationViewModel.h */,
+				009FF0791B5CE5B200D282E6 /* BaiduLocationViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		009FF07F1B5CEE3C00D282E6 /* CallPhoneMannager */ = {
+			isa = PBXGroup;
+			children = (
+				009FF0801B5CEE4700D282E6 /* CallPhoneMannager.h */,
+				009FF0811B5CEE4700D282E6 /* CallPhoneMannager.m */,
+			);
+			path = CallPhoneMannager;
+			sourceTree = "<group>";
+		};
 		00A527F41AF7259700219A98 /* GinWebViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1368,6 +1401,8 @@
 		00F021E21B4395B300525724 /* MapLocationController */ = {
 			isa = PBXGroup;
 			children = (
+				009FF0771B5CE5B200D282E6 /* ViewModel */,
+				009FF0731B5CE55A00D282E6 /* AddressSearchResult */,
 				00F021ED1B43971B00525724 /* Location */,
 				00F021E31B4395B300525724 /* BaiduMapViewController.h */,
 				00F021E41B4395B300525724 /* BaiduMapViewController.m */,
@@ -1375,8 +1410,6 @@
 				00F021E61B4395B300525724 /* StoreLocationMapViewController.h */,
 				00F021E71B4395B300525724 /* StoreLocationMapViewController.m */,
 				00F021E81B4395B300525724 /* StoreLocationMapViewController.storyboard */,
-				002B4DD51B54A37A009586B2 /* BaiduLocationViewModel.h */,
-				002B4DD61B54A37A009586B2 /* BaiduLocationViewModel.m */,
 			);
 			path = MapLocationController;
 			sourceTree = "<group>";
@@ -1393,6 +1426,7 @@
 		00F4C9A31AE65B4F00B3F485 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				009FF07F1B5CEE3C00D282E6 /* CallPhoneMannager */,
 				005422F31B480B830028CCE6 /* ImagePickerMananger */,
 				005422E81B47F4710028CCE6 /* KeyboardManager */,
 				005421DA1B47DF6F0028CCE6 /* GinContactsBook */,
@@ -1625,12 +1659,12 @@
 				0018BC8B1B12D136001E52D5 /* HMSegmentedControl.m in Sources */,
 				0033C7E21B131E6C0022B189 /* page1Controller.m in Sources */,
 				0086EE5C1B184309008A42D3 /* demo4Gallery.m in Sources */,
-				002B4DD71B54A37A009586B2 /* BaiduLocationViewModel.m in Sources */,
 				006A93C31ADE09090093BEBE /* NSString+Size.m in Sources */,
 				003B32811B1AAE09001EED5C /* GinPhotoGalleryController.m in Sources */,
 				005422F61B480B830028CCE6 /* UIImagePickerMananger.m in Sources */,
 				006A93B31ADE09090093BEBE /* GinBaseNoContentTabCell.m in Sources */,
 				005422AA1B47E84D0028CCE6 /* GinFloatedButton.m in Sources */,
+				009FF07A1B5CE5B200D282E6 /* BaiduLocationViewModel.m in Sources */,
 				005422C51B47E84D0028CCE6 /* GinPanCell.m in Sources */,
 				006A93AE1ADE09090093BEBE /* GinHeightDynamicCollectionLayout.m in Sources */,
 				005422B71B47E84D0028CCE6 /* GinTextView.m in Sources */,
@@ -1665,6 +1699,7 @@
 				005422B91B47E84D0028CCE6 /* UITextField+Keyboard.m in Sources */,
 				00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */,
 				006A93D31ADE09090093BEBE /* GinPopupViewController.m in Sources */,
+				009FF0761B5CE55A00D282E6 /* AddressSearchResultViewController.m in Sources */,
 				00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */,
 				006A93D41ADE09090093BEBE /* GinQRCodePickerBaseController.m in Sources */,
 				005422EB1B47F4710028CCE6 /* GinKeyboardManager.m in Sources */,
@@ -1688,6 +1723,7 @@
 				005422C41B47E84D0028CCE6 /* GinStepperView.m in Sources */,
 				00F7FC711AEDEB840080AFC7 /* UIView+Debug.m in Sources */,
 				005422E21B47E9CE0028CCE6 /* BaseTableViewController.m in Sources */,
+				009FF0821B5CEE4700D282E6 /* CallPhoneMannager.m in Sources */,
 				006A93B11ADE09090093BEBE /* GinBaseCoreDataResponder.m in Sources */,
 				006A93D11ADE09090093BEBE /* GinPopupContentView.m in Sources */,
 				006A93B91ADE09090093BEBE /* UIViewController+GinBaseClass.m in Sources */,
