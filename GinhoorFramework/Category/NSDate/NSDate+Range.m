@@ -46,6 +46,10 @@ const static NSTimeInterval oneDayInterval = 24*60*60;
     
     NSMutableArray *days = [NSMutableArray array];
     
+    if ([endDate compare:startDate] == NSOrderedAscending ) {
+        endDate = [NSDate dateWithTimeInterval:oneDayInterval sinceDate:endDate];
+    }
+    
     [days addObject:[NSDate realtimeInOneDay:startDate endDate:endDate timeInterval:timeInterval]];
     
     [days addObjectsFromArray:

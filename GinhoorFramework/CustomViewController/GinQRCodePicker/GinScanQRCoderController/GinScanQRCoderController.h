@@ -12,6 +12,6 @@
 
 @property (copy, nonatomic) void(^didDismissBlock)();
 
-+ (void)startScanQRCorder:(UIViewController *)controller receivedBlock:(void(^)(NSString * resultString))resultDidReceivedBlock;
++ (void)startScanQRCorder:(UIViewController *)controller receivedBlock:(void(^)(NSString * resultString))resultDidReceivedBlock dismissBlock:(void(^)())dismissBlock;
 
 @end

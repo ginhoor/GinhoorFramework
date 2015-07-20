@@ -111,7 +111,6 @@
 		006A93D31ADE09090093BEBE /* GinPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A939C1ADE09090093BEBE /* GinPopupViewController.m */; };
 		006A93D41ADE09090093BEBE /* GinQRCodePickerBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A939F1ADE09090093BEBE /* GinQRCodePickerBaseController.m */; };
 		006A93D51ADE09090093BEBE /* GinScanQRCoderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93A21ADE09090093BEBE /* GinScanQRCoderController.m */; };
-		006A93D61ADE09090093BEBE /* GinScanQRCoderController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006A93A31ADE09090093BEBE /* GinScanQRCoderController.storyboard */; };
 		006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93A81ADE09090093BEBE /* GinSysInfo.m */; };
 		006A94551ADEB3260093BEBE /* UITableView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94541ADEB3260093BEBE /* UITableView+GinBaseClass.m */; };
 		006A94B61ADF96920093BEBE /* GinhoorFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 006A94B51ADF96920093BEBE /* GinhoorFramework.podspec */; };
@@ -352,7 +351,6 @@
 		006A939F1ADE09090093BEBE /* GinQRCodePickerBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinQRCodePickerBaseController.m; sourceTree = "<group>"; };
 		006A93A11ADE09090093BEBE /* GinScanQRCoderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinScanQRCoderController.h; sourceTree = "<group>"; };
 		006A93A21ADE09090093BEBE /* GinScanQRCoderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinScanQRCoderController.m; sourceTree = "<group>"; };
-		006A93A31ADE09090093BEBE /* GinScanQRCoderController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GinScanQRCoderController.storyboard; sourceTree = "<group>"; };
 		006A93A41ADE09090093BEBE /* GinhoorFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinhoorFramework.h; sourceTree = "<group>"; };
 		006A93A61ADE09090093BEBE /* Gin_Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gin_Macro.h; sourceTree = "<group>"; };
 		006A93A71ADE09090093BEBE /* GinSysInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinSysInfo.h; sourceTree = "<group>"; };
@@ -1306,7 +1304,6 @@
 			children = (
 				006A93A11ADE09090093BEBE /* GinScanQRCoderController.h */,
 				006A93A21ADE09090093BEBE /* GinScanQRCoderController.m */,
-				006A93A31ADE09090093BEBE /* GinScanQRCoderController.storyboard */,
 			);
 			path = GinScanQRCoderController;
 			sourceTree = "<group>";
@@ -1544,7 +1541,6 @@
 				005422C11B47E84D0028CCE6 /* arrow_up_44x44.png in Resources */,
 				005422D11B47E9970028CCE6 /* list_indicator_arrow@3x.png in Resources */,
 				005422C21B47E84D0028CCE6 /* arrow_up_44x44@2x.png in Resources */,
-				006A93D61ADE09090093BEBE /* GinScanQRCoderController.storyboard in Resources */,
 				00F021EC1B4395B300525724 /* StoreLocationMapViewController.storyboard in Resources */,
 				000B529C1ADBCF8100946853 /* LaunchScreen.xib in Resources */,
 				005422C01B47E84D0028CCE6 /* arrow_down_44x44@3x.png in Resources */,

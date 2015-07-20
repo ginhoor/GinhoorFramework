@@ -9,7 +9,6 @@
 #import <Masonry.h>
 #import "NSObject+CoreGraphic.h"
 #import "GinScanQRCoderController.h"
-#import "UIViewController+GinBaseClass.h"
 #import "Gin_Macro.h"
 
 @interface GinScanQRCoderController ()
@@ -25,12 +24,14 @@
 @implementation GinScanQRCoderController
 
 
-+ (void)startScanQRCorder:(UIViewController *)controller receivedBlock:(void(^)(NSString * resultString))resultDidReceivedBlock
++ (void)startScanQRCorder:(UIViewController *)controller receivedBlock:(void(^)(NSString * resultString))resultDidReceivedBlock dismissBlock:(void(^)())dismissBlock;
 {
-    GinScanQRCoderController *picker = [GinScanQRCoderController controller];
+    GinScanQRCoderController *picker = [[GinScanQRCoderController alloc] init];
     
     picker.resultDidReceivedBlock = resultDidReceivedBlock;
-    [controller  presentViewController:picker animated:YES completion:^{}];
+    picker.didDismissBlock = dismissBlock;
+    
+    [controller presentViewController:picker animated:YES completion:^{}];
 }
 
 - (void)viewDidLoad {
@@ -56,7 +57,7 @@
             PointValue(CGRectGetMinX(clearRect)+length, CGRectGetMinY(clearRect)+maskLineWitdh/2)],
           @[PointValue(CGRectGetMinX(clearRect)+maskLineWitdh/2, CGRectGetMinY(clearRect)+maskLineWitdh),
             PointValue(CGRectGetMinX(clearRect)+maskLineWitdh/2, CGRectGetMinY(clearRect)-maskLineWitdh/2+length)],
-
+          
           @[PointValue(CGRectGetMaxX(clearRect), CGRectGetMinY(clearRect)+maskLineWitdh/2),
             PointValue(CGRectGetMaxX(clearRect)-length, CGRectGetMinY(clearRect)+maskLineWitdh/2)],
           @[PointValue(CGRectGetMaxX(clearRect)-maskLineWitdh/2, CGRectGetMinY(clearRect)+maskLineWitdh),
@@ -66,7 +67,7 @@
             PointValue(CGRectGetMinX(clearRect)+length, CGRectGetMaxY(clearRect)-maskLineWitdh/2)],
           @[PointValue(CGRectGetMinX(clearRect)+maskLineWitdh/2, CGRectGetMaxY(clearRect)-maskLineWitdh),
             PointValue(CGRectGetMinX(clearRect)+maskLineWitdh/2, CGRectGetMaxY(clearRect)+maskLineWitdh/2-length)],
-
+          
           @[PointValue(CGRectGetMaxX(clearRect), CGRectGetMaxY(clearRect)-maskLineWitdh/2),
             PointValue(CGRectGetMaxX(clearRect)-length, CGRectGetMaxY(clearRect)-maskLineWitdh/2)],
           @[PointValue(CGRectGetMaxX(clearRect)-maskLineWitdh/2, CGRectGetMaxY(clearRect)-maskLineWitdh),
@@ -81,6 +82,8 @@
             [self drawLine:start.CGPointValue end:end.CGPointValue lineWidth:maskLineWitdh LineColor:[UIColor orangeColor]];
         }];
     }];
+    
+    [self.view updateConstraintsIfNeeded];
 }
 
 
@@ -102,7 +105,7 @@
         make.bottom.equalTo(self.view);
         make.left.equalTo(self.view);
         make.right.equalTo(self.view);
-        make.height.offset(40);
+        make.height.offset(60);
     }];
     
 }
@@ -130,7 +133,9 @@
 {
     if (!_dismissButton) {
         _dismissButton = [[UIButton alloc] init];
-        [_dismissButton setImage:[UIImage imageNamed:@"dismiss_button"] forState:UIControlStateNormal];
+        _dismissButton.backgroundColor = [UIColor lightGrayColor];
+        [_dismissButton setTitle:@"取消" forState:UIControlStateNormal];
+        
         [_dismissButton addTarget:self action:@selector(dismissAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _dismissButton;
