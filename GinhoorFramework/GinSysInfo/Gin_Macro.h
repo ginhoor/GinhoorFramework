@@ -15,6 +15,8 @@
 
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
+#define SCREEN_SCALE [UIScreen mainScreen].scale
+
 #define ONE_PHYSICAL_PX 1.f/[UIScreen mainScreen].scale
 
 #define CurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
