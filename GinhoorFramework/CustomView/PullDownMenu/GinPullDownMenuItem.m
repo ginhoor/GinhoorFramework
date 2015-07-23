@@ -62,14 +62,24 @@
     } else {
         self.indicator.hidden = YES;
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.offset(20);
+            
+            if (CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) {
+                make.left.offset(20);
+            } else {
+                make.left.offset(15);
+            }
+            
             make.right.offset(-20);
             make.top.offset(0);
             make.bottom.offset(0);
         }];
         
         [self.arrowImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.offset(-5);
+            if (CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) {
+                make.right.offset(-5);
+            } else {
+                make.right.offset(-0);
+            }
             make.centerY.equalTo(self.titleLabel);
             make.size.sizeOffset(CGSizeMake(44, 44));
         }];
