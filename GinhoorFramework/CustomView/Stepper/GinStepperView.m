@@ -89,7 +89,8 @@
             }break;
              
             case GinStepperTypeRectangled:{
-                
+                self.layer.cornerRadius = 4;
+                self.viewHeight = self.layer.bounds.size.height;
             }break;
                 
             default:

@@ -69,12 +69,12 @@
         }];
         
         [self.arrowImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.offset(-10);
+            make.right.offset(-5);
             make.centerY.equalTo(self.titleLabel);
             make.size.sizeOffset(CGSizeMake(44, 44));
         }];
     }
-
+    
     
     
     
@@ -91,7 +91,7 @@
             make.height.equalTo(self);
             make.width.offset(size.width);
         }];
-    }    
+    }
     [super layoutSubviews];
 }
 

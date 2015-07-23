@@ -41,9 +41,11 @@
 - (CGRect)imageRectForContentRect:(CGRect)contentRect
 {
     if (self.type == GinHorizontalAlignmentTypeLeft) {
-        return CGRectMake(0, 0, self.imageSize.width, contentRect.size.height);
+        return CGRectMake(0, (contentRect.size.height - self.imageSize.height)/2, self.imageSize.width, self.imageSize.height);
     } else {
-        return CGRectMake(self.titleSize.width+5, 0, self.imageSize.width, contentRect.size.height);
+        
+        
+        return CGRectMake(self.titleSize.width+5, (contentRect.size.height - self.imageSize.height)/2, self.imageSize.width, self.imageSize.height);
     }
 }
 
