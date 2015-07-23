@@ -21,7 +21,7 @@
     static UIImagePickerMananger *share;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-         share = [[UIImagePickerMananger alloc] init];
+        share = [[UIImagePickerMananger alloc] init];
     });
     return share;
 }
@@ -30,14 +30,14 @@
 {
     self.controller = vc;
     UIActionSheet *sheet = [UIActionSheet bk_actionSheetWithTitle:nil];
-
+    
     [sheet bk_addButtonWithTitle:@"从相册选择" handler:^{
         
         UIImagePickerControllerSourceType sourceType;
-        if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
-            sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-        } else {
+        if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]){
             sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        } else {
+            sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
         }
         // 跳转到相机页面
         UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
@@ -45,9 +45,9 @@
         imagePickerController.delegate = self;
         imagePickerController.allowsEditing = self.allowsEditing;
         imagePickerController.sourceType = sourceType;
-        [self.controller presentViewController:imagePickerController animated:YES completion:^{}];
+        [self.controller presentViewController:imagePickerController animated:NO completion:^{}];
     }];
-
+    
     // 判断是否支持相机
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
         
@@ -58,7 +58,7 @@
             imagePickerController.delegate = self;
             imagePickerController.allowsEditing = self.allowsEditing;
             imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-            [self.controller presentViewController:imagePickerController animated:YES completion:^{}];
+            [self.controller presentViewController:imagePickerController animated:NO completion:^{}];
         }];
     }
     
@@ -72,7 +72,7 @@
 #pragma mark - image picker delegte
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    [picker dismissViewControllerAnimated:YES completion:^{}];
+    [picker dismissViewControllerAnimated:NO completion:^{}];
     
     UIImage *editedImage = [info objectForKey:UIImagePickerControllerEditedImage];
     // 压缩
@@ -92,7 +92,7 @@
         self.didCancelPickingBlock(picker);
     }
     
-    [self.controller dismissViewControllerAnimated:YES completion:^{}];
+    [self.controller dismissViewControllerAnimated:NO completion:^{}];
 }
 
 @end
