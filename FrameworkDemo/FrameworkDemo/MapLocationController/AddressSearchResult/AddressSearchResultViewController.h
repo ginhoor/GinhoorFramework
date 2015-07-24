@@ -10,6 +10,9 @@
 
 @interface AddressSearchResultViewController : BaseViewController
 
-@property (copy, nonatomic) void(^didAddressSelectedBlock)(NSString *address);
+@property (strong, nonatomic, readonly) UISearchBar *searchBar;
+@property (strong, nonatomic) NSString *currentCityName;
+
+@property (copy, nonatomic) void(^didAddressSelectedBlock)(NSString *fullAddress, NSString *city, NSString *district, NSString *address);
 
 @end

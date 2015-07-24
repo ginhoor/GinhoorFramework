@@ -6,15 +6,12 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import <BMapKit.h>
 #import "BaiduLocationViewModel.h"
 #import "LocationManager.h"
 
-@interface BaiduLocationViewModel() <BMKGeoCodeSearchDelegate,BMKSuggestionSearchDelegate>
+@interface BaiduLocationViewModel() <BMKGeoCodeSearchDelegate>
 
 @property (strong, nonatomic) BMKGeoCodeSearch *geoCodeSearcher;
-
-@property (strong, nonatomic) BMKSuggestionSearch *suggestion;
 
 @end
 
@@ -29,42 +26,30 @@
 - (void)cleanDelegate
 {
     self.geoCodeSearcher.delegate = nil;
-    self.suggestion.delegate = nil;
 }
-
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        [self setup];
-    }
-    return self;
-}
-
-- (void)setup
-{
-    [self setupLocalCity];
-}
-
 
 #pragma mark- 百度地图定位
 
-- (void)setupLocalCity
+- (BMKGeoCodeSearch *)geoCodeSearcher
 {
-    self.geoCodeSearcher = [[BMKGeoCodeSearch alloc]init];
-    self.geoCodeSearcher.delegate = self;
-    
+    if (!_geoCodeSearcher) {
+        _geoCodeSearcher = [[BMKGeoCodeSearch alloc]init];
+        _geoCodeSearcher.delegate = self;
+    }
+    return _geoCodeSearcher;
+}
+
+- (void)searchCurrentLocationByGeoCode
+{
     //发起反向地理编码检索
-    
     if ([LocationManager isLoaded]) {
-        [self startGeoCodeSearch];
+        [self startReverseGeoCodeSearch];
     } else {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startGeoCodeSearch) name:kLocationManagerDidUpdateLocations object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startReverseGeoCodeSearch) name:kLocationManagerDidUpdateLocations object:nil];
     }
 }
 
-- (void)startGeoCodeSearch
+- (void)startReverseGeoCodeSearch
 {
     CLLocationCoordinate2D pt = [LocationManager sharedInstance].location.coordinate;
     
@@ -80,9 +65,31 @@
     }
 }
 
-//接收反向地理编码结果
-- (void)onGetReverseGeoCodeResult:(BMKGeoCodeSearch *)searcher result:(BMKReverseGeoCodeResult *)result errorCode:(BMKSearchErrorCode)error{
+- (void)searchLocation:(NSString *)city address:(NSString *)address
+{
+    BMKGeoCodeSearchOption *geoCodeSearchOption = [[BMKGeoCodeSearchOption alloc]init];
+    geoCodeSearchOption.city = city;
+    geoCodeSearchOption.address = address;
     
+    BOOL flag = [self.geoCodeSearcher geoCode:geoCodeSearchOption];
+    if(flag) {
+        NSLog(@"geo检索发送成功");
+    }
+    else {
+        NSLog(@"geo检索发送失败");
+    }
+}
+
+- (void)onGetGeoCodeResult:(BMKGeoCodeSearch *)searcher result:(BMKGeoCodeResult *)result errorCode:(BMKSearchErrorCode)error
+{
+    if (self.onGetGeoCodeResultBlock) {
+        self.onGetGeoCodeResultBlock(searcher,result,error);
+    }
+}
+
+//接收反向地理编码结果
+- (void)onGetReverseGeoCodeResult:(BMKGeoCodeSearch *)searcher result:(BMKReverseGeoCodeResult *)result errorCode:(BMKSearchErrorCode)error
+{
     if (self.onGetReverseGeoCodeResultBlock) {
         self.onGetReverseGeoCodeResultBlock(searcher,result,error);
     }
@@ -90,18 +97,6 @@
     //************* Demo
     //    if (error == BMK_SEARCH_NO_ERROR) {
     //      //在此处理正常结果
-    //        NSLog(@"当前城市:%@",result.addressDetail.city);
-    //        self.localCity = [self.totalCityList bk_match:^BOOL(CityData *city) {
-    //            NSRange foundRange = [result.addressDetail.city rangeOfString:city.name options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch range:NSMakeRange(0, result.addressDetail.city.length)];
-    //            return foundRange.length > 0;
-    //        }];
-    //
-    //        if (self.localCity) {
-    //            [self.localCityButton setTitle:self.localCity.name forState:UIControlStateNormal];
-    //
-    //        } else {
-    //            [self.localCityButton setTitle:@"定位失败" forState:UIControlStateNormal];
-    //        }
     //    }
     //    else {
     //        NSLog(@"抱歉，未找到结果");

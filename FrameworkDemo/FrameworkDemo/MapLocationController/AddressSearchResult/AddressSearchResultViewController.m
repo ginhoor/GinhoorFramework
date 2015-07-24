@@ -6,16 +6,18 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import "AddressSearchResultViewController.h"
-#import <UIViewController+GinBaseTableView.h>
-
+#import <Masonry.h>
 #import <BMapKit.h>
+
+#import "GinhoorFramework.h"
+#import "AddressSearchResultViewController.h"
+#import "UIViewController+GinBaseTableView.h"
 
 @interface AddressSearchResultViewController () <UITableViewDelegate,UITableViewDataSource, UISearchBarDelegate, BMKSuggestionSearchDelegate>
 
 @property (strong, nonatomic) UINavigationBar *navBar;
 
-@property (strong, nonatomic) UISearchBar *searchBar;
+
 @property (strong, nonatomic) UIButton *cancelButton;
 
 @property (strong, nonatomic) BMKSuggestionSearch *searcher;
@@ -47,6 +49,8 @@
 {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    
     [self.view addSubview:self.navBar];
     [self.view addSubview:self.tableView];
     
@@ -54,10 +58,11 @@
         tableView.delegate = self;
         tableView.dataSource = self;
         tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        tableView.separatorColor = [UIColor colorWithHex:0xf1f1f1];
         
         [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
     }];
-
+    
     [self.view updateConstraintsIfNeeded];
 }
 
@@ -78,26 +83,6 @@
 {
     [super updateViewConstraints];
     
-    [self.navBar mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.offset(0);
-        make.left.offset(0);
-        make.right.offset(0);
-        make.height.offset(64);
-    }];
- 
-    [self.searchBar mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.offset(20);
-        make.left.offset(10);
-        make.right.equalTo(self.cancelButton.mas_left).offset(-10);
-        make.bottom.offset(0);
-    }];
-    
-    [self.cancelButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.offset(-5);
-        make.centerY.equalTo(self.searchBar).offset(0);
-        make.size.sizeOffset(CGSizeMake(60, 44));
-    }];
-    
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.offset(64);
         make.left.offset(0);
@@ -109,24 +94,26 @@
 - (UINavigationBar *)navBar
 {
     if (!_navBar) {
-        _navBar = [[UINavigationBar alloc] init];
+        _navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
         
-        _searchBar = [[UISearchBar alloc] init];
+        _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(10, 20, SCREEN_WIDTH-10-60-5, 44)];
         _searchBar.placeholder = @"输入地点";
         _searchBar.backgroundImage = [UIImage imageByColor:[UIColor clearColor] size:CGSizeMake(1, 1)];
         _searchBar.delegate = self;
         _searchBar.keyboardType = UIKeyboardTypeDefault;
         _searchBar.returnKeyType = UIReturnKeyDone;
-
+        
         _cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _cancelButton.frame = CGRectMake(SCREEN_WIDTH-60-5, 20, 60, 44);
         [_cancelButton setTitle:@"取消" forState:UIControlStateNormal];
         
         [_cancelButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-
+        
         [_cancelButton addTarget:self action:@selector(cancel:) forControlEvents:UIControlEventTouchUpInside];
-
+        
         [_navBar addSubview:self.searchBar];
         [_navBar addSubview:self.cancelButton];
+        
     }
     return _navBar;
 }
@@ -134,7 +121,7 @@
 - (void)cancel:(id)sender
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self dismissViewControllerAnimated:YES completion:^{
+        [self dismissViewControllerAnimated:NO completion:^{
         }];
     });
 }
@@ -167,7 +154,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.didAddressSelectedBlock) {
-        self.didAddressSelectedBlock(ComboString(@"%@%@%@", self.result.cityList[indexPath.row],self.result.districtList[indexPath.row],self.cellDataList[indexPath.row]));
+        self.didAddressSelectedBlock(ComboString(@"%@%@%@", self.result.cityList[indexPath.row],self.result.districtList[indexPath.row],self.cellDataList[indexPath.row]),self.result.cityList[indexPath.row],self.result.districtList[indexPath.row],self.cellDataList[indexPath.row]);
         [self cancel:tableView];
     }
 }
@@ -187,9 +174,9 @@
         }];
         return;
     }
-
+    
     if (self.didAddressSelectedBlock) {
-        self.didAddressSelectedBlock(searchBar.text);
+        self.didAddressSelectedBlock(searchBar.text,nil,nil,nil);
         [self cancel:searchBar];
     }
 }
@@ -198,7 +185,10 @@
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
     BMKSuggestionSearchOption *option = [[BMKSuggestionSearchOption alloc] init];
-    option.keyword  = searchText;
+    
+    option.cityname = self.currentCityName;
+    
+    option.keyword = searchText;
     
     BOOL flag = [self.searcher suggestionSearch:option];
     
@@ -215,7 +205,7 @@
 - (void)onGetSuggestionResult:(BMKSuggestionSearch*)searcher result:(BMKSuggestionResult*)result errorCode:(BMKSearchErrorCode)error
 {
     if (error == BMK_SEARCH_NO_ERROR) {
-
+        
     } else {
         NSLog(@"抱歉，未找到结果");
     }
