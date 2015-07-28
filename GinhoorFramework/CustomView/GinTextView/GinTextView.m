@@ -39,12 +39,14 @@
     self.placeholder = [[UILabel alloc] init];
     [self addSubview:self.placeholder];
     self.placeholder.textColor = [UIColor colorWithRed:0.800f green:0.800f blue:0.800f alpha:1.000f];
-    [self.placeholder mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.offset(10);
-        make.left.offset(10);
-    }];
-    
     self.delegate = self;
+    
+    [self updateConstraintsIfNeeded];
+}
+
+- (void)updateConstraints
+{
+    [super updateConstraints];
 }
 
 - (void)setFont:(UIFont *)font
@@ -53,14 +55,21 @@
     self.placeholder.font = self.font;
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    self.placeholder.frame = CGRectMake(10, 10, 0, 0);
+    [self.placeholder sizeToFit];
+}
+
 - (void)setContentInset:(UIEdgeInsets)contentInset
 {
     [super setContentInset:contentInset];
-
-    [self.placeholder mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.top.offset(contentInset.top);
-        make.left.offset(contentInset.left);
-    }];
+    
+    self.placeholder.frame = CGRectMake(contentInset.left, contentInset.top, 0, 0);
+    [self.placeholder sizeToFit];
+    
 }
 
 
@@ -90,5 +99,10 @@
     return YES;
 }
 
-
+- (void)textViewDidChange:(UITextView *)textView
+{
+    if (self.textViewDidChangeBlock) {
+        self.textViewDidChangeBlock(textView);
+    }
+}
 @end

@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) UILabel *placeholder;
 
+@property (copy, nonatomic) void (^textViewDidChangeBlock)(UITextView *textView);
+
 @end
