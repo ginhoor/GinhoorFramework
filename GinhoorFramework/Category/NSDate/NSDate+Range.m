@@ -46,9 +46,7 @@ const static NSTimeInterval oneDayInterval = 24*60*60;
     
     NSMutableArray *days = [NSMutableArray array];
     
-    if ([endDate compare:startDate] == NSOrderedAscending ) {
-        endDate = [NSDate dateWithTimeInterval:oneDayInterval sinceDate:endDate];
-    }
+    
     
     [days addObject:[NSDate realtimeInOneDay:startDate endDate:endDate timeInterval:timeInterval]];
     
@@ -65,6 +63,13 @@ const static NSTimeInterval oneDayInterval = 24*60*60;
                   endDate:(NSDate *)endDate
              timeInterval:(NSTimeInterval)timeInterval
 {
+    startDate = [self dateInToday:[startDate timeString]];
+    endDate = [self dateInToday:[endDate timeString]];
+    
+    if ([endDate compare:startDate] == NSOrderedAscending ) {
+        endDate = [NSDate dateWithTimeInterval:oneDayInterval sinceDate:endDate];
+    }
+    
     NSMutableArray *timeInOneDay = [NSMutableArray array];
     
     for (NSTimeInterval  i = startDate.timeIntervalSince1970; i <= endDate.timeIntervalSince1970; i+=timeInterval) {
@@ -79,6 +84,13 @@ const static NSTimeInterval oneDayInterval = 24*60*60;
                       endDate:(NSDate *)endDate
                  timeInterval:(NSTimeInterval)timeInterval
 {
+    startDate = [self dateInToday:[startDate timeString]];
+    endDate = [self dateInToday:[endDate timeString]];
+    
+    if ([endDate compare:startDate] == NSOrderedAscending ) {
+        endDate = [NSDate dateWithTimeInterval:oneDayInterval sinceDate:endDate];
+    }
+    
     NSMutableArray *timeInDayWithRealtimeConstraint = [NSMutableArray array];
     
     NSTimeInterval startTimeInterval = 0;
