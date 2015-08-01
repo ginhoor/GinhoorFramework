@@ -52,7 +52,17 @@
 
 + (BOOL)iOS8
 {
-    return [self iOSSystemVersion].floatValue >= 8.0;
+    return [self iOSVersion:8.0];
+}
+
++ (BOOL)iOS7
+{
+    return [self iOSVersion:7.0];
+}
+
++ (BOOL)iOSVersion:(CGFloat)version
+{
+    return [self iOSSystemVersion].floatValue >= version && [self iOSSystemVersion].floatValue < version+1;
 }
 
 
