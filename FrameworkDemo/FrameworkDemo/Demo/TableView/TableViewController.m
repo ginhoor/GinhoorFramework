@@ -21,13 +21,23 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.table];
-    
+
     __weak typeof(self) weak = self;
+    
+
     [self.table addLegendHeaderWithRefreshingBlock:^{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [weak.table.header endRefreshing];
         });
     }];
+
+    [self.table addLegendFooterWithRefreshingBlock:^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [weak.table.footer endRefreshing];
+        });
+    }];
+    
+    [self.table.footer setTitle:@"" forState:MJRefreshFooterStateIdle];
     
     [self.view setNeedsUpdateConstraints];
 }
@@ -47,6 +57,7 @@
         _table = [[UITableView alloc] init];
         _table.delegate = self;
         _table.dataSource = self;
+        _table.tableFooterView = [[UIView alloc] init];
         [_table registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     }
     return _table;

@@ -13,6 +13,7 @@
 #import "TabsViewController.h"
 
 #import "demo4Gallery.h"
+#import "TableViewController.h"
 
 #import "GalleryViewController.h"
 #import "PullDownMenuViewController.h"
@@ -21,6 +22,7 @@
 #import "StepperViewController.h"
 
 #import "NSString+formatContentString.h"
+
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -40,7 +42,7 @@
         tableView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
     }];
     
-    self.cellDataList = @[@"自定义按钮",@"水平的TableView",@"带Tabs的PageContrller",@"相册浏览",@"下拉菜单",@"列表空数据页面",@"步进器"];
+    self.cellDataList = @[@"自定义按钮",@"水平的TableView",@"带Tabs的PageContrller",@"相册浏览",@"下拉菜单",@"列表空数据页面",@"步进器",@"自定义 上&下拉刷新"];
     [self.tableView reloadData];
     
     [self.view addSubview:self.tableView];
@@ -86,6 +88,9 @@
         case 6:
             [self.navigationController pushViewController:[[StepperViewController alloc] init] animated:YES];
             break;
+            
+        case 7:
+            [self.navigationController pushViewController:[[TableViewController alloc] init] animated:YES];
         default:
             break;
             
