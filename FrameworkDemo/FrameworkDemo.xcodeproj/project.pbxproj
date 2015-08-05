@@ -14,25 +14,15 @@
 		000B52991ADBCF8100946853 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000B52981ADBCF8100946853 /* Images.xcassets */; };
 		000B529C1ADBCF8100946853 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000B529A1ADBCF8100946853 /* LaunchScreen.xib */; };
 		000B52A81ADBCF8100946853 /* FrameworkDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B52A71ADBCF8100946853 /* FrameworkDemoTests.m */; };
-		0018B90F1B0EB701001E52D5 /* HZTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B90E1B0EB701001E52D5 /* HZTableViewController.m */; };
-		0018B9141B0EBE12001E52D5 /* HZTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0018B9131B0EBE12001E52D5 /* HZTableViewController.storyboard */; };
 		0018B9851B100883001E52D5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B9841B100883001E52D5 /* UIColor+Hex.m */; };
 		0018BA4A1B115DA4001E52D5 /* NSValueTransformer+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BA491B115DA4001E52D5 /* NSValueTransformer+Unit.m */; };
 		0018BC6E1B118C7F001E52D5 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC6D1B118C7F001E52D5 /* NSString+MD5.m */; };
 		0018BC711B118D5B001E52D5 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC701B118D5B001E52D5 /* NSObject+JSON.m */; };
 		0018BC801B12BD87001E52D5 /* GinTabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC7D1B12BD87001E52D5 /* GinTabsViewController.m */; };
-		0018BC851B12BDCA001E52D5 /* TabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC841B12BDCA001E52D5 /* TabsViewController.m */; };
 		0018BC8B1B12D136001E52D5 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC8A1B12D136001E52D5 /* HMSegmentedControl.m */; };
-		002F31561B299BAA00080B37 /* NSDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31551B299BAA00080B37 /* NSDateViewController.m */; };
-		002F315A1B29BF0D00080B37 /* EmptyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31591B29BF0D00080B37 /* EmptyTableViewController.m */; };
 		002F315D1B2A72AC00080B37 /* NSAttributedString+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F315C1B2A72AC00080B37 /* NSAttributedString+Unit.m */; };
-		002F31671B2A771100080B37 /* PullDownMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31661B2A771100080B37 /* PullDownMenuViewController.m */; };
 		002F31771B2EA6FC00080B37 /* NSArray+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31761B2EA6FC00080B37 /* NSArray+Unit.m */; };
-		002F317B1B2EAC6700080B37 /* StepperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F317A1B2EAC6700080B37 /* StepperViewController.m */; };
 		002F326D1B32795F00080B37 /* NSDictionary+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F326C1B32795F00080B37 /* NSDictionary+Unit.m */; };
-		0033C7E21B131E6C0022B189 /* page1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7DD1B131E6C0022B189 /* page1Controller.m */; };
-		0033C7E31B131E6C0022B189 /* page2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7DF1B131E6C0022B189 /* page2Controller.m */; };
-		0033C7E41B131E6C0022B189 /* page3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0033C7E11B131E6C0022B189 /* page3Controller.m */; };
 		003B32811B1AAE09001EED5C /* GinPhotoGalleryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B327E1B1AAE09001EED5C /* GinPhotoGalleryController.m */; };
 		003B32821B1AAE09001EED5C /* GinShowPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B32801B1AAE09001EED5C /* GinShowPhotoViewController.m */; };
 		005421DD1B47DF6F0028CCE6 /* GinAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 005421DC1B47DF6F0028CCE6 /* GinAddressBook.m */; };
@@ -71,22 +61,16 @@
 		005422CF1B47E9970028CCE6 /* list_indicator_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 005422CC1B47E9970028CCE6 /* list_indicator_arrow.png */; };
 		005422D01B47E9970028CCE6 /* list_indicator_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005422CD1B47E9970028CCE6 /* list_indicator_arrow@2x.png */; };
 		005422D11B47E9970028CCE6 /* list_indicator_arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005422CE1B47E9970028CCE6 /* list_indicator_arrow@3x.png */; };
-		005422DF1B47E9CE0028CCE6 /* BaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422D41B47E9CE0028CCE6 /* BaseCollectionCell.m */; };
-		005422E01B47E9CE0028CCE6 /* BaseCollectionViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422D61B47E9CE0028CCE6 /* BaseCollectionViewContoller.m */; };
-		005422E11B47E9CE0028CCE6 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422D81B47E9CE0028CCE6 /* BaseTableViewCell.m */; };
-		005422E21B47E9CE0028CCE6 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422DA1B47E9CE0028CCE6 /* BaseTableViewController.m */; };
 		005422E31B47E9CE0028CCE6 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422DC1B47E9CE0028CCE6 /* BaseView.m */; };
 		005422E41B47E9CE0028CCE6 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422DE1B47E9CE0028CCE6 /* BaseViewController.m */; };
 		005422EB1B47F4710028CCE6 /* GinKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422EA1B47F4710028CCE6 /* GinKeyboardManager.m */; };
 		005422F61B480B830028CCE6 /* UIImagePickerMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422F51B480B830028CCE6 /* UIImagePickerMananger.m */; };
 		006A93A91ADE09090093BEBE /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93271ADE09090093BEBE /* NSString+Base64.m */; };
 		006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93291ADE09090093BEBE /* UIImage+Base64.m */; };
-		006A93AC1ADE09090093BEBE /* GinBaseNoContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93301ADE09090093BEBE /* GinBaseNoContentCell.m */; };
 		006A93AD1ADE09090093BEBE /* GinCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93331ADE09090093BEBE /* GinCollectionLayout.m */; };
 		006A93AE1ADE09090093BEBE /* GinHeightDynamicCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93351ADE09090093BEBE /* GinHeightDynamicCollectionLayout.m */; };
 		006A93AF1ADE09090093BEBE /* GinBaseTitleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93381ADE09090093BEBE /* GinBaseTitleHeader.m */; };
 		006A93B11ADE09090093BEBE /* GinBaseCoreDataResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A933D1ADE09090093BEBE /* GinBaseCoreDataResponder.m */; };
-		006A93B31ADE09090093BEBE /* GinBaseNoContentTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93441ADE09090093BEBE /* GinBaseNoContentTabCell.m */; };
 		006A93B41ADE09090093BEBE /* GinBaseTitleSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93471ADE09090093BEBE /* GinBaseTitleSectionView.m */; };
 		006A93B71ADE09090093BEBE /* UIView+GinCGRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A934E1ADE09090093BEBE /* UIView+GinCGRect.m */; };
 		006A93B91ADE09090093BEBE /* UIViewController+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93531ADE09090093BEBE /* UIViewController+GinBaseClass.m */; };
@@ -118,21 +102,37 @@
 		006A94C51ADFB9C70093BEBE /* UIView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94C41ADFB9C70093BEBE /* UIView+GinBaseClass.m */; };
 		006A94C81ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94C71ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m */; };
 		006A94CF1ADFFF570093BEBE /* NSString+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94CE1ADFFF570093BEBE /* NSString+Json.m */; };
-		0086EE5C1B184309008A42D3 /* demo4Gallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0086EE5B1B184309008A42D3 /* demo4Gallery.m */; };
-		00905F111AE74A09004B5CA1 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00905F101AE74A09004B5CA1 /* TableViewController.m */; };
-		009FF0761B5CE55A00D282E6 /* AddressSearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009FF0751B5CE55A00D282E6 /* AddressSearchResultViewController.m */; };
-		009FF07A1B5CE5B200D282E6 /* BaiduLocationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 009FF0791B5CE5B200D282E6 /* BaiduLocationViewModel.m */; };
+		0095FECF1B71A29300BF8987 /* GinBaseNoContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FECC1B71A29300BF8987 /* GinBaseNoContentCell.m */; };
+		0095FED01B71A29300BF8987 /* GinBaseNoContentTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FECE1B71A29300BF8987 /* GinBaseNoContentTabCell.m */; };
+		0095FF071B71A30300BF8987 /* EmptyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FED41B71A30300BF8987 /* EmptyTableViewController.m */; };
+		0095FF081B71A30300BF8987 /* GinSystemButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FED71B71A30300BF8987 /* GinSystemButtonViewController.m */; };
+		0095FF091B71A30300BF8987 /* GinSystemButtonViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095FED81B71A30300BF8987 /* GinSystemButtonViewController.storyboard */; };
+		0095FF0A1B71A30300BF8987 /* page1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FEDB1B71A30300BF8987 /* page1Controller.m */; };
+		0095FF0B1B71A30300BF8987 /* page2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FEDD1B71A30300BF8987 /* page2Controller.m */; };
+		0095FF0C1B71A30300BF8987 /* page3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FEDF1B71A30300BF8987 /* page3Controller.m */; };
+		0095FF0D1B71A30300BF8987 /* TabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FEE11B71A30300BF8987 /* TabsViewController.m */; };
+		0095FF0E1B71A30300BF8987 /* HZTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FEE41B71A30300BF8987 /* HZTableViewController.m */; };
+		0095FF0F1B71A30300BF8987 /* HZTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095FEE51B71A30300BF8987 /* HZTableViewController.storyboard */; };
+		0095FF101B71A30300BF8987 /* AddressSearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FEE91B71A30300BF8987 /* AddressSearchResultViewController.m */; };
+		0095FF111B71A30300BF8987 /* BaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FEEB1B71A30300BF8987 /* BaiduMapViewController.m */; };
+		0095FF121B71A30300BF8987 /* BaiduMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095FEEC1B71A30300BF8987 /* BaiduMapViewController.storyboard */; };
+		0095FF131B71A30300BF8987 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FEEF1B71A30300BF8987 /* LocationManager.m */; };
+		0095FF141B71A30300BF8987 /* StoreLocationMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FEF11B71A30300BF8987 /* StoreLocationMapViewController.m */; };
+		0095FF151B71A30300BF8987 /* StoreLocationMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095FEF21B71A30300BF8987 /* StoreLocationMapViewController.storyboard */; };
+		0095FF161B71A30300BF8987 /* BaiduLocationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FEF51B71A30300BF8987 /* BaiduLocationViewModel.m */; };
+		0095FF171B71A30300BF8987 /* NSDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FEF81B71A30300BF8987 /* NSDateViewController.m */; };
+		0095FF181B71A30300BF8987 /* demo4Gallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FEFB1B71A30300BF8987 /* demo4Gallery.m */; };
+		0095FF191B71A30300BF8987 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FEFD1B71A30300BF8987 /* GalleryViewController.m */; };
+		0095FF1A1B71A30300BF8987 /* PullDownMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FF001B71A30300BF8987 /* PullDownMenuViewController.m */; };
+		0095FF1B1B71A30300BF8987 /* StepperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FF031B71A30300BF8987 /* StepperViewController.m */; };
+		0095FF1C1B71A30300BF8987 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FF061B71A30300BF8987 /* TableViewController.m */; };
+		0095FF271B71A43900BF8987 /* BaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FF1F1B71A43900BF8987 /* BaseCollectionCell.m */; };
+		0095FF281B71A43900BF8987 /* BaseCollectionViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FF211B71A43900BF8987 /* BaseCollectionViewContoller.m */; };
+		0095FF291B71A43900BF8987 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FF241B71A43900BF8987 /* BaseTableViewCell.m */; };
+		0095FF2A1B71A43900BF8987 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FF261B71A43900BF8987 /* BaseTableViewController.m */; };
 		009FF0821B5CEE4700D282E6 /* CallPhoneMannager.m in Sources */ = {isa = PBXBuildFile; fileRef = 009FF0811B5CEE4700D282E6 /* CallPhoneMannager.m */; };
 		00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527F61AF7259F00219A98 /* GinWebViewController.m */; };
-		00A527FB1AF728B700219A98 /* GinSystemButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527FA1AF728B700219A98 /* GinSystemButtonViewController.m */; };
-		00A527FD1AF7299B00219A98 /* GinSystemButtonViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A527FC1AF7299B00219A98 /* GinSystemButtonViewController.storyboard */; };
 		00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5E5561B15FE340095C7A5 /* NSDate+Range.m */; };
-		00E5E58D1B17F9E60095C7A5 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5E58C1B17F9E60095C7A5 /* GalleryViewController.m */; };
-		00F021E91B4395B300525724 /* BaiduMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F021E41B4395B300525724 /* BaiduMapViewController.m */; };
-		00F021EA1B4395B300525724 /* BaiduMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F021E51B4395B300525724 /* BaiduMapViewController.storyboard */; };
-		00F021EB1B4395B300525724 /* StoreLocationMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F021E71B4395B300525724 /* StoreLocationMapViewController.m */; };
-		00F021EC1B4395B300525724 /* StoreLocationMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F021E81B4395B300525724 /* StoreLocationMapViewController.storyboard */; };
-		00F021F01B43971B00525724 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F021EF1B43971B00525724 /* LocationManager.m */; };
 		00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */; };
 		00F4C9A21AE6361F00B3F485 /* NSString+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9A11AE6361F00B3F485 /* NSString+Type.m */; };
 		00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9AA1AE65BEE00B3F485 /* CheckAppVersion.m */; };
@@ -168,9 +168,6 @@
 		000B52A61ADBCF8100946853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000B52A71ADBCF8100946853 /* FrameworkDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameworkDemoTests.m; sourceTree = "<group>"; };
 		000B531C1ADBEB8D00946853 /* FrameworkDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrameworkDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		0018B90D1B0EB701001E52D5 /* HZTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZTableViewController.h; sourceTree = "<group>"; };
-		0018B90E1B0EB701001E52D5 /* HZTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZTableViewController.m; sourceTree = "<group>"; };
-		0018B9131B0EBE12001E52D5 /* HZTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HZTableViewController.storyboard; sourceTree = "<group>"; };
 		0018B9831B100883001E52D5 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		0018B9841B100883001E52D5 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		0018BA481B115DA4001E52D5 /* NSValueTransformer+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+Unit.h"; sourceTree = "<group>"; };
@@ -181,30 +178,14 @@
 		0018BC701B118D5B001E52D5 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
 		0018BC7C1B12BD87001E52D5 /* GinTabsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinTabsViewController.h; sourceTree = "<group>"; };
 		0018BC7D1B12BD87001E52D5 /* GinTabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinTabsViewController.m; sourceTree = "<group>"; };
-		0018BC831B12BDCA001E52D5 /* TabsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabsViewController.h; sourceTree = "<group>"; };
-		0018BC841B12BDCA001E52D5 /* TabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabsViewController.m; sourceTree = "<group>"; };
 		0018BC891B12D136001E52D5 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
 		0018BC8A1B12D136001E52D5 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
-		002F31541B299BAA00080B37 /* NSDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateViewController.h; sourceTree = "<group>"; };
-		002F31551B299BAA00080B37 /* NSDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateViewController.m; sourceTree = "<group>"; };
-		002F31581B29BF0D00080B37 /* EmptyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyTableViewController.h; sourceTree = "<group>"; };
-		002F31591B29BF0D00080B37 /* EmptyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyTableViewController.m; sourceTree = "<group>"; };
 		002F315B1B2A72AC00080B37 /* NSAttributedString+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Unit.h"; sourceTree = "<group>"; };
 		002F315C1B2A72AC00080B37 /* NSAttributedString+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Unit.m"; sourceTree = "<group>"; };
-		002F31651B2A771100080B37 /* PullDownMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullDownMenuViewController.h; sourceTree = "<group>"; };
-		002F31661B2A771100080B37 /* PullDownMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullDownMenuViewController.m; sourceTree = "<group>"; };
 		002F31751B2EA6FC00080B37 /* NSArray+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Unit.h"; sourceTree = "<group>"; };
 		002F31761B2EA6FC00080B37 /* NSArray+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Unit.m"; sourceTree = "<group>"; };
-		002F31791B2EAC6700080B37 /* StepperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepperViewController.h; sourceTree = "<group>"; };
-		002F317A1B2EAC6700080B37 /* StepperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepperViewController.m; sourceTree = "<group>"; };
 		002F326B1B32795F00080B37 /* NSDictionary+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Unit.h"; sourceTree = "<group>"; };
 		002F326C1B32795F00080B37 /* NSDictionary+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Unit.m"; sourceTree = "<group>"; };
-		0033C7DC1B131E6C0022B189 /* page1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = page1Controller.h; sourceTree = "<group>"; };
-		0033C7DD1B131E6C0022B189 /* page1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = page1Controller.m; sourceTree = "<group>"; };
-		0033C7DE1B131E6C0022B189 /* page2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = page2Controller.h; sourceTree = "<group>"; };
-		0033C7DF1B131E6C0022B189 /* page2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = page2Controller.m; sourceTree = "<group>"; };
-		0033C7E01B131E6C0022B189 /* page3Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = page3Controller.h; sourceTree = "<group>"; };
-		0033C7E11B131E6C0022B189 /* page3Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = page3Controller.m; sourceTree = "<group>"; };
 		003B327D1B1AAE09001EED5C /* GinPhotoGalleryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPhotoGalleryController.h; sourceTree = "<group>"; };
 		003B327E1B1AAE09001EED5C /* GinPhotoGalleryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinPhotoGalleryController.m; sourceTree = "<group>"; };
 		003B327F1B1AAE09001EED5C /* GinShowPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinShowPhotoViewController.h; sourceTree = "<group>"; };
@@ -272,14 +253,6 @@
 		005422CC1B47E9970028CCE6 /* list_indicator_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_indicator_arrow.png; sourceTree = "<group>"; };
 		005422CD1B47E9970028CCE6 /* list_indicator_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_indicator_arrow@2x.png"; sourceTree = "<group>"; };
 		005422CE1B47E9970028CCE6 /* list_indicator_arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_indicator_arrow@3x.png"; sourceTree = "<group>"; };
-		005422D31B47E9CE0028CCE6 /* BaseCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionCell.h; sourceTree = "<group>"; };
-		005422D41B47E9CE0028CCE6 /* BaseCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionCell.m; sourceTree = "<group>"; };
-		005422D51B47E9CE0028CCE6 /* BaseCollectionViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewContoller.h; sourceTree = "<group>"; };
-		005422D61B47E9CE0028CCE6 /* BaseCollectionViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewContoller.m; sourceTree = "<group>"; };
-		005422D71B47E9CE0028CCE6 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
-		005422D81B47E9CE0028CCE6 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
-		005422D91B47E9CE0028CCE6 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
-		005422DA1B47E9CE0028CCE6 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		005422DB1B47E9CE0028CCE6 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		005422DC1B47E9CE0028CCE6 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		005422DD1B47E9CE0028CCE6 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -293,8 +266,6 @@
 		006A93271ADE09090093BEBE /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		006A93281ADE09090093BEBE /* UIImage+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Base64.h"; sourceTree = "<group>"; };
 		006A93291ADE09090093BEBE /* UIImage+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Base64.m"; sourceTree = "<group>"; };
-		006A932F1ADE09090093BEBE /* GinBaseNoContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseNoContentCell.h; sourceTree = "<group>"; };
-		006A93301ADE09090093BEBE /* GinBaseNoContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseNoContentCell.m; sourceTree = "<group>"; };
 		006A93321ADE09090093BEBE /* GinCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCollectionLayout.h; sourceTree = "<group>"; };
 		006A93331ADE09090093BEBE /* GinCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinCollectionLayout.m; sourceTree = "<group>"; };
 		006A93341ADE09090093BEBE /* GinHeightDynamicCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinHeightDynamicCollectionLayout.h; sourceTree = "<group>"; };
@@ -303,8 +274,6 @@
 		006A93381ADE09090093BEBE /* GinBaseTitleHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseTitleHeader.m; sourceTree = "<group>"; };
 		006A933C1ADE09090093BEBE /* GinBaseCoreDataResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseCoreDataResponder.h; sourceTree = "<group>"; };
 		006A933D1ADE09090093BEBE /* GinBaseCoreDataResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseCoreDataResponder.m; sourceTree = "<group>"; };
-		006A93431ADE09090093BEBE /* GinBaseNoContentTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseNoContentTabCell.h; sourceTree = "<group>"; };
-		006A93441ADE09090093BEBE /* GinBaseNoContentTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseNoContentTabCell.m; sourceTree = "<group>"; };
 		006A93461ADE09090093BEBE /* GinBaseTitleSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseTitleSectionView.h; sourceTree = "<group>"; };
 		006A93471ADE09090093BEBE /* GinBaseTitleSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseTitleSectionView.m; sourceTree = "<group>"; };
 		006A934D1ADE09090093BEBE /* UIView+GinCGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GinCGRect.h"; sourceTree = "<group>"; };
@@ -369,33 +338,64 @@
 		006A94CD1ADFFF570093BEBE /* NSString+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Json.h"; sourceTree = "<group>"; };
 		006A94CE1ADFFF570093BEBE /* NSString+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Json.m"; sourceTree = "<group>"; };
 		006AF4AB1B09EFE00033BCA3 /* GinTypeUnitHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinTypeUnitHeader.h; sourceTree = "<group>"; };
-		0086EE5A1B184309008A42D3 /* demo4Gallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo4Gallery.h; sourceTree = "<group>"; };
-		0086EE5B1B184309008A42D3 /* demo4Gallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo4Gallery.m; sourceTree = "<group>"; };
-		00905F0F1AE74A09004B5CA1 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		00905F101AE74A09004B5CA1 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		009FF0741B5CE55A00D282E6 /* AddressSearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressSearchResultViewController.h; sourceTree = "<group>"; };
-		009FF0751B5CE55A00D282E6 /* AddressSearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSearchResultViewController.m; sourceTree = "<group>"; };
-		009FF0781B5CE5B200D282E6 /* BaiduLocationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduLocationViewModel.h; sourceTree = "<group>"; };
-		009FF0791B5CE5B200D282E6 /* BaiduLocationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduLocationViewModel.m; sourceTree = "<group>"; };
+		0095FECB1B71A29300BF8987 /* GinBaseNoContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseNoContentCell.h; sourceTree = "<group>"; };
+		0095FECC1B71A29300BF8987 /* GinBaseNoContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseNoContentCell.m; sourceTree = "<group>"; };
+		0095FECD1B71A29300BF8987 /* GinBaseNoContentTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseNoContentTabCell.h; sourceTree = "<group>"; };
+		0095FECE1B71A29300BF8987 /* GinBaseNoContentTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseNoContentTabCell.m; sourceTree = "<group>"; };
+		0095FED31B71A30300BF8987 /* EmptyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyTableViewController.h; sourceTree = "<group>"; };
+		0095FED41B71A30300BF8987 /* EmptyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyTableViewController.m; sourceTree = "<group>"; };
+		0095FED61B71A30300BF8987 /* GinSystemButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinSystemButtonViewController.h; sourceTree = "<group>"; };
+		0095FED71B71A30300BF8987 /* GinSystemButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinSystemButtonViewController.m; sourceTree = "<group>"; };
+		0095FED81B71A30300BF8987 /* GinSystemButtonViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GinSystemButtonViewController.storyboard; sourceTree = "<group>"; };
+		0095FEDA1B71A30300BF8987 /* page1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = page1Controller.h; sourceTree = "<group>"; };
+		0095FEDB1B71A30300BF8987 /* page1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = page1Controller.m; sourceTree = "<group>"; };
+		0095FEDC1B71A30300BF8987 /* page2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = page2Controller.h; sourceTree = "<group>"; };
+		0095FEDD1B71A30300BF8987 /* page2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = page2Controller.m; sourceTree = "<group>"; };
+		0095FEDE1B71A30300BF8987 /* page3Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = page3Controller.h; sourceTree = "<group>"; };
+		0095FEDF1B71A30300BF8987 /* page3Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = page3Controller.m; sourceTree = "<group>"; };
+		0095FEE01B71A30300BF8987 /* TabsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabsViewController.h; sourceTree = "<group>"; };
+		0095FEE11B71A30300BF8987 /* TabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabsViewController.m; sourceTree = "<group>"; };
+		0095FEE31B71A30300BF8987 /* HZTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZTableViewController.h; sourceTree = "<group>"; };
+		0095FEE41B71A30300BF8987 /* HZTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZTableViewController.m; sourceTree = "<group>"; };
+		0095FEE51B71A30300BF8987 /* HZTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HZTableViewController.storyboard; sourceTree = "<group>"; };
+		0095FEE81B71A30300BF8987 /* AddressSearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressSearchResultViewController.h; sourceTree = "<group>"; };
+		0095FEE91B71A30300BF8987 /* AddressSearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSearchResultViewController.m; sourceTree = "<group>"; };
+		0095FEEA1B71A30300BF8987 /* BaiduMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMapViewController.h; sourceTree = "<group>"; };
+		0095FEEB1B71A30300BF8987 /* BaiduMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduMapViewController.m; sourceTree = "<group>"; };
+		0095FEEC1B71A30300BF8987 /* BaiduMapViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BaiduMapViewController.storyboard; sourceTree = "<group>"; };
+		0095FEEE1B71A30300BF8987 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		0095FEEF1B71A30300BF8987 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		0095FEF01B71A30300BF8987 /* StoreLocationMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreLocationMapViewController.h; sourceTree = "<group>"; };
+		0095FEF11B71A30300BF8987 /* StoreLocationMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreLocationMapViewController.m; sourceTree = "<group>"; };
+		0095FEF21B71A30300BF8987 /* StoreLocationMapViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoreLocationMapViewController.storyboard; sourceTree = "<group>"; };
+		0095FEF41B71A30300BF8987 /* BaiduLocationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduLocationViewModel.h; sourceTree = "<group>"; };
+		0095FEF51B71A30300BF8987 /* BaiduLocationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduLocationViewModel.m; sourceTree = "<group>"; };
+		0095FEF71B71A30300BF8987 /* NSDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateViewController.h; sourceTree = "<group>"; };
+		0095FEF81B71A30300BF8987 /* NSDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateViewController.m; sourceTree = "<group>"; };
+		0095FEFA1B71A30300BF8987 /* demo4Gallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demo4Gallery.h; sourceTree = "<group>"; };
+		0095FEFB1B71A30300BF8987 /* demo4Gallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demo4Gallery.m; sourceTree = "<group>"; };
+		0095FEFC1B71A30300BF8987 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		0095FEFD1B71A30300BF8987 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		0095FEFF1B71A30300BF8987 /* PullDownMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullDownMenuViewController.h; sourceTree = "<group>"; };
+		0095FF001B71A30300BF8987 /* PullDownMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullDownMenuViewController.m; sourceTree = "<group>"; };
+		0095FF021B71A30300BF8987 /* StepperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepperViewController.h; sourceTree = "<group>"; };
+		0095FF031B71A30300BF8987 /* StepperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepperViewController.m; sourceTree = "<group>"; };
+		0095FF051B71A30300BF8987 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		0095FF061B71A30300BF8987 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		0095FF1E1B71A43900BF8987 /* BaseCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionCell.h; sourceTree = "<group>"; };
+		0095FF1F1B71A43900BF8987 /* BaseCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionCell.m; sourceTree = "<group>"; };
+		0095FF201B71A43900BF8987 /* BaseCollectionViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewContoller.h; sourceTree = "<group>"; };
+		0095FF211B71A43900BF8987 /* BaseCollectionViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewContoller.m; sourceTree = "<group>"; };
+		0095FF231B71A43900BF8987 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		0095FF241B71A43900BF8987 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		0095FF251B71A43900BF8987 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		0095FF261B71A43900BF8987 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		009FF0801B5CEE4700D282E6 /* CallPhoneMannager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallPhoneMannager.h; sourceTree = "<group>"; };
 		009FF0811B5CEE4700D282E6 /* CallPhoneMannager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallPhoneMannager.m; sourceTree = "<group>"; };
 		00A527F51AF7259F00219A98 /* GinWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinWebViewController.h; sourceTree = "<group>"; };
 		00A527F61AF7259F00219A98 /* GinWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinWebViewController.m; sourceTree = "<group>"; };
-		00A527F91AF728B700219A98 /* GinSystemButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinSystemButtonViewController.h; sourceTree = "<group>"; };
-		00A527FA1AF728B700219A98 /* GinSystemButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinSystemButtonViewController.m; sourceTree = "<group>"; };
-		00A527FC1AF7299B00219A98 /* GinSystemButtonViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GinSystemButtonViewController.storyboard; sourceTree = "<group>"; };
 		00E5E5551B15FE340095C7A5 /* NSDate+Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Range.h"; sourceTree = "<group>"; };
 		00E5E5561B15FE340095C7A5 /* NSDate+Range.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Range.m"; sourceTree = "<group>"; };
-		00E5E58B1B17F9E60095C7A5 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
-		00E5E58C1B17F9E60095C7A5 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
-		00F021E31B4395B300525724 /* BaiduMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMapViewController.h; sourceTree = "<group>"; };
-		00F021E41B4395B300525724 /* BaiduMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduMapViewController.m; sourceTree = "<group>"; };
-		00F021E51B4395B300525724 /* BaiduMapViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BaiduMapViewController.storyboard; sourceTree = "<group>"; };
-		00F021E61B4395B300525724 /* StoreLocationMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreLocationMapViewController.h; sourceTree = "<group>"; };
-		00F021E71B4395B300525724 /* StoreLocationMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreLocationMapViewController.m; sourceTree = "<group>"; };
-		00F021E81B4395B300525724 /* StoreLocationMapViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoreLocationMapViewController.storyboard; sourceTree = "<group>"; };
-		00F021EE1B43971B00525724 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
-		00F021EF1B43971B00525724 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 		00F4C9991AE630C300B3F485 /* GinPopup+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GinPopup+Unit.h"; sourceTree = "<group>"; };
 		00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GinPopup+Unit.m"; sourceTree = "<group>"; };
 		00F4C9A01AE6361F00B3F485 /* NSString+Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Type.h"; sourceTree = "<group>"; };
@@ -464,17 +464,8 @@
 				000B52901ADBCF8100946853 /* AppDelegate.m */,
 				000B52921ADBCF8100946853 /* ViewController.h */,
 				000B52931ADBCF8100946853 /* ViewController.m */,
+				0095FED11B71A30300BF8987 /* Demo */,
 				0018BA431B115CA7001E52D5 /* Tips */,
-				0018B90C1B0EB6F0001E52D5 /* HZTableView */,
-				00A527F81AF728AC00219A98 /* GinSystemButton */,
-				00905F0E1AE749F4004B5CA1 /* TableView */,
-				0018BC821B12BDB3001E52D5 /* GinTabsViewController */,
-				00E5E58A1B17F9700095C7A5 /* PhotoGallery */,
-				002F31531B299B9500080B37 /* NSDate */,
-				002F31571B29BEFB00080B37 /* DZNEmptyDataSet */,
-				002F31641B2A770100080B37 /* PullDownMenu */,
-				002F31781B2EAC5900080B37 /* Stepper */,
-				00F021E21B4395B300525724 /* MapLocationController */,
 				000B52951ADBCF8100946853 /* Main.storyboard */,
 				000B52981ADBCF8100946853 /* Images.xcassets */,
 				000B529A1ADBCF8100946853 /* LaunchScreen.xib */,
@@ -510,16 +501,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0018B90C1B0EB6F0001E52D5 /* HZTableView */ = {
-			isa = PBXGroup;
-			children = (
-				0018B90D1B0EB701001E52D5 /* HZTableViewController.h */,
-				0018B90E1B0EB701001E52D5 /* HZTableViewController.m */,
-				0018B9131B0EBE12001E52D5 /* HZTableViewController.storyboard */,
-			);
-			path = HZTableView;
-			sourceTree = "<group>";
-		};
 		0018B9821B10083E001E52D5 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,6 +513,7 @@
 		0018BA431B115CA7001E52D5 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				0095FECA1B71A29300BF8987 /* NoneCell */,
 				005422D21B47E9CE0028CCE6 /* BaseClass */,
 				0018BA441B115CA7001E52D5 /* Mantle */,
 			);
@@ -559,48 +541,6 @@
 			path = GinTabsController;
 			sourceTree = "<group>";
 		};
-		0018BC821B12BDB3001E52D5 /* GinTabsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				0018BC831B12BDCA001E52D5 /* TabsViewController.h */,
-				0018BC841B12BDCA001E52D5 /* TabsViewController.m */,
-				0033C7DC1B131E6C0022B189 /* page1Controller.h */,
-				0033C7DD1B131E6C0022B189 /* page1Controller.m */,
-				0033C7DE1B131E6C0022B189 /* page2Controller.h */,
-				0033C7DF1B131E6C0022B189 /* page2Controller.m */,
-				0033C7E01B131E6C0022B189 /* page3Controller.h */,
-				0033C7E11B131E6C0022B189 /* page3Controller.m */,
-			);
-			path = GinTabsViewController;
-			sourceTree = "<group>";
-		};
-		002F31531B299B9500080B37 /* NSDate */ = {
-			isa = PBXGroup;
-			children = (
-				002F31541B299BAA00080B37 /* NSDateViewController.h */,
-				002F31551B299BAA00080B37 /* NSDateViewController.m */,
-			);
-			path = NSDate;
-			sourceTree = "<group>";
-		};
-		002F31571B29BEFB00080B37 /* DZNEmptyDataSet */ = {
-			isa = PBXGroup;
-			children = (
-				002F31581B29BF0D00080B37 /* EmptyTableViewController.h */,
-				002F31591B29BF0D00080B37 /* EmptyTableViewController.m */,
-			);
-			path = DZNEmptyDataSet;
-			sourceTree = "<group>";
-		};
-		002F31641B2A770100080B37 /* PullDownMenu */ = {
-			isa = PBXGroup;
-			children = (
-				002F31651B2A771100080B37 /* PullDownMenuViewController.h */,
-				002F31661B2A771100080B37 /* PullDownMenuViewController.m */,
-			);
-			path = PullDownMenu;
-			sourceTree = "<group>";
-		};
 		002F31741B2EA6EF00080B37 /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
@@ -608,15 +548,6 @@
 				002F31761B2EA6FC00080B37 /* NSArray+Unit.m */,
 			);
 			path = NSArray;
-			sourceTree = "<group>";
-		};
-		002F31781B2EAC5900080B37 /* Stepper */ = {
-			isa = PBXGroup;
-			children = (
-				002F31791B2EAC6700080B37 /* StepperViewController.h */,
-				002F317A1B2EAC6700080B37 /* StepperViewController.m */,
-			);
-			path = Stepper;
 			sourceTree = "<group>";
 		};
 		002F326A1B32793A00080B37 /* NSDictionary */ = {
@@ -662,13 +593,13 @@
 			children = (
 				005422541B47E84D0028CCE6 /* Button */,
 				0054226A1B47E84D0028CCE6 /* Collection */,
+				005422991B47E84D0028CCE6 /* TableView */,
 				005422781B47E84D0028CCE6 /* ExtendMenu */,
 				0054227D1B47E84D0028CCE6 /* GinTextView */,
 				005422801B47E84D0028CCE6 /* IconTextField */,
 				005422831B47E84D0028CCE6 /* Keyboard */,
 				005422881B47E84D0028CCE6 /* PullDownMenu */,
 				005422961B47E84D0028CCE6 /* Stepper */,
-				005422991B47E84D0028CCE6 /* TableView */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -942,14 +873,8 @@
 		005422D21B47E9CE0028CCE6 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				005422D31B47E9CE0028CCE6 /* BaseCollectionCell.h */,
-				005422D41B47E9CE0028CCE6 /* BaseCollectionCell.m */,
-				005422D51B47E9CE0028CCE6 /* BaseCollectionViewContoller.h */,
-				005422D61B47E9CE0028CCE6 /* BaseCollectionViewContoller.m */,
-				005422D71B47E9CE0028CCE6 /* BaseTableViewCell.h */,
-				005422D81B47E9CE0028CCE6 /* BaseTableViewCell.m */,
-				005422D91B47E9CE0028CCE6 /* BaseTableViewController.h */,
-				005422DA1B47E9CE0028CCE6 /* BaseTableViewController.m */,
+				0095FF1D1B71A43900BF8987 /* Collection */,
+				0095FF221B71A43900BF8987 /* Table */,
 				005422DB1B47E9CE0028CCE6 /* BaseView.h */,
 				005422DC1B47E9CE0028CCE6 /* BaseView.m */,
 				005422DD1B47E9CE0028CCE6 /* BaseViewController.h */,
@@ -1043,7 +968,6 @@
 		006A932B1ADE09090093BEBE /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				006A932E1ADE09090093BEBE /* Cell */,
 				006A93311ADE09090093BEBE /* GinCollectionLayout */,
 				006A93361ADE09090093BEBE /* Header */,
 				006A94B71ADF9CBD0093BEBE /* UICollectionView+GinBaseClass.h */,
@@ -1052,15 +976,6 @@
 				006A94C71ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m */,
 			);
 			path = CollectionView;
-			sourceTree = "<group>";
-		};
-		006A932E1ADE09090093BEBE /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				006A932F1ADE09090093BEBE /* GinBaseNoContentCell.h */,
-				006A93301ADE09090093BEBE /* GinBaseNoContentCell.m */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		006A93311ADE09090093BEBE /* GinCollectionLayout */ = {
@@ -1095,7 +1010,6 @@
 		006A933F1ADE09090093BEBE /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				006A93421ADE09090093BEBE /* Cell */,
 				006A93451ADE09090093BEBE /* SectionView */,
 				006A94531ADEB3260093BEBE /* UITableView+GinBaseClass.h */,
 				006A94541ADEB3260093BEBE /* UITableView+GinBaseClass.m */,
@@ -1103,15 +1017,6 @@
 				006A94BB1ADFAD6D0093BEBE /* UIViewController+GinBaseTableView.m */,
 			);
 			path = TableView;
-			sourceTree = "<group>";
-		};
-		006A93421ADE09090093BEBE /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				006A93431ADE09090093BEBE /* GinBaseNoContentTabCell.h */,
-				006A93441ADE09090093BEBE /* GinBaseNoContentTabCell.m */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		006A93451ADE09090093BEBE /* SectionView */ = {
@@ -1332,31 +1237,188 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
-		00905F0E1AE749F4004B5CA1 /* TableView */ = {
+		0095FECA1B71A29300BF8987 /* NoneCell */ = {
 			isa = PBXGroup;
 			children = (
-				00905F0F1AE74A09004B5CA1 /* TableViewController.h */,
-				00905F101AE74A09004B5CA1 /* TableViewController.m */,
+				0095FECB1B71A29300BF8987 /* GinBaseNoContentCell.h */,
+				0095FECC1B71A29300BF8987 /* GinBaseNoContentCell.m */,
+				0095FECD1B71A29300BF8987 /* GinBaseNoContentTabCell.h */,
+				0095FECE1B71A29300BF8987 /* GinBaseNoContentTabCell.m */,
 			);
-			path = TableView;
+			path = NoneCell;
 			sourceTree = "<group>";
 		};
-		009FF0731B5CE55A00D282E6 /* AddressSearchResult */ = {
+		0095FED11B71A30300BF8987 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				009FF0741B5CE55A00D282E6 /* AddressSearchResultViewController.h */,
-				009FF0751B5CE55A00D282E6 /* AddressSearchResultViewController.m */,
+				0095FED21B71A30300BF8987 /* DZNEmptyDataSet */,
+				0095FED51B71A30300BF8987 /* GinSystemButton */,
+				0095FED91B71A30300BF8987 /* GinTabsViewController */,
+				0095FEE21B71A30300BF8987 /* HZTableView */,
+				0095FEE61B71A30300BF8987 /* MapLocationController */,
+				0095FEF61B71A30300BF8987 /* NSDate */,
+				0095FEF91B71A30300BF8987 /* PhotoGallery */,
+				0095FEFE1B71A30300BF8987 /* PullDownMenu */,
+				0095FF011B71A30300BF8987 /* Stepper */,
+				0095FF041B71A30300BF8987 /* TableView */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		0095FED21B71A30300BF8987 /* DZNEmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				0095FED31B71A30300BF8987 /* EmptyTableViewController.h */,
+				0095FED41B71A30300BF8987 /* EmptyTableViewController.m */,
+			);
+			path = DZNEmptyDataSet;
+			sourceTree = "<group>";
+		};
+		0095FED51B71A30300BF8987 /* GinSystemButton */ = {
+			isa = PBXGroup;
+			children = (
+				0095FED61B71A30300BF8987 /* GinSystemButtonViewController.h */,
+				0095FED71B71A30300BF8987 /* GinSystemButtonViewController.m */,
+				0095FED81B71A30300BF8987 /* GinSystemButtonViewController.storyboard */,
+			);
+			path = GinSystemButton;
+			sourceTree = "<group>";
+		};
+		0095FED91B71A30300BF8987 /* GinTabsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0095FEDA1B71A30300BF8987 /* page1Controller.h */,
+				0095FEDB1B71A30300BF8987 /* page1Controller.m */,
+				0095FEDC1B71A30300BF8987 /* page2Controller.h */,
+				0095FEDD1B71A30300BF8987 /* page2Controller.m */,
+				0095FEDE1B71A30300BF8987 /* page3Controller.h */,
+				0095FEDF1B71A30300BF8987 /* page3Controller.m */,
+				0095FEE01B71A30300BF8987 /* TabsViewController.h */,
+				0095FEE11B71A30300BF8987 /* TabsViewController.m */,
+			);
+			path = GinTabsViewController;
+			sourceTree = "<group>";
+		};
+		0095FEE21B71A30300BF8987 /* HZTableView */ = {
+			isa = PBXGroup;
+			children = (
+				0095FEE31B71A30300BF8987 /* HZTableViewController.h */,
+				0095FEE41B71A30300BF8987 /* HZTableViewController.m */,
+				0095FEE51B71A30300BF8987 /* HZTableViewController.storyboard */,
+			);
+			path = HZTableView;
+			sourceTree = "<group>";
+		};
+		0095FEE61B71A30300BF8987 /* MapLocationController */ = {
+			isa = PBXGroup;
+			children = (
+				0095FEE71B71A30300BF8987 /* AddressSearchResult */,
+				0095FEEA1B71A30300BF8987 /* BaiduMapViewController.h */,
+				0095FEEB1B71A30300BF8987 /* BaiduMapViewController.m */,
+				0095FEEC1B71A30300BF8987 /* BaiduMapViewController.storyboard */,
+				0095FEED1B71A30300BF8987 /* Location */,
+				0095FEF01B71A30300BF8987 /* StoreLocationMapViewController.h */,
+				0095FEF11B71A30300BF8987 /* StoreLocationMapViewController.m */,
+				0095FEF21B71A30300BF8987 /* StoreLocationMapViewController.storyboard */,
+				0095FEF31B71A30300BF8987 /* ViewModel */,
+			);
+			path = MapLocationController;
+			sourceTree = "<group>";
+		};
+		0095FEE71B71A30300BF8987 /* AddressSearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				0095FEE81B71A30300BF8987 /* AddressSearchResultViewController.h */,
+				0095FEE91B71A30300BF8987 /* AddressSearchResultViewController.m */,
 			);
 			path = AddressSearchResult;
 			sourceTree = "<group>";
 		};
-		009FF0771B5CE5B200D282E6 /* ViewModel */ = {
+		0095FEED1B71A30300BF8987 /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				009FF0781B5CE5B200D282E6 /* BaiduLocationViewModel.h */,
-				009FF0791B5CE5B200D282E6 /* BaiduLocationViewModel.m */,
+				0095FEEE1B71A30300BF8987 /* LocationManager.h */,
+				0095FEEF1B71A30300BF8987 /* LocationManager.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		0095FEF31B71A30300BF8987 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0095FEF41B71A30300BF8987 /* BaiduLocationViewModel.h */,
+				0095FEF51B71A30300BF8987 /* BaiduLocationViewModel.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0095FEF61B71A30300BF8987 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				0095FEF71B71A30300BF8987 /* NSDateViewController.h */,
+				0095FEF81B71A30300BF8987 /* NSDateViewController.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		0095FEF91B71A30300BF8987 /* PhotoGallery */ = {
+			isa = PBXGroup;
+			children = (
+				0095FEFA1B71A30300BF8987 /* demo4Gallery.h */,
+				0095FEFB1B71A30300BF8987 /* demo4Gallery.m */,
+				0095FEFC1B71A30300BF8987 /* GalleryViewController.h */,
+				0095FEFD1B71A30300BF8987 /* GalleryViewController.m */,
+			);
+			path = PhotoGallery;
+			sourceTree = "<group>";
+		};
+		0095FEFE1B71A30300BF8987 /* PullDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				0095FEFF1B71A30300BF8987 /* PullDownMenuViewController.h */,
+				0095FF001B71A30300BF8987 /* PullDownMenuViewController.m */,
+			);
+			path = PullDownMenu;
+			sourceTree = "<group>";
+		};
+		0095FF011B71A30300BF8987 /* Stepper */ = {
+			isa = PBXGroup;
+			children = (
+				0095FF021B71A30300BF8987 /* StepperViewController.h */,
+				0095FF031B71A30300BF8987 /* StepperViewController.m */,
+			);
+			path = Stepper;
+			sourceTree = "<group>";
+		};
+		0095FF041B71A30300BF8987 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				0095FF051B71A30300BF8987 /* TableViewController.h */,
+				0095FF061B71A30300BF8987 /* TableViewController.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		0095FF1D1B71A43900BF8987 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				0095FF1E1B71A43900BF8987 /* BaseCollectionCell.h */,
+				0095FF1F1B71A43900BF8987 /* BaseCollectionCell.m */,
+				0095FF201B71A43900BF8987 /* BaseCollectionViewContoller.h */,
+				0095FF211B71A43900BF8987 /* BaseCollectionViewContoller.m */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		0095FF221B71A43900BF8987 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				0095FF231B71A43900BF8987 /* BaseTableViewCell.h */,
+				0095FF241B71A43900BF8987 /* BaseTableViewCell.m */,
+				0095FF251B71A43900BF8987 /* BaseTableViewController.h */,
+				0095FF261B71A43900BF8987 /* BaseTableViewController.m */,
+			);
+			path = Table;
 			sourceTree = "<group>";
 		};
 		009FF07F1B5CEE3C00D282E6 /* CallPhoneMannager */ = {
@@ -1375,52 +1437,6 @@
 				00A527F61AF7259F00219A98 /* GinWebViewController.m */,
 			);
 			path = GinWebViewController;
-			sourceTree = "<group>";
-		};
-		00A527F81AF728AC00219A98 /* GinSystemButton */ = {
-			isa = PBXGroup;
-			children = (
-				00A527F91AF728B700219A98 /* GinSystemButtonViewController.h */,
-				00A527FA1AF728B700219A98 /* GinSystemButtonViewController.m */,
-				00A527FC1AF7299B00219A98 /* GinSystemButtonViewController.storyboard */,
-			);
-			path = GinSystemButton;
-			sourceTree = "<group>";
-		};
-		00E5E58A1B17F9700095C7A5 /* PhotoGallery */ = {
-			isa = PBXGroup;
-			children = (
-				0086EE5A1B184309008A42D3 /* demo4Gallery.h */,
-				0086EE5B1B184309008A42D3 /* demo4Gallery.m */,
-				00E5E58B1B17F9E60095C7A5 /* GalleryViewController.h */,
-				00E5E58C1B17F9E60095C7A5 /* GalleryViewController.m */,
-			);
-			path = PhotoGallery;
-			sourceTree = "<group>";
-		};
-		00F021E21B4395B300525724 /* MapLocationController */ = {
-			isa = PBXGroup;
-			children = (
-				009FF0771B5CE5B200D282E6 /* ViewModel */,
-				009FF0731B5CE55A00D282E6 /* AddressSearchResult */,
-				00F021ED1B43971B00525724 /* Location */,
-				00F021E31B4395B300525724 /* BaiduMapViewController.h */,
-				00F021E41B4395B300525724 /* BaiduMapViewController.m */,
-				00F021E51B4395B300525724 /* BaiduMapViewController.storyboard */,
-				00F021E61B4395B300525724 /* StoreLocationMapViewController.h */,
-				00F021E71B4395B300525724 /* StoreLocationMapViewController.m */,
-				00F021E81B4395B300525724 /* StoreLocationMapViewController.storyboard */,
-			);
-			path = MapLocationController;
-			sourceTree = "<group>";
-		};
-		00F021ED1B43971B00525724 /* Location */ = {
-			isa = PBXGroup;
-			children = (
-				00F021EE1B43971B00525724 /* LocationManager.h */,
-				00F021EF1B43971B00525724 /* LocationManager.m */,
-			);
-			path = Location;
 			sourceTree = "<group>";
 		};
 		00F4C9A31AE65B4F00B3F485 /* Tools */ = {
@@ -1575,16 +1591,16 @@
 				005422C11B47E84D0028CCE6 /* arrow_up_44x44.png in Resources */,
 				005422D11B47E9970028CCE6 /* list_indicator_arrow@3x.png in Resources */,
 				005422C21B47E84D0028CCE6 /* arrow_up_44x44@2x.png in Resources */,
-				00F021EC1B4395B300525724 /* StoreLocationMapViewController.storyboard in Resources */,
+				0095FF0F1B71A30300BF8987 /* HZTableViewController.storyboard in Resources */,
 				000B529C1ADBCF8100946853 /* LaunchScreen.xib in Resources */,
 				005422C01B47E84D0028CCE6 /* arrow_down_44x44@3x.png in Resources */,
+				0095FF091B71A30300BF8987 /* GinSystemButtonViewController.storyboard in Resources */,
 				000B52991ADBCF8100946853 /* Images.xcassets in Resources */,
 				005422C31B47E84D0028CCE6 /* arrow_up_44x44@3x.png in Resources */,
-				00F021EA1B4395B300525724 /* BaiduMapViewController.storyboard in Resources */,
-				0018B9141B0EBE12001E52D5 /* HZTableViewController.storyboard in Resources */,
+				0095FF151B71A30300BF8987 /* StoreLocationMapViewController.storyboard in Resources */,
 				005422CF1B47E9970028CCE6 /* list_indicator_arrow.png in Resources */,
+				0095FF121B71A30300BF8987 /* BaiduMapViewController.storyboard in Resources */,
 				005422BF1B47E84D0028CCE6 /* arrow_down_44x44@2x.png in Resources */,
-				00A527FD1AF7299B00219A98 /* GinSystemButtonViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1637,79 +1653,76 @@
 			files = (
 				005422BB1B47E84D0028CCE6 /* GinPullDownMenu.m in Sources */,
 				005422B41B47E84D0028CCE6 /* HZCollectionViewLayout.m in Sources */,
-				00F021F01B43971B00525724 /* LocationManager.m in Sources */,
-				0018BC851B12BDCA001E52D5 /* TabsViewController.m in Sources */,
 				00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */,
 				002F326D1B32795F00080B37 /* NSDictionary+Unit.m in Sources */,
 				005422B61B47E84D0028CCE6 /* GinExtendMenu.m in Sources */,
-				0033C7E31B131E6C0022B189 /* page2Controller.m in Sources */,
 				005422AF1B47E84D0028CCE6 /* GinVerticalLayoutButton.m in Sources */,
-				002F31561B299BAA00080B37 /* NSDateViewController.m in Sources */,
 				005422BC1B47E84D0028CCE6 /* GinPullDownMenuCell.m in Sources */,
 				005422B01B47E84D0028CCE6 /* LeftIconButton.m in Sources */,
 				006A94C81ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m in Sources */,
 				005422AE1B47E84D0028CCE6 /* GinTagButton.m in Sources */,
-				00A527FB1AF728B700219A98 /* GinSystemButtonViewController.m in Sources */,
-				00F021E91B4395B300525724 /* BaiduMapViewController.m in Sources */,
+				0095FF0C1B71A30300BF8987 /* page3Controller.m in Sources */,
 				005422B11B47E84D0028CCE6 /* ImageCollectionCell.m in Sources */,
 				006A93C81ADE09090093BEBE /* UIImage+GinUnit.m in Sources */,
-				005422DF1B47E9CE0028CCE6 /* BaseCollectionCell.m in Sources */,
 				006A93AD1ADE09090093BEBE /* GinCollectionLayout.m in Sources */,
+				0095FF131B71A30300BF8987 /* LocationManager.m in Sources */,
+				0095FF181B71A30300BF8987 /* demo4Gallery.m in Sources */,
+				0095FED01B71A29300BF8987 /* GinBaseNoContentTabCell.m in Sources */,
+				0095FF1B1B71A30300BF8987 /* StepperViewController.m in Sources */,
 				0018BC711B118D5B001E52D5 /* NSObject+JSON.m in Sources */,
 				0018BC8B1B12D136001E52D5 /* HMSegmentedControl.m in Sources */,
-				0033C7E21B131E6C0022B189 /* page1Controller.m in Sources */,
-				0086EE5C1B184309008A42D3 /* demo4Gallery.m in Sources */,
+				0095FF0B1B71A30300BF8987 /* page2Controller.m in Sources */,
+				0095FF141B71A30300BF8987 /* StoreLocationMapViewController.m in Sources */,
+				0095FF1C1B71A30300BF8987 /* TableViewController.m in Sources */,
 				006A93C31ADE09090093BEBE /* NSString+Size.m in Sources */,
 				003B32811B1AAE09001EED5C /* GinPhotoGalleryController.m in Sources */,
 				005422F61B480B830028CCE6 /* UIImagePickerMananger.m in Sources */,
-				006A93B31ADE09090093BEBE /* GinBaseNoContentTabCell.m in Sources */,
 				005422AA1B47E84D0028CCE6 /* GinFloatedButton.m in Sources */,
-				009FF07A1B5CE5B200D282E6 /* BaiduLocationViewModel.m in Sources */,
 				005422C51B47E84D0028CCE6 /* GinPanCell.m in Sources */,
 				006A93AE1ADE09090093BEBE /* GinHeightDynamicCollectionLayout.m in Sources */,
 				005422B71B47E84D0028CCE6 /* GinTextView.m in Sources */,
 				005422B81B47E84D0028CCE6 /* IconTextField.m in Sources */,
-				00E5E58D1B17F9E60095C7A5 /* GalleryViewController.m in Sources */,
 				006A94CF1ADFFF570093BEBE /* NSString+Json.m in Sources */,
 				005421E51B47E6BC0028CCE6 /* BaseData.m in Sources */,
 				006A94BC1ADFAD6D0093BEBE /* UIViewController+GinBaseTableView.m in Sources */,
+				0095FF191B71A30300BF8987 /* GalleryViewController.m in Sources */,
 				006A93B71ADE09090093BEBE /* UIView+GinCGRect.m in Sources */,
+				0095FF101B71A30300BF8987 /* AddressSearchResultViewController.m in Sources */,
 				006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */,
-				002F315A1B29BF0D00080B37 /* EmptyTableViewController.m in Sources */,
 				006A93D51ADE09090093BEBE /* GinScanQRCoderController.m in Sources */,
 				005422B21B47E84D0028CCE6 /* ImageWithTitleCollectionCell.m in Sources */,
-				00F021EB1B4395B300525724 /* StoreLocationMapViewController.m in Sources */,
 				002F315D1B2A72AC00080B37 /* NSAttributedString+Unit.m in Sources */,
 				005422AC1B47E84D0028CCE6 /* GinImageButton.m in Sources */,
+				0095FF0A1B71A30300BF8987 /* page1Controller.m in Sources */,
 				005422BA1B47E84D0028CCE6 /* UITextView+Keyboard.m in Sources */,
+				0095FF0D1B71A30300BF8987 /* TabsViewController.m in Sources */,
 				005422B31B47E84D0028CCE6 /* TextCollectionCell.m in Sources */,
 				005422BD1B47E84D0028CCE6 /* GinPullDownMenuItem.m in Sources */,
-				005422E11B47E9CE0028CCE6 /* BaseTableViewCell.m in Sources */,
 				006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */,
 				006A93AF1ADE09090093BEBE /* GinBaseTitleHeader.m in Sources */,
+				0095FF171B71A30300BF8987 /* NSDateViewController.m in Sources */,
 				006A93D21ADE09090093BEBE /* GinPopupGradientView.m in Sources */,
 				00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */,
 				00F4C9A21AE6361F00B3F485 /* NSString+Type.m in Sources */,
-				00905F111AE74A09004B5CA1 /* TableViewController.m in Sources */,
 				005422E31B47E9CE0028CCE6 /* BaseView.m in Sources */,
 				006A94C51ADFB9C70093BEBE /* UIView+GinBaseClass.m in Sources */,
+				0095FF281B71A43900BF8987 /* BaseCollectionViewContoller.m in Sources */,
 				006A94B91ADF9CBD0093BEBE /* UICollectionView+GinBaseClass.m in Sources */,
+				0095FF111B71A30300BF8987 /* BaiduMapViewController.m in Sources */,
 				006A93BF1ADE09090093BEBE /* NSData+NSString.m in Sources */,
 				006A93A91ADE09090093BEBE /* NSString+Base64.m in Sources */,
 				005422B91B47E84D0028CCE6 /* UITextField+Keyboard.m in Sources */,
 				00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */,
 				006A93D31ADE09090093BEBE /* GinPopupViewController.m in Sources */,
-				009FF0761B5CE55A00D282E6 /* AddressSearchResultViewController.m in Sources */,
+				0095FF071B71A30300BF8987 /* EmptyTableViewController.m in Sources */,
 				00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */,
 				006A93D41ADE09090093BEBE /* GinQRCodePickerBaseController.m in Sources */,
 				005422EB1B47F4710028CCE6 /* GinKeyboardManager.m in Sources */,
-				0018B90F1B0EB701001E52D5 /* HZTableViewController.m in Sources */,
 				0018BA4A1B115DA4001E52D5 /* NSValueTransformer+Unit.m in Sources */,
-				005422E01B47E9CE0028CCE6 /* BaseCollectionViewContoller.m in Sources */,
+				0095FECF1B71A29300BF8987 /* GinBaseNoContentCell.m in Sources */,
 				0018BC6E1B118C7F001E52D5 /* NSString+MD5.m in Sources */,
 				005422CB1B47E84D0028CCE6 /* GinTableIndex.m in Sources */,
 				00F7FC691AEDDA860080AFC7 /* NSObject+Unit.m in Sources */,
-				002F31671B2A771100080B37 /* PullDownMenuViewController.m in Sources */,
 				006A93C41ADE09090093BEBE /* NSURL+Unit.m in Sources */,
 				006A93C21ADE09090093BEBE /* NSString+formatContentString.m in Sources */,
 				006A93D01ADE09090093BEBE /* GinPopup.m in Sources */,
@@ -1722,30 +1735,33 @@
 				006A93C71ADE09090093BEBE /* UIAlertView+Unit.m in Sources */,
 				005422C41B47E84D0028CCE6 /* GinStepperView.m in Sources */,
 				00F7FC711AEDEB840080AFC7 /* UIView+Debug.m in Sources */,
-				005422E21B47E9CE0028CCE6 /* BaseTableViewController.m in Sources */,
 				009FF0821B5CEE4700D282E6 /* CallPhoneMannager.m in Sources */,
 				006A93B11ADE09090093BEBE /* GinBaseCoreDataResponder.m in Sources */,
 				006A93D11ADE09090093BEBE /* GinPopupContentView.m in Sources */,
 				006A93B91ADE09090093BEBE /* UIViewController+GinBaseClass.m in Sources */,
 				005422C61B47E84D0028CCE6 /* IconTableCell.m in Sources */,
 				000B52911ADBCF8100946853 /* AppDelegate.m in Sources */,
+				0095FF291B71A43900BF8987 /* BaseTableViewCell.m in Sources */,
 				006A93BC1ADE09090093BEBE /* NSObject+CoreGraphic.m in Sources */,
 				00F7FC701AEDEB840080AFC7 /* NSString+Debug.m in Sources */,
 				000B528E1ADBCF8100946853 /* main.m in Sources */,
 				006A93C11ADE09090093BEBE /* NSDate+RCUtility.m in Sources */,
 				0018B9851B100883001E52D5 /* UIColor+Hex.m in Sources */,
 				006A93C91ADE09090093BEBE /* UIResponder+Unit.m in Sources */,
-				006A93AC1ADE09090093BEBE /* GinBaseNoContentCell.m in Sources */,
 				005422AB1B47E84D0028CCE6 /* GinHorizontalLayoutButton.m in Sources */,
 				006A93CB1ADE09090093BEBE /* UIView+view2Image.m in Sources */,
 				005422B51B47E84D0028CCE6 /* ExtendMenu.m in Sources */,
+				0095FF161B71A30300BF8987 /* BaiduLocationViewModel.m in Sources */,
 				006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */,
 				006A93CA1ADE09090093BEBE /* UIView+Layer.m in Sources */,
 				005422E41B47E9CE0028CCE6 /* BaseViewController.m in Sources */,
+				0095FF271B71A43900BF8987 /* BaseCollectionCell.m in Sources */,
 				006A93CF1ADE09090093BEBE /* GinPageViewController.m in Sources */,
 				002F31771B2EA6FC00080B37 /* NSArray+Unit.m in Sources */,
-				002F317B1B2EAC6700080B37 /* StepperViewController.m in Sources */,
-				0033C7E41B131E6C0022B189 /* page3Controller.m in Sources */,
+				0095FF081B71A30300BF8987 /* GinSystemButtonViewController.m in Sources */,
+				0095FF1A1B71A30300BF8987 /* PullDownMenuViewController.m in Sources */,
+				0095FF2A1B71A43900BF8987 /* BaseTableViewController.m in Sources */,
+				0095FF0E1B71A30300BF8987 /* HZTableViewController.m in Sources */,
 				005422AD1B47E84D0028CCE6 /* GinSystemButton.m in Sources */,
 				006A93B41ADE09090093BEBE /* GinBaseTitleSectionView.m in Sources */,
 				005421DD1B47DF6F0028CCE6 /* GinAddressBook.m in Sources */,
