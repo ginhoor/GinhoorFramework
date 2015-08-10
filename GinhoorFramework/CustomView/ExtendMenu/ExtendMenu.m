@@ -55,10 +55,10 @@
 
 }
 
-- (UIImageView *)icon
+- (UIImageViewAligned *)icon
 {
     if (!_icon) {
-        _icon = [[UIImageView alloc] init];
+        _icon = [[UIImageViewAligned alloc] init];
         _icon.layer.masksToBounds = YES;
     }
     return _icon;

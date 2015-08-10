@@ -10,9 +10,10 @@
 
 #import "HZCollectionViewLayout.h"
 #import "GinExtendMenu.h"
+#import "UIImageViewAligned.h"
 
 @interface ExtendMenuCell:UICollectionViewCell
-@property (strong, nonatomic) UIImageView *icon;
+@property (strong, nonatomic) UIImageViewAligned *icon;
 @end
 
 @interface ExtendMenu : NSObject

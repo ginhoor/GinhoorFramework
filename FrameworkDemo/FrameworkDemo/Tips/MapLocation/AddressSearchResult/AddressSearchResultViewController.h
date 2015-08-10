@@ -7,12 +7,11 @@
 //
 
 #import "BaseViewController.h"
-
 @interface AddressSearchResultViewController : BaseViewController
 
 @property (strong, nonatomic, readonly) UISearchBar *searchBar;
 @property (strong, nonatomic) NSString *currentCityName;
 
-@property (copy, nonatomic) void(^didAddressSelectedBlock)(NSString *fullAddress, NSString *city, NSString *district, NSString *address);
+@property (copy, nonatomic) void(^didAddressSelectedBlock)(NSString *fullAddress,NSString *city,NSString *district,NSString *address);
 
 @end

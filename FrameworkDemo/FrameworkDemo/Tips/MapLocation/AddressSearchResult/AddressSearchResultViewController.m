@@ -16,7 +16,7 @@
 @interface AddressSearchResultViewController () <UITableViewDelegate,UITableViewDataSource, UISearchBarDelegate, BMKSuggestionSearchDelegate>
 
 @property (strong, nonatomic) UINavigationBar *navBar;
-
+@property (strong, nonatomic, readwrite) UISearchBar *searchBar;
 
 @property (strong, nonatomic) UIButton *cancelButton;
 
@@ -96,13 +96,6 @@
     if (!_navBar) {
         _navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
         
-        _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(10, 20, SCREEN_WIDTH-10-60-5, 44)];
-        _searchBar.placeholder = @"输入地点";
-        _searchBar.backgroundImage = [UIImage imageByColor:[UIColor clearColor] size:CGSizeMake(1, 1)];
-        _searchBar.delegate = self;
-        _searchBar.keyboardType = UIKeyboardTypeDefault;
-        _searchBar.returnKeyType = UIReturnKeyDone;
-        
         _cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _cancelButton.frame = CGRectMake(SCREEN_WIDTH-60-5, 20, 60, 44);
         [_cancelButton setTitle:@"取消" forState:UIControlStateNormal];
@@ -116,6 +109,19 @@
         
     }
     return _navBar;
+}
+
+- (UISearchBar *)searchBar
+{
+    if (!_searcher) {
+        _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(10, 20, SCREEN_WIDTH-10-60-5, 44)];
+        _searchBar.placeholder = @"输入地点";
+        _searchBar.backgroundImage = [UIImage imageByColor:[UIColor clearColor] size:CGSizeMake(1, 1)];
+        _searchBar.delegate = self;
+        _searchBar.keyboardType = UIKeyboardTypeDefault;
+        _searchBar.returnKeyType = UIReturnKeyDone;
+    }
+    return _searchBar;
 }
 
 - (void)cancel:(id)sender

@@ -1377,15 +1377,15 @@
 		0095FF501B71A71800BF8987 /* MapLocation */ = {
 			isa = PBXGroup;
 			children = (
-				0095FF511B71A71800BF8987 /* AddressSearchResult */,
-				0095FF541B71A71800BF8987 /* BaiduMapViewController.h */,
-				0095FF551B71A71800BF8987 /* BaiduMapViewController.m */,
-				0095FF561B71A71800BF8987 /* BaiduMapViewController.storyboard */,
-				0095FF571B71A71800BF8987 /* Location */,
+				0095FF5D1B71A71800BF8987 /* ViewModel */,
 				0095FF5A1B71A71800BF8987 /* StoreLocationMapViewController.h */,
 				0095FF5B1B71A71800BF8987 /* StoreLocationMapViewController.m */,
 				0095FF5C1B71A71800BF8987 /* StoreLocationMapViewController.storyboard */,
-				0095FF5D1B71A71800BF8987 /* ViewModel */,
+				0095FF541B71A71800BF8987 /* BaiduMapViewController.h */,
+				0095FF551B71A71800BF8987 /* BaiduMapViewController.m */,
+				0095FF561B71A71800BF8987 /* BaiduMapViewController.storyboard */,
+				0095FF511B71A71800BF8987 /* AddressSearchResult */,
+				0095FF571B71A71800BF8987 /* Location */,
 			);
 			path = MapLocation;
 			sourceTree = "<group>";

@@ -62,13 +62,16 @@
     }
     else {
         NSLog(@"反geo检索发送失败");
+        if (self.onGetReverseGeoCodeResultBlock) {
+            self.onGetReverseGeoCodeResultBlock(self.geoCodeSearcher,nil,-1);
+        }
     }
 }
 
 - (void)searchLocation:(NSString *)city address:(NSString *)address
 {
     BMKGeoCodeSearchOption *geoCodeSearchOption = [[BMKGeoCodeSearchOption alloc]init];
-    geoCodeSearchOption.city = city;
+    geoCodeSearchOption.city = city?:@"";
     geoCodeSearchOption.address = address;
     
     BOOL flag = [self.geoCodeSearcher geoCode:geoCodeSearchOption];
@@ -77,6 +80,9 @@
     }
     else {
         NSLog(@"geo检索发送失败");
+        if (self.onGetGeoCodeResultBlock) {
+            self.onGetGeoCodeResultBlock(self.geoCodeSearcher,nil,-1);
+        }
     }
 }
 
