@@ -19,7 +19,7 @@
 @property (strong, nonatomic) NSArray *cellDataList;
 @property (strong, nonatomic) UITableView *tableView;
 /**
- *   default value is 1
+ *   default value is 1.(request use setup_GinBaseTableView)
  */
 @property (assign, nonatomic) NSUInteger startIndex;
 @property (assign, nonatomic) NSUInteger currentPageIndex;

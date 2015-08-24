@@ -7,15 +7,14 @@
 //
 
 #import "NSObject+Unit.h"
+
 #import "NSDate+RCUtility.h"
+
 #import "NSURL+Unit.h"
 
-#import "UIImage+GinUnit.h"
-#import "UIResponder+Unit.h"
-#import "UIAlertView+Unit.h"
-
-#import "UIColor+Hex.h"
-
+/**
+ *  NSString
+ */
 #import "NSString+Type.h"
 #import "NSString+Json.h"
 #import "NSString+formatContentString.h"
@@ -25,4 +24,13 @@
 
 #import "NSDictionary+Unit.h"
 
+
+
+#import "UIImage+GinUnit.h"
+
+#import "UIResponder+Unit.h"
+
+#import "UIColor+Hex.h"
 #import "UIAlertView+Unit.h"
+
+#import "UIView+GinCGRect.h"

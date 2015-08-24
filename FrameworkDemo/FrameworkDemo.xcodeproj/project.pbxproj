@@ -99,6 +99,9 @@
 		006A94C51ADFB9C70093BEBE /* UIView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94C41ADFB9C70093BEBE /* UIView+GinBaseClass.m */; };
 		006A94C81ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94C71ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m */; };
 		006A94CF1ADFFF570093BEBE /* NSString+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94CE1ADFFF570093BEBE /* NSString+Json.m */; };
+		008660111B816F7000B76218 /* NSObject+TYSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0086600E1B816F7000B76218 /* NSObject+TYSwizzle.m */; };
+		008660121B816F7000B76218 /* TYSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 008660101B816F7000B76218 /* TYSwizzle.m */; };
+		008660171B81759900B76218 /* NSKeyedArchiverDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 008660161B81759900B76218 /* NSKeyedArchiverDemo.m */; };
 		0095FF071B71A30300BF8987 /* EmptyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FED41B71A30300BF8987 /* EmptyTableViewController.m */; };
 		0095FF081B71A30300BF8987 /* GinSystemButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FED71B71A30300BF8987 /* GinSystemButtonViewController.m */; };
 		0095FF091B71A30300BF8987 /* GinSystemButtonViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095FED81B71A30300BF8987 /* GinSystemButtonViewController.storyboard */; };
@@ -331,6 +334,12 @@
 		006A94CD1ADFFF570093BEBE /* NSString+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Json.h"; sourceTree = "<group>"; };
 		006A94CE1ADFFF570093BEBE /* NSString+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Json.m"; sourceTree = "<group>"; };
 		006AF4AB1B09EFE00033BCA3 /* GinTypeUnitHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinTypeUnitHeader.h; sourceTree = "<group>"; };
+		0086600D1B816F7000B76218 /* NSObject+TYSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TYSwizzle.h"; sourceTree = "<group>"; };
+		0086600E1B816F7000B76218 /* NSObject+TYSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TYSwizzle.m"; sourceTree = "<group>"; };
+		0086600F1B816F7000B76218 /* TYSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSwizzle.h; sourceTree = "<group>"; };
+		008660101B816F7000B76218 /* TYSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSwizzle.m; sourceTree = "<group>"; };
+		008660151B81759900B76218 /* NSKeyedArchiverDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSKeyedArchiverDemo.h; sourceTree = "<group>"; };
+		008660161B81759900B76218 /* NSKeyedArchiverDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSKeyedArchiverDemo.m; sourceTree = "<group>"; };
 		0095FED31B71A30300BF8987 /* EmptyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyTableViewController.h; sourceTree = "<group>"; };
 		0095FED41B71A30300BF8987 /* EmptyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyTableViewController.m; sourceTree = "<group>"; };
 		0095FED61B71A30300BF8987 /* GinSystemButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinSystemButtonViewController.h; sourceTree = "<group>"; };
@@ -457,15 +466,15 @@
 		000B528A1ADBCF8100946853 /* FrameworkDemo */ = {
 			isa = PBXGroup;
 			children = (
+				000B52951ADBCF8100946853 /* Main.storyboard */,
+				000B52981ADBCF8100946853 /* Images.xcassets */,
+				000B529A1ADBCF8100946853 /* LaunchScreen.xib */,
 				000B528F1ADBCF8100946853 /* AppDelegate.h */,
 				000B52901ADBCF8100946853 /* AppDelegate.m */,
 				000B52921ADBCF8100946853 /* ViewController.h */,
 				000B52931ADBCF8100946853 /* ViewController.m */,
 				0095FED11B71A30300BF8987 /* Demo */,
 				0018BA431B115CA7001E52D5 /* Tips */,
-				000B52951ADBCF8100946853 /* Main.storyboard */,
-				000B52981ADBCF8100946853 /* Images.xcassets */,
-				000B529A1ADBCF8100946853 /* LaunchScreen.xib */,
 				000B528B1ADBCF8100946853 /* Supporting Files */,
 			);
 			path = FrameworkDemo;
@@ -510,6 +519,7 @@
 		0018BA431B115CA7001E52D5 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				008660131B81758500B76218 /* Save&Load */,
 				005422D21B47E9CE0028CCE6 /* BaseClass */,
 				0095FF461B71A71800BF8987 /* Collection */,
 				0095FF601B71A71800BF8987 /* Table */,
@@ -1199,6 +1209,34 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		0086600C1B816F7000B76218 /* TYSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				0086600D1B816F7000B76218 /* NSObject+TYSwizzle.h */,
+				0086600E1B816F7000B76218 /* NSObject+TYSwizzle.m */,
+				0086600F1B816F7000B76218 /* TYSwizzle.h */,
+				008660101B816F7000B76218 /* TYSwizzle.m */,
+			);
+			path = TYSwizzle;
+			sourceTree = "<group>";
+		};
+		008660131B81758500B76218 /* Save&Load */ = {
+			isa = PBXGroup;
+			children = (
+				008660141B81758500B76218 /* NSKeyedArchiver */,
+			);
+			path = "Save&Load";
+			sourceTree = "<group>";
+		};
+		008660141B81758500B76218 /* NSKeyedArchiver */ = {
+			isa = PBXGroup;
+			children = (
+				008660151B81759900B76218 /* NSKeyedArchiverDemo.h */,
+				008660161B81759900B76218 /* NSKeyedArchiverDemo.m */,
+			);
+			path = NSKeyedArchiver;
+			sourceTree = "<group>";
+		};
 		0095FED11B71A30300BF8987 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1466,6 +1504,7 @@
 		00F7FC631AEDDA6B0080AFC7 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				0086600C1B816F7000B76218 /* TYSwizzle */,
 				00F7FC641AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.h */,
 				00F7FC651AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m */,
 				00F7FC671AEDDA860080AFC7 /* NSObject+Unit.h */,
@@ -1675,6 +1714,7 @@
 				0018BC8B1B12D136001E52D5 /* HMSegmentedControl.m in Sources */,
 				0095FF0B1B71A30300BF8987 /* page2Controller.m in Sources */,
 				0095FF1C1B71A30300BF8987 /* TableViewController.m in Sources */,
+				008660111B816F7000B76218 /* NSObject+TYSwizzle.m in Sources */,
 				006A93C31ADE09090093BEBE /* NSString+Size.m in Sources */,
 				003B32811B1AAE09001EED5C /* GinPhotoGalleryController.m in Sources */,
 				005422F61B480B830028CCE6 /* UIImagePickerMananger.m in Sources */,
@@ -1723,6 +1763,7 @@
 				0095FF671B71A71800BF8987 /* LocationManager.m in Sources */,
 				005422CB1B47E84D0028CCE6 /* GinTableIndex.m in Sources */,
 				00F7FC691AEDDA860080AFC7 /* NSObject+Unit.m in Sources */,
+				008660171B81759900B76218 /* NSKeyedArchiverDemo.m in Sources */,
 				006A93C41ADE09090093BEBE /* NSURL+Unit.m in Sources */,
 				006A93C21ADE09090093BEBE /* NSString+formatContentString.m in Sources */,
 				006A93D01ADE09090093BEBE /* GinPopup.m in Sources */,
@@ -1748,6 +1789,7 @@
 				000B528E1ADBCF8100946853 /* main.m in Sources */,
 				006A93C11ADE09090093BEBE /* NSDate+RCUtility.m in Sources */,
 				0018B9851B100883001E52D5 /* UIColor+Hex.m in Sources */,
+				008660121B816F7000B76218 /* TYSwizzle.m in Sources */,
 				0095FF611B71A71800BF8987 /* ImageCollectionCell.m in Sources */,
 				006A93C91ADE09090093BEBE /* UIResponder+Unit.m in Sources */,
 				005422AB1B47E84D0028CCE6 /* GinHorizontalLayoutButton.m in Sources */,
