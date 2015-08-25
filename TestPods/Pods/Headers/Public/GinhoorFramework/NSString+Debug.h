@@ -1,1 +1,0 @@
-../../../GinhoorFramework/Category/Debug/NSString+Debug.h

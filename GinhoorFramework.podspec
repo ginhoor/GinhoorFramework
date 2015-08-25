@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/ginhoor/GinhoorFramework"
   s.license      = "MIT"
-  s.author             = { "JunhuaShao" => "ginhoor@gmail.com" }
+  s.author       = { "JunhuaShao" => "ginhoor@gmail.com" }
 
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/ginhoor/GinhoorFramework.git", :tag => s.version.to_s }

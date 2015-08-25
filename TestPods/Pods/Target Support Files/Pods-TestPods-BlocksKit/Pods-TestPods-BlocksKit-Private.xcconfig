@@ -1,6 +1,0 @@
-#include "Pods-TestPods-BlocksKit.xcconfig"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/BlocksKit" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/BlocksKit" "${PODS_ROOT}/Headers/Public/CocoaLumberjack" "${PODS_ROOT}/Headers/Public/GinhoorFramework" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/libextobjc"
-OTHER_LDFLAGS = ${PODS_TESTPODS_BLOCKSKIT_OTHER_LDFLAGS} -ObjC
-PODS_ROOT = ${SRCROOT}
-SKIP_INSTALL = YES

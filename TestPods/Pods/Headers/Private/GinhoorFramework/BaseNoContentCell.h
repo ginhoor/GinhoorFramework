@@ -1,1 +1,0 @@
-../../../GinhoorFramework/Category/BaseClass/CollectionView/Cell/BaseNoContentCell.h

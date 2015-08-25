@@ -62,6 +62,7 @@
 		005422E41B47E9CE0028CCE6 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422DE1B47E9CE0028CCE6 /* BaseViewController.m */; };
 		005422EB1B47F4710028CCE6 /* GinKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422EA1B47F4710028CCE6 /* GinKeyboardManager.m */; };
 		005422F61B480B830028CCE6 /* UIImagePickerMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422F51B480B830028CCE6 /* UIImagePickerMananger.m */; };
+		00645F831B8AF0B700E23638 /* GUIFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 00645F821B8AF0B700E23638 /* GUIFont.m */; };
 		006A93A91ADE09090093BEBE /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93271ADE09090093BEBE /* NSString+Base64.m */; };
 		006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93291ADE09090093BEBE /* UIImage+Base64.m */; };
 		006A93AD1ADE09090093BEBE /* GinCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93331ADE09090093BEBE /* GinCollectionLayout.m */; };
@@ -257,6 +258,8 @@
 		005422EA1B47F4710028CCE6 /* GinKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinKeyboardManager.m; sourceTree = "<group>"; };
 		005422F41B480B830028CCE6 /* UIImagePickerMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImagePickerMananger.h; sourceTree = "<group>"; };
 		005422F51B480B830028CCE6 /* UIImagePickerMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerMananger.m; sourceTree = "<group>"; };
+		00645F811B8AF0B700E23638 /* GUIFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUIFont.h; sourceTree = "<group>"; };
+		00645F821B8AF0B700E23638 /* GUIFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUIFont.m; sourceTree = "<group>"; };
 		006A93251ADE09090093BEBE /* GinCategory_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCategory_Base64.h; sourceTree = "<group>"; };
 		006A93261ADE09090093BEBE /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		006A93271ADE09090093BEBE /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
@@ -525,6 +528,8 @@
 				0095FF601B71A71800BF8987 /* Table */,
 				0095FF501B71A71800BF8987 /* MapLocation */,
 				0018BA441B115CA7001E52D5 /* Mantle */,
+				00645F811B8AF0B700E23638 /* GUIFont.h */,
+				00645F821B8AF0B700E23638 /* GUIFont.m */,
 			);
 			path = Tips;
 			sourceTree = "<group>";
@@ -1697,6 +1702,7 @@
 				005422B41B47E84D0028CCE6 /* HZCollectionViewLayout.m in Sources */,
 				00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */,
 				002F326D1B32795F00080B37 /* NSDictionary+Unit.m in Sources */,
+				00645F831B8AF0B700E23638 /* GUIFont.m in Sources */,
 				005422B61B47E84D0028CCE6 /* GinExtendMenu.m in Sources */,
 				0095FF651B71A71800BF8987 /* BaiduMapViewController.m in Sources */,
 				005422AF1B47E84D0028CCE6 /* GinVerticalLayoutButton.m in Sources */,

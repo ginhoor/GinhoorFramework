@@ -1,1 +1,0 @@
-../../../GinhoorFramework/Category/NSString/NSString+Size.h

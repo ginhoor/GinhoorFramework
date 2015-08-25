@@ -1,5 +1,5 @@
 # Uncomment this line to define a global platform for your project
-source 'https://git.oschina.net/akuandev/Specs.git'
+
 target 'FrameworkDemo' do
     #pod 'GinhoorFramework', :podspec => '../GinhoorFramework.podspec'  #指定podspec文件
 
