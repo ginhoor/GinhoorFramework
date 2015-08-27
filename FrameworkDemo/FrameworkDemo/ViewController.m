@@ -22,7 +22,7 @@
 #import "StepperViewController.h"
 
 #import "NSString+formatContentString.h"
-
+#import "UIAlertView+Unit.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -42,7 +42,7 @@
         tableView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
     }];
     
-    self.cellDataList = @[@"自定义按钮",@"水平的TableView",@"带Tabs的PageContrller",@"相册浏览",@"下拉菜单",@"列表空数据页面",@"步进器",@"自定义 上&下拉刷新"];
+    self.cellDataList = @[@"自定义按钮",@"水平的TableView",@"带Tabs的PageContrller",@"相册浏览",@"下拉菜单",@"列表空数据页面",@"步进器",@"自定义 上&下拉刷新",@"系统AlertView适配"];
     [self.tableView reloadData];
     
     [self.view addSubview:self.tableView];
@@ -91,6 +91,15 @@
             
         case 7:
             [self.navigationController pushViewController:[[TableViewController alloc] init] animated:YES];
+            
+        case 8:
+            
+            [UIAlertView alertView:@"测试" message:@"我是一个alertView" submitTitle:@"确认" submitBlock:^{
+                ;
+            } cancelTitle:@"取消" cancelBlock:^{
+                ;
+            }];
+            
         default:
             break;
             

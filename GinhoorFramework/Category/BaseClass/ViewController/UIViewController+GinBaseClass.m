@@ -29,7 +29,14 @@
 
 - (UIViewController *)lastPresentedViewController
 {
-    return [self getChildPresentViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
+    UIViewController *vc = [UIApplication sharedApplication].keyWindow.rootViewController;
+    if ([vc isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *nav = (UINavigationController*)vc;
+        return [self getChildPresentViewController:nav.visibleViewController];
+    } else {
+        return [self getChildPresentViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
+    }
+    
 }
 
 - (UIViewController *)getChildPresentViewController:(UIViewController *)parentViewController
