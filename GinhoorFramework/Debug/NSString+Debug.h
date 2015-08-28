@@ -11,6 +11,7 @@
 
 @interface NSString (Debug)
 
-+ (NSString*)stringForFrame:(CGRect)frame;
++ (NSString *)stringForSize:(CGSize)size;
++ (NSString *)stringForFrame:(CGRect)frame;
 
 @end

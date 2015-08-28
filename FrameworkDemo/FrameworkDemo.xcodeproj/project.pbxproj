@@ -134,6 +134,8 @@
 		0095FF691B71A71800BF8987 /* StoreLocationMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095FF5C1B71A71800BF8987 /* StoreLocationMapViewController.storyboard */; };
 		0095FF6A1B71A71800BF8987 /* BaiduLocationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095FF5F1B71A71800BF8987 /* BaiduLocationViewModel.m */; };
 		009FF0821B5CEE4700D282E6 /* CallPhoneMannager.m in Sources */ = {isa = PBXBuildFile; fileRef = 009FF0811B5CEE4700D282E6 /* CallPhoneMannager.m */; };
+		00A3E3F31B8FF9C60065C3EA /* NSString+RegEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A3E3F21B8FF9C60065C3EA /* NSString+RegEx.m */; };
+		00A3E3F71B9000440065C3EA /* CodeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A3E3F61B9000440065C3EA /* CodeDemo.m */; };
 		00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527F61AF7259F00219A98 /* GinWebViewController.m */; };
 		00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5E5561B15FE340095C7A5 /* NSDate+Range.m */; };
 		00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */; };
@@ -401,6 +403,10 @@
 		0095FF5F1B71A71800BF8987 /* BaiduLocationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduLocationViewModel.m; sourceTree = "<group>"; };
 		009FF0801B5CEE4700D282E6 /* CallPhoneMannager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallPhoneMannager.h; sourceTree = "<group>"; };
 		009FF0811B5CEE4700D282E6 /* CallPhoneMannager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallPhoneMannager.m; sourceTree = "<group>"; };
+		00A3E3F11B8FF9C60065C3EA /* NSString+RegEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegEx.h"; sourceTree = "<group>"; };
+		00A3E3F21B8FF9C60065C3EA /* NSString+RegEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegEx.m"; sourceTree = "<group>"; };
+		00A3E3F51B9000440065C3EA /* CodeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeDemo.h; sourceTree = "<group>"; };
+		00A3E3F61B9000440065C3EA /* CodeDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeDemo.m; sourceTree = "<group>"; };
 		00A527F51AF7259F00219A98 /* GinWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinWebViewController.h; sourceTree = "<group>"; };
 		00A527F61AF7259F00219A98 /* GinWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinWebViewController.m; sourceTree = "<group>"; };
 		00E5E5551B15FE340095C7A5 /* NSDate+Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Range.h"; sourceTree = "<group>"; };
@@ -1069,6 +1075,8 @@
 				0018BC6D1B118C7F001E52D5 /* NSString+MD5.m */,
 				002F315B1B2A72AC00080B37 /* NSAttributedString+Unit.h */,
 				002F315C1B2A72AC00080B37 /* NSAttributedString+Unit.m */,
+				00A3E3F11B8FF9C60065C3EA /* NSString+RegEx.h */,
+				00A3E3F21B8FF9C60065C3EA /* NSString+RegEx.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -1245,6 +1253,7 @@
 		0095FED11B71A30300BF8987 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				00A3E3F41B90002E0065C3EA /* CodeDemo */,
 				0095FED21B71A30300BF8987 /* DZNEmptyDataSet */,
 				0095FED51B71A30300BF8987 /* GinSystemButton */,
 				0095FED91B71A30300BF8987 /* GinTabsViewController */,
@@ -1474,6 +1483,15 @@
 				009FF0811B5CEE4700D282E6 /* CallPhoneMannager.m */,
 			);
 			path = CallPhoneMannager;
+			sourceTree = "<group>";
+		};
+		00A3E3F41B90002E0065C3EA /* CodeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				00A3E3F51B9000440065C3EA /* CodeDemo.h */,
+				00A3E3F61B9000440065C3EA /* CodeDemo.m */,
+			);
+			path = CodeDemo;
 			sourceTree = "<group>";
 		};
 		00A527F41AF7259700219A98 /* GinWebViewController */ = {
@@ -1727,6 +1745,7 @@
 				005422AA1B47E84D0028CCE6 /* GinFloatedButton.m in Sources */,
 				005422C51B47E84D0028CCE6 /* GinPanCell.m in Sources */,
 				006A93AE1ADE09090093BEBE /* GinHeightDynamicCollectionLayout.m in Sources */,
+				00A3E3F71B9000440065C3EA /* CodeDemo.m in Sources */,
 				005422B71B47E84D0028CCE6 /* GinTextView.m in Sources */,
 				005422B81B47E84D0028CCE6 /* IconTextField.m in Sources */,
 				0095FF6A1B71A71800BF8987 /* BaiduLocationViewModel.m in Sources */,
@@ -1736,6 +1755,7 @@
 				006A94BC1ADFAD6D0093BEBE /* UIViewController+GinBaseTableView.m in Sources */,
 				0095FF191B71A30300BF8987 /* GalleryViewController.m in Sources */,
 				006A93B71ADE09090093BEBE /* UIView+GinCGRect.m in Sources */,
+				00A3E3F31B8FF9C60065C3EA /* NSString+RegEx.m in Sources */,
 				006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */,
 				006A93D51ADE09090093BEBE /* GinScanQRCoderController.m in Sources */,
 				002F315D1B2A72AC00080B37 /* NSAttributedString+Unit.m in Sources */,
