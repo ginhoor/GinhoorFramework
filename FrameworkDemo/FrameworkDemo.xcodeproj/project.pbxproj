@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000AC68E1B93DCDC00F9F1D7 /* RegistViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 000AC68D1B93DCDC00F9F1D7 /* RegistViewVC.m */; };
+		000AC6911B93DE5D00F9F1D7 /* GinRegistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000AC6901B93DE5D00F9F1D7 /* GinRegistView.m */; };
+		000AC6A61B93E21800F9F1D7 /* gin_password@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000AC6971B93E21800F9F1D7 /* gin_password@2x.png */; };
+		000AC6A71B93E21800F9F1D7 /* gin_password@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000AC6981B93E21800F9F1D7 /* gin_password@3x.png */; };
+		000AC6A91B93E21800F9F1D7 /* gin_user_name@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000AC69A1B93E21800F9F1D7 /* gin_user_name@2x.png */; };
+		000AC6AA1B93E21800F9F1D7 /* gin_user_name@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000AC69B1B93E21800F9F1D7 /* gin_user_name@3x.png */; };
+		000AC6AC1B93E21800F9F1D7 /* gin_user_phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000AC69D1B93E21800F9F1D7 /* gin_user_phone@2x.png */; };
+		000AC6AD1B93E21800F9F1D7 /* gin_user_phone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000AC69E1B93E21800F9F1D7 /* gin_user_phone@3x.png */; };
+		000AC6B51B93E2E100F9F1D7 /* gin_random_code@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000AC6B21B93E2E100F9F1D7 /* gin_random_code@2x.png */; };
+		000AC6B61B93E2E100F9F1D7 /* gin_random_code@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000AC6B31B93E2E100F9F1D7 /* gin_random_code@3x.png */; };
 		000B528E1ADBCF8100946853 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B528D1ADBCF8100946853 /* main.m */; };
 		000B52911ADBCF8100946853 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B52901ADBCF8100946853 /* AppDelegate.m */; };
 		000B52941ADBCF8100946853 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B52931ADBCF8100946853 /* ViewController.m */; };
@@ -137,6 +147,9 @@
 		00A3E3F31B8FF9C60065C3EA /* NSString+RegEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A3E3F21B8FF9C60065C3EA /* NSString+RegEx.m */; };
 		00A3E3F71B9000440065C3EA /* CodeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A3E3F61B9000440065C3EA /* CodeDemo.m */; };
 		00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A527F61AF7259F00219A98 /* GinWebViewController.m */; };
+		00DF54A71B94150C00477034 /* GinQuickLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF54A61B94150C00477034 /* GinQuickLoginViewController.m */; };
+		00DF54AD1B94152E00477034 /* GinLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF54AC1B94152E00477034 /* GinLoginViewController.m */; };
+		00DF54B01B9426E800477034 /* GinResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF54AF1B9426E800477034 /* GinResetPasswordViewController.m */; };
 		00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5E5561B15FE340095C7A5 /* NSDate+Range.m */; };
 		00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */; };
 		00F4C9A21AE6361F00B3F485 /* NSString+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9A11AE6361F00B3F485 /* NSString+Type.m */; };
@@ -159,6 +172,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000AC68C1B93DCDC00F9F1D7 /* RegistViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewVC.h; sourceTree = "<group>"; };
+		000AC68D1B93DCDC00F9F1D7 /* RegistViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewVC.m; sourceTree = "<group>"; };
+		000AC68F1B93DE5D00F9F1D7 /* GinRegistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinRegistView.h; sourceTree = "<group>"; };
+		000AC6901B93DE5D00F9F1D7 /* GinRegistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinRegistView.m; sourceTree = "<group>"; };
+		000AC6971B93E21800F9F1D7 /* gin_password@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gin_password@2x.png"; sourceTree = "<group>"; };
+		000AC6981B93E21800F9F1D7 /* gin_password@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gin_password@3x.png"; sourceTree = "<group>"; };
+		000AC69A1B93E21800F9F1D7 /* gin_user_name@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gin_user_name@2x.png"; sourceTree = "<group>"; };
+		000AC69B1B93E21800F9F1D7 /* gin_user_name@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gin_user_name@3x.png"; sourceTree = "<group>"; };
+		000AC69D1B93E21800F9F1D7 /* gin_user_phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gin_user_phone@2x.png"; sourceTree = "<group>"; };
+		000AC69E1B93E21800F9F1D7 /* gin_user_phone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gin_user_phone@3x.png"; sourceTree = "<group>"; };
+		000AC6B21B93E2E100F9F1D7 /* gin_random_code@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gin_random_code@2x.png"; sourceTree = "<group>"; };
+		000AC6B31B93E2E100F9F1D7 /* gin_random_code@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gin_random_code@3x.png"; sourceTree = "<group>"; };
 		000B52881ADBCF8100946853 /* FrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000B528C1ADBCF8100946853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000B528D1ADBCF8100946853 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -409,6 +434,12 @@
 		00A3E3F61B9000440065C3EA /* CodeDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeDemo.m; sourceTree = "<group>"; };
 		00A527F51AF7259F00219A98 /* GinWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinWebViewController.h; sourceTree = "<group>"; };
 		00A527F61AF7259F00219A98 /* GinWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinWebViewController.m; sourceTree = "<group>"; };
+		00DF54A51B94150C00477034 /* GinQuickLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinQuickLoginViewController.h; sourceTree = "<group>"; };
+		00DF54A61B94150C00477034 /* GinQuickLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinQuickLoginViewController.m; sourceTree = "<group>"; };
+		00DF54AB1B94152E00477034 /* GinLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinLoginViewController.h; sourceTree = "<group>"; };
+		00DF54AC1B94152E00477034 /* GinLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoginViewController.m; sourceTree = "<group>"; };
+		00DF54AE1B9426E800477034 /* GinResetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinResetPasswordViewController.h; sourceTree = "<group>"; };
+		00DF54AF1B9426E800477034 /* GinResetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinResetPasswordViewController.m; sourceTree = "<group>"; };
 		00E5E5551B15FE340095C7A5 /* NSDate+Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Range.h"; sourceTree = "<group>"; };
 		00E5E5561B15FE340095C7A5 /* NSDate+Range.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Range.m"; sourceTree = "<group>"; };
 		00F4C9991AE630C300B3F485 /* GinPopup+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GinPopup+Unit.h"; sourceTree = "<group>"; };
@@ -450,6 +481,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		000AC68B1B93DCD000F9F1D7 /* RegistView */ = {
+			isa = PBXGroup;
+			children = (
+				000AC6921B93E21800F9F1D7 /* Resource */,
+				000AC68C1B93DCDC00F9F1D7 /* RegistViewVC.h */,
+				000AC68D1B93DCDC00F9F1D7 /* RegistViewVC.m */,
+				000AC68F1B93DE5D00F9F1D7 /* GinRegistView.h */,
+				000AC6901B93DE5D00F9F1D7 /* GinRegistView.m */,
+				00DF54A51B94150C00477034 /* GinQuickLoginViewController.h */,
+				00DF54A61B94150C00477034 /* GinQuickLoginViewController.m */,
+				00DF54AB1B94152E00477034 /* GinLoginViewController.h */,
+				00DF54AC1B94152E00477034 /* GinLoginViewController.m */,
+				00DF54AE1B9426E800477034 /* GinResetPasswordViewController.h */,
+				00DF54AF1B9426E800477034 /* GinResetPasswordViewController.m */,
+			);
+			path = RegistView;
+			sourceTree = "<group>";
+		};
+		000AC6921B93E21800F9F1D7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				000AC6B21B93E2E100F9F1D7 /* gin_random_code@2x.png */,
+				000AC6B31B93E2E100F9F1D7 /* gin_random_code@3x.png */,
+				000AC6971B93E21800F9F1D7 /* gin_password@2x.png */,
+				000AC6981B93E21800F9F1D7 /* gin_password@3x.png */,
+				000AC69A1B93E21800F9F1D7 /* gin_user_name@2x.png */,
+				000AC69B1B93E21800F9F1D7 /* gin_user_name@3x.png */,
+				000AC69D1B93E21800F9F1D7 /* gin_user_phone@2x.png */,
+				000AC69E1B93E21800F9F1D7 /* gin_user_phone@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		000B527F1ADBCF8100946853 = {
 			isa = PBXGroup;
 			children = (
@@ -1253,6 +1317,7 @@
 		0095FED11B71A30300BF8987 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				000AC68B1B93DCD000F9F1D7 /* RegistView */,
 				00A3E3F41B90002E0065C3EA /* CodeDemo */,
 				0095FED21B71A30300BF8987 /* DZNEmptyDataSet */,
 				0095FED51B71A30300BF8987 /* GinSystemButton */,
@@ -1651,10 +1716,16 @@
 			files = (
 				005422D01B47E9970028CCE6 /* list_indicator_arrow@2x.png in Resources */,
 				000B52971ADBCF8100946853 /* Main.storyboard in Resources */,
+				000AC6B51B93E2E100F9F1D7 /* gin_random_code@2x.png in Resources */,
+				000AC6A61B93E21800F9F1D7 /* gin_password@2x.png in Resources */,
+				000AC6AC1B93E21800F9F1D7 /* gin_user_phone@2x.png in Resources */,
 				006A94B61ADF96920093BEBE /* GinhoorFramework.podspec in Resources */,
 				005422BE1B47E84D0028CCE6 /* arrow_down_44x44.png in Resources */,
 				005422C11B47E84D0028CCE6 /* arrow_up_44x44.png in Resources */,
 				005422D11B47E9970028CCE6 /* list_indicator_arrow@3x.png in Resources */,
+				000AC6AA1B93E21800F9F1D7 /* gin_user_name@3x.png in Resources */,
+				000AC6B61B93E2E100F9F1D7 /* gin_random_code@3x.png in Resources */,
+				000AC6A91B93E21800F9F1D7 /* gin_user_name@2x.png in Resources */,
 				005422C21B47E84D0028CCE6 /* arrow_up_44x44@2x.png in Resources */,
 				0095FF0F1B71A30300BF8987 /* HZTableViewController.storyboard in Resources */,
 				000B529C1ADBCF8100946853 /* LaunchScreen.xib in Resources */,
@@ -1662,7 +1733,9 @@
 				0095FF091B71A30300BF8987 /* GinSystemButtonViewController.storyboard in Resources */,
 				000B52991ADBCF8100946853 /* Images.xcassets in Resources */,
 				005422C31B47E84D0028CCE6 /* arrow_up_44x44@3x.png in Resources */,
+				000AC6AD1B93E21800F9F1D7 /* gin_user_phone@3x.png in Resources */,
 				0095FF691B71A71800BF8987 /* StoreLocationMapViewController.storyboard in Resources */,
+				000AC6A71B93E21800F9F1D7 /* gin_password@3x.png in Resources */,
 				005422CF1B47E9970028CCE6 /* list_indicator_arrow.png in Resources */,
 				0095FF661B71A71800BF8987 /* BaiduMapViewController.storyboard in Resources */,
 				005422BF1B47E84D0028CCE6 /* arrow_down_44x44@2x.png in Resources */,
@@ -1731,6 +1804,7 @@
 				0095FF681B71A71800BF8987 /* StoreLocationMapViewController.m in Sources */,
 				0095FF0C1B71A30300BF8987 /* page3Controller.m in Sources */,
 				006A93C81ADE09090093BEBE /* UIImage+GinUnit.m in Sources */,
+				000AC6911B93DE5D00F9F1D7 /* GinRegistView.m in Sources */,
 				006A93AD1ADE09090093BEBE /* GinCollectionLayout.m in Sources */,
 				0095FF181B71A30300BF8987 /* demo4Gallery.m in Sources */,
 				0095FF1B1B71A30300BF8987 /* StepperViewController.m in Sources */,
@@ -1782,6 +1856,8 @@
 				006A93D31ADE09090093BEBE /* GinPopupViewController.m in Sources */,
 				0095FF071B71A30300BF8987 /* EmptyTableViewController.m in Sources */,
 				00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */,
+				00DF54B01B9426E800477034 /* GinResetPasswordViewController.m in Sources */,
+				00DF54A71B94150C00477034 /* GinQuickLoginViewController.m in Sources */,
 				006A93D41ADE09090093BEBE /* GinQRCodePickerBaseController.m in Sources */,
 				005422EB1B47F4710028CCE6 /* GinKeyboardManager.m in Sources */,
 				0018BA4A1B115DA4001E52D5 /* NSValueTransformer+Unit.m in Sources */,
@@ -1798,6 +1874,7 @@
 				006A93C51ADE09090093BEBE /* NSURL+Videos.m in Sources */,
 				006A94551ADEB3260093BEBE /* UITableView+GinBaseClass.m in Sources */,
 				00F7FC661AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m in Sources */,
+				00DF54AD1B94152E00477034 /* GinLoginViewController.m in Sources */,
 				003B32821B1AAE09001EED5C /* GinShowPhotoViewController.m in Sources */,
 				006A93C71ADE09090093BEBE /* UIAlertView+Unit.m in Sources */,
 				005422C41B47E84D0028CCE6 /* GinStepperView.m in Sources */,
@@ -1820,6 +1897,7 @@
 				006A93C91ADE09090093BEBE /* UIResponder+Unit.m in Sources */,
 				005422AB1B47E84D0028CCE6 /* GinHorizontalLayoutButton.m in Sources */,
 				006A93CB1ADE09090093BEBE /* UIView+view2Image.m in Sources */,
+				000AC68E1B93DCDC00F9F1D7 /* RegistViewVC.m in Sources */,
 				005422B51B47E84D0028CCE6 /* ExtendMenu.m in Sources */,
 				006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */,
 				0095FF621B71A71800BF8987 /* ImageWithTitleCollectionCell.m in Sources */,

@@ -48,6 +48,13 @@
     self.leftViewMode = UITextFieldViewModeAlways;
 }
 
+- (void)setLeftImage:(void(^)(UIImageView *imageView))settingBlock
+{
+    if (settingBlock) {
+        settingBlock((UIImageView*)self.leftView);
+    }
+}
+
 - (CGRect)textRectForBounds:(CGRect)bounds
 {
     CGRect frame;

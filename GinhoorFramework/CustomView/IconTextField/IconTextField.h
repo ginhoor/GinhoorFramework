@@ -16,5 +16,6 @@
 @property (assign, nonatomic) CGSize leftImageSize;
 
 - (void)addLeftImage:(UIImage *)image;
+- (void)setLeftImage:(void(^)(UIImageView *imageView))settingBlock;
 
 @end
