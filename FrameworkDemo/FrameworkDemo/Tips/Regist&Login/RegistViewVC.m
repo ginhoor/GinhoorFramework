@@ -19,6 +19,7 @@
 @property (strong, nonatomic) UIScrollView *scroll;
 @property (strong, nonatomic) NSMutableArray *buttonArr;
 
+
 @end
 
 @implementation RegistViewVC

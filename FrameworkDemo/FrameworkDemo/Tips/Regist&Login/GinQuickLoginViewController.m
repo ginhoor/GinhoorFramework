@@ -7,9 +7,13 @@
 //
 
 #import <Masonry.h>
+#import <ReactiveCocoa.h>
+
 #import "GinQuickLoginViewController.h"
-#import "IconTextField.h"
 #import "GinResetPasswordViewController.h"
+
+#import "IconTextField.h"
+#import "NSString+RegEx.h"
 
 @interface GinQuickLoginViewController ()
 
@@ -48,6 +52,21 @@
     
     [self.view updateConstraintsIfNeeded];
 
+    RAC(self.nextStep, enabled) =
+    [RACSignal combineLatest:@[self.userPhone.rac_textSignal,
+                               self.randomCode.rac_textSignal]
+                      reduce:^(NSString *userPhone, NSString *randomCode)
+     {
+         return @([userPhone validateMobile] && randomCode.length > 0);
+     }];
+    
+    [RACObserve(self.nextStep, enabled) subscribeNext:^(NSNumber *enabled) {
+        if (enabled.boolValue) {
+            _nextStep.backgroundColor = [UIColor colorWithRed:0.106f green:0.749f blue:0.408f alpha:1.000f];
+        } else {
+            _nextStep.backgroundColor = [UIColor lightGrayColor];
+        }
+    }];
 }
 
 
@@ -167,7 +186,7 @@
                 break;
         }
         
-        _nextStep.backgroundColor = [UIColor colorWithRed:0.106f green:0.749f blue:0.408f alpha:1.000f];
+        _nextStep.enabled = NO;
         _nextStep.layer.cornerRadius = 4;
         [_nextStep addTarget:self action:@selector(nextStepAction:) forControlEvents:UIControlEventTouchUpInside];
     }
