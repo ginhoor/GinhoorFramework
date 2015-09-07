@@ -17,10 +17,10 @@ PODS:
     - BlocksKit/DynamicDelegate
   - DateTools (1.5.0)
   - DZNEmptyDataSet (1.5.2)
-  - Mantle (1.5.4):
-    - Mantle/extobjc (= 1.5.4)
-  - Mantle/extobjc (1.5.4)
-  - Masonry (0.6.1)
+  - Mantle (1.5.5):
+    - Mantle/extobjc (= 1.5.5)
+  - Mantle/extobjc (1.5.5)
+  - Masonry (0.6.2)
   - MJRefresh (1.4.7)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -29,9 +29,9 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
-  - SDWebImage (3.7.2):
-    - SDWebImage/Core (= 3.7.2)
-  - SDWebImage/Core (3.7.2)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
 
 DEPENDENCIES:
   - Baidu-Maps-iOS-SDK (~> 2.6.0)
@@ -49,10 +49,10 @@ SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   DateTools: b93a2c2017747329c6077c7d7e8a75106e23d0d7
   DZNEmptyDataSet: 741da409081a4bf707c949c964623a6ad1799772
-  Mantle: 60acd0cd363e27d945bda0a6b8e90577112d28f3
-  Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
+  Mantle: 1b29072a707453975b200a173cf77ec1e2810b75
+  Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   MJRefresh: 6b140993028fa30f1fcb88e82925a7c7911415cf
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
-  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 
 COCOAPODS: 0.37.2

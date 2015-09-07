@@ -37,6 +37,7 @@
         });
     }];
     
+    // 取消“点击刷新”
     [self.table.footer setTitle:@"" forState:MJRefreshFooterStateIdle];
     
     [self.view setNeedsUpdateConstraints];
