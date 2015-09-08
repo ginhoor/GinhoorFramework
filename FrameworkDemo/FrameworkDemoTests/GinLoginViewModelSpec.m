@@ -15,7 +15,14 @@ SPEC_BEGIN(GinLoginViewModelSpec)
 
 describe(@"GinLoginViewModel", ^{
     
-    __block GinLoginViewModel *loginVM = [[GinLoginViewModel alloc] init];
+    __block GinLoginViewModel *loginVM;
+
+    beforeEach(^{
+        loginVM = [[GinLoginViewModel alloc] init];
+    });
+    afterEach(^{
+        loginVM = nil;
+    });
     
     context(@"when username is 123456 and password is 123456", ^{
         __block BOOL result = NO;
@@ -42,7 +49,7 @@ describe(@"GinLoginViewModel", ^{
             [[loginVM isValidUsernameAndPasswordSignal] subscribeNext:^(NSNumber *isValid) {
                 result = [isValid boolValue];
             }];
-            
+
             [[theValue(result) should] beYes];
         });
     });

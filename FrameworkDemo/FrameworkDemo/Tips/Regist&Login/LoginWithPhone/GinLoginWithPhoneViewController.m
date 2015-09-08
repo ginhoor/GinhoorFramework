@@ -47,13 +47,12 @@
     RAC(self.loginVM, randomCode) = self.randomCode.rac_textSignal;
     
     [self.loginVM.getRandomCodeCommand.executionSignals subscribeNext:^(RACSignal *subscribedSignal) {
-        
         [subscribedSignal subscribeNext:^(id x) {
             ;
         }];
         
         [subscribedSignal subscribeCompleted:^{
-            self.loginVM.verifiedColdDown = 60;
+            self.loginVM.verifiedCoolDown = 60;
             NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerHandler:) userInfo:nil repeats:YES];
             [timer fire];
         }];
@@ -164,18 +163,16 @@
     return _separator1;
 }
 
-
-
 - (void)timerHandler:(id)sender
 {
-    if (self.loginVM.verifiedColdDown-- == 0) {
+    if (self.loginVM.verifiedCoolDown-- == 0) {
         self.getRandomCode.enabled = YES;
         [self.getRandomCode setTitle:@"获取验证码" forState:UIControlStateNormal];
         [self.getRandomCode setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [((NSTimer *)sender) invalidate];
     } else {
         self.getRandomCode.enabled = NO;
-        [self.getRandomCode setTitle:[NSString stringWithFormat:@"%@秒后重新获取",@(self.loginVM.verifiedColdDown)] forState:UIControlStateNormal];
+        [self.getRandomCode setTitle:[NSString stringWithFormat:@"%@秒后重新获取",@(self.loginVM.verifiedCoolDown)] forState:UIControlStateNormal];
         [self.getRandomCode setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     }
 }

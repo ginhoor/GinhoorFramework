@@ -16,7 +16,6 @@
 
 @interface GinLoginViewController ()
 
-@property (strong, nonatomic) UIButton *nextStep;
 @property (strong, nonatomic) UIView *separator1;
 
 @property (assign, nonatomic) CGFloat minimumLineSpacing;

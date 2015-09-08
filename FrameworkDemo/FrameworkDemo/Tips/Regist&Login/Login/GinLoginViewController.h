@@ -17,4 +17,6 @@
 @property (strong, nonatomic) IconTextField *username;
 @property (strong, nonatomic) IconTextField *password;
 
+@property (strong, nonatomic) UIButton *nextStep;
+
 @end

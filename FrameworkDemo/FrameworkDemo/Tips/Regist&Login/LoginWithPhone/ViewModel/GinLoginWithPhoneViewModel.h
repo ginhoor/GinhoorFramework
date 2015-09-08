@@ -13,12 +13,13 @@
 
 @property (copy, nonatomic) NSString *username;
 @property (copy, nonatomic) NSString *randomCode;
-@property (assign, nonatomic) NSInteger verifiedColdDown;
+@property (assign, nonatomic) NSInteger verifiedCoolDown;
 
 @property (nonatomic, strong) RACCommand *loginCommand;
 @property (nonatomic, strong) RACCommand *findPasswordCommand;
 @property (nonatomic, strong) RACCommand *getRandomCodeCommand;
 
+- (RACSignal *)isVerifiedCoodDown;
 - (RACSignal *)isValidUsernameAndRandomCodeSignal;
 
 

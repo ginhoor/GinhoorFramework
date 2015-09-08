@@ -95,15 +95,20 @@
 {
     if (!_getRandomCodeCommand) {
         
-        _getRandomCodeCommand = [[RACCommand alloc] initWithEnabled:[RACObserve(self, verifiedColdDown) map:^id(NSNumber *verifiedColdDown) {
-            return @([verifiedColdDown isEqualToNumber:@(0)]);
-        }] signalBlock:^RACSignal *(id input) {
+        _getRandomCodeCommand = [[RACCommand alloc] initWithEnabled:[self isVerifiedCoodDown] signalBlock:^RACSignal *(id input) {
             return [GinLoginWithPhoneViewModel getRandomCodeWithUsername:self.username randomCode:self.randomCode];
         }];
     }
     return _getRandomCodeCommand;
 }
 
+
+- (RACSignal *)isVerifiedCoodDown
+{
+    return [RACObserve(self, verifiedCoolDown) map:^id(NSNumber *verifiedColdDown) {
+        return @([verifiedColdDown isEqualToNumber:@(0)]);
+    }];
+}
 
 - (RACSignal *)isValidUsernameAndRandomCodeSignal
 {

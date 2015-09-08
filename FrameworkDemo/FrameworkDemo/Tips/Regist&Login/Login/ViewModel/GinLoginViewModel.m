@@ -19,14 +19,8 @@
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         
 #warning 填写登录逻辑
-        
-//        [ProjectViewModel projectList:shopId success:^(NSArray *result) {
             [subscriber sendNext:@""];
             [subscriber sendCompleted];
-//        } failure:^(NSError *error) {
-//            [subscriber sendError:error];
-//        }];
-        
         return [RACDisposable disposableWithBlock:^{
             ;
         }];

@@ -27,21 +27,9 @@ describe(@"GinLoginViewController", ^{
         loginVC = nil;
     });
     
-    context(@"putin username and password", ^{
-        
-        it(@"username should be mobile number", ^{
-            [[theValue([username validateMobile]) should] beYes];
-        });
-        
-        it(@"password", ^{
-            [[password shouldNot] beNil];
-            [[theValue(password.length) should] beGreaterThanOrEqualTo:theValue(6)];
-        });
-    });
-    
     context(@"bind ViewModel", ^{
         
-        it(@"bind success", ^{
+        it(@"textfiled bind success", ^{
             loginVC.username.text = username;
             loginVC.password.text = password;
             
@@ -50,6 +38,10 @@ describe(@"GinLoginViewController", ^{
             
             [[loginVC.loginVM.username should] equal:loginVC.username.text];
             [[loginVC.loginVM.password should] equal:loginVC.password.text];
+        });
+        
+        it(@"command bind success", ^{
+            [[loginVC.nextStep.rac_command should] equal:loginVC.loginVM.loginCommand];
         });
     });
 });

@@ -161,6 +161,12 @@
 		00B997DF1B9E7D74008EE8A1 /* GinResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997D91B9E7D74008EE8A1 /* GinResetPasswordViewController.m */; };
 		00B997E01B9E7D74008EE8A1 /* GinQuickLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997DD1B9E7D74008EE8A1 /* GinQuickLoginViewController.m */; };
 		00B997E31B9E93C5008EE8A1 /* GinResetPasswordViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997E21B9E93C5008EE8A1 /* GinResetPasswordViewModel.m */; };
+		00B997E51B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997E41B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m */; };
+		00B997E91B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997E81B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m */; };
+		00B997EB1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997EA1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m */; };
+		00B997ED1B9EA12C008EE8A1 /* GinLoginWithPhoneViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997EC1B9EA12C008EE8A1 /* GinLoginWithPhoneViewControllerSpec.m */; };
+		00B997EF1B9EA188008EE8A1 /* GinResetPasswordViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997EE1B9EA188008EE8A1 /* GinResetPasswordViewControllerSpec.m */; };
+		00B997F11B9EA1DE008EE8A1 /* GinResetPasswordViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997F01B9EA1DE008EE8A1 /* GinResetPasswordViewModelSpec.m */; };
 		00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5E5561B15FE340095C7A5 /* NSDate+Range.m */; };
 		00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */; };
 		00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9AA1AE65BEE00B3F485 /* CheckAppVersion.m */; };
@@ -467,6 +473,12 @@
 		00B997DD1B9E7D74008EE8A1 /* GinQuickLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinQuickLoginViewController.m; sourceTree = "<group>"; };
 		00B997E11B9E93C5008EE8A1 /* GinResetPasswordViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinResetPasswordViewModel.h; sourceTree = "<group>"; };
 		00B997E21B9E93C5008EE8A1 /* GinResetPasswordViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinResetPasswordViewModel.m; sourceTree = "<group>"; };
+		00B997E41B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoginWithPhoneViewModelSpec.m; sourceTree = "<group>"; };
+		00B997E81B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinFindPasswordViewControllerSpec.m; sourceTree = "<group>"; };
+		00B997EA1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinQuickLoginViewControllerSpec.m; sourceTree = "<group>"; };
+		00B997EC1B9EA12C008EE8A1 /* GinLoginWithPhoneViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoginWithPhoneViewControllerSpec.m; sourceTree = "<group>"; };
+		00B997EE1B9EA188008EE8A1 /* GinResetPasswordViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinResetPasswordViewControllerSpec.m; sourceTree = "<group>"; };
+		00B997F01B9EA1DE008EE8A1 /* GinResetPasswordViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinResetPasswordViewModelSpec.m; sourceTree = "<group>"; };
 		00E5E5551B15FE340095C7A5 /* NSDate+Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Range.h"; sourceTree = "<group>"; };
 		00E5E5561B15FE340095C7A5 /* NSDate+Range.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Range.m"; sourceTree = "<group>"; };
 		00F4C9991AE630C300B3F485 /* GinPopup+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GinPopup+Unit.h"; sourceTree = "<group>"; };
@@ -617,6 +629,12 @@
 				000603EF1B9D88910026D80F /* NSString+RegExSpec.m */,
 				000603E21B9D75B80026D80F /* GinLoginViewModelSpec.m */,
 				000603E41B9D768E0026D80F /* GinLoginViewControllerSpec.m */,
+				00B997E41B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m */,
+				00B997EC1B9EA12C008EE8A1 /* GinLoginWithPhoneViewControllerSpec.m */,
+				00B997E81B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m */,
+				00B997EA1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m */,
+				00B997EE1B9EA188008EE8A1 /* GinResetPasswordViewControllerSpec.m */,
+				00B997F01B9EA1DE008EE8A1 /* GinResetPasswordViewModelSpec.m */,
 				000B52A51ADBCF8100946853 /* Supporting Files */,
 			);
 			path = FrameworkDemoTests;
@@ -2077,12 +2095,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B997EB1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m in Sources */,
 				000603E51B9D768E0026D80F /* GinLoginViewControllerSpec.m in Sources */,
 				000603EC1B9D7AF80026D80F /* NSString+GinUnit.m in Sources */,
+				00B997ED1B9EA12C008EE8A1 /* GinLoginWithPhoneViewControllerSpec.m in Sources */,
+				00B997F11B9EA1DE008EE8A1 /* GinResetPasswordViewModelSpec.m in Sources */,
+				00B997E91B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m in Sources */,
 				000603F01B9D88910026D80F /* NSString+RegExSpec.m in Sources */,
 				000603E31B9D75B80026D80F /* GinLoginViewModelSpec.m in Sources */,
 				000603D71B9C36210026D80F /* ModelTest.m in Sources */,
 				000603D51B9C36130026D80F /* Person.m in Sources */,
+				00B997EF1B9EA188008EE8A1 /* GinResetPasswordViewControllerSpec.m in Sources */,
+				00B997E51B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m in Sources */,
 				000603E91B9D7ACA0026D80F /* NSString+UnitSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
