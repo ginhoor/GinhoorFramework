@@ -17,9 +17,12 @@ describe(@"GinLoginViewModel", ^{
     
     __block GinLoginViewModel *loginVM;
 
+    //在scope内的每个it之前调用一次，对于context的配置代码应该写在这里
     beforeEach(^{
         loginVM = [[GinLoginViewModel alloc] init];
     });
+    
+    //在scope内的每个it之后调用一次，用于清理测试后的代码
     afterEach(^{
         loginVM = nil;
     });

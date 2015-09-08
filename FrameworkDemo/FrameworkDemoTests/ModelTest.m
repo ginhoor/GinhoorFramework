@@ -30,7 +30,7 @@
 }
 
 
-- (void)testPeopleModel
+- (void)testPersonModel
 {
     NSString *string = @"{\"uname\":\"jack\",\"pic\":\"http://krplus-cdn.b0.upaiyun.com/common-module/common-header/images/logo.png\"}";
     
@@ -43,6 +43,7 @@
 
 - (void)testJsonAPI
 {
+    // 使用 measureBlock 方法可以记录该测试的耗时
     [self measureBlock:^{
 
         NSString *urlStr = @"http://xiaoliao.sinaapp.com/index.php/Api369/index/pad/0/sw/1/cid/mm/lastTime/1441598591";
@@ -68,7 +69,6 @@
             XCTAssertNotNil(a, @"model is nil");
             XCTAssertNotNil(a.name, @"person has not a name!");
             XCTAssertNotNil(a.avatar, @"person has not a avatar!");
-            
         }];
     }];
 }
