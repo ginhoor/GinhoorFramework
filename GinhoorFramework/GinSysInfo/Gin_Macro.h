@@ -27,6 +27,7 @@
 #define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
 
 #define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
 #define iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
 
 #define isPad     ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
@@ -34,7 +35,6 @@
 
 //tmp 目录
 #define TMP_PATH [NSHomeDirectory() stringByAppendingPathComponent:@"tmp"]
-
 
 ///////////////////////////////////////////
 // G C D
@@ -61,21 +61,8 @@
 // Category
 ///////////////////////////////////////////
 
-// 格式化字符串
-#define ComboString(string, args...)[NSString stringWithFormat:string,args]
-#define AppendString(str1,str2)     [NSString stringWithFormat:@"%@%@",str1,str2]
-//image
-#define ImageByName(name)           [UIImage imageNamed:name]
-#define UIColorFromRGBA(r,g,b,a)    [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
-
 #define PointValue(x,y) [NSValue valueWithCGPoint:CGPointMake(x, y)]
-
-
-#define isEmptyArray(array) !array || ((NSArray*)array).count == 0
-#define isHasElementsArray(array) array && ((NSArray*)array).count > 0
-
-#define isEmptyDictionary(dic) !dic || ((NSDictionary*)dic).allKeys.count == 0
-#define isHasElementsDictionary(dic) dic && ((NSDictionary*)dic).allKeys.count > 0
+#define raiseException(name,message) [NSException raise:name format:message];
 
 ///////////////////////////////////////////
 // degrees/radian

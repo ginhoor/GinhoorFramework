@@ -8,7 +8,7 @@
 
 
 #import <UIKit/UIKit.h>
-#import "UIResponder+Unit.h"
+#import "UIResponder+GinUnit.h"
 @interface GinPhotoGalleryController : UIViewController
 
 - (void)setImageUrlList:(NSArray *)imageUrlList selectedIndex:(NSUInteger)index;

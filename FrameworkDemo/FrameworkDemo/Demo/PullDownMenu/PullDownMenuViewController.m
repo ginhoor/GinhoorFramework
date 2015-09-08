@@ -8,7 +8,7 @@
 
 #import <Masonry.h>
 #import <BlocksKit.h>
-#import "NSAttributedString+Unit.h"
+#import "NSAttributedString+GinUnit.h"
 #import "GinPullDownMenu.h"
 #import "PullDownMenuViewController.h"
 

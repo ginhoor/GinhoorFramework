@@ -22,7 +22,7 @@
 #import "StepperViewController.h"
 
 #import "NSString+formatContentString.h"
-#import "UIAlertView+Unit.h"
+#import "UIAlertView+GinUnit.h"
 #import "CodeDemo.h"
 #import "RegistViewVC.h"
 

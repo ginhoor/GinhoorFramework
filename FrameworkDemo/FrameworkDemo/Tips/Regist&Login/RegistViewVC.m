@@ -13,6 +13,8 @@
 
 #import "GinLoginViewController.h"
 #import "GinQuickLoginViewController.h"
+#import "GinResetPasswordViewController.h"
+#import "GinFindPasswordViewController.h"
 
 @interface RegistViewVC()
 
@@ -48,8 +50,7 @@
     
     [self addButton:@"找回密码" index:2 tap:^{
         
-        GinQuickLoginViewController *vc = [[GinQuickLoginViewController alloc] init];
-        vc.type = GinRegistViewTypeFindPassword;
+        GinFindPasswordViewController *vc = [[GinFindPasswordViewController alloc] init];
         
         [self.navigationController pushViewController:vc animated:YES];
 

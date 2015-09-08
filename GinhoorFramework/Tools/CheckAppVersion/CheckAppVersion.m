@@ -7,7 +7,7 @@
 //
 
 #import "CheckAppVersion.h"
-#import "UIAlertView+Unit.h"
+#import "UIAlertView+GinUnit.h"
 #import "NSString+Json.h"
 @implementation CheckAppVersion
 

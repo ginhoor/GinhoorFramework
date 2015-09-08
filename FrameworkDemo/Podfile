@@ -5,7 +5,9 @@ inhibit_all_warnings!
 target 'FrameworkDemo' do
     #pod 'GinhoorFramework', :podspec => '../GinhoorFramework.podspec'  #指定podspec文件
 
-    #pod 'AFNetworking', '~> 2.5.1'
+    pod 'AFNetworking', '~> 2.5.1'
+    pod 'ReactiveCocoa', '~> 2.5'
+
     #pod 'libextobjc', '~> 0.4.1'
     #pod 'CocoaLumberjack', '~> 2.0.0'
 
@@ -17,13 +19,12 @@ target 'FrameworkDemo' do
     pod 'DateTools', '~> 1.5.0'
     pod 'DZNEmptyDataSet', '~> 1.5.2'
     pod 'Baidu-Maps-iOS-SDK', '~> 2.6.0'
-    pod 'ReactiveCocoa', '~> 2.5'
-
+    
 end
 
 target 'FrameworkDemoTests' do
     pod 'Mantle', '~> 1.5.4'
-
+    pod 'Kiwi', '~> 2.4.0'
 end
 
 

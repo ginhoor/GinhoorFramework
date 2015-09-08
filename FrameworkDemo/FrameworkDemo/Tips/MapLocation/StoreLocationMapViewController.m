@@ -9,7 +9,7 @@
 
 #import "StoreLocationMapViewController.h"
 #import <MapKit/MapKit.h>
-#import "UIAlertView+Unit.h"
+#import "UIAlertView+GinUnit.h"
 #import "LocationManager.h"
 
 static NSString *annotationReuseId = @"Annotation";

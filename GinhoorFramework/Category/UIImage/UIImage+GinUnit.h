@@ -13,13 +13,12 @@
 // 改变image的颜色（对单色image比较有用）
 - (UIImage *)changeColor:(UIColor*)color;
 // 获得纯色图片
++ (UIImage *)imageByColor:(UIColor *)color;
 + (UIImage *)imageByColor:(UIColor *)color size:(CGSize)imageSize;
 // 缩放图片大小
 - (UIImage *)scaleToSize:(CGSize)size;
 // 灰度图片
 - (UIImage *)getGrayImage;
-
-
 
 - (UIImage *)scaleImageto:(CGFloat)scaleSize;
 - (UIImage *)scaleImageByWidth:(CGFloat)width;

@@ -6,31 +6,29 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import "NSObject+Unit.h"
+#import "NSObject+GinUnit.h"
 
 #import "NSDate+RCUtility.h"
 
-#import "NSURL+Unit.h"
+#import "NSURL+GinUnit.h"
 
 /**
  *  NSString
  */
-#import "NSString+Type.h"
+#import "NSString+GinUnit.h"
 #import "NSString+Json.h"
 #import "NSString+formatContentString.h"
-#import "NSAttributedString+Unit.h"
+#import "NSAttributedString+GinUnit.h"
 
-#import "NSArray+Unit.h"
+#import "NSArray+GinUnit.h"
 
-#import "NSDictionary+Unit.h"
-
-
+#import "NSDictionary+GinUnit.h"
 
 #import "UIImage+GinUnit.h"
 
-#import "UIResponder+Unit.h"
+#import "UIResponder+GinUnit.h"
 
 #import "UIColor+Hex.h"
-#import "UIAlertView+Unit.h"
+#import "UIAlertView+GinUnit.h"
 
 #import "UIView+GinCGRect.h"

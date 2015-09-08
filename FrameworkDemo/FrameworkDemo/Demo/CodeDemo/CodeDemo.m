@@ -11,7 +11,7 @@
 #import "Gin_Macro.h"
 #import "CodeDemo.h"
 #import "NSString+RegEx.h"
-#import "UIAlertView+Unit.h"
+#import "UIAlertView+GinUnit.h"
 #import "NSString+Debug.h"
 
 @interface CodeDemo()
