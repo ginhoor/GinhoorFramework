@@ -6,10 +6,7 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import <MTLModel.h>
-#import <MTLJSONAdapter.h>
-#import <MTLValueTransformer.h>
-#import <NSValueTransformer+MTLPredefinedTransformerAdditions.h>
+#import <Mantle.h>
 
 @interface BaseData : MTLModel
 

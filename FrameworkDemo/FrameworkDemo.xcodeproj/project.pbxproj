@@ -31,13 +31,17 @@
 		0018BC711B118D5B001E52D5 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC701B118D5B001E52D5 /* NSObject+JSON.m */; };
 		0018BC801B12BD87001E52D5 /* GinTabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC7D1B12BD87001E52D5 /* GinTabsViewController.m */; };
 		0018BC8B1B12D136001E52D5 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC8A1B12D136001E52D5 /* HMSegmentedControl.m */; };
+		001A748B1BA94F8D0016D55E /* BaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 001A748A1BA94F8D0016D55E /* BaseData.m */; };
+		001A74D71BA9558A0016D55E /* UICollectionViewCell+GinAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 001A74CE1BA9558A0016D55E /* UICollectionViewCell+GinAnimation.m */; };
+		001A74D81BA9558A0016D55E /* MRFlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 001A74D11BA9558A0016D55E /* MRFlipTransition.m */; };
+		001A74D91BA9558A0016D55E /* UIViewController+MRFlipTransitino.m in Sources */ = {isa = PBXBuildFile; fileRef = 001A74D31BA9558A0016D55E /* UIViewController+MRFlipTransitino.m */; };
+		001A74DA1BA9558A0016D55E /* UITableView+Wave.m in Sources */ = {isa = PBXBuildFile; fileRef = 001A74D61BA9558A0016D55E /* UITableView+Wave.m */; };
 		002F315D1B2A72AC00080B37 /* NSAttributedString+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F315C1B2A72AC00080B37 /* NSAttributedString+GinUnit.m */; };
 		002F31771B2EA6FC00080B37 /* NSArray+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31761B2EA6FC00080B37 /* NSArray+GinUnit.m */; };
 		002F326D1B32795F00080B37 /* NSDictionary+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F326C1B32795F00080B37 /* NSDictionary+GinUnit.m */; };
 		003B32811B1AAE09001EED5C /* GinPhotoGalleryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B327E1B1AAE09001EED5C /* GinPhotoGalleryController.m */; };
 		003B32821B1AAE09001EED5C /* GinShowPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B32801B1AAE09001EED5C /* GinShowPhotoViewController.m */; };
 		005421DD1B47DF6F0028CCE6 /* GinAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 005421DC1B47DF6F0028CCE6 /* GinAddressBook.m */; };
-		005421E51B47E6BC0028CCE6 /* BaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 005421E41B47E6BC0028CCE6 /* BaseData.m */; };
 		005422AA1B47E84D0028CCE6 /* GinFloatedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422571B47E84D0028CCE6 /* GinFloatedButton.m */; };
 		005422AB1B47E84D0028CCE6 /* GinHorizontalLayoutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0054225A1B47E84D0028CCE6 /* GinHorizontalLayoutButton.m */; };
 		005422AC1B47E84D0028CCE6 /* GinImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0054225D1B47E84D0028CCE6 /* GinImageButton.m */; };
@@ -231,6 +235,16 @@
 		0018BC7D1B12BD87001E52D5 /* GinTabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinTabsViewController.m; sourceTree = "<group>"; };
 		0018BC891B12D136001E52D5 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
 		0018BC8A1B12D136001E52D5 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		001A74891BA94F8D0016D55E /* BaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseData.h; sourceTree = "<group>"; };
+		001A748A1BA94F8D0016D55E /* BaseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseData.m; sourceTree = "<group>"; };
+		001A74CD1BA9558A0016D55E /* UICollectionViewCell+GinAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+GinAnimation.h"; sourceTree = "<group>"; };
+		001A74CE1BA9558A0016D55E /* UICollectionViewCell+GinAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+GinAnimation.m"; sourceTree = "<group>"; };
+		001A74D01BA9558A0016D55E /* MRFlipTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRFlipTransition.h; sourceTree = "<group>"; };
+		001A74D11BA9558A0016D55E /* MRFlipTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRFlipTransition.m; sourceTree = "<group>"; };
+		001A74D21BA9558A0016D55E /* UIViewController+MRFlipTransitino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MRFlipTransitino.h"; sourceTree = "<group>"; };
+		001A74D31BA9558A0016D55E /* UIViewController+MRFlipTransitino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MRFlipTransitino.m"; sourceTree = "<group>"; };
+		001A74D51BA9558A0016D55E /* UITableView+Wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Wave.h"; sourceTree = "<group>"; };
+		001A74D61BA9558A0016D55E /* UITableView+Wave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Wave.m"; sourceTree = "<group>"; };
 		002F315B1B2A72AC00080B37 /* NSAttributedString+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+GinUnit.h"; sourceTree = "<group>"; };
 		002F315C1B2A72AC00080B37 /* NSAttributedString+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+GinUnit.m"; sourceTree = "<group>"; };
 		002F31751B2EA6FC00080B37 /* NSArray+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GinUnit.h"; sourceTree = "<group>"; };
@@ -243,8 +257,6 @@
 		003B32801B1AAE09001EED5C /* GinShowPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinShowPhotoViewController.m; sourceTree = "<group>"; };
 		005421DB1B47DF6F0028CCE6 /* GinAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinAddressBook.h; sourceTree = "<group>"; };
 		005421DC1B47DF6F0028CCE6 /* GinAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinAddressBook.m; sourceTree = "<group>"; };
-		005421E31B47E6BC0028CCE6 /* BaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseData.h; sourceTree = "<group>"; };
-		005421E41B47E6BC0028CCE6 /* BaseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseData.m; sourceTree = "<group>"; };
 		005422561B47E84D0028CCE6 /* GinFloatedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinFloatedButton.h; sourceTree = "<group>"; };
 		005422571B47E84D0028CCE6 /* GinFloatedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinFloatedButton.m; sourceTree = "<group>"; };
 		005422591B47E84D0028CCE6 /* GinHorizontalLayoutButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinHorizontalLayoutButton.h; sourceTree = "<group>"; };
@@ -677,7 +689,6 @@
 			isa = PBXGroup;
 			children = (
 				000603CB1B9C35020026D80F /* Model */,
-				005421E21B47E6BC0028CCE6 /* BaseData */,
 				0018BA481B115DA4001E52D5 /* NSValueTransformer+Unit.h */,
 				0018BA491B115DA4001E52D5 /* NSValueTransformer+Unit.m */,
 			);
@@ -693,6 +704,54 @@
 				0018BC8A1B12D136001E52D5 /* HMSegmentedControl.m */,
 			);
 			path = GinTabsController;
+			sourceTree = "<group>";
+		};
+		001A74881BA94F8D0016D55E /* BaseData */ = {
+			isa = PBXGroup;
+			children = (
+				001A74891BA94F8D0016D55E /* BaseData.h */,
+				001A748A1BA94F8D0016D55E /* BaseData.m */,
+			);
+			path = BaseData;
+			sourceTree = "<group>";
+		};
+		001A74CB1BA9558A0016D55E /* GinAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				001A74CC1BA9558A0016D55E /* GinCollectionViewAnimation */,
+				001A74CF1BA9558A0016D55E /* ModelFlipTransition */,
+				001A74D41BA9558A0016D55E /* TableWave */,
+			);
+			path = GinAnimation;
+			sourceTree = "<group>";
+		};
+		001A74CC1BA9558A0016D55E /* GinCollectionViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				001A74CD1BA9558A0016D55E /* UICollectionViewCell+GinAnimation.h */,
+				001A74CE1BA9558A0016D55E /* UICollectionViewCell+GinAnimation.m */,
+			);
+			path = GinCollectionViewAnimation;
+			sourceTree = "<group>";
+		};
+		001A74CF1BA9558A0016D55E /* ModelFlipTransition */ = {
+			isa = PBXGroup;
+			children = (
+				001A74D01BA9558A0016D55E /* MRFlipTransition.h */,
+				001A74D11BA9558A0016D55E /* MRFlipTransition.m */,
+				001A74D21BA9558A0016D55E /* UIViewController+MRFlipTransitino.h */,
+				001A74D31BA9558A0016D55E /* UIViewController+MRFlipTransitino.m */,
+			);
+			path = ModelFlipTransition;
+			sourceTree = "<group>";
+		};
+		001A74D41BA9558A0016D55E /* TableWave */ = {
+			isa = PBXGroup;
+			children = (
+				001A74D51BA9558A0016D55E /* UITableView+Wave.h */,
+				001A74D61BA9558A0016D55E /* UITableView+Wave.m */,
+			);
+			path = TableWave;
 			sourceTree = "<group>";
 		};
 		002F31741B2EA6EF00080B37 /* NSArray */ = {
@@ -731,15 +790,6 @@
 				005421DC1B47DF6F0028CCE6 /* GinAddressBook.m */,
 			);
 			path = GinContactsBook;
-			sourceTree = "<group>";
-		};
-		005421E21B47E6BC0028CCE6 /* BaseData */ = {
-			isa = PBXGroup;
-			children = (
-				005421E31B47E6BC0028CCE6 /* BaseData.h */,
-				005421E41B47E6BC0028CCE6 /* BaseData.m */,
-			);
-			path = BaseData;
 			sourceTree = "<group>";
 		};
 		005422531B47E84D0028CCE6 /* CustomView */ = {
@@ -990,6 +1040,7 @@
 		005422D21B47E9CE0028CCE6 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				001A74881BA94F8D0016D55E /* BaseData */,
 				0095FF1D1B71A43900BF8987 /* Collection */,
 				0095FF221B71A43900BF8987 /* Table */,
 				005422DB1B47E9CE0028CCE6 /* BaseView.h */,
@@ -1022,6 +1073,7 @@
 			isa = PBXGroup;
 			children = (
 				006A93A41ADE09090093BEBE /* GinhoorFramework.h */,
+				001A74CB1BA9558A0016D55E /* GinAnimation */,
 				00F7FC6A1AEDEB840080AFC7 /* Debug */,
 				006A93231ADE09090093BEBE /* Category */,
 				005422531B47E84D0028CCE6 /* CustomView */,
@@ -1982,6 +2034,7 @@
 				0018BC711B118D5B001E52D5 /* NSObject+JSON.m in Sources */,
 				0018BC8B1B12D136001E52D5 /* HMSegmentedControl.m in Sources */,
 				0095FF0B1B71A30300BF8987 /* page2Controller.m in Sources */,
+				001A74D91BA9558A0016D55E /* UIViewController+MRFlipTransitino.m in Sources */,
 				0095FF1C1B71A30300BF8987 /* TableViewController.m in Sources */,
 				008660111B816F7000B76218 /* NSObject+TYSwizzle.m in Sources */,
 				006A93C31ADE09090093BEBE /* NSString+Size.m in Sources */,
@@ -1997,7 +2050,8 @@
 				0095FF6A1B71A71800BF8987 /* BaiduLocationViewModel.m in Sources */,
 				006A94CF1ADFFF570093BEBE /* NSString+Json.m in Sources */,
 				0095FF631B71A71800BF8987 /* TextCollectionCell.m in Sources */,
-				005421E51B47E6BC0028CCE6 /* BaseData.m in Sources */,
+				001A748B1BA94F8D0016D55E /* BaseData.m in Sources */,
+				001A74D81BA9558A0016D55E /* MRFlipTransition.m in Sources */,
 				006A94BC1ADFAD6D0093BEBE /* UIViewController+GinBaseTableView.m in Sources */,
 				0095FF191B71A30300BF8987 /* GalleryViewController.m in Sources */,
 				006A93B71ADE09090093BEBE /* UIView+GinCGRect.m in Sources */,
@@ -2069,12 +2123,14 @@
 				0095FF611B71A71800BF8987 /* ImageCollectionCell.m in Sources */,
 				00B997E31B9E93C5008EE8A1 /* GinResetPasswordViewModel.m in Sources */,
 				006A93C91ADE09090093BEBE /* UIResponder+GinUnit.m in Sources */,
+				001A74D71BA9558A0016D55E /* UICollectionViewCell+GinAnimation.m in Sources */,
 				005422AB1B47E84D0028CCE6 /* GinHorizontalLayoutButton.m in Sources */,
 				006A93CB1ADE09090093BEBE /* UIView+view2Image.m in Sources */,
 				005422B51B47E84D0028CCE6 /* ExtendMenu.m in Sources */,
 				006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */,
 				0095FF621B71A71800BF8987 /* ImageWithTitleCollectionCell.m in Sources */,
 				006A93CA1ADE09090093BEBE /* UIView+Layer.m in Sources */,
+				001A74DA1BA9558A0016D55E /* UITableView+Wave.m in Sources */,
 				005422E41B47E9CE0028CCE6 /* BaseViewController.m in Sources */,
 				0095FF271B71A43900BF8987 /* BaseCollectionCell.m in Sources */,
 				006A93CF1ADE09090093BEBE /* GinPageViewController.m in Sources */,

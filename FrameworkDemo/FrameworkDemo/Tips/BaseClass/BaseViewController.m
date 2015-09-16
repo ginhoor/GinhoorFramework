@@ -18,7 +18,6 @@
 {
     [super viewDidLoad];
     [self setupCustomBackButton];
-    
 }
 
 - (void)setupCustomBackButton
@@ -33,7 +32,7 @@
     self.navigationItem.leftBarButtonItem = backItem;
 }
 
--(void)doBack:(id)sender
+- (void)doBack:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
