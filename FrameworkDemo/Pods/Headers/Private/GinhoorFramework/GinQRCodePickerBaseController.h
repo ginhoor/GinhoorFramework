@@ -1,0 +1,1 @@
+../../../GinhoorFramework/GinhoorFramework/CustomViewController/GinQRCodePicker/GinQRCodePickerBaseController.h

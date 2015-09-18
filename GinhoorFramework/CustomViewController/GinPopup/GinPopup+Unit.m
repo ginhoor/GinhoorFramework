@@ -14,13 +14,6 @@
 
 @implementation GinPopup (Unit)
 
-
-+ (UIViewController *)appDelegateRootViewController
-{
-    UIViewController *vc = [UIApplication sharedApplication].delegate.window.rootViewController;
-    return vc;
-}
-
 + (void)showTitle:(NSString*)title text:(NSString*)text
 {
     [GinPopup showWithContentView:[self viewWithTitle:title text:text]];

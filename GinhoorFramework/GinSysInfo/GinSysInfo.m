@@ -65,6 +65,10 @@
     return [self iOSSystemVersion].floatValue >= version && [self iOSSystemVersion].floatValue < version+1;
 }
 
++ (BOOL)laterThanVersion:(CGFloat)version;
+{
+    return [self iOSSystemVersion].floatValue >= version;
+}
 
 + (BOOL)isJailbrokenUser
 

@@ -33,9 +33,9 @@
 
 }
 
-+ (CGFloat)viewHeight
++ (CGSize)viewSize
 {
-    return 100;
+    return CGSizeMake(100, 100);
 }
 
 @end

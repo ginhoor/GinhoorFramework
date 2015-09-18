@@ -13,7 +13,13 @@
 + (instancetype)data:(NSDictionary *)jsonData
 {
     NSError *__autoreleasing error = nil;
-    return [MTLJSONAdapter modelOfClass:[self class] fromJSONDictionary:jsonData error:&error];
+    
+    id data = [MTLJSONAdapter modelOfClass:[self class] fromJSONDictionary:jsonData error:&error];
+    
+    if (error) {
+        NSLog(@"%s error--->%@",__func__,error);
+    }
+    return data;
 }
 
 @end

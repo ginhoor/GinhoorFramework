@@ -1,0 +1,1 @@
+../../../GinhoorFramework/GinhoorFramework/Category/NSObject/NSObject+JSON.h

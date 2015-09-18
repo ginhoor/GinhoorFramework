@@ -19,6 +19,7 @@
 		000603F81B9E6BA60026D80F /* GinLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 000603F61B9E6BA60026D80F /* GinLoginViewModel.m */; };
 		0006040C1B9E6F9C0026D80F /* GinLoginWithPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0006040B1B9E6F9C0026D80F /* GinLoginWithPhoneViewController.m */; };
 		000604181B9E71120026D80F /* GinLoginWithPhoneViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 000604171B9E71120026D80F /* GinLoginWithPhoneViewModel.m */; };
+		0009F38A1BAA696800440C74 /* HTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0009F3891BAA696800440C74 /* HTTPRequestOperationManager.m */; };
 		000B528E1ADBCF8100946853 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B528D1ADBCF8100946853 /* main.m */; };
 		000B52911ADBCF8100946853 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B52901ADBCF8100946853 /* AppDelegate.m */; };
 		000B52941ADBCF8100946853 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B52931ADBCF8100946853 /* ViewController.m */; };
@@ -36,6 +37,7 @@
 		001A74D81BA9558A0016D55E /* MRFlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 001A74D11BA9558A0016D55E /* MRFlipTransition.m */; };
 		001A74D91BA9558A0016D55E /* UIViewController+MRFlipTransitino.m in Sources */ = {isa = PBXBuildFile; fileRef = 001A74D31BA9558A0016D55E /* UIViewController+MRFlipTransitino.m */; };
 		001A74DA1BA9558A0016D55E /* UITableView+Wave.m in Sources */ = {isa = PBXBuildFile; fileRef = 001A74D61BA9558A0016D55E /* UITableView+Wave.m */; };
+		001A75191BAA4C630016D55E /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 001A75181BAA4C630016D55E /* BaseViewModel.m */; };
 		002F315D1B2A72AC00080B37 /* NSAttributedString+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F315C1B2A72AC00080B37 /* NSAttributedString+GinUnit.m */; };
 		002F31771B2EA6FC00080B37 /* NSArray+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31761B2EA6FC00080B37 /* NSArray+GinUnit.m */; };
 		002F326D1B32795F00080B37 /* NSDictionary+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F326C1B32795F00080B37 /* NSDictionary+GinUnit.m */; };
@@ -210,6 +212,8 @@
 		0006040B1B9E6F9C0026D80F /* GinLoginWithPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoginWithPhoneViewController.m; sourceTree = "<group>"; };
 		000604161B9E71120026D80F /* GinLoginWithPhoneViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinLoginWithPhoneViewModel.h; sourceTree = "<group>"; };
 		000604171B9E71120026D80F /* GinLoginWithPhoneViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoginWithPhoneViewModel.m; sourceTree = "<group>"; };
+		0009F3881BAA696800440C74 /* HTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		0009F3891BAA696800440C74 /* HTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestOperationManager.m; sourceTree = "<group>"; };
 		000B52881ADBCF8100946853 /* FrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000B528C1ADBCF8100946853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000B528D1ADBCF8100946853 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -245,6 +249,8 @@
 		001A74D31BA9558A0016D55E /* UIViewController+MRFlipTransitino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MRFlipTransitino.m"; sourceTree = "<group>"; };
 		001A74D51BA9558A0016D55E /* UITableView+Wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Wave.h"; sourceTree = "<group>"; };
 		001A74D61BA9558A0016D55E /* UITableView+Wave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Wave.m"; sourceTree = "<group>"; };
+		001A75171BAA4C630016D55E /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		001A75181BAA4C630016D55E /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
 		002F315B1B2A72AC00080B37 /* NSAttributedString+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+GinUnit.h"; sourceTree = "<group>"; };
 		002F315C1B2A72AC00080B37 /* NSAttributedString+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+GinUnit.m"; sourceTree = "<group>"; };
 		002F31751B2EA6FC00080B37 /* NSArray+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GinUnit.h"; sourceTree = "<group>"; };
@@ -584,6 +590,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		0009F3861BAA693000440C74 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0009F3871BAA696800440C74 /* RequestManager */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0009F3871BAA696800440C74 /* RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				0009F3881BAA696800440C74 /* HTTPRequestOperationManager.h */,
+				0009F3891BAA696800440C74 /* HTTPRequestOperationManager.m */,
+			);
+			path = RequestManager;
+			sourceTree = "<group>";
+		};
 		000B527F1ADBCF8100946853 = {
 			isa = PBXGroup;
 			children = (
@@ -672,6 +695,7 @@
 		0018BA431B115CA7001E52D5 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				0009F3861BAA693000440C74 /* Network */,
 				0079C7341B9549CC0062F574 /* Regist&Login */,
 				008660131B81758500B76218 /* Save&Load */,
 				005422D21B47E9CE0028CCE6 /* BaseClass */,
@@ -1043,6 +1067,8 @@
 				001A74881BA94F8D0016D55E /* BaseData */,
 				0095FF1D1B71A43900BF8987 /* Collection */,
 				0095FF221B71A43900BF8987 /* Table */,
+				001A75171BAA4C630016D55E /* BaseViewModel.h */,
+				001A75181BAA4C630016D55E /* BaseViewModel.m */,
 				005422DB1B47E9CE0028CCE6 /* BaseView.h */,
 				005422DC1B47E9CE0028CCE6 /* BaseView.m */,
 				005422DD1B47E9CE0028CCE6 /* BaseViewController.h */,
@@ -2072,6 +2098,7 @@
 				00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */,
 				005422E31B47E9CE0028CCE6 /* BaseView.m in Sources */,
 				006A94C51ADFB9C70093BEBE /* UIView+GinBaseClass.m in Sources */,
+				001A75191BAA4C630016D55E /* BaseViewModel.m in Sources */,
 				0095FF281B71A43900BF8987 /* BaseCollectionViewContoller.m in Sources */,
 				006A94B91ADF9CBD0093BEBE /* UICollectionView+GinBaseClass.m in Sources */,
 				006A93BF1ADE09090093BEBE /* NSData+NSString.m in Sources */,
@@ -2143,6 +2170,7 @@
 				005422AD1B47E84D0028CCE6 /* GinSystemButton.m in Sources */,
 				006A93B41ADE09090093BEBE /* GinBaseTitleSectionView.m in Sources */,
 				005421DD1B47DF6F0028CCE6 /* GinAddressBook.m in Sources */,
+				0009F38A1BAA696800440C74 /* HTTPRequestOperationManager.m in Sources */,
 				005422CA1B47E84D0028CCE6 /* GinIndexTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

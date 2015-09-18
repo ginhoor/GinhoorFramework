@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#define RootVCInWindow [UIApplication sharedApplication].delegate.window.rootViewController
+
 @interface UIResponder (GinUnit)
 
 - (UIViewController *)recentlyController;
 - (UIViewController *)controlerByClass:(Class)mClass;
 - (UINavigationController *)recentlyNavigationContoller;
+
 
 @end

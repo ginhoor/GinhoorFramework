@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E680824C3205019E5AC924FE5450CFDD3924EF0C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E680824C3205019E5AC924FE5450CFDD3924EF0C" : 0,
+    "C03E844FEB4C4D3A8D6606D70F764C034FA9BDE5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ACE067CB-8771-4BE5-B107-BCEFC40043BF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E680824C3205019E5AC924FE5450CFDD3924EF0C" : "GinhoorFramework",
+    "C03E844FEB4C4D3A8D6606D70F764C034FA9BDE5" : "FunnyJokes"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FrameworkDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FrameworkDemo\/FrameworkDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "code.csdn.net:Ginhoor\/funnyjokes.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C03E844FEB4C4D3A8D6606D70F764C034FA9BDE5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ginhoor\/GinhoorFramework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E680824C3205019E5AC924FE5450CFDD3924EF0C"
+    }
+  ]
+}

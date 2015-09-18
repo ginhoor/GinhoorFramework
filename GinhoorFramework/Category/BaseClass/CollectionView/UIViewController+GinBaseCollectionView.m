@@ -144,7 +144,7 @@
     UICollectionView *collectionView = [self getValueForKey:@"collectionView"];
     
     if (!collectionView) {
-        collectionView = [UICollectionView defaultWithItemSize:CGSizeZero];
+        collectionView = [UICollectionView defaultWithItemSize:CGSizeMake(1, 1)];
         [self setValue:collectionView key:@"collectionView" policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC owner:self];
     }
     return collectionView;

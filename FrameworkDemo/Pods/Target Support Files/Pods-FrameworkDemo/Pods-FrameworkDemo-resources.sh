@@ -60,11 +60,29 @@ install_resource()
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "Baidu-Maps-iOS-SDK/mapapi.bundle"
   install_resource "DateTools/DateTools/DateTools.bundle"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/PullDownMenu/Resource/arrow_down_44x44.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/PullDownMenu/Resource/arrow_down_44x44@2x.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/PullDownMenu/Resource/arrow_down_44x44@3x.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/PullDownMenu/Resource/arrow_up_44x44.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/PullDownMenu/Resource/arrow_up_44x44@2x.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/PullDownMenu/Resource/arrow_up_44x44@3x.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/TableView/Cell/IconTableCell/Resource/list_indicator_arrow.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/TableView/Cell/IconTableCell/Resource/list_indicator_arrow@2x.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/TableView/Cell/IconTableCell/Resource/list_indicator_arrow@3x.png"
   install_resource "MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "Baidu-Maps-iOS-SDK/mapapi.bundle"
   install_resource "DateTools/DateTools/DateTools.bundle"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/PullDownMenu/Resource/arrow_down_44x44.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/PullDownMenu/Resource/arrow_down_44x44@2x.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/PullDownMenu/Resource/arrow_down_44x44@3x.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/PullDownMenu/Resource/arrow_up_44x44.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/PullDownMenu/Resource/arrow_up_44x44@2x.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/PullDownMenu/Resource/arrow_up_44x44@3x.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/TableView/Cell/IconTableCell/Resource/list_indicator_arrow.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/TableView/Cell/IconTableCell/Resource/list_indicator_arrow@2x.png"
+  install_resource "GinhoorFramework/GinhoorFramework/CustomView/TableView/Cell/IconTableCell/Resource/list_indicator_arrow@3x.png"
   install_resource "MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle"
 fi
 

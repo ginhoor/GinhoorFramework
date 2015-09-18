@@ -25,7 +25,6 @@
 
 - (void)setup
 {
-    self.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1];
     [self addSubview:self.titleLabel];
     [self setupViewsLayout];
 }

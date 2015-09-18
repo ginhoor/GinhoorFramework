@@ -10,8 +10,6 @@
 
 @interface GinPopup (Unit)
 
-+ (UIViewController *)appDelegateRootViewController;
-
 + (void)showTitle:(NSString *)title text:(NSString *)text submitButton:(NSString *)buttonTitle onClick:(void(^)())onClock;
 + (void)showTitle:(NSString*)title text:(NSString*)text;
 

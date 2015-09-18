@@ -12,12 +12,18 @@
 
 - (UIViewController *)recentlyController
 {
+    if (!self.nextResponder) {
+        return nil;
+    }
     UIViewController *controller = (UIViewController *)[self objectInResponder:self.nextResponder class:[UIViewController class]];
     return controller;
 }
 
 - (UIViewController *)controlerByClass:(Class)mClass
 {
+    if (!self.nextResponder) {
+        return nil;
+    }
     UIViewController *controller = (UIViewController *)[self objectInResponder:self.nextResponder class:mClass];
     return controller;
 }
@@ -25,12 +31,13 @@
 
 - (UINavigationController *)recentlyNavigationContoller
 {
+    if (!self.nextResponder) {
+        return nil;
+    }
     UINavigationController *controller = (UINavigationController *)[self objectInResponder:self.nextResponder class:[UINavigationController class]];
     
     return controller;
 }
-
-
 
 - (UIResponder *)objectInResponder:(UIResponder *)responder class:(Class)class{
     if ([responder isKindOfClass:class]) {
@@ -39,5 +46,6 @@
         return [self objectInResponder:responder.nextResponder class:class];
     }
 }
+
 
 @end

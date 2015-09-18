@@ -6,8 +6,7 @@
 //  Copyright (c) 2015年 tanyang. All rights reserved.
 //
 
-#import <objc/objc-runtime.h>
-#import <objc/objc-class.h>
+#import <objc/runtime.h>
 #import <Foundation/Foundation.h>
 
 BOOL ty_swizzleInstanceMethod(Class aClass, SEL originalSel, SEL replacementSel)

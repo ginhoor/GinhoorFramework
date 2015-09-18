@@ -12,6 +12,6 @@
 
 - (void)setup;
 
-+ (CGFloat)viewHeight;
++ (CGSize)viewSize;
 
 @end
