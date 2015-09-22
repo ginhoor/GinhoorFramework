@@ -32,6 +32,11 @@
 
 @implementation ViewController
 
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+}
 
 - (void)viewDidLoad
 {

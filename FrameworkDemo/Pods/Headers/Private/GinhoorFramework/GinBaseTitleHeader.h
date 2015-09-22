@@ -1,1 +1,0 @@
-../../../GinhoorFramework/GinhoorFramework/Category/BaseClass/CollectionView/Header/GinBaseTitleHeader.h

@@ -18,28 +18,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+
+    self.table.backgroundColor = [UIColor lightGrayColor];
     
     [self.view addSubview:self.table];
 
     __weak typeof(self) weak = self;
     
-
-    [self.table addLegendHeaderWithRefreshingBlock:^{
+    
+    self.table.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [weak.table.header endRefreshing];
         });
     }];
-
-    [self.table addLegendFooterWithRefreshingBlock:^{
+    
+    
+    
+    self.table.footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [weak.table.footer endRefreshing];
         });
     }];
-    
-    // 取消“点击刷新”
-    [self.table.footer setTitle:@"" forState:MJRefreshFooterStateIdle];
-    
+
     [self.view setNeedsUpdateConstraints];
 }
 
@@ -66,7 +66,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return 20;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

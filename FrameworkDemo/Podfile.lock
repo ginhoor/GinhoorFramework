@@ -38,63 +38,12 @@ PODS:
     - BlocksKit/DynamicDelegate
   - DateTools (1.5.0)
   - DZNEmptyDataSet (1.7.1)
-  - GinhoorFramework (1.4.1):
-    - BlocksKit (~> 2.2.5)
-    - GinhoorFramework/Category (= 1.4.1)
-    - GinhoorFramework/CustomView (= 1.4.1)
-    - GinhoorFramework/CustomViewController (= 1.4.1)
-    - GinhoorFramework/Debug (= 1.4.1)
-    - GinhoorFramework/GinSysInfo (= 1.4.1)
-    - GinhoorFramework/Tools (= 1.4.1)
-    - Masonry (~> 0.6.2)
-    - MJRefresh (~> 1.4.5)
-    - SDWebImage (~> 3.7.2)
-  - GinhoorFramework/Category (1.4.1):
-    - BlocksKit (~> 2.2.5)
-    - GinhoorFramework/GinSysInfo
-    - Masonry (~> 0.6.2)
-    - MJRefresh (~> 1.4.5)
-    - SDWebImage (~> 3.7.2)
-  - GinhoorFramework/CustomView (1.4.1):
-    - BlocksKit (~> 2.2.5)
-    - GinhoorFramework/Category
-    - GinhoorFramework/GinSysInfo
-    - Masonry (~> 0.6.2)
-    - MJRefresh (~> 1.4.5)
-    - SDWebImage (~> 3.7.2)
-  - GinhoorFramework/CustomViewController (1.4.1):
-    - BlocksKit (~> 2.2.5)
-    - GinhoorFramework/Category
-    - GinhoorFramework/CustomView
-    - GinhoorFramework/GinSysInfo
-    - Masonry (~> 0.6.2)
-    - MJRefresh (~> 1.4.5)
-    - SDWebImage (~> 3.7.2)
-  - GinhoorFramework/Debug (1.4.1):
-    - BlocksKit (~> 2.2.5)
-    - Masonry (~> 0.6.2)
-    - MJRefresh (~> 1.4.5)
-    - SDWebImage (~> 3.7.2)
-  - GinhoorFramework/GinSysInfo (1.4.1):
-    - BlocksKit (~> 2.2.5)
-    - Masonry (~> 0.6.2)
-    - MJRefresh (~> 1.4.5)
-    - SDWebImage (~> 3.7.2)
-  - GinhoorFramework/Tools (1.4.1):
-    - BlocksKit (~> 2.2.5)
-    - GinhoorFramework/Category
-    - GinhoorFramework/CustomView
-    - GinhoorFramework/CustomViewController
-    - GinhoorFramework/GinSysInfo
-    - Masonry (~> 0.6.2)
-    - MJRefresh (~> 1.4.5)
-    - SDWebImage (~> 3.7.2)
   - Kiwi (2.4.0)
   - Mantle (2.0.5):
     - Mantle/extobjc (= 2.0.5)
   - Mantle/extobjc (2.0.5)
   - Masonry (0.6.2)
-  - MJRefresh (1.4.7)
+  - MJRefresh (2.4.10)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -112,10 +61,10 @@ DEPENDENCIES:
   - BlocksKit (~> 2.2.5)
   - DateTools (~> 1.5.0)
   - DZNEmptyDataSet (~> 1.7.1)
-  - GinhoorFramework (~> 1.4.1)
   - Kiwi (~> 2.4.0)
   - Mantle (~> 2.0.4)
   - Masonry (~> 0.6.1)
+  - MJRefresh (~> 2.4.10)
   - ReactiveCocoa (~> 2.5)
   - SDWebImage (~> 3.7.3)
 
@@ -125,11 +74,10 @@ SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   DateTools: b93a2c2017747329c6077c7d7e8a75106e23d0d7
   DZNEmptyDataSet: 2a398066c2bf5848f7f693fb50954b5064debd12
-  GinhoorFramework: 23141db8333dad3b05d136c08183b5343296b83c
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
   Mantle: 1912395033f601de5adc8ee91e48f46e4c7051ad
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
-  MJRefresh: 6b140993028fa30f1fcb88e82925a7c7911415cf
+  MJRefresh: e52328552ed9cbfce3501e3820b18bf7643c65cc
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 

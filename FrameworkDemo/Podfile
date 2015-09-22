@@ -9,8 +9,6 @@ target 'FrameworkDemo' do
 
     pod 'AFNetworking', '~> 2.6.0'
     pod 'ReactiveCocoa', '~> 2.5'
-#    pod 'GinhoorFramework', '~> 1.4.1'
-
 
     #pod 'libextobjc', '~> 0.4.1'
     #pod 'CocoaLumberjack', '~> 2.0.1'
@@ -18,7 +16,8 @@ target 'FrameworkDemo' do
     pod 'Mantle', '~> 2.0.4'
     pod 'BlocksKit', '~> 2.2.5'
     pod 'Masonry', '~> 0.6.1'
-
+    pod 'MJRefresh', '~> 2.4.10'
+    
     pod 'SDWebImage', '~> 3.7.3'
     pod 'DateTools', '~> 1.5.0'
     pod 'DZNEmptyDataSet', '~> 1.7.1'

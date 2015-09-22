@@ -1,1 +1,0 @@
-../../../GinhoorFramework/GinhoorFramework/Category/NSObject/TYSwizzle/TYSwizzle.h

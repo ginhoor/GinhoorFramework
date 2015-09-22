@@ -1,1 +1,0 @@
-../../../GinhoorFramework/GinhoorFramework/Category/NSObject/NSObject+GinSetterAndGetter.h

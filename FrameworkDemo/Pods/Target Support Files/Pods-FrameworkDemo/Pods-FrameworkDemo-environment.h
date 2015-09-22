@@ -102,53 +102,11 @@
 #define COCOAPODS_VERSION_MINOR_DateTools 5
 #define COCOAPODS_VERSION_PATCH_DateTools 0
 
-// GinhoorFramework
-#define COCOAPODS_POD_AVAILABLE_GinhoorFramework
-#define COCOAPODS_VERSION_MAJOR_GinhoorFramework 1
-#define COCOAPODS_VERSION_MINOR_GinhoorFramework 4
-#define COCOAPODS_VERSION_PATCH_GinhoorFramework 1
-
-// GinhoorFramework/Category
-#define COCOAPODS_POD_AVAILABLE_GinhoorFramework_Category
-#define COCOAPODS_VERSION_MAJOR_GinhoorFramework_Category 1
-#define COCOAPODS_VERSION_MINOR_GinhoorFramework_Category 4
-#define COCOAPODS_VERSION_PATCH_GinhoorFramework_Category 1
-
-// GinhoorFramework/CustomView
-#define COCOAPODS_POD_AVAILABLE_GinhoorFramework_CustomView
-#define COCOAPODS_VERSION_MAJOR_GinhoorFramework_CustomView 1
-#define COCOAPODS_VERSION_MINOR_GinhoorFramework_CustomView 4
-#define COCOAPODS_VERSION_PATCH_GinhoorFramework_CustomView 1
-
-// GinhoorFramework/CustomViewController
-#define COCOAPODS_POD_AVAILABLE_GinhoorFramework_CustomViewController
-#define COCOAPODS_VERSION_MAJOR_GinhoorFramework_CustomViewController 1
-#define COCOAPODS_VERSION_MINOR_GinhoorFramework_CustomViewController 4
-#define COCOAPODS_VERSION_PATCH_GinhoorFramework_CustomViewController 1
-
-// GinhoorFramework/Debug
-#define COCOAPODS_POD_AVAILABLE_GinhoorFramework_Debug
-#define COCOAPODS_VERSION_MAJOR_GinhoorFramework_Debug 1
-#define COCOAPODS_VERSION_MINOR_GinhoorFramework_Debug 4
-#define COCOAPODS_VERSION_PATCH_GinhoorFramework_Debug 1
-
-// GinhoorFramework/GinSysInfo
-#define COCOAPODS_POD_AVAILABLE_GinhoorFramework_GinSysInfo
-#define COCOAPODS_VERSION_MAJOR_GinhoorFramework_GinSysInfo 1
-#define COCOAPODS_VERSION_MINOR_GinhoorFramework_GinSysInfo 4
-#define COCOAPODS_VERSION_PATCH_GinhoorFramework_GinSysInfo 1
-
-// GinhoorFramework/Tools
-#define COCOAPODS_POD_AVAILABLE_GinhoorFramework_Tools
-#define COCOAPODS_VERSION_MAJOR_GinhoorFramework_Tools 1
-#define COCOAPODS_VERSION_MINOR_GinhoorFramework_Tools 4
-#define COCOAPODS_VERSION_PATCH_GinhoorFramework_Tools 1
-
 // MJRefresh
 #define COCOAPODS_POD_AVAILABLE_MJRefresh
-#define COCOAPODS_VERSION_MAJOR_MJRefresh 1
+#define COCOAPODS_VERSION_MAJOR_MJRefresh 2
 #define COCOAPODS_VERSION_MINOR_MJRefresh 4
-#define COCOAPODS_VERSION_PATCH_MJRefresh 7
+#define COCOAPODS_VERSION_PATCH_MJRefresh 10
 
 // Mantle
 #define COCOAPODS_POD_AVAILABLE_Mantle

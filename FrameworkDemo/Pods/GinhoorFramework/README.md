@@ -1,2 +1,0 @@
-# GinhoorFramework
-ginhoor@gmail.com

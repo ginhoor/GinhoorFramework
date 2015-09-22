@@ -1,1 +1,0 @@
-../../../GinhoorFramework/GinhoorFramework/Category/BaseClass/CoreData/GinBaseCoreDataResponder.h

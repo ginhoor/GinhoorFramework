@@ -1,1 +1,0 @@
-../../../GinhoorFramework/GinhoorFramework/GinSysInfo/Gin_Macro.h

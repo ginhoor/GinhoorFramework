@@ -1,1 +1,0 @@
-../../../GinhoorFramework/GinhoorFramework/Tools/ImagePickerMananger/UIImagePickerMananger.h
