@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import "AFHTTPRequestOperationManager.h"
+#import <AFHTTPRequestOperationManager.h>
 
 // 开发环境
 static NSString *const API_SERVER_PATH = @"http://121.43.144.117:8080";

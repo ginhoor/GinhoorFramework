@@ -9,7 +9,6 @@
 #import <Mantle.h>
 #import "HTTPRequestOperationManager.h"
 
-
 @interface HTTPRequestOperationManager()
 
 @end

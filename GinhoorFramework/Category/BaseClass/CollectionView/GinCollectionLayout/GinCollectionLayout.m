@@ -111,7 +111,7 @@
         
         CGFloat scrollResistance = distanceFromTouch / self.resistanceFactor;
         
-        UICollectionViewLayoutAttributes *item = [spring.items firstObject];
+        UICollectionViewLayoutAttributes *item = (UICollectionViewLayoutAttributes *)[spring.items firstObject];
         CGPoint center = item.center;
         center.y += (scrollDelta > 0) ? MIN(scrollDelta, scrollDelta * scrollResistance)
         : MAX(scrollDelta, scrollDelta * scrollResistance);
