@@ -7,7 +7,7 @@
 //
 
 #import "NSObject+GinUnit.h"
-
+#import "NSObject+Json.h"
 #import "NSDate+RCUtility.h"
 
 #import "NSURL+GinUnit.h"

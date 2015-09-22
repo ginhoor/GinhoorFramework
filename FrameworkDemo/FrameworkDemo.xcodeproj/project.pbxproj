@@ -29,7 +29,6 @@
 		0018B9851B100883001E52D5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B9841B100883001E52D5 /* UIColor+Hex.m */; };
 		0018BA4A1B115DA4001E52D5 /* NSValueTransformer+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BA491B115DA4001E52D5 /* NSValueTransformer+Unit.m */; };
 		0018BC6E1B118C7F001E52D5 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC6D1B118C7F001E52D5 /* NSString+MD5.m */; };
-		0018BC711B118D5B001E52D5 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC701B118D5B001E52D5 /* NSObject+JSON.m */; };
 		0018BC801B12BD87001E52D5 /* GinTabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC7D1B12BD87001E52D5 /* GinTabsViewController.m */; };
 		0018BC8B1B12D136001E52D5 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC8A1B12D136001E52D5 /* HMSegmentedControl.m */; };
 		001A748B1BA94F8D0016D55E /* BaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 001A748A1BA94F8D0016D55E /* BaseData.m */; };
@@ -41,6 +40,7 @@
 		002F315D1B2A72AC00080B37 /* NSAttributedString+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F315C1B2A72AC00080B37 /* NSAttributedString+GinUnit.m */; };
 		002F31771B2EA6FC00080B37 /* NSArray+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31761B2EA6FC00080B37 /* NSArray+GinUnit.m */; };
 		002F326D1B32795F00080B37 /* NSDictionary+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F326C1B32795F00080B37 /* NSDictionary+GinUnit.m */; };
+		0037BE381BB1085C007C7DCE /* NSObject+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 0037BE371BB1085C007C7DCE /* NSObject+Json.m */; settings = {ASSET_TAGS = (); }; };
 		003B32811B1AAE09001EED5C /* GinPhotoGalleryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B327E1B1AAE09001EED5C /* GinPhotoGalleryController.m */; };
 		003B32821B1AAE09001EED5C /* GinShowPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B32801B1AAE09001EED5C /* GinShowPhotoViewController.m */; };
 		005421DD1B47DF6F0028CCE6 /* GinAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 005421DC1B47DF6F0028CCE6 /* GinAddressBook.m */; };
@@ -233,8 +233,6 @@
 		0018BA491B115DA4001E52D5 /* NSValueTransformer+Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+Unit.m"; sourceTree = "<group>"; };
 		0018BC6C1B118C7F001E52D5 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		0018BC6D1B118C7F001E52D5 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
-		0018BC6F1B118D5B001E52D5 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
-		0018BC701B118D5B001E52D5 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
 		0018BC7C1B12BD87001E52D5 /* GinTabsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinTabsViewController.h; sourceTree = "<group>"; };
 		0018BC7D1B12BD87001E52D5 /* GinTabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinTabsViewController.m; sourceTree = "<group>"; };
 		0018BC891B12D136001E52D5 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
@@ -257,6 +255,8 @@
 		002F31761B2EA6FC00080B37 /* NSArray+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GinUnit.m"; sourceTree = "<group>"; };
 		002F326B1B32795F00080B37 /* NSDictionary+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+GinUnit.h"; sourceTree = "<group>"; };
 		002F326C1B32795F00080B37 /* NSDictionary+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+GinUnit.m"; sourceTree = "<group>"; };
+		0037BE361BB1085C007C7DCE /* NSObject+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Json.h"; sourceTree = "<group>"; };
+		0037BE371BB1085C007C7DCE /* NSObject+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Json.m"; sourceTree = "<group>"; };
 		003B327D1B1AAE09001EED5C /* GinPhotoGalleryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinPhotoGalleryController.h; sourceTree = "<group>"; };
 		003B327E1B1AAE09001EED5C /* GinPhotoGalleryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinPhotoGalleryController.m; sourceTree = "<group>"; };
 		003B327F1B1AAE09001EED5C /* GinShowPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinShowPhotoViewController.h; sourceTree = "<group>"; };
@@ -1809,8 +1809,8 @@
 				00F7FC651AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m */,
 				00F7FC671AEDDA860080AFC7 /* NSObject+GinUnit.h */,
 				00F7FC681AEDDA860080AFC7 /* NSObject+GinUnit.m */,
-				0018BC6F1B118D5B001E52D5 /* NSObject+JSON.h */,
-				0018BC701B118D5B001E52D5 /* NSObject+JSON.m */,
+				0037BE361BB1085C007C7DCE /* NSObject+Json.h */,
+				0037BE371BB1085C007C7DCE /* NSObject+Json.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -2057,7 +2057,6 @@
 				006A93AD1ADE09090093BEBE /* GinCollectionLayout.m in Sources */,
 				0095FF181B71A30300BF8987 /* demo4Gallery.m in Sources */,
 				0095FF1B1B71A30300BF8987 /* StepperViewController.m in Sources */,
-				0018BC711B118D5B001E52D5 /* NSObject+JSON.m in Sources */,
 				0018BC8B1B12D136001E52D5 /* HMSegmentedControl.m in Sources */,
 				0095FF0B1B71A30300BF8987 /* page2Controller.m in Sources */,
 				001A74D91BA9558A0016D55E /* UIViewController+MRFlipTransitino.m in Sources */,
@@ -2135,6 +2134,7 @@
 				00F7FC711AEDEB840080AFC7 /* UIView+Debug.m in Sources */,
 				009FF0821B5CEE4700D282E6 /* CallPhoneMannager.m in Sources */,
 				006A93B11ADE09090093BEBE /* GinBaseCoreDataResponder.m in Sources */,
+				0037BE381BB1085C007C7DCE /* NSObject+Json.m in Sources */,
 				006A93D11ADE09090093BEBE /* GinPopupContentView.m in Sources */,
 				006A93B91ADE09090093BEBE /* UIViewController+GinBaseClass.m in Sources */,
 				000603F71B9E6BA60026D80F /* GinLoginViewController.m in Sources */,
