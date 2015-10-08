@@ -19,8 +19,7 @@
     NSLog(@"登录");
     
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        
-#warning 填写登录逻辑
+//        <#填写登录逻辑#>
         [subscriber sendNext:@""];
         [subscriber sendCompleted];
         
@@ -35,7 +34,7 @@
     NSLog(@"找回密码");
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         
-#warning 填写找回密码逻辑
+//        <#填写找回密码逻辑#>
         [subscriber sendNext:@""];
         [subscriber sendCompleted];
         
@@ -62,7 +61,7 @@
             }];
         }
         
-#warning 填写获取验证码逻辑
+//        <#填写获取验证码逻辑#>
         
         return [RACDisposable disposableWithBlock:^{
             ;

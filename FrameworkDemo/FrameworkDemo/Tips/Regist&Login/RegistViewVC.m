@@ -40,19 +40,22 @@
         make.edges.offset(0);
     }];
     
+    
+    __weak RegistViewVC *weak = self;
+    
     [self addButton:@"登录" index:0 tap:^{
-        [self.navigationController pushViewController:[[GinLoginViewController alloc] init] animated:YES];
+        [weak.navigationController pushViewController:[[GinLoginViewController alloc] init] animated:YES];
     }];
     
     [self addButton:@"快速登录" index:1 tap:^{
-        [self.navigationController pushViewController:[[GinQuickLoginViewController alloc] init] animated:YES];
+        [weak.navigationController pushViewController:[[GinQuickLoginViewController alloc] init] animated:YES];
     }];
     
     [self addButton:@"找回密码" index:2 tap:^{
         
         GinFindPasswordViewController *vc = [[GinFindPasswordViewController alloc] init];
         
-        [self.navigationController pushViewController:vc animated:YES];
+        [weak.navigationController pushViewController:vc animated:YES];
 
     }];
     

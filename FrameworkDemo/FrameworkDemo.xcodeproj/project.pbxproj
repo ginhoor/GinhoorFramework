@@ -37,6 +37,8 @@
 		001A74D91BA9558A0016D55E /* UIViewController+MRFlipTransitino.m in Sources */ = {isa = PBXBuildFile; fileRef = 001A74D31BA9558A0016D55E /* UIViewController+MRFlipTransitino.m */; };
 		001A74DA1BA9558A0016D55E /* UITableView+Wave.m in Sources */ = {isa = PBXBuildFile; fileRef = 001A74D61BA9558A0016D55E /* UITableView+Wave.m */; };
 		001A75191BAA4C630016D55E /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 001A75181BAA4C630016D55E /* BaseViewModel.m */; };
+		002DDE061BC60B6D0011D48F /* CodeSnippetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 002DDE051BC60B6D0011D48F /* CodeSnippetLibrary.m */; settings = {ASSET_TAGS = (); }; };
+		002DDE071BC60B6D0011D48F /* CodeSnippetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 002DDE051BC60B6D0011D48F /* CodeSnippetLibrary.m */; settings = {ASSET_TAGS = (); }; };
 		002F315D1B2A72AC00080B37 /* NSAttributedString+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F315C1B2A72AC00080B37 /* NSAttributedString+GinUnit.m */; };
 		002F31771B2EA6FC00080B37 /* NSArray+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31761B2EA6FC00080B37 /* NSArray+GinUnit.m */; };
 		002F326D1B32795F00080B37 /* NSDictionary+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F326C1B32795F00080B37 /* NSDictionary+GinUnit.m */; };
@@ -249,6 +251,8 @@
 		001A74D61BA9558A0016D55E /* UITableView+Wave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Wave.m"; sourceTree = "<group>"; };
 		001A75171BAA4C630016D55E /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
 		001A75181BAA4C630016D55E /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		002DDE041BC60B6D0011D48F /* CodeSnippetLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeSnippetLibrary.h; sourceTree = "<group>"; };
+		002DDE051BC60B6D0011D48F /* CodeSnippetLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeSnippetLibrary.m; sourceTree = "<group>"; };
 		002F315B1B2A72AC00080B37 /* NSAttributedString+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+GinUnit.h"; sourceTree = "<group>"; };
 		002F315C1B2A72AC00080B37 /* NSAttributedString+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+GinUnit.m"; sourceTree = "<group>"; };
 		002F31751B2EA6FC00080B37 /* NSArray+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GinUnit.h"; sourceTree = "<group>"; };
@@ -705,6 +709,8 @@
 				0018BA441B115CA7001E52D5 /* Mantle */,
 				00645F811B8AF0B700E23638 /* GUIFont.h */,
 				00645F821B8AF0B700E23638 /* GUIFont.m */,
+				002DDE041BC60B6D0011D48F /* CodeSnippetLibrary.h */,
+				002DDE051BC60B6D0011D48F /* CodeSnippetLibrary.m */,
 			);
 			path = Tips;
 			sourceTree = "<group>";
@@ -1129,7 +1135,6 @@
 				006A937A1ADE09090093BEBE /* UIImage */,
 				006A937D1ADE09090093BEBE /* UIResponder */,
 				006A93801ADE09090093BEBE /* UIView */,
-				006A93851ADE09090093BEBE /* UIViewController */,
 				006A93861ADE09090093BEBE /* UIWindow */,
 				0018B9821B10083E001E52D5 /* UIColor */,
 			);
@@ -1340,13 +1345,6 @@
 				006A93841ADE09090093BEBE /* UIView+view2Image.m */,
 			);
 			path = UIView;
-			sourceTree = "<group>";
-		};
-		006A93851ADE09090093BEBE /* UIViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIViewController;
 			sourceTree = "<group>";
 		};
 		006A93861ADE09090093BEBE /* UIWindow */ = {
@@ -1896,11 +1894,12 @@
 		000B52801ADBCF8100946853 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = JunhuaShao;
 				TargetAttributes = {
 					000B52871ADBCF8100946853 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 5RS94A7AT7;
 					};
 					000B52A01ADBCF8100946853 = {
 						CreatedOnToolsVersion = 6.3;
@@ -2135,6 +2134,7 @@
 				009FF0821B5CEE4700D282E6 /* CallPhoneMannager.m in Sources */,
 				006A93B11ADE09090093BEBE /* GinBaseCoreDataResponder.m in Sources */,
 				0037BE381BB1085C007C7DCE /* NSObject+Json.m in Sources */,
+				002DDE061BC60B6D0011D48F /* CodeSnippetLibrary.m in Sources */,
 				006A93D11ADE09090093BEBE /* GinPopupContentView.m in Sources */,
 				006A93B91ADE09090093BEBE /* UIViewController+GinBaseClass.m in Sources */,
 				000603F71B9E6BA60026D80F /* GinLoginViewController.m in Sources */,
@@ -2191,6 +2191,7 @@
 				000603D51B9C36130026D80F /* Person.m in Sources */,
 				00B997EF1B9EA188008EE8A1 /* GinResetPasswordViewControllerSpec.m in Sources */,
 				00B997E51B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m in Sources */,
+				002DDE071BC60B6D0011D48F /* CodeSnippetLibrary.m in Sources */,
 				000603E91B9D7ACA0026D80F /* NSString+UnitSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2246,6 +2247,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2310,11 +2312,13 @@
 			baseConfigurationReference = 4AED559755DDFC3C93282E3E /* Pods-FrameworkDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FrameworkDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FrameworkDemo/FrameworkDemo-Bridging-Header.h";
 			};
@@ -2325,11 +2329,13 @@
 			baseConfigurationReference = 5CEA7F50353C1F94BBA57D65 /* Pods-FrameworkDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FrameworkDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FrameworkDemo/FrameworkDemo-Bridging-Header.h";
 			};
@@ -2350,6 +2356,7 @@
 				);
 				INFOPLIST_FILE = FrameworkDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrameworkDemo.app/FrameworkDemo";
 			};
@@ -2366,6 +2373,7 @@
 				);
 				INFOPLIST_FILE = FrameworkDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrameworkDemo.app/FrameworkDemo";
 			};

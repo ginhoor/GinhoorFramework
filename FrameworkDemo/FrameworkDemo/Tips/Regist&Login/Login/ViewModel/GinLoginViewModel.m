@@ -18,7 +18,7 @@
     
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         
-#warning 填写登录逻辑
+//        <#填写登录逻辑#>
             [subscriber sendNext:@""];
             [subscriber sendCompleted];
         return [RACDisposable disposableWithBlock:^{
