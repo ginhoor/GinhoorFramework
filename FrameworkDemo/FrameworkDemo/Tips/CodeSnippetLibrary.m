@@ -37,6 +37,7 @@
 
 #pragma mark- weakify
 //@weakify(<#self#>);
+//__weak typeof(self) WeakSelf = self;
 
 #pragma mark strongify
 //@strongify(<#self#>);

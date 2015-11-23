@@ -9,7 +9,12 @@
 #import "GinAddressBook.h"
 
 @interface GinAddressBook()<ABPeoplePickerNavigationControllerDelegate>
-@property (assign, nonatomic) BOOL isNeedCheckPhone;
+
+@property (weak, nonatomic) UIViewController *targetController;
+@property (strong, nonatomic) ABPeoplePickerNavigationController *pickerView;
+@property (copy, nonatomic) void(^resultHandlerBlock)(NSDictionary *data);
+@property (assign, nonatomic) BOOL isNeedCheckPhoneFormat;
+
 @end
 
 @implementation GinAddressBook
@@ -25,13 +30,13 @@
     return share;
 }
 
-+ (void)showInController:(UIViewController *)controller isNeedCheckPhone:(BOOL)isNeedCheckPhone resultHandlerBlock:(void(^)(NSDictionary *data))resultHandlerBlock;
++ (void)showInController:(UIViewController *)controller isNeedCheckPhoneFormat:(BOOL)isNeedCheckPhoneFormat handlerBlock:(void(^)(NSDictionary *data))resultHandlerBlock;
 {
     GinAddressBook *book = [GinAddressBook sharedInstance];
     
     book.resultHandlerBlock = resultHandlerBlock;
     book.targetController = controller;
-    book.isNeedCheckPhone = isNeedCheckPhone;
+    book.isNeedCheckPhoneFormat = isNeedCheckPhoneFormat;
     
     book.pickerView = [[ABPeoplePickerNavigationController alloc] init];
     book.pickerView.peoplePickerDelegate = book;
@@ -71,7 +76,7 @@
                           @"selectedPhone":selectedPhone
                           };
 
-    if (self.isNeedCheckPhone) {
+    if (self.isNeedCheckPhoneFormat) {
         if (selectedPhone && selectedPhone.length == 11) {
             if (self.resultHandlerBlock) {
                 self.resultHandlerBlock(dic);

@@ -18,8 +18,8 @@
     NSString *viewOrientation = @"Portrait";    //横屏请设置成 @"Landscape"
     NSString *launchImage = nil;
     
-    NSArray* imagesDict = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"UILaunchImages"];
-    for (NSDictionary* dict in imagesDict)
+    NSArray *imagesDict = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"UILaunchImages"];
+    for (NSDictionary *dict in imagesDict)
     {
         CGSize imageSize = CGSizeFromString(dict[@"UILaunchImageSize"]);
         

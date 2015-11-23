@@ -176,6 +176,14 @@
 		00B997ED1B9EA12C008EE8A1 /* GinLoginWithPhoneViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997EC1B9EA12C008EE8A1 /* GinLoginWithPhoneViewControllerSpec.m */; };
 		00B997EF1B9EA188008EE8A1 /* GinResetPasswordViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997EE1B9EA188008EE8A1 /* GinResetPasswordViewControllerSpec.m */; };
 		00B997F11B9EA1DE008EE8A1 /* GinResetPasswordViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997F01B9EA1DE008EE8A1 /* GinResetPasswordViewModelSpec.m */; };
+		00E2DBE81BFEA83200567662 /* GinContactsBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E2DBE71BFEA83200567662 /* GinContactsBook.m */; };
+		00E2DBE91BFEA83200567662 /* GinContactsBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E2DBE71BFEA83200567662 /* GinContactsBook.m */; };
+		00E2DBED1C02BDEE00567662 /* ContactsBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E2DBEC1C02BDEE00567662 /* ContactsBookViewController.m */; };
+		00E2DBEE1C02BDEE00567662 /* ContactsBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E2DBEC1C02BDEE00567662 /* ContactsBookViewController.m */; };
+		00E2DBF01C02BDFE00567662 /* ContactsBookViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E2DBEF1C02BDFE00567662 /* ContactsBookViewController.storyboard */; };
+		00E2DBF11C02BDFE00567662 /* ContactsBookViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E2DBEF1C02BDFE00567662 /* ContactsBookViewController.storyboard */; };
+		00E2DBF91C02E7C100567662 /* AppDelegate+Light.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E2DBF81C02E7C100567662 /* AppDelegate+Light.m */; };
+		00E2DBFA1C02E7C100567662 /* AppDelegate+Light.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E2DBF81C02E7C100567662 /* AppDelegate+Light.m */; };
 		00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5E5561B15FE340095C7A5 /* NSDate+Range.m */; };
 		00F4C99B1AE630C300B3F485 /* GinPopup+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C99A1AE630C300B3F485 /* GinPopup+Unit.m */; };
 		00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9AA1AE65BEE00B3F485 /* CheckAppVersion.m */; };
@@ -504,6 +512,13 @@
 		00B997EC1B9EA12C008EE8A1 /* GinLoginWithPhoneViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoginWithPhoneViewControllerSpec.m; sourceTree = "<group>"; };
 		00B997EE1B9EA188008EE8A1 /* GinResetPasswordViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinResetPasswordViewControllerSpec.m; sourceTree = "<group>"; };
 		00B997F01B9EA1DE008EE8A1 /* GinResetPasswordViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinResetPasswordViewModelSpec.m; sourceTree = "<group>"; };
+		00E2DBE61BFEA83200567662 /* GinContactsBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinContactsBook.h; sourceTree = "<group>"; };
+		00E2DBE71BFEA83200567662 /* GinContactsBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinContactsBook.m; sourceTree = "<group>"; };
+		00E2DBEB1C02BDEE00567662 /* ContactsBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsBookViewController.h; sourceTree = "<group>"; };
+		00E2DBEC1C02BDEE00567662 /* ContactsBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsBookViewController.m; sourceTree = "<group>"; };
+		00E2DBEF1C02BDFE00567662 /* ContactsBookViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactsBookViewController.storyboard; sourceTree = "<group>"; };
+		00E2DBF71C02E7C100567662 /* AppDelegate+Light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Light.h"; sourceTree = "<group>"; };
+		00E2DBF81C02E7C100567662 /* AppDelegate+Light.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Light.m"; sourceTree = "<group>"; };
 		00E5E5551B15FE340095C7A5 /* NSDate+Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Range.h"; sourceTree = "<group>"; };
 		00E5E5561B15FE340095C7A5 /* NSDate+Range.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Range.m"; sourceTree = "<group>"; };
 		00F4C9991AE630C300B3F485 /* GinPopup+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GinPopup+Unit.h"; sourceTree = "<group>"; };
@@ -702,6 +717,7 @@
 		0018BA431B115CA7001E52D5 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				00E2DBF21C02E6E000567662 /* LightAppDelegate */,
 				00A2EB6A1BE05B6A000329AF /* LaunchImage */,
 				0009F3861BAA693000440C74 /* Network */,
 				0079C7341B9549CC0062F574 /* Regist&Login */,
@@ -822,6 +838,8 @@
 			children = (
 				005421DB1B47DF6F0028CCE6 /* GinAddressBook.h */,
 				005421DC1B47DF6F0028CCE6 /* GinAddressBook.m */,
+				00E2DBE61BFEA83200567662 /* GinContactsBook.h */,
+				00E2DBE71BFEA83200567662 /* GinContactsBook.m */,
 			);
 			path = GinContactsBook;
 			sourceTree = "<group>";
@@ -1494,6 +1512,7 @@
 		0095FED11B71A30300BF8987 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				00E2DBEA1C02BDDD00567662 /* ContactsBook */,
 				00A3E3F41B90002E0065C3EA /* CodeDemo */,
 				0095FED21B71A30300BF8987 /* DZNEmptyDataSet */,
 				0095FED51B71A30300BF8987 /* GinSystemButton */,
@@ -1791,6 +1810,25 @@
 			path = QuickLogin;
 			sourceTree = "<group>";
 		};
+		00E2DBEA1C02BDDD00567662 /* ContactsBook */ = {
+			isa = PBXGroup;
+			children = (
+				00E2DBEB1C02BDEE00567662 /* ContactsBookViewController.h */,
+				00E2DBEC1C02BDEE00567662 /* ContactsBookViewController.m */,
+				00E2DBEF1C02BDFE00567662 /* ContactsBookViewController.storyboard */,
+			);
+			path = ContactsBook;
+			sourceTree = "<group>";
+		};
+		00E2DBF21C02E6E000567662 /* LightAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				00E2DBF71C02E7C100567662 /* AppDelegate+Light.h */,
+				00E2DBF81C02E7C100567662 /* AppDelegate+Light.m */,
+			);
+			path = LightAppDelegate;
+			sourceTree = "<group>";
+		};
 		00F4C9A31AE65B4F00B3F485 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -1871,6 +1909,7 @@
 				000B52851ADBCF8100946853 /* Frameworks */,
 				000B52861ADBCF8100946853 /* Resources */,
 				3C9567007199396D075D5D5B /* Copy Pods Resources */,
+				048D412F7BA83505B2AE62B4 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1890,6 +1929,7 @@
 				000B529E1ADBCF8100946853 /* Frameworks */,
 				000B529F1ADBCF8100946853 /* Resources */,
 				B0B6F80C16B20BB8CE222DAB /* Copy Pods Resources */,
+				CF32B9C173CE45A6C9BD5B6B /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1963,6 +2003,7 @@
 				0095FF691B71A71800BF8987 /* StoreLocationMapViewController.storyboard in Resources */,
 				0079C7501B9549CC0062F574 /* gin_random_code@3x.png in Resources */,
 				0079C7521B9549CC0062F574 /* gin_user_name@3x.png in Resources */,
+				00E2DBF01C02BDFE00567662 /* ContactsBookViewController.storyboard in Resources */,
 				005422CF1B47E9970028CCE6 /* list_indicator_arrow.png in Resources */,
 				0095FF661B71A71800BF8987 /* BaiduMapViewController.storyboard in Resources */,
 				0079C7511B9549CC0062F574 /* gin_user_name@2x.png in Resources */,
@@ -1976,12 +2017,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E2DBF11C02BDFE00567662 /* ContactsBookViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		048D412F7BA83505B2AE62B4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		25AA9662E5492A3FE89B580B /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2042,6 +2099,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameworkDemoTests/Pods-FrameworkDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CF32B9C173CE45A6C9BD5B6B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameworkDemoTests/Pods-FrameworkDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -2052,6 +2124,7 @@
 				005422BB1B47E84D0028CCE6 /* GinPullDownMenu.m in Sources */,
 				005422B41B47E84D0028CCE6 /* HZCollectionViewLayout.m in Sources */,
 				00A527F71AF7259F00219A98 /* GinWebViewController.m in Sources */,
+				00E2DBED1C02BDEE00567662 /* ContactsBookViewController.m in Sources */,
 				002F326D1B32795F00080B37 /* NSDictionary+GinUnit.m in Sources */,
 				0006040C1B9E6F9C0026D80F /* GinLoginWithPhoneViewController.m in Sources */,
 				00645F831B8AF0B700E23638 /* GUIFont.m in Sources */,
@@ -2161,6 +2234,8 @@
 				0018B9851B100883001E52D5 /* UIColor+Hex.m in Sources */,
 				008660121B816F7000B76218 /* TYSwizzle.m in Sources */,
 				0095FF611B71A71800BF8987 /* ImageCollectionCell.m in Sources */,
+				00E2DBF91C02E7C100567662 /* AppDelegate+Light.m in Sources */,
+				00E2DBE81BFEA83200567662 /* GinContactsBook.m in Sources */,
 				00B997E31B9E93C5008EE8A1 /* GinResetPasswordViewModel.m in Sources */,
 				006A93C91ADE09090093BEBE /* UIResponder+GinUnit.m in Sources */,
 				001A74D71BA9558A0016D55E /* UICollectionViewCell+GinAnimation.m in Sources */,
@@ -2193,6 +2268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E2DBFA1C02E7C100567662 /* AppDelegate+Light.m in Sources */,
+				00E2DBEE1C02BDEE00567662 /* ContactsBookViewController.m in Sources */,
 				00B997EB1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m in Sources */,
 				000603E51B9D768E0026D80F /* GinLoginViewControllerSpec.m in Sources */,
 				000603EC1B9D7AF80026D80F /* NSString+GinUnit.m in Sources */,
@@ -2200,6 +2277,7 @@
 				00B997F11B9EA1DE008EE8A1 /* GinResetPasswordViewModelSpec.m in Sources */,
 				00B997E91B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m in Sources */,
 				000603F01B9D88910026D80F /* NSString+RegExSpec.m in Sources */,
+				00E2DBE91BFEA83200567662 /* GinContactsBook.m in Sources */,
 				000603E31B9D75B80026D80F /* GinLoginViewModelSpec.m in Sources */,
 				000603D71B9C36210026D80F /* ModelTest.m in Sources */,
 				000603D51B9C36130026D80F /* Person.m in Sources */,
