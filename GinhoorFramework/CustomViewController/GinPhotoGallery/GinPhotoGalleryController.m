@@ -8,7 +8,7 @@
 
 #import "GinPhotoGalleryController.h"
 
-#import <Masonry.h>
+#import "Masonry.h"
 #import "GinPageViewController.h"
 #import "GinShowPhotoViewController.h"
 

@@ -5,6 +5,7 @@ source 'https://github.com/ginhoor/GinhoorSpecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 
+pod 'Mantle', '~> 2.0.4'
 
 target 'FrameworkDemo' do
     #pod 'GinhoorFramework', :podspec => '../GinhoorFramework.podspec'  #指定podspec文件
@@ -16,7 +17,6 @@ target 'FrameworkDemo' do
     pod 'CocoaLumberjack', '~> 2.0.1'
     pod 'UMengAnalyticsSDK', '~> 3.6.5'
     
-    pod 'Mantle', '~> 2.0.4'
     pod 'BlocksKit', '~> 2.2.5'
     pod 'Masonry', '~> 0.6.4'
     #pod 'MJRefresh', '~> 2.4.10'
@@ -30,7 +30,6 @@ target 'FrameworkDemo' do
 end
 
 target 'FrameworkDemoTests' do
-    pod 'Mantle', '~> 2.0.4'
     pod 'Kiwi', '~> 2.4.0'
 end
 

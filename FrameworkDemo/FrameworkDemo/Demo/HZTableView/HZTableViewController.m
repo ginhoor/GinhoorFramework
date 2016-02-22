@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import <Masonry.h>
+#import "Masonry.h"
 #import "HZTableViewController.h"
 #import "HZCollectionViewLayout.h"
 @interface HZTableViewController () <UICollectionViewDelegate,UICollectionViewDataSource>

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 Ginhoor. All rights reserved.
 //
 
-#import <Masonry.h>
+#import "Masonry.h"
 #import "NSObject+CoreGraphic.h"
 #import "GinScanQRCoderController.h"
 #import "Gin_Macro.h"

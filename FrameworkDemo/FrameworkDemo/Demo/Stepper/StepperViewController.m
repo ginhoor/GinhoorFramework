@@ -8,7 +8,7 @@
 
 #import "StepperViewController.h"
 #import "GinStepperView.h"
-#import <Masonry.h>
+#import "Masonry.h"
 
 @implementation StepperViewController
 

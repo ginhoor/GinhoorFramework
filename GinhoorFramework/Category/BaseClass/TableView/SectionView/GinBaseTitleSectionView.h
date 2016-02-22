@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import <Masonry.h>
+#import "Masonry.h"
 
 @interface GinBaseTitleSectionView : UITableViewHeaderFooterView
 

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import <Masonry.h>
+#import "Masonry.h"
 
 @interface IconTableCell : UITableViewCell
 @property (strong, nonatomic) UIImageView *iconImageView;

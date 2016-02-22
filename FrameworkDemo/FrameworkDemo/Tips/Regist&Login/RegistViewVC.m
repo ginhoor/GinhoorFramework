@@ -7,7 +7,7 @@
 //
 
 #import <BlocksKit+UIKit.h>
-#import <Masonry.h>
+#import "Masonry.h"
 #import "Gin_Macro.h"
 #import "RegistViewVC.h"
 

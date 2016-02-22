@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 Ginhoor. All rights reserved.
 //
 
-#import <Masonry.h>
+#import "Masonry.h"
 #import "GinPopup.h"
 
 @interface GinPopup()
