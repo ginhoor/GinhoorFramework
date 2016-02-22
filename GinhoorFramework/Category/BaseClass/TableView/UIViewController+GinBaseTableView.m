@@ -28,10 +28,10 @@
     return ^(NSArray *dataList) {
         if (dataList && dataList.count > 0) {
             self.cellDataList = dataList;
-            [self.tableView.footer resetNoMoreData];
+            [self.tableView.mj_footer resetNoMoreData];
         } else {
             self.cellDataList = @[];
-            [self.tableView.footer noticeNoMoreData];
+            [self.tableView.mj_footer endRefreshingWithNoMoreData];
         }
         [self.tableView reloadData];
         [self endTableDataRefreshing];
@@ -69,7 +69,7 @@
             [self.tableView reloadData];
             self.currentPageIndex++;
         } else {
-            [self.tableView.footer noticeNoMoreData];
+            [self.tableView.mj_footer endRefreshingWithNoMoreData];
         }
         
         [self endTableDataRefreshing];
@@ -82,11 +82,11 @@
 
 - (void)endTableDataRefreshing
 {
-    if (self.tableView.header.isRefreshing) {
-        [self.tableView.header endRefreshing];
+    if (self.tableView.mj_header.isRefreshing) {
+        [self.tableView.mj_header endRefreshing];
     }
-    if (self.tableView.footer.isRefreshing) {
-        [self.tableView.footer endRefreshing];
+    if (self.tableView.mj_footer.isRefreshing) {
+        [self.tableView.mj_footer endRefreshing];
     }
 }
 

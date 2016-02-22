@@ -17,7 +17,8 @@ target 'FrameworkDemo' do
     pod 'Mantle', '~> 2.0.4'
     pod 'BlocksKit', '~> 2.2.5'
     pod 'Masonry', '~> 0.6.1'
-    pod 'MJRefresh', '~> 2.4.10'
+    #pod 'MJRefresh', '~> 2.4.10'
+    pod 'MJRefresh', '~> 3.1.0'
     
     pod 'SDWebImage', '~> 3.7.3'
     pod 'DateTools', '~> 1.5.0'

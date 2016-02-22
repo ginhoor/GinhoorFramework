@@ -28,10 +28,10 @@
     return ^(NSArray *dataList) {
         if (dataList && dataList.count > 0) {
             self.cellDataList = dataList;
-            [self.collectionView.footer resetNoMoreData];
+            [self.collectionView.mj_footer resetNoMoreData];
         } else {
             self.cellDataList = @[];
-            [self.collectionView.footer noticeNoMoreData];
+            [self.collectionView.mj_footer noticeNoMoreData];
         }
         
         [self.collectionView reloadData];

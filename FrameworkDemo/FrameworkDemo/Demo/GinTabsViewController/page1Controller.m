@@ -7,7 +7,6 @@
 //
 
 #import "page1Controller.h"
-
 @implementation page1Controller
 
 - (void)viewDidLoad
@@ -20,6 +19,7 @@
     label.text = @"测试测试";
     label.backgroundColor = [UIColor redColor];
     label.frame = CGRectMake(100, 100, 100, 100);
+    
 }
 
 @end
