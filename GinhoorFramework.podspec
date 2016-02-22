@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   # 依赖库
   s.dependency 'BlocksKit', '~> 2.2.5' 
-  s.dependency 'Masonry', '~> 0.6.2'
+  s.dependency 'Masonry', '~> 0.6.4'
   s.dependency 'MJRefresh', '~> 3.1.0'
   s.dependency 'SDWebImage', '~> 3.7.2'
 

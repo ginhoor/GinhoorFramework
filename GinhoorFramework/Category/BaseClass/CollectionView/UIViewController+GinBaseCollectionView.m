@@ -31,7 +31,7 @@
             [self.collectionView.mj_footer resetNoMoreData];
         } else {
             self.cellDataList = @[];
-            [self.collectionView.mj_footer noticeNoMoreData];
+            [self.collectionView.mj_footer endRefreshingWithNoMoreData];
         }
         
         [self.collectionView reloadData];
@@ -69,7 +69,7 @@
             
             [self.collectionView reloadData];
         } else {
-            [self.collectionView.footer noticeNoMoreData];
+            [self.collectionView.mj_footer endRefreshingWithNoMoreData];
         }
         [self endCollectionDataRefreshing];
         
@@ -89,11 +89,11 @@
 
 - (void)endCollectionDataRefreshing
 {
-    if (self.collectionView.header.isRefreshing) {
-        [self.collectionView.header endRefreshing];
+    if (self.collectionView.mj_header.isRefreshing) {
+        [self.collectionView.mj_header endRefreshing];
     }
-    if (self.collectionView.footer.isRefreshing) {
-        [self.collectionView.footer endRefreshing];
+    if (self.collectionView.mj_footer.isRefreshing) {
+        [self.collectionView.mj_footer endRefreshing];
     }
 }
 

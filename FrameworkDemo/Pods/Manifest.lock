@@ -73,7 +73,7 @@ DEPENDENCIES:
   - DZNEmptyDataSet (~> 1.7.1)
   - Kiwi (~> 2.4.0)
   - Mantle (~> 2.0.4)
-  - Masonry (~> 0.6.1)
+  - Masonry (~> 0.6.4)
   - MJRefresh (~> 3.1.0)
   - ReactiveCocoa (~> 2.5)
   - SDWebImage (~> 3.7.3)

@@ -2,7 +2,9 @@
 
 
 source 'https://github.com/ginhoor/GinhoorSpecs.git'
-source 'https://gitcafe.com/akuandev/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+
 
 target 'FrameworkDemo' do
     #pod 'GinhoorFramework', :podspec => '../GinhoorFramework.podspec'  #指定podspec文件
@@ -16,7 +18,7 @@ target 'FrameworkDemo' do
     
     pod 'Mantle', '~> 2.0.4'
     pod 'BlocksKit', '~> 2.2.5'
-    pod 'Masonry', '~> 0.6.1'
+    pod 'Masonry', '~> 0.6.4'
     #pod 'MJRefresh', '~> 2.4.10'
     pod 'MJRefresh', '~> 3.1.0'
     
