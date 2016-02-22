@@ -7,7 +7,7 @@
 //
 
 #import "Masonry.h"
-#import <UIImageView+WebCache.h>
+#import "UIImageView+WebCache.h"
 #import "UIViewController+GinBaseCollectionView.h"
 
 #import "GalleryViewController.h"

@@ -3,7 +3,7 @@
 //  Copyright (c) 2013年 Steven. All rights reserved.
 //
 
-#import <UIAlertView+BlocksKit.h>
+#import "UIAlertView+BlocksKit.h"
 #import "GinQRCodePickerBaseController.h"
 
 @interface GinQRCodePickerBaseController ()<AVCaptureMetadataOutputObjectsDelegate>

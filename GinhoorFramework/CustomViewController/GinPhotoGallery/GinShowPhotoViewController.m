@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import <UIImageView+WebCache.h>
+#import "UIImageView+WebCache.h"
 #import "Masonry.h"
 #import "GinShowPhotoViewController.h"
 
