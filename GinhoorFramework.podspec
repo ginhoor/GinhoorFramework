@@ -76,8 +76,6 @@ Pod::Spec.new do |s|
                         'GinhoorFramework/CustomViewController/**/**/**/*.{h,m}',
                         'GinhoorFramework/CustomViewController/**/**/**/**/*.{h,m}'
 
-#ss.resources =  "GinhoorFramework/CustomViewController/**/**/*.png","GinhoorFramework/CustomViewController/**/**/**/*.png","GinhoorFramework/CustomViewController/**/**/**/**/*.png",                    "GinhoorFramework/CustomViewController/**/**/**/**/**/*.png","GinhoorFramework/CustomViewController/**/**/**/**/**/**/*.png"
-
   end
 
   s.subspec 'Debug' do |ss|

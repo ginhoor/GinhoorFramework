@@ -13,7 +13,7 @@
 #import "UIViewController+GinBaseClass.h"
 #import "UICollectionView+GinBaseClass.h"
 
-@interface UIViewController (BaseCollectionView)
+@interface UIViewController (GinBaseCollectionView)
 
 @property (strong, nonatomic) NSArray *cellDataList;
 @property (strong, nonatomic) UICollectionView *collectionView;

@@ -95,49 +95,49 @@
 
 - (void)setFinishLoadData:(void (^)(UITableView *tableView))finishLoadData
 {
-    [self setValue:finishLoadData key:@"finishLoadData" policy:OBJC_ASSOCIATION_COPY_NONATOMIC owner:self];
+    [self setValue:finishLoadData key:@"GinBaseTableFinishLoadData" policy:OBJC_ASSOCIATION_COPY_NONATOMIC owner:self];
 }
 
 - (void (^)(UITableView *))finishLoadData
 {
-    return [self getValueForKey:@"finishLoadData"];
+    return [self getValueForKey:@"GinBaseTableFinishLoadData"];
 }
 
 - (void)setCurrentPageIndex:(NSUInteger)currentPageIndex
 {
-    [self setValue:@(currentPageIndex) key:@"currentPageIndex" policy:OBJC_ASSOCIATION_ASSIGN owner:self];
+    [self setValue:@(currentPageIndex) key:@"GinBaseTableCurrentPageIndex" policy:OBJC_ASSOCIATION_ASSIGN owner:self];
 }
 - (NSUInteger)currentPageIndex
 {
-    NSNumber *number = [self getValueForKey:@"currentPageIndex"];
+    NSNumber *number = [self getValueForKey:@"GinBaseTableCurrentPageIndex"];
     return number.unsignedIntegerValue;
 }
 
 
 - (void)setStartIndex:(NSUInteger)startIndex
 {
-    [self setValue:@(startIndex) key:@"startIndex" policy:OBJC_ASSOCIATION_ASSIGN owner:self];
+    [self setValue:@(startIndex) key:@"GinBaseTableStartIndex" policy:OBJC_ASSOCIATION_ASSIGN owner:self];
     
 }
 - (NSUInteger)startIndex
 {
-    NSNumber *number = [self getValueForKey:@"startIndex"];
+    NSNumber *number = [self getValueForKey:@"GinBaseTableStartIndex"];
     return number.unsignedIntegerValue;
 }
 
 
 - (void)setTableView:(UITableView *)tableView
 {
-    [self setValue:tableView key:@"tableView" policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC owner:self];
+    [self setValue:tableView key:@"GinBaseTableView" policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC owner:self];
 }
 - (UITableView *)tableView
 {
-    UITableView *tableView = [self getValueForKey:@"tableView"];
+    UITableView *tableView = [self getValueForKey:@"GinBaseTableView"];
     
     if (!tableView) {
         tableView = [UITableView defaultTableView];
         
-        [self setValue:tableView key:@"tableView" policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC owner:self];
+        [self setValue:tableView key:@"GinBaseTableView" policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC owner:self];
     }
     return tableView;
 }
@@ -145,11 +145,11 @@
 
 - (void)setCellDataList:(NSArray *)cellDataList
 {
-    [self setValue:cellDataList key:@"cellDataList" policy:OBJC_ASSOCIATION_COPY_NONATOMIC owner:self];
+    [self setValue:cellDataList key:@"GinBaseTableCellDataList" policy:OBJC_ASSOCIATION_COPY_NONATOMIC owner:self];
 }
 - (NSArray *)cellDataList
 {
-    return [self getValueForKey:@"cellDataList"];
+    return [self getValueForKey:@"GinBaseTableCellDataList"];
 }
 
 @end

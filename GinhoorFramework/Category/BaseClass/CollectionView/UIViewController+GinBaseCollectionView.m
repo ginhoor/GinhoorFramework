@@ -103,61 +103,61 @@
 
 - (void)setFinishLoadData:(void (^)(UICollectionView *collectionView))finishLoadData
 {
-    [self setValue:finishLoadData key:@"finishLoadData" policy:OBJC_ASSOCIATION_COPY_NONATOMIC owner:self];
+    [self setValue:finishLoadData key:@"GinBaseCollectionFinishLoadData" policy:OBJC_ASSOCIATION_COPY_NONATOMIC owner:self];
 }
 
 - (void (^)(UICollectionView *))finishLoadData
 {
-    return [self getValueForKey:@"finishLoadData"];
+    return [self getValueForKey:@"GinBaseCollectionFinishLoadData"];
 }
 
 - (void)setCurrentPageIndex:(NSUInteger)currentPageIndex
 {
-    [self setValue:@(currentPageIndex) key:@"currentPageIndex" policy:OBJC_ASSOCIATION_ASSIGN owner:self];
+    [self setValue:@(currentPageIndex) key:@"GinBaseCollectionCurrentPageIndex" policy:OBJC_ASSOCIATION_ASSIGN owner:self];
 }
 - (NSUInteger)currentPageIndex
 {
-    NSNumber *number = [self getValueForKey:@"currentPageIndex"];
+    NSNumber *number = [self getValueForKey:@"GinBaseCollectionCurrentPageIndex"];
     return number.unsignedIntegerValue;
 }
 
 
 - (void)setStartIndex:(NSUInteger)startIndex
 {
-    [self setValue:@(startIndex) key:@"startIndex" policy:OBJC_ASSOCIATION_ASSIGN owner:self];
+    [self setValue:@(startIndex) key:@"GinBaseCollectionStartIndex" policy:OBJC_ASSOCIATION_ASSIGN owner:self];
     
 }
 - (NSUInteger)startIndex
 {
-    NSNumber *number = [self getValueForKey:@"startIndex"];
+    NSNumber *number = [self getValueForKey:@"GinBaseCollectionStartIndex"];
     return number.unsignedIntegerValue;
 }
 
 
 - (void)setCollectionView:(UICollectionView *)collectionView
 {
-    [self setValue:collectionView key:@"collectionView" policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC owner:self];
+    [self setValue:collectionView key:@"GinBaseCollectionView" policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC owner:self];
 }
 
 - (UICollectionView *)collectionView
 {
-    UICollectionView *collectionView = [self getValueForKey:@"collectionView"];
+    UICollectionView *collectionView = [self getValueForKey:@"GinBaseCollectionView"];
     
     if (!collectionView) {
         collectionView = [UICollectionView defaultWithItemSize:CGSizeMake(1, 1)];
-        [self setValue:collectionView key:@"collectionView" policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC owner:self];
+        [self setValue:collectionView key:@"GinBaseCollectionView" policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC owner:self];
     }
     return collectionView;
 }
 
 - (void)setCellDataList:(NSArray *)cellDataList
 {
-    [self setValue:cellDataList key:@"cellDataList" policy:OBJC_ASSOCIATION_COPY_NONATOMIC owner:self];
+    [self setValue:cellDataList key:@"GinBaseCollectionCellDataList" policy:OBJC_ASSOCIATION_COPY_NONATOMIC owner:self];
 }
 
 - (NSArray *)cellDataList
 {
-    return [self getValueForKey:@"cellDataList"];
+    return [self getValueForKey:@"GinBaseCollectionCellDataList"];
 }
 
 
