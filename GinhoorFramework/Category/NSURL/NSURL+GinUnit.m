@@ -13,12 +13,15 @@
 - (NSDictionary *)queryDictionary
 {
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    for (NSString *param in [self.absoluteString componentsSeparatedByString:@"&"]) {
+    NSString *urlString = [self query];
+    for (NSString *param in [urlString componentsSeparatedByString:@"&"]) {
         NSArray *elts = [param componentsSeparatedByString:@"="];
         if([elts count] < 2) continue;
-        [params setObject:[elts objectAtIndex:1] forKey:[elts objectAtIndex:0]];
+        [params setObject:[elts lastObject] forKey:[elts firstObject]];
     }
+    
     return params;
+
 }
 
 @end
