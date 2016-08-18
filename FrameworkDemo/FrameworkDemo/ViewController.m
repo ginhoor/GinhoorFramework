@@ -8,24 +8,18 @@
 
 #import "ViewController.h"
 #import "UIViewController+GinBaseTableView.h"
-#import "GinSystemButtonViewController.h"
-#import "HZTableViewController.h"
-#import "TabsViewController.h"
 
-#import "demo4Gallery.h"
-#import "TableViewController.h"
-
-#import "GalleryViewController.h"
-#import "PullDownMenuViewController.h"
-
-#import "EmptyTableViewController.h"
-#import "StepperViewController.h"
-
-#import "NSString+formatContentString.h"
-#import "UIAlertView+GinUnit.h"
-#import "CodeDemo.h"
-#import "RegistViewVC.h"
-#import "ContactsBookViewController.h"
+#import "AppRouter+ContactsBook.h"
+#import "AppRouter+TabsViewController.h"
+#import "AppRouter+DemoCode.h"
+#import "AppRouter+PullDownMenu.h"
+#import "AppRouter+EmptyTableView.h"
+#import "AppRouter+PhotoGallery.h"
+#import "AppRouter+TableViewController.h"
+#import "AppRouter+StepperView.h"
+#import "AppRouter+HZTableVC.h"
+#import "AppRouter+GinSystemButton.h"
+#import "AppRouter+Login.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -75,46 +69,50 @@
     
     switch (indexPath.row) {
         case 0:
-            [self.navigationController pushViewController:[GinSystemButtonViewController controller] animated:YES];
+            [self.navigationController pushViewController:[[AppRouter sharedInstance] systemButtonViewController] animated:YES];
             break;
+            
         case 1:
-            [self.navigationController pushViewController:[HZTableViewController controller] animated:YES];
+            [self.navigationController pushViewController:[[AppRouter sharedInstance] HZTableViewController] animated:YES];
             break;
+            
         case 2:
-            [self.navigationController pushViewController:[[TabsViewController alloc]init] animated:YES];
+            [self.navigationController pushViewController:[[AppRouter sharedInstance] tabsViewController] animated:YES];
             break;
+            
         case 3:
-            [self.navigationController pushViewController:[[demo4Gallery alloc]init] animated:YES];
+            [self.navigationController pushViewController:[[AppRouter sharedInstance] demo4GalleryController] animated:YES];
             break;
+            
         case 4:
-            [self.navigationController pushViewController:[[PullDownMenuViewController alloc] init] animated:YES];
+            [self.navigationController pushViewController:[[AppRouter sharedInstance] pullDownMenuController] animated:YES];
             break;
+            
         case 5:
-            [self.navigationController pushViewController:[[EmptyTableViewController alloc] init] animated:YES];
+            [self.navigationController pushViewController:[[AppRouter sharedInstance] emptyTableViewController] animated:YES];
             break;
             
         case 6:
-            [self.navigationController pushViewController:[[StepperViewController alloc] init] animated:YES];
+            [self.navigationController pushViewController:[[AppRouter sharedInstance] stepperViewController] animated:YES];
             break;
             
         case 7:
-            [self.navigationController pushViewController:[[TableViewController alloc] init] animated:YES];
+            [self.navigationController pushViewController:[[AppRouter sharedInstance] tableViewController] animated:YES];
             break;
         case 8:
-            [self.navigationController pushViewController:[[CodeDemo alloc] init] animated:YES];
+            [self.navigationController pushViewController:[[AppRouter sharedInstance] demoCodeController] animated:YES];
             break;
             
         case 9:
-            [self.navigationController pushViewController:[[RegistViewVC alloc]init] animated:YES];
+            [self.navigationController pushViewController:[[AppRouter sharedInstance] registViewController] animated:YES];
             break;
             
         case 10:
-            [self.navigationController pushViewController:[ContactsBookViewController controller] animated:YES];
+            [self.navigationController pushViewController:[[AppRouter sharedInstance] contactsBookController] animated:YES];
             break;
             
         default:
             break;
-            
 
     }
     

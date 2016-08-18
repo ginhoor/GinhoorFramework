@@ -11,10 +11,7 @@
 #import "Gin_Macro.h"
 #import "RegistViewVC.h"
 
-#import "GinLoginViewController.h"
-#import "GinQuickLoginViewController.h"
-#import "GinResetPasswordViewController.h"
-#import "GinFindPasswordViewController.h"
+#import "AppRouter+Login.h"
 
 @interface RegistViewVC()
 
@@ -44,19 +41,15 @@
     __weak RegistViewVC *weak = self;
     
     [self addButton:@"登录" index:0 tap:^{
-        [weak.navigationController pushViewController:[[GinLoginViewController alloc] init] animated:YES];
+        [weak.navigationController pushViewController:[[AppRouter sharedInstance] longinViewController] animated:YES];
     }];
     
     [self addButton:@"快速登录" index:1 tap:^{
-        [weak.navigationController pushViewController:[[GinQuickLoginViewController alloc] init] animated:YES];
+        [weak.navigationController pushViewController:[[AppRouter sharedInstance] quickLoginViewController] animated:YES];
     }];
     
     [self addButton:@"找回密码" index:2 tap:^{
-        
-        GinFindPasswordViewController *vc = [[GinFindPasswordViewController alloc] init];
-        
-        [weak.navigationController pushViewController:vc animated:YES];
-
+        [weak.navigationController pushViewController:[[AppRouter sharedInstance] findPasswordViewController] animated:YES];
     }];
     
 }
