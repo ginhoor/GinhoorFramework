@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+// 使用 HandyFrame 替代
+
 @interface UIView (GinCGRect)
 
 - (CGFloat)width;

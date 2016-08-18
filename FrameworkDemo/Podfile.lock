@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Aspects (1.4.1)
   - Baidu-Maps-iOS-SDK (2.6.0)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
@@ -66,6 +67,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.0)
+  - Aspects (~> 1.4.1)
   - Baidu-Maps-iOS-SDK (~> 2.6.0)
   - BlocksKit (~> 2.2.5)
   - CocoaLumberjack (~> 2.0.1)
@@ -81,6 +83,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   Baidu-Maps-iOS-SDK: 260447c2270b44470d7c0d49a7f1a154b4703973
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
@@ -94,4 +97,6 @@ SPEC CHECKSUMS:
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   UMengAnalyticsSDK: 995da0b94da156de77da7ec6666b3801f3db20a4
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 438c8f3b5091a4be6ec58436ce48bccf1c40a5b5
+
+COCOAPODS: 1.0.1
