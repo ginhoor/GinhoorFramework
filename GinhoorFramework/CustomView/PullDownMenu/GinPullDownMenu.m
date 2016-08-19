@@ -62,7 +62,7 @@
     
     [self.menuItems enumerateObjectsUsingBlock:^(GinPullDownMenuItem *item, NSUInteger idx, BOOL *stop) {
         
-        [item mas_makeConstraints:^(MASConstraintMaker *make) {
+        [item mas_updateConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self);
             if (!lastItemSeparator) {
                 make.left.equalTo(self);
@@ -76,7 +76,7 @@
         if (self.itemSeparators.count > 0 && idx <= self.itemSeparators.count-1) {
             UIView *itemSeparator = self.itemSeparators[idx];
             
-            [itemSeparator mas_makeConstraints:^(MASConstraintMaker *make) {
+            [itemSeparator mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.top.equalTo(item).offset(separatorOffset);
                 make.left.equalTo(item.mas_right);
                 make.bottom.equalTo(item).offset(-separatorOffset);
@@ -236,17 +236,17 @@
             make.bottom.equalTo(self.backgroundControl.superview);
         }];
         
-        [self.backgroundControl layoutIfNeeded];
+        [self.backgroundControl.superview layoutIfNeeded];
         
         [UIView animateWithDuration:0.2 animations:^{
             self.backgroundControl.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.3];
-            [self.backgroundControl layoutIfNeeded];
+            [self.backgroundControl.superview layoutIfNeeded];
         }];
         
     } else {
         [UIView animateWithDuration:0.2 animations:^{
             self.backgroundControl.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
-            [self.backgroundControl layoutIfNeeded];
+            [self.backgroundControl.superview layoutIfNeeded];
         } completion:^(BOOL finished) {
             [self.backgroundControl removeFromSuperview];
         }];
@@ -271,20 +271,20 @@
             make.right.equalTo(self);
             make.height.offset(tableViewHeight);
         }];
-        [self.tableView layoutIfNeeded];
+        [self.tableView.superview layoutIfNeeded];
         
         [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
             make.height.offset(0);
         }];
         
-        [self.tableView layoutIfNeeded];
+        [self.tableView.superview layoutIfNeeded];
         
         [UIView animateWithDuration:0.2 animations:^{
             [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.height.offset(tableViewHeight);
             }];
             
-            [self.tableView layoutIfNeeded];
+            [self.tableView.superview layoutIfNeeded];
         } completion:^(BOOL finished) {
             if (completedBlock) {
                 completedBlock();
@@ -294,7 +294,7 @@
             [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.height.offset(0);
             }];
-            [self.tableView layoutIfNeeded];
+            [self.tableView.superview layoutIfNeeded];
         } completion:^(BOOL finished) {
             [self.tableView removeFromSuperview];
             if (completedBlock) {

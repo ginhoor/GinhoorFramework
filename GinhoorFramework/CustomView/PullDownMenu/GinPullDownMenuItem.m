@@ -45,23 +45,37 @@
     
     self.indicatorColor = [UIColor lightGrayColor];
     
+    [self setConstraints];
 }
 
-- (void)updateConstraints
+// 设置 view的初次约束
+- (void)setConstraints
 {
     [self.control mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self);
     }];
     
+    [self.indicator mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.titleLabel.mas_right).offset(3);
+        make.centerY.equalTo(self.titleLabel);
+        make.size.sizeOffset(CGSizeMake(8, 5));
+    }];
+}
+
+
+
+- (void)updateConstraints
+{
+    
     if (self.type == GinPullDownMenuItemTypeNormal) {
-        [self.indicator mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.indicator mas_updateConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.titleLabel.mas_right).offset(3);
             make.centerY.equalTo(self.titleLabel);
             make.size.sizeOffset(CGSizeMake(8, 5));
         }];
     } else {
         self.indicator.hidden = YES;
-        [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
             
             if (CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) {
                 make.left.offset(20);
@@ -74,7 +88,7 @@
             make.bottom.offset(0);
         }];
         
-        [self.arrowImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.arrowImageView mas_updateConstraints:^(MASConstraintMaker *make) {
             if (CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) {
                 make.right.offset(-5);
             } else {
@@ -84,9 +98,6 @@
             make.size.sizeOffset(CGSizeMake(44, 44));
         }];
     }
-    
-    
-    
     
     [super updateConstraints];
 }
