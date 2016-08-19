@@ -1,54 +1,58 @@
 Pod::Spec.new do |s|
-  s.name         = "GinhoorFramework"
-  s.version      = "1.4.4" # 被应用次数.大版本号.开发版本号
-  s.summary      = "This is one of my personal library."
-  s.requires_arc = true
+    s.name         = "GinhoorFramework"
+    s.version      = "1.4.4" # 被应用次数.大版本号.开发版本号
+    s.summary      = "This is one of my personal library."
+    s.requires_arc = true
 
-  s.homepage     = "https://github.com/ginhoor/GinhoorFramework"
-  s.license      = "MIT"
-  s.author       = { "JunhuaShao" => "ginhoor@gmail.com" }
+    s.homepage     = "https://github.com/ginhoor/GinhoorFramework"
+    s.license      = "MIT"
+    s.author       = { "JunhuaShao" => "ginhoor@gmail.com" }
 
-  s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/ginhoor/GinhoorFramework.git", :tag => s.version.to_s }
-  s.public_header_files = 'GinhoorFramework/*.h'
-  s.source_files  = "GinhoorFramework/GinhoorFramework.h"
+    s.platform     = :ios, "7.0"
+    s.source       = { :git => "https://github.com/ginhoor/GinhoorFramework.git", :tag => s.version.to_s }
+    s.public_header_files = 'GinhoorFramework/*.h'
+    s.source_files  = "GinhoorFramework/GinhoorFramework.h"
 
-
-  # s.resource  = "icon.png"
-  # s.resources = "GinFramework/Framework/**/*.png"
-  # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-  s.frameworks = "Foundation", "CoreGraphics", "UIKit", "AddressBook", "AddressBookUI"
-  # s.library   = "libxml2"
-  # s.libraries = "iconv", "xml2"
+    # 用来指定外部的静态库
+    #s.vendored_libraries = ''
 
 
-  # 依赖库
-  s.dependency 'BlocksKit', '~> 2.2.5' 
-  s.dependency 'Masonry', '~> 0.6.4'
-  s.dependency 'MJRefresh', '~> 3.1.0'
-  s.dependency 'SDWebImage', '~> 3.7.2'
+    # s.resource  = "icon.png"
+    # s.resources = "GinFramework/Framework/**/*.png"
+    # 表示需要保留的文件路径
+    # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
-#s.dependency 'Mantle', '~> 1.5.4'
-#s.dependency 'AFNetworking', '~> 2.5.1'
-#s.dependency 'CocoaLumberjack', '~> 2.0.0'
-#s.dependency 'libextobjc', '~> 0.4.1'
+    s.frameworks = "Foundation", "CoreGraphics", "UIKit", "AddressBook", "AddressBookUI"
+    # s.library   = "libxml2"
+    # s.libraries = "iconv", "xml2"
 
-  s.subspec 'GinSysInfo' do |ss|
+
+    # 依赖库
+    s.dependency 'BlocksKit', '~> 2.2.5' 
+    s.dependency 'Masonry', '~> 0.6.4'
+    s.dependency 'MJRefresh', '~> 3.1.0'
+    s.dependency 'SDWebImage', '~> 3.7.2'
+
+    #s.dependency 'Mantle', '~> 1.5.4'
+    #s.dependency 'AFNetworking', '~> 2.5.1'
+    #s.dependency 'CocoaLumberjack', '~> 2.0.0'
+    #s.dependency 'libextobjc', '~> 0.4.1'
+
+    s.subspec 'GinSysInfo' do |ss|
     ss.source_files = 'GinhoorFramework/GinSysInfo/*.{h,m}',
                       'GinhoorFramework/GinSysInfo/**/*.{h,m}',
                       'GinhoorFramework/GinSysInfo/**/**/*.{h,m}'
-  end
+    end
 
-  s.subspec 'Category' do |ss|
+    s.subspec 'Category' do |ss|
     ss.dependency 'GinhoorFramework/GinSysInfo'
     ss.source_files = 'GinhoorFramework/Category/**/*.{h,m}',
                       'GinhoorFramework/Category/**/**/*.{h,m}',
                       'GinhoorFramework/Category/**/**/**/*.{h,m}',
                       'GinhoorFramework/Category/**/**/**/**/*.{h,m}'
-  end
+    end
 
-  s.subspec 'CustomView' do |ss|
+    s.subspec 'CustomView' do |ss|
     ss.dependency 'GinhoorFramework/GinSysInfo'
     ss.dependency 'GinhoorFramework/Category'
     ss.source_files =   'GinhoorFramework/CustomView/**/*.{h,m}',
@@ -65,9 +69,9 @@ Pod::Spec.new do |s|
                     "GinhoorFramework/CustomView/**/**/**/**/**/*.png",
                     "GinhoorFramework/CustomView/**/**/**/**/**/**/*.png"
 
-  end
+    end
 
-  s.subspec 'CustomViewController' do |ss|
+    s.subspec 'CustomViewController' do |ss|
     ss.dependency 'GinhoorFramework/GinSysInfo'
     ss.dependency 'GinhoorFramework/Category'
     ss.dependency 'GinhoorFramework/CustomView'
@@ -76,21 +80,21 @@ Pod::Spec.new do |s|
                         'GinhoorFramework/CustomViewController/**/**/**/*.{h,m}',
                         'GinhoorFramework/CustomViewController/**/**/**/**/*.{h,m}'
 
-  end
+    end
 
-  s.subspec 'Debug' do |ss|
+    s.subspec 'Debug' do |ss|
     ss.source_files = 'GinhoorFramework/Debug/*.{h,m}',
                       'GinhoorFramework/Debug/**/*.{h,m}',
                       'GinhoorFramework/Debug/**/**/*.{h,m}'
-  end
+    end
 
-  s.subspec 'Tools' do |ss|
+    s.subspec 'Tools' do |ss|
     ss.dependency 'GinhoorFramework/GinSysInfo'
     ss.dependency 'GinhoorFramework/Category'
     ss.dependency 'GinhoorFramework/CustomView'
     ss.dependency 'GinhoorFramework/CustomViewController'
     ss.source_files = 'GinhoorFramework/Tools/**/*.{h,m}',
                       'GinhoorFramework/Tools/**/**/*.{h,m}'
-  end
+    end
 
 end

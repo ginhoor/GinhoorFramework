@@ -1,24 +1,18 @@
 PODS:
-  - AFNetworking (2.6.3):
-    - AFNetworking/NSURLConnection (= 2.6.3)
-    - AFNetworking/NSURLSession (= 2.6.3)
-    - AFNetworking/Reachability (= 2.6.3)
-    - AFNetworking/Security (= 2.6.3)
-    - AFNetworking/Serialization (= 2.6.3)
-    - AFNetworking/UIKit (= 2.6.3)
-  - AFNetworking/NSURLConnection (2.6.3):
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.3)
-  - AFNetworking/Security (2.6.3)
-  - AFNetworking/Serialization (2.6.3)
-  - AFNetworking/UIKit (2.6.3):
-    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Aspects (1.4.1)
   - Baidu-Maps-iOS-SDK (2.6.0)
@@ -48,11 +42,11 @@ PODS:
   - DateTools (1.5.0)
   - DZNEmptyDataSet (1.7.3)
   - Kiwi (2.4.0)
-  - Mantle (2.0.6):
-    - Mantle/extobjc (= 2.0.6)
-  - Mantle/extobjc (2.0.6)
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
   - Masonry (0.6.4)
-  - MJRefresh (3.1.0)
+  - MJRefresh (3.1.12)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -60,13 +54,13 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
-  - SDWebImage (3.7.5):
-    - SDWebImage/Core (= 3.7.5)
-  - SDWebImage/Core (3.7.5)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
   - UMengAnalyticsSDK (3.6.7.0)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.6.0)
+  - AFNetworking (~> 3.1.0)
   - Aspects (~> 1.4.1)
   - Baidu-Maps-iOS-SDK (~> 2.6.0)
   - BlocksKit (~> 2.2.5)
@@ -82,7 +76,7 @@ DEPENDENCIES:
   - UMengAnalyticsSDK (~> 3.6.5)
 
 SPEC CHECKSUMS:
-  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   Baidu-Maps-iOS-SDK: 260447c2270b44470d7c0d49a7f1a154b4703973
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
@@ -90,13 +84,13 @@ SPEC CHECKSUMS:
   DateTools: b93a2c2017747329c6077c7d7e8a75106e23d0d7
   DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
-  Mantle: 299966b00759634931699f69cb6a30b9239b944d
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
-  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
-  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   UMengAnalyticsSDK: 995da0b94da156de77da7ec6666b3801f3db20a4
 
-PODFILE CHECKSUM: 438c8f3b5091a4be6ec58436ce48bccf1c40a5b5
+PODFILE CHECKSUM: f5e16e38943960d8a995ecaf59743df10da0ec63
 
 COCOAPODS: 1.0.1

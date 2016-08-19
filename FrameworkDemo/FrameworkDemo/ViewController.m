@@ -20,6 +20,7 @@
 #import "AppRouter+HZTableVC.h"
 #import "AppRouter+GinSystemButton.h"
 #import "AppRouter+Login.h"
+#import "AppRouter+Networking.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -44,7 +45,7 @@
         tableView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
     }];
     
-    self.cellDataList = @[@"自定义按钮",@"水平的TableView",@"带Tabs的PageContrller",@"相册浏览",@"下拉菜单",@"列表空数据页面",@"步进器",@"自定义 上&下拉刷新",@"代码测试",@"自定义登录界面",@"联系人导入"];
+    self.cellDataList = @[@"自定义按钮",@"水平的TableView",@"带Tabs的PageContrller",@"相册浏览",@"下拉菜单",@"列表空数据页面",@"步进器",@"自定义 上&下拉刷新",@"代码测试",@"自定义登录界面",@"联系人导入",@"AFNetworkingDemo"];
     [self.tableView reloadData];
     
     [self.view addSubview:self.tableView];
@@ -110,7 +111,9 @@
         case 10:
             [self.navigationController pushViewController:[[AppRouter sharedInstance] contactsBookController] animated:YES];
             break;
-            
+        case 11:
+            [self.navigationController pushViewController:[[AppRouter sharedInstance] networkingController] animated:YES];
+            break;
         default:
             break;
 

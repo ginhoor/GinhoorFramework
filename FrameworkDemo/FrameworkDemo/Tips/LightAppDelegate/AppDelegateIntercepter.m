@@ -29,7 +29,7 @@
 + (void)load
 {
     [super load];
-    [AppDelegateIntercepter sharedInstance];
+//    [AppDelegateIntercepter sharedInstance];
 }
 
 

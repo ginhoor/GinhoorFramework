@@ -10,6 +10,11 @@
 
 @implementation CodeSnippetLibrary
 
+#pragma - Delegate & DataSource
+#pragma - Private Method
+#pragma - Getter & Setter
+#pragma - Life Cycle
+#pragma - Initialize
 #pragma mark- initWithSetup
 
 //- (instancetype)init
