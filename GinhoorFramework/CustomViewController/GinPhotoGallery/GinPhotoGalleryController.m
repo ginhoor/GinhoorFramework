@@ -42,13 +42,12 @@
 
     [self.view addSubview:self.numLabel];
     
-    [self updateViewConstraints];
+    [self setConstraints];
 }
 
-- (void)updateViewConstraints
+// 设置 view 的初次约束
+- (void)setConstraints
 {
-    [super updateViewConstraints];
-    
     [self.numLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.offset(20);
         make.left.offset(0);

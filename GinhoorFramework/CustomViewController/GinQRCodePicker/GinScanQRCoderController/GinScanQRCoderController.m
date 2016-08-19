@@ -83,14 +83,12 @@
         }];
     }];
     
-    [self.view updateConstraintsIfNeeded];
+    [self setConstraints];
 }
 
-
-- (void)updateViewConstraints
+// 设置 view 的初次约束
+- (void)setConstraints
 {
-    [super updateViewConstraints];
-    
     [self.maskImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
@@ -107,7 +105,7 @@
         make.right.equalTo(self.view);
         make.height.offset(60);
     }];
-    
+
 }
 
 - (UIImageView *)maskImageView

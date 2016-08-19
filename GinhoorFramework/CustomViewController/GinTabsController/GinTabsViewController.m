@@ -70,13 +70,12 @@
     [self addChildViewController:self.pageController];
     [self.view insertSubview:self.pageController.view belowSubview:self.segmentedControl];
     [self.pageController didMoveToParentViewController:self];
+    [self setConstraints];
 }
 
-
-- (void)updateViewConstraints
+// 设置 view 的初次约束
+- (void)setConstraints
 {
-    [super updateViewConstraints];
-    
     [self.segmentedControl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view);
         make.left.equalTo(self.view);

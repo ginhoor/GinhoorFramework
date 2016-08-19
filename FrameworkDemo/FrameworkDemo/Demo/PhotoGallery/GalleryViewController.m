@@ -72,13 +72,12 @@
     }];
     [self.view addSubview:self.collectionView];
     
-    [self updateViewConstraints];
+    [self setConstraints];
 }
 
-- (void)updateViewConstraints
+// 设置 view 的初次约束
+- (void)setConstraints
 {
-    [super updateViewConstraints];
-    
     [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.offset(0);
     }];

@@ -42,10 +42,12 @@
     [self addSubview:self.tableView];
     [self addSubview:self.tableViewIndex];
     [self addSubview:self.flotageLabel];
+    [self setConstraints];
 }
-- (void)updateConstraints
+
+// 设置 view 的初次约束
+- (void)setConstraints
 {
-    [super updateConstraints];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.offset(0);
     }];
@@ -60,7 +62,7 @@
     [self.flotageLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self);
         make.size.sizeOffset(CGSizeMake(64, 64));
-    }];    
+    }];
 }
 
 - (UITableView *)tableView

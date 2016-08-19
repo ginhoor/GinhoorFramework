@@ -37,17 +37,17 @@
         });
     }];
 
-    [self.view setNeedsUpdateConstraints];
+    [self setConstraints];
+    
 }
 
-- (void)updateViewConstraints
+// 设置 view 的初次约束
+- (void)setConstraints
 {
-    [super updateViewConstraints];
     [self.table mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
 }
-
 
 - (UITableView *)table
 {

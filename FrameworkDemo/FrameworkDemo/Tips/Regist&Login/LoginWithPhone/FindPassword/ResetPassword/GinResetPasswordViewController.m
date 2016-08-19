@@ -35,7 +35,7 @@
     
     [self.view addSubview:self.separator1];
     
-    [self.view updateConstraintsIfNeeded];
+    [self setConstraints];
 
     RAC(self.resetPasswordVM, password) = self.password.rac_textSignal;
     RAC(self.resetPasswordVM, checkPassword) = self.checkPassword.rac_textSignal;
@@ -55,10 +55,10 @@
     }];
 }
 
-- (void)updateViewConstraints
+
+// 设置 view 的初次约束
+- (void)setConstraints
 {
-    [super updateViewConstraints];
-    
     [self.password mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.offset(100);
         make.left.offset(20);
@@ -85,6 +85,7 @@
         make.centerX.offset(0);
         make.size.sizeOffset(CGSizeMake(200, 44));
     }];
+
 }
 
 - (GinResetPasswordViewModel *)resetPasswordVM

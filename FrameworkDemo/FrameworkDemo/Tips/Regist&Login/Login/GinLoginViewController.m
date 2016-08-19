@@ -40,8 +40,7 @@
     
     [self.view addSubview:self.separator1];
     
-    [self.view updateConstraintsIfNeeded];
-    
+    [self setConstraints];
     
     RAC(self.loginVM, username) = self.username.rac_textSignal;
     RAC(self.loginVM, password) = self.password.rac_textSignal;
@@ -49,10 +48,9 @@
     
 }
 
-- (void)updateViewConstraints
+// 设置 view 的初次约束
+- (void)setConstraints
 {
-    [super updateViewConstraints];
-    
     [self.username mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.offset(100);
         make.left.offset(20);

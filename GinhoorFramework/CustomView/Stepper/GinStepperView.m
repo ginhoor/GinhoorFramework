@@ -45,12 +45,13 @@
     [self addSubview:self.backgroundControl];
     [self addSubview:self.decrease];
     [self addSubview:self.increase];
-    [self addSubview:self.valueLabel];    
+    [self addSubview:self.valueLabel];
+    [self setConstraints];
 }
 
-- (void)updateConstraints
+// 设置 view 的初次约束
+- (void)setConstraints
 {
-
     [self.backgroundControl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self);
     }];
@@ -74,10 +75,7 @@
         make.bottom.equalTo(self);
         make.width.offset(30);
     }];
-    
-    [super updateConstraints];
 }
-
 
 - (void)layoutSubviews
 {

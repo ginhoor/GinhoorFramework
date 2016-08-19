@@ -7,6 +7,7 @@
 //
 
 #import "ExtendMenu.h"
+#import "Masonry.h"
 
 @interface ExtendMenuCell()
 @property (assign, nonatomic) CGFloat cellWidth;
@@ -37,16 +38,15 @@
     self.cellWidth = 0;
     [self.contentView addSubview:self.icon];
     
-    [self updateConstraintsIfNeeded];
+    [self setConstraints];
 }
 
-- (void)updateConstraints
+// 设置 view 的初次约束
+- (void)setConstraints
 {
     [self.icon mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.contentView);
     }];
-    
-    [super updateConstraints];
 }
 
 - (void)layoutSubviews

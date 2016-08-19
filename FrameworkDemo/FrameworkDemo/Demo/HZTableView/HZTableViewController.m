@@ -28,11 +28,13 @@
     self.collectionView.dataSource = self;
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([UICollectionViewCell class])];
     [self.view addSubview:self.collectionView];
-}
-- (void)updateViewConstraints
-{
-    [super updateViewConstraints];
     
+    [self setConstraints];
+}
+
+// 设置 view 的初次约束
+- (void)setConstraints
+{
     [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view).offset(100);
         make.left.equalTo(self.view);
@@ -40,6 +42,7 @@
         make.height.offset(200);
     }];
 }
+
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {

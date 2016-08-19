@@ -34,13 +34,12 @@
     [self addChildViewController:self.tabsController];
     [self.tabsController didMoveToParentViewController:self];
 
-    [self.view updateConstraintsIfNeeded];
+    [self setConstraints];
 }
 
-- (void)updateViewConstraints
+// 设置 view 的初次约束
+- (void)setConstraints
 {
-    [super updateViewConstraints];
-    
     [self.tabsController.view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.offset(0);
         make.left.offset(0);
@@ -48,7 +47,6 @@
         make.bottom.offset(0);
     }];
 }
-
 
 - (GinTabsViewController *)tabsController
 {

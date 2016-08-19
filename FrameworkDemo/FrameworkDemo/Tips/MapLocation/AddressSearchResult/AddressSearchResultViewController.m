@@ -63,7 +63,18 @@
         [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
     }];
     
-    [self.view updateConstraintsIfNeeded];
+    [self setConstraints];
+}
+
+// 设置 view 的初次约束
+- (void)setConstraints
+{
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.offset(64);
+        make.left.offset(0);
+        make.right.offset(0);
+        make.bottom.offset(0);
+    }];
 }
 
 
@@ -83,13 +94,7 @@
 {
     [super updateViewConstraints];
     
-    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.offset(64);
-        make.left.offset(0);
-        make.right.offset(0);
-        make.bottom.offset(0);
-    }];
-}
+    }
 
 - (UINavigationBar *)navBar
 {

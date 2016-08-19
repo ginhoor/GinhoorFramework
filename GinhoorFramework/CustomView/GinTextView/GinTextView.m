@@ -40,13 +40,6 @@
     [self addSubview:self.placeholder];
     self.placeholder.textColor = [UIColor colorWithRed:0.800f green:0.800f blue:0.800f alpha:1.000f];
     self.delegate = self;
-    
-    [self updateConstraintsIfNeeded];
-}
-
-- (void)updateConstraints
-{
-    [super updateConstraints];
 }
 
 - (void)setFont:(UIFont *)font
@@ -69,9 +62,7 @@
     
     self.placeholder.frame = CGRectMake(contentInset.left, contentInset.top, 0, 0);
     [self.placeholder sizeToFit];
-    
 }
-
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
 {

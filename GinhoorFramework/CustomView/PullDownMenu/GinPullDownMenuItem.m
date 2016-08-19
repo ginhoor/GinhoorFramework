@@ -48,7 +48,7 @@
     [self setConstraints];
 }
 
-// 设置 view的初次约束
+// 设置 view 的初次约束
 - (void)setConstraints
 {
     [self.control mas_makeConstraints:^(MASConstraintMaker *make) {

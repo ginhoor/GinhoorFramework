@@ -7,6 +7,7 @@
 //
 
 #import "GinExtendMenu.h"
+#import "Masonry.h"
 
 @interface GinExtendMenu()
 
@@ -42,13 +43,12 @@
     [self addSubview:self.extendButton];
     [self addSubview:self.contentView];
     
-    [self updateConstraintsIfNeeded];
+    [self setConstraints];
 }
 
-- (void)updateConstraints
+// 设置 view 的初次约束
+- (void)setConstraints
 {
-    [super updateConstraints];
-    
     [self.extendButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.offset(0);
         make.left.offset(0);

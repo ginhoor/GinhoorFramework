@@ -41,7 +41,7 @@
     [self.view addSubview:self.nextStep];
     [self.view addSubview:self.separator1];
     
-    [self.view updateConstraintsIfNeeded];
+    [self setConstraints];
     
     RAC(self.loginVM, username) = self.username.rac_textSignal;
     RAC(self.loginVM, randomCode) = self.randomCode.rac_textSignal;
@@ -59,10 +59,9 @@
     }];
 }
 
-- (void)updateViewConstraints
+// 设置 view 的初次约束
+- (void)setConstraints
 {
-    [super updateViewConstraints];
-    
     [self.username mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.offset(100);
         make.left.offset(20);
@@ -96,7 +95,6 @@
         make.centerX.offset(0);
         make.size.sizeOffset(CGSizeMake(200, 44));
     }];
-    
 }
 
 - (GinLoginWithPhoneViewModel *)loginVM

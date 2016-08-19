@@ -41,12 +41,12 @@
     [self.indicatorView startAnimating];
     self.indicatorView.hidden = NO;
 
-    [self updateViewConstraints];
+    [self setConstraints];
 }
 
-- (void)updateViewConstraints
+// 设置 view 的初次约束
+- (void)setConstraints
 {
-    [super updateViewConstraints];
     [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.offset(0);
     }];
@@ -55,7 +55,6 @@
         make.center.offset(0);
     }];
 }
-
 
 - (void)viewDidDisappear:(BOOL)animated
 {

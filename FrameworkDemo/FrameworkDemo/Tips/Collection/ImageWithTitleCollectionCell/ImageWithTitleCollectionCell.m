@@ -26,10 +26,11 @@
     [self.contentView addSubview:self.imageView];
     [self.contentView addSubview:self.titleLabel];
 
-    [self updateConstraintsIfNeeded];
+    [self setConstraints];
 }
 
-- (void)updateConstraints
+// 设置 view 的初次约束
+- (void)setConstraints
 {
     [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.offset(0);
@@ -43,9 +44,6 @@
         make.left.offset(0);
         make.right.offset(0);
     }];
-    
-
-    [super updateConstraints];
 }
 
 - (UIImageView *)imageView

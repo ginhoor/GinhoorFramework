@@ -45,10 +45,12 @@
     [self.cellContentView addSubview:self.indicator];
     [self.cellContentView addSubview:self.separator];
 
-    [self updateConstraintsIfNeeded];
+    [self setConstraints];
 }
 
-- (void)updateConstraints
+
+// 设置 view 的初次约束
+- (void)setConstraints
 {
     [self.cellContentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.offset(0);
@@ -78,8 +80,6 @@
         make.right.offset(-15);
         make.height.offset(1.f/[UIScreen mainScreen].scale);
     }];
-    
-    [super updateConstraints];
 }
 
 - (void)setIcon:(UIImage *)image title:(NSAttributedString *)title showIndicator:(BOOL)showIndicator showSeparator:(BOOL)showSeparator
