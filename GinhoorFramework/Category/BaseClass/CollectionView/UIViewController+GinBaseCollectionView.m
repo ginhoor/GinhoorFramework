@@ -55,7 +55,7 @@
     };
 }
 
-- (void (^)(NSArray *dataList))GinSetupTableDataWithPageIndexBlock:(NSUInteger)pageIndex
+- (void (^)(NSArray *dataList))GinSetupCollectionDataWithPageIndexBlock:(NSUInteger)pageIndex
 {
     if (pageIndex == self.startIndex) {
         return [self GinSetupCollectionDataBlock];

@@ -13,9 +13,14 @@
 - (void)printAutoLayoutTrace
 {
 #ifdef DEBUG
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+
     NSLog(@"%@", [self performSelector:@selector(_autolayoutTrace)]);
+#pragma clang diagnostic pop
 #endif
 }
+
 
 @end
 

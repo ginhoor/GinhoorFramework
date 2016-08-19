@@ -15,7 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Aspects (1.4.1)
-  - Baidu-Maps-iOS-SDK (2.6.0)
+  - Baidu-Maps-iOS-SDK (3.0.0)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
   - BlocksKit/All (2.2.5):
@@ -62,7 +62,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - Aspects (~> 1.4.1)
-  - Baidu-Maps-iOS-SDK (~> 2.6.0)
+  - Baidu-Maps-iOS-SDK (~> 3.0.0)
   - BlocksKit (~> 2.2.5)
   - CocoaLumberjack (~> 2.0.1)
   - DateTools (~> 1.5.0)
@@ -78,7 +78,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
-  Baidu-Maps-iOS-SDK: 260447c2270b44470d7c0d49a7f1a154b4703973
+  Baidu-Maps-iOS-SDK: 9aafd9643ee1db4cac04a90ab7290db6c116b46a
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
   DateTools: b93a2c2017747329c6077c7d7e8a75106e23d0d7
@@ -91,6 +91,6 @@ SPEC CHECKSUMS:
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   UMengAnalyticsSDK: 995da0b94da156de77da7ec6666b3801f3db20a4
 
-PODFILE CHECKSUM: f5e16e38943960d8a995ecaf59743df10da0ec63
+PODFILE CHECKSUM: b20108073f404e6ee230470e56575ed9b5a0e24a
 
 COCOAPODS: 1.0.1

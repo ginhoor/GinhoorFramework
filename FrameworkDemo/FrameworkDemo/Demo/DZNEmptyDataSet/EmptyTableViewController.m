@@ -79,7 +79,7 @@
     NSString *text = @"Search on the App Store";
     UIFont *font = [UIFont systemFontOfSize:16.0];
     
-    UIColor *textColor = [UIColor colorWithHex:(state == UIControlStateNormal) ? @"007aff" : @"c6def9"];
+    UIColor *textColor = [UIColor colorWithHex:state == UIControlStateNormal ? 0x007aff : 0xc6def9];
     
     NSMutableDictionary *attributes = [NSMutableDictionary new];
     [attributes setObject:font forKey:NSFontAttributeName];

@@ -7,11 +7,11 @@
 //
 
 #import "Masonry.h"
-#import <BMapKit.h>
-
 #import "GinhoorFramework.h"
 #import "AddressSearchResultViewController.h"
 #import "UIViewController+GinBaseTableView.h"
+
+#import <BaiduMapAPI_Search/BMKSuggestionSearch.h>
 
 @interface AddressSearchResultViewController () <UITableViewDelegate,UITableViewDataSource, UISearchBarDelegate, BMKSuggestionSearchDelegate>
 

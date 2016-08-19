@@ -10,11 +10,16 @@
 #import <CocoaLumberjack.h>
 #import <MobClick.h>
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
+
 #ifdef DEBUG
 static const int ddLogLevel = DDLogLevelInfo;
 #else
 static const int ddLogLevel = DDLogLevelWarning;
 #endif
+
+#pragma clang diagnostic pop
 
 
 @implementation AppDelegate (Light)

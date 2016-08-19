@@ -6,8 +6,10 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import <BMapKit.h>
+
 #import <Foundation/Foundation.h>
+#import <BaiduMapAPI_Search/BMKGeocodeSearch.h>
+
 
 @interface BaiduLocationViewModel : NSObject
 

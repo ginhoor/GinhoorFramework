@@ -11,6 +11,9 @@
 #import <MapKit/MapKit.h>
 #import "UIAlertView+GinUnit.h"
 #import "LocationManager.h"
+#import <BaiduMapAPI_Map/BMKPointAnnotation.h>
+#import <BaiduMapAPI_Map/BMKPinAnnotationView.h>
+#import <BaiduMapAPI_Utils/BMKNavigation.h>
 
 static NSString *annotationReuseId = @"Annotation";
 
@@ -42,7 +45,8 @@ static NSString *annotationReuseId = @"Annotation";
     CGPoint locationPoint = CGPointMake(123, 123);
     
     self.destinationLocation = CLLocationCoordinate2DMake(locationPoint.x, locationPoint.y);
-    BMKCoordinateRegion region = BMKCoordinateRegionMake(self.destinationLocation, BMKCoordinateSpanMake(0.01, 0.01));
+    
+    BMKCoordinateRegion region = {self.destinationLocation, {0.01, 0.01}};
     self.mapView.region = region;
     
     self.pointAnnotation = [[BMKPointAnnotation alloc]init];
@@ -138,12 +142,13 @@ static NSString *annotationReuseId = @"Annotation";
     
 }
 
+
 - (void)baiduMapNavigation:(BMK_NAVI_TYPE)type startLocationName:(NSString *)startLocationName startLocation:(CLLocationCoordinate2D)startLocation endName:(NSString *)endLocationName endLocation:(CLLocationCoordinate2D)endLocation
 {
     //初始化调启导航时的参数管理类
     BMKNaviPara* para = [[BMKNaviPara alloc]init];
     //指定导航类型
-    para.naviType = type;
+//    para.naviType = type;
     
     //初始化起点节点
     BMKPlanNode* start = [[BMKPlanNode alloc]init];

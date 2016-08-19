@@ -6,7 +6,8 @@
 //  Copyright (c) 2015年 Byhere. All rights reserved.
 //
 
-#import <BMapKit.h>
+#import <BaiduMapAPI_Map/BMKMapView.h>
+#import <BaiduMapAPI_Location/BMKLocationService.h>
 
 #import <UIKit/UIKit.h>
 

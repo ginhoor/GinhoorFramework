@@ -9,6 +9,7 @@
 #import "BaiduLocationViewModel.h"
 #import "LocationManager.h"
 
+
 @interface BaiduLocationViewModel() <BMKGeoCodeSearchDelegate>
 
 @property (strong, nonatomic) BMKGeoCodeSearch *geoCodeSearcher;
