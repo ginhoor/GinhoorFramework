@@ -54,11 +54,11 @@
     //下载任务
     NSURLSessionDownloadTask *task = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
         //打印下下载进度
-        WKNSLog(@"%lf",1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount);
+        NSLog(@"%lf",1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount);
         
     } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
         //下载地址
-        WKNSLog(@"默认下载地址:%@",targetPath);
+        NSLog(@"默认下载地址:%@",targetPath);
         
         //设置下载路径，通过沙盒获取缓存地址，最后返回NSURL对象
         NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)lastObject];
@@ -68,8 +68,8 @@
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
         
         //下载完成调用的方法
-        WKNSLog(@"下载完成：");
-        WKNSLog(@"%@--%@",response,filePath);
+        NSLog(@"下载完成：");
+        NSLog(@"%@--%@",response,filePath);
         
     }];
     
@@ -104,16 +104,16 @@
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         
         //打印下上传进度
-        WKNSLog(@"%lf",1.0 *uploadProgress.completedUnitCount / uploadProgress.totalUnitCount);
+        NSLog(@"%lf",1.0 *uploadProgress.completedUnitCount / uploadProgress.totalUnitCount);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         //请求成功
-        WKNSLog(@"请求成功：%@",responseObject);
+        NSLog(@"请求成功：%@",responseObject);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         //请求失败
-        WKNSLog(@"请求失败：%@",error);
+        NSLog(@"请求失败：%@",error);
     }];
     
 }
@@ -132,16 +132,16 @@
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         
         //打印下上传进度
-        WKNSLog(@"%lf",1.0 *uploadProgress.completedUnitCount / uploadProgress.totalUnitCount);
+        NSLog(@"%lf",1.0 *uploadProgress.completedUnitCount / uploadProgress.totalUnitCount);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         //请求成功
-        WKNSLog(@"请求成功：%@",responseObject);
+        NSLog(@"请求成功：%@",responseObject);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         //请求失败
-        WKNSLog(@"请求失败：%@",error);
+        NSLog(@"请求失败：%@",error);
     }];
 }
 
