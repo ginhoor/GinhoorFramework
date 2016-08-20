@@ -1,0 +1,13 @@
+{
+    "color": {
+        "default_button_background":"#000000",
+        "default_button_title":"#FFFFFF",
+    },
+    "image": {
+        "image1": "template",
+        "image2": "test"
+    },
+    "other": {
+        "alpha": "0.7",
+    }
+}

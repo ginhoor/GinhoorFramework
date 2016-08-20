@@ -28,7 +28,7 @@ static const int ddLogLevel = DDLogLevelWarning;
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self setupSwizzlingMethod];
+//        [self setupSwizzlingMethod];
     });
 }
 
