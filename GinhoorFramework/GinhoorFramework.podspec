@@ -12,10 +12,10 @@ Pod::Spec.new do |s|
     s.source       = { :git => "https://github.com/ginhoor/GinhoorFramework.git", :tag => s.version.to_s }
     s.source_files  = "GinhoorFramework.h"
 
-    s.public_header_files = 'GinhoorFramework.h'
+    s.public_header_files = 'GinhoorFramework/GinhoorFramework.h'
 
     # 用来指定外部的静态库
-    #s.vendored_libraries = ''
+    # s.vendored_libraries = ''
 
 
     # s.resource  = "icon.png"
@@ -27,16 +27,6 @@ Pod::Spec.new do |s|
     # s.library   = "libxml2"
     # s.libraries = "iconv", "xml2"
 
-
-    # 依赖库
-#    s.dependency 'Masonry', '~> 0.6.4'
-#    s.dependency 'SDWebImage', '~> 3.7.2'
-
-#    s.dependency 'Mantle', '~> 1.5.4'
-#    s.dependency 'AFNetworking', '~> 2.5.1'
-#    s.dependency 'CocoaLumberjack', '~> 2.0.0'
-#    s.dependency 'libextobjc', '~> 0.4.1'
-
     s.subspec 'GinSysInfo' do |ss|
         ss.source_files = 'GinSysInfo/*.{h,m}'
     end
@@ -47,15 +37,11 @@ Pod::Spec.new do |s|
         ss.dependency 'MJRefresh', '~> 3.1.12'
 
         ss.source_files = 'Category/**/*.{h,m}',
-                          'Category/**/**/*.{h,m}',
-                          'Category/**/**/**/*.{h,m}',
-                          'Category/**/**/**/**/*.{h,m}'
+                          'Category/**/**/*.{h,m}'
     end
 
     s.subspec 'Debug' do |ss|
-        ss.source_files = 'Debug/*.{h,m}',
-                        'Debug/**/*.{h,m}',
-                        'Debug/**/**/*.{h,m}'
+        ss.source_files = 'Debug/*.{h,m}'
     end
 
     s.subspec 'Tools' do |ss|
@@ -63,38 +49,16 @@ Pod::Spec.new do |s|
         ss.dependency 'GinhoorFramework/GinSysInfo'
         ss.dependency 'GinhoorFramework/Category'
 
-    ss.source_files = 'Tools/**/*.{h,m}',
-                    'Tools/**/**/*.{h,m}'
+    ss.source_files = 'Tools/**/*.{h,m}'
     end
 
 #   s.subspec 'CustomView' do |ss|
 #    ss.dependency 'GinhoorFramework/GinSysInfo'
 #    ss.dependency 'GinhoorFramework/Category'
 #   ss.source_files =   'CustomView/**/*.{h,m}',
-#                       'CustomView/**/**/*.{h,m}',
-#                       'CustomView/**/**/**/*.{h,m}',
-#                       'CustomView/**/**/**/**/*.{h,m}',
-#                       'CustomView/**/**/**/**/**/*.{h,m}',
-#                       'CustomView/**/**/**/**/**/**/*.{h,m}',
-#                       'CustomView/**/**/**/**/**/**/**/*.{h,m}'
 #
 #   ss.resources =  "CustomView/**/**/*.png",
-#                   "CustomView/**/**/**/*.png",
-#                   "CustomView/**/**/**/**/*.png",
-#                   "CustomView/**/**/**/**/**/*.png",
-#                   "CustomView/**/**/**/**/**/**/*.png"
 #
 #   end
-
-#    s.subspec 'CustomViewController' do |ss|
-#    ss.dependency 'GinhoorFramework/GinSysInfo'
-#    ss.dependency 'GinhoorFramework/Category'
-#    ss.dependency 'GinhoorFramework/CustomView'
-#    ss.source_files =   'CustomViewController/**/*.{h,m}',
-#                        'CustomViewController/**/**/*.{h,m}',
-#                        'CustomViewController/**/**/**/*.{h,m}',
-#                        'CustomViewController/**/**/**/**/*.{h,m}'
-#
-#    end
 
 end
