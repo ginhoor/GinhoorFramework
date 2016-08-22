@@ -1216,8 +1216,8 @@
 		006A932A1ADE09090093BEBE /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				006A932B1ADE09090093BEBE /* CollectionView */,
 				006A933B1ADE09090093BEBE /* CoreData */,
+				006A932B1ADE09090093BEBE /* CollectionView */,
 				006A933F1ADE09090093BEBE /* TableView */,
 				006A934A1ADE09090093BEBE /* View */,
 				006A934F1ADE09090093BEBE /* ViewController */,

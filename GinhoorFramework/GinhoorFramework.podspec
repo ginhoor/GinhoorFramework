@@ -66,6 +66,12 @@ Pod::Spec.new do |s|
                     'Tools/**/**/*.{h,m}'
     end
 
+# 解决模块引用问题 https://forums.developer.apple.com/thread/23554
+post_install do |installer|
+    `rm -rf Pods/Headers/Private`
+    `find Pods -regex 'Pods\/.*\.modulemap' -print0 | xargs -0 sed -i '' 's/private header.*/
+end
+
 #   s.subspec 'CustomView' do |ss|
 #    ss.dependency 'GinhoorFramework/GinSysInfo'
 #    ss.dependency 'GinhoorFramework/Category'
