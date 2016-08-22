@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
     s.platform     = :ios, "7.0"
 
     s.source       = { :git => "https://github.com/ginhoor/GinhoorFramework.git", :tag => s.version.to_s }
-#    s.source_files  = "GinhoorFramework.h"
 
-# s.public_header_files = 'GinhoorFramework/GinhoorFramework.h'
+    s.source_files  = "GinhoorFramework/GinhoorFramework.h"
+    s.public_header_files = 'GinhoorFramework/GinhoorFramework.h'
 
     # 用来指定外部的静态库
     # s.vendored_libraries = ''
@@ -28,30 +28,7 @@ Pod::Spec.new do |s|
     # s.library   = "libxml2"
     # s.libraries = "iconv", "xml2"
 
-    s.subspec 'GinSysInfo' do |ss|
-        ss.source_files = 'GinSysInfo/*.{h,m}'
-    end
 
-    s.subspec 'Category' do |ss|
-        ss.dependency 'GinhoorFramework/GinSysInfo'
-        ss.dependency 'BlocksKit', '~> 2.2.5'
-        ss.dependency 'MJRefresh', '~> 3.1.12'
-
-        ss.source_files = 'Category/**/*.{h,m}',
-                          'Category/**/**/*.{h,m}'
-    end
-
-    s.subspec 'Debug' do |ss|
-        ss.source_files = 'Debug/*.{h,m}'
-    end
-
-    s.subspec 'Tools' do |ss|
-        ss.dependency 'BlocksKit', '~> 2.2.5'
-        ss.dependency 'GinhoorFramework/GinSysInfo'
-        ss.dependency 'GinhoorFramework/Category'
-
-    ss.source_files = 'Tools/**/*.{h,m}'
-    end
 
 #   s.subspec 'CustomView' do |ss|
 #    ss.dependency 'GinhoorFramework/GinSysInfo'
