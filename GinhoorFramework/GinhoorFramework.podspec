@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'Debug' do |ss|
-        ss.source_files = 'Debug/*.{h,m}'
+        ss.source_files = 'GinhoorFramework/Debug/*.{h,m}'
     end
 
     s.subspec 'Tools' do |ss|
