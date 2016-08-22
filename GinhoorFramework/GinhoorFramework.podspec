@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
     s.platform     = :ios, "7.0"
 
     s.source       = { :git => "https://github.com/ginhoor/GinhoorFramework.git", :tag => s.version.to_s }
-    s.source_files  = "GinhoorFramework.h"
+#    s.source_files  = "GinhoorFramework.h"
 
-    s.public_header_files = 'GinhoorFramework/GinhoorFramework.h'
+# s.public_header_files = 'GinhoorFramework/GinhoorFramework.h'
 
     # 用来指定外部的静态库
     # s.vendored_libraries = ''
@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
     # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
     s.frameworks = "Foundation", "CoreGraphics", "UIKit", "AddressBook", "AddressBookUI"
+
     # s.library   = "libxml2"
     # s.libraries = "iconv", "xml2"
 
