@@ -1,5 +1,5 @@
 //
-//  GinLogger.h
+//  LoggerDemoAction.h
 //  FrameworkDemo
 //
 //  Created by JunhuaShao on 16/8/22.
@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GinLogger : NSObject
+#import <UIKit/UIKit.h>
+
+@interface LoggerDemoAction : NSObject
+
+- (UIViewController *)loggerDemoViewController;
 
 @end

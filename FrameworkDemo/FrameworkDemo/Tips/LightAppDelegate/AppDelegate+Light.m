@@ -9,17 +9,7 @@
 #import "AppDelegate+Light.h"
 #import <CocoaLumberjack.h>
 #import <MobClick.h>
-
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wunused-variable"
-
-#ifdef DEBUG
-static const int ddLogLevel = DDLogLevelInfo;
-#else
-static const int ddLogLevel = DDLogLevelWarning;
-#endif
-
-#pragma clang diagnostic pop
+#import "GinLoggerManager.h"
 
 
 @implementation AppDelegate (Light)
@@ -40,7 +30,7 @@ static const int ddLogLevel = DDLogLevelWarning;
 - (BOOL)light_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    [self setupDDLog];
+    [[GinLoggerManager sharedInstance] setupDDLog];
 
     
     return [self light_application:application didFinishLaunchingWithOptions:launchOptions];
@@ -71,18 +61,6 @@ static const int ddLogLevel = DDLogLevelWarning;
 {
     [self light_applicationDidBecomeActive:application];
 
-}
-
-#pragma mark - 初始化log插件
-- (void)setupDDLog
-{
-    [DDLog addLogger:[DDASLLogger sharedInstance]];
-    [DDLog addLogger:[DDTTYLogger sharedInstance]];
-    
-    DDFileLogger *fileLogger = [[DDFileLogger alloc ] init];
-    fileLogger.rollingFrequency = 60 * 60 * 24 ; // 记录长度为1填
-    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;//记录文件为7个
-    [DDLog addLogger:fileLogger];
 }
 
 

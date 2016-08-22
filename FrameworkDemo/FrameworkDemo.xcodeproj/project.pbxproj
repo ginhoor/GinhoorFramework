@@ -138,6 +138,10 @@
 		00A3E3F71B9000440065C3EA /* CodeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A3E3F61B9000440065C3EA /* CodeDemo.m */; };
 		00ABC3241D6AA176003EDAB7 /* GinBaseTitleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABC3231D6AA176003EDAB7 /* GinBaseTitleHeader.m */; };
 		00ABC32A1D6AC3B8003EDAB7 /* GinhoorFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 00ABC3291D6AC3B8003EDAB7 /* GinhoorFramework.podspec */; };
+		00ABC3321D6AC643003EDAB7 /* loggerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABC3311D6AC643003EDAB7 /* loggerDemoViewController.m */; };
+		00ABC3351D6AC653003EDAB7 /* LoggerDemoAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABC3341D6AC653003EDAB7 /* LoggerDemoAction.m */; };
+		00ABC3391D6AC6F1003EDAB7 /* AppRouter+LoggerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABC3381D6AC6F1003EDAB7 /* AppRouter+LoggerDemo.m */; };
+		00ABC33C1D6AC9AF003EDAB7 /* GinLoggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABC33B1D6AC9AF003EDAB7 /* GinLoggerManager.m */; };
 		00B997DE1B9E7D74008EE8A1 /* GinFindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997D61B9E7D74008EE8A1 /* GinFindPasswordViewController.m */; };
 		00B997DF1B9E7D74008EE8A1 /* GinResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997D91B9E7D74008EE8A1 /* GinResetPasswordViewController.m */; };
 		00B997E01B9E7D74008EE8A1 /* GinQuickLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997DD1B9E7D74008EE8A1 /* GinQuickLoginViewController.m */; };
@@ -486,6 +490,14 @@
 		00ABC3221D6AA176003EDAB7 /* GinBaseTitleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseTitleHeader.h; sourceTree = "<group>"; };
 		00ABC3231D6AA176003EDAB7 /* GinBaseTitleHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseTitleHeader.m; sourceTree = "<group>"; };
 		00ABC3291D6AC3B8003EDAB7 /* GinhoorFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GinhoorFramework.podspec; sourceTree = "<group>"; };
+		00ABC3301D6AC643003EDAB7 /* loggerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loggerDemoViewController.h; sourceTree = "<group>"; };
+		00ABC3311D6AC643003EDAB7 /* loggerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loggerDemoViewController.m; sourceTree = "<group>"; };
+		00ABC3331D6AC653003EDAB7 /* LoggerDemoAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerDemoAction.h; sourceTree = "<group>"; };
+		00ABC3341D6AC653003EDAB7 /* LoggerDemoAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerDemoAction.m; sourceTree = "<group>"; };
+		00ABC3371D6AC6F1003EDAB7 /* AppRouter+LoggerDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+LoggerDemo.h"; sourceTree = "<group>"; };
+		00ABC3381D6AC6F1003EDAB7 /* AppRouter+LoggerDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+LoggerDemo.m"; sourceTree = "<group>"; };
+		00ABC33A1D6AC9AF003EDAB7 /* GinLoggerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinLoggerManager.h; sourceTree = "<group>"; };
+		00ABC33B1D6AC9AF003EDAB7 /* GinLoggerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoggerManager.m; sourceTree = "<group>"; };
 		00B997D51B9E7D74008EE8A1 /* GinFindPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinFindPasswordViewController.h; sourceTree = "<group>"; };
 		00B997D61B9E7D74008EE8A1 /* GinFindPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinFindPasswordViewController.m; sourceTree = "<group>"; };
 		00B997D81B9E7D74008EE8A1 /* GinResetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinResetPasswordViewController.h; sourceTree = "<group>"; };
@@ -821,7 +833,6 @@
 			children = (
 				00D04C711D6A9DAD00B4C27C /* UIFont */,
 				00D04C611D6A99BF00B4C27C /* ThemeManager */,
-				00D04BA11D6A917100B4C27C /* Logger */,
 				00E2DBF21C02E6E000567662 /* LightAppDelegate */,
 				00A2EB6A1BE05B6A000329AF /* LaunchImage */,
 				0009F3861BAA693000440C74 /* Network */,
@@ -918,6 +929,7 @@
 		0051A6361D65852300C7AAD2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				00ABC3361D6AC6E7003EDAB7 /* Logger */,
 				006ABF8F1D67408800D19F86 /* ThemeDemo */,
 				001E90DF1D66D6490054AE69 /* Networking */,
 				0051A6A91D65B8D300C7AAD2 /* Login */,
@@ -1502,6 +1514,7 @@
 			isa = PBXGroup;
 			children = (
 				0051A6321D65851400C7AAD2 /* Router */,
+				00ABC32E1D6AC643003EDAB7 /* Logger */,
 				006ABF871D673FB800D19F86 /* ThemeDemo */,
 				001E90DE1D66D6420054AE69 /* Networking */,
 				00E2DBEA1C02BDDD00567662 /* ContactsBook */,
@@ -1733,6 +1746,36 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		00ABC32E1D6AC643003EDAB7 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				00ABC32F1D6AC643003EDAB7 /* Actions */,
+				00ABC3301D6AC643003EDAB7 /* loggerDemoViewController.h */,
+				00ABC3311D6AC643003EDAB7 /* loggerDemoViewController.m */,
+				00ABC33A1D6AC9AF003EDAB7 /* GinLoggerManager.h */,
+				00ABC33B1D6AC9AF003EDAB7 /* GinLoggerManager.m */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		00ABC32F1D6AC643003EDAB7 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				00ABC3331D6AC653003EDAB7 /* LoggerDemoAction.h */,
+				00ABC3341D6AC653003EDAB7 /* LoggerDemoAction.m */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		00ABC3361D6AC6E7003EDAB7 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				00ABC3371D6AC6F1003EDAB7 /* AppRouter+LoggerDemo.h */,
+				00ABC3381D6AC6F1003EDAB7 /* AppRouter+LoggerDemo.m */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
 		00B997D41B9E7D74008EE8A1 /* FindPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -1769,13 +1812,6 @@
 				00B997DD1B9E7D74008EE8A1 /* GinQuickLoginViewController.m */,
 			);
 			path = QuickLogin;
-			sourceTree = "<group>";
-		};
-		00D04BA11D6A917100B4C27C /* Logger */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Logger;
 			sourceTree = "<group>";
 		};
 		00D04BA21D6A91C400B4C27C /* CustomView */ = {
@@ -2564,6 +2600,7 @@
 				00D04C8C1D6A9DDB00B4C27C /* BaseViewModel.m in Sources */,
 				0051A6991D65B31300C7AAD2 /* AppRouter+HZTableVC.m in Sources */,
 				0051A6811D65A8CF00C7AAD2 /* PhotoGalleryAction.m in Sources */,
+				00ABC3391D6AC6F1003EDAB7 /* AppRouter+LoggerDemo.m in Sources */,
 				00E2DBED1C02BDEE00567662 /* ContactsBookViewController.m in Sources */,
 				0051A6AC1D65B8DB00C7AAD2 /* AppRouter+Login.m in Sources */,
 				00D04C1F1D6A91C400B4C27C /* IconTextField.m in Sources */,
@@ -2666,6 +2703,7 @@
 				000B52941ADBCF8100946853 /* ViewController.m in Sources */,
 				006A93C51ADE09090093BEBE /* NSURL+Videos.m in Sources */,
 				000603D41B9C36130026D80F /* Person.m in Sources */,
+				00ABC3351D6AC653003EDAB7 /* LoggerDemoAction.m in Sources */,
 				006A94551ADEB3260093BEBE /* UITableView+GinBaseClass.m in Sources */,
 				00F7FC661AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m in Sources */,
 				00D04C701D6A9D4D00B4C27C /* CodeSnippetLibrary.m in Sources */,
@@ -2715,12 +2753,14 @@
 				006ABF8E1D67405200D19F86 /* ThemeDemoAction.m in Sources */,
 				006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */,
 				0095FF621B71A71800BF8987 /* ImageWithTitleCollectionCell.m in Sources */,
+				00ABC3321D6AC643003EDAB7 /* loggerDemoViewController.m in Sources */,
 				006A93CA1ADE09090093BEBE /* UIView+Layer.m in Sources */,
 				006ABF8B1D67403F00D19F86 /* ThemeDemoViewController.m in Sources */,
 				0051A6951D65B26F00C7AAD2 /* HZTableVCAction.m in Sources */,
 				006ABF921D67411100D19F86 /* AppRouter+ThemeDemo.m in Sources */,
 				002F31771B2EA6FC00080B37 /* NSArray+GinUnit.m in Sources */,
 				00D04C3E1D6A91C400B4C27C /* GinTabsViewController.m in Sources */,
+				00ABC33C1D6AC9AF003EDAB7 /* GinLoggerManager.m in Sources */,
 				0095FF081B71A30300BF8987 /* GinSystemButtonViewController.m in Sources */,
 				002F21AA1D6704A90021E6F4 /* HTTPSessionManager.m in Sources */,
 				00D04C1D1D6A91C400B4C27C /* GinExtendMenu.m in Sources */,

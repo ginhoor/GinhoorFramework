@@ -11,14 +11,15 @@
 #import <Aspects.h>
 #import <CocoaLumberjack.h>
 #import <MobClick.h>
+#import "GinLoggerManager.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused-variable"
 
 #ifdef DEBUG
-static const int ddLogLevel = DDLogLevelInfo;
+static const int ddLogLevel = DDLogLevelDebug;
 #else
-static const int ddLogLevel = DDLogLevelWarning;
+static const int ddLogLevel = DDLogLevelError;
 #endif
 
 #pragma clang diagnostic pop
@@ -51,27 +52,12 @@ static const int ddLogLevel = DDLogLevelWarning;
     if (self) {
         [AppDelegate aspect_hookSelector:@selector(application:didFinishLaunchingWithOptions:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, UIApplication *application, NSDictionary *launchOptions){
             
-            [self setupDDLog];
-            
+            [[GinLoggerManager sharedInstance] setupDDLog];
         } error:nil];
         
     }
     return self;
 }
-
-
-#pragma mark - 初始化log插件
-- (void)setupDDLog
-{
-    [DDLog addLogger:[DDASLLogger sharedInstance]];
-    [DDLog addLogger:[DDTTYLogger sharedInstance]];
-    
-    DDFileLogger *fileLogger = [[DDFileLogger alloc ] init];
-    fileLogger.rollingFrequency = 60 * 60 * 24 ; // 记录长度为1填
-    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;//记录文件为7个
-    [DDLog addLogger:fileLogger];
-}
-
 
 #pragma mark - 友盟SDK
 
