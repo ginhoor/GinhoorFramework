@@ -25,9 +25,6 @@
 		000B52971ADBCF8100946853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000B52951ADBCF8100946853 /* Main.storyboard */; };
 		000B52991ADBCF8100946853 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000B52981ADBCF8100946853 /* Images.xcassets */; };
 		000B529C1ADBCF8100946853 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000B529A1ADBCF8100946853 /* LaunchScreen.xib */; };
-		000C1DD41D680ACA00489346 /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000C1DD31D680ACA00489346 /* ThemeManager.m */; };
-		000C1DD91D680E1900489346 /* default_theme_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 000C1DD81D680E1900489346 /* default_theme_config.json */; };
-		000C1DDB1D680F7900489346 /* night_theme_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 000C1DDA1D680F7900489346 /* night_theme_config.json */; };
 		0018B9851B100883001E52D5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B9841B100883001E52D5 /* UIColor+Hex.m */; };
 		0018BA4A1B115DA4001E52D5 /* NSValueTransformer+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BA491B115DA4001E52D5 /* NSValueTransformer+Unit.m */; };
 		0018BC6E1B118C7F001E52D5 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC6D1B118C7F001E52D5 /* NSString+MD5.m */; };
@@ -212,6 +209,9 @@
 		00D04C4E1D6A922300B4C27C /* MRFlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04C471D6A922300B4C27C /* MRFlipTransition.m */; };
 		00D04C4F1D6A922300B4C27C /* UIViewController+MRFlipTransitino.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04C491D6A922300B4C27C /* UIViewController+MRFlipTransitino.m */; };
 		00D04C501D6A922300B4C27C /* UITableView+Wave.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04C4C1D6A922300B4C27C /* UITableView+Wave.m */; };
+		00D04C671D6A99BF00B4C27C /* default_theme_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 00D04C631D6A99BF00B4C27C /* default_theme_config.json */; };
+		00D04C681D6A99BF00B4C27C /* night_theme_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 00D04C641D6A99BF00B4C27C /* night_theme_config.json */; };
+		00D04C691D6A99BF00B4C27C /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04C661D6A99BF00B4C27C /* ThemeManager.m */; };
 		00E2DBE81BFEA83200567662 /* GinContactsBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E2DBE71BFEA83200567662 /* GinContactsBook.m */; };
 		00E2DBE91BFEA83200567662 /* GinContactsBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E2DBE71BFEA83200567662 /* GinContactsBook.m */; };
 		00E2DBED1C02BDEE00567662 /* ContactsBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E2DBEC1C02BDEE00567662 /* ContactsBookViewController.m */; };
@@ -271,10 +271,6 @@
 		000B52A11ADBCF8100946853 /* FrameworkDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		000B52A61ADBCF8100946853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000B531C1ADBEB8D00946853 /* FrameworkDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrameworkDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		000C1DD21D680ACA00489346 /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
-		000C1DD31D680ACA00489346 /* ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManager.m; sourceTree = "<group>"; };
-		000C1DD81D680E1900489346 /* default_theme_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = default_theme_config.json; sourceTree = "<group>"; };
-		000C1DDA1D680F7900489346 /* night_theme_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = night_theme_config.json; sourceTree = "<group>"; };
 		0018B9831B100883001E52D5 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		0018B9841B100883001E52D5 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		0018BA481B115DA4001E52D5 /* NSValueTransformer+Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+Unit.h"; sourceTree = "<group>"; };
@@ -616,6 +612,10 @@
 		00D04C491D6A922300B4C27C /* UIViewController+MRFlipTransitino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MRFlipTransitino.m"; sourceTree = "<group>"; };
 		00D04C4B1D6A922300B4C27C /* UITableView+Wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Wave.h"; sourceTree = "<group>"; };
 		00D04C4C1D6A922300B4C27C /* UITableView+Wave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Wave.m"; sourceTree = "<group>"; };
+		00D04C631D6A99BF00B4C27C /* default_theme_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = default_theme_config.json; sourceTree = "<group>"; };
+		00D04C641D6A99BF00B4C27C /* night_theme_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = night_theme_config.json; sourceTree = "<group>"; };
+		00D04C651D6A99BF00B4C27C /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
+		00D04C661D6A99BF00B4C27C /* ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManager.m; sourceTree = "<group>"; };
 		00E2DBE61BFEA83200567662 /* GinContactsBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinContactsBook.h; sourceTree = "<group>"; };
 		00E2DBE71BFEA83200567662 /* GinContactsBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinContactsBook.m; sourceTree = "<group>"; };
 		00E2DBEB1C02BDEE00567662 /* ContactsBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsBookViewController.h; sourceTree = "<group>"; };
@@ -762,13 +762,12 @@
 				000B52901ADBCF8100946853 /* AppDelegate.m */,
 				000B52921ADBCF8100946853 /* ViewController.h */,
 				000B52931ADBCF8100946853 /* ViewController.m */,
+				002F21A11D66F33A0021E6F4 /* Standard */,
+				0095FED11B71A30300BF8987 /* Demo */,
+				0018BA431B115CA7001E52D5 /* Tips */,
 				00D04C411D6A922300B4C27C /* GinAnimation */,
 				00D04BA21D6A91C400B4C27C /* CustomView */,
 				00D04BF21D6A91C400B4C27C /* CustomViewController */,
-				000C1DD11D680AA300489346 /* ThemeManager */,
-				0095FED11B71A30300BF8987 /* Demo */,
-				0018BA431B115CA7001E52D5 /* Tips */,
-				002F21A11D66F33A0021E6F4 /* Standard */,
 				000B528B1ADBCF8100946853 /* Supporting Files */,
 			);
 			path = FrameworkDemo;
@@ -811,26 +810,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		000C1DD11D680AA300489346 /* ThemeManager */ = {
-			isa = PBXGroup;
-			children = (
-				000C1DD71D680E1900489346 /* Resource */,
-				000C1DD21D680ACA00489346 /* ThemeManager.h */,
-				000C1DD31D680ACA00489346 /* ThemeManager.m */,
-			);
-			name = ThemeManager;
-			path = Demo/ThemeDemo/ThemeManager;
-			sourceTree = "<group>";
-		};
-		000C1DD71D680E1900489346 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				000C1DD81D680E1900489346 /* default_theme_config.json */,
-				000C1DDA1D680F7900489346 /* night_theme_config.json */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
 		0018B9821B10083E001E52D5 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
@@ -843,6 +822,7 @@
 		0018BA431B115CA7001E52D5 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				00D04C611D6A99BF00B4C27C /* ThemeManager */,
 				00D04BA11D6A917100B4C27C /* Logger */,
 				00E2DBF21C02E6E000567662 /* LightAppDelegate */,
 				00A2EB6A1BE05B6A000329AF /* LaunchImage */,
@@ -2240,6 +2220,25 @@
 			path = TableWave;
 			sourceTree = "<group>";
 		};
+		00D04C611D6A99BF00B4C27C /* ThemeManager */ = {
+			isa = PBXGroup;
+			children = (
+				00D04C621D6A99BF00B4C27C /* Resource */,
+				00D04C651D6A99BF00B4C27C /* ThemeManager.h */,
+				00D04C661D6A99BF00B4C27C /* ThemeManager.m */,
+			);
+			path = ThemeManager;
+			sourceTree = "<group>";
+		};
+		00D04C621D6A99BF00B4C27C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				00D04C631D6A99BF00B4C27C /* default_theme_config.json */,
+				00D04C641D6A99BF00B4C27C /* night_theme_config.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		00E2DBEA1C02BDDD00567662 /* ContactsBook */ = {
 			isa = PBXGroup;
 			children = (
@@ -2422,9 +2421,9 @@
 				0079C74D1B9549CC0062F574 /* gin_password@2x.png in Resources */,
 				0079C74F1B9549CC0062F574 /* gin_random_code@2x.png in Resources */,
 				006A94B61ADF96920093BEBE /* GinhoorFramework.podspec in Resources */,
-				000C1DDB1D680F7900489346 /* night_theme_config.json in Resources */,
 				0095FF0F1B71A30300BF8987 /* HZTableViewController.storyboard in Resources */,
 				000B529C1ADBCF8100946853 /* LaunchScreen.xib in Resources */,
+				00D04C681D6A99BF00B4C27C /* night_theme_config.json in Resources */,
 				0095FF091B71A30300BF8987 /* GinSystemButtonViewController.storyboard in Resources */,
 				00D04C261D6A91C400B4C27C /* arrow_down_44x44@2x.png in Resources */,
 				00D04C281D6A91C400B4C27C /* arrow_up_44x44.png in Resources */,
@@ -2433,12 +2432,12 @@
 				0095FF691B71A71800BF8987 /* StoreLocationMapViewController.storyboard in Resources */,
 				0079C7501B9549CC0062F574 /* gin_random_code@3x.png in Resources */,
 				0079C7521B9549CC0062F574 /* gin_user_name@3x.png in Resources */,
-				000C1DD91D680E1900489346 /* default_theme_config.json in Resources */,
 				00D04C2F1D6A91C400B4C27C /* list_indicator_arrow@2x.png in Resources */,
 				00E2DBF01C02BDFE00567662 /* ContactsBookViewController.storyboard in Resources */,
 				00D04C2A1D6A91C400B4C27C /* arrow_up_44x44@3x.png in Resources */,
 				0095FF661B71A71800BF8987 /* BaiduMapViewController.storyboard in Resources */,
 				00D04C2E1D6A91C400B4C27C /* list_indicator_arrow.png in Resources */,
+				00D04C671D6A99BF00B4C27C /* default_theme_config.json in Resources */,
 				00D04C291D6A91C400B4C27C /* arrow_up_44x44@2x.png in Resources */,
 				006ABF941D67429D00D19F86 /* ThemeDemoViewController.storyboard in Resources */,
 				0079C7511B9549CC0062F574 /* gin_user_name@2x.png in Resources */,
@@ -2683,8 +2682,8 @@
 				00D04C371D6A91C400B4C27C /* GinPopup+Unit.m in Sources */,
 				000603F71B9E6BA60026D80F /* GinLoginViewController.m in Sources */,
 				00D04C3F1D6A91C400B4C27C /* HMSegmentedControl.m in Sources */,
+				00D04C691D6A99BF00B4C27C /* ThemeManager.m in Sources */,
 				001E90DD1D65D1900054AE69 /* AppDelegateIntercepter.m in Sources */,
-				000C1DD41D680ACA00489346 /* ThemeManager.m in Sources */,
 				000B52911ADBCF8100946853 /* AppDelegate.m in Sources */,
 				0095FF291B71A43900BF8987 /* BaseTableViewCell.m in Sources */,
 				00D04C3B1D6A91C400B4C27C /* GinPopupViewController.m in Sources */,
