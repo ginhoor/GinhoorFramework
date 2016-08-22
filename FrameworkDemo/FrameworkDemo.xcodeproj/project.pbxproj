@@ -69,7 +69,6 @@
 		006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93291ADE09090093BEBE /* UIImage+Base64.m */; };
 		006A93AD1ADE09090093BEBE /* GinCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93331ADE09090093BEBE /* GinCollectionLayout.m */; };
 		006A93AE1ADE09090093BEBE /* GinHeightDynamicCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93351ADE09090093BEBE /* GinHeightDynamicCollectionLayout.m */; };
-		006A93AF1ADE09090093BEBE /* GinBaseTitleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93381ADE09090093BEBE /* GinBaseTitleHeader.m */; };
 		006A93B11ADE09090093BEBE /* GinBaseCoreDataResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A933D1ADE09090093BEBE /* GinBaseCoreDataResponder.m */; };
 		006A93B71ADE09090093BEBE /* UIView+GinCGRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A934E1ADE09090093BEBE /* UIView+GinCGRect.m */; };
 		006A93B91ADE09090093BEBE /* UIViewController+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93531ADE09090093BEBE /* UIViewController+GinBaseClass.m */; };
@@ -88,7 +87,6 @@
 		006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93881ADE09090093BEBE /* UIWindow+fullScreenshots.m */; };
 		006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93A81ADE09090093BEBE /* GinSysInfo.m */; };
 		006A94551ADEB3260093BEBE /* UITableView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94541ADEB3260093BEBE /* UITableView+GinBaseClass.m */; };
-		006A94B61ADF96920093BEBE /* GinhoorFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 006A94B51ADF96920093BEBE /* GinhoorFramework.podspec */; };
 		006A94B91ADF9CBD0093BEBE /* UICollectionView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94B81ADF9CBD0093BEBE /* UICollectionView+GinBaseClass.m */; };
 		006A94BC1ADFAD6D0093BEBE /* UIViewController+GinBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94BB1ADFAD6D0093BEBE /* UIViewController+GinBaseTableView.m */; };
 		006A94C51ADFB9C70093BEBE /* UIView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94C41ADFB9C70093BEBE /* UIView+GinBaseClass.m */; };
@@ -138,6 +136,8 @@
 		00A2EB6D1BE05B7C000329AF /* GetLaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2EB6C1BE05B7C000329AF /* GetLaunchImage.m */; };
 		00A3E3F31B8FF9C60065C3EA /* NSString+RegEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A3E3F21B8FF9C60065C3EA /* NSString+RegEx.m */; };
 		00A3E3F71B9000440065C3EA /* CodeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A3E3F61B9000440065C3EA /* CodeDemo.m */; };
+		00ABC3241D6AA176003EDAB7 /* GinBaseTitleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABC3231D6AA176003EDAB7 /* GinBaseTitleHeader.m */; };
+		00ABC3261D6AA2D7003EDAB7 /* GinhoorFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 00ABC3251D6AA2D7003EDAB7 /* GinhoorFramework.podspec */; };
 		00B997DE1B9E7D74008EE8A1 /* GinFindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997D61B9E7D74008EE8A1 /* GinFindPasswordViewController.m */; };
 		00B997DF1B9E7D74008EE8A1 /* GinResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997D91B9E7D74008EE8A1 /* GinResetPasswordViewController.m */; };
 		00B997E01B9E7D74008EE8A1 /* GinQuickLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997DD1B9E7D74008EE8A1 /* GinQuickLoginViewController.m */; };
@@ -359,8 +359,6 @@
 		006A93331ADE09090093BEBE /* GinCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinCollectionLayout.m; sourceTree = "<group>"; };
 		006A93341ADE09090093BEBE /* GinHeightDynamicCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinHeightDynamicCollectionLayout.h; sourceTree = "<group>"; };
 		006A93351ADE09090093BEBE /* GinHeightDynamicCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinHeightDynamicCollectionLayout.m; sourceTree = "<group>"; };
-		006A93371ADE09090093BEBE /* GinBaseTitleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseTitleHeader.h; sourceTree = "<group>"; };
-		006A93381ADE09090093BEBE /* GinBaseTitleHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseTitleHeader.m; sourceTree = "<group>"; };
 		006A933C1ADE09090093BEBE /* GinBaseCoreDataResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseCoreDataResponder.h; sourceTree = "<group>"; };
 		006A933D1ADE09090093BEBE /* GinBaseCoreDataResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseCoreDataResponder.m; sourceTree = "<group>"; };
 		006A934D1ADE09090093BEBE /* UIView+GinCGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GinCGRect.h"; sourceTree = "<group>"; };
@@ -399,7 +397,6 @@
 		006A93A81ADE09090093BEBE /* GinSysInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinSysInfo.m; sourceTree = "<group>"; };
 		006A94531ADEB3260093BEBE /* UITableView+GinBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+GinBaseClass.h"; sourceTree = "<group>"; };
 		006A94541ADEB3260093BEBE /* UITableView+GinBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+GinBaseClass.m"; sourceTree = "<group>"; };
-		006A94B51ADF96920093BEBE /* GinhoorFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = GinhoorFramework.podspec; path = ../GinhoorFramework.podspec; sourceTree = "<group>"; };
 		006A94B71ADF9CBD0093BEBE /* UICollectionView+GinBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+GinBaseClass.h"; sourceTree = "<group>"; };
 		006A94B81ADF9CBD0093BEBE /* UICollectionView+GinBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+GinBaseClass.m"; sourceTree = "<group>"; };
 		006A94BA1ADFAD6D0093BEBE /* UIViewController+GinBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GinBaseTableView.h"; sourceTree = "<group>"; };
@@ -486,6 +483,9 @@
 		00A3E3F21B8FF9C60065C3EA /* NSString+RegEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegEx.m"; sourceTree = "<group>"; };
 		00A3E3F51B9000440065C3EA /* CodeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeDemo.h; sourceTree = "<group>"; };
 		00A3E3F61B9000440065C3EA /* CodeDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeDemo.m; sourceTree = "<group>"; };
+		00ABC3221D6AA176003EDAB7 /* GinBaseTitleHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseTitleHeader.h; sourceTree = "<group>"; };
+		00ABC3231D6AA176003EDAB7 /* GinBaseTitleHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseTitleHeader.m; sourceTree = "<group>"; };
+		00ABC3251D6AA2D7003EDAB7 /* GinhoorFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GinhoorFramework.podspec; sourceTree = "<group>"; };
 		00B997D51B9E7D74008EE8A1 /* GinFindPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinFindPasswordViewController.h; sourceTree = "<group>"; };
 		00B997D61B9E7D74008EE8A1 /* GinFindPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinFindPasswordViewController.m; sourceTree = "<group>"; };
 		00B997D81B9E7D74008EE8A1 /* GinResetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinResetPasswordViewController.h; sourceTree = "<group>"; };
@@ -734,7 +734,6 @@
 			children = (
 				000B528A1ADBCF8100946853 /* FrameworkDemo */,
 				000B52A41ADBCF8100946853 /* FrameworkDemoTests */,
-				006A94B51ADF96920093BEBE /* GinhoorFramework.podspec */,
 				006A93221ADE09090093BEBE /* GinhoorFramework */,
 				000B52891ADBCF8100946853 /* Products */,
 				2461F8143DE68CC857B37A80 /* Pods */,
@@ -1167,6 +1166,7 @@
 		006A93221ADE09090093BEBE /* GinhoorFramework */ = {
 			isa = PBXGroup;
 			children = (
+				00ABC3251D6AA2D7003EDAB7 /* GinhoorFramework.podspec */,
 				006A93A41ADE09090093BEBE /* GinhoorFramework.h */,
 				00F7FC6A1AEDEB840080AFC7 /* Debug */,
 				006A93231ADE09090093BEBE /* Category */,
@@ -1229,7 +1229,6 @@
 			isa = PBXGroup;
 			children = (
 				006A93311ADE09090093BEBE /* GinCollectionLayout */,
-				006A93361ADE09090093BEBE /* Header */,
 				006A94B71ADF9CBD0093BEBE /* UICollectionView+GinBaseClass.h */,
 				006A94B81ADF9CBD0093BEBE /* UICollectionView+GinBaseClass.m */,
 				006A94C61ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.h */,
@@ -1247,15 +1246,6 @@
 				006A93351ADE09090093BEBE /* GinHeightDynamicCollectionLayout.m */,
 			);
 			path = GinCollectionLayout;
-			sourceTree = "<group>";
-		};
-		006A93361ADE09090093BEBE /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				006A93371ADE09090093BEBE /* GinBaseTitleHeader.h */,
-				006A93381ADE09090093BEBE /* GinBaseTitleHeader.m */,
-			);
-			path = Header;
 			sourceTree = "<group>";
 		};
 		006A933B1ADE09090093BEBE /* CoreData */ = {
@@ -1622,6 +1612,7 @@
 		0095FF461B71A71800BF8987 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
+				00ABC3211D6AA176003EDAB7 /* Header */,
 				0095FF471B71A71800BF8987 /* ImageCollectionCell */,
 				0095FF4A1B71A71800BF8987 /* ImageWithTitleCollectionCell */,
 				0095FF4D1B71A71800BF8987 /* TextCollectionCell */,
@@ -1732,6 +1723,15 @@
 				00A3E3F61B9000440065C3EA /* CodeDemo.m */,
 			);
 			path = CodeDemo;
+			sourceTree = "<group>";
+		};
+		00ABC3211D6AA176003EDAB7 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				00ABC3221D6AA176003EDAB7 /* GinBaseTitleHeader.h */,
+				00ABC3231D6AA176003EDAB7 /* GinBaseTitleHeader.m */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		00B997D41B9E7D74008EE8A1 /* FindPassword */ = {
@@ -2427,7 +2427,6 @@
 				000B52971ADBCF8100946853 /* Main.storyboard in Resources */,
 				0079C74D1B9549CC0062F574 /* gin_password@2x.png in Resources */,
 				0079C74F1B9549CC0062F574 /* gin_random_code@2x.png in Resources */,
-				006A94B61ADF96920093BEBE /* GinhoorFramework.podspec in Resources */,
 				0095FF0F1B71A30300BF8987 /* HZTableViewController.storyboard in Resources */,
 				000B529C1ADBCF8100946853 /* LaunchScreen.xib in Resources */,
 				00D04C681D6A99BF00B4C27C /* night_theme_config.json in Resources */,
@@ -2449,6 +2448,7 @@
 				006ABF941D67429D00D19F86 /* ThemeDemoViewController.storyboard in Resources */,
 				0079C7511B9549CC0062F574 /* gin_user_name@2x.png in Resources */,
 				00D04C301D6A91C400B4C27C /* list_indicator_arrow@3x.png in Resources */,
+				00ABC3261D6AA2D7003EDAB7 /* GinhoorFramework.podspec in Resources */,
 				0079C74E1B9549CC0062F574 /* gin_password@3x.png in Resources */,
 				0079C7531B9549CC0062F574 /* gin_user_phone@2x.png in Resources */,
 			);
@@ -2628,7 +2628,6 @@
 				0095FF0A1B71A30300BF8987 /* page1Controller.m in Sources */,
 				0095FF0D1B71A30300BF8987 /* TabsViewController.m in Sources */,
 				006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */,
-				006A93AF1ADE09090093BEBE /* GinBaseTitleHeader.m in Sources */,
 				00D04C2D1D6A91C400B4C27C /* IconTableCell.m in Sources */,
 				00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */,
 				0051A64C1D659D4700C7AAD2 /* AppRouter+PhotoGallery.m in Sources */,
@@ -2686,6 +2685,7 @@
 				009FF0821B5CEE4700D282E6 /* CallPhoneMannager.m in Sources */,
 				00D04C341D6A91C400B4C27C /* GinPageViewController.m in Sources */,
 				006A93B11ADE09090093BEBE /* GinBaseCoreDataResponder.m in Sources */,
+				00ABC3241D6AA176003EDAB7 /* GinBaseTitleHeader.m in Sources */,
 				0037BE381BB1085C007C7DCE /* NSObject+Json.m in Sources */,
 				006A93B91ADE09090093BEBE /* UIViewController+GinBaseClass.m in Sources */,
 				00D04C901D6A9DDB00B4C27C /* BaseTableViewController.m in Sources */,

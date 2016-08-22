@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "GinhoorFramework"
-    s.version      = "1.4.5" # 被应用次数.大版本号.开发版本号
+    s.version      = "1.4.6" # 被应用次数.大版本号.开发版本号
     s.summary      = "This is one of my personal library."
     s.requires_arc = true
 
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
     # 依赖库
     s.dependency 'BlocksKit', '~> 2.2.5'
-    s.dependency 'MJRefresh', '~> 3.1.0'
+    s.dependency 'MJRefresh', '~> 3.1.12'
 
 #    s.dependency 'Masonry', '~> 0.6.4'
 #    s.dependency 'SDWebImage', '~> 3.7.2'
