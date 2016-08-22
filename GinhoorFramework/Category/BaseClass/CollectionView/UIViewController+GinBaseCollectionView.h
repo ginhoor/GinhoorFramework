@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-#import "MJRefresh.h"
+#include "MJRefresh.h"
+
 #import "UIViewController+GinBaseClass.h"
 #import "UICollectionView+GinBaseClass.h"
 
