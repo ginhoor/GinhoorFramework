@@ -6,8 +6,7 @@
 //  Copyright (c) 2015年 Ginhoor. All rights reserved.
 //
 
-#import "BlocksKit+UIKit.h"
-
+#import <BlocksKit/BlocksKit+UIKit.h>
 #import "UIAlertView+GinUnit.h"
 #import "UIViewController+GinBaseClass.h"
 

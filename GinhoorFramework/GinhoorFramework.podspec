@@ -43,6 +43,7 @@ Pod::Spec.new do |s|
 
     s.subspec 'Category' do |ss|
         ss.dependency 'GinhoorFramework/GinSysInfo'
+        ss.dependency 'BlocksKit', '~> 2.2.5'
         ss.dependency 'MJRefresh', '~> 3.1.12'
 
         ss.source_files = 'Category/**/*.{h,m}',
