@@ -41,49 +41,47 @@ Pod::Spec.new do |s|
 #    s.dependency 'libextobjc', '~> 0.4.1'
 
     s.subspec 'GinSysInfo' do |ss|
-    ss.source_files = 'GinhoorFramework/GinSysInfo/*.{h,m}',
-                      'GinhoorFramework/GinSysInfo/**/*.{h,m}',
-                      'GinhoorFramework/GinSysInfo/**/**/*.{h,m}'
+        ss.source_files = 'GinSysInfo/*.{h,m}'
     end
 
     s.subspec 'Category' do |ss|
-    ss.dependency 'GinhoorFramework/GinSysInfo'
-    ss.source_files = 'GinhoorFramework/Category/**/*.{h,m}',
-                      'GinhoorFramework/Category/**/**/*.{h,m}',
-                      'GinhoorFramework/Category/**/**/**/*.{h,m}',
-                      'GinhoorFramework/Category/**/**/**/**/*.{h,m}'
+        ss.dependency 'GinhoorFramework/GinSysInfo'
+        ss.source_files = 'Category/**/*.{h,m}',
+                          'Category/**/**/*.{h,m}',
+                          'Category/**/**/**/*.{h,m}',
+                          'Category/**/**/**/**/*.{h,m}'
     end
 
     s.subspec 'Debug' do |ss|
-        ss.source_files = 'GinhoorFramework/Debug/*.{h,m}',
-                        'GinhoorFramework/Debug/**/*.{h,m}',
-                        'GinhoorFramework/Debug/**/**/*.{h,m}'
+        ss.source_files = 'Debug/*.{h,m}',
+                        'Debug/**/*.{h,m}',
+                        'Debug/**/**/*.{h,m}'
     end
 
     s.subspec 'Tools' do |ss|
         ss.dependency 'GinhoorFramework/GinSysInfo'
         ss.dependency 'GinhoorFramework/Category'
 
-    ss.source_files = 'GinhoorFramework/Tools/**/*.{h,m}',
-                    'GinhoorFramework/Tools/**/**/*.{h,m}'
+    ss.source_files = 'Tools/**/*.{h,m}',
+                    'Tools/**/**/*.{h,m}'
     end
 
 #   s.subspec 'CustomView' do |ss|
 #    ss.dependency 'GinhoorFramework/GinSysInfo'
 #    ss.dependency 'GinhoorFramework/Category'
-#   ss.source_files =   'GinhoorFramework/CustomView/**/*.{h,m}',
-#                       'GinhoorFramework/CustomView/**/**/*.{h,m}',
-#                       'GinhoorFramework/CustomView/**/**/**/*.{h,m}',
-#                       'GinhoorFramework/CustomView/**/**/**/**/*.{h,m}',
-#                       'GinhoorFramework/CustomView/**/**/**/**/**/*.{h,m}',
-#                       'GinhoorFramework/CustomView/**/**/**/**/**/**/*.{h,m}',
-#                       'GinhoorFramework/CustomView/**/**/**/**/**/**/**/*.{h,m}'
+#   ss.source_files =   'CustomView/**/*.{h,m}',
+#                       'CustomView/**/**/*.{h,m}',
+#                       'CustomView/**/**/**/*.{h,m}',
+#                       'CustomView/**/**/**/**/*.{h,m}',
+#                       'CustomView/**/**/**/**/**/*.{h,m}',
+#                       'CustomView/**/**/**/**/**/**/*.{h,m}',
+#                       'CustomView/**/**/**/**/**/**/**/*.{h,m}'
 #
-#   ss.resources =  "GinhoorFramework/CustomView/**/**/*.png",
-#                   "GinhoorFramework/CustomView/**/**/**/*.png",
-#                   "GinhoorFramework/CustomView/**/**/**/**/*.png",
-#                   "GinhoorFramework/CustomView/**/**/**/**/**/*.png",
-#                   "GinhoorFramework/CustomView/**/**/**/**/**/**/*.png"
+#   ss.resources =  "CustomView/**/**/*.png",
+#                   "CustomView/**/**/**/*.png",
+#                   "CustomView/**/**/**/**/*.png",
+#                   "CustomView/**/**/**/**/**/*.png",
+#                   "CustomView/**/**/**/**/**/**/*.png"
 #
 #   end
 
@@ -91,10 +89,10 @@ Pod::Spec.new do |s|
 #    ss.dependency 'GinhoorFramework/GinSysInfo'
 #    ss.dependency 'GinhoorFramework/Category'
 #    ss.dependency 'GinhoorFramework/CustomView'
-#    ss.source_files =   'GinhoorFramework/CustomViewController/**/*.{h,m}',
-#                        'GinhoorFramework/CustomViewController/**/**/*.{h,m}',
-#                        'GinhoorFramework/CustomViewController/**/**/**/*.{h,m}',
-#                        'GinhoorFramework/CustomViewController/**/**/**/**/*.{h,m}'
+#    ss.source_files =   'CustomViewController/**/*.{h,m}',
+#                        'CustomViewController/**/**/*.{h,m}',
+#                        'CustomViewController/**/**/**/*.{h,m}',
+#                        'CustomViewController/**/**/**/**/*.{h,m}'
 #
 #    end
 
