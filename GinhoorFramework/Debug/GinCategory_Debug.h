@@ -7,4 +7,4 @@
 //
 
 #import "NSString+Debug.h"
-#import "UIView+Debugger.h"
+#import "UIView+Debug.h"

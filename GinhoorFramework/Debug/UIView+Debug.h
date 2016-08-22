@@ -1,5 +1,5 @@
 //
-//  UIView+Debugger.h
+//  UIView+Debug.h
 //  hme.ios.cn
 //
 //  Created by JunhuaShao on 15/3/18.
