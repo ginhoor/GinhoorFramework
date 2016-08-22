@@ -11,7 +11,7 @@
 @implementation GUIFont
 
 
-// 获得 字体的数量
+// 获得 字体的行数
 
 + (void)getNumberOfLine
 {
