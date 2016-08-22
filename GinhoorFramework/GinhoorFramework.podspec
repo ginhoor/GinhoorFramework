@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
 
     # s.resource  = "icon.png"
-    # s.resources = "GinFramework/Framework/**/*.png"
+    # s.resources = "GinhoorFramework/Framework/**/*.png"
     # 表示需要保留的文件路径
     # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
     # s.libraries = "iconv", "xml2"
 
     s.subspec 'GinSysInfo' do |ss|
-        ss.source_files = 'GinFramework/GinSysInfo/*.{h,m}'
+        ss.source_files = 'GinhoorFramework/GinSysInfo/*.{h,m}'
     end
 
     s.subspec 'Category' do |ss|
@@ -37,8 +37,8 @@ Pod::Spec.new do |s|
         ss.dependency 'BlocksKit', '~> 2.2.5'
         ss.dependency 'MJRefresh', '~> 3.1.12'
 
-        ss.source_files = 'GinFramework/Category/**/*.{h,m}',
-                         'GinFramework/Category/**/**/*.{h,m}'
+        ss.source_files = 'GinhoorFramework/Category/**/*.{h,m}',
+                         'GinhoorFramework/Category/**/**/*.{h,m}'
     end
 
     s.subspec 'Debug' do |ss|
@@ -50,16 +50,16 @@ Pod::Spec.new do |s|
         ss.dependency 'GinhoorFramework/GinSysInfo'
         ss.dependency 'GinhoorFramework/Category'
 
-        ss.source_files = 'GinFramework/Tools/**/*.{h,m}'
+        ss.source_files = 'GinhoorFramework/Tools/**/*.{h,m}'
     end
 
 
 #   s.subspec 'CustomView' do |ss|
 #    ss.dependency 'GinhoorFramework/GinSysInfo'
 #    ss.dependency 'GinhoorFramework/Category'
-#   ss.source_files =   'GinFramework/CustomView/**/*.{h,m}',
+#   ss.source_files =   'GinhoorFramework/CustomView/**/*.{h,m}',
 #
-#   ss.resources =  "GinFramework/CustomView/**/**/*.png",
+#   ss.resources =  "GinhoorFramework/CustomView/**/**/*.png",
 #
 #   end
 
