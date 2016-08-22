@@ -72,7 +72,7 @@ DEPENDENCIES:
   - LEETheme (~> 1.0.7)
   - Mantle (~> 2.0.4)
   - Masonry (~> 0.6.4)
-  - MJRefresh (~> 3.1.0)
+  - MJRefresh (~> 3.1.12)
   - ReactiveCocoa (~> 2.5)
   - SDWebImage (~> 3.7.3)
   - UMengAnalyticsSDK (~> 3.6.5)
@@ -94,6 +94,6 @@ SPEC CHECKSUMS:
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   UMengAnalyticsSDK: 995da0b94da156de77da7ec6666b3801f3db20a4
 
-PODFILE CHECKSUM: 3ee1e12687977dd632032419e428c9de60bf4796
+PODFILE CHECKSUM: babbac3ef2255d4e1e87875811d6697910d0ec5d
 
 COCOAPODS: 1.0.1

@@ -29,9 +29,6 @@ Pod::Spec.new do |s|
 
 
     # 依赖库
-    s.dependency 'BlocksKit', '~> 2.2.5'
-    s.dependency 'MJRefresh', '~> 3.1.12'
-
 #    s.dependency 'Masonry', '~> 0.6.4'
 #    s.dependency 'SDWebImage', '~> 3.7.2'
 
@@ -46,6 +43,8 @@ Pod::Spec.new do |s|
 
     s.subspec 'Category' do |ss|
         ss.dependency 'GinhoorFramework/GinSysInfo'
+        ss.dependency 'MJRefresh', '~> 3.1.12'
+
         ss.source_files = 'Category/**/*.{h,m}',
                           'Category/**/**/*.{h,m}',
                           'Category/**/**/**/*.{h,m}',
@@ -59,6 +58,7 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'Tools' do |ss|
+        ss.dependency 'BlocksKit', '~> 2.2.5'
         ss.dependency 'GinhoorFramework/GinSysInfo'
         ss.dependency 'GinhoorFramework/Category'
 
