@@ -5,13 +5,18 @@ source 'https://github.com/ginhoor/GinhoorSpecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 
-pod 'Mantle', '~> 2.0.4'
 
 target 'FrameworkDemo' do
     #pod 'GinhoorFramework', :podspec => '../GinhoorFramework.podspec'  #指定podspec文件
 
 #    pod 'AFNetworking', '~> 2.6.0'
     pod 'AFNetworking', '~> 3.1.0'
+    pod 'Masonry', '~> 0.6.4'
+    pod 'CocoaLumberjack', '~> 2.0.1'
+    pod 'LEETheme', '~> 1.0.7'
+    pod 'Mantle', '~> 2.0.7'
+    
+    
     pod 'ReactiveCocoa', '~> 2.5'
 
     #pod 'libextobjc', '~> 0.4.1'
