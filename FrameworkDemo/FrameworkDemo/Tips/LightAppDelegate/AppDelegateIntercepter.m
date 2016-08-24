@@ -13,18 +13,6 @@
 #import <MobClick.h>
 #import "GinLoggerManager.h"
 
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wunused-variable"
-
-#ifdef DEBUG
-static const int ddLogLevel = DDLogLevelDebug;
-#else
-static const int ddLogLevel = DDLogLevelError;
-#endif
-
-#pragma clang diagnostic pop
-
-
 @implementation AppDelegateIntercepter
 
 + (instancetype)sharedInstance

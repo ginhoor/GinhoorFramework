@@ -7,18 +7,6 @@
 //
 
 #import "loggerDemoViewController.h"
-#import <CocoaLumberjack/CocoaLumberjack.h>
-
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wunused-variable"
-
-#ifdef DEBUG
-static const int ddLogLevel = DDLogLevelDebug;
-#else
-static const int ddLogLevel = DDLogLevelError;
-#endif
-
-#pragma clang diagnostic pop
 
 @interface loggerDemoViewController ()
 
