@@ -35,8 +35,6 @@ target 'FrameworkDemo' do
     
     pod 'Aspects','~> 1.4.1'
     
-    pod 'LEETheme', '~> 1.0.7'
-    
     inhibit_all_warnings!
 end
 

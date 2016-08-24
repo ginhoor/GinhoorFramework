@@ -29,7 +29,6 @@
 		0018BA4A1B115DA4001E52D5 /* NSValueTransformer+Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BA491B115DA4001E52D5 /* NSValueTransformer+Unit.m */; };
 		0018BC6E1B118C7F001E52D5 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC6D1B118C7F001E52D5 /* NSString+MD5.m */; };
 		001E90DD1D65D1900054AE69 /* AppDelegateIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E90DC1D65D1900054AE69 /* AppDelegateIntercepter.m */; };
-		001E90E31D66D67A0054AE69 /* AppRouter+Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E90E21D66D67A0054AE69 /* AppRouter+Networking.m */; };
 		001E90E61D66D68F0054AE69 /* NetworkingAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E90E51D66D68F0054AE69 /* NetworkingAction.m */; };
 		001E90E91D66D6AB0054AE69 /* NetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E90E81D66D6AB0054AE69 /* NetworkingViewController.m */; };
 		002F21A41D66F33A0021E6F4 /* LifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F21A31D66F33A0021E6F4 /* LifeCycleViewController.m */; };
@@ -39,15 +38,6 @@
 		002F31771B2EA6FC00080B37 /* NSArray+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F31761B2EA6FC00080B37 /* NSArray+GinUnit.m */; };
 		002F326D1B32795F00080B37 /* NSDictionary+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F326C1B32795F00080B37 /* NSDictionary+GinUnit.m */; };
 		0037BE381BB1085C007C7DCE /* NSObject+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 0037BE371BB1085C007C7DCE /* NSObject+Json.m */; };
-		0051A6351D65851400C7AAD2 /* AppRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A6341D65851400C7AAD2 /* AppRouter.m */; };
-		0051A6441D659CD900C7AAD2 /* AppRouter+ContactsBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A6431D659CD900C7AAD2 /* AppRouter+ContactsBook.m */; };
-		0051A6481D659D1900C7AAD2 /* AppRouter+TabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A6471D659D1900C7AAD2 /* AppRouter+TabsViewController.m */; };
-		0051A64C1D659D4700C7AAD2 /* AppRouter+PhotoGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A64B1D659D4700C7AAD2 /* AppRouter+PhotoGallery.m */; };
-		0051A6541D659EC700C7AAD2 /* AppRouter+DemoCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A6531D659EC700C7AAD2 /* AppRouter+DemoCode.m */; };
-		0051A65C1D65A05000C7AAD2 /* AppRouter+PullDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A65B1D65A05000C7AAD2 /* AppRouter+PullDownMenu.m */; };
-		0051A6651D65A12F00C7AAD2 /* AppRouter+EmptyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A6641D65A12F00C7AAD2 /* AppRouter+EmptyTableView.m */; };
-		0051A6691D65A30E00C7AAD2 /* AppRouter+StepperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A6681D65A30E00C7AAD2 /* AppRouter+StepperView.m */; };
-		0051A66D1D65A38800C7AAD2 /* AppRouter+TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A66C1D65A38800C7AAD2 /* AppRouter+TableViewController.m */; };
 		0051A6751D65A61100C7AAD2 /* TableVCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A6741D65A61100C7AAD2 /* TableVCAction.m */; };
 		0051A6791D65A6F300C7AAD2 /* StepperVCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A6781D65A6F300C7AAD2 /* StepperVCAction.m */; };
 		0051A67D1D65A84D00C7AAD2 /* PullDownMenuVCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A67C1D65A84D00C7AAD2 /* PullDownMenuVCAction.m */; };
@@ -57,11 +47,8 @@
 		0051A68D1D65AF1000C7AAD2 /* CodeDemoAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A68C1D65AF1000C7AAD2 /* CodeDemoAction.m */; };
 		0051A6911D65AFEA00C7AAD2 /* ContactsBookAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A6901D65AFEA00C7AAD2 /* ContactsBookAction.m */; };
 		0051A6951D65B26F00C7AAD2 /* HZTableVCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A6941D65B26F00C7AAD2 /* HZTableVCAction.m */; };
-		0051A6991D65B31300C7AAD2 /* AppRouter+HZTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A6981D65B31300C7AAD2 /* AppRouter+HZTableVC.m */; };
 		0051A69D1D65B3C700C7AAD2 /* GinSystemButtonVCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A69C1D65B3C700C7AAD2 /* GinSystemButtonVCAction.m */; };
-		0051A6A41D65B4C800C7AAD2 /* AppRouter+GinSystemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A6A31D65B4C800C7AAD2 /* AppRouter+GinSystemButton.m */; };
 		0051A6A81D65B5DE00C7AAD2 /* LoginAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A6A71D65B5DE00C7AAD2 /* LoginAction.m */; };
-		0051A6AC1D65B8DB00C7AAD2 /* AppRouter+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A6AB1D65B8DB00C7AAD2 /* AppRouter+Login.m */; };
 		005421DD1B47DF6F0028CCE6 /* GinAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 005421DC1B47DF6F0028CCE6 /* GinAddressBook.m */; };
 		005422EB1B47F4710028CCE6 /* GinKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422EA1B47F4710028CCE6 /* GinKeyboardManager.m */; };
 		005422F61B480B830028CCE6 /* UIImagePickerMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422F51B480B830028CCE6 /* UIImagePickerMananger.m */; };
@@ -92,9 +79,24 @@
 		006A94C51ADFB9C70093BEBE /* UIView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94C41ADFB9C70093BEBE /* UIView+GinBaseClass.m */; };
 		006A94C81ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94C71ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m */; };
 		006A94CF1ADFFF570093BEBE /* NSString+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94CE1ADFFF570093BEBE /* NSString+Json.m */; };
+		006AB0551D6D5E15009A9387 /* GinLoggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB0541D6D5E15009A9387 /* GinLoggerManager.m */; };
+		006AB0841D6D5E41009A9387 /* AppRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB0581D6D5E41009A9387 /* AppRouter.m */; };
+		006AB0851D6D5E41009A9387 /* AppRouter+ContactsBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB05C1D6D5E41009A9387 /* AppRouter+ContactsBook.m */; };
+		006AB0861D6D5E41009A9387 /* AppRouter+DemoCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB05F1D6D5E41009A9387 /* AppRouter+DemoCode.m */; };
+		006AB0871D6D5E41009A9387 /* AppRouter+EmptyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB0621D6D5E41009A9387 /* AppRouter+EmptyTableView.m */; };
+		006AB0881D6D5E41009A9387 /* AppRouter+GinSystemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB0651D6D5E41009A9387 /* AppRouter+GinSystemButton.m */; };
+		006AB0891D6D5E41009A9387 /* AppRouter+HZTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB0681D6D5E41009A9387 /* AppRouter+HZTableVC.m */; };
+		006AB08A1D6D5E41009A9387 /* AppRouter+LoggerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB06B1D6D5E41009A9387 /* AppRouter+LoggerDemo.m */; };
+		006AB08B1D6D5E41009A9387 /* AppRouter+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB06E1D6D5E41009A9387 /* AppRouter+Login.m */; };
+		006AB08C1D6D5E41009A9387 /* AppRouter+Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB0711D6D5E41009A9387 /* AppRouter+Networking.m */; };
+		006AB08D1D6D5E41009A9387 /* AppRouter+PhotoGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB0741D6D5E41009A9387 /* AppRouter+PhotoGallery.m */; };
+		006AB08E1D6D5E41009A9387 /* AppRouter+PullDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB0771D6D5E41009A9387 /* AppRouter+PullDownMenu.m */; };
+		006AB08F1D6D5E41009A9387 /* AppRouter+StepperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB07A1D6D5E41009A9387 /* AppRouter+StepperView.m */; };
+		006AB0901D6D5E41009A9387 /* AppRouter+TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB07D1D6D5E41009A9387 /* AppRouter+TableViewController.m */; };
+		006AB0911D6D5E41009A9387 /* AppRouter+TabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB0801D6D5E41009A9387 /* AppRouter+TabsViewController.m */; };
+		006AB0921D6D5E41009A9387 /* AppRouter+ThemeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB0831D6D5E41009A9387 /* AppRouter+ThemeDemo.m */; };
 		006ABF8B1D67403F00D19F86 /* ThemeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006ABF8A1D67403F00D19F86 /* ThemeDemoViewController.m */; };
 		006ABF8E1D67405200D19F86 /* ThemeDemoAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 006ABF8D1D67405200D19F86 /* ThemeDemoAction.m */; };
-		006ABF921D67411100D19F86 /* AppRouter+ThemeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 006ABF911D67411100D19F86 /* AppRouter+ThemeDemo.m */; };
 		006ABF941D67429D00D19F86 /* ThemeDemoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006ABF931D67429D00D19F86 /* ThemeDemoViewController.storyboard */; };
 		0079C74C1B9549CC0062F574 /* RegistViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0079C73E1B9549CC0062F574 /* RegistViewVC.m */; };
 		0079C74D1B9549CC0062F574 /* gin_password@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0079C7401B9549CC0062F574 /* gin_password@2x.png */; };
@@ -140,8 +142,6 @@
 		00ABC32A1D6AC3B8003EDAB7 /* GinhoorFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 00ABC3291D6AC3B8003EDAB7 /* GinhoorFramework.podspec */; };
 		00ABC3321D6AC643003EDAB7 /* loggerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABC3311D6AC643003EDAB7 /* loggerDemoViewController.m */; };
 		00ABC3351D6AC653003EDAB7 /* LoggerDemoAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABC3341D6AC653003EDAB7 /* LoggerDemoAction.m */; };
-		00ABC3391D6AC6F1003EDAB7 /* AppRouter+LoggerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABC3381D6AC6F1003EDAB7 /* AppRouter+LoggerDemo.m */; };
-		00ABC33C1D6AC9AF003EDAB7 /* GinLoggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ABC33B1D6AC9AF003EDAB7 /* GinLoggerManager.m */; };
 		00B997DE1B9E7D74008EE8A1 /* GinFindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997D61B9E7D74008EE8A1 /* GinFindPasswordViewController.m */; };
 		00B997DF1B9E7D74008EE8A1 /* GinResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997D91B9E7D74008EE8A1 /* GinResetPasswordViewController.m */; };
 		00B997E01B9E7D74008EE8A1 /* GinQuickLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997DD1B9E7D74008EE8A1 /* GinQuickLoginViewController.m */; };
@@ -282,8 +282,6 @@
 		0018BC6D1B118C7F001E52D5 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		001E90DB1D65D1900054AE69 /* AppDelegateIntercepter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegateIntercepter.h; sourceTree = "<group>"; };
 		001E90DC1D65D1900054AE69 /* AppDelegateIntercepter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateIntercepter.m; sourceTree = "<group>"; };
-		001E90E11D66D67A0054AE69 /* AppRouter+Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+Networking.h"; sourceTree = "<group>"; };
-		001E90E21D66D67A0054AE69 /* AppRouter+Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+Networking.m"; sourceTree = "<group>"; };
 		001E90E41D66D68F0054AE69 /* NetworkingAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingAction.h; sourceTree = "<group>"; };
 		001E90E51D66D68F0054AE69 /* NetworkingAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingAction.m; sourceTree = "<group>"; };
 		001E90E71D66D6AB0054AE69 /* NetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingViewController.h; sourceTree = "<group>"; };
@@ -302,24 +300,6 @@
 		002F326C1B32795F00080B37 /* NSDictionary+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+GinUnit.m"; sourceTree = "<group>"; };
 		0037BE361BB1085C007C7DCE /* NSObject+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Json.h"; sourceTree = "<group>"; };
 		0037BE371BB1085C007C7DCE /* NSObject+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Json.m"; sourceTree = "<group>"; };
-		0051A6331D65851400C7AAD2 /* AppRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRouter.h; sourceTree = "<group>"; };
-		0051A6341D65851400C7AAD2 /* AppRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRouter.m; sourceTree = "<group>"; };
-		0051A6421D659CD900C7AAD2 /* AppRouter+ContactsBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+ContactsBook.h"; sourceTree = "<group>"; };
-		0051A6431D659CD900C7AAD2 /* AppRouter+ContactsBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+ContactsBook.m"; sourceTree = "<group>"; };
-		0051A6461D659D1900C7AAD2 /* AppRouter+TabsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+TabsViewController.h"; sourceTree = "<group>"; };
-		0051A6471D659D1900C7AAD2 /* AppRouter+TabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+TabsViewController.m"; sourceTree = "<group>"; };
-		0051A64A1D659D4700C7AAD2 /* AppRouter+PhotoGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+PhotoGallery.h"; sourceTree = "<group>"; };
-		0051A64B1D659D4700C7AAD2 /* AppRouter+PhotoGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+PhotoGallery.m"; sourceTree = "<group>"; };
-		0051A6521D659EC700C7AAD2 /* AppRouter+DemoCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+DemoCode.h"; sourceTree = "<group>"; };
-		0051A6531D659EC700C7AAD2 /* AppRouter+DemoCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+DemoCode.m"; sourceTree = "<group>"; };
-		0051A65A1D65A05000C7AAD2 /* AppRouter+PullDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+PullDownMenu.h"; sourceTree = "<group>"; };
-		0051A65B1D65A05000C7AAD2 /* AppRouter+PullDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+PullDownMenu.m"; sourceTree = "<group>"; };
-		0051A6631D65A12F00C7AAD2 /* AppRouter+EmptyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+EmptyTableView.h"; sourceTree = "<group>"; };
-		0051A6641D65A12F00C7AAD2 /* AppRouter+EmptyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+EmptyTableView.m"; sourceTree = "<group>"; };
-		0051A6671D65A30E00C7AAD2 /* AppRouter+StepperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+StepperView.h"; sourceTree = "<group>"; };
-		0051A6681D65A30E00C7AAD2 /* AppRouter+StepperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+StepperView.m"; sourceTree = "<group>"; };
-		0051A66B1D65A38800C7AAD2 /* AppRouter+TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+TableViewController.h"; sourceTree = "<group>"; };
-		0051A66C1D65A38800C7AAD2 /* AppRouter+TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+TableViewController.m"; sourceTree = "<group>"; };
 		0051A6731D65A61100C7AAD2 /* TableVCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableVCAction.h; sourceTree = "<group>"; };
 		0051A6741D65A61100C7AAD2 /* TableVCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableVCAction.m; sourceTree = "<group>"; };
 		0051A6771D65A6F300C7AAD2 /* StepperVCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepperVCAction.h; sourceTree = "<group>"; };
@@ -338,16 +318,10 @@
 		0051A6901D65AFEA00C7AAD2 /* ContactsBookAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsBookAction.m; sourceTree = "<group>"; };
 		0051A6931D65B26F00C7AAD2 /* HZTableVCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZTableVCAction.h; sourceTree = "<group>"; };
 		0051A6941D65B26F00C7AAD2 /* HZTableVCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZTableVCAction.m; sourceTree = "<group>"; };
-		0051A6971D65B31300C7AAD2 /* AppRouter+HZTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+HZTableVC.h"; sourceTree = "<group>"; };
-		0051A6981D65B31300C7AAD2 /* AppRouter+HZTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+HZTableVC.m"; sourceTree = "<group>"; };
 		0051A69B1D65B3C700C7AAD2 /* GinSystemButtonVCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinSystemButtonVCAction.h; sourceTree = "<group>"; };
 		0051A69C1D65B3C700C7AAD2 /* GinSystemButtonVCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinSystemButtonVCAction.m; sourceTree = "<group>"; };
-		0051A6A21D65B4C800C7AAD2 /* AppRouter+GinSystemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+GinSystemButton.h"; sourceTree = "<group>"; };
-		0051A6A31D65B4C800C7AAD2 /* AppRouter+GinSystemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+GinSystemButton.m"; sourceTree = "<group>"; };
 		0051A6A61D65B5DE00C7AAD2 /* LoginAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAction.h; sourceTree = "<group>"; };
 		0051A6A71D65B5DE00C7AAD2 /* LoginAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAction.m; sourceTree = "<group>"; };
-		0051A6AA1D65B8DB00C7AAD2 /* AppRouter+Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+Login.h"; sourceTree = "<group>"; };
-		0051A6AB1D65B8DB00C7AAD2 /* AppRouter+Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+Login.m"; sourceTree = "<group>"; };
 		005421DB1B47DF6F0028CCE6 /* GinAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinAddressBook.h; sourceTree = "<group>"; };
 		005421DC1B47DF6F0028CCE6 /* GinAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinAddressBook.m; sourceTree = "<group>"; };
 		005422E91B47F4710028CCE6 /* GinKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinKeyboardManager.h; sourceTree = "<group>"; };
@@ -411,12 +385,42 @@
 		006A94C71ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GinBaseCollectionView.m"; sourceTree = "<group>"; };
 		006A94CD1ADFFF570093BEBE /* NSString+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Json.h"; sourceTree = "<group>"; };
 		006A94CE1ADFFF570093BEBE /* NSString+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Json.m"; sourceTree = "<group>"; };
+		006AB0531D6D5E15009A9387 /* GinLoggerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinLoggerManager.h; sourceTree = "<group>"; };
+		006AB0541D6D5E15009A9387 /* GinLoggerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoggerManager.m; sourceTree = "<group>"; };
+		006AB0571D6D5E41009A9387 /* AppRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRouter.h; sourceTree = "<group>"; };
+		006AB0581D6D5E41009A9387 /* AppRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRouter.m; sourceTree = "<group>"; };
+		006AB05B1D6D5E41009A9387 /* AppRouter+ContactsBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+ContactsBook.h"; sourceTree = "<group>"; };
+		006AB05C1D6D5E41009A9387 /* AppRouter+ContactsBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+ContactsBook.m"; sourceTree = "<group>"; };
+		006AB05E1D6D5E41009A9387 /* AppRouter+DemoCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+DemoCode.h"; sourceTree = "<group>"; };
+		006AB05F1D6D5E41009A9387 /* AppRouter+DemoCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+DemoCode.m"; sourceTree = "<group>"; };
+		006AB0611D6D5E41009A9387 /* AppRouter+EmptyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+EmptyTableView.h"; sourceTree = "<group>"; };
+		006AB0621D6D5E41009A9387 /* AppRouter+EmptyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+EmptyTableView.m"; sourceTree = "<group>"; };
+		006AB0641D6D5E41009A9387 /* AppRouter+GinSystemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+GinSystemButton.h"; sourceTree = "<group>"; };
+		006AB0651D6D5E41009A9387 /* AppRouter+GinSystemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+GinSystemButton.m"; sourceTree = "<group>"; };
+		006AB0671D6D5E41009A9387 /* AppRouter+HZTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+HZTableVC.h"; sourceTree = "<group>"; };
+		006AB0681D6D5E41009A9387 /* AppRouter+HZTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+HZTableVC.m"; sourceTree = "<group>"; };
+		006AB06A1D6D5E41009A9387 /* AppRouter+LoggerDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+LoggerDemo.h"; sourceTree = "<group>"; };
+		006AB06B1D6D5E41009A9387 /* AppRouter+LoggerDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+LoggerDemo.m"; sourceTree = "<group>"; };
+		006AB06D1D6D5E41009A9387 /* AppRouter+Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+Login.h"; sourceTree = "<group>"; };
+		006AB06E1D6D5E41009A9387 /* AppRouter+Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+Login.m"; sourceTree = "<group>"; };
+		006AB0701D6D5E41009A9387 /* AppRouter+Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+Networking.h"; sourceTree = "<group>"; };
+		006AB0711D6D5E41009A9387 /* AppRouter+Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+Networking.m"; sourceTree = "<group>"; };
+		006AB0731D6D5E41009A9387 /* AppRouter+PhotoGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+PhotoGallery.h"; sourceTree = "<group>"; };
+		006AB0741D6D5E41009A9387 /* AppRouter+PhotoGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+PhotoGallery.m"; sourceTree = "<group>"; };
+		006AB0761D6D5E41009A9387 /* AppRouter+PullDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+PullDownMenu.h"; sourceTree = "<group>"; };
+		006AB0771D6D5E41009A9387 /* AppRouter+PullDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+PullDownMenu.m"; sourceTree = "<group>"; };
+		006AB0791D6D5E41009A9387 /* AppRouter+StepperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+StepperView.h"; sourceTree = "<group>"; };
+		006AB07A1D6D5E41009A9387 /* AppRouter+StepperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+StepperView.m"; sourceTree = "<group>"; };
+		006AB07C1D6D5E41009A9387 /* AppRouter+TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+TableViewController.h"; sourceTree = "<group>"; };
+		006AB07D1D6D5E41009A9387 /* AppRouter+TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+TableViewController.m"; sourceTree = "<group>"; };
+		006AB07F1D6D5E41009A9387 /* AppRouter+TabsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+TabsViewController.h"; sourceTree = "<group>"; };
+		006AB0801D6D5E41009A9387 /* AppRouter+TabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+TabsViewController.m"; sourceTree = "<group>"; };
+		006AB0821D6D5E41009A9387 /* AppRouter+ThemeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+ThemeDemo.h"; sourceTree = "<group>"; };
+		006AB0831D6D5E41009A9387 /* AppRouter+ThemeDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+ThemeDemo.m"; sourceTree = "<group>"; };
 		006ABF891D67403F00D19F86 /* ThemeDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeDemoViewController.h; sourceTree = "<group>"; };
 		006ABF8A1D67403F00D19F86 /* ThemeDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeDemoViewController.m; sourceTree = "<group>"; };
 		006ABF8C1D67405200D19F86 /* ThemeDemoAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeDemoAction.h; sourceTree = "<group>"; };
 		006ABF8D1D67405200D19F86 /* ThemeDemoAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeDemoAction.m; sourceTree = "<group>"; };
-		006ABF901D67411100D19F86 /* AppRouter+ThemeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+ThemeDemo.h"; sourceTree = "<group>"; };
-		006ABF911D67411100D19F86 /* AppRouter+ThemeDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+ThemeDemo.m"; sourceTree = "<group>"; };
 		006ABF931D67429D00D19F86 /* ThemeDemoViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThemeDemoViewController.storyboard; sourceTree = "<group>"; };
 		006AF4AB1B09EFE00033BCA3 /* GinTypeUnitHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinTypeUnitHeader.h; sourceTree = "<group>"; };
 		0079C73D1B9549CC0062F574 /* RegistViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewVC.h; sourceTree = "<group>"; };
@@ -494,10 +498,6 @@
 		00ABC3311D6AC643003EDAB7 /* loggerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loggerDemoViewController.m; sourceTree = "<group>"; };
 		00ABC3331D6AC653003EDAB7 /* LoggerDemoAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerDemoAction.h; sourceTree = "<group>"; };
 		00ABC3341D6AC653003EDAB7 /* LoggerDemoAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerDemoAction.m; sourceTree = "<group>"; };
-		00ABC3371D6AC6F1003EDAB7 /* AppRouter+LoggerDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+LoggerDemo.h"; sourceTree = "<group>"; };
-		00ABC3381D6AC6F1003EDAB7 /* AppRouter+LoggerDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+LoggerDemo.m"; sourceTree = "<group>"; };
-		00ABC33A1D6AC9AF003EDAB7 /* GinLoggerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinLoggerManager.h; sourceTree = "<group>"; };
-		00ABC33B1D6AC9AF003EDAB7 /* GinLoggerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoggerManager.m; sourceTree = "<group>"; };
 		00B997D51B9E7D74008EE8A1 /* GinFindPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinFindPasswordViewController.h; sourceTree = "<group>"; };
 		00B997D61B9E7D74008EE8A1 /* GinFindPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinFindPasswordViewController.m; sourceTree = "<group>"; };
 		00B997D81B9E7D74008EE8A1 /* GinResetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinResetPasswordViewController.h; sourceTree = "<group>"; };
@@ -831,6 +831,8 @@
 		0018BA431B115CA7001E52D5 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				006AB0561D6D5E41009A9387 /* Router */,
+				006AB0521D6D5E15009A9387 /* Theme */,
 				00D04C711D6A9DAD00B4C27C /* UIFont */,
 				00D04C611D6A99BF00B4C27C /* ThemeManager */,
 				00E2DBF21C02E6E000567662 /* LightAppDelegate */,
@@ -862,15 +864,6 @@
 				001E90E01D66D6650054AE69 /* Actions */,
 				001E90E71D66D6AB0054AE69 /* NetworkingViewController.h */,
 				001E90E81D66D6AB0054AE69 /* NetworkingViewController.m */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		001E90DF1D66D6490054AE69 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				001E90E11D66D67A0054AE69 /* AppRouter+Networking.h */,
-				001E90E21D66D67A0054AE69 /* AppRouter+Networking.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -914,109 +907,6 @@
 				002F326C1B32795F00080B37 /* NSDictionary+GinUnit.m */,
 			);
 			path = NSDictionary;
-			sourceTree = "<group>";
-		};
-		0051A6321D65851400C7AAD2 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				0051A6361D65852300C7AAD2 /* Category */,
-				0051A6331D65851400C7AAD2 /* AppRouter.h */,
-				0051A6341D65851400C7AAD2 /* AppRouter.m */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		0051A6361D65852300C7AAD2 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				00ABC3361D6AC6E7003EDAB7 /* Logger */,
-				006ABF8F1D67408800D19F86 /* ThemeDemo */,
-				001E90DF1D66D6490054AE69 /* Networking */,
-				0051A6A91D65B8D300C7AAD2 /* Login */,
-				0051A69E1D65B49100C7AAD2 /* GinSystemButton */,
-				0051A6961D65B30000C7AAD2 /* HZTableView */,
-				0051A66A1D65A38100C7AAD2 /* TableViewController */,
-				0051A6661D65A30300C7AAD2 /* StepperView */,
-				0051A6621D65A12F00C7AAD2 /* EmptyTableView */,
-				0051A6591D65A05000C7AAD2 /* PullDownMenu */,
-				0051A6511D659EBE00C7AAD2 /* DemoCode */,
-				0051A6491D659D4700C7AAD2 /* PhotoGallery */,
-				0051A6451D659D1900C7AAD2 /* TabsViewController */,
-				0051A6411D659CD900C7AAD2 /* ConstacsBook */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		0051A6411D659CD900C7AAD2 /* ConstacsBook */ = {
-			isa = PBXGroup;
-			children = (
-				0051A6421D659CD900C7AAD2 /* AppRouter+ContactsBook.h */,
-				0051A6431D659CD900C7AAD2 /* AppRouter+ContactsBook.m */,
-			);
-			path = ConstacsBook;
-			sourceTree = "<group>";
-		};
-		0051A6451D659D1900C7AAD2 /* TabsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				0051A6461D659D1900C7AAD2 /* AppRouter+TabsViewController.h */,
-				0051A6471D659D1900C7AAD2 /* AppRouter+TabsViewController.m */,
-			);
-			path = TabsViewController;
-			sourceTree = "<group>";
-		};
-		0051A6491D659D4700C7AAD2 /* PhotoGallery */ = {
-			isa = PBXGroup;
-			children = (
-				0051A64A1D659D4700C7AAD2 /* AppRouter+PhotoGallery.h */,
-				0051A64B1D659D4700C7AAD2 /* AppRouter+PhotoGallery.m */,
-			);
-			path = PhotoGallery;
-			sourceTree = "<group>";
-		};
-		0051A6511D659EBE00C7AAD2 /* DemoCode */ = {
-			isa = PBXGroup;
-			children = (
-				0051A6521D659EC700C7AAD2 /* AppRouter+DemoCode.h */,
-				0051A6531D659EC700C7AAD2 /* AppRouter+DemoCode.m */,
-			);
-			path = DemoCode;
-			sourceTree = "<group>";
-		};
-		0051A6591D65A05000C7AAD2 /* PullDownMenu */ = {
-			isa = PBXGroup;
-			children = (
-				0051A65A1D65A05000C7AAD2 /* AppRouter+PullDownMenu.h */,
-				0051A65B1D65A05000C7AAD2 /* AppRouter+PullDownMenu.m */,
-			);
-			path = PullDownMenu;
-			sourceTree = "<group>";
-		};
-		0051A6621D65A12F00C7AAD2 /* EmptyTableView */ = {
-			isa = PBXGroup;
-			children = (
-				0051A6631D65A12F00C7AAD2 /* AppRouter+EmptyTableView.h */,
-				0051A6641D65A12F00C7AAD2 /* AppRouter+EmptyTableView.m */,
-			);
-			path = EmptyTableView;
-			sourceTree = "<group>";
-		};
-		0051A6661D65A30300C7AAD2 /* StepperView */ = {
-			isa = PBXGroup;
-			children = (
-				0051A6671D65A30E00C7AAD2 /* AppRouter+StepperView.h */,
-				0051A6681D65A30E00C7AAD2 /* AppRouter+StepperView.m */,
-			);
-			path = StepperView;
-			sourceTree = "<group>";
-		};
-		0051A66A1D65A38100C7AAD2 /* TableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				0051A66B1D65A38800C7AAD2 /* AppRouter+TableViewController.h */,
-				0051A66C1D65A38800C7AAD2 /* AppRouter+TableViewController.m */,
-			);
-			path = TableViewController;
 			sourceTree = "<group>";
 		};
 		0051A6721D65A61100C7AAD2 /* Actions */ = {
@@ -1100,15 +990,6 @@
 			path = Actions;
 			sourceTree = "<group>";
 		};
-		0051A6961D65B30000C7AAD2 /* HZTableView */ = {
-			isa = PBXGroup;
-			children = (
-				0051A6971D65B31300C7AAD2 /* AppRouter+HZTableVC.h */,
-				0051A6981D65B31300C7AAD2 /* AppRouter+HZTableVC.m */,
-			);
-			path = HZTableView;
-			sourceTree = "<group>";
-		};
 		0051A69A1D65B3B800C7AAD2 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
@@ -1118,15 +999,6 @@
 			path = Actions;
 			sourceTree = "<group>";
 		};
-		0051A69E1D65B49100C7AAD2 /* GinSystemButton */ = {
-			isa = PBXGroup;
-			children = (
-				0051A6A21D65B4C800C7AAD2 /* AppRouter+GinSystemButton.h */,
-				0051A6A31D65B4C800C7AAD2 /* AppRouter+GinSystemButton.m */,
-			);
-			path = GinSystemButton;
-			sourceTree = "<group>";
-		};
 		0051A6A51D65B5C100C7AAD2 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
@@ -1134,15 +1006,6 @@
 				0051A6A71D65B5DE00C7AAD2 /* LoginAction.m */,
 			);
 			path = Actions;
-			sourceTree = "<group>";
-		};
-		0051A6A91D65B8D300C7AAD2 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				0051A6AA1D65B8DB00C7AAD2 /* AppRouter+Login.h */,
-				0051A6AB1D65B8DB00C7AAD2 /* AppRouter+Login.m */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		005421DA1B47DF6F0028CCE6 /* GinContactsBook */ = {
@@ -1417,6 +1280,172 @@
 			path = GinSysInfo;
 			sourceTree = "<group>";
 		};
+		006AB0521D6D5E15009A9387 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				006AB0531D6D5E15009A9387 /* GinLoggerManager.h */,
+				006AB0541D6D5E15009A9387 /* GinLoggerManager.m */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		006AB0561D6D5E41009A9387 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				006AB0571D6D5E41009A9387 /* AppRouter.h */,
+				006AB0581D6D5E41009A9387 /* AppRouter.m */,
+				006AB0591D6D5E41009A9387 /* Category */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		006AB0591D6D5E41009A9387 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				006AB05A1D6D5E41009A9387 /* ConstacsBook */,
+				006AB05D1D6D5E41009A9387 /* DemoCode */,
+				006AB0601D6D5E41009A9387 /* EmptyTableView */,
+				006AB0631D6D5E41009A9387 /* GinSystemButton */,
+				006AB0661D6D5E41009A9387 /* HZTableView */,
+				006AB0691D6D5E41009A9387 /* Logger */,
+				006AB06C1D6D5E41009A9387 /* Login */,
+				006AB06F1D6D5E41009A9387 /* Networking */,
+				006AB0721D6D5E41009A9387 /* PhotoGallery */,
+				006AB0751D6D5E41009A9387 /* PullDownMenu */,
+				006AB0781D6D5E41009A9387 /* StepperView */,
+				006AB07B1D6D5E41009A9387 /* TableViewController */,
+				006AB07E1D6D5E41009A9387 /* TabsViewController */,
+				006AB0811D6D5E41009A9387 /* ThemeDemo */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		006AB05A1D6D5E41009A9387 /* ConstacsBook */ = {
+			isa = PBXGroup;
+			children = (
+				006AB05B1D6D5E41009A9387 /* AppRouter+ContactsBook.h */,
+				006AB05C1D6D5E41009A9387 /* AppRouter+ContactsBook.m */,
+			);
+			path = ConstacsBook;
+			sourceTree = "<group>";
+		};
+		006AB05D1D6D5E41009A9387 /* DemoCode */ = {
+			isa = PBXGroup;
+			children = (
+				006AB05E1D6D5E41009A9387 /* AppRouter+DemoCode.h */,
+				006AB05F1D6D5E41009A9387 /* AppRouter+DemoCode.m */,
+			);
+			path = DemoCode;
+			sourceTree = "<group>";
+		};
+		006AB0601D6D5E41009A9387 /* EmptyTableView */ = {
+			isa = PBXGroup;
+			children = (
+				006AB0611D6D5E41009A9387 /* AppRouter+EmptyTableView.h */,
+				006AB0621D6D5E41009A9387 /* AppRouter+EmptyTableView.m */,
+			);
+			path = EmptyTableView;
+			sourceTree = "<group>";
+		};
+		006AB0631D6D5E41009A9387 /* GinSystemButton */ = {
+			isa = PBXGroup;
+			children = (
+				006AB0641D6D5E41009A9387 /* AppRouter+GinSystemButton.h */,
+				006AB0651D6D5E41009A9387 /* AppRouter+GinSystemButton.m */,
+			);
+			path = GinSystemButton;
+			sourceTree = "<group>";
+		};
+		006AB0661D6D5E41009A9387 /* HZTableView */ = {
+			isa = PBXGroup;
+			children = (
+				006AB0671D6D5E41009A9387 /* AppRouter+HZTableVC.h */,
+				006AB0681D6D5E41009A9387 /* AppRouter+HZTableVC.m */,
+			);
+			path = HZTableView;
+			sourceTree = "<group>";
+		};
+		006AB0691D6D5E41009A9387 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				006AB06A1D6D5E41009A9387 /* AppRouter+LoggerDemo.h */,
+				006AB06B1D6D5E41009A9387 /* AppRouter+LoggerDemo.m */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		006AB06C1D6D5E41009A9387 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				006AB06D1D6D5E41009A9387 /* AppRouter+Login.h */,
+				006AB06E1D6D5E41009A9387 /* AppRouter+Login.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		006AB06F1D6D5E41009A9387 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				006AB0701D6D5E41009A9387 /* AppRouter+Networking.h */,
+				006AB0711D6D5E41009A9387 /* AppRouter+Networking.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		006AB0721D6D5E41009A9387 /* PhotoGallery */ = {
+			isa = PBXGroup;
+			children = (
+				006AB0731D6D5E41009A9387 /* AppRouter+PhotoGallery.h */,
+				006AB0741D6D5E41009A9387 /* AppRouter+PhotoGallery.m */,
+			);
+			path = PhotoGallery;
+			sourceTree = "<group>";
+		};
+		006AB0751D6D5E41009A9387 /* PullDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				006AB0761D6D5E41009A9387 /* AppRouter+PullDownMenu.h */,
+				006AB0771D6D5E41009A9387 /* AppRouter+PullDownMenu.m */,
+			);
+			path = PullDownMenu;
+			sourceTree = "<group>";
+		};
+		006AB0781D6D5E41009A9387 /* StepperView */ = {
+			isa = PBXGroup;
+			children = (
+				006AB0791D6D5E41009A9387 /* AppRouter+StepperView.h */,
+				006AB07A1D6D5E41009A9387 /* AppRouter+StepperView.m */,
+			);
+			path = StepperView;
+			sourceTree = "<group>";
+		};
+		006AB07B1D6D5E41009A9387 /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				006AB07C1D6D5E41009A9387 /* AppRouter+TableViewController.h */,
+				006AB07D1D6D5E41009A9387 /* AppRouter+TableViewController.m */,
+			);
+			path = TableViewController;
+			sourceTree = "<group>";
+		};
+		006AB07E1D6D5E41009A9387 /* TabsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				006AB07F1D6D5E41009A9387 /* AppRouter+TabsViewController.h */,
+				006AB0801D6D5E41009A9387 /* AppRouter+TabsViewController.m */,
+			);
+			path = TabsViewController;
+			sourceTree = "<group>";
+		};
+		006AB0811D6D5E41009A9387 /* ThemeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				006AB0821D6D5E41009A9387 /* AppRouter+ThemeDemo.h */,
+				006AB0831D6D5E41009A9387 /* AppRouter+ThemeDemo.m */,
+			);
+			path = ThemeDemo;
+			sourceTree = "<group>";
+		};
 		006ABF871D673FB800D19F86 /* ThemeDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1435,15 +1464,6 @@
 				006ABF8D1D67405200D19F86 /* ThemeDemoAction.m */,
 			);
 			path = Actions;
-			sourceTree = "<group>";
-		};
-		006ABF8F1D67408800D19F86 /* ThemeDemo */ = {
-			isa = PBXGroup;
-			children = (
-				006ABF901D67411100D19F86 /* AppRouter+ThemeDemo.h */,
-				006ABF911D67411100D19F86 /* AppRouter+ThemeDemo.m */,
-			);
-			path = ThemeDemo;
 			sourceTree = "<group>";
 		};
 		006AF4AA1B09EF290033BCA3 /* Header */ = {
@@ -1513,7 +1533,6 @@
 		0095FED11B71A30300BF8987 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				0051A6321D65851400C7AAD2 /* Router */,
 				00ABC32E1D6AC643003EDAB7 /* Logger */,
 				006ABF871D673FB800D19F86 /* ThemeDemo */,
 				001E90DE1D66D6420054AE69 /* Networking */,
@@ -1752,8 +1771,6 @@
 				00ABC32F1D6AC643003EDAB7 /* Actions */,
 				00ABC3301D6AC643003EDAB7 /* loggerDemoViewController.h */,
 				00ABC3311D6AC643003EDAB7 /* loggerDemoViewController.m */,
-				00ABC33A1D6AC9AF003EDAB7 /* GinLoggerManager.h */,
-				00ABC33B1D6AC9AF003EDAB7 /* GinLoggerManager.m */,
 			);
 			path = Logger;
 			sourceTree = "<group>";
@@ -1765,15 +1782,6 @@
 				00ABC3341D6AC653003EDAB7 /* LoggerDemoAction.m */,
 			);
 			path = Actions;
-			sourceTree = "<group>";
-		};
-		00ABC3361D6AC6E7003EDAB7 /* Logger */ = {
-			isa = PBXGroup;
-			children = (
-				00ABC3371D6AC6F1003EDAB7 /* AppRouter+LoggerDemo.h */,
-				00ABC3381D6AC6F1003EDAB7 /* AppRouter+LoggerDemo.m */,
-			);
-			path = Logger;
 			sourceTree = "<group>";
 		};
 		00B997D41B9E7D74008EE8A1 /* FindPassword */ = {
@@ -2598,18 +2606,17 @@
 			files = (
 				00D04C741D6A9DAD00B4C27C /* GUIFont.m in Sources */,
 				00D04C8C1D6A9DDB00B4C27C /* BaseViewModel.m in Sources */,
-				0051A6991D65B31300C7AAD2 /* AppRouter+HZTableVC.m in Sources */,
 				0051A6811D65A8CF00C7AAD2 /* PhotoGalleryAction.m in Sources */,
-				00ABC3391D6AC6F1003EDAB7 /* AppRouter+LoggerDemo.m in Sources */,
 				00E2DBED1C02BDEE00567662 /* ContactsBookViewController.m in Sources */,
-				0051A6AC1D65B8DB00C7AAD2 /* AppRouter+Login.m in Sources */,
 				00D04C1F1D6A91C400B4C27C /* IconTextField.m in Sources */,
 				002F326D1B32795F00080B37 /* NSDictionary+GinUnit.m in Sources */,
+				006AB08B1D6D5E41009A9387 /* AppRouter+Login.m in Sources */,
 				00D04C4D1D6A922300B4C27C /* UICollectionViewCell+GinAnimation.m in Sources */,
 				0006040C1B9E6F9C0026D80F /* GinLoginWithPhoneViewController.m in Sources */,
 				00D04C3A1D6A91C400B4C27C /* GinPopupGradientView.m in Sources */,
 				002F21A41D66F33A0021E6F4 /* LifeCycleViewController.m in Sources */,
 				0095FF651B71A71800BF8987 /* BaiduMapViewController.m in Sources */,
+				006AB08A1D6D5E41009A9387 /* AppRouter+LoggerDemo.m in Sources */,
 				00D04C181D6A91C400B4C27C /* GinTagButton.m in Sources */,
 				00D04C381D6A91C400B4C27C /* GinPopup.m in Sources */,
 				00B997E01B9E7D74008EE8A1 /* GinQuickLoginViewController.m in Sources */,
@@ -2617,7 +2624,10 @@
 				006A94C81ADFBA4D0093BEBE /* UIViewController+GinBaseCollectionView.m in Sources */,
 				0095FF681B71A71800BF8987 /* StoreLocationMapViewController.m in Sources */,
 				0095FF0C1B71A30300BF8987 /* page3Controller.m in Sources */,
+				006AB0841D6D5E41009A9387 /* AppRouter.m in Sources */,
+				006AB0921D6D5E41009A9387 /* AppRouter+ThemeDemo.m in Sources */,
 				006A93C81ADE09090093BEBE /* UIImage+GinUnit.m in Sources */,
+				006AB0861D6D5E41009A9387 /* AppRouter+DemoCode.m in Sources */,
 				006A93AD1ADE09090093BEBE /* GinCollectionLayout.m in Sources */,
 				00D04C8B1D6A9DDB00B4C27C /* BaseViewController.m in Sources */,
 				0095FF181B71A30300BF8987 /* demo4Gallery.m in Sources */,
@@ -2644,41 +2654,44 @@
 				006A94CF1ADFFF570093BEBE /* NSString+Json.m in Sources */,
 				0095FF631B71A71800BF8987 /* TextCollectionCell.m in Sources */,
 				00D04C141D6A91C400B4C27C /* GinFloatedButton.m in Sources */,
-				0051A65C1D65A05000C7AAD2 /* AppRouter+PullDownMenu.m in Sources */,
 				00D04C8E1D6A9DDB00B4C27C /* BaseCollectionViewContoller.m in Sources */,
 				0051A6911D65AFEA00C7AAD2 /* ContactsBookAction.m in Sources */,
 				00D04C401D6A91C400B4C27C /* GinWebViewController.m in Sources */,
 				00D04C151D6A91C400B4C27C /* GinHorizontalLayoutButton.m in Sources */,
+				006AB0871D6D5E41009A9387 /* AppRouter+EmptyTableView.m in Sources */,
 				006A94BC1ADFAD6D0093BEBE /* UIViewController+GinBaseTableView.m in Sources */,
 				00D04C501D6A922300B4C27C /* UITableView+Wave.m in Sources */,
 				0095FF191B71A30300BF8987 /* GalleryViewController.m in Sources */,
+				006AB0851D6D5E41009A9387 /* AppRouter+ContactsBook.m in Sources */,
 				006A93B71ADE09090093BEBE /* UIView+GinCGRect.m in Sources */,
 				00A3E3F31B8FF9C60065C3EA /* NSString+RegEx.m in Sources */,
 				0051A6A81D65B5DE00C7AAD2 /* LoginAction.m in Sources */,
 				006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */,
 				00D04C191D6A91C400B4C27C /* GinVerticalLayoutButton.m in Sources */,
 				0051A6751D65A61100C7AAD2 /* TableVCAction.m in Sources */,
+				006AB0901D6D5E41009A9387 /* AppRouter+TableViewController.m in Sources */,
 				00D04C231D6A91C400B4C27C /* GinPullDownMenuCell.m in Sources */,
 				002F315D1B2A72AC00080B37 /* NSAttributedString+GinUnit.m in Sources */,
+				006AB0881D6D5E41009A9387 /* AppRouter+GinSystemButton.m in Sources */,
+				006AB08D1D6D5E41009A9387 /* AppRouter+PhotoGallery.m in Sources */,
+				006AB0891D6D5E41009A9387 /* AppRouter+HZTableVC.m in Sources */,
 				0095FF0A1B71A30300BF8987 /* page1Controller.m in Sources */,
 				0095FF0D1B71A30300BF8987 /* TabsViewController.m in Sources */,
 				006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */,
 				00D04C2D1D6A91C400B4C27C /* IconTableCell.m in Sources */,
 				00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */,
-				0051A64C1D659D4700C7AAD2 /* AppRouter+PhotoGallery.m in Sources */,
-				0051A6441D659CD900C7AAD2 /* AppRouter+ContactsBook.m in Sources */,
 				00D04C1C1D6A91C400B4C27C /* ExtendMenu.m in Sources */,
 				006A94C51ADFB9C70093BEBE /* UIView+GinBaseClass.m in Sources */,
-				0051A66D1D65A38800C7AAD2 /* AppRouter+TableViewController.m in Sources */,
 				00D04C321D6A91C400B4C27C /* GinTableIndex.m in Sources */,
 				0051A69D1D65B3C700C7AAD2 /* GinSystemButtonVCAction.m in Sources */,
 				00D04C1E1D6A91C400B4C27C /* GinTextView.m in Sources */,
+				006AB08C1D6D5E41009A9387 /* AppRouter+Networking.m in Sources */,
+				006AB08F1D6D5E41009A9387 /* AppRouter+StepperView.m in Sources */,
 				006A94B91ADF9CBD0093BEBE /* UICollectionView+GinBaseClass.m in Sources */,
 				00D04C171D6A91C400B4C27C /* GinSystemButton.m in Sources */,
 				00D04C241D6A91C400B4C27C /* GinPullDownMenuItem.m in Sources */,
 				006A93BF1ADE09090093BEBE /* NSData+NSString.m in Sources */,
 				00B997DE1B9E7D74008EE8A1 /* GinFindPasswordViewController.m in Sources */,
-				0051A6541D659EC700C7AAD2 /* AppRouter+DemoCode.m in Sources */,
 				00D04C361D6A91C400B4C27C /* GinShowPhotoViewController.m in Sources */,
 				006A93A91ADE09090093BEBE /* NSString+Base64.m in Sources */,
 				00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */,
@@ -2697,9 +2710,7 @@
 				008660171B81759900B76218 /* NSKeyedArchiverDemo.m in Sources */,
 				006A93C41ADE09090093BEBE /* NSURL+GinUnit.m in Sources */,
 				0051A6791D65A6F300C7AAD2 /* StepperVCAction.m in Sources */,
-				0051A6651D65A12F00C7AAD2 /* AppRouter+EmptyTableView.m in Sources */,
 				006A93C21ADE09090093BEBE /* NSString+formatContentString.m in Sources */,
-				0051A6A41D65B4C800C7AAD2 /* AppRouter+GinSystemButton.m in Sources */,
 				000B52941ADBCF8100946853 /* ViewController.m in Sources */,
 				006A93C51ADE09090093BEBE /* NSURL+Videos.m in Sources */,
 				000603D41B9C36130026D80F /* Person.m in Sources */,
@@ -2712,9 +2723,9 @@
 				001E90E61D66D68F0054AE69 /* NetworkingAction.m in Sources */,
 				006A93C71ADE09090093BEBE /* UIAlertView+GinUnit.m in Sources */,
 				00D04C391D6A91C400B4C27C /* GinPopupContentView.m in Sources */,
-				0051A6481D659D1900C7AAD2 /* AppRouter+TabsViewController.m in Sources */,
 				0095FF641B71A71800BF8987 /* AddressSearchResultViewController.m in Sources */,
 				00F7FC711AEDEB840080AFC7 /* UIView+Debug.m in Sources */,
+				006AB08E1D6D5E41009A9387 /* AppRouter+PullDownMenu.m in Sources */,
 				00D04C3D1D6A91C400B4C27C /* GinScanQRCoderController.m in Sources */,
 				00D04C201D6A91C400B4C27C /* UITextField+Keyboard.m in Sources */,
 				00D04C161D6A91C400B4C27C /* GinImageButton.m in Sources */,
@@ -2736,10 +2747,9 @@
 				006A93BC1ADE09090093BEBE /* NSObject+CoreGraphic.m in Sources */,
 				00F7FC701AEDEB840080AFC7 /* NSString+Debug.m in Sources */,
 				00D04C2C1D6A91C400B4C27C /* GinPanCell.m in Sources */,
-				0051A6351D65851400C7AAD2 /* AppRouter.m in Sources */,
+				006AB0911D6D5E41009A9387 /* AppRouter+TabsViewController.m in Sources */,
 				000B528E1ADBCF8100946853 /* main.m in Sources */,
 				006A93C11ADE09090093BEBE /* NSDate+RCUtility.m in Sources */,
-				001E90E31D66D67A0054AE69 /* AppRouter+Networking.m in Sources */,
 				0018B9851B100883001E52D5 /* UIColor+Hex.m in Sources */,
 				008660121B816F7000B76218 /* TYSwizzle.m in Sources */,
 				0095FF611B71A71800BF8987 /* ImageCollectionCell.m in Sources */,
@@ -2754,17 +2764,15 @@
 				006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */,
 				0095FF621B71A71800BF8987 /* ImageWithTitleCollectionCell.m in Sources */,
 				00ABC3321D6AC643003EDAB7 /* loggerDemoViewController.m in Sources */,
+				006AB0551D6D5E15009A9387 /* GinLoggerManager.m in Sources */,
 				006A93CA1ADE09090093BEBE /* UIView+Layer.m in Sources */,
 				006ABF8B1D67403F00D19F86 /* ThemeDemoViewController.m in Sources */,
 				0051A6951D65B26F00C7AAD2 /* HZTableVCAction.m in Sources */,
-				006ABF921D67411100D19F86 /* AppRouter+ThemeDemo.m in Sources */,
 				002F31771B2EA6FC00080B37 /* NSArray+GinUnit.m in Sources */,
 				00D04C3E1D6A91C400B4C27C /* GinTabsViewController.m in Sources */,
-				00ABC33C1D6AC9AF003EDAB7 /* GinLoggerManager.m in Sources */,
 				0095FF081B71A30300BF8987 /* GinSystemButtonViewController.m in Sources */,
 				002F21AA1D6704A90021E6F4 /* HTTPSessionManager.m in Sources */,
 				00D04C1D1D6A91C400B4C27C /* GinExtendMenu.m in Sources */,
-				0051A6691D65A30E00C7AAD2 /* AppRouter+StepperView.m in Sources */,
 				000603F81B9E6BA60026D80F /* GinLoginViewModel.m in Sources */,
 				0095FF1A1B71A30300BF8987 /* PullDownMenuViewController.m in Sources */,
 				00D04C6D1D6A9CA600B4C27C /* GinBaseTitleSectionView.m in Sources */,

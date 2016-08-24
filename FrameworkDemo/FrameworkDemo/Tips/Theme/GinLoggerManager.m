@@ -10,6 +10,7 @@
 
 /*
     将下列代码加入到pch文件中
+#import <CocoaLumberjack/CocoaLumberjack.h>
  
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused-variable"
