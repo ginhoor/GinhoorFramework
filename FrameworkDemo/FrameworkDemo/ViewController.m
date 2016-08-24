@@ -5,6 +5,7 @@
 //  Created by JunhuaShao on 15/4/13.
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
+#import <Masonry.h>
 
 #import "ViewController.h"
 #import "UIViewController+GinBaseTableView.h"
@@ -23,7 +24,7 @@
 #import "AppRouter+Networking.h"
 #import "AppRouter+ThemeDemo.h"
 #import "AppRouter+LoggerDemo.h"
-
+#import "AppRouter+Demo4ExtendMenu.h"
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
@@ -40,17 +41,22 @@
 {
     [super viewDidLoad];
     
+    [self.view addSubview:self.tableView];
+    
     [self.tableView config:^(UITableView *tableView) {
         tableView.delegate = self;
         tableView.dataSource = self;
         [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-        tableView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
+        
     }];
     
-    self.cellDataList = @[@"自定义按钮",@"水平的TableView",@"带Tabs的PageContrller",@"相册浏览",@"下拉菜单",@"列表空数据页面",@"步进器",@"自定义 上&下拉刷新",@"代码测试",@"自定义登录界面",@"联系人导入",@"AFNetworkingDemo",@"控件样式统一设置",@"Logger输出"];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.offset(0);
+    }];
+    
+    self.cellDataList = @[@"自定义按钮",@"水平的TableView",@"带Tabs的PageContrller",@"相册浏览",@"下拉菜单",@"列表空数据页面",@"步进器",@"自定义 上&下拉刷新",@"代码测试",@"自定义登录界面",@"联系人导入",@"AFNetworkingDemo",@"控件样式统一设置",@"Logger输出",@"动态列表高度",@"扩展列表页面",];
     [self.tableView reloadData];
     
-    [self.view addSubview:self.tableView];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -124,6 +130,13 @@
             
         case 13:
             [self.navigationController pushViewController:[[AppRouter sharedInstance] loggerDemoViewController] animated:YES];
+            break;
+        case 14:
+            [self.navigationController pushViewController:[[AppRouter sharedInstance] DynomicTableController] animated:YES];
+            break;
+        
+        case 15:
+            [self.navigationController pushViewController:[[AppRouter sharedInstance] ExtendMenuController] animated:YES];
             break;
             
         default:

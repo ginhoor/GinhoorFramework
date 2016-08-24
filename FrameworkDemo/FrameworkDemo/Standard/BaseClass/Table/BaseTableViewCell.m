@@ -7,33 +7,41 @@
 //
 
 #import "BaseTableViewCell.h"
+#import <Masonry/Masonry.h>
+
+
+@interface BaseTableViewCell ()
+
+@end
 
 @implementation BaseTableViewCell
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        [self setup];
-    }
-    return self;
-}
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        [self setup];
+    if (self && [self conformsToProtocol:@protocol(GinBaseTableCell)]) {
+        [self setupCell];
+    } else {
+        NSAssert(NO, @"子类必须要实现GinBaseTableCell这个protocol。");
     }
     return self;
 }
 
-- (void)setup
+- (void)setupCell
 {
     self.clipsToBounds = YES;
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     self.backgroundColor = [UIColor clearColor];
     [self.contentView addSubview:self.cellContentView];
+    [self setCellConstraints];
+}
+
+// 设置 view 的初次约束
+- (void)setCellConstraints
+{
+    [self.cellContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.offset(0);
+    }];
 }
 
 
@@ -44,11 +52,6 @@
         _cellContentView.backgroundColor = [UIColor whiteColor];
     }
     return _cellContentView;
-}
-
-+ (CGFloat)viewHeight
-{
-    return 150;
 }
 
 @end

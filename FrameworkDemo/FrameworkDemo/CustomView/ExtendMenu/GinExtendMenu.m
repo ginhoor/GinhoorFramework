@@ -71,15 +71,15 @@
         _extendButton = [[UIButton alloc] init];
 
         [_extendButton addTarget:self action:@selector(extendAction:) forControlEvents:UIControlEventTouchUpInside];
-        [_extendButton setImage:[UIImage imageNamed:@"list_icon_drop-down_44x44"] forState:UIControlStateNormal];
-        [_extendButton setImage:[UIImage imageNamed:@"nav_icon_up_44x44"] forState:UIControlStateSelected];
+        [_extendButton setTitle:@"点击打开" forState:UIControlStateNormal];
+        [_extendButton setTitle:@"点击收起" forState:UIControlStateSelected];
     }
     return _extendButton;
 }
 
 - (void)extendAction:(id)sender
 {
-    NSAssert(self.isExtendedBlock, @"isExtendedBlock is nil");
+//    NSAssert(self.isExtendedBlock, @"isExtendedBlock is nil");
     
     self.extended = self.isExtendedBlock?self.isExtendedBlock():NO;
     

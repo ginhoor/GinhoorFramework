@@ -52,6 +52,9 @@
 		005421DD1B47DF6F0028CCE6 /* GinAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 005421DC1B47DF6F0028CCE6 /* GinAddressBook.m */; };
 		005422EB1B47F4710028CCE6 /* GinKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422EA1B47F4710028CCE6 /* GinKeyboardManager.m */; };
 		005422F61B480B830028CCE6 /* UIImagePickerMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422F51B480B830028CCE6 /* UIImagePickerMananger.m */; };
+		005B93291D6D971100DB3AFF /* ExtendMenuTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005B93281D6D971100DB3AFF /* ExtendMenuTableController.m */; };
+		005B932B1D6D971800DB3AFF /* ExtendMenuTableController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005B932A1D6D971800DB3AFF /* ExtendMenuTableController.storyboard */; };
+		005B932E1D6D97C000DB3AFF /* ExtendMenuTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 005B932D1D6D97C000DB3AFF /* ExtendMenuTableCell.m */; };
 		006A93A91ADE09090093BEBE /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93271ADE09090093BEBE /* NSString+Base64.m */; };
 		006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93291ADE09090093BEBE /* UIImage+Base64.m */; };
 		006A93AD1ADE09090093BEBE /* GinCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93331ADE09090093BEBE /* GinCollectionLayout.m */; };
@@ -98,6 +101,11 @@
 		006AB09E1D6D5EF5009A9387 /* default_theme_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 006AB0991D6D5EF5009A9387 /* default_theme_config.json */; };
 		006AB09F1D6D5EF5009A9387 /* night_theme_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 006AB09A1D6D5EF5009A9387 /* night_theme_config.json */; };
 		006AB0A01D6D5EF5009A9387 /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB09C1D6D5EF5009A9387 /* ThemeManager.m */; };
+		006AB0D91D6D68A8009A9387 /* ExtendMenuAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB0D81D6D68A8009A9387 /* ExtendMenuAction.m */; };
+		006AB0DC1D6D68D1009A9387 /* DynomicHeightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB0DB1D6D68D1009A9387 /* DynomicHeightController.m */; };
+		006AB0DE1D6D68E2009A9387 /* DynomicHeightController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006AB0DD1D6D68E2009A9387 /* DynomicHeightController.storyboard */; };
+		006AB0E21D6D73A3009A9387 /* DynomicHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB0E11D6D73A3009A9387 /* DynomicHeightCell.m */; };
+		006AB0E61D6D76AD009A9387 /* AppRouter+Demo4ExtendMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 006AB0E51D6D76AD009A9387 /* AppRouter+Demo4ExtendMenu.m */; };
 		006ABF8B1D67403F00D19F86 /* ThemeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006ABF8A1D67403F00D19F86 /* ThemeDemoViewController.m */; };
 		006ABF8E1D67405200D19F86 /* ThemeDemoAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 006ABF8D1D67405200D19F86 /* ThemeDemoAction.m */; };
 		006ABF941D67429D00D19F86 /* ThemeDemoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006ABF931D67429D00D19F86 /* ThemeDemoViewController.storyboard */; };
@@ -328,6 +336,11 @@
 		005422EA1B47F4710028CCE6 /* GinKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinKeyboardManager.m; sourceTree = "<group>"; };
 		005422F41B480B830028CCE6 /* UIImagePickerMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImagePickerMananger.h; sourceTree = "<group>"; };
 		005422F51B480B830028CCE6 /* UIImagePickerMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerMananger.m; sourceTree = "<group>"; };
+		005B93271D6D971100DB3AFF /* ExtendMenuTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendMenuTableController.h; sourceTree = "<group>"; };
+		005B93281D6D971100DB3AFF /* ExtendMenuTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendMenuTableController.m; sourceTree = "<group>"; };
+		005B932A1D6D971800DB3AFF /* ExtendMenuTableController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExtendMenuTableController.storyboard; sourceTree = "<group>"; };
+		005B932C1D6D97C000DB3AFF /* ExtendMenuTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendMenuTableCell.h; sourceTree = "<group>"; };
+		005B932D1D6D97C000DB3AFF /* ExtendMenuTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendMenuTableCell.m; sourceTree = "<group>"; };
 		006A93251ADE09090093BEBE /* GinCategory_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCategory_Base64.h; sourceTree = "<group>"; };
 		006A93261ADE09090093BEBE /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		006A93271ADE09090093BEBE /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
@@ -422,6 +435,15 @@
 		006AB09A1D6D5EF5009A9387 /* night_theme_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = night_theme_config.json; sourceTree = "<group>"; };
 		006AB09B1D6D5EF5009A9387 /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
 		006AB09C1D6D5EF5009A9387 /* ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManager.m; sourceTree = "<group>"; };
+		006AB0D71D6D68A8009A9387 /* ExtendMenuAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendMenuAction.h; sourceTree = "<group>"; };
+		006AB0D81D6D68A8009A9387 /* ExtendMenuAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendMenuAction.m; sourceTree = "<group>"; };
+		006AB0DA1D6D68D1009A9387 /* DynomicHeightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynomicHeightController.h; sourceTree = "<group>"; };
+		006AB0DB1D6D68D1009A9387 /* DynomicHeightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynomicHeightController.m; sourceTree = "<group>"; };
+		006AB0DD1D6D68E2009A9387 /* DynomicHeightController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynomicHeightController.storyboard; sourceTree = "<group>"; };
+		006AB0E01D6D73A3009A9387 /* DynomicHeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynomicHeightCell.h; sourceTree = "<group>"; };
+		006AB0E11D6D73A3009A9387 /* DynomicHeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynomicHeightCell.m; sourceTree = "<group>"; };
+		006AB0E41D6D76AD009A9387 /* AppRouter+Demo4ExtendMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+Demo4ExtendMenu.h"; sourceTree = "<group>"; };
+		006AB0E51D6D76AD009A9387 /* AppRouter+Demo4ExtendMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+Demo4ExtendMenu.m"; sourceTree = "<group>"; };
 		006ABF891D67403F00D19F86 /* ThemeDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeDemoViewController.h; sourceTree = "<group>"; };
 		006ABF8A1D67403F00D19F86 /* ThemeDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeDemoViewController.m; sourceTree = "<group>"; };
 		006ABF8C1D67405200D19F86 /* ThemeDemoAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeDemoAction.h; sourceTree = "<group>"; };
@@ -1295,6 +1317,7 @@
 		006AB0591D6D5E41009A9387 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				006AB0E31D6D7684009A9387 /* Demo4ExtendMenu */,
 				006AB05A1D6D5E41009A9387 /* ConstacsBook */,
 				006AB05D1D6D5E41009A9387 /* DemoCode */,
 				006AB0601D6D5E41009A9387 /* EmptyTableView */,
@@ -1467,6 +1490,42 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		006AB0D51D6D6894009A9387 /* ExtendMenuDemo */ = {
+			isa = PBXGroup;
+			children = (
+				006AB0D61D6D6894009A9387 /* Actions */,
+				006AB0E01D6D73A3009A9387 /* DynomicHeightCell.h */,
+				006AB0E11D6D73A3009A9387 /* DynomicHeightCell.m */,
+				006AB0DA1D6D68D1009A9387 /* DynomicHeightController.h */,
+				006AB0DB1D6D68D1009A9387 /* DynomicHeightController.m */,
+				006AB0DD1D6D68E2009A9387 /* DynomicHeightController.storyboard */,
+				005B932C1D6D97C000DB3AFF /* ExtendMenuTableCell.h */,
+				005B932D1D6D97C000DB3AFF /* ExtendMenuTableCell.m */,
+				005B93271D6D971100DB3AFF /* ExtendMenuTableController.h */,
+				005B93281D6D971100DB3AFF /* ExtendMenuTableController.m */,
+				005B932A1D6D971800DB3AFF /* ExtendMenuTableController.storyboard */,
+			);
+			path = ExtendMenuDemo;
+			sourceTree = "<group>";
+		};
+		006AB0D61D6D6894009A9387 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				006AB0D71D6D68A8009A9387 /* ExtendMenuAction.h */,
+				006AB0D81D6D68A8009A9387 /* ExtendMenuAction.m */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		006AB0E31D6D7684009A9387 /* Demo4ExtendMenu */ = {
+			isa = PBXGroup;
+			children = (
+				006AB0E41D6D76AD009A9387 /* AppRouter+Demo4ExtendMenu.h */,
+				006AB0E51D6D76AD009A9387 /* AppRouter+Demo4ExtendMenu.m */,
+			);
+			path = Demo4ExtendMenu;
+			sourceTree = "<group>";
+		};
 		006ABF871D673FB800D19F86 /* ThemeDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1554,6 +1613,7 @@
 		0095FED11B71A30300BF8987 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				006AB0D51D6D6894009A9387 /* ExtendMenuDemo */,
 				00ABC32E1D6AC643003EDAB7 /* Logger */,
 				006ABF871D673FB800D19F86 /* ThemeDemo */,
 				001E90DE1D66D6420054AE69 /* Networking */,
@@ -2472,6 +2532,7 @@
 				0079C74D1B9549CC0062F574 /* gin_password@2x.png in Resources */,
 				0079C74F1B9549CC0062F574 /* gin_random_code@2x.png in Resources */,
 				0095FF0F1B71A30300BF8987 /* HZTableViewController.storyboard in Resources */,
+				005B932B1D6D971800DB3AFF /* ExtendMenuTableController.storyboard in Resources */,
 				000B529C1ADBCF8100946853 /* LaunchScreen.xib in Resources */,
 				0095FF091B71A30300BF8987 /* GinSystemButtonViewController.storyboard in Resources */,
 				006AB09F1D6D5EF5009A9387 /* night_theme_config.json in Resources */,
@@ -2480,6 +2541,7 @@
 				00D04C251D6A91C400B4C27C /* arrow_down_44x44.png in Resources */,
 				000B52991ADBCF8100946853 /* Images.xcassets in Resources */,
 				0095FF691B71A71800BF8987 /* StoreLocationMapViewController.storyboard in Resources */,
+				006AB0DE1D6D68E2009A9387 /* DynomicHeightController.storyboard in Resources */,
 				0079C7501B9549CC0062F574 /* gin_random_code@3x.png in Resources */,
 				0079C7521B9549CC0062F574 /* gin_user_name@3x.png in Resources */,
 				00D04C2F1D6A91C400B4C27C /* list_indicator_arrow@2x.png in Resources */,
@@ -2635,6 +2697,7 @@
 				0095FF181B71A30300BF8987 /* demo4Gallery.m in Sources */,
 				0095FF1B1B71A30300BF8987 /* StepperViewController.m in Sources */,
 				0095FF0B1B71A30300BF8987 /* page2Controller.m in Sources */,
+				006AB0E61D6D76AD009A9387 /* AppRouter+Demo4ExtendMenu.m in Sources */,
 				00D04C2B1D6A91C400B4C27C /* GinStepperView.m in Sources */,
 				0095FF1C1B71A30300BF8987 /* TableViewController.m in Sources */,
 				008660111B816F7000B76218 /* NSObject+TYSwizzle.m in Sources */,
@@ -2661,6 +2724,7 @@
 				00D04C401D6A91C400B4C27C /* GinWebViewController.m in Sources */,
 				00D04C151D6A91C400B4C27C /* GinHorizontalLayoutButton.m in Sources */,
 				006AB0871D6D5E41009A9387 /* AppRouter+EmptyTableView.m in Sources */,
+				006AB0E21D6D73A3009A9387 /* DynomicHeightCell.m in Sources */,
 				006A94BC1ADFAD6D0093BEBE /* UIViewController+GinBaseTableView.m in Sources */,
 				00D04C501D6A922300B4C27C /* UITableView+Wave.m in Sources */,
 				0095FF191B71A30300BF8987 /* GalleryViewController.m in Sources */,
@@ -2681,6 +2745,8 @@
 				0095FF0D1B71A30300BF8987 /* TabsViewController.m in Sources */,
 				006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */,
 				00D04C2D1D6A91C400B4C27C /* IconTableCell.m in Sources */,
+				006AB0D91D6D68A8009A9387 /* ExtendMenuAction.m in Sources */,
+				005B932E1D6D97C000DB3AFF /* ExtendMenuTableCell.m in Sources */,
 				00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */,
 				00D04C1C1D6A91C400B4C27C /* ExtendMenu.m in Sources */,
 				006A94C51ADFB9C70093BEBE /* UIView+GinBaseClass.m in Sources */,
@@ -2722,6 +2788,7 @@
 				00F7FC661AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m in Sources */,
 				00D04C701D6A9D4D00B4C27C /* CodeSnippetLibrary.m in Sources */,
 				00D04C211D6A91C400B4C27C /* UITextView+Keyboard.m in Sources */,
+				005B93291D6D971100DB3AFF /* ExtendMenuTableController.m in Sources */,
 				00D04C311D6A91C400B4C27C /* GinIndexTableView.m in Sources */,
 				001E90E61D66D68F0054AE69 /* NetworkingAction.m in Sources */,
 				006A93C71ADE09090093BEBE /* UIAlertView+GinUnit.m in Sources */,
@@ -2782,6 +2849,7 @@
 				00A2EB6D1BE05B7C000329AF /* GetLaunchImage.m in Sources */,
 				0095FF0E1B71A30300BF8987 /* HZTableViewController.m in Sources */,
 				005421DD1B47DF6F0028CCE6 /* GinAddressBook.m in Sources */,
+				006AB0DC1D6D68D1009A9387 /* DynomicHeightController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

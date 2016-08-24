@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol GinBaseTableCell <NSObject>
+
+@required
++ (CGFloat)viewHeight;
+
+@end
+
 @interface BaseTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) UIView *cellContentView;
 
-- (void)setup;
-+ (CGFloat)viewHeight;
 @end
