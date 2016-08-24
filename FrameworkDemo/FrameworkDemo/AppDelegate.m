@@ -27,7 +27,12 @@
     // 设置状态栏颜色
 //    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    self.window.rootViewController = xxx
+//    [self.window makeKeyAndVisible];
     
+
     return YES;
 }
 
