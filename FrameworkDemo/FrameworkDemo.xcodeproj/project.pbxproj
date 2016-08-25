@@ -31,6 +31,7 @@
 		001E90DD1D65D1900054AE69 /* AppDelegateIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E90DC1D65D1900054AE69 /* AppDelegateIntercepter.m */; };
 		001E90E61D66D68F0054AE69 /* NetworkingAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E90E51D66D68F0054AE69 /* NetworkingAction.m */; };
 		001E90E91D66D6AB0054AE69 /* NetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E90E81D66D6AB0054AE69 /* NetworkingViewController.m */; };
+		002C873A1D6E92A100EB3617 /* MTLModel+BaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 002C87391D6E92A100EB3617 /* MTLModel+BaseData.m */; };
 		002F21A41D66F33A0021E6F4 /* LifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F21A31D66F33A0021E6F4 /* LifeCycleViewController.m */; };
 		002F21A71D66F3500021E6F4 /* CustomerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F21A61D66F3500021E6F4 /* CustomerView.m */; };
 		002F21AA1D6704A90021E6F4 /* HTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F21A91D6704A90021E6F4 /* HTTPSessionManager.m */; };
@@ -294,6 +295,8 @@
 		001E90E51D66D68F0054AE69 /* NetworkingAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingAction.m; sourceTree = "<group>"; };
 		001E90E71D66D6AB0054AE69 /* NetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingViewController.h; sourceTree = "<group>"; };
 		001E90E81D66D6AB0054AE69 /* NetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingViewController.m; sourceTree = "<group>"; };
+		002C87381D6E92A100EB3617 /* MTLModel+BaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLModel+BaseData.h"; sourceTree = "<group>"; };
+		002C87391D6E92A100EB3617 /* MTLModel+BaseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLModel+BaseData.m"; sourceTree = "<group>"; };
 		002F21A21D66F33A0021E6F4 /* LifeCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeCycleViewController.h; sourceTree = "<group>"; };
 		002F21A31D66F33A0021E6F4 /* LifeCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeCycleViewController.m; sourceTree = "<group>"; };
 		002F21A51D66F3500021E6F4 /* CustomerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerView.h; sourceTree = "<group>"; };
@@ -702,6 +705,8 @@
 			children = (
 				000603D21B9C36130026D80F /* Person.h */,
 				000603D31B9C36130026D80F /* Person.m */,
+				002C87381D6E92A100EB3617 /* MTLModel+BaseData.h */,
+				002C87391D6E92A100EB3617 /* MTLModel+BaseData.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2673,6 +2678,7 @@
 				0051A6811D65A8CF00C7AAD2 /* PhotoGalleryAction.m in Sources */,
 				00E2DBED1C02BDEE00567662 /* ContactsBookViewController.m in Sources */,
 				00D04C1F1D6A91C400B4C27C /* IconTextField.m in Sources */,
+				002C873A1D6E92A100EB3617 /* MTLModel+BaseData.m in Sources */,
 				002F326D1B32795F00080B37 /* NSDictionary+GinUnit.m in Sources */,
 				006AB08B1D6D5E41009A9387 /* AppRouter+Login.m in Sources */,
 				00D04C4D1D6A922300B4C27C /* UICollectionViewCell+GinAnimation.m in Sources */,
