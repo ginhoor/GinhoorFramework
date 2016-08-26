@@ -93,7 +93,7 @@ static const int ddLogLevel = DDLogLevelError;
     [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss.FFF"];
     
     NSString *logString;
-    logString = [NSString stringWithFormat:@"%@=%@ [%@:%@:%@] %@(%@:%lu)\n\n%@\n",
+    logString = [NSString stringWithFormat:@"\n%@=%@ [%@:%@:%@] %@(%@:%lu)\n\n%@\n",
                  logLevel,
                  [formatter stringFromDate: logMessage.timestamp],
                  logMessage.threadName,
