@@ -224,6 +224,8 @@
 		00D04C8E1D6A9DDB00B4C27C /* BaseCollectionViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04C831D6A9DDB00B4C27C /* BaseCollectionViewContoller.m */; };
 		00D04C8F1D6A9DDB00B4C27C /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04C861D6A9DDB00B4C27C /* BaseTableViewCell.m */; };
 		00D04C901D6A9DDB00B4C27C /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04C881D6A9DDB00B4C27C /* BaseTableViewController.m */; };
+		00E008781D70578B00C3F9A3 /* GinAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E008751D70578B00C3F9A3 /* GinAlertManager.m */; };
+		00E008791D70578B00C3F9A3 /* TitleAndButtonAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E008771D70578B00C3F9A3 /* TitleAndButtonAlertView.m */; };
 		00E2DBE81BFEA83200567662 /* GinContactsBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E2DBE71BFEA83200567662 /* GinContactsBook.m */; };
 		00E2DBE91BFEA83200567662 /* GinContactsBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E2DBE71BFEA83200567662 /* GinContactsBook.m */; };
 		00E2DBED1C02BDEE00567662 /* ContactsBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E2DBEC1C02BDEE00567662 /* ContactsBookViewController.m */; };
@@ -653,6 +655,10 @@
 		00D04C861D6A9DDB00B4C27C /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		00D04C871D6A9DDB00B4C27C /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		00D04C881D6A9DDB00B4C27C /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		00E008741D70578B00C3F9A3 /* GinAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinAlertManager.h; sourceTree = "<group>"; };
+		00E008751D70578B00C3F9A3 /* GinAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinAlertManager.m; sourceTree = "<group>"; };
+		00E008761D70578B00C3F9A3 /* TitleAndButtonAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleAndButtonAlertView.h; sourceTree = "<group>"; };
+		00E008771D70578B00C3F9A3 /* TitleAndButtonAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleAndButtonAlertView.m; sourceTree = "<group>"; };
 		00E2DBE61BFEA83200567662 /* GinContactsBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinContactsBook.h; sourceTree = "<group>"; };
 		00E2DBE71BFEA83200567662 /* GinContactsBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinContactsBook.m; sourceTree = "<group>"; };
 		00E2DBEB1C02BDEE00567662 /* ContactsBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsBookViewController.h; sourceTree = "<group>"; };
@@ -860,6 +866,7 @@
 		0018BA431B115CA7001E52D5 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				00E008731D70578B00C3F9A3 /* Alert */,
 				006AB0941D6D5EF5009A9387 /* Logger */,
 				006AB0971D6D5EF5009A9387 /* Theme */,
 				006AB0561D6D5E41009A9387 /* Router */,
@@ -2356,6 +2363,17 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
+		00E008731D70578B00C3F9A3 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				00E008741D70578B00C3F9A3 /* GinAlertManager.h */,
+				00E008751D70578B00C3F9A3 /* GinAlertManager.m */,
+				00E008761D70578B00C3F9A3 /* TitleAndButtonAlertView.h */,
+				00E008771D70578B00C3F9A3 /* TitleAndButtonAlertView.m */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		00E2DBEA1C02BDDD00567662 /* ContactsBook */ = {
 			isa = PBXGroup;
 			children = (
@@ -2781,6 +2799,7 @@
 				0095FF671B71A71800BF8987 /* LocationManager.m in Sources */,
 				00D04C1A1D6A91C400B4C27C /* LeftIconButton.m in Sources */,
 				00B997DF1B9E7D74008EE8A1 /* GinResetPasswordViewController.m in Sources */,
+				00E008791D70578B00C3F9A3 /* TitleAndButtonAlertView.m in Sources */,
 				00F7FC691AEDDA860080AFC7 /* NSObject+GinUnit.m in Sources */,
 				008660171B81759900B76218 /* NSKeyedArchiverDemo.m in Sources */,
 				006A93C41ADE09090093BEBE /* NSURL+GinUnit.m in Sources */,
@@ -2798,6 +2817,7 @@
 				00D04C311D6A91C400B4C27C /* GinIndexTableView.m in Sources */,
 				001E90E61D66D68F0054AE69 /* NetworkingAction.m in Sources */,
 				006A93C71ADE09090093BEBE /* UIAlertView+GinUnit.m in Sources */,
+				00E008781D70578B00C3F9A3 /* GinAlertManager.m in Sources */,
 				006AB0A01D6D5EF5009A9387 /* ThemeManager.m in Sources */,
 				00D04C391D6A91C400B4C27C /* GinPopupContentView.m in Sources */,
 				0095FF641B71A71800BF8987 /* AddressSearchResultViewController.m in Sources */,
