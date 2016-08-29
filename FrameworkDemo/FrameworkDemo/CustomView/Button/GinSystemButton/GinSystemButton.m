@@ -16,6 +16,11 @@
 
 @implementation GinSystemButton
 
+- (void)dealloc
+{
+    [self removeTarget:self action:@selector(touchUpInsideAction:) forControlEvents:UIControlEventTouchUpInside];
+}
+
 - (instancetype)init
 {
     self = [GinSystemButton buttonWithType:UIButtonTypeCustom];

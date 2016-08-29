@@ -15,6 +15,8 @@
  */
 @property (assign, nonatomic) BOOL allowsEditing;
 
+@property (assign, nonatomic) BOOL animated;
+
 @property (copy, nonatomic) void(^didFinishPickingBlock)(UIImagePickerController *picker, UIImage *packedImage, UIImage *source);
 @property (copy, nonatomic) void(^didCancelPickingBlock)(UIImagePickerController *picker);
 
