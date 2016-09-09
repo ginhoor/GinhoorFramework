@@ -24,6 +24,11 @@
     return self;
 }
 
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+}
+
 - (void)setup
 {
     [self setConstraints];

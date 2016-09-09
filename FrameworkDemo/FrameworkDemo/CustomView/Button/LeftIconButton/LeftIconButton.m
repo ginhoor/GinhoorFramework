@@ -52,8 +52,9 @@
 - (CGRect)imageRectForContentRect:(CGRect)contentRect
 {
     CGRect frame = [super contentRectForBounds:contentRect];
+    UIImage *image = [self imageForState:UIControlStateNormal];
     
-    CGSize imageSize = CGSizeEqualToSize(CGSizeZero, self.leftImageSize)?self.imageView.image.size:self.leftImageSize;
+    CGSize imageSize = CGSizeEqualToSize(CGSizeZero, self.leftImageSize)?image.size:self.leftImageSize;
     
     CGRect leftFrame = CGRectMake(frame.origin.x, (frame.size.height - imageSize.height)/2, imageSize.width, imageSize.height);
 
