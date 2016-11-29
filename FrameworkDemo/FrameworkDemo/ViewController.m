@@ -27,6 +27,8 @@
 #import "AppRouter+Demo4ExtendMenu.h"
 #import "AppRouter+WKWebView.h"
 
+#import "Gin3DTouchAction.h"
+
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -57,7 +59,8 @@
         make.edges.offset(0);
     }];
     
-    self.cellDataList = @[@"自定义按钮",@"水平的TableView",@"带Tabs的PageContrller",@"相册浏览",@"下拉菜单",@"列表空数据页面",@"步进器",@"自定义 上&下拉刷新",@"代码测试",@"自定义登录界面",@"联系人导入",@"AFNetworkingDemo",@"控件样式统一设置",@"Logger输出",@"动态列表高度",@"扩展列表页面",@"WKWebView"];
+    [self setType2];
+    
     [self.tableView reloadData];
     
 }
@@ -79,6 +82,51 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    [self type2:indexPath];
+    
+    
+}
+
+#pragma mark- type2
+
+- (void)setType2
+{
+    self.cellDataList = @[@"3D Touch"];
+}
+
+
+
+- (void)type2:(NSIndexPath *)indexPath
+{
+
+    switch (indexPath.row) {
+        case 0:
+            [self.navigationController pushViewController:[Gin3DTouchAction Gin3DTouchViewController]  animated:YES];
+            break;
+            
+        default:
+            break;
+        
+    }
+}
+
+
+#pragma mark- type1
+- (void)setType1
+{
+    self.cellDataList = @[@"自定义按钮",@"水平的TableView",
+                          @"带Tabs的PageContrller",@"相册浏览",
+                          @"下拉菜单",@"列表空数据页面",
+                          @"步进器",@"自定义 上&下拉刷新",
+                          @"代码测试",@"自定义登录界面",
+                          @"联系人导入",@"AFNetworkingDemo",
+                          @"控件样式统一设置",@"Logger输出",
+                          @"动态列表高度",@"扩展列表页面",
+                          @"WKWebView"];
+}
+
+- (void)type1:(NSIndexPath *)indexPath
+{
     switch (indexPath.row) {
         case 0:
             [self.navigationController pushViewController:[[AppRouter sharedInstance] systemButtonViewController] animated:YES];
@@ -137,7 +185,7 @@
         case 14:
             [self.navigationController pushViewController:[[AppRouter sharedInstance] DynomicTableController] animated:YES];
             break;
-        
+            
         case 15:
             [self.navigationController pushViewController:[[AppRouter sharedInstance] ExtendMenuController] animated:YES];
             break;
@@ -148,11 +196,9 @@
             
         default:
             break;
-
     }
-    
-}
 
+}
 
 
 @end
