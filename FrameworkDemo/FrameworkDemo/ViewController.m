@@ -25,6 +25,9 @@
 #import "AppRouter+ThemeDemo.h"
 #import "AppRouter+LoggerDemo.h"
 #import "AppRouter+Demo4ExtendMenu.h"
+#import "AppRouter+WKWebView.h"
+
+
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
@@ -54,7 +57,7 @@
         make.edges.offset(0);
     }];
     
-    self.cellDataList = @[@"自定义按钮",@"水平的TableView",@"带Tabs的PageContrller",@"相册浏览",@"下拉菜单",@"列表空数据页面",@"步进器",@"自定义 上&下拉刷新",@"代码测试",@"自定义登录界面",@"联系人导入",@"AFNetworkingDemo",@"控件样式统一设置",@"Logger输出",@"动态列表高度",@"扩展列表页面",];
+    self.cellDataList = @[@"自定义按钮",@"水平的TableView",@"带Tabs的PageContrller",@"相册浏览",@"下拉菜单",@"列表空数据页面",@"步进器",@"自定义 上&下拉刷新",@"代码测试",@"自定义登录界面",@"联系人导入",@"AFNetworkingDemo",@"控件样式统一设置",@"Logger输出",@"动态列表高度",@"扩展列表页面",@"WKWebView"];
     [self.tableView reloadData];
     
 }
@@ -137,6 +140,10 @@
         
         case 15:
             [self.navigationController pushViewController:[[AppRouter sharedInstance] ExtendMenuController] animated:YES];
+            break;
+            
+        case 16:
+            [self.navigationController pushViewController:[[AppRouter sharedInstance] demo4WKWebViewController] animated:YES];
             break;
             
         default:
