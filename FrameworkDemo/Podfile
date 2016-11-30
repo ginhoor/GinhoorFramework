@@ -5,6 +5,9 @@ source 'https://github.com/ginhoor/GinhoorSpecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 
+target 'myWidget' do
+    pod 'Masonry', '~> 0.6.4'
+end
 
 target 'FrameworkDemo' do
     #pod 'GinhoorFramework', :podspec => '../GinhoorFramework.podspec'  #指定podspec文件

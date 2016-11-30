@@ -194,7 +194,12 @@
 		00B0DBF51DED4B4A00701EFD /* WKWebViewOC2JSViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B0DBC31DED4B4A00701EFD /* WKWebViewOC2JSViewController.storyboard */; };
 		00B0DBF81DED59EF00701EFD /* Detail3DTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DBF71DED59EF00701EFD /* Detail3DTouchViewController.m */; };
 		00B0DBFA1DED59F600701EFD /* Detail3DTouchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B0DBF91DED59F600701EFD /* Detail3DTouchViewController.storyboard */; };
-		00B0DBFD1DEE64D400701EFD /* AppDelegate+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DBFC1DEE64D400701EFD /* AppDelegate+Notification.m */; };
+		00B0DC041DEE81A400701EFD /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B0DC031DEE81A400701EFD /* NotificationCenter.framework */; };
+		00B0DC081DEE81A400701EFD /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC071DEE81A400701EFD /* TodayViewController.m */; };
+		00B0DC0F1DEE81A400701EFD /* myWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 00B0DC021DEE81A400701EFD /* myWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		00B0DC171DEE830F00701EFD /* AppDelegate+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC161DEE830F00701EFD /* AppDelegate+Notification.m */; };
+		00B0DC211DEE921000701EFD /* Demo3DTouchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC201DEE921000701EFD /* Demo3DTouchManager.m */; };
+		00B0DC251DEE956600701EFD /* Demo4AppDelegateWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC241DEE956600701EFD /* Demo4AppDelegateWidget.m */; };
 		00B997E51B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997E41B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m */; };
 		00B997E91B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997E81B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m */; };
 		00B997EB1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997EA1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m */; };
@@ -270,6 +275,7 @@
 		00F7FC711AEDEB840080AFC7 /* UIView+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7FC6F1AEDEB840080AFC7 /* UIView+Debug.m */; };
 		3A364FF95F2FF0A0B8EFF7AB /* libPods-FrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 942A530AFADF27DF6D6C523D /* libPods-FrameworkDemo.a */; };
 		40294FA0A44F068C32D896EE /* libPods-FrameworkDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC6A53074C7699614DC1B7A /* libPods-FrameworkDemoTests.a */; };
+		5A116EC432806E609FB784B5 /* libPods-myWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C8ADC3D2976E6C471FF7BA /* libPods-myWidget.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -280,7 +286,28 @@
 			remoteGlobalIDString = 000B52871ADBCF8100946853;
 			remoteInfo = FrameworkDemo;
 		};
+		00B0DC0D1DEE81A400701EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000B52801ADBCF8100946853 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00B0DC011DEE81A400701EFD;
+			remoteInfo = myWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00B0DC131DEE81A400701EFD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				00B0DC0F1DEE81A400701EFD /* myWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		000603D61B9C36210026D80F /* ModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTest.m; sourceTree = "<group>"; };
@@ -600,8 +627,19 @@
 		00B0DBF61DED59EF00701EFD /* Detail3DTouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail3DTouchViewController.h; sourceTree = "<group>"; };
 		00B0DBF71DED59EF00701EFD /* Detail3DTouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail3DTouchViewController.m; sourceTree = "<group>"; };
 		00B0DBF91DED59F600701EFD /* Detail3DTouchViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detail3DTouchViewController.storyboard; sourceTree = "<group>"; };
-		00B0DBFB1DEE64D400701EFD /* AppDelegate+Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Notification.h"; sourceTree = "<group>"; };
-		00B0DBFC1DEE64D400701EFD /* AppDelegate+Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Notification.m"; sourceTree = "<group>"; };
+		00B0DC021DEE81A400701EFD /* myWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = myWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B0DC031DEE81A400701EFD /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		00B0DC061DEE81A400701EFD /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		00B0DC071DEE81A400701EFD /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		00B0DC0C1DEE81A400701EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00B0DC151DEE830F00701EFD /* AppDelegate+Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Notification.h"; sourceTree = "<group>"; };
+		00B0DC161DEE830F00701EFD /* AppDelegate+Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Notification.m"; sourceTree = "<group>"; };
+		00B0DC1E1DEE8CA500701EFD /* FrameworkDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FrameworkDemo.entitlements; sourceTree = "<group>"; };
+		00B0DC1F1DEE921000701EFD /* Demo3DTouchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo3DTouchManager.h; sourceTree = "<group>"; };
+		00B0DC201DEE921000701EFD /* Demo3DTouchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo3DTouchManager.m; sourceTree = "<group>"; };
+		00B0DC231DEE956600701EFD /* Demo4AppDelegateWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4AppDelegateWidget.h; sourceTree = "<group>"; };
+		00B0DC241DEE956600701EFD /* Demo4AppDelegateWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4AppDelegateWidget.m; sourceTree = "<group>"; };
+		00B0DC261DEE9CCC00701EFD /* myWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = myWidget.entitlements; sourceTree = "<group>"; };
 		00B997E41B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoginWithPhoneViewModelSpec.m; sourceTree = "<group>"; };
 		00B997E81B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinFindPasswordViewControllerSpec.m; sourceTree = "<group>"; };
 		00B997EA1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinQuickLoginViewControllerSpec.m; sourceTree = "<group>"; };
@@ -732,10 +770,13 @@
 		00F7FC6E1AEDEB840080AFC7 /* UIView+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Debug.h"; sourceTree = "<group>"; };
 		00F7FC6F1AEDEB840080AFC7 /* UIView+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Debug.m"; sourceTree = "<group>"; };
 		016255F5CA01AF11EBC81E0E /* Pods-FrameworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo.release.xcconfig"; sourceTree = "<group>"; };
+		16866D4A6DE8FF8F3D16D065 /* Pods-myWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-myWidget/Pods-myWidget.release.xcconfig"; sourceTree = "<group>"; };
 		40C0F0D260BCFF2B33CEC02B /* Pods-FrameworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		720EEDF09E2D3707388BB5E8 /* Pods-FrameworkDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkDemoTests/Pods-FrameworkDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		900D4DDFCE38CB8296B25C9D /* Pods-myWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myWidget/Pods-myWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		942A530AFADF27DF6D6C523D /* libPods-FrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB1830E63FC2DC975EC607A /* Pods-FrameworkDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkDemoTests/Pods-FrameworkDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E2C8ADC3D2976E6C471FF7BA /* libPods-myWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC6A53074C7699614DC1B7A /* libPods-FrameworkDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrameworkDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -757,6 +798,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00B0DBFF1DEE81A400701EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B0DC041DEE81A400701EFD /* NotificationCenter.framework in Frameworks */,
+				5A116EC432806E609FB784B5 /* libPods-myWidget.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -765,6 +815,7 @@
 			children = (
 				000B528A1ADBCF8100946853 /* FrameworkDemo */,
 				000B52A41ADBCF8100946853 /* FrameworkDemoTests */,
+				00B0DC051DEE81A400701EFD /* myWidget */,
 				006A93221ADE09090093BEBE /* GinhoorFramework */,
 				000B52891ADBCF8100946853 /* Products */,
 				2461F8143DE68CC857B37A80 /* Pods */,
@@ -777,6 +828,7 @@
 			children = (
 				000B52881ADBCF8100946853 /* FrameworkDemo.app */,
 				000B52A11ADBCF8100946853 /* FrameworkDemoTests.xctest */,
+				00B0DC021DEE81A400701EFD /* myWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -784,6 +836,7 @@
 		000B528A1ADBCF8100946853 /* FrameworkDemo */ = {
 			isa = PBXGroup;
 			children = (
+				00B0DC1E1DEE8CA500701EFD /* FrameworkDemo.entitlements */,
 				000B52951ADBCF8100946853 /* Main.storyboard */,
 				000B52981ADBCF8100946853 /* Images.xcassets */,
 				000B529A1ADBCF8100946853 /* LaunchScreen.xib */,
@@ -1453,8 +1506,6 @@
 			children = (
 				00A16F9C1DEC1D300020EAE4 /* AppDelegate+Light.h */,
 				00A16F9D1DEC1D300020EAE4 /* AppDelegate+Light.m */,
-				00B0DBFB1DEE64D400701EFD /* AppDelegate+Notification.h */,
-				00B0DBFC1DEE64D400701EFD /* AppDelegate+Notification.m */,
 				00A16F9E1DEC1D300020EAE4 /* AppDelegateIntercepter.h */,
 				00A16F9F1DEC1D300020EAE4 /* AppDelegateIntercepter.m */,
 			);
@@ -1721,6 +1772,8 @@
 		00B0DB441DED4B4A00701EFD /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				00B0DC221DEE956600701EFD /* Widget */,
+				00B0DC141DEE830F00701EFD /* AppDelegate */,
 				00B0DB451DED4B4A00701EFD /* 3DTouch */,
 				00B0DB4C1DED4B4A00701EFD /* CodeDemo */,
 				00B0DB521DED4B4A00701EFD /* ContactsBook */,
@@ -1744,6 +1797,8 @@
 		00B0DB451DED4B4A00701EFD /* 3DTouch */ = {
 			isa = PBXGroup;
 			children = (
+				00B0DC1F1DEE921000701EFD /* Demo3DTouchManager.h */,
+				00B0DC201DEE921000701EFD /* Demo3DTouchManager.m */,
 				00B0DB461DED4B4A00701EFD /* Action */,
 				00B0DB491DED4B4A00701EFD /* Gin3DTouchViewController.h */,
 				00B0DB4A1DED4B4A00701EFD /* Gin3DTouchViewController.m */,
@@ -2105,6 +2160,35 @@
 				00B0DBC31DED4B4A00701EFD /* WKWebViewOC2JSViewController.storyboard */,
 			);
 			path = OC2JS;
+			sourceTree = "<group>";
+		};
+		00B0DC051DEE81A400701EFD /* myWidget */ = {
+			isa = PBXGroup;
+			children = (
+				00B0DC261DEE9CCC00701EFD /* myWidget.entitlements */,
+				00B0DC061DEE81A400701EFD /* TodayViewController.h */,
+				00B0DC071DEE81A400701EFD /* TodayViewController.m */,
+				00B0DC0C1DEE81A400701EFD /* Info.plist */,
+			);
+			path = myWidget;
+			sourceTree = "<group>";
+		};
+		00B0DC141DEE830F00701EFD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				00B0DC151DEE830F00701EFD /* AppDelegate+Notification.h */,
+				00B0DC161DEE830F00701EFD /* AppDelegate+Notification.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		00B0DC221DEE956600701EFD /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				00B0DC231DEE956600701EFD /* Demo4AppDelegateWidget.h */,
+				00B0DC241DEE956600701EFD /* Demo4AppDelegateWidget.m */,
+			);
+			path = Widget;
 			sourceTree = "<group>";
 		};
 		00D04BA21D6A91C400B4C27C /* CustomView */ = {
@@ -2599,6 +2683,8 @@
 				016255F5CA01AF11EBC81E0E /* Pods-FrameworkDemo.release.xcconfig */,
 				720EEDF09E2D3707388BB5E8 /* Pods-FrameworkDemoTests.debug.xcconfig */,
 				AAB1830E63FC2DC975EC607A /* Pods-FrameworkDemoTests.release.xcconfig */,
+				900D4DDFCE38CB8296B25C9D /* Pods-myWidget.debug.xcconfig */,
+				16866D4A6DE8FF8F3D16D065 /* Pods-myWidget.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -2609,6 +2695,8 @@
 				00A16F811DEC1CB20020EAE4 /* WebKit.framework */,
 				942A530AFADF27DF6D6C523D /* libPods-FrameworkDemo.a */,
 				EFC6A53074C7699614DC1B7A /* libPods-FrameworkDemoTests.a */,
+				00B0DC031DEE81A400701EFD /* NotificationCenter.framework */,
+				E2C8ADC3D2976E6C471FF7BA /* libPods-myWidget.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2626,10 +2714,12 @@
 				000B52861ADBCF8100946853 /* Resources */,
 				A7E378AAC89C94D068529DAF /* [CP] Embed Pods Frameworks */,
 				0C081D9F17F3851513F99B3D /* [CP] Copy Pods Resources */,
+				00B0DC131DEE81A400701EFD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				00B0DC0E1DEE81A400701EFD /* PBXTargetDependency */,
 			);
 			name = FrameworkDemo;
 			productName = FrameworkDemo;
@@ -2657,6 +2747,26 @@
 			productReference = 000B52A11ADBCF8100946853 /* FrameworkDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		00B0DC011DEE81A400701EFD /* myWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00B0DC101DEE81A400701EFD /* Build configuration list for PBXNativeTarget "myWidget" */;
+			buildPhases = (
+				9A2A5556B7E0AD1376605B1B /* [CP] Check Pods Manifest.lock */,
+				00B0DBFE1DEE81A400701EFD /* Sources */,
+				00B0DBFF1DEE81A400701EFD /* Frameworks */,
+				00B0DC001DEE81A400701EFD /* Resources */,
+				8407B2961AF6E23BA59BFFE5 /* [CP] Embed Pods Frameworks */,
+				A84571C68DD6D2813FAC9A1C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myWidget;
+			productName = myWidget;
+			productReference = 00B0DC021DEE81A400701EFD /* myWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2670,11 +2780,29 @@
 						CreatedOnToolsVersion = 6.3;
 						DevelopmentTeam = 34NWS6URJR;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
 					};
 					000B52A01ADBCF8100946853 = {
 						CreatedOnToolsVersion = 6.3;
 						DevelopmentTeam = 34NWS6URJR;
 						TestTargetID = 000B52871ADBCF8100946853;
+					};
+					00B0DC011DEE81A400701EFD = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 34NWS6URJR;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -2693,6 +2821,7 @@
 			targets = (
 				000B52871ADBCF8100946853 /* FrameworkDemo */,
 				000B52A01ADBCF8100946853 /* FrameworkDemoTests */,
+				00B0DC011DEE81A400701EFD /* myWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -2747,6 +2876,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00B0DC001DEE81A400701EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -2795,6 +2931,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		8407B2961AF6E23BA59BFFE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myWidget/Pods-myWidget-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9456BE5DAB7642BB5E4800EC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2810,6 +2961,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameworkDemoTests/Pods-FrameworkDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9A2A5556B7E0AD1376605B1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		A7E378AAC89C94D068529DAF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2823,6 +2989,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A84571C68DD6D2813FAC9A1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myWidget/Pods-myWidget-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B0A47FBE0A2E19B972F69ABD /* [CP] Check Pods Manifest.lock */ = {
@@ -2948,7 +3129,6 @@
 				00B0DBF81DED59EF00701EFD /* Detail3DTouchViewController.m in Sources */,
 				00B0DBE51DED4B4A00701EFD /* StepperViewController.m in Sources */,
 				00B0DBC71DED4B4A00701EFD /* CodeDemoAction.m in Sources */,
-				00B0DBFD1DEE64D400701EFD /* AppDelegate+Notification.m in Sources */,
 				00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */,
 				0031C55A1DEBEC2A009A85A4 /* AppRouter+HZTableVC.m in Sources */,
 				005422EB1B47F4710028CCE6 /* GinKeyboardManager.m in Sources */,
@@ -2962,6 +3142,7 @@
 				006A93C41ADE09090093BEBE /* NSURL+GinUnit.m in Sources */,
 				006A93C21ADE09090093BEBE /* NSString+formatContentString.m in Sources */,
 				00A16FF71DEC1D300020EAE4 /* ImageCollectionCell.m in Sources */,
+				00B0DC171DEE830F00701EFD /* AppDelegate+Notification.m in Sources */,
 				000B52941ADBCF8100946853 /* ViewController.m in Sources */,
 				00B0DBE31DED4B4A00701EFD /* PullDownMenuViewController.m in Sources */,
 				006A93C51ADE09090093BEBE /* NSURL+Videos.m in Sources */,
@@ -2971,10 +3152,12 @@
 				00B0DBF11DED4B4A00701EFD /* Demo4WKWebViewController.m in Sources */,
 				00D04C701D6A9D4D00B4C27C /* CodeSnippetLibrary.m in Sources */,
 				00A170101DEC1D300020EAE4 /* GinQuickLoginViewController.m in Sources */,
+				00B0DC251DEE956600701EFD /* Demo4AppDelegateWidget.m in Sources */,
 				00D04C211D6A91C400B4C27C /* UITextView+Keyboard.m in Sources */,
 				00D04C311D6A91C400B4C27C /* GinIndexTableView.m in Sources */,
 				006A93C71ADE09090093BEBE /* UIAlertView+GinUnit.m in Sources */,
 				00B0DBF41DED4B4A00701EFD /* WKWebViewOC2JSViewController.m in Sources */,
+				00B0DC211DEE921000701EFD /* Demo3DTouchManager.m in Sources */,
 				0031C5521DEBEC2A009A85A4 /* AppRouter+Demo4ExtendMenu.m in Sources */,
 				00B0DBEC1DED4B4A00701EFD /* TableViewController.m in Sources */,
 				00B0DBD31DED4B4A00701EFD /* GinSystemButtonVCAction.m in Sources */,
@@ -3082,6 +3265,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00B0DBFE1DEE81A400701EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B0DC081DEE81A400701EFD /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -3089,6 +3280,11 @@
 			isa = PBXTargetDependency;
 			target = 000B52871ADBCF8100946853 /* FrameworkDemo */;
 			targetProxy = 000B52A21ADBCF8100946853 /* PBXContainerItemProxy */;
+		};
+		00B0DC0E1DEE81A400701EFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00B0DC011DEE81A400701EFD /* myWidget */;
+			targetProxy = 00B0DC0D1DEE81A400701EFD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -3204,6 +3400,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_ENTITLEMENTS = FrameworkDemo/FrameworkDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 34NWS6URJR;
@@ -3225,6 +3422,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_ENTITLEMENTS = FrameworkDemo/FrameworkDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 34NWS6URJR;
@@ -3273,6 +3471,47 @@
 			};
 			name = Release;
 		};
+		00B0DC111DEE81A400701EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 900D4DDFCE38CB8296B25C9D /* Pods-myWidget.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = myWidget/myWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 34NWS6URJR;
+				INFOPLIST_FILE = myWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.Framework-Demo.myWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		00B0DC121DEE81A400701EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16866D4A6DE8FF8F3D16D065 /* Pods-myWidget.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = myWidget/myWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 34NWS6URJR;
+				INFOPLIST_FILE = myWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.Framework-Demo.myWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3299,6 +3538,15 @@
 			buildConfigurations = (
 				000B52AF1ADBCF8100946853 /* Debug */,
 				000B52B01ADBCF8100946853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00B0DC101DEE81A400701EFD /* Build configuration list for PBXNativeTarget "myWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B0DC111DEE81A400701EFD /* Debug */,
+				00B0DC121DEE81A400701EFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

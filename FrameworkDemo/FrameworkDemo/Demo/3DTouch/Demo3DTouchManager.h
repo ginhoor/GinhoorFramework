@@ -1,13 +1,13 @@
 //
-//  AppDelegate+Notification.h
+//  Demo3DTouchManager.h
 //  FrameworkDemo
 //
 //  Created by JunhuaShao on 2016/11/30.
 //  Copyright © 2016年 JunhuaShao. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import <Foundation/Foundation.h>
 
-@interface AppDelegate (Notification)
+@interface Demo3DTouchManager : NSObject
 
 @end

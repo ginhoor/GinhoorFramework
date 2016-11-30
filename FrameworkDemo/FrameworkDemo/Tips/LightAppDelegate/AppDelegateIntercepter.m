@@ -40,6 +40,7 @@
     if (self) {
         [AppDelegate aspect_hookSelector:@selector(application:didFinishLaunchingWithOptions:) withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo, UIApplication *application, NSDictionary *launchOptions){
             
+            
             [[GinLoggerManager sharedInstance] setupDDLog];
         } error:nil];
         
