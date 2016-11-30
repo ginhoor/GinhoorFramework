@@ -194,6 +194,7 @@
 		00B0DBF51DED4B4A00701EFD /* WKWebViewOC2JSViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B0DBC31DED4B4A00701EFD /* WKWebViewOC2JSViewController.storyboard */; };
 		00B0DBF81DED59EF00701EFD /* Detail3DTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DBF71DED59EF00701EFD /* Detail3DTouchViewController.m */; };
 		00B0DBFA1DED59F600701EFD /* Detail3DTouchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B0DBF91DED59F600701EFD /* Detail3DTouchViewController.storyboard */; };
+		00B0DBFD1DEE64D400701EFD /* AppDelegate+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DBFC1DEE64D400701EFD /* AppDelegate+Notification.m */; };
 		00B997E51B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997E41B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m */; };
 		00B997E91B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997E81B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m */; };
 		00B997EB1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997EA1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m */; };
@@ -599,6 +600,8 @@
 		00B0DBF61DED59EF00701EFD /* Detail3DTouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail3DTouchViewController.h; sourceTree = "<group>"; };
 		00B0DBF71DED59EF00701EFD /* Detail3DTouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail3DTouchViewController.m; sourceTree = "<group>"; };
 		00B0DBF91DED59F600701EFD /* Detail3DTouchViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detail3DTouchViewController.storyboard; sourceTree = "<group>"; };
+		00B0DBFB1DEE64D400701EFD /* AppDelegate+Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Notification.h"; sourceTree = "<group>"; };
+		00B0DBFC1DEE64D400701EFD /* AppDelegate+Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Notification.m"; sourceTree = "<group>"; };
 		00B997E41B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoginWithPhoneViewModelSpec.m; sourceTree = "<group>"; };
 		00B997E81B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinFindPasswordViewControllerSpec.m; sourceTree = "<group>"; };
 		00B997EA1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinQuickLoginViewControllerSpec.m; sourceTree = "<group>"; };
@@ -1361,10 +1364,10 @@
 		00A16F851DEC1D300020EAE4 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				00A16F9B1DEC1D300020EAE4 /* LightAppDelegate */,
 				00A16F861DEC1D300020EAE4 /* Alert */,
 				00A16F8B1DEC1D300020EAE4 /* Collection */,
 				00A16F981DEC1D300020EAE4 /* LaunchImage */,
-				00A16F9B1DEC1D300020EAE4 /* LightAppDelegate */,
 				00A16FA01DEC1D300020EAE4 /* Logger */,
 				00A16FA31DEC1D300020EAE4 /* Mantle */,
 				00A16FAB1DEC1D300020EAE4 /* MapLocation */,
@@ -1450,6 +1453,8 @@
 			children = (
 				00A16F9C1DEC1D300020EAE4 /* AppDelegate+Light.h */,
 				00A16F9D1DEC1D300020EAE4 /* AppDelegate+Light.m */,
+				00B0DBFB1DEE64D400701EFD /* AppDelegate+Notification.h */,
+				00B0DBFC1DEE64D400701EFD /* AppDelegate+Notification.m */,
 				00A16F9E1DEC1D300020EAE4 /* AppDelegateIntercepter.h */,
 				00A16F9F1DEC1D300020EAE4 /* AppDelegateIntercepter.m */,
 			);
@@ -2943,6 +2948,7 @@
 				00B0DBF81DED59EF00701EFD /* Detail3DTouchViewController.m in Sources */,
 				00B0DBE51DED4B4A00701EFD /* StepperViewController.m in Sources */,
 				00B0DBC71DED4B4A00701EFD /* CodeDemoAction.m in Sources */,
+				00B0DBFD1DEE64D400701EFD /* AppDelegate+Notification.m in Sources */,
 				00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */,
 				0031C55A1DEBEC2A009A85A4 /* AppRouter+HZTableVC.m in Sources */,
 				005422EB1B47F4710028CCE6 /* GinKeyboardManager.m in Sources */,
