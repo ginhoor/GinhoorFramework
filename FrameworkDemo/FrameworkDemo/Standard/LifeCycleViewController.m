@@ -53,6 +53,12 @@
     [super updateViewConstraints];
 }
 
+
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+}
+
 // Called just after the view controller's view's layoutSubviews method is invoked. Subclasses can implement as necessary. The default is a nop.
 // 当 self.view layoutSubviews调用后
 - (void)viewDidLayoutSubviews
