@@ -97,6 +97,7 @@
 		008660111B816F7000B76218 /* NSObject+TYSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0086600E1B816F7000B76218 /* NSObject+TYSwizzle.m */; };
 		008660121B816F7000B76218 /* TYSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 008660101B816F7000B76218 /* TYSwizzle.m */; };
 		008E07CE1DF12272001F74C5 /* RLMPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 008E07CD1DF12272001F74C5 /* RLMPerson.m */; };
+		009312061E48600100D7A272 /* UIAlertController+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 009312051E48600100D7A272 /* UIAlertController+GinUnit.m */; };
 		009FF0821B5CEE4700D282E6 /* CallPhoneMannager.m in Sources */ = {isa = PBXBuildFile; fileRef = 009FF0811B5CEE4700D282E6 /* CallPhoneMannager.m */; };
 		00A16F821DEC1CB20020EAE4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A16F811DEC1CB20020EAE4 /* WebKit.framework */; };
 		00A16FF41DEC1D300020EAE4 /* GinAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A16F881DEC1D300020EAE4 /* GinAlertManager.m */; };
@@ -505,6 +506,8 @@
 		008660101B816F7000B76218 /* TYSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSwizzle.m; sourceTree = "<group>"; };
 		008E07CC1DF12272001F74C5 /* RLMPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMPerson.h; sourceTree = "<group>"; };
 		008E07CD1DF12272001F74C5 /* RLMPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMPerson.m; sourceTree = "<group>"; };
+		009312041E48600100D7A272 /* UIAlertController+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+GinUnit.h"; sourceTree = "<group>"; };
+		009312051E48600100D7A272 /* UIAlertController+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+GinUnit.m"; sourceTree = "<group>"; };
 		009FF0801B5CEE4700D282E6 /* CallPhoneMannager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallPhoneMannager.h; sourceTree = "<group>"; };
 		009FF0811B5CEE4700D282E6 /* CallPhoneMannager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallPhoneMannager.m; sourceTree = "<group>"; };
 		00A16F811DEC1CB20020EAE4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -1424,6 +1427,8 @@
 			children = (
 				006A93781ADE09090093BEBE /* UIAlertView+GinUnit.h */,
 				006A93791ADE09090093BEBE /* UIAlertView+GinUnit.m */,
+				009312041E48600100D7A272 /* UIAlertController+GinUnit.h */,
+				009312051E48600100D7A272 /* UIAlertController+GinUnit.m */,
 			);
 			path = UIAlertController;
 			sourceTree = "<group>";
@@ -3355,6 +3360,7 @@
 				00B0DBD81DED4B4A00701EFD /* page2Controller.m in Sources */,
 				00E79CA31DEFBBFF00969571 /* PhotoGalleryAction.m in Sources */,
 				00A1700B1DEC1D300020EAE4 /* GinLoginViewModel.m in Sources */,
+				009312061E48600100D7A272 /* UIAlertController+GinUnit.m in Sources */,
 				00D04C171D6A91C400B4C27C /* GinSystemButton.m in Sources */,
 				00B0DBC41DED4B4A00701EFD /* Gin3DTouchAction.m in Sources */,
 				00B0DBDD1DED4B4A00701EFD /* NetworkingAction.m in Sources */,
