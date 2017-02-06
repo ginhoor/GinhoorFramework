@@ -17,6 +17,11 @@
 
 @property (assign, nonatomic) BOOL animated;
 
+
+/**
+ *  packedImage: 处理后的
+ *   source： 原图
+ */
 @property (copy, nonatomic) void(^didFinishPickingBlock)(UIImagePickerController *picker, UIImage *packedImage, UIImage *source);
 @property (copy, nonatomic) void(^didCancelPickingBlock)(UIImagePickerController *picker);
 

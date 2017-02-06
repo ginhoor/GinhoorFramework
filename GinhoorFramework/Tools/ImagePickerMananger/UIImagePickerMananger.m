@@ -76,6 +76,10 @@
     [picker dismissViewControllerAnimated:YES completion:^{}];
     
     UIImage *editedImage = [info objectForKey:UIImagePickerControllerEditedImage];
+    if(!editedImage) {
+        editedImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+    }
+    
     // 压缩
     NSData *imageData = UIImageJPEGRepresentation(editedImage,0.3);
     UIImage *savedImage = [UIImage imageWithData:imageData];
@@ -95,5 +99,6 @@
     
     [self.controller dismissViewControllerAnimated:self.animated completion:^{}];
 }
+
 
 @end
