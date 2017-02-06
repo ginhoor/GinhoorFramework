@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 Ginhoor. All rights reserved.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @interface GinCollectionLayout : UICollectionViewFlowLayout
 

@@ -7,7 +7,7 @@
 //
 
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 @interface NSString (Size)
 
 - (CGSize)getStringSizeWithfont:(UIFont *)font width:(CGFloat)width;

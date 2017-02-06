@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 Ginhoor. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 @interface NSURL (Videos)
 
