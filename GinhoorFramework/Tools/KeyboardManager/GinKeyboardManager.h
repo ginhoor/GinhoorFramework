@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 @interface GinKeyboardManager : NSObject
 
++ (instancetype)sharedInstance;
+
 - (void)setupKeyboardObserver;
 - (void)removeKeyboardObserver;
 @end

@@ -10,6 +10,17 @@
 
 @implementation GinKeyboardManager
 
++ (instancetype)sharedInstance
+{
+    static dispatch_once_t onceToken;
+    static id sharedInstance = nil;
+    
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[self alloc] init];
+    });
+    return sharedInstance;
+}
+
 - (void)dealloc
 {
     [self removeKeyboardObserver];
