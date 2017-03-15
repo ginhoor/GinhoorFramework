@@ -26,7 +26,7 @@
         [alertController addAction:cancel];
         
         UIViewController *presentedViewController = [UIApplication sharedApplication].keyWindow.rootViewController.lastPresentedViewController;
-        [presentedViewController presentViewController:alertController animated:YES completion:cancelBlock];
+        [presentedViewController presentViewController:alertController animated:YES completion:nil];
     } else {
         [self alertViewDeprecated:title message:message cancelTitle:cancelTitle cancelBlock:cancelBlock];
     }
@@ -63,7 +63,7 @@
         [alertController addAction:submit];
         
         UIViewController *presentedViewController = [UIApplication sharedApplication].keyWindow.rootViewController.lastPresentedViewController;
-        [presentedViewController presentViewController:alertController animated:YES completion:cancelBlock];
+        [presentedViewController presentViewController:alertController animated:YES completion:nil];
     } else {
         [self alertViewDeprecated:title message:message submitTitle:submitTitle submitBlock:submitBlock cancelTitle:cancelTitle cancelBlock:cancelBlock];
     }

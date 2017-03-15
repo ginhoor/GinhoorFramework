@@ -11,7 +11,7 @@
 
 @implementation UIAlertController (GinUnit)
 
-+ (void)alert:(NSString *)title message:(NSString *)message cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock
++ (void)alert:(NSString *)title message:(NSString *)message cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
 {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     
@@ -20,11 +20,11 @@
     [alertController addAction:cancel];
     
     UIViewController *presentedViewController = [UIApplication sharedApplication].keyWindow.rootViewController.lastPresentedViewController;
-    [presentedViewController presentViewController:alertController animated:YES completion:cancelBlock];
+    [presentedViewController presentViewController:alertController animated:YES completion:completionBlock];
     
 }
 
-+ (void)alert:(NSString *)title message:(NSString *)message submitTitle:(NSString *)submitTitle submitBlock:(void(^)())submitBlock cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock
++ (void)alert:(NSString *)title message:(NSString *)message submitTitle:(NSString *)submitTitle submitBlock:(void(^)())submitBlock cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
 {
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
@@ -37,7 +37,7 @@
     [alertController addAction:submit];
     
     UIViewController *presentedViewController = [UIApplication sharedApplication].keyWindow.rootViewController.lastPresentedViewController;
-    [presentedViewController presentViewController:alertController animated:YES completion:cancelBlock];
+    [presentedViewController presentViewController:alertController animated:YES completion:completionBlock];
 
     
 }
