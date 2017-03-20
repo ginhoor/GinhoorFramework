@@ -63,6 +63,7 @@
 
 #define PointValue(x,y) [NSValue valueWithCGPoint:CGPointMake(x, y)]
 #define raiseException(name,message) [NSException raise:name format:message];
+#define radom(from,to) (int)(from + (arc4random() % (to - from + 1)))
 
 ///////////////////////////////////////////
 // degrees/radian
