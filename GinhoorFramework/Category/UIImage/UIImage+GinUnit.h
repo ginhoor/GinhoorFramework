@@ -10,6 +10,9 @@
 
 @interface UIImage (GinUnit)
 
+// 截取部分图片
+- (void)savePartImage:(NSString *)path rect:(CGRect)r;
+
 // 改变image的颜色（对单色image比较有用）
 - (UIImage *)changeColor:(UIColor*)color;
 // 获得纯色图片

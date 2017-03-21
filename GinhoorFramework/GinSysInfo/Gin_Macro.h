@@ -71,21 +71,3 @@
 
 #define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
 #define RADIAN_TO_DEGREES(radian) (radian*180.0)/(M_PI)
-
-///////////////////////////////////////////
-// TODO
-///////////////////////////////////////////
-
-#define STRINGIFY(S) #S
-#define PRAGMA_MESSAGE(MSG) _Pragma(STRINGIFY(message(MSG)))
-//延时展开一次
-#define DEFER_STRINGIFY(S) STRINGIFY(S)
-
-#define FORMATTED_MESSAGE(MSG) "[TODO-" DEFER_STRINGIFY(__COUNTER__) "]" MSG "\n" \
-DEFER_STRINGIFY(__FILE__) "\n" \
-" line " DEFER_STRINGIFY(__LINE__)
-#define KEYWORDIFY try{} @catch (...) {}
-
-#define TODO(MSG) KEYWORDIFY PRAGMA_MESSAGE(FORMATTED_MESSAGE(MSG))
-
-

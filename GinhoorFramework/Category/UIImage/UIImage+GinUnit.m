@@ -10,6 +10,18 @@
 
 @implementation UIImage (GinUnit)
 
+
+- (void)savePartImage:(NSString *)path rect:(CGRect)r
+{
+    CGImageRef imagRef = CGImageCreateWithImageInRect([self CGImage], r);
+    UIImage *newImage = [UIImage imageWithCGImage: imagRef];
+    CGImageRelease(imagRef);
+    
+    NSData *data = UIImagePNGRepresentation(newImage);
+    [data writeToFile:path atomically:YES];
+}
+
+
 - (UIImage*)changeColor:(UIColor*)color
 {
     UIGraphicsBeginImageContextWithOptions(self.size, YES, [[UIScreen mainScreen] scale]);
