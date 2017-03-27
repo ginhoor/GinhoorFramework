@@ -59,7 +59,7 @@
         make.edges.offset(0);
     }];
     
-    [self setType2];
+    [self setType1];
     
     [self.tableView reloadData];
     
@@ -82,7 +82,7 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    [self type2:indexPath];
+    [self type1:indexPath];
     
     
 }
@@ -122,7 +122,7 @@
                           @"联系人导入",@"AFNetworkingDemo",
                           @"控件样式统一设置",@"Logger输出",
                           @"动态列表高度",@"扩展列表页面",
-                          @"WKWebView"];
+                          @"WKWebView",@"3D Touch"];
 }
 
 - (void)type1:(NSIndexPath *)indexPath
@@ -192,6 +192,9 @@
             
         case 16:
             [self.navigationController pushViewController:[[AppRouter sharedInstance] demo4WKWebViewController] animated:YES];
+            break;
+        case 17:
+            [self.navigationController pushViewController:[Gin3DTouchAction Gin3DTouchViewController]  animated:YES];
             break;
             
         default:
