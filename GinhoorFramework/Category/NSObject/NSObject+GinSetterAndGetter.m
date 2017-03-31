@@ -8,7 +8,14 @@
 
 #import "NSObject+GinSetterAndGetter.h"
 
+static NSMutableDictionary *keyBuffer;
+
 @implementation NSObject (GinSetterAndGetter)
+
++ (void)load
+{
+    keyBuffer = [NSMutableDictionary dictionary];
+}
 
 /**
  
@@ -30,9 +37,15 @@
     if (value != [self getValueForKey:key]) {
         [self willChangeValueForKey:key];
         
-        objc_setAssociatedObject(owner, (__bridge const void *)(key),
-                                 value,
-                                 OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        //避免 由于使用 NSMutableString 出现的与 NSString 常量地址不同的问题。
+        const char *cKey = [keyBuffer[key] pointerValue]; // 先获取key
+        if (cKey == NULL) { // 字典中不存在就创建
+            cKey = key.UTF8String;
+            keyBuffer[key] = [NSValue valueWithPointer:cKey];
+        }
+        
+        objc_setAssociatedObject(owner, cKey,value,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        
         [self didChangeValueForKey:key];
         
     }
@@ -40,7 +53,13 @@
 
 - (id)getValueForKey:(NSString *)key
 {
-    return objc_getAssociatedObject(self, (__bridge const void *)(key));
+    const char *cKey = [keyBuffer[key] pointerValue];
+    if (cKey == NULL) {
+        return nil;
+    } else {
+        return objc_getAssociatedObject(self, cKey);
+    }
+//    return objc_getAssociatedObject(self, (__bridge const void *)(key));
 }
 
 @end
