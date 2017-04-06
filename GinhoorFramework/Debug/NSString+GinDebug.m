@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 Ginhoor. All rights reserved.
 //
 
-#import "NSString+DEBUG.h"
+#import "NSString+GinDebug.h"
 
-@implementation NSString (Debug)
+@implementation NSString (GinDebug)
 
 + (NSString *)stringForSize:(CGSize)size
 {

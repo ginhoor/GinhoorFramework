@@ -12,7 +12,7 @@
 #import "CodeDemo.h"
 #import "NSString+RegEx.h"
 #import "UIAlertView+GinUnit.h"
-#import "NSString+Debug.h"
+#import "NSString+GinDebug.h"
 
 @interface CodeDemo()
 

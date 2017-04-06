@@ -186,6 +186,7 @@
 		00B0DC171DEE830F00701EFD /* AppDelegate+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC161DEE830F00701EFD /* AppDelegate+Notification.m */; };
 		00B0DC211DEE921000701EFD /* Demo3DTouchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC201DEE921000701EFD /* Demo3DTouchManager.m */; };
 		00B0DC251DEE956600701EFD /* Demo4AppDelegateWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC241DEE956600701EFD /* Demo4AppDelegateWidget.m */; };
+		00B961FE1E962A020051F59F /* UIView+GinDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B961FD1E962A020051F59F /* UIView+GinDebug.m */; };
 		00B997E51B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997E41B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m */; };
 		00B997E91B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997E81B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m */; };
 		00B997EB1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997EA1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m */; };
@@ -285,8 +286,7 @@
 		00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F4C9AA1AE65BEE00B3F485 /* CheckAppVersion.m */; };
 		00F7FC661AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7FC651AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m */; };
 		00F7FC691AEDDA860080AFC7 /* NSObject+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7FC681AEDDA860080AFC7 /* NSObject+GinUnit.m */; };
-		00F7FC701AEDEB840080AFC7 /* NSString+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7FC6D1AEDEB840080AFC7 /* NSString+Debug.m */; };
-		00F7FC711AEDEB840080AFC7 /* UIView+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7FC6F1AEDEB840080AFC7 /* UIView+Debug.m */; };
+		00F7FC701AEDEB840080AFC7 /* NSString+GinDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7FC6D1AEDEB840080AFC7 /* NSString+GinDebug.m */; };
 		3A364FF95F2FF0A0B8EFF7AB /* libPods-FrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 942A530AFADF27DF6D6C523D /* libPods-FrameworkDemo.a */; };
 		40294FA0A44F068C32D896EE /* libPods-FrameworkDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC6A53074C7699614DC1B7A /* libPods-FrameworkDemoTests.a */; };
 		5A116EC432806E609FB784B5 /* libPods-myWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C8ADC3D2976E6C471FF7BA /* libPods-myWidget.a */; };
@@ -664,6 +664,8 @@
 		00B0DC231DEE956600701EFD /* Demo4AppDelegateWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4AppDelegateWidget.h; sourceTree = "<group>"; };
 		00B0DC241DEE956600701EFD /* Demo4AppDelegateWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4AppDelegateWidget.m; sourceTree = "<group>"; };
 		00B0DC261DEE9CCC00701EFD /* myWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = myWidget.entitlements; sourceTree = "<group>"; };
+		00B961FC1E962A020051F59F /* UIView+GinDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GinDebug.h"; sourceTree = "<group>"; };
+		00B961FD1E962A020051F59F /* UIView+GinDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GinDebug.m"; sourceTree = "<group>"; };
 		00B997E41B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoginWithPhoneViewModelSpec.m; sourceTree = "<group>"; };
 		00B997E81B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinFindPasswordViewControllerSpec.m; sourceTree = "<group>"; };
 		00B997EA1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinQuickLoginViewControllerSpec.m; sourceTree = "<group>"; };
@@ -840,10 +842,8 @@
 		00F7FC651AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GinSetterAndGetter.m"; sourceTree = "<group>"; };
 		00F7FC671AEDDA860080AFC7 /* NSObject+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GinUnit.h"; sourceTree = "<group>"; };
 		00F7FC681AEDDA860080AFC7 /* NSObject+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GinUnit.m"; sourceTree = "<group>"; };
-		00F7FC6C1AEDEB840080AFC7 /* NSString+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Debug.h"; sourceTree = "<group>"; };
-		00F7FC6D1AEDEB840080AFC7 /* NSString+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Debug.m"; sourceTree = "<group>"; };
-		00F7FC6E1AEDEB840080AFC7 /* UIView+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Debug.h"; sourceTree = "<group>"; };
-		00F7FC6F1AEDEB840080AFC7 /* UIView+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Debug.m"; sourceTree = "<group>"; };
+		00F7FC6C1AEDEB840080AFC7 /* NSString+GinDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GinDebug.h"; sourceTree = "<group>"; };
+		00F7FC6D1AEDEB840080AFC7 /* NSString+GinDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GinDebug.m"; sourceTree = "<group>"; };
 		016255F5CA01AF11EBC81E0E /* Pods-FrameworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo.release.xcconfig"; sourceTree = "<group>"; };
 		16866D4A6DE8FF8F3D16D065 /* Pods-myWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-myWidget/Pods-myWidget.release.xcconfig"; sourceTree = "<group>"; };
 		40C0F0D260BCFF2B33CEC02B /* Pods-FrameworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -2838,10 +2838,10 @@
 		00F7FC6A1AEDEB840080AFC7 /* Debug */ = {
 			isa = PBXGroup;
 			children = (
-				00F7FC6C1AEDEB840080AFC7 /* NSString+Debug.h */,
-				00F7FC6D1AEDEB840080AFC7 /* NSString+Debug.m */,
-				00F7FC6E1AEDEB840080AFC7 /* UIView+Debug.h */,
-				00F7FC6F1AEDEB840080AFC7 /* UIView+Debug.m */,
+				00B961FC1E962A020051F59F /* UIView+GinDebug.h */,
+				00B961FD1E962A020051F59F /* UIView+GinDebug.m */,
+				00F7FC6C1AEDEB840080AFC7 /* NSString+GinDebug.h */,
+				00F7FC6D1AEDEB840080AFC7 /* NSString+GinDebug.m */,
 			);
 			path = Debug;
 			sourceTree = "<group>";
@@ -3324,6 +3324,7 @@
 				006A93B71ADE09090093BEBE /* UIView+GinCGRect.m in Sources */,
 				00A3E3F31B8FF9C60065C3EA /* NSString+RegEx.m in Sources */,
 				006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */,
+				00B961FE1E962A020051F59F /* UIView+GinDebug.m in Sources */,
 				00B0DBDE1DED4B4A00701EFD /* NetworkingViewController.m in Sources */,
 				00D04C191D6A91C400B4C27C /* GinVerticalLayoutButton.m in Sources */,
 				00774E631DF10E9000D90150 /* Demo4RealmAction.m in Sources */,
@@ -3405,7 +3406,6 @@
 				00A16FFF1DEC1D300020EAE4 /* Person.m in Sources */,
 				0031C55E1DEBEC2A009A85A4 /* AppRouter+Login.m in Sources */,
 				00D04C391D6A91C400B4C27C /* GinPopupContentView.m in Sources */,
-				00F7FC711AEDEB840080AFC7 /* UIView+Debug.m in Sources */,
 				00D04C3D1D6A91C400B4C27C /* GinScanQRCoderController.m in Sources */,
 				00D04C201D6A91C400B4C27C /* UITextField+Keyboard.m in Sources */,
 				00B0DBD71DED4B4A00701EFD /* page1Controller.m in Sources */,
@@ -3436,7 +3436,7 @@
 				000B52911ADBCF8100946853 /* AppDelegate.m in Sources */,
 				00D04C3B1D6A91C400B4C27C /* GinPopupViewController.m in Sources */,
 				006A93BC1ADE09090093BEBE /* NSObject+CoreGraphic.m in Sources */,
-				00F7FC701AEDEB840080AFC7 /* NSString+Debug.m in Sources */,
+				00F7FC701AEDEB840080AFC7 /* NSString+GinDebug.m in Sources */,
 				00D04C2C1D6A91C400B4C27C /* GinPanCell.m in Sources */,
 				000B528E1ADBCF8100946853 /* main.m in Sources */,
 				00E79C9A1DEFBBFF00969571 /* DynomicHeightCell.m in Sources */,

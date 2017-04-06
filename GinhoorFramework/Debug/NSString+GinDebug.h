@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface NSString (Debug)
+@interface NSString (GinDebug)
 
 + (NSString *)stringForSize:(CGSize)size;
 + (NSString *)stringForFrame:(CGRect)frame;
