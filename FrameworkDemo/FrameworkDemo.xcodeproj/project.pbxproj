@@ -63,7 +63,7 @@
 		0037BE381BB1085C007C7DCE /* NSObject+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 0037BE371BB1085C007C7DCE /* NSObject+Json.m */; };
 		005421DD1B47DF6F0028CCE6 /* GinAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 005421DC1B47DF6F0028CCE6 /* GinAddressBook.m */; };
 		005422EB1B47F4710028CCE6 /* GinKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422EA1B47F4710028CCE6 /* GinKeyboardManager.m */; };
-		005422F61B480B830028CCE6 /* UIImagePickerMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422F51B480B830028CCE6 /* UIImagePickerMananger.m */; };
+		005422F61B480B830028CCE6 /* GinUIImagePickerMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422F51B480B830028CCE6 /* GinUIImagePickerMananger.m */; };
 		006A93A91ADE09090093BEBE /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93271ADE09090093BEBE /* NSString+Base64.m */; };
 		006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93291ADE09090093BEBE /* UIImage+Base64.m */; };
 		006A93AD1ADE09090093BEBE /* GinCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93331ADE09090093BEBE /* GinCollectionLayout.m */; };
@@ -434,8 +434,8 @@
 		005421DC1B47DF6F0028CCE6 /* GinAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinAddressBook.m; sourceTree = "<group>"; };
 		005422E91B47F4710028CCE6 /* GinKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinKeyboardManager.h; sourceTree = "<group>"; };
 		005422EA1B47F4710028CCE6 /* GinKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinKeyboardManager.m; sourceTree = "<group>"; };
-		005422F41B480B830028CCE6 /* UIImagePickerMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImagePickerMananger.h; sourceTree = "<group>"; };
-		005422F51B480B830028CCE6 /* UIImagePickerMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerMananger.m; sourceTree = "<group>"; };
+		005422F41B480B830028CCE6 /* GinUIImagePickerMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinUIImagePickerMananger.h; sourceTree = "<group>"; };
+		005422F51B480B830028CCE6 /* GinUIImagePickerMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinUIImagePickerMananger.m; sourceTree = "<group>"; };
 		006A93251ADE09090093BEBE /* GinCategory_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCategory_Base64.h; sourceTree = "<group>"; };
 		006A93261ADE09090093BEBE /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		006A93271ADE09090093BEBE /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
@@ -1230,8 +1230,8 @@
 		005422F31B480B830028CCE6 /* ImagePickerMananger */ = {
 			isa = PBXGroup;
 			children = (
-				005422F41B480B830028CCE6 /* UIImagePickerMananger.h */,
-				005422F51B480B830028CCE6 /* UIImagePickerMananger.m */,
+				005422F41B480B830028CCE6 /* GinUIImagePickerMananger.h */,
+				005422F51B480B830028CCE6 /* GinUIImagePickerMananger.m */,
 			);
 			path = ImagePickerMananger;
 			sourceTree = "<group>";
@@ -3295,7 +3295,7 @@
 				006A93C31ADE09090093BEBE /* NSString+Size.m in Sources */,
 				0031C5621DEBEC2A009A85A4 /* AppRouter+PhotoGallery.m in Sources */,
 				00A16FF61DEC1D300020EAE4 /* GinBaseTitleHeader.m in Sources */,
-				005422F61B480B830028CCE6 /* UIImagePickerMananger.m in Sources */,
+				005422F61B480B830028CCE6 /* GinUIImagePickerMananger.m in Sources */,
 				006A93AE1ADE09090093BEBE /* GinHeightDynamicCollectionLayout.m in Sources */,
 				0031C5581DEBEC2A009A85A4 /* AppRouter+GinSystemButton.m in Sources */,
 				00E79CA91DEFBBFF00969571 /* TableViewController.m in Sources */,

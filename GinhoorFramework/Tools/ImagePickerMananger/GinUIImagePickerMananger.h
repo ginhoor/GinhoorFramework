@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@interface UIImagePickerMananger : NSObject
+@interface GinUIImagePickerMananger : NSObject
 
 /**
  *  是否允许编辑图片

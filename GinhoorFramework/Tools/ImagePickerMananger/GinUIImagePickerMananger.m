@@ -6,22 +6,22 @@
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import "UIImagePickerMananger.h"
+#import "GinUIImagePickerMananger.h"
 #import "UIActionSheet+BlocksKit.h"
 
-@interface UIImagePickerMananger() <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface GinUIImagePickerMananger() <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) UIViewController *controller;
 
 @end
-@implementation UIImagePickerMananger
+@implementation GinUIImagePickerMananger
 
 + (instancetype)manager
 {
-    static UIImagePickerMananger *share;
+    static GinUIImagePickerMananger *share;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        share = [[UIImagePickerMananger alloc] init];
+        share = [[GinUIImagePickerMananger alloc] init];
         share.animated = YES;
     });
     return share;
