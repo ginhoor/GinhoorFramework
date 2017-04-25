@@ -26,5 +26,7 @@
 - (UIImage *)scaleImageto:(CGFloat)scaleSize;
 - (UIImage *)scaleImageByWidth:(CGFloat)width;
 
+// 解决保存图片或重绘图片后旋转90度的方法
+- (UIImage *)fixOrientation;
 
 @end
