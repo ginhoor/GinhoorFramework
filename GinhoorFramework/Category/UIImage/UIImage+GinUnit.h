@@ -29,4 +29,7 @@
 // 解决保存图片或重绘图片后旋转90度的方法
 - (UIImage *)fixOrientation;
 
+// 压缩图片到指定文件大小
+- (NSData *)compressOriginalImage:(UIImage *)image toMaxDataSizeKBytes:(CGFloat)size;
+
 @end
