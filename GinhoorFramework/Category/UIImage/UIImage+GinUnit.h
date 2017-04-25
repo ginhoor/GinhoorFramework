@@ -30,6 +30,6 @@
 - (UIImage *)fixOrientation;
 
 // 压缩图片到指定文件大小
-- (NSData *)compressOriginalImage:(UIImage *)image toMaxDataSizeKBytes:(CGFloat)size;
+- (NSData *)compressToMaxDataSizeKBytes:(CGFloat)size;
 
 @end

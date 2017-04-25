@@ -225,15 +225,15 @@
  *
  *  @return 返回的图片文件
  */
-- (NSData *)compressOriginalImage:(UIImage *)image toMaxDataSizeKBytes:(CGFloat)size
+- (NSData *)compressToMaxDataSizeKBytes:(CGFloat)size
 {
-    NSData * data = UIImageJPEGRepresentation(image, 1.0);
+    NSData * data = UIImageJPEGRepresentation(self, 1.0);
     CGFloat dataKBytes = data.length/1000.0;
     CGFloat maxQuality = 0.9f;
     CGFloat lastData = dataKBytes;
     while (dataKBytes > size && maxQuality > 0.01f) {
         maxQuality = maxQuality - 0.01f;
-        data = UIImageJPEGRepresentation(image, maxQuality);
+        data = UIImageJPEGRepresentation(self, maxQuality);
         dataKBytes = data.length / 1000.0;
         if (lastData == dataKBytes) {
             break;
