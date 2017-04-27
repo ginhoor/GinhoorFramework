@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     s.author       = { "JunhuaShao" => "ginhoor@gmail.com" }
 
     s.requires_arc = true
-    s.platform     = :ios, "7.0"
+    s.platform     = :ios, "8.0"
 
     s.source       = { :git => "https://github.com/ginhoor/GinhoorFramework.git", :tag => s.version.to_s }
 
