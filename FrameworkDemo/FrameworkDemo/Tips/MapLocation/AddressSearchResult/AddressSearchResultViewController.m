@@ -10,7 +10,10 @@
 #import "GinhoorFramework.h"
 #import "AddressSearchResultViewController.h"
 #import "UIViewController+GinBaseTableView.h"
-
+#import "UIColor+Hex.h"
+#import "UIImage+GinUnit.h"
+#import "UIAlertView+GinUnit.h"
+#import "NSString+GinUnit.h"
 #import <BaiduMapAPI_Search/BMKSuggestionSearch.h>
 
 @interface AddressSearchResultViewController () <UITableViewDelegate,UITableViewDataSource, UISearchBarDelegate, BMKSuggestionSearchDelegate>
