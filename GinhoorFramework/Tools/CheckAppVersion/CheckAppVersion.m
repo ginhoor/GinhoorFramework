@@ -7,8 +7,9 @@
 //
 
 #import "CheckAppVersion.h"
-#import "UIAlertView+GinUnit.h"
 #import "NSString+Json.h"
+#import "UIAlertController+GinUnit.h"
+
 @implementation CheckAppVersion
 
 
@@ -46,21 +47,21 @@
                 NSString *releaseNotes = [releaseInfo objectForKey:@"releaseNotes"];
                 dispatch_async(dispatch_get_main_queue(),^{
                     
-                    [UIAlertView alertView:@"有新版本" message:releaseNotes submitTitle:@"更新" submitBlock:^{
+                    [UIAlertController alert:@"有新版本" message:releaseNotes submitTitle:@"更新" submitBlock:^{
                         NSString *trackViewUrl = [releaseInfo objectForKey:@"trackViewUrl"];
                         NSURL *url = [NSURL URLWithString:trackViewUrl];
                         [[UIApplication sharedApplication]openURL:url];
                         [[NSUserDefaults standardUserDefaults] setObject:appVersion forKey:@"CheckAppVersion"];
                     } cancelTitle:@"取消" cancelBlock:^{
                         [[NSUserDefaults standardUserDefaults] setObject:appVersion forKey:@"CheckAppVersion"];
-                    }];
+                    } completionBlock:nil];
                 });
             }
             else
             {
                 dispatch_async(dispatch_get_main_queue(),^{
                     if (needAllTips) {
-                        [UIAlertView alertView:@"版本检测" message:@"此版本为最新版本" cancelTitle:@"确认" cancelBlock:^{}];
+                        [UIAlertController alert:@"版本检测" message:@"此版本为最新版本" cancelTitle:@"确认" cancelBlock:nil completionBlock:nil];
                     }
                 });
             }

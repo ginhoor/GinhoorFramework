@@ -7,8 +7,7 @@
 //
 
 #import "GinContactsBook.h"
-#import "UIAlertView+GinUnit.h"
-
+#import "UIAlertController+GinUnit.h"
 /**
     CNAuthorizationStatus枚举值
     NotDetermined: 这个状态表示用户现在为止还没有允许或者拒绝对联系人数据库的访问。应用在设备上第一次安装时就会是这个状态。
@@ -113,8 +112,7 @@
                 } else{
                     if (status == CNAuthorizationStatusDenied) {
                         dispatch_async(dispatch_get_main_queue(), ^{
-                            [UIAlertView alertView:@"提示" message:@"请在设置允许APP读取您的联系人列表" cancelTitle:@"确认" cancelBlock:^{
-                            }];
+                            [UIAlertController alert:@"提示" message:@"请在设置允许APP读取您的联系人列表" cancelTitle:@"确认" cancelBlock:nil completionBlock:nil];
                         });
                     }
                 }

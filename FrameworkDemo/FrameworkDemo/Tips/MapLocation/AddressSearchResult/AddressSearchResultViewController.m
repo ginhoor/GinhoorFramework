@@ -12,7 +12,7 @@
 #import "UIViewController+GinBaseTableView.h"
 #import "UIColor+Hex.h"
 #import "UIImage+GinUnit.h"
-#import "UIAlertView+GinUnit.h"
+#import "UIAlertController+GinUnit.h"
 #import "NSString+GinUnit.h"
 #import <BaiduMapAPI_Search/BMKSuggestionSearch.h>
 
@@ -184,8 +184,7 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
     if (self.searchBar.text.length == 0) {
-        [UIAlertView alertView:@"提示" message:@"请输入地址" cancelTitle:@"确认" cancelBlock:^{
-        }];
+        [UIAlertController alert:@"提示" message:@"请输入地址" cancelTitle:@"确认" cancelBlock:nil completionBlock:nil];
         return;
     }
     

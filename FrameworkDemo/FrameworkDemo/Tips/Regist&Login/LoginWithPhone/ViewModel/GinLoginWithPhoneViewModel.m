@@ -8,7 +8,7 @@
 
 #import "GinLoginWithPhoneViewModel.h"
 #import "NSString+RegEx.h"
-#import "UIAlertView+GinUnit.h"
+#import "UIAlertController+GinUnit.h"
 
 @implementation GinLoginWithPhoneViewModel
 
@@ -56,9 +56,9 @@
             [subscriber sendCompleted];
             
         } else {
-            [UIAlertView alertView:@"提示" message:@"请输入正确的手机号" cancelTitle:@"确认" cancelBlock:^{
+            [UIAlertController alert:@"提示" message:@"请输入正确的手机号" cancelTitle:@"确认" cancelBlock:^{
                 [subscriber sendCompleted];
-            }];
+            } completionBlock:nil];
         }
         
 //        <#填写获取验证码逻辑#>

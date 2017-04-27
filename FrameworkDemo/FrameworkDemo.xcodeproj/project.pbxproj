@@ -91,7 +91,6 @@
 		006A93C31ADE09090093BEBE /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A936F1ADE09090093BEBE /* NSString+Size.m */; };
 		006A93C41ADE09090093BEBE /* NSURL+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93721ADE09090093BEBE /* NSURL+GinUnit.m */; };
 		006A93C51ADE09090093BEBE /* NSURL+Videos.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93741ADE09090093BEBE /* NSURL+Videos.m */; };
-		006A93C71ADE09090093BEBE /* UIAlertView+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93791ADE09090093BEBE /* UIAlertView+GinUnit.m */; };
 		006A93C81ADE09090093BEBE /* UIImage+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A937C1ADE09090093BEBE /* UIImage+GinUnit.m */; };
 		006A93C91ADE09090093BEBE /* UIResponder+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A937F1ADE09090093BEBE /* UIResponder+GinUnit.m */; };
 		006A93CA1ADE09090093BEBE /* UIView+Layer.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93821ADE09090093BEBE /* UIView+Layer.m */; };
@@ -491,8 +490,6 @@
 		006A93721ADE09090093BEBE /* NSURL+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+GinUnit.m"; sourceTree = "<group>"; };
 		006A93731ADE09090093BEBE /* NSURL+Videos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Videos.h"; sourceTree = "<group>"; };
 		006A93741ADE09090093BEBE /* NSURL+Videos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Videos.m"; sourceTree = "<group>"; };
-		006A93781ADE09090093BEBE /* UIAlertView+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+GinUnit.h"; sourceTree = "<group>"; };
-		006A93791ADE09090093BEBE /* UIAlertView+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+GinUnit.m"; sourceTree = "<group>"; };
 		006A937B1ADE09090093BEBE /* UIImage+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GinUnit.h"; sourceTree = "<group>"; };
 		006A937C1ADE09090093BEBE /* UIImage+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GinUnit.m"; sourceTree = "<group>"; };
 		006A937E1ADE09090093BEBE /* UIResponder+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+GinUnit.h"; sourceTree = "<group>"; };
@@ -1479,8 +1476,6 @@
 		006A93751ADE09090093BEBE /* UIAlertController */ = {
 			isa = PBXGroup;
 			children = (
-				006A93781ADE09090093BEBE /* UIAlertView+GinUnit.h */,
-				006A93791ADE09090093BEBE /* UIAlertView+GinUnit.m */,
 				009312041E48600100D7A272 /* UIAlertController+GinUnit.h */,
 				009312051E48600100D7A272 /* UIAlertController+GinUnit.m */,
 			);
@@ -3404,7 +3399,6 @@
 				00B0DC251DEE956600701EFD /* Demo4AppDelegateWidget.m in Sources */,
 				00D04C211D6A91C400B4C27C /* UITextView+Keyboard.m in Sources */,
 				00D04C311D6A91C400B4C27C /* GinIndexTableView.m in Sources */,
-				006A93C71ADE09090093BEBE /* UIAlertView+GinUnit.m in Sources */,
 				00B0DBF41DED4B4A00701EFD /* WKWebViewOC2JSViewController.m in Sources */,
 				00B0DC211DEE921000701EFD /* Demo3DTouchManager.m in Sources */,
 				0031C5521DEBEC2A009A85A4 /* AppRouter+Demo4ExtendMenu.m in Sources */,

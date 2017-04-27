@@ -11,7 +11,7 @@
 #import "Gin_Macro.h"
 #import "CodeDemo.h"
 #import "NSString+RegEx.h"
-#import "UIAlertView+GinUnit.h"
+#import "UIAlertController+GinUnit.h"
 #import "NSString+GinDebug.h"
 
 @interface CodeDemo()
@@ -38,9 +38,7 @@
     }];
     
     [self addButton:@"测试正则" index:0 tap:^{
-        [UIAlertView alertView:@"提示" message:[NSString stringWithFormat:@"校验：%d",[@"12345678901" validateMobile]] cancelTitle:@"确认" cancelBlock:^{
-            ;
-        }];
+        [UIAlertController alert:@"提示" message:[NSString stringWithFormat:@"校验：%d",[@"12345678901" validateMobile]] cancelTitle:@"确认" cancelBlock:nil completionBlock:nil];
     }];
     
     [self addButton:@"测试正则1" index:1 tap:^{

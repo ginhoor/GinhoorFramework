@@ -9,7 +9,7 @@
 
 #import "StoreLocationMapViewController.h"
 #import <MapKit/MapKit.h>
-#import "UIAlertView+GinUnit.h"
+#import "UIAlertController+GinUnit.h"
 #import "LocationManager.h"
 #import <BaiduMapAPI_Map/BMKPointAnnotation.h>
 #import <BaiduMapAPI_Map/BMKPinAnnotationView.h>
@@ -113,16 +113,13 @@ static NSString *annotationReuseId = @"Annotation";
 - (void)navAction:(id)sender
 {
     if (![LocationManager isLocationEnable]) {
-        [UIAlertView alertView:@"导航失败" message:@"定位权限未开启" cancelTitle:@"确定" cancelBlock:^{
-            ;
-        }];
+        
+        [UIAlertController alert:@"导航失败" message:@"定位权限未开启" cancelTitle:@"确定" cancelBlock:nil completionBlock:nil];
         return;
     }
     
     if (![LocationManager isLoaded]) {
-        [UIAlertView alertView:@"导航失败" message:@"当前位置尚未定位完成，请稍后再试" cancelTitle:@"确定" cancelBlock:^{
-            ;
-        }];
+        [UIAlertController alert:@"导航失败" message:@"当前位置尚未定位完成，请稍后再试" cancelTitle:@"确定" cancelBlock:nil completionBlock:nil];
         return;
     }
     
