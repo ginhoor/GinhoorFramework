@@ -29,6 +29,5 @@
 #import "UIResponder+GinUnit.h"
 
 #import "UIColor+Hex.h"
-#import "UIAlertView+GinUnit.h"
 
 #import "UIView+GinCGRect.h"

@@ -8,10 +8,6 @@
 
 #import "Gin_Macro.h"
 #import "GinSysInfo.h"
-#import "GinTypeUnitHeader.h"
-
-#import "UIView+GinBaseClass.h"
-#import "UIViewController+GinBaseClass.h"
 
 
 

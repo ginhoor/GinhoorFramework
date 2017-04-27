@@ -21,24 +21,24 @@
 		000B529C1ADBCF8100946853 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000B529A1ADBCF8100946853 /* LaunchScreen.xib */; };
 		0018B9851B100883001E52D5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B9841B100883001E52D5 /* UIColor+Hex.m */; };
 		0018BC6E1B118C7F001E52D5 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC6D1B118C7F001E52D5 /* NSString+MD5.m */; };
-		002179AF1EB19CE400CF41AE /* BaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 002179831EB19CE400CF41AE /* BaseData.m */; };
-		002179B01EB19CE400CF41AE /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 002179851EB19CE400CF41AE /* BaseView.m */; };
-		002179B11EB19CE400CF41AE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002179871EB19CE400CF41AE /* BaseViewController.m */; };
-		002179B21EB19CE400CF41AE /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 002179891EB19CE400CF41AE /* BaseViewModel.m */; };
-		002179B31EB19CE400CF41AE /* BaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0021798C1EB19CE400CF41AE /* BaseCollectionCell.m */; };
-		002179B41EB19CE400CF41AE /* BaseCollectionViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0021798E1EB19CE400CF41AE /* BaseCollectionViewContoller.m */; };
-		002179B51EB19CE400CF41AE /* GinCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 002179921EB19CE400CF41AE /* GinCollectionLayout.m */; };
-		002179B61EB19CE400CF41AE /* GinHeightDynamicCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 002179941EB19CE400CF41AE /* GinHeightDynamicCollectionLayout.m */; };
-		002179B71EB19CE400CF41AE /* UICollectionView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 002179961EB19CE400CF41AE /* UICollectionView+GinBaseClass.m */; };
-		002179B81EB19CE400CF41AE /* UIViewController+GinBaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 002179981EB19CE400CF41AE /* UIViewController+GinBaseCollectionView.m */; };
-		002179B91EB19CE500CF41AE /* GinBaseCoreDataResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0021799B1EB19CE400CF41AE /* GinBaseCoreDataResponder.m */; };
-		002179BA1EB19CE500CF41AE /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0021799E1EB19CE400CF41AE /* BaseTableViewCell.m */; };
-		002179BB1EB19CE500CF41AE /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002179A01EB19CE400CF41AE /* BaseTableViewController.m */; };
-		002179BC1EB19CE500CF41AE /* UITableView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 002179A41EB19CE400CF41AE /* UITableView+GinBaseClass.m */; };
-		002179BD1EB19CE500CF41AE /* UIViewController+GinBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 002179A61EB19CE400CF41AE /* UIViewController+GinBaseTableView.m */; };
-		002179BE1EB19CE500CF41AE /* UIView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 002179A91EB19CE400CF41AE /* UIView+GinBaseClass.m */; };
-		002179BF1EB19CE500CF41AE /* UIView+GinCGRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 002179AB1EB19CE400CF41AE /* UIView+GinCGRect.m */; };
-		002179C01EB19CE500CF41AE /* UIViewController+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 002179AE1EB19CE400CF41AE /* UIViewController+GinBaseClass.m */; };
+		00217B3F1EB1BCB400CF41AE /* UICollectionView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B311EB1BCB400CF41AE /* UICollectionView+GinBaseClass.m */; };
+		00217B401EB1BCB400CF41AE /* UIViewController+GinBaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B331EB1BCB400CF41AE /* UIViewController+GinBaseCollectionView.m */; };
+		00217B411EB1BCB400CF41AE /* UITableView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B361EB1BCB400CF41AE /* UITableView+GinBaseClass.m */; };
+		00217B421EB1BCB400CF41AE /* UIViewController+GinBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B381EB1BCB400CF41AE /* UIViewController+GinBaseTableView.m */; };
+		00217B431EB1BCB400CF41AE /* UIView+GinCGRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B3B1EB1BCB400CF41AE /* UIView+GinCGRect.m */; };
+		00217B441EB1BCB400CF41AE /* UIViewController+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B3E1EB1BCB400CF41AE /* UIViewController+GinBaseClass.m */; };
+		00217B4A1EB1BCDA00CF41AE /* GinCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B471EB1BCDA00CF41AE /* GinCollectionLayout.m */; };
+		00217B4B1EB1BCDA00CF41AE /* GinHeightDynamicCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B491EB1BCDA00CF41AE /* GinHeightDynamicCollectionLayout.m */; };
+		00217B661EB1BD0800CF41AE /* BaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B4F1EB1BD0800CF41AE /* BaseData.m */; };
+		00217B671EB1BD0800CF41AE /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B511EB1BD0800CF41AE /* BaseView.m */; };
+		00217B681EB1BD0800CF41AE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B531EB1BD0800CF41AE /* BaseViewController.m */; };
+		00217B691EB1BD0800CF41AE /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B551EB1BD0800CF41AE /* BaseViewModel.m */; };
+		00217B6A1EB1BD0800CF41AE /* BaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B581EB1BD0800CF41AE /* BaseCollectionCell.m */; };
+		00217B6B1EB1BD0800CF41AE /* BaseCollectionViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B5A1EB1BD0800CF41AE /* BaseCollectionViewContoller.m */; };
+		00217B6C1EB1BD0800CF41AE /* GinBaseCoreDataResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B5D1EB1BD0800CF41AE /* GinBaseCoreDataResponder.m */; };
+		00217B6D1EB1BD0800CF41AE /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B601EB1BD0800CF41AE /* BaseTableViewCell.m */; };
+		00217B6E1EB1BD0800CF41AE /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B621EB1BD0800CF41AE /* BaseTableViewController.m */; };
+		00217B6F1EB1BD0800CF41AE /* UIView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B651EB1BD0800CF41AE /* UIView+GinBaseClass.m */; };
 		002F21A41D66F33A0021E6F4 /* LifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F21A31D66F33A0021E6F4 /* LifeCycleViewController.m */; };
 		002F21A71D66F3500021E6F4 /* CustomerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F21A61D66F3500021E6F4 /* CustomerView.m */; };
 		002F315D1B2A72AC00080B37 /* NSAttributedString+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F315C1B2A72AC00080B37 /* NSAttributedString+GinUnit.m */; };
@@ -384,42 +384,42 @@
 		0018B9841B100883001E52D5 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		0018BC6C1B118C7F001E52D5 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		0018BC6D1B118C7F001E52D5 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
-		002179821EB19CE400CF41AE /* BaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseData.h; sourceTree = "<group>"; };
-		002179831EB19CE400CF41AE /* BaseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseData.m; sourceTree = "<group>"; };
-		002179841EB19CE400CF41AE /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
-		002179851EB19CE400CF41AE /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
-		002179861EB19CE400CF41AE /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		002179871EB19CE400CF41AE /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		002179881EB19CE400CF41AE /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
-		002179891EB19CE400CF41AE /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
-		0021798B1EB19CE400CF41AE /* BaseCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionCell.h; sourceTree = "<group>"; };
-		0021798C1EB19CE400CF41AE /* BaseCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionCell.m; sourceTree = "<group>"; };
-		0021798D1EB19CE400CF41AE /* BaseCollectionViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewContoller.h; sourceTree = "<group>"; };
-		0021798E1EB19CE400CF41AE /* BaseCollectionViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewContoller.m; sourceTree = "<group>"; };
-		002179911EB19CE400CF41AE /* GinCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCollectionLayout.h; sourceTree = "<group>"; };
-		002179921EB19CE400CF41AE /* GinCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinCollectionLayout.m; sourceTree = "<group>"; };
-		002179931EB19CE400CF41AE /* GinHeightDynamicCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinHeightDynamicCollectionLayout.h; sourceTree = "<group>"; };
-		002179941EB19CE400CF41AE /* GinHeightDynamicCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinHeightDynamicCollectionLayout.m; sourceTree = "<group>"; };
-		002179951EB19CE400CF41AE /* UICollectionView+GinBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+GinBaseClass.h"; sourceTree = "<group>"; };
-		002179961EB19CE400CF41AE /* UICollectionView+GinBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+GinBaseClass.m"; sourceTree = "<group>"; };
-		002179971EB19CE400CF41AE /* UIViewController+GinBaseCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GinBaseCollectionView.h"; sourceTree = "<group>"; };
-		002179981EB19CE400CF41AE /* UIViewController+GinBaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GinBaseCollectionView.m"; sourceTree = "<group>"; };
-		0021799A1EB19CE400CF41AE /* GinBaseCoreDataResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseCoreDataResponder.h; sourceTree = "<group>"; };
-		0021799B1EB19CE400CF41AE /* GinBaseCoreDataResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseCoreDataResponder.m; sourceTree = "<group>"; };
-		0021799D1EB19CE400CF41AE /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
-		0021799E1EB19CE400CF41AE /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
-		0021799F1EB19CE400CF41AE /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
-		002179A01EB19CE400CF41AE /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
-		002179A31EB19CE400CF41AE /* UITableView+GinBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+GinBaseClass.h"; sourceTree = "<group>"; };
-		002179A41EB19CE400CF41AE /* UITableView+GinBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+GinBaseClass.m"; sourceTree = "<group>"; };
-		002179A51EB19CE400CF41AE /* UIViewController+GinBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GinBaseTableView.h"; sourceTree = "<group>"; };
-		002179A61EB19CE400CF41AE /* UIViewController+GinBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GinBaseTableView.m"; sourceTree = "<group>"; };
-		002179A81EB19CE400CF41AE /* UIView+GinBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GinBaseClass.h"; sourceTree = "<group>"; };
-		002179A91EB19CE400CF41AE /* UIView+GinBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GinBaseClass.m"; sourceTree = "<group>"; };
-		002179AA1EB19CE400CF41AE /* UIView+GinCGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GinCGRect.h"; sourceTree = "<group>"; };
-		002179AB1EB19CE400CF41AE /* UIView+GinCGRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GinCGRect.m"; sourceTree = "<group>"; };
-		002179AD1EB19CE400CF41AE /* UIViewController+GinBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GinBaseClass.h"; sourceTree = "<group>"; };
-		002179AE1EB19CE400CF41AE /* UIViewController+GinBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GinBaseClass.m"; sourceTree = "<group>"; };
+		00217B301EB1BCB400CF41AE /* UICollectionView+GinBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+GinBaseClass.h"; sourceTree = "<group>"; };
+		00217B311EB1BCB400CF41AE /* UICollectionView+GinBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+GinBaseClass.m"; sourceTree = "<group>"; };
+		00217B321EB1BCB400CF41AE /* UIViewController+GinBaseCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GinBaseCollectionView.h"; sourceTree = "<group>"; };
+		00217B331EB1BCB400CF41AE /* UIViewController+GinBaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GinBaseCollectionView.m"; sourceTree = "<group>"; };
+		00217B351EB1BCB400CF41AE /* UITableView+GinBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+GinBaseClass.h"; sourceTree = "<group>"; };
+		00217B361EB1BCB400CF41AE /* UITableView+GinBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+GinBaseClass.m"; sourceTree = "<group>"; };
+		00217B371EB1BCB400CF41AE /* UIViewController+GinBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GinBaseTableView.h"; sourceTree = "<group>"; };
+		00217B381EB1BCB400CF41AE /* UIViewController+GinBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GinBaseTableView.m"; sourceTree = "<group>"; };
+		00217B3A1EB1BCB400CF41AE /* UIView+GinCGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GinCGRect.h"; sourceTree = "<group>"; };
+		00217B3B1EB1BCB400CF41AE /* UIView+GinCGRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GinCGRect.m"; sourceTree = "<group>"; };
+		00217B3D1EB1BCB400CF41AE /* UIViewController+GinBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GinBaseClass.h"; sourceTree = "<group>"; };
+		00217B3E1EB1BCB400CF41AE /* UIViewController+GinBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GinBaseClass.m"; sourceTree = "<group>"; };
+		00217B461EB1BCDA00CF41AE /* GinCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCollectionLayout.h; sourceTree = "<group>"; };
+		00217B471EB1BCDA00CF41AE /* GinCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinCollectionLayout.m; sourceTree = "<group>"; };
+		00217B481EB1BCDA00CF41AE /* GinHeightDynamicCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinHeightDynamicCollectionLayout.h; sourceTree = "<group>"; };
+		00217B491EB1BCDA00CF41AE /* GinHeightDynamicCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinHeightDynamicCollectionLayout.m; sourceTree = "<group>"; };
+		00217B4E1EB1BD0800CF41AE /* BaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseData.h; sourceTree = "<group>"; };
+		00217B4F1EB1BD0800CF41AE /* BaseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseData.m; sourceTree = "<group>"; };
+		00217B501EB1BD0800CF41AE /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		00217B511EB1BD0800CF41AE /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		00217B521EB1BD0800CF41AE /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		00217B531EB1BD0800CF41AE /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		00217B541EB1BD0800CF41AE /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		00217B551EB1BD0800CF41AE /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		00217B571EB1BD0800CF41AE /* BaseCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionCell.h; sourceTree = "<group>"; };
+		00217B581EB1BD0800CF41AE /* BaseCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionCell.m; sourceTree = "<group>"; };
+		00217B591EB1BD0800CF41AE /* BaseCollectionViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewContoller.h; sourceTree = "<group>"; };
+		00217B5A1EB1BD0800CF41AE /* BaseCollectionViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewContoller.m; sourceTree = "<group>"; };
+		00217B5C1EB1BD0800CF41AE /* GinBaseCoreDataResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseCoreDataResponder.h; sourceTree = "<group>"; };
+		00217B5D1EB1BD0800CF41AE /* GinBaseCoreDataResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseCoreDataResponder.m; sourceTree = "<group>"; };
+		00217B5F1EB1BD0800CF41AE /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		00217B601EB1BD0800CF41AE /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		00217B611EB1BD0800CF41AE /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		00217B621EB1BD0800CF41AE /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		00217B641EB1BD0800CF41AE /* UIView+GinBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GinBaseClass.h"; sourceTree = "<group>"; };
+		00217B651EB1BD0800CF41AE /* UIView+GinBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GinBaseClass.m"; sourceTree = "<group>"; };
 		002F21A21D66F33A0021E6F4 /* LifeCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeCycleViewController.h; sourceTree = "<group>"; };
 		002F21A31D66F33A0021E6F4 /* LifeCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeCycleViewController.m; sourceTree = "<group>"; };
 		002F21A51D66F3500021E6F4 /* CustomerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerView.h; sourceTree = "<group>"; };
@@ -996,133 +996,139 @@
 			path = UIColor;
 			sourceTree = "<group>";
 		};
-		002179801EB19CE400CF41AE /* BaseClass */ = {
+		00217B2E1EB1BCB400CF41AE /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				002179811EB19CE400CF41AE /* BaseData */,
-				002179841EB19CE400CF41AE /* BaseView.h */,
-				002179851EB19CE400CF41AE /* BaseView.m */,
-				002179861EB19CE400CF41AE /* BaseViewController.h */,
-				002179871EB19CE400CF41AE /* BaseViewController.m */,
-				002179881EB19CE400CF41AE /* BaseViewModel.h */,
-				002179891EB19CE400CF41AE /* BaseViewModel.m */,
-				0021798A1EB19CE400CF41AE /* Collection */,
-				0021798F1EB19CE400CF41AE /* CollectionView */,
-				002179991EB19CE400CF41AE /* CoreData */,
-				0021799C1EB19CE400CF41AE /* Table */,
-				002179A11EB19CE400CF41AE /* TableView */,
-				002179A71EB19CE400CF41AE /* View */,
-				002179AC1EB19CE400CF41AE /* ViewController */,
+				00217B2F1EB1BCB400CF41AE /* CollectionView */,
+				00217B341EB1BCB400CF41AE /* TableView */,
+				00217B391EB1BCB400CF41AE /* View */,
+				00217B3C1EB1BCB400CF41AE /* ViewController */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
 		};
-		002179811EB19CE400CF41AE /* BaseData */ = {
+		00217B2F1EB1BCB400CF41AE /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				002179821EB19CE400CF41AE /* BaseData.h */,
-				002179831EB19CE400CF41AE /* BaseData.m */,
-			);
-			path = BaseData;
-			sourceTree = "<group>";
-		};
-		0021798A1EB19CE400CF41AE /* Collection */ = {
-			isa = PBXGroup;
-			children = (
-				0021798B1EB19CE400CF41AE /* BaseCollectionCell.h */,
-				0021798C1EB19CE400CF41AE /* BaseCollectionCell.m */,
-				0021798D1EB19CE400CF41AE /* BaseCollectionViewContoller.h */,
-				0021798E1EB19CE400CF41AE /* BaseCollectionViewContoller.m */,
-			);
-			path = Collection;
-			sourceTree = "<group>";
-		};
-		0021798F1EB19CE400CF41AE /* CollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				002179901EB19CE400CF41AE /* GinCollectionLayout */,
-				002179951EB19CE400CF41AE /* UICollectionView+GinBaseClass.h */,
-				002179961EB19CE400CF41AE /* UICollectionView+GinBaseClass.m */,
-				002179971EB19CE400CF41AE /* UIViewController+GinBaseCollectionView.h */,
-				002179981EB19CE400CF41AE /* UIViewController+GinBaseCollectionView.m */,
+				00217B301EB1BCB400CF41AE /* UICollectionView+GinBaseClass.h */,
+				00217B311EB1BCB400CF41AE /* UICollectionView+GinBaseClass.m */,
+				00217B321EB1BCB400CF41AE /* UIViewController+GinBaseCollectionView.h */,
+				00217B331EB1BCB400CF41AE /* UIViewController+GinBaseCollectionView.m */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
-		002179901EB19CE400CF41AE /* GinCollectionLayout */ = {
+		00217B341EB1BCB400CF41AE /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				002179911EB19CE400CF41AE /* GinCollectionLayout.h */,
-				002179921EB19CE400CF41AE /* GinCollectionLayout.m */,
-				002179931EB19CE400CF41AE /* GinHeightDynamicCollectionLayout.h */,
-				002179941EB19CE400CF41AE /* GinHeightDynamicCollectionLayout.m */,
-			);
-			path = GinCollectionLayout;
-			sourceTree = "<group>";
-		};
-		002179991EB19CE400CF41AE /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				0021799A1EB19CE400CF41AE /* GinBaseCoreDataResponder.h */,
-				0021799B1EB19CE400CF41AE /* GinBaseCoreDataResponder.m */,
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
-		0021799C1EB19CE400CF41AE /* Table */ = {
-			isa = PBXGroup;
-			children = (
-				0021799D1EB19CE400CF41AE /* BaseTableViewCell.h */,
-				0021799E1EB19CE400CF41AE /* BaseTableViewCell.m */,
-				0021799F1EB19CE400CF41AE /* BaseTableViewController.h */,
-				002179A01EB19CE400CF41AE /* BaseTableViewController.m */,
-			);
-			path = Table;
-			sourceTree = "<group>";
-		};
-		002179A11EB19CE400CF41AE /* TableView */ = {
-			isa = PBXGroup;
-			children = (
-				002179A21EB19CE400CF41AE /* SectionView */,
-				002179A31EB19CE400CF41AE /* UITableView+GinBaseClass.h */,
-				002179A41EB19CE400CF41AE /* UITableView+GinBaseClass.m */,
-				002179A51EB19CE400CF41AE /* UIViewController+GinBaseTableView.h */,
-				002179A61EB19CE400CF41AE /* UIViewController+GinBaseTableView.m */,
+				00217B351EB1BCB400CF41AE /* UITableView+GinBaseClass.h */,
+				00217B361EB1BCB400CF41AE /* UITableView+GinBaseClass.m */,
+				00217B371EB1BCB400CF41AE /* UIViewController+GinBaseTableView.h */,
+				00217B381EB1BCB400CF41AE /* UIViewController+GinBaseTableView.m */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
 		};
-		002179A21EB19CE400CF41AE /* SectionView */ = {
+		00217B391EB1BCB400CF41AE /* View */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = SectionView;
-			sourceTree = "<group>";
-		};
-		002179A71EB19CE400CF41AE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				002179A81EB19CE400CF41AE /* UIView+GinBaseClass.h */,
-				002179A91EB19CE400CF41AE /* UIView+GinBaseClass.m */,
-				002179AA1EB19CE400CF41AE /* UIView+GinCGRect.h */,
-				002179AB1EB19CE400CF41AE /* UIView+GinCGRect.m */,
+				00217B3A1EB1BCB400CF41AE /* UIView+GinCGRect.h */,
+				00217B3B1EB1BCB400CF41AE /* UIView+GinCGRect.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		002179AC1EB19CE400CF41AE /* ViewController */ = {
+		00217B3C1EB1BCB400CF41AE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				002179AD1EB19CE400CF41AE /* UIViewController+GinBaseClass.h */,
-				002179AE1EB19CE400CF41AE /* UIViewController+GinBaseClass.m */,
+				00217B3D1EB1BCB400CF41AE /* UIViewController+GinBaseClass.h */,
+				00217B3E1EB1BCB400CF41AE /* UIViewController+GinBaseClass.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		00217B451EB1BCDA00CF41AE /* GinCollectionLayout */ = {
+			isa = PBXGroup;
+			children = (
+				00217B461EB1BCDA00CF41AE /* GinCollectionLayout.h */,
+				00217B471EB1BCDA00CF41AE /* GinCollectionLayout.m */,
+				00217B481EB1BCDA00CF41AE /* GinHeightDynamicCollectionLayout.h */,
+				00217B491EB1BCDA00CF41AE /* GinHeightDynamicCollectionLayout.m */,
+			);
+			path = GinCollectionLayout;
+			sourceTree = "<group>";
+		};
+		00217B4C1EB1BD0800CF41AE /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				00217B4D1EB1BD0800CF41AE /* BaseData */,
+				00217B501EB1BD0800CF41AE /* BaseView.h */,
+				00217B511EB1BD0800CF41AE /* BaseView.m */,
+				00217B521EB1BD0800CF41AE /* BaseViewController.h */,
+				00217B531EB1BD0800CF41AE /* BaseViewController.m */,
+				00217B541EB1BD0800CF41AE /* BaseViewModel.h */,
+				00217B551EB1BD0800CF41AE /* BaseViewModel.m */,
+				00217B561EB1BD0800CF41AE /* Collection */,
+				00217B5B1EB1BD0800CF41AE /* CoreData */,
+				00217B5E1EB1BD0800CF41AE /* Table */,
+				00217B631EB1BD0800CF41AE /* View */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		00217B4D1EB1BD0800CF41AE /* BaseData */ = {
+			isa = PBXGroup;
+			children = (
+				00217B4E1EB1BD0800CF41AE /* BaseData.h */,
+				00217B4F1EB1BD0800CF41AE /* BaseData.m */,
+			);
+			path = BaseData;
+			sourceTree = "<group>";
+		};
+		00217B561EB1BD0800CF41AE /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				00217B571EB1BD0800CF41AE /* BaseCollectionCell.h */,
+				00217B581EB1BD0800CF41AE /* BaseCollectionCell.m */,
+				00217B591EB1BD0800CF41AE /* BaseCollectionViewContoller.h */,
+				00217B5A1EB1BD0800CF41AE /* BaseCollectionViewContoller.m */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		00217B5B1EB1BD0800CF41AE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				00217B5C1EB1BD0800CF41AE /* GinBaseCoreDataResponder.h */,
+				00217B5D1EB1BD0800CF41AE /* GinBaseCoreDataResponder.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		00217B5E1EB1BD0800CF41AE /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				00217B5F1EB1BD0800CF41AE /* BaseTableViewCell.h */,
+				00217B601EB1BD0800CF41AE /* BaseTableViewCell.m */,
+				00217B611EB1BD0800CF41AE /* BaseTableViewController.h */,
+				00217B621EB1BD0800CF41AE /* BaseTableViewController.m */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		00217B631EB1BD0800CF41AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00217B641EB1BD0800CF41AE /* UIView+GinBaseClass.h */,
+				00217B651EB1BD0800CF41AE /* UIView+GinBaseClass.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		002F21A11D66F33A0021E6F4 /* Standard */ = {
 			isa = PBXGroup;
 			children = (
-				002179801EB19CE400CF41AE /* BaseClass */,
+				00217B4C1EB1BD0800CF41AE /* BaseClass */,
 				00D04C6E1D6A9D4D00B4C27C /* CodeSnippetLibrary.h */,
 				00D04C6F1D6A9D4D00B4C27C /* CodeSnippetLibrary.m */,
 				002F21A21D66F33A0021E6F4 /* LifeCycleViewController.h */,
@@ -1376,6 +1382,7 @@
 		006A93231ADE09090093BEBE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				00217B2E1EB1BCB400CF41AE /* BaseClass */,
 				006AF4AA1B09EF290033BCA3 /* Header */,
 				006A93241ADE09090093BEBE /* Base64 */,
 				006A935A1ADE09090093BEBE /* Draw */,
@@ -1620,6 +1627,7 @@
 		00A16F8B1DEC1D300020EAE4 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
+				00217B451EB1BCDA00CF41AE /* GinCollectionLayout */,
 				00A16F8C1DEC1D300020EAE4 /* Header */,
 				00A16F8F1DEC1D300020EAE4 /* ImageCollectionCell */,
 				00A16F921DEC1D300020EAE4 /* ImageWithTitleCollectionCell */,
@@ -3272,6 +3280,7 @@
 				00D04C4D1D6A922300B4C27C /* UICollectionViewCell+GinAnimation.m in Sources */,
 				00D04C3A1D6A91C400B4C27C /* GinPopupGradientView.m in Sources */,
 				002F21A41D66F33A0021E6F4 /* LifeCycleViewController.m in Sources */,
+				00217B6A1EB1BD0800CF41AE /* BaseCollectionCell.m in Sources */,
 				00B0DBF01DED4B4A00701EFD /* Demo4WKWebViewAction.m in Sources */,
 				00D04C181D6A91C400B4C27C /* GinTagButton.m in Sources */,
 				00A1700F1DEC1D300020EAE4 /* GinLoginWithPhoneViewController.m in Sources */,
@@ -3280,21 +3289,20 @@
 				00D04C381D6A91C400B4C27C /* GinPopup.m in Sources */,
 				00D04C351D6A91C400B4C27C /* GinPhotoGalleryController.m in Sources */,
 				00A16FFC1DEC1D300020EAE4 /* AppDelegateIntercepter.m in Sources */,
-				002179B61EB19CE400CF41AE /* GinHeightDynamicCollectionLayout.m in Sources */,
 				0031C5601DEBEC2A009A85A4 /* AppRouter+Networking.m in Sources */,
 				006A93C81ADE09090093BEBE /* UIImage+GinUnit.m in Sources */,
 				00A1701B1DEC1D300020EAE4 /* NSKeyedArchiverDemo.m in Sources */,
+				00217B6C1EB1BD0800CF41AE /* GinBaseCoreDataResponder.m in Sources */,
 				0031C5711DEBEC69009A85A4 /* AppRouter+WKWebView.m in Sources */,
 				00D04C2B1D6A91C400B4C27C /* GinStepperView.m in Sources */,
+				00217B661EB1BD0800CF41AE /* BaseData.m in Sources */,
 				008660111B816F7000B76218 /* NSObject+TYSwizzle.m in Sources */,
 				00E79C991DEFBBFF00969571 /* ExtendMenuAction.m in Sources */,
 				006A93C31ADE09090093BEBE /* NSString+Size.m in Sources */,
 				0031C5621DEBEC2A009A85A4 /* AppRouter+PhotoGallery.m in Sources */,
-				002179B11EB19CE400CF41AE /* BaseViewController.m in Sources */,
 				00A16FF61DEC1D300020EAE4 /* GinBaseTitleHeader.m in Sources */,
 				005422F61B480B830028CCE6 /* GinUIImagePickerMananger.m in Sources */,
 				0031C5581DEBEC2A009A85A4 /* AppRouter+GinSystemButton.m in Sources */,
-				002179B41EB19CE400CF41AE /* BaseCollectionViewContoller.m in Sources */,
 				00E79CA91DEFBBFF00969571 /* TableViewController.m in Sources */,
 				00D04C4F1D6A922300B4C27C /* UIViewController+MRFlipTransitino.m in Sources */,
 				002F21A71D66F3500021E6F4 /* CustomerView.m in Sources */,
@@ -3303,51 +3311,51 @@
 				00D04C4E1D6A922300B4C27C /* MRFlipTransition.m in Sources */,
 				00E79C971DEFBBFF00969571 /* EmptyTableVCAction.m in Sources */,
 				00D04C3C1D6A91C400B4C27C /* GinQRCodePickerBaseController.m in Sources */,
-				002179B01EB19CE400CF41AE /* BaseView.m in Sources */,
-				002179B51EB19CE400CF41AE /* GinCollectionLayout.m in Sources */,
 				006A94CF1ADFFF570093BEBE /* NSString+Json.m in Sources */,
 				00D04C141D6A91C400B4C27C /* GinFloatedButton.m in Sources */,
+				00217B431EB1BCB400CF41AE /* UIView+GinCGRect.m in Sources */,
 				00B0DBE41DED4B4A00701EFD /* StepperVCAction.m in Sources */,
-				002179B81EB19CE400CF41AE /* UIViewController+GinBaseCollectionView.m in Sources */,
 				00A16FFD1DEC1D300020EAE4 /* GinLoggerManager.m in Sources */,
 				00A1700E1DEC1D300020EAE4 /* GinResetPasswordViewModel.m in Sources */,
 				00D04C401D6A91C400B4C27C /* GinWebViewController.m in Sources */,
 				00E79C9B1DEFBBFF00969571 /* DynomicHeightController.m in Sources */,
 				00D04C151D6A91C400B4C27C /* GinHorizontalLayoutButton.m in Sources */,
 				00B0DBEE1DED4B4A00701EFD /* ThemeDemoViewController.m in Sources */,
-				002179B71EB19CE400CF41AE /* UICollectionView+GinBaseClass.m in Sources */,
 				00D04C501D6A922300B4C27C /* UITableView+Wave.m in Sources */,
 				0031C54E1DEBEC2A009A85A4 /* AppRouter.m in Sources */,
-				002179C01EB19CE500CF41AE /* UIViewController+GinBaseClass.m in Sources */,
 				00A3E3F31B8FF9C60065C3EA /* NSString+RegEx.m in Sources */,
 				006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */,
 				00B961FE1E962A020051F59F /* UIView+GinDebug.m in Sources */,
+				00217B6F1EB1BD0800CF41AE /* UIView+GinBaseClass.m in Sources */,
 				00B0DBDE1DED4B4A00701EFD /* NetworkingViewController.m in Sources */,
 				00D04C191D6A91C400B4C27C /* GinVerticalLayoutButton.m in Sources */,
 				00774E631DF10E9000D90150 /* Demo4RealmAction.m in Sources */,
 				00A16FF81DEC1D300020EAE4 /* ImageWithTitleCollectionCell.m in Sources */,
 				00A16FFE1DEC1D300020EAE4 /* MTLModel+BaseData.m in Sources */,
 				00D04C231D6A91C400B4C27C /* GinPullDownMenuCell.m in Sources */,
+				00217B691EB1BD0800CF41AE /* BaseViewModel.m in Sources */,
 				002F315D1B2A72AC00080B37 /* NSAttributedString+GinUnit.m in Sources */,
+				00217B441EB1BCB400CF41AE /* UIViewController+GinBaseClass.m in Sources */,
 				006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */,
 				00E79CA51DEFBBFF00969571 /* GalleryViewController.m in Sources */,
+				00217B681EB1BD0800CF41AE /* BaseViewController.m in Sources */,
 				00D04C2D1D6A91C400B4C27C /* IconTableCell.m in Sources */,
 				00E79CA11DEFBBFF00969571 /* HZTableViewController.m in Sources */,
 				00A170111DEC1D300020EAE4 /* GinLoginWithPhoneViewModel.m in Sources */,
-				002179BA1EB19CE500CF41AE /* BaseTableViewCell.m in Sources */,
 				00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */,
 				00D04C1C1D6A91C400B4C27C /* ExtendMenu.m in Sources */,
 				00A170041DEC1D300020EAE4 /* LocationManager.m in Sources */,
+				00217B4B1EB1BCDA00CF41AE /* GinHeightDynamicCollectionLayout.m in Sources */,
 				00E79CA61DEFBBFF00969571 /* PullDownMenuVCAction.m in Sources */,
 				00B0DBCA1DED4B4A00701EFD /* ContactsBookViewController.m in Sources */,
 				00B0DB431DED3FE500701EFD /* AppRouter+Gin3DTouch.m in Sources */,
 				00D04C321D6A91C400B4C27C /* GinTableIndex.m in Sources */,
 				00B0DBC91DED4B4A00701EFD /* ContactsBookAction.m in Sources */,
-				002179BB1EB19CE500CF41AE /* BaseTableViewController.m in Sources */,
 				00B0DBED1DED4B4A00701EFD /* ThemeDemoAction.m in Sources */,
 				00A170001DEC1D300020EAE4 /* NSValueTransformer+Unit.m in Sources */,
 				00B0DBC81DED4B4A00701EFD /* CodeDemo.m in Sources */,
 				00A16FF41DEC1D300020EAE4 /* GinAlertManager.m in Sources */,
+				00217B4A1EB1BCDA00CF41AE /* GinCollectionLayout.m in Sources */,
 				0031C5681DEBEC2A009A85A4 /* AppRouter+TableViewController.m in Sources */,
 				00D04C1E1D6A91C400B4C27C /* GinTextView.m in Sources */,
 				00B0DBC51DED4B4A00701EFD /* Gin3DTouchViewController.m in Sources */,
@@ -3359,6 +3367,7 @@
 				00E79CA31DEFBBFF00969571 /* PhotoGalleryAction.m in Sources */,
 				00A1700B1DEC1D300020EAE4 /* GinLoginViewModel.m in Sources */,
 				009312061E48600100D7A272 /* UIAlertController+GinUnit.m in Sources */,
+				00217B6B1EB1BD0800CF41AE /* BaseCollectionViewContoller.m in Sources */,
 				00D04C171D6A91C400B4C27C /* GinSystemButton.m in Sources */,
 				00B0DBC41DED4B4A00701EFD /* Gin3DTouchAction.m in Sources */,
 				00B0DBDD1DED4B4A00701EFD /* NetworkingAction.m in Sources */,
@@ -3369,7 +3378,6 @@
 				00E79CAC1DEFBC1D00969571 /* demo4Exception.m in Sources */,
 				006A93A91ADE09090093BEBE /* NSString+Base64.m in Sources */,
 				00B0DBF81DED59EF00701EFD /* Detail3DTouchViewController.m in Sources */,
-				002179B91EB19CE500CF41AE /* GinBaseCoreDataResponder.m in Sources */,
 				00B0DBE51DED4B4A00701EFD /* StepperViewController.m in Sources */,
 				00B0DBC71DED4B4A00701EFD /* CodeDemoAction.m in Sources */,
 				00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */,
@@ -3383,43 +3391,43 @@
 				006A93C41ADE09090093BEBE /* NSURL+GinUnit.m in Sources */,
 				006A93C21ADE09090093BEBE /* NSString+formatContentString.m in Sources */,
 				00A16FF71DEC1D300020EAE4 /* ImageCollectionCell.m in Sources */,
+				00217B421EB1BCB400CF41AE /* UIViewController+GinBaseTableView.m in Sources */,
 				00B0DC171DEE830F00701EFD /* AppDelegate+Notification.m in Sources */,
 				000B52941ADBCF8100946853 /* ViewController.m in Sources */,
 				006A93C51ADE09090093BEBE /* NSURL+Videos.m in Sources */,
-				002179BC1EB19CE500CF41AE /* UITableView+GinBaseClass.m in Sources */,
-				002179BD1EB19CE500CF41AE /* UIViewController+GinBaseTableView.m in Sources */,
 				0031C5501DEBEC2A009A85A4 /* AppRouter+ContactsBook.m in Sources */,
 				00F7FC661AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m in Sources */,
 				00B0DBF11DED4B4A00701EFD /* Demo4WKWebViewController.m in Sources */,
 				00D04C701D6A9D4D00B4C27C /* CodeSnippetLibrary.m in Sources */,
+				00217B401EB1BCB400CF41AE /* UIViewController+GinBaseCollectionView.m in Sources */,
 				00A170101DEC1D300020EAE4 /* GinQuickLoginViewController.m in Sources */,
 				00B0DC251DEE956600701EFD /* Demo4AppDelegateWidget.m in Sources */,
 				00D04C211D6A91C400B4C27C /* UITextView+Keyboard.m in Sources */,
-				002179AF1EB19CE400CF41AE /* BaseData.m in Sources */,
 				00D04C311D6A91C400B4C27C /* GinIndexTableView.m in Sources */,
 				006A93C71ADE09090093BEBE /* UIAlertView+GinUnit.m in Sources */,
 				00B0DBF41DED4B4A00701EFD /* WKWebViewOC2JSViewController.m in Sources */,
 				00B0DC211DEE921000701EFD /* Demo3DTouchManager.m in Sources */,
 				0031C5521DEBEC2A009A85A4 /* AppRouter+Demo4ExtendMenu.m in Sources */,
-				002179B21EB19CE400CF41AE /* BaseViewModel.m in Sources */,
 				00B0DBD31DED4B4A00701EFD /* GinSystemButtonVCAction.m in Sources */,
 				00A16FFF1DEC1D300020EAE4 /* Person.m in Sources */,
 				0031C55E1DEBEC2A009A85A4 /* AppRouter+Login.m in Sources */,
 				00D04C391D6A91C400B4C27C /* GinPopupContentView.m in Sources */,
 				00D04C3D1D6A91C400B4C27C /* GinScanQRCoderController.m in Sources */,
 				00D04C201D6A91C400B4C27C /* UITextField+Keyboard.m in Sources */,
+				00217B6D1EB1BD0800CF41AE /* BaseTableViewCell.m in Sources */,
 				00B0DBD71DED4B4A00701EFD /* page1Controller.m in Sources */,
 				00E79C9D1DEFBBFF00969571 /* ExtendMenuTableCell.m in Sources */,
 				008E07CE1DF12272001F74C5 /* RLMPerson.m in Sources */,
 				00A1701E1DEC1D300020EAE4 /* ThemeManager.m in Sources */,
 				00A1700C1DEC1D300020EAE4 /* GinFindPasswordViewController.m in Sources */,
-				002179BE1EB19CE500CF41AE /* UIView+GinBaseClass.m in Sources */,
 				00D04C161D6A91C400B4C27C /* GinImageButton.m in Sources */,
 				009FF0821B5CEE4700D282E6 /* CallPhoneMannager.m in Sources */,
 				00D04C341D6A91C400B4C27C /* GinPageViewController.m in Sources */,
 				00E79C9E1DEFBBFF00969571 /* ExtendMenuTableController.m in Sources */,
 				00A170051DEC1D300020EAE4 /* StoreLocationMapViewController.m in Sources */,
 				0031C5541DEBEC2A009A85A4 /* AppRouter+DemoCode.m in Sources */,
+				00217B411EB1BCB400CF41AE /* UITableView+GinBaseClass.m in Sources */,
+				00217B671EB1BD0800CF41AE /* BaseView.m in Sources */,
 				00E79CA81DEFBBFF00969571 /* TableVCAction.m in Sources */,
 				0037BE381BB1085C007C7DCE /* NSObject+Json.m in Sources */,
 				00A16FF51DEC1D300020EAE4 /* TitleAndButtonAlertView.m in Sources */,
@@ -3429,6 +3437,7 @@
 				00D04C371D6A91C400B4C27C /* GinPopup+Unit.m in Sources */,
 				00D04C3F1D6A91C400B4C27C /* HMSegmentedControl.m in Sources */,
 				00B0DBD61DED4B4A00701EFD /* TabsVCAction.m in Sources */,
+				00217B6E1EB1BD0800CF41AE /* BaseTableViewController.m in Sources */,
 				0031C56C1DEBEC2A009A85A4 /* AppRouter+ThemeDemo.m in Sources */,
 				0031C5561DEBEC2A009A85A4 /* AppRouter+EmptyTableView.m in Sources */,
 				000B52911ADBCF8100946853 /* AppDelegate.m in Sources */,
@@ -3449,7 +3458,7 @@
 				00B0DBDC1DED4B4A00701EFD /* loggerDemoViewController.m in Sources */,
 				008660121B816F7000B76218 /* TYSwizzle.m in Sources */,
 				00A170011DEC1D300020EAE4 /* AddressSearchResultViewController.m in Sources */,
-				002179BF1EB19CE500CF41AE /* UIView+GinCGRect.m in Sources */,
+				00217B3F1EB1BCB400CF41AE /* UICollectionView+GinBaseClass.m in Sources */,
 				00E2DBE81BFEA83200567662 /* GinContactsBook.m in Sources */,
 				006A93C91ADE09090093BEBE /* UIResponder+GinUnit.m in Sources */,
 				00B0DBDB1DED4B4A00701EFD /* LoggerDemoAction.m in Sources */,
@@ -3464,7 +3473,6 @@
 				00D04C6D1D6A9CA600B4C27C /* GinBaseTitleSectionView.m in Sources */,
 				00D04C331D6A91C400B4C27C /* UIImageViewAligned.m in Sources */,
 				00A16FF91DEC1D300020EAE4 /* TextCollectionCell.m in Sources */,
-				002179B31EB19CE400CF41AE /* BaseCollectionCell.m in Sources */,
 				00B0DBD91DED4B4A00701EFD /* page3Controller.m in Sources */,
 				005421DD1B47DF6F0028CCE6 /* GinAddressBook.m in Sources */,
 			);
