@@ -35,4 +35,7 @@
 // 裁剪图片到指定大小
 - (UIImage *)imageByScalingAndCroppingForSize:(CGSize)targetSize;
 
+// 圆角图片
+- (UIImage *)addRoundedRectImageByRadius:(NSInteger)r;
+
 @end
