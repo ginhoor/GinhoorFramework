@@ -1,5 +1,5 @@
 //
-//  NSObject+Json.h
+//  NSObject+JSON.h
 //  FrameworkDemo
 //
 //  Created by JunhuaShao on 15/5/24.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (Json)
+@interface NSObject (JSON)
 
 - (NSString *)JSONString;
 

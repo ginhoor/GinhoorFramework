@@ -1,14 +1,14 @@
 //
-//  NSObject+Json.m
+//  NSObject+JSON.m
 //  FrameworkDemo
 //
 //  Created by JunhuaShao on 15/5/24.
 //  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
-#import "NSObject+Json.h"
+#import "NSObject+JSON.h"
 
-@implementation NSObject (Json)
+@implementation NSObject (JSON)
 
 - (NSString *)JSONString
 {
