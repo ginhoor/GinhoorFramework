@@ -37,7 +37,7 @@
         NSData *recervedData = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&error];
         
         NSString *results = [[NSString alloc] initWithBytes:[recervedData bytes] length:[recervedData length] encoding:NSUTF8StringEncoding];
-        NSDictionary *dic = [results jsonDictionary];
+        NSDictionary *dic = [results JSONDictionary];
         NSArray *infoArray = [dic objectForKey:@"results"];
         if ([infoArray count]) {
             NSDictionary *releaseInfo = [infoArray objectAtIndex:0];
@@ -83,7 +83,7 @@
         NSData *recervedData = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&error];
         
         NSString *results = [[NSString alloc] initWithBytes:[recervedData bytes] length:[recervedData length] encoding:NSUTF8StringEncoding];
-        NSDictionary *dic = [results jsonDictionary];
+        NSDictionary *dic = [results JSONDictionary];
         NSArray *infoArray = [dic objectForKey:@"results"];
         
         NSDictionary *releaseInfo = [infoArray objectAtIndex:0];

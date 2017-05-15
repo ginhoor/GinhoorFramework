@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 Ginhoor. All rights reserved.
 //
 
-#import "NSString+Json.h"
+#import "NSString+JSON.h"
 
 @implementation NSString (Json)
 
@@ -20,12 +20,12 @@
                                  encoding:NSUTF8StringEncoding];
 }
 
-- (NSDictionary *)jsonDictionary
+- (NSDictionary *)JSONDictionary
 {
     return [self JSONValue];
 }
 
-- (NSArray *)jsonArray
+- (NSArray *)JSONArray
 {
     return [self JSONValue];
 }

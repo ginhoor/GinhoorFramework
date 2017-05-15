@@ -12,7 +12,7 @@
 
 + (NSString *)JSONString:(NSObject *)object;
 
-- (NSDictionary *)jsonDictionary;
-- (NSArray *)jsonArray;
+- (NSDictionary *)JSONDictionary;
+- (NSArray *)JSONArray;
 
 @end

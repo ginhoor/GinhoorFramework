@@ -97,7 +97,7 @@
 		006A93CB1ADE09090093BEBE /* UIView+view2Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93841ADE09090093BEBE /* UIView+view2Image.m */; };
 		006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93881ADE09090093BEBE /* UIWindow+fullScreenshots.m */; };
 		006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93A81ADE09090093BEBE /* GinSysInfo.m */; };
-		006A94CF1ADFFF570093BEBE /* NSString+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94CE1ADFFF570093BEBE /* NSString+Json.m */; };
+		006A94CF1ADFFF570093BEBE /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94CE1ADFFF570093BEBE /* NSString+JSON.m */; };
 		00774E5E1DF10DE600D90150 /* Demo4RealmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00774E5D1DF10DE600D90150 /* Demo4RealmViewController.m */; };
 		00774E601DF10DEE00D90150 /* Demo4RealmViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00774E5F1DF10DEE00D90150 /* Demo4RealmViewController.storyboard */; };
 		00774E631DF10E9000D90150 /* Demo4RealmAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00774E621DF10E9000D90150 /* Demo4RealmAction.m */; };
@@ -504,10 +504,9 @@
 		006A93A61ADE09090093BEBE /* Gin_Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gin_Macro.h; sourceTree = "<group>"; };
 		006A93A71ADE09090093BEBE /* GinSysInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinSysInfo.h; sourceTree = "<group>"; };
 		006A93A81ADE09090093BEBE /* GinSysInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinSysInfo.m; sourceTree = "<group>"; };
-		006A94CD1ADFFF570093BEBE /* NSString+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Json.h"; sourceTree = "<group>"; };
-		006A94CE1ADFFF570093BEBE /* NSString+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Json.m"; sourceTree = "<group>"; };
+		006A94CD1ADFFF570093BEBE /* NSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSON.h"; sourceTree = "<group>"; };
+		006A94CE1ADFFF570093BEBE /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
 		006AB0931D6D5E8B009A9387 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		006AF4AB1B09EFE00033BCA3 /* GinTypeUnitHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinTypeUnitHeader.h; sourceTree = "<group>"; };
 		00774E5C1DF10DE600D90150 /* Demo4RealmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4RealmViewController.h; sourceTree = "<group>"; };
 		00774E5D1DF10DE600D90150 /* Demo4RealmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4RealmViewController.m; sourceTree = "<group>"; };
 		00774E5F1DF10DEE00D90150 /* Demo4RealmViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Demo4RealmViewController.storyboard; sourceTree = "<group>"; };
@@ -1380,7 +1379,6 @@
 			isa = PBXGroup;
 			children = (
 				00217B2E1EB1BCB400CF41AE /* BaseClass */,
-				006AF4AA1B09EF290033BCA3 /* Header */,
 				006A93241ADE09090093BEBE /* Base64 */,
 				006A935A1ADE09090093BEBE /* Draw */,
 				00F7FC631AEDDA6B0080AFC7 /* NSObject */,
@@ -1446,8 +1444,8 @@
 			children = (
 				000603EA1B9D7AF80026D80F /* NSString+GinUnit.h */,
 				000603EB1B9D7AF80026D80F /* NSString+GinUnit.m */,
-				006A94CD1ADFFF570093BEBE /* NSString+Json.h */,
-				006A94CE1ADFFF570093BEBE /* NSString+Json.m */,
+				006A94CD1ADFFF570093BEBE /* NSString+JSON.h */,
+				006A94CE1ADFFF570093BEBE /* NSString+JSON.m */,
 				006A936C1ADE09090093BEBE /* NSString+formatContentString.h */,
 				006A936D1ADE09090093BEBE /* NSString+formatContentString.m */,
 				006A936E1ADE09090093BEBE /* NSString+Size.h */,
@@ -1528,14 +1526,6 @@
 				006A93A81ADE09090093BEBE /* GinSysInfo.m */,
 			);
 			path = GinSysInfo;
-			sourceTree = "<group>";
-		};
-		006AF4AA1B09EF290033BCA3 /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				006AF4AB1B09EFE00033BCA3 /* GinTypeUnitHeader.h */,
-			);
-			path = Header;
 			sourceTree = "<group>";
 		};
 		00774E5A1DF10DD200D90150 /* Realm */ = {
@@ -3306,7 +3296,7 @@
 				00D04C4E1D6A922300B4C27C /* MRFlipTransition.m in Sources */,
 				00E79C971DEFBBFF00969571 /* EmptyTableVCAction.m in Sources */,
 				00D04C3C1D6A91C400B4C27C /* GinQRCodePickerBaseController.m in Sources */,
-				006A94CF1ADFFF570093BEBE /* NSString+Json.m in Sources */,
+				006A94CF1ADFFF570093BEBE /* NSString+JSON.m in Sources */,
 				00D04C141D6A91C400B4C27C /* GinFloatedButton.m in Sources */,
 				00217B431EB1BCB400CF41AE /* UIView+GinCGRect.m in Sources */,
 				00B0DBE41DED4B4A00701EFD /* StepperVCAction.m in Sources */,
