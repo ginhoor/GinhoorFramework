@@ -10,27 +10,31 @@
 
 @implementation NSString (Size)
 
-- (CGSize)getStringSizeWithfont:(UIFont *)font width:(CGFloat)width
+- (CGSize)getStringSizeWithFont:(UIFont *)font width:(CGFloat)width
 {
-    CGSize size = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil].size;
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+    [paragraphStyle setLineSpacing:3];
+    
+    CGSize size = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle} context:nil].size;
     
     return CGSizeMake(ceilf(size.width), ceilf(size.height));
 }
 
-- (CGSize)getStringSizeWithfont:(UIFont *)font height:(CGFloat)height
+- (CGSize)getStringSizeWithFont:(UIFont *)font height:(CGFloat)height
 {
-    CGSize size = [self boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, height)  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil].size;
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+    [paragraphStyle setLineSpacing:3];
+    
+    CGSize size = [self boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, height)  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle} context:nil].size;
     
     return CGSizeMake(ceilf(size.width), ceilf(size.height));
 }
 
-- (CGSize)getStringSizeWithWidth:(CGFloat)width attributes:(NSDictionary *)attributes
+- (CGSize)getStringSizeByWidth:(CGFloat)width attributes:(NSDictionary *)attributes
 {
-    CGSize size = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)  options:NSStringDrawingTruncatesLastVisibleLine attributes:attributes context:nil].size;
+    CGSize size = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)  options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
     
     return CGSizeMake(ceilf(size.width), ceilf(size.height));
 }
-
-
 
 @end
