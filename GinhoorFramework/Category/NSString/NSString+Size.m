@@ -37,4 +37,10 @@
     return CGSizeMake(ceilf(size.width), ceilf(size.height));
 }
 
+- (CGSize)getStringSizeByHeight:(CGFloat)height attributes:(NSDictionary *)attributes
+{
+    CGSize size = [self boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, height)  options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
+    
+    return CGSizeMake(ceilf(size.width), ceilf(size.height));
+}
 @end
