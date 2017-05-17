@@ -5,6 +5,7 @@
 
 #import "UIAlertView+BlocksKit.h"
 #import "GinQRCodePickerBaseController.h"
+#import "UIAlertController+GinUnit.h"
 
 @interface GinQRCodePickerBaseController ()<AVCaptureMetadataOutputObjectsDelegate>
 
@@ -42,12 +43,11 @@
     if(authStatus == AVAuthorizationStatusRestricted ||
        authStatus == AVAuthorizationStatusDenied){
         
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"相机功能受到限制" message:@"请检查设置中的相机权限是否开启。" delegate:self cancelButtonTitle:@"确认" otherButtonTitles:nil];
-        [alertView show];
-        
-        [alertView bk_setCancelBlock:^{
+        [UIAlertController alert:@"相机功能受到限制" message:@"请检查设置中的相机权限是否开启。" cancelTitle:@"确认" cancelBlock:^{
             [self.navigationController popViewControllerAnimated:YES];
             [self.presentingViewController dismissViewControllerAnimated:YES completion:^{}];
+        } completionBlock:^{
+            ;
         }];
         
         return;

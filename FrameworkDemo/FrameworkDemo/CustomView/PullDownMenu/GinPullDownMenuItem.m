@@ -105,7 +105,7 @@
 - (void)layoutSubviews
 {
     if (self.type == GinPullDownMenuItemTypeNormal) {
-        CGSize size = [self.titleLabel.text getStringSizeWithfont:self.titleLabel.font height:self.bounds.size.height];
+        CGSize size = [self.titleLabel.text getStringSizeWithFont:self.titleLabel.font height:self.bounds.size.height];
         
         [self.titleLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.center.equalTo(self);

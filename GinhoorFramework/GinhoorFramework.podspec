@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
     s.name         = "GinhoorFramework"
-    s.version      = "2.1.3" # 被应用次数.大版本号.开发版本号
+    s.version      = "2.1.4" # 被应用次数.大版本号.开发版本号
     s.summary      = "This is one of my personal library."
     s.homepage     = "https://github.com/ginhoor/GinhoorFramework"
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author       = { "JunhuaShao" => "ginhoor@gmail.com" }
 
     s.requires_arc = true
-    s.platform     = :ios, "8.0"
+    s.platform     = :ios, "9.0"
 
     s.source       = { :git => "https://github.com/ginhoor/GinhoorFramework.git", :tag => s.version.to_s }
 

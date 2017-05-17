@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 Ginhoor. All rights reserved.
 //
 
-#import "NSString+JSON.h"
+#import "NSString+GinJSON.h"
 
-@implementation NSString (Json)
+@implementation NSString (GinJSON)
 
 + (NSString *)JSONString:(NSObject *)object
 {

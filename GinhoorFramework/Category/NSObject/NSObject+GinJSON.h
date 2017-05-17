@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (JSON)
+@interface NSObject (GinJSON)
 
 - (NSString *)JSONString;
 

@@ -36,7 +36,11 @@
 
 - (NSString *)formatUrlString
 {
-    return [self stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *charactersToEscape = @"?!@#$^&%*+,:;='\"`<>()[]{}/\\| ";
+    NSCharacterSet *allowedCharacters = [[NSCharacterSet characterSetWithCharactersInString:charactersToEscape] invertedSet];
+    
+    NSString *encodedUrl = [self stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacters];
+    return encodedUrl;
 }
 
 + (NSString *)formatFloatNumber:(NSNumber*)number

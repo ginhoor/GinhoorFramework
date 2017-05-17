@@ -35,7 +35,6 @@
 		00217B691EB1BD0800CF41AE /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B551EB1BD0800CF41AE /* BaseViewModel.m */; };
 		00217B6A1EB1BD0800CF41AE /* BaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B581EB1BD0800CF41AE /* BaseCollectionCell.m */; };
 		00217B6B1EB1BD0800CF41AE /* BaseCollectionViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B5A1EB1BD0800CF41AE /* BaseCollectionViewContoller.m */; };
-		00217B6C1EB1BD0800CF41AE /* GinBaseCoreDataResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B5D1EB1BD0800CF41AE /* GinBaseCoreDataResponder.m */; };
 		00217B6D1EB1BD0800CF41AE /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B601EB1BD0800CF41AE /* BaseTableViewCell.m */; };
 		00217B6E1EB1BD0800CF41AE /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B621EB1BD0800CF41AE /* BaseTableViewController.m */; };
 		00217B6F1EB1BD0800CF41AE /* UIView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B651EB1BD0800CF41AE /* UIView+GinBaseClass.m */; };
@@ -78,10 +77,8 @@
 		0031C56D1DEBEC2A009A85A4 /* AppRouter+ThemeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0031C54D1DEBEC2A009A85A4 /* AppRouter+ThemeDemo.m */; };
 		0031C5711DEBEC69009A85A4 /* AppRouter+WKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0031C5701DEBEC69009A85A4 /* AppRouter+WKWebView.m */; };
 		0031C5721DEBEC69009A85A4 /* AppRouter+WKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0031C5701DEBEC69009A85A4 /* AppRouter+WKWebView.m */; };
-		0037BE381BB1085C007C7DCE /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0037BE371BB1085C007C7DCE /* NSObject+JSON.m */; };
+		0037BE381BB1085C007C7DCE /* NSObject+GinJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0037BE371BB1085C007C7DCE /* NSObject+GinJSON.m */; };
 		005421DD1B47DF6F0028CCE6 /* GinAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 005421DC1B47DF6F0028CCE6 /* GinAddressBook.m */; };
-		005422EB1B47F4710028CCE6 /* GinKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422EA1B47F4710028CCE6 /* GinKeyboardManager.m */; };
-		005422F61B480B830028CCE6 /* GinUIImagePickerMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 005422F51B480B830028CCE6 /* GinUIImagePickerMananger.m */; };
 		006A93A91ADE09090093BEBE /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93271ADE09090093BEBE /* NSString+Base64.m */; };
 		006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93291ADE09090093BEBE /* UIImage+Base64.m */; };
 		006A93BC1ADE09090093BEBE /* NSObject+CoreGraphic.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A935C1ADE09090093BEBE /* NSObject+CoreGraphic.m */; };
@@ -97,7 +94,7 @@
 		006A93CB1ADE09090093BEBE /* UIView+view2Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93841ADE09090093BEBE /* UIView+view2Image.m */; };
 		006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93881ADE09090093BEBE /* UIWindow+fullScreenshots.m */; };
 		006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93A81ADE09090093BEBE /* GinSysInfo.m */; };
-		006A94CF1ADFFF570093BEBE /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94CE1ADFFF570093BEBE /* NSString+JSON.m */; };
+		006A94CF1ADFFF570093BEBE /* NSString+GinJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94CE1ADFFF570093BEBE /* NSString+GinJSON.m */; };
 		00774E5E1DF10DE600D90150 /* Demo4RealmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00774E5D1DF10DE600D90150 /* Demo4RealmViewController.m */; };
 		00774E601DF10DEE00D90150 /* Demo4RealmViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00774E5F1DF10DEE00D90150 /* Demo4RealmViewController.storyboard */; };
 		00774E631DF10E9000D90150 /* Demo4RealmAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00774E621DF10E9000D90150 /* Demo4RealmAction.m */; };
@@ -251,6 +248,8 @@
 		00D04C501D6A922300B4C27C /* UITableView+Wave.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04C4C1D6A922300B4C27C /* UITableView+Wave.m */; };
 		00D04C6D1D6A9CA600B4C27C /* GinBaseTitleSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04C6C1D6A9CA600B4C27C /* GinBaseTitleSectionView.m */; };
 		00D04C701D6A9D4D00B4C27C /* CodeSnippetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04C6F1D6A9D4D00B4C27C /* CodeSnippetLibrary.m */; };
+		00D0EADC1ECBE81E00438933 /* GinUIImagePickerMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D0EAD81ECBE81E00438933 /* GinUIImagePickerMananger.m */; };
+		00D0EADD1ECBE81E00438933 /* GinKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D0EADB1ECBE81E00438933 /* GinKeyboardManager.m */; };
 		00E2DBE81BFEA83200567662 /* GinContactsBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E2DBE71BFEA83200567662 /* GinContactsBook.m */; };
 		00E2DBE91BFEA83200567662 /* GinContactsBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E2DBE71BFEA83200567662 /* GinContactsBook.m */; };
 		00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5E5561B15FE340095C7A5 /* NSDate+Range.m */; };
@@ -411,8 +410,6 @@
 		00217B581EB1BD0800CF41AE /* BaseCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionCell.m; sourceTree = "<group>"; };
 		00217B591EB1BD0800CF41AE /* BaseCollectionViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewContoller.h; sourceTree = "<group>"; };
 		00217B5A1EB1BD0800CF41AE /* BaseCollectionViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewContoller.m; sourceTree = "<group>"; };
-		00217B5C1EB1BD0800CF41AE /* GinBaseCoreDataResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinBaseCoreDataResponder.h; sourceTree = "<group>"; };
-		00217B5D1EB1BD0800CF41AE /* GinBaseCoreDataResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseCoreDataResponder.m; sourceTree = "<group>"; };
 		00217B5F1EB1BD0800CF41AE /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		00217B601EB1BD0800CF41AE /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		00217B611EB1BD0800CF41AE /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
@@ -463,14 +460,10 @@
 		0031C54D1DEBEC2A009A85A4 /* AppRouter+ThemeDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+ThemeDemo.m"; sourceTree = "<group>"; };
 		0031C56F1DEBEC69009A85A4 /* AppRouter+WKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppRouter+WKWebView.h"; sourceTree = "<group>"; };
 		0031C5701DEBEC69009A85A4 /* AppRouter+WKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppRouter+WKWebView.m"; sourceTree = "<group>"; };
-		0037BE361BB1085C007C7DCE /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
-		0037BE371BB1085C007C7DCE /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
+		0037BE361BB1085C007C7DCE /* NSObject+GinJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GinJSON.h"; sourceTree = "<group>"; };
+		0037BE371BB1085C007C7DCE /* NSObject+GinJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GinJSON.m"; sourceTree = "<group>"; };
 		005421DB1B47DF6F0028CCE6 /* GinAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinAddressBook.h; sourceTree = "<group>"; };
 		005421DC1B47DF6F0028CCE6 /* GinAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinAddressBook.m; sourceTree = "<group>"; };
-		005422E91B47F4710028CCE6 /* GinKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinKeyboardManager.h; sourceTree = "<group>"; };
-		005422EA1B47F4710028CCE6 /* GinKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinKeyboardManager.m; sourceTree = "<group>"; };
-		005422F41B480B830028CCE6 /* GinUIImagePickerMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinUIImagePickerMananger.h; sourceTree = "<group>"; };
-		005422F51B480B830028CCE6 /* GinUIImagePickerMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinUIImagePickerMananger.m; sourceTree = "<group>"; };
 		006A93251ADE09090093BEBE /* GinCategory_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinCategory_Base64.h; sourceTree = "<group>"; };
 		006A93261ADE09090093BEBE /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		006A93271ADE09090093BEBE /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
@@ -504,8 +497,8 @@
 		006A93A61ADE09090093BEBE /* Gin_Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gin_Macro.h; sourceTree = "<group>"; };
 		006A93A71ADE09090093BEBE /* GinSysInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinSysInfo.h; sourceTree = "<group>"; };
 		006A93A81ADE09090093BEBE /* GinSysInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinSysInfo.m; sourceTree = "<group>"; };
-		006A94CD1ADFFF570093BEBE /* NSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSON.h"; sourceTree = "<group>"; };
-		006A94CE1ADFFF570093BEBE /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
+		006A94CD1ADFFF570093BEBE /* NSString+GinJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GinJSON.h"; sourceTree = "<group>"; };
+		006A94CE1ADFFF570093BEBE /* NSString+GinJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GinJSON.m"; sourceTree = "<group>"; };
 		006AB0931D6D5E8B009A9387 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		00774E5C1DF10DE600D90150 /* Demo4RealmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4RealmViewController.h; sourceTree = "<group>"; };
 		00774E5D1DF10DE600D90150 /* Demo4RealmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4RealmViewController.m; sourceTree = "<group>"; };
@@ -777,6 +770,10 @@
 		00D04C6C1D6A9CA600B4C27C /* GinBaseTitleSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinBaseTitleSectionView.m; sourceTree = "<group>"; };
 		00D04C6E1D6A9D4D00B4C27C /* CodeSnippetLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeSnippetLibrary.h; sourceTree = "<group>"; };
 		00D04C6F1D6A9D4D00B4C27C /* CodeSnippetLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeSnippetLibrary.m; sourceTree = "<group>"; };
+		00D0EAD71ECBE81E00438933 /* GinUIImagePickerMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinUIImagePickerMananger.h; sourceTree = "<group>"; };
+		00D0EAD81ECBE81E00438933 /* GinUIImagePickerMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinUIImagePickerMananger.m; sourceTree = "<group>"; };
+		00D0EADA1ECBE81E00438933 /* GinKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinKeyboardManager.h; sourceTree = "<group>"; };
+		00D0EADB1ECBE81E00438933 /* GinKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinKeyboardManager.m; sourceTree = "<group>"; };
 		00E2DBE61BFEA83200567662 /* GinContactsBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinContactsBook.h; sourceTree = "<group>"; };
 		00E2DBE71BFEA83200567662 /* GinContactsBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinContactsBook.m; sourceTree = "<group>"; };
 		00E5E5551B15FE340095C7A5 /* NSDate+Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Range.h"; sourceTree = "<group>"; };
@@ -1065,7 +1062,6 @@
 				00217B541EB1BD0800CF41AE /* BaseViewModel.h */,
 				00217B551EB1BD0800CF41AE /* BaseViewModel.m */,
 				00217B561EB1BD0800CF41AE /* Collection */,
-				00217B5B1EB1BD0800CF41AE /* CoreData */,
 				00217B5E1EB1BD0800CF41AE /* Table */,
 				00217B631EB1BD0800CF41AE /* View */,
 			);
@@ -1090,15 +1086,6 @@
 				00217B5A1EB1BD0800CF41AE /* BaseCollectionViewContoller.m */,
 			);
 			path = Collection;
-			sourceTree = "<group>";
-		};
-		00217B5B1EB1BD0800CF41AE /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				00217B5C1EB1BD0800CF41AE /* GinBaseCoreDataResponder.h */,
-				00217B5D1EB1BD0800CF41AE /* GinBaseCoreDataResponder.m */,
-			);
-			path = CoreData;
 			sourceTree = "<group>";
 		};
 		00217B5E1EB1BD0800CF41AE /* Table */ = {
@@ -1343,24 +1330,6 @@
 			path = GinContactsBook;
 			sourceTree = "<group>";
 		};
-		005422E81B47F4710028CCE6 /* KeyboardManager */ = {
-			isa = PBXGroup;
-			children = (
-				005422E91B47F4710028CCE6 /* GinKeyboardManager.h */,
-				005422EA1B47F4710028CCE6 /* GinKeyboardManager.m */,
-			);
-			path = KeyboardManager;
-			sourceTree = "<group>";
-		};
-		005422F31B480B830028CCE6 /* ImagePickerMananger */ = {
-			isa = PBXGroup;
-			children = (
-				005422F41B480B830028CCE6 /* GinUIImagePickerMananger.h */,
-				005422F51B480B830028CCE6 /* GinUIImagePickerMananger.m */,
-			);
-			path = ImagePickerMananger;
-			sourceTree = "<group>";
-		};
 		006A93221ADE09090093BEBE /* GinhoorFramework */ = {
 			isa = PBXGroup;
 			children = (
@@ -1444,8 +1413,8 @@
 			children = (
 				000603EA1B9D7AF80026D80F /* NSString+GinUnit.h */,
 				000603EB1B9D7AF80026D80F /* NSString+GinUnit.m */,
-				006A94CD1ADFFF570093BEBE /* NSString+JSON.h */,
-				006A94CE1ADFFF570093BEBE /* NSString+JSON.m */,
+				006A94CD1ADFFF570093BEBE /* NSString+GinJSON.h */,
+				006A94CE1ADFFF570093BEBE /* NSString+GinJSON.m */,
 				006A936C1ADE09090093BEBE /* NSString+formatContentString.h */,
 				006A936D1ADE09090093BEBE /* NSString+formatContentString.m */,
 				006A936E1ADE09090093BEBE /* NSString+Size.h */,
@@ -1581,6 +1550,8 @@
 		00A16F851DEC1D300020EAE4 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				00D0EAD61ECBE81E00438933 /* ImagePickerMananger */,
+				00D0EAD91ECBE81E00438933 /* KeyboardManager */,
 				00A16F9B1DEC1D300020EAE4 /* LightAppDelegate */,
 				00A16F861DEC1D300020EAE4 /* Alert */,
 				00A16F8B1DEC1D300020EAE4 /* Collection */,
@@ -2612,6 +2583,24 @@
 			path = Section;
 			sourceTree = "<group>";
 		};
+		00D0EAD61ECBE81E00438933 /* ImagePickerMananger */ = {
+			isa = PBXGroup;
+			children = (
+				00D0EAD71ECBE81E00438933 /* GinUIImagePickerMananger.h */,
+				00D0EAD81ECBE81E00438933 /* GinUIImagePickerMananger.m */,
+			);
+			path = ImagePickerMananger;
+			sourceTree = "<group>";
+		};
+		00D0EAD91ECBE81E00438933 /* KeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				00D0EADA1ECBE81E00438933 /* GinKeyboardManager.h */,
+				00D0EADB1ECBE81E00438933 /* GinKeyboardManager.m */,
+			);
+			path = KeyboardManager;
+			sourceTree = "<group>";
+		};
 		00E79C3D1DEFB5E000969571 /* myWatchApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -2797,8 +2786,6 @@
 			isa = PBXGroup;
 			children = (
 				009FF07F1B5CEE3C00D282E6 /* CallPhoneMannager */,
-				005422F31B480B830028CCE6 /* ImagePickerMananger */,
-				005422E81B47F4710028CCE6 /* KeyboardManager */,
 				005421DA1B47DF6F0028CCE6 /* GinContactsBook */,
 				00F4C9A81AE65BEE00B3F485 /* CheckAppVersion */,
 			);
@@ -2822,8 +2809,8 @@
 				00F7FC651AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m */,
 				00F7FC671AEDDA860080AFC7 /* NSObject+GinUnit.h */,
 				00F7FC681AEDDA860080AFC7 /* NSObject+GinUnit.m */,
-				0037BE361BB1085C007C7DCE /* NSObject+JSON.h */,
-				0037BE371BB1085C007C7DCE /* NSObject+JSON.m */,
+				0037BE361BB1085C007C7DCE /* NSObject+GinJSON.h */,
+				0037BE371BB1085C007C7DCE /* NSObject+GinJSON.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -3277,7 +3264,6 @@
 				0031C5601DEBEC2A009A85A4 /* AppRouter+Networking.m in Sources */,
 				006A93C81ADE09090093BEBE /* UIImage+GinUnit.m in Sources */,
 				00A1701B1DEC1D300020EAE4 /* NSKeyedArchiverDemo.m in Sources */,
-				00217B6C1EB1BD0800CF41AE /* GinBaseCoreDataResponder.m in Sources */,
 				0031C5711DEBEC69009A85A4 /* AppRouter+WKWebView.m in Sources */,
 				00D04C2B1D6A91C400B4C27C /* GinStepperView.m in Sources */,
 				00217B661EB1BD0800CF41AE /* BaseData.m in Sources */,
@@ -3286,7 +3272,6 @@
 				006A93C31ADE09090093BEBE /* NSString+Size.m in Sources */,
 				0031C5621DEBEC2A009A85A4 /* AppRouter+PhotoGallery.m in Sources */,
 				00A16FF61DEC1D300020EAE4 /* GinBaseTitleHeader.m in Sources */,
-				005422F61B480B830028CCE6 /* GinUIImagePickerMananger.m in Sources */,
 				0031C5581DEBEC2A009A85A4 /* AppRouter+GinSystemButton.m in Sources */,
 				00E79CA91DEFBBFF00969571 /* TableViewController.m in Sources */,
 				00D04C4F1D6A922300B4C27C /* UIViewController+MRFlipTransitino.m in Sources */,
@@ -3296,7 +3281,7 @@
 				00D04C4E1D6A922300B4C27C /* MRFlipTransition.m in Sources */,
 				00E79C971DEFBBFF00969571 /* EmptyTableVCAction.m in Sources */,
 				00D04C3C1D6A91C400B4C27C /* GinQRCodePickerBaseController.m in Sources */,
-				006A94CF1ADFFF570093BEBE /* NSString+JSON.m in Sources */,
+				006A94CF1ADFFF570093BEBE /* NSString+GinJSON.m in Sources */,
 				00D04C141D6A91C400B4C27C /* GinFloatedButton.m in Sources */,
 				00217B431EB1BCB400CF41AE /* UIView+GinCGRect.m in Sources */,
 				00B0DBE41DED4B4A00701EFD /* StepperVCAction.m in Sources */,
@@ -3362,12 +3347,12 @@
 				00D04C361D6A91C400B4C27C /* GinShowPhotoViewController.m in Sources */,
 				00E79CAC1DEFBC1D00969571 /* demo4Exception.m in Sources */,
 				006A93A91ADE09090093BEBE /* NSString+Base64.m in Sources */,
+				00D0EADD1ECBE81E00438933 /* GinKeyboardManager.m in Sources */,
 				00B0DBF81DED59EF00701EFD /* Detail3DTouchViewController.m in Sources */,
 				00B0DBE51DED4B4A00701EFD /* StepperViewController.m in Sources */,
 				00B0DBC71DED4B4A00701EFD /* CodeDemoAction.m in Sources */,
 				00F4C9AB1AE65BEE00B3F485 /* CheckAppVersion.m in Sources */,
 				0031C55A1DEBEC2A009A85A4 /* AppRouter+HZTableVC.m in Sources */,
-				005422EB1B47F4710028CCE6 /* GinKeyboardManager.m in Sources */,
 				00A170091DEC1D300020EAE4 /* LoginAction.m in Sources */,
 				0018BC6E1B118C7F001E52D5 /* NSString+MD5.m in Sources */,
 				00D04C1A1D6A91C400B4C27C /* LeftIconButton.m in Sources */,
@@ -3413,7 +3398,7 @@
 				00217B411EB1BCB400CF41AE /* UITableView+GinBaseClass.m in Sources */,
 				00217B671EB1BD0800CF41AE /* BaseView.m in Sources */,
 				00E79CA81DEFBBFF00969571 /* TableVCAction.m in Sources */,
-				0037BE381BB1085C007C7DCE /* NSObject+JSON.m in Sources */,
+				0037BE381BB1085C007C7DCE /* NSObject+GinJSON.m in Sources */,
 				00A16FF51DEC1D300020EAE4 /* TitleAndButtonAlertView.m in Sources */,
 				00B0DBDA1DED4B4A00701EFD /* TabsViewController.m in Sources */,
 				00A16FFB1DEC1D300020EAE4 /* AppDelegate+Light.m in Sources */,
@@ -3455,6 +3440,7 @@
 				00D04C1D1D6A91C400B4C27C /* GinExtendMenu.m in Sources */,
 				00B0DBD41DED4B4A00701EFD /* GinSystemButtonViewController.m in Sources */,
 				00D04C6D1D6A9CA600B4C27C /* GinBaseTitleSectionView.m in Sources */,
+				00D0EADC1ECBE81E00438933 /* GinUIImagePickerMananger.m in Sources */,
 				00D04C331D6A91C400B4C27C /* UIImageViewAligned.m in Sources */,
 				00A16FF91DEC1D300020EAE4 /* TextCollectionCell.m in Sources */,
 				00B0DBD91DED4B4A00701EFD /* page3Controller.m in Sources */,
@@ -3669,7 +3655,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = FrameworkDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = FrameworkDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.Framework-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3691,7 +3677,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = FrameworkDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = FrameworkDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.Framework-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
