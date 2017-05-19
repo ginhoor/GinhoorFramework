@@ -18,14 +18,18 @@
 // 获得纯色图片
 + (UIImage *)imageByColor:(UIColor *)color;
 + (UIImage *)imageByColor:(UIColor *)color size:(CGSize)imageSize;
-// 缩放图片大小
-- (UIImage *)scaleToSize:(CGSize)size;
 // 灰度图片
 - (UIImage *)getGrayImage;
+
+// 缩放图片大小
+- (UIImage *)scaleToSize:(CGSize)size;
+- (UIImage *)scaleToSize:(CGSize)size maxQuality:(CGFloat)maxQuality;
 
 - (UIImage *)scaleImageto:(CGFloat)scaleSize;
 - (UIImage *)scaleImageByWidth:(CGFloat)width;
 
+// 改变图片方向
+- (UIImage *)changeOrientationTo:(UIImageOrientation)orientation;
 // 解决保存图片或重绘图片后旋转90度的方法
 - (UIImage *)fixOrientation;
 
