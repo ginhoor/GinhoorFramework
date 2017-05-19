@@ -120,7 +120,7 @@
 
 - (UIImage *)scaleToSize:(CGSize)size maxQuality:(CGFloat)maxQuality
 {
-    return [UIImage imageWithData:UIImageJPEGRepresentation([self scaleToSize:CGSizeMake(1200, 1600)],maxQuality)];
+    return [UIImage imageWithData:UIImageJPEGRepresentation([self scaleToSize:CGSizeMake(size.width, size.height)],maxQuality)];
 }
 
 
