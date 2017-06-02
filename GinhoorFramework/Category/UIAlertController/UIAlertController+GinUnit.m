@@ -19,9 +19,8 @@
     
     [alertController addAction:cancel];
     
-    UIViewController *presentedViewController = [UIApplication sharedApplication].keyWindow.rootViewController.lastPresentedViewController;
+    UIViewController *presentedViewController = [UIViewController lastPresentedViewController];
     [presentedViewController presentViewController:alertController animated:YES completion:completionBlock];
-    
 }
 
 + (void)alert:(NSString *)title message:(NSString *)message submitTitle:(NSString *)submitTitle submitBlock:(void(^)())submitBlock cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
@@ -36,10 +35,8 @@
     [alertController addAction:cancel];
     [alertController addAction:submit];
     
-    UIViewController *presentedViewController = [UIApplication sharedApplication].keyWindow.rootViewController.lastPresentedViewController;
+    UIViewController *presentedViewController = [UIViewController lastPresentedViewController];
     [presentedViewController presentViewController:alertController animated:YES completion:completionBlock];
-
-    
 }
 
 @end

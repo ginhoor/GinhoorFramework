@@ -110,7 +110,7 @@
     GinPhotoGalleryController *vc = [[GinPhotoGalleryController alloc] init];
     [vc setImageUrlList:self.cellDataList selectedIndex:indexPath.row];
 
-    [self.lastPresentedViewController presentViewController:vc animated:YES completion:^{
+    [[UIViewController lastPresentedViewController] presentViewController:vc animated:YES completion:^{
         ;
     }];
     
