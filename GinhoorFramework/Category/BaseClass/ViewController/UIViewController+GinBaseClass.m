@@ -27,7 +27,7 @@
     return [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([self class])];
 }
 
-- (UIViewController *)lastPresentedViewController
++ (UIViewController *)lastPresentedViewController
 {
     UIViewController *vc = [UIApplication sharedApplication].keyWindow.rootViewController;
     if ([vc isKindOfClass:[UINavigationController class]]) {
@@ -39,7 +39,7 @@
     
 }
 
-- (UIViewController *)getChildPresentViewController:(UIViewController *)parentViewController
++ (UIViewController *)getChildPresentViewController:(UIViewController *)parentViewController
 {
     if (parentViewController.presentedViewController == nil) {
         return parentViewController;
