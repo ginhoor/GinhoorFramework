@@ -10,6 +10,11 @@
 
 @implementation NSString (GinUnit)
 
+- (BOOL)isNotBlank
+{
+    return ![self isEqualToString:@""];
+}
+
 - (BOOL)isImageType
 {
     return

@@ -12,12 +12,10 @@
 #define ComboString(string, args...)[NSString stringWithFormat:string,args]
 #define AppendString(str1,str2)     [NSString stringWithFormat:@"%@%@",str1,str2]
 
-#define isBlankString(string) (string==nil || string==NULL || [string isKindOfClass:[NSNull class]] || [[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0)
-
 @interface NSString (GinUnit)
 
+- (BOOL)isNotBlank;
 - (BOOL)isImageType;
 - (BOOL)isGif;
-
 
 @end
