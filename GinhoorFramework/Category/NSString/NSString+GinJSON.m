@@ -13,6 +13,9 @@
 + (NSString *)JSONString:(NSObject *)object
 {
     NSError *__autoreleasing error = nil;
+    if (!object) {
+        return nil;
+    }
     id result = [NSJSONSerialization dataWithJSONObject:object
                                                 options:kNilOptions error:&error];
     if (error != nil) return nil;
@@ -34,6 +37,9 @@
 {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
     NSError *__autoreleasing error = nil;
+    if (!data) {
+        return nil;
+    }
     id result = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
     if (error != nil) return nil;
     return result;
