@@ -31,6 +31,9 @@
         
         [self requestByUrl:[NSURL URLWithString:URL] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
             
+            if (!data) {
+                return;
+            }
             NSDictionary *JSONData = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingMutableLeaves) error:nil];
 
             NSArray *infoArray = [JSONData objectForKey:@"results"];
@@ -86,6 +89,11 @@
         NSString *URL = [NSString stringWithFormat:@"http://itunes.apple.com/lookup?id=%lu",AppID];
         
         [self requestByUrl:[NSURL URLWithString:URL] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            
+            if (!data) {
+                return;
+            }
+            
             NSDictionary *JSONData = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingMutableLeaves) error:nil];
             
             NSArray *infoArray = [JSONData objectForKey:@"results"];
