@@ -29,13 +29,22 @@
 - (void)setup_GinBaseTableView;
 - (void)cleanup_GinBaseTableView;
 
-// 初始化celldata
+/**
+ 弃用 初始化celldata
+ */
 - (void (^)(NSArray *dataList))GinSetupTableDataBlock;
-// 获得celldata失败
+/**
+ 弃用 获得celldata失败
+ */
 - (void (^)(NSError *error))GinSetupTableDataFailureBlock;
-// 按页数处理 celldata
+/**
+ 弃用 按页数处理 celldata
+ */
 - (void (^)(NSArray *dataList))GinSetupTableDataWithPageIndexBlock:(NSUInteger)pageIndex;
 
+/**
+ 弃用 
+ */
 - (void)endTableDataRefreshing;
 
 

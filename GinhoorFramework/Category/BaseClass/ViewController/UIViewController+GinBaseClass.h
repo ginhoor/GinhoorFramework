@@ -15,5 +15,6 @@
 + (instancetype)controllerByStoryboard:(UIStoryboard *)storyboard;
 
 + (UIViewController *)lastPresentedViewController;
++ (UIViewController *)lastPresentedViewControllerByWindow:(UIWindow *)window;
 
 @end
