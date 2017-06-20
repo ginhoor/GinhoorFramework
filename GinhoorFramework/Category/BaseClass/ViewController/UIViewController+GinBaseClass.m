@@ -45,7 +45,7 @@
         UINavigationController *nav = (UINavigationController*)vc;
         return [self getChildPresentViewController:nav.visibleViewController];
     } else {
-        return [self getChildPresentViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
+        return [self getChildPresentViewController:window.rootViewController];
     }
 }
 
