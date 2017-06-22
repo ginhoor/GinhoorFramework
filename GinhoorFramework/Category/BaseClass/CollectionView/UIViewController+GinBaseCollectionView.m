@@ -64,12 +64,12 @@
     return collectionView;
 }
 
-- (void)setCellDataList:(NSArray *)cellDataList
+- (void)setCellDataList:(NSMutableArray *)cellDataList
 {
     [self setValue:cellDataList key:@"GinBaseCollectionCellDataList" policy:OBJC_ASSOCIATION_COPY_NONATOMIC owner:self];
 }
 
-- (NSArray *)cellDataList
+- (NSMutableArray *)cellDataList
 {
     return [self getValueForKey:@"GinBaseCollectionCellDataList"];
 }
