@@ -21,95 +21,10 @@
 - (void)setup_GinBaseCollectionView
 {
     self.currentPageIndex = self.startIndex = 1;
+    self.cellDataList = [NSMutableArray array];
 }
-
-- (void (^)(NSArray *dataList))GinSetupCollectionDataBlock
-{
-    return ^(NSArray *dataList) {
-        if (dataList && dataList.count > 0) {
-            self.cellDataList = dataList;
-            [self.collectionView.mj_footer resetNoMoreData];
-        } else {
-            self.cellDataList = @[];
-            [self.collectionView.mj_footer endRefreshingWithNoMoreData];
-        }
-        
-        [self.collectionView reloadData];
-        
-        [self endCollectionDataRefreshing];
-        self.currentPageIndex = self.startIndex;
-        
-        if (self.finishLoadData) {
-            self.finishLoadData(self.collectionView);
-        }
-    };
-}
-
-- (void (^)(NSError *error))GinSetupCollectionDataFailureBlock
-{
-    return ^(NSError *error) {
-        [self endCollectionDataRefreshing];
-        if (self.finishLoadData) {
-            self.finishLoadData(self.collectionView);
-        }
-    };
-}
-
-- (void (^)(NSArray *dataList))GinSetupCollectionDataWithPageIndexBlock:(NSUInteger)pageIndex
-{
-    if (pageIndex == self.startIndex) {
-        return [self GinSetupCollectionDataBlock];
-    }
-    return ^(NSArray *dataList) {
-        
-        if (dataList && dataList.count > 0) {
-            NSMutableArray *mArray = [NSMutableArray arrayWithArray:self.cellDataList];
-            [mArray addObjectsFromArray:dataList];
-            self.cellDataList = mArray;
-            
-            [self.collectionView reloadData];
-        } else {
-            [self.collectionView.mj_footer endRefreshingWithNoMoreData];
-        }
-        [self endCollectionDataRefreshing];
-        
-        self.currentPageIndex++;
-        if (self.finishLoadData) {
-            self.finishLoadData(self.collectionView);
-        }
-        
-    };
-}
-
-- (void (^)(NSError *error))GinAddNewCollectionDataFailureBlock
-{
-    return [self GinSetupCollectionDataFailureBlock];
-}
-
-
-- (void)endCollectionDataRefreshing
-{
-    if (self.collectionView.mj_header.isRefreshing) {
-        [self.collectionView.mj_header endRefreshing];
-    }
-    if (self.collectionView.mj_footer.isRefreshing) {
-        [self.collectionView.mj_footer endRefreshing];
-    }
-}
-
-
 
 #pragma mark- setter&getter
-
-- (void)setFinishLoadData:(void (^)(UICollectionView *collectionView))finishLoadData
-{
-    [self setValue:finishLoadData key:@"GinBaseCollectionFinishLoadData" policy:OBJC_ASSOCIATION_COPY_NONATOMIC owner:self];
-}
-
-- (void (^)(UICollectionView *))finishLoadData
-{
-    return [self getValueForKey:@"GinBaseCollectionFinishLoadData"];
-}
 
 - (void)setCurrentPageIndex:(NSUInteger)currentPageIndex
 {
@@ -120,7 +35,6 @@
     NSNumber *number = [self getValueForKey:@"GinBaseCollectionCurrentPageIndex"];
     return number.unsignedIntegerValue;
 }
-
 
 - (void)setStartIndex:(NSUInteger)startIndex
 {
@@ -159,6 +73,5 @@
 {
     return [self getValueForKey:@"GinBaseCollectionCellDataList"];
 }
-
 
 @end

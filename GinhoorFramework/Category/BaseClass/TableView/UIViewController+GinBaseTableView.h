@@ -15,7 +15,7 @@
 
 @interface UIViewController (GinBaseTableView)
 
-@property (strong, nonatomic) NSArray *cellDataList;
+@property (strong, nonatomic) NSMutableArray *cellDataList;
 @property (strong, nonatomic) UITableView *tableView;
 /**
  *   default value is 1.(request use setup_GinBaseTableView)
@@ -23,29 +23,9 @@
 @property (assign, nonatomic) NSUInteger startIndex;
 @property (assign, nonatomic) NSUInteger currentPageIndex;
 
-@property (copy, nonatomic) void(^finishLoadData)(UITableView *tableView);
-
 
 - (void)setup_GinBaseTableView;
 - (void)cleanup_GinBaseTableView;
-
-/**
- 弃用 初始化celldata
- */
-- (void (^)(NSArray *dataList))GinSetupTableDataBlock;
-/**
- 弃用 获得celldata失败
- */
-- (void (^)(NSError *error))GinSetupTableDataFailureBlock;
-/**
- 弃用 按页数处理 celldata
- */
-- (void (^)(NSArray *dataList))GinSetupTableDataWithPageIndexBlock:(NSUInteger)pageIndex;
-
-/**
- 弃用 
- */
-- (void)endTableDataRefreshing;
 
 
 @end

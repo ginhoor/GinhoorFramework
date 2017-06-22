@@ -15,7 +15,7 @@
 
 @interface UIViewController (GinBaseCollectionView)
 
-@property (strong, nonatomic) NSArray *cellDataList;
+@property (strong, nonatomic) NSMutableArray *cellDataList;
 @property (strong, nonatomic) UICollectionView *collectionView;
 
 /**
@@ -24,20 +24,7 @@
 @property (assign, nonatomic) NSUInteger startIndex;
 @property (assign, nonatomic) NSUInteger currentPageIndex;
 
-@property (copy, nonatomic) void(^finishLoadData)(UICollectionView *collectionView);
-
 - (void)setup_GinBaseCollectionView;
 - (void)cleanup_GinBaseCollectionView;
-
-
-// 初始化celldata
-- (void (^)(NSArray *dataList))GinSetupCollectionDataBlock;
-// 获得celldata失败
-- (void (^)(NSError *error))GinSetupCollectionDataFailureBlock;
-// 按页数处理 celldata
-- (void (^)(NSArray *dataList))GinSetupCollectionDataWithPageIndexBlock:(NSUInteger)pageIndex;
-
-
-- (void)endCollectionDataRefreshing;
 
 @end

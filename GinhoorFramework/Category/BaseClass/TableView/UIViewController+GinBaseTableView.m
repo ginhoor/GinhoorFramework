@@ -21,87 +21,10 @@
 - (void)setup_GinBaseTableView
 {
     self.currentPageIndex = self.startIndex = 1;
+    self.cellDataList = [NSMutableArray array];
 }
-
-- (void (^)(NSArray *dataList))GinSetupTableDataBlock
-{
-    return ^(NSArray *dataList) {
-        if (dataList && dataList.count > 0) {
-            self.cellDataList = dataList;
-            [self.tableView.mj_footer resetNoMoreData];
-        } else {
-            self.cellDataList = @[];
-            [self.tableView.mj_footer endRefreshingWithNoMoreData];
-        }
-        [self.tableView reloadData];
-        [self endTableDataRefreshing];
-        
-        self.currentPageIndex = self.startIndex;
-        
-        if (self.finishLoadData) {
-            self.finishLoadData(self.tableView);
-        }
-    };
-}
-
-- (void (^)(NSError *error))GinSetupTableDataFailureBlock
-{
-    return ^(NSError *error) {
-        [self endTableDataRefreshing];
-        if (self.finishLoadData) {
-            self.finishLoadData(self.tableView);
-        }
-    };
-}
-
-- (void (^)(NSArray *dataList))GinSetupTableDataWithPageIndexBlock:(NSUInteger)pageIndex
-{
-    
-    if (pageIndex == self.startIndex) {
-        return [self GinSetupTableDataBlock];
-    }
-    return ^(NSArray *dataList) {
-        
-        if (dataList && dataList.count > 0) {
-            NSMutableArray *mArray = [NSMutableArray arrayWithArray:self.cellDataList];
-            [mArray addObjectsFromArray:dataList];
-            self.cellDataList = mArray;
-            [self.tableView reloadData];
-            self.currentPageIndex++;
-        } else {
-            [self.tableView.mj_footer endRefreshingWithNoMoreData];
-        }
-        
-        [self endTableDataRefreshing];
-        
-        if (self.finishLoadData) {
-            self.finishLoadData(self.tableView);
-        }
-    };
-}
-
-- (void)endTableDataRefreshing
-{
-    if (self.tableView.mj_header.isRefreshing) {
-        [self.tableView.mj_header endRefreshing];
-    }
-    if (self.tableView.mj_footer.isRefreshing) {
-        [self.tableView.mj_footer endRefreshing];
-    }
-}
-
 
 #pragma mark- setter&getter
-
-- (void)setFinishLoadData:(void (^)(UITableView *tableView))finishLoadData
-{
-    [self setValue:finishLoadData key:@"GinBaseTableFinishLoadData" policy:OBJC_ASSOCIATION_COPY_NONATOMIC owner:self];
-}
-
-- (void (^)(UITableView *))finishLoadData
-{
-    return [self getValueForKey:@"GinBaseTableFinishLoadData"];
-}
 
 - (void)setCurrentPageIndex:(NSUInteger)currentPageIndex
 {
@@ -125,7 +48,6 @@
     return number.unsignedIntegerValue;
 }
 
-
 - (void)setTableView:(UITableView *)tableView
 {
     [self setValue:tableView key:@"GinBaseTableView" policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC owner:self];
@@ -143,11 +65,11 @@
 }
 
 
-- (void)setCellDataList:(NSArray *)cellDataList
+- (void)setCellDataList:(NSMutableArray *)cellDataList
 {
     [self setValue:cellDataList key:@"GinBaseTableCellDataList" policy:OBJC_ASSOCIATION_COPY_NONATOMIC owner:self];
 }
-- (NSArray *)cellDataList
+- (NSMutableArray *)cellDataList
 {
     return [self getValueForKey:@"GinBaseTableCellDataList"];
 }
