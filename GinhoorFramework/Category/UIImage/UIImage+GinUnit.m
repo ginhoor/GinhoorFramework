@@ -366,4 +366,15 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
     return img;
 }
 
+
++ (UIImage *)imageWithView:(UIView *)view
+{
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0);
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
+}
+
+
 @end

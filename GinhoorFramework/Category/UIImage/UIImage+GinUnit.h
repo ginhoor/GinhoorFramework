@@ -10,21 +10,63 @@
 
 @interface UIImage (GinUnit)
 
-// 截取部分图片
+/**
+ 截取部分图片
+
+ @param path 图片保存路径
+ @param r 范围rect
+ */
 - (void)savePartImage:(NSString *)path rect:(CGRect)r;
 
-// 改变image的颜色（对单色image比较有用）
+/**
+ 改变image的颜色（对单色image比较有用）
+
+ @param color 颜色
+ @return 图片
+ */
 - (UIImage *)changeColor:(UIColor*)color;
-// 获得纯色图片
+
+/**
+ 获得纯色图片
+ 
+ @param color 颜色
+ @return 图片
+ */
 + (UIImage *)imageByColor:(UIColor *)color;
+
+/**
+ 获得纯色图片
+
+ @param color 颜色
+ @param imageSize 图片大小
+ @return 图片
+ */
 + (UIImage *)imageByColor:(UIColor *)color size:(CGSize)imageSize;
-// 灰度图片
+
+/**
+ 获得灰度图片
+
+ @return 图片
+ */
 - (UIImage *)getGrayImage;
 
 // 缩放图片大小
+
+/**
+ 缩放图片大小
+
+ @param size 缩放到指定大小
+ @return 图片
+ */
 - (UIImage *)scaleToSize:(CGSize)size;
 - (UIImage *)scaleToSize:(CGSize)size maxQuality:(CGFloat)maxQuality;
 
+/**
+ 缩放图片大小
+
+ @param scaleSize 缩放比例
+ @return 图片
+ */
 - (UIImage *)scaleImageto:(CGFloat)scaleSize;
 - (UIImage *)scaleImageByWidth:(CGFloat)width;
 
@@ -39,7 +81,20 @@
 // 裁剪图片到指定大小
 - (UIImage *)imageByScalingAndCroppingForSize:(CGSize)targetSize;
 
-// 圆角图片
+/**
+ 圆角图片
+
+ @param r 远角
+ @return 图片
+ */
 - (UIImage *)addRoundedRectImageByRadius:(NSInteger)r;
+
+/**
+ 获得View的截图
+
+ @param view 视图
+ @return 图片
+ */
++ (UIImage *)imageWithView:(UIView *)view;
 
 @end
