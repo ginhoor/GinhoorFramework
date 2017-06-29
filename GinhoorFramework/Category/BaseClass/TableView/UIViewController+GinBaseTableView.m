@@ -20,7 +20,7 @@
 
 - (void)setup_GinBaseTableView
 {
-    self.currentPageIndex = self.startIndex = 1;
+    self.currentPageIndex = self.startIndex = 0;
     self.cellDataList = [NSMutableArray array];
 }
 
