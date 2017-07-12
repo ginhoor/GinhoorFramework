@@ -102,6 +102,19 @@
     }
 }
 
++ (BOOL)checkLocationEnable
+{
+    if ([CLLocationManager locationServicesEnabled] &&
+        ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse || [CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined || [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedAlways)) {
+        //定位功能可用
+        return YES;
+    } else if ([CLLocationManager authorizationStatus] ==kCLAuthorizationStatusDenied) {
+        //定位不能用
+        return NO;
+    }
+    return NO;
+}
+
 
 
 @end

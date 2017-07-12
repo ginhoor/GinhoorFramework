@@ -37,7 +37,7 @@
                                       RACObserve(self, checkPassword)]
                              reduce:^(NSString *password, NSString *checkPassword)
     {
-        return @(!isBlankString(password) && !isBlankString(checkPassword) && [password isEqualToString:checkPassword]);
+        return @(password && checkPassword && [password isEqualToString:checkPassword]);
     }];
 }
 @end

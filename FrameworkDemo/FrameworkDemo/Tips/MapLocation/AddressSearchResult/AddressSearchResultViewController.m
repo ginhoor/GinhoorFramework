@@ -225,7 +225,7 @@
     
     self.result = result;
     
-    [self GinSetupTableDataBlock](result.keyList);
+    
     [self.tableView reloadData];
 }
 

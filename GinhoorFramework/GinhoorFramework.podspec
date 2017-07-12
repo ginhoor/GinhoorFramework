@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "GinhoorFramework"
-    s.version      = "2.1.16" # 被应用次数.大版本号.开发版本号
+    s.version      = "2.1.17" # 被应用次数.大版本号.开发版本号
     s.summary      = "This is one of my personal library."
     s.homepage     = "https://github.com/ginhoor/GinhoorFramework"
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
     # 表示需要保留的文件路径
     # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
-    s.frameworks = "Foundation", "CoreGraphics", "UIKit", "AddressBook", "AddressBookUI"
+    s.frameworks = "Foundation", "CoreGraphics", "UIKit", "AddressBook", "AddressBookUI", "CoreLocation"
 
     # s.library   = "libxml2"
     # s.libraries = "iconv", "xml2"

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface GinSysInfo : NSObject
 
@@ -24,6 +25,7 @@
 + (BOOL)iOS8;
 + (BOOL)iOSVersion:(CGFloat)version;
 + (BOOL)laterThanVersion:(CGFloat)version;
++ (BOOL)checkLocationEnable;
 
 
 @end
