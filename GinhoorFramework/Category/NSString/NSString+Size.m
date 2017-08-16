@@ -10,6 +10,12 @@
 
 @implementation NSString (Size)
 
+- (CGSize)getSingleLineStringSizeWithFont:(UIFont *)font
+{
+    CGSize size = [self sizeWithAttributes:@{NSFontAttributeName:font}];
+    return CGSizeMake(ceilf(size.width), ceilf(size.height));
+}
+
 - (CGSize)getStringSizeWithFont:(UIFont *)font width:(CGFloat)width
 {
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
