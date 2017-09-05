@@ -10,6 +10,21 @@
 
 @implementation UIImage (GinUnit)
 
+- (UIImage *)cropImageByRect:(CGRect)rect
+{
+    //转化为CGImageRef
+    CGImageRef sourceImageRef = [self CGImage];
+    //进行裁剪
+    CGImageRef newImageRef = CGImageCreateWithImageInRect(sourceImageRef, rect);
+    //转化为UIImage
+    UIImage *newImage = [UIImage imageWithCGImage:newImageRef];
+    
+    //释放内存
+    CGImageRelease(newImageRef);
+    
+    return newImage;
+}
+
 - (void)savePartImage:(NSString *)path rect:(CGRect)r
 {
     CGImageRef imagRef = CGImageCreateWithImageInRect([self CGImage], r);
@@ -128,7 +143,7 @@
 }
 
 
-- (UIImage *)scaleImageto:(CGFloat)scaleSize
+- (UIImage *)scaleImageTo:(CGFloat)scaleSize
 {
     UIGraphicsBeginImageContext(CGSizeMake(self.size.width * scaleSize, self.size.height * scaleSize));
     [self drawInRect:CGRectMake(0, 0, self.size.width * scaleSize, self.size.height * scaleSize)];

@@ -10,6 +10,15 @@
 
 @interface UIImage (GinUnit)
 
+
+/**
+ 截取图片
+
+ @param rect 图片范围
+ @return 图片
+ */
+- (UIImage *)cropImageByRect:(CGRect)rect;
+
 /**
  截取部分图片
 
@@ -67,7 +76,7 @@
  @param scaleSize 缩放比例
  @return 图片
  */
-- (UIImage *)scaleImageto:(CGFloat)scaleSize;
+- (UIImage *)scaleImageTo:(CGFloat)scaleSize;
 - (UIImage *)scaleImageByWidth:(CGFloat)width;
 
 // 改变图片方向
