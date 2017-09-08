@@ -11,7 +11,7 @@
 
 @implementation UIAlertController (GinUnit)
 
-+ (void)alert:(NSString *)title message:(NSString *)message cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
++ (void)alertOnWindow:(UIWindow *)window title:(NSString *)title message:(NSString *)message cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
 {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     
@@ -19,11 +19,17 @@
     
     [alertController addAction:cancel];
     
-    UIViewController *presentedViewController = [UIViewController lastPresentedViewController];
+    UIViewController *presentedViewController;
+    if (window) {
+        presentedViewController = [UIViewController lastPresentedViewControllerByWindow:window];
+    } else {
+        presentedViewController = [UIViewController lastPresentedViewController];
+    }
+    
     [presentedViewController presentViewController:alertController animated:YES completion:completionBlock];
 }
 
-+ (void)alert:(NSString *)title message:(NSString *)message submitTitle:(NSString *)submitTitle submitBlock:(void(^)())submitBlock cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
++ (void)alertOnWindow:(UIWindow *)window title:(NSString *)title message:(NSString *)message submitTitle:(NSString *)submitTitle submitBlock:(void(^)())submitBlock cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
 {
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
@@ -35,7 +41,15 @@
     [alertController addAction:cancel];
     [alertController addAction:submit];
     
-    UIViewController *presentedViewController = [UIViewController lastPresentedViewController];
+    UIViewController *presentedViewController;
+    if (window) {
+        presentedViewController = [UIViewController lastPresentedViewControllerByWindow:window];
+    } else {
+        presentedViewController = [UIViewController lastPresentedViewController];
+    }
+    
+    
+    
     [presentedViewController presentViewController:alertController animated:YES completion:completionBlock];
 }
 
