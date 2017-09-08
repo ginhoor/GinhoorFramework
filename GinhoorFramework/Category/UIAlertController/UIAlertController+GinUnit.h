@@ -10,6 +10,9 @@
 
 @interface UIAlertController (GinUnit)
 
++ (void)alertOnFirstWindow:(NSString *)title message:(NSString *)message cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock;
++ (void)alertOnFirstWindow:(NSString *)title message:(NSString *)message submitTitle:(NSString *)submitTitle submitBlock:(void(^)())submitBlock cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock;
+
 + (void)alert:(NSString *)title message:(NSString *)message cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock;
 
 + (void)alert:(NSString *)title message:(NSString *)message submitTitle:(NSString *)submitTitle submitBlock:(void(^)())submitBlock cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock;
