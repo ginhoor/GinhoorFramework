@@ -11,6 +11,16 @@
 
 @implementation UIAlertController (GinUnit)
 
++ (void)alert:(NSString *)title message:(NSString *)message cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
+{
+    [self alertOnWindow:nil title:title message:message cancelTitle:cancelTitle cancelBlock:cancelBlock completionBlock:completionBlock];
+}
+
++ (void)alert:(NSString *)title message:(NSString *)message submitTitle:(NSString *)submitTitle submitBlock:(void(^)())submitBlock cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
+{
+    [self alertOnWindow:nil title:title message:message submitTitle:submitTitle submitBlock:submitBlock cancelTitle:cancelTitle cancelBlock:cancelBlock completionBlock:completionBlock];
+}
+
 + (void)alertOnWindow:(UIWindow *)window title:(NSString *)title message:(NSString *)message cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
 {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
@@ -52,5 +62,4 @@
     
     [presentedViewController presentViewController:alertController animated:YES completion:completionBlock];
 }
-
 @end
