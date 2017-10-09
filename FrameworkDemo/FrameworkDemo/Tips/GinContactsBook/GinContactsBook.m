@@ -167,22 +167,23 @@
 + (void)customQueryContacts
 {
     
-    GinContactsBook *instance = [self sharedInstance];
-    
-    NSError *__autoreleasing error;
-    CNContactFetchRequest *request = [[CNContactFetchRequest alloc] init];
-    
-    request.keysToFetch = [self defualtKeys];
-    
-    [instance.contactStore enumerateContactsWithFetchRequest:request error:&error usingBlock:^(CNContact * _Nonnull contact, BOOL * _Nonnull stop) {
-
-        if (contact.birthday != nil) {
-        }
-    }];
-    
-    if (error) {
-        NSLog(@"refetch contact error-->%@",error);
-    }
+//    GinContactsBook *instance = [self sharedInstance];
+//
+//    NSError *__autoreleasing error;
+//
+//    CNContactFetchRequest *request = [[CNContactFetchRequest alloc] initWithKeysToFetch:nil];
+//
+//    request.keysToFetch = [self defualtKeys];
+//
+//    [instance.contactStore enumerateContactsWithFetchRequest:request error:&error usingBlock:^(CNContact * _Nonnull contact, BOOL * _Nonnull stop) {
+//
+//        if (contact.birthday != nil) {
+//        }
+//    }];
+//
+//    if (error) {
+//        NSLog(@"refetch contact error-->%@",error);
+//    }
 }
 
 

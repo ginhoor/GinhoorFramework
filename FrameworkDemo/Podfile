@@ -5,10 +5,6 @@ source 'https://github.com/ginhoor/GinhoorSpecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 
-target 'myWidget' do
-    pod 'Masonry', '~> 1.0.2'
-end
-
 target 'FrameworkDemo' do
     #pod 'GinhoorFramework', :podspec => '../GinhoorFramework.podspec'  #指定podspec文件
 
@@ -18,8 +14,8 @@ target 'FrameworkDemo' do
     pod 'LEETheme', '~> 1.0.7'
     pod 'Mantle', '~> 2.0.7'
     
-    pod 'Realm', '~> 1.0.2'
-    
+#    pod 'Realm', '~> 1.0.2'
+
     pod 'ReactiveCocoa', '~> 2.5'
 
     #pod 'libextobjc', '~> 0.4.1'

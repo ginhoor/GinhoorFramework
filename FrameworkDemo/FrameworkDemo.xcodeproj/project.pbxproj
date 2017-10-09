@@ -7,12 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		000603D71B9C36210026D80F /* ModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 000603D61B9C36210026D80F /* ModelTest.m */; };
-		000603E31B9D75B80026D80F /* GinLoginViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 000603E21B9D75B80026D80F /* GinLoginViewModelSpec.m */; };
-		000603E51B9D768E0026D80F /* GinLoginViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 000603E41B9D768E0026D80F /* GinLoginViewControllerSpec.m */; };
-		000603E91B9D7ACA0026D80F /* NSString+UnitSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 000603E81B9D7ACA0026D80F /* NSString+UnitSpec.m */; };
 		000603EC1B9D7AF80026D80F /* NSString+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 000603EB1B9D7AF80026D80F /* NSString+GinUnit.m */; };
-		000603F01B9D88910026D80F /* NSString+RegExSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 000603EF1B9D88910026D80F /* NSString+RegExSpec.m */; };
 		000B528E1ADBCF8100946853 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B528D1ADBCF8100946853 /* main.m */; };
 		000B52911ADBCF8100946853 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B52901ADBCF8100946853 /* AppDelegate.m */; };
 		000B52941ADBCF8100946853 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B52931ADBCF8100946853 /* ViewController.m */; };
@@ -94,12 +89,8 @@
 		006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93881ADE09090093BEBE /* UIWindow+fullScreenshots.m */; };
 		006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93A81ADE09090093BEBE /* GinSysInfo.m */; };
 		006A94CF1ADFFF570093BEBE /* NSString+GinJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94CE1ADFFF570093BEBE /* NSString+GinJSON.m */; };
-		00774E5E1DF10DE600D90150 /* Demo4RealmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00774E5D1DF10DE600D90150 /* Demo4RealmViewController.m */; };
-		00774E601DF10DEE00D90150 /* Demo4RealmViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00774E5F1DF10DEE00D90150 /* Demo4RealmViewController.storyboard */; };
-		00774E631DF10E9000D90150 /* Demo4RealmAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00774E621DF10E9000D90150 /* Demo4RealmAction.m */; };
 		008660111B816F7000B76218 /* NSObject+TYSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0086600E1B816F7000B76218 /* NSObject+TYSwizzle.m */; };
 		008660121B816F7000B76218 /* TYSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 008660101B816F7000B76218 /* TYSwizzle.m */; };
-		008E07CE1DF12272001F74C5 /* RLMPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 008E07CD1DF12272001F74C5 /* RLMPerson.m */; };
 		009312061E48600100D7A272 /* UIAlertController+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 009312051E48600100D7A272 /* UIAlertController+GinUnit.m */; };
 		00A16F821DEC1CB20020EAE4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A16F811DEC1CB20020EAE4 /* WebKit.framework */; };
 		00A16FF41DEC1D300020EAE4 /* GinAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A16F881DEC1D300020EAE4 /* GinAlertManager.m */; };
@@ -182,19 +173,10 @@
 		00B0DBF51DED4B4A00701EFD /* WKWebViewOC2JSViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B0DBC31DED4B4A00701EFD /* WKWebViewOC2JSViewController.storyboard */; };
 		00B0DBF81DED59EF00701EFD /* Detail3DTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DBF71DED59EF00701EFD /* Detail3DTouchViewController.m */; };
 		00B0DBFA1DED59F600701EFD /* Detail3DTouchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B0DBF91DED59F600701EFD /* Detail3DTouchViewController.storyboard */; };
-		00B0DC041DEE81A400701EFD /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B0DC031DEE81A400701EFD /* NotificationCenter.framework */; };
-		00B0DC081DEE81A400701EFD /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC071DEE81A400701EFD /* TodayViewController.m */; };
-		00B0DC0F1DEE81A400701EFD /* myWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 00B0DC021DEE81A400701EFD /* myWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		00B0DC171DEE830F00701EFD /* AppDelegate+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC161DEE830F00701EFD /* AppDelegate+Notification.m */; };
 		00B0DC211DEE921000701EFD /* Demo3DTouchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC201DEE921000701EFD /* Demo3DTouchManager.m */; };
 		00B0DC251DEE956600701EFD /* Demo4AppDelegateWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC241DEE956600701EFD /* Demo4AppDelegateWidget.m */; };
 		00B961FE1E962A020051F59F /* UIView+GinDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B961FD1E962A020051F59F /* UIView+GinDebug.m */; };
-		00B997E51B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997E41B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m */; };
-		00B997E91B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997E81B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m */; };
-		00B997EB1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997EA1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m */; };
-		00B997ED1B9EA12C008EE8A1 /* GinLoginWithPhoneViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997EC1B9EA12C008EE8A1 /* GinLoginWithPhoneViewControllerSpec.m */; };
-		00B997EF1B9EA188008EE8A1 /* GinResetPasswordViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997EE1B9EA188008EE8A1 /* GinResetPasswordViewControllerSpec.m */; };
-		00B997F11B9EA1DE008EE8A1 /* GinResetPasswordViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B997F01B9EA1DE008EE8A1 /* GinResetPasswordViewModelSpec.m */; };
 		00D04C141D6A91C400B4C27C /* GinFloatedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04BA61D6A91C400B4C27C /* GinFloatedButton.m */; };
 		00D04C151D6A91C400B4C27C /* GinHorizontalLayoutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04BA91D6A91C400B4C27C /* GinHorizontalLayoutButton.m */; };
 		00D04C161D6A91C400B4C27C /* GinImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04BAC1D6A91C400B4C27C /* GinImageButton.m */; };
@@ -252,14 +234,6 @@
 		00D0EAE71ECBF13900438933 /* GinAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D0EAE31ECBF13900438933 /* GinAddressBook.m */; };
 		00D0EAE81ECBF13900438933 /* GinContactsBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D0EAE51ECBF13900438933 /* GinContactsBook.m */; };
 		00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5E5561B15FE340095C7A5 /* NSDate+Range.m */; };
-		00E79C401DEFB5E000969571 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E79C3E1DEFB5E000969571 /* Interface.storyboard */; };
-		00E79C421DEFB5E000969571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E79C411DEFB5E000969571 /* Assets.xcassets */; };
-		00E79C491DEFB5E000969571 /* myWatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 00E79C481DEFB5E000969571 /* myWatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		00E79C511DEFB5E000969571 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79C501DEFB5E000969571 /* InterfaceController.m */; };
-		00E79C541DEFB5E000969571 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79C531DEFB5E000969571 /* ExtensionDelegate.m */; };
-		00E79C571DEFB5E000969571 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79C561DEFB5E000969571 /* NotificationController.m */; };
-		00E79C591DEFB5E000969571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E79C581DEFB5E000969571 /* Assets.xcassets */; };
-		00E79C5D1DEFB5E000969571 /* myWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 00E79C3C1DEFB5E000969571 /* myWatchApp.app */; };
 		00E79C971DEFBBFF00969571 /* EmptyTableVCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79C6B1DEFBBFF00969571 /* EmptyTableVCAction.m */; };
 		00E79C981DEFBBFF00969571 /* EmptyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79C6D1DEFBBFF00969571 /* EmptyTableViewController.m */; };
 		00E79C991DEFBBFF00969571 /* ExtendMenuAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79C711DEFBBFF00969571 /* ExtendMenuAction.m */; };
@@ -286,7 +260,6 @@
 		00F7FC701AEDEB840080AFC7 /* NSString+GinDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7FC6D1AEDEB840080AFC7 /* NSString+GinDebug.m */; };
 		3A364FF95F2FF0A0B8EFF7AB /* libPods-FrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 942A530AFADF27DF6D6C523D /* libPods-FrameworkDemo.a */; };
 		40294FA0A44F068C32D896EE /* libPods-FrameworkDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC6A53074C7699614DC1B7A /* libPods-FrameworkDemoTests.a */; };
-		5A116EC432806E609FB784B5 /* libPods-myWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C8ADC3D2976E6C471FF7BA /* libPods-myWidget.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -297,27 +270,6 @@
 			remoteGlobalIDString = 000B52871ADBCF8100946853;
 			remoteInfo = FrameworkDemo;
 		};
-		00B0DC0D1DEE81A400701EFD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 000B52801ADBCF8100946853 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 00B0DC011DEE81A400701EFD;
-			remoteInfo = myWidget;
-		};
-		00E79C4A1DEFB5E000969571 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 000B52801ADBCF8100946853 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 00E79C471DEFB5E000969571;
-			remoteInfo = "myWatchApp Extension";
-		};
-		00E79C5B1DEFB5E000969571 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 000B52801ADBCF8100946853 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 00E79C3B1DEFB5E000969571;
-			remoteInfo = myWatchApp;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -327,18 +279,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				00B0DC0F1DEE81A400701EFD /* myWidget.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		00E79C631DEFB5E000969571 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				00E79C491DEFB5E000969571 /* myWatchApp Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +289,6 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				00E79C5D1DEFB5E000969571 /* myWatchApp.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,13 +296,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		000603D61B9C36210026D80F /* ModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTest.m; sourceTree = "<group>"; };
-		000603E21B9D75B80026D80F /* GinLoginViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoginViewModelSpec.m; sourceTree = "<group>"; };
-		000603E41B9D768E0026D80F /* GinLoginViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoginViewControllerSpec.m; sourceTree = "<group>"; };
-		000603E81B9D7ACA0026D80F /* NSString+UnitSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UnitSpec.m"; sourceTree = "<group>"; };
 		000603EA1B9D7AF80026D80F /* NSString+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GinUnit.h"; sourceTree = "<group>"; };
 		000603EB1B9D7AF80026D80F /* NSString+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GinUnit.m"; sourceTree = "<group>"; };
-		000603EF1B9D88910026D80F /* NSString+RegExSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegExSpec.m"; sourceTree = "<group>"; };
 		000B52881ADBCF8100946853 /* FrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000B528C1ADBCF8100946853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000B528D1ADBCF8100946853 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -375,7 +309,6 @@
 		000B52981ADBCF8100946853 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		000B529B1ADBCF8100946853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		000B52A11ADBCF8100946853 /* FrameworkDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		000B52A61ADBCF8100946853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000B531C1ADBEB8D00946853 /* FrameworkDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrameworkDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		0018B9831B100883001E52D5 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		0018B9841B100883001E52D5 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
@@ -497,17 +430,10 @@
 		006A94CD1ADFFF570093BEBE /* NSString+GinJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GinJSON.h"; sourceTree = "<group>"; };
 		006A94CE1ADFFF570093BEBE /* NSString+GinJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GinJSON.m"; sourceTree = "<group>"; };
 		006AB0931D6D5E8B009A9387 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		00774E5C1DF10DE600D90150 /* Demo4RealmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4RealmViewController.h; sourceTree = "<group>"; };
-		00774E5D1DF10DE600D90150 /* Demo4RealmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4RealmViewController.m; sourceTree = "<group>"; };
-		00774E5F1DF10DEE00D90150 /* Demo4RealmViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Demo4RealmViewController.storyboard; sourceTree = "<group>"; };
-		00774E611DF10E9000D90150 /* Demo4RealmAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4RealmAction.h; sourceTree = "<group>"; };
-		00774E621DF10E9000D90150 /* Demo4RealmAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4RealmAction.m; sourceTree = "<group>"; };
 		0086600D1B816F7000B76218 /* NSObject+TYSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TYSwizzle.h"; sourceTree = "<group>"; };
 		0086600E1B816F7000B76218 /* NSObject+TYSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TYSwizzle.m"; sourceTree = "<group>"; };
 		0086600F1B816F7000B76218 /* TYSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSwizzle.h; sourceTree = "<group>"; };
 		008660101B816F7000B76218 /* TYSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSwizzle.m; sourceTree = "<group>"; };
-		008E07CC1DF12272001F74C5 /* RLMPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMPerson.h; sourceTree = "<group>"; };
-		008E07CD1DF12272001F74C5 /* RLMPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMPerson.m; sourceTree = "<group>"; };
 		009312041E48600100D7A272 /* UIAlertController+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+GinUnit.h"; sourceTree = "<group>"; };
 		009312051E48600100D7A272 /* UIAlertController+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+GinUnit.m"; sourceTree = "<group>"; };
 		00A16F811DEC1CB20020EAE4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -651,11 +577,7 @@
 		00B0DBF61DED59EF00701EFD /* Detail3DTouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail3DTouchViewController.h; sourceTree = "<group>"; };
 		00B0DBF71DED59EF00701EFD /* Detail3DTouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail3DTouchViewController.m; sourceTree = "<group>"; };
 		00B0DBF91DED59F600701EFD /* Detail3DTouchViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detail3DTouchViewController.storyboard; sourceTree = "<group>"; };
-		00B0DC021DEE81A400701EFD /* myWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = myWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B0DC031DEE81A400701EFD /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		00B0DC061DEE81A400701EFD /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
-		00B0DC071DEE81A400701EFD /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
-		00B0DC0C1DEE81A400701EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00B0DC151DEE830F00701EFD /* AppDelegate+Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Notification.h"; sourceTree = "<group>"; };
 		00B0DC161DEE830F00701EFD /* AppDelegate+Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Notification.m"; sourceTree = "<group>"; };
 		00B0DC1E1DEE8CA500701EFD /* FrameworkDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FrameworkDemo.entitlements; sourceTree = "<group>"; };
@@ -663,15 +585,8 @@
 		00B0DC201DEE921000701EFD /* Demo3DTouchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo3DTouchManager.m; sourceTree = "<group>"; };
 		00B0DC231DEE956600701EFD /* Demo4AppDelegateWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4AppDelegateWidget.h; sourceTree = "<group>"; };
 		00B0DC241DEE956600701EFD /* Demo4AppDelegateWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4AppDelegateWidget.m; sourceTree = "<group>"; };
-		00B0DC261DEE9CCC00701EFD /* myWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = myWidget.entitlements; sourceTree = "<group>"; };
 		00B961FC1E962A020051F59F /* UIView+GinDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GinDebug.h"; sourceTree = "<group>"; };
 		00B961FD1E962A020051F59F /* UIView+GinDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GinDebug.m"; sourceTree = "<group>"; };
-		00B997E41B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoginWithPhoneViewModelSpec.m; sourceTree = "<group>"; };
-		00B997E81B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinFindPasswordViewControllerSpec.m; sourceTree = "<group>"; };
-		00B997EA1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinQuickLoginViewControllerSpec.m; sourceTree = "<group>"; };
-		00B997EC1B9EA12C008EE8A1 /* GinLoginWithPhoneViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinLoginWithPhoneViewControllerSpec.m; sourceTree = "<group>"; };
-		00B997EE1B9EA188008EE8A1 /* GinResetPasswordViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinResetPasswordViewControllerSpec.m; sourceTree = "<group>"; };
-		00B997F01B9EA1DE008EE8A1 /* GinResetPasswordViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinResetPasswordViewModelSpec.m; sourceTree = "<group>"; };
 		00D04BA51D6A91C400B4C27C /* GinFloatedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinFloatedButton.h; sourceTree = "<group>"; };
 		00D04BA61D6A91C400B4C27C /* GinFloatedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinFloatedButton.m; sourceTree = "<group>"; };
 		00D04BA81D6A91C400B4C27C /* GinHorizontalLayoutButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinHorizontalLayoutButton.h; sourceTree = "<group>"; };
@@ -777,20 +692,6 @@
 		00D0EAE51ECBF13900438933 /* GinContactsBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinContactsBook.m; sourceTree = "<group>"; };
 		00E5E5551B15FE340095C7A5 /* NSDate+Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Range.h"; sourceTree = "<group>"; };
 		00E5E5561B15FE340095C7A5 /* NSDate+Range.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Range.m"; sourceTree = "<group>"; };
-		00E79C3C1DEFB5E000969571 /* myWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		00E79C3F1DEFB5E000969571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		00E79C411DEFB5E000969571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		00E79C431DEFB5E000969571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E79C481DEFB5E000969571 /* myWatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "myWatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		00E79C4E1DEFB5E000969571 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		00E79C4F1DEFB5E000969571 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
-		00E79C501DEFB5E000969571 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
-		00E79C521DEFB5E000969571 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
-		00E79C531DEFB5E000969571 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
-		00E79C551DEFB5E000969571 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
-		00E79C561DEFB5E000969571 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
-		00E79C581DEFB5E000969571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		00E79C5A1DEFB5E000969571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E79C6A1DEFBBFF00969571 /* EmptyTableVCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyTableVCAction.h; sourceTree = "<group>"; };
 		00E79C6B1DEFBBFF00969571 /* EmptyTableVCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyTableVCAction.m; sourceTree = "<group>"; };
 		00E79C6C1DEFBBFF00969571 /* EmptyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyTableViewController.h; sourceTree = "<group>"; };
@@ -865,29 +766,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00B0DBFF1DEE81A400701EFD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00B0DC041DEE81A400701EFD /* NotificationCenter.framework in Frameworks */,
-				5A116EC432806E609FB784B5 /* libPods-myWidget.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		00E79C451DEFB5E000969571 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		75FDEBAFA4A6BD43C4E99E5D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -895,10 +773,6 @@
 			isa = PBXGroup;
 			children = (
 				000B528A1ADBCF8100946853 /* FrameworkDemo */,
-				000B52A41ADBCF8100946853 /* FrameworkDemoTests */,
-				00B0DC051DEE81A400701EFD /* myWidget */,
-				00E79C3D1DEFB5E000969571 /* myWatchApp */,
-				00E79C4C1DEFB5E000969571 /* myWatchApp Extension */,
 				006A93221ADE09090093BEBE /* GinhoorFramework */,
 				000B52891ADBCF8100946853 /* Products */,
 				2461F8143DE68CC857B37A80 /* Pods */,
@@ -911,9 +785,6 @@
 			children = (
 				000B52881ADBCF8100946853 /* FrameworkDemo.app */,
 				000B52A11ADBCF8100946853 /* FrameworkDemoTests.xctest */,
-				00B0DC021DEE81A400701EFD /* myWidget.appex */,
-				00E79C3C1DEFB5E000969571 /* myWatchApp.app */,
-				00E79C481DEFB5E000969571 /* myWatchApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -948,33 +819,6 @@
 				000B528D1ADBCF8100946853 /* main.m */,
 				000B531C1ADBEB8D00946853 /* FrameworkDemo-Bridging-Header.h */,
 				006AB0931D6D5E8B009A9387 /* PrefixHeader.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		000B52A41ADBCF8100946853 /* FrameworkDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				000603D61B9C36210026D80F /* ModelTest.m */,
-				000603E81B9D7ACA0026D80F /* NSString+UnitSpec.m */,
-				000603EF1B9D88910026D80F /* NSString+RegExSpec.m */,
-				000603E21B9D75B80026D80F /* GinLoginViewModelSpec.m */,
-				000603E41B9D768E0026D80F /* GinLoginViewControllerSpec.m */,
-				00B997E41B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m */,
-				00B997EC1B9EA12C008EE8A1 /* GinLoginWithPhoneViewControllerSpec.m */,
-				00B997E81B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m */,
-				00B997EA1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m */,
-				00B997EE1B9EA188008EE8A1 /* GinResetPasswordViewControllerSpec.m */,
-				00B997F01B9EA1DE008EE8A1 /* GinResetPasswordViewModelSpec.m */,
-				000B52A51ADBCF8100946853 /* Supporting Files */,
-			);
-			path = FrameworkDemoTests;
-			sourceTree = "<group>";
-		};
-		000B52A51ADBCF8100946853 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				000B52A61ADBCF8100946853 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1485,27 +1329,6 @@
 			path = GinSysInfo;
 			sourceTree = "<group>";
 		};
-		00774E5A1DF10DD200D90150 /* Realm */ = {
-			isa = PBXGroup;
-			children = (
-				008E07CB1DF12265001F74C5 /* Model */,
-				00774E5B1DF10DD200D90150 /* Action */,
-				00774E5C1DF10DE600D90150 /* Demo4RealmViewController.h */,
-				00774E5D1DF10DE600D90150 /* Demo4RealmViewController.m */,
-				00774E5F1DF10DEE00D90150 /* Demo4RealmViewController.storyboard */,
-			);
-			path = Realm;
-			sourceTree = "<group>";
-		};
-		00774E5B1DF10DD200D90150 /* Action */ = {
-			isa = PBXGroup;
-			children = (
-				00774E611DF10E9000D90150 /* Demo4RealmAction.h */,
-				00774E621DF10E9000D90150 /* Demo4RealmAction.m */,
-			);
-			path = Action;
-			sourceTree = "<group>";
-		};
 		0086600C1B816F7000B76218 /* TYSwizzle */ = {
 			isa = PBXGroup;
 			children = (
@@ -1515,15 +1338,6 @@
 				008660101B816F7000B76218 /* TYSwizzle.m */,
 			);
 			path = TYSwizzle;
-			sourceTree = "<group>";
-		};
-		008E07CB1DF12265001F74C5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				008E07CC1DF12272001F74C5 /* RLMPerson.h */,
-				008E07CD1DF12272001F74C5 /* RLMPerson.m */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		00A16F851DEC1D300020EAE4 /* Tips */ = {
@@ -1889,7 +1703,6 @@
 		00B0DB441DED4B4A00701EFD /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				00774E5A1DF10DD200D90150 /* Realm */,
 				00E79C661DEFBBC000969571 /* NSException */,
 				00B0DC221DEE956600701EFD /* Widget */,
 				00B0DC141DEE830F00701EFD /* AppDelegate */,
@@ -2141,17 +1954,6 @@
 				00B0DBC31DED4B4A00701EFD /* WKWebViewOC2JSViewController.storyboard */,
 			);
 			path = OC2JS;
-			sourceTree = "<group>";
-		};
-		00B0DC051DEE81A400701EFD /* myWidget */ = {
-			isa = PBXGroup;
-			children = (
-				00B0DC261DEE9CCC00701EFD /* myWidget.entitlements */,
-				00B0DC061DEE81A400701EFD /* TodayViewController.h */,
-				00B0DC071DEE81A400701EFD /* TodayViewController.m */,
-				00B0DC0C1DEE81A400701EFD /* Info.plist */,
-			);
-			path = myWidget;
 			sourceTree = "<group>";
 		};
 		00B0DC141DEE830F00701EFD /* AppDelegate */ = {
@@ -2602,40 +2404,6 @@
 			path = GinContactsBook;
 			sourceTree = "<group>";
 		};
-		00E79C3D1DEFB5E000969571 /* myWatchApp */ = {
-			isa = PBXGroup;
-			children = (
-				00E79C3E1DEFB5E000969571 /* Interface.storyboard */,
-				00E79C411DEFB5E000969571 /* Assets.xcassets */,
-				00E79C431DEFB5E000969571 /* Info.plist */,
-			);
-			path = myWatchApp;
-			sourceTree = "<group>";
-		};
-		00E79C4C1DEFB5E000969571 /* myWatchApp Extension */ = {
-			isa = PBXGroup;
-			children = (
-				00E79C4F1DEFB5E000969571 /* InterfaceController.h */,
-				00E79C501DEFB5E000969571 /* InterfaceController.m */,
-				00E79C521DEFB5E000969571 /* ExtensionDelegate.h */,
-				00E79C531DEFB5E000969571 /* ExtensionDelegate.m */,
-				00E79C551DEFB5E000969571 /* NotificationController.h */,
-				00E79C561DEFB5E000969571 /* NotificationController.m */,
-				00E79C581DEFB5E000969571 /* Assets.xcassets */,
-				00E79C5A1DEFB5E000969571 /* Info.plist */,
-				00E79C4D1DEFB5E000969571 /* Supporting Files */,
-			);
-			path = "myWatchApp Extension";
-			sourceTree = "<group>";
-		};
-		00E79C4D1DEFB5E000969571 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				00E79C4E1DEFB5E000969571 /* PushNotificationPayload.apns */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		00E79C661DEFBBC000969571 /* NSException */ = {
 			isa = PBXGroup;
 			children = (
@@ -2869,8 +2637,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				00B0DC0E1DEE81A400701EFD /* PBXTargetDependency */,
-				00E79C5C1DEFB5E000969571 /* PBXTargetDependency */,
 			);
 			name = FrameworkDemo;
 			productName = FrameworkDemo;
@@ -2898,61 +2664,6 @@
 			productReference = 000B52A11ADBCF8100946853 /* FrameworkDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		00B0DC011DEE81A400701EFD /* myWidget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00B0DC101DEE81A400701EFD /* Build configuration list for PBXNativeTarget "myWidget" */;
-			buildPhases = (
-				9A2A5556B7E0AD1376605B1B /* [CP] Check Pods Manifest.lock */,
-				00B0DBFE1DEE81A400701EFD /* Sources */,
-				00B0DBFF1DEE81A400701EFD /* Frameworks */,
-				00B0DC001DEE81A400701EFD /* Resources */,
-				8407B2961AF6E23BA59BFFE5 /* [CP] Embed Pods Frameworks */,
-				A84571C68DD6D2813FAC9A1C /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = myWidget;
-			productName = myWidget;
-			productReference = 00B0DC021DEE81A400701EFD /* myWidget.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		00E79C3B1DEFB5E000969571 /* myWatchApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00E79C641DEFB5E000969571 /* Build configuration list for PBXNativeTarget "myWatchApp" */;
-			buildPhases = (
-				00E79C3A1DEFB5E000969571 /* Resources */,
-				00E79C631DEFB5E000969571 /* Embed App Extensions */,
-				75FDEBAFA4A6BD43C4E99E5D /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				00E79C4B1DEFB5E000969571 /* PBXTargetDependency */,
-			);
-			name = myWatchApp;
-			productName = myWatchApp;
-			productReference = 00E79C3C1DEFB5E000969571 /* myWatchApp.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		00E79C471DEFB5E000969571 /* myWatchApp Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00E79C621DEFB5E000969571 /* Build configuration list for PBXNativeTarget "myWatchApp Extension" */;
-			buildPhases = (
-				00E79C441DEFB5E000969571 /* Sources */,
-				00E79C451DEFB5E000969571 /* Frameworks */,
-				00E79C461DEFB5E000969571 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "myWatchApp Extension";
-			productName = "myWatchApp Extension";
-			productReference = 00E79C481DEFB5E000969571 /* myWatchApp Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2964,11 +2675,11 @@
 				TargetAttributes = {
 					000B52871ADBCF8100946853 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = 34NWS6URJR;
+						DevelopmentTeam = BNF96XZHV7;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.DataProtection = {
 								enabled = 0;
@@ -2979,26 +2690,6 @@
 						CreatedOnToolsVersion = 6.3;
 						DevelopmentTeam = 34NWS6URJR;
 						TestTargetID = 000B52871ADBCF8100946853;
-					};
-					00B0DC011DEE81A400701EFD = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 34NWS6URJR;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					00E79C3B1DEFB5E000969571 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 34NWS6URJR;
-						ProvisioningStyle = Automatic;
-					};
-					00E79C471DEFB5E000969571 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 34NWS6URJR;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -3017,9 +2708,6 @@
 			targets = (
 				000B52871ADBCF8100946853 /* FrameworkDemo */,
 				000B52A01ADBCF8100946853 /* FrameworkDemoTests */,
-				00B0DC011DEE81A400701EFD /* myWidget */,
-				00E79C3B1DEFB5E000969571 /* myWatchApp */,
-				00E79C471DEFB5E000969571 /* myWatchApp Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -3060,7 +2748,6 @@
 				00D04C291D6A91C400B4C27C /* arrow_up_44x44@2x.png in Resources */,
 				00B0DBFA1DED59F600701EFD /* Detail3DTouchViewController.storyboard in Resources */,
 				00A1701A1DEC1D300020EAE4 /* gin_user_phone@3x.png in Resources */,
-				00774E601DF10DEE00D90150 /* Demo4RealmViewController.storyboard in Resources */,
 				00D04C301D6A91C400B4C27C /* list_indicator_arrow@3x.png in Resources */,
 				00B0DBF51DED4B4A00701EFD /* WKWebViewOC2JSViewController.storyboard in Resources */,
 				00A1701C1DEC1D300020EAE4 /* default_theme_config.json in Resources */,
@@ -3072,30 +2759,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		00B0DC001DEE81A400701EFD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		00E79C3A1DEFB5E000969571 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00E79C421DEFB5E000969571 /* Assets.xcassets in Resources */,
-				00E79C401DEFB5E000969571 /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		00E79C461DEFB5E000969571 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00E79C591DEFB5E000969571 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3144,22 +2807,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		8407B2961AF6E23BA59BFFE5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myWidget/Pods-myWidget-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9456BE5DAB7642BB5E4800EC /* [CP] Copy Pods Resources */ = {
@@ -3177,21 +2825,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameworkDemoTests/Pods-FrameworkDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9A2A5556B7E0AD1376605B1B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		A7E378AAC89C94D068529DAF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3207,21 +2840,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A84571C68DD6D2813FAC9A1C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myWidget/Pods-myWidget-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B0A47FBE0A2E19B972F69ABD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3234,7 +2852,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -3299,7 +2917,6 @@
 				00217B6F1EB1BD0800CF41AE /* UIView+GinBaseClass.m in Sources */,
 				00B0DBDE1DED4B4A00701EFD /* NetworkingViewController.m in Sources */,
 				00D04C191D6A91C400B4C27C /* GinVerticalLayoutButton.m in Sources */,
-				00774E631DF10E9000D90150 /* Demo4RealmAction.m in Sources */,
 				00A16FF81DEC1D300020EAE4 /* ImageWithTitleCollectionCell.m in Sources */,
 				00A16FFE1DEC1D300020EAE4 /* MTLModel+BaseData.m in Sources */,
 				00D04C231D6A91C400B4C27C /* GinPullDownMenuCell.m in Sources */,
@@ -3359,7 +2976,6 @@
 				0018BC6E1B118C7F001E52D5 /* NSString+MD5.m in Sources */,
 				00D04C1A1D6A91C400B4C27C /* LeftIconButton.m in Sources */,
 				00F7FC691AEDDA860080AFC7 /* NSObject+GinUnit.m in Sources */,
-				00774E5E1DF10DE600D90150 /* Demo4RealmViewController.m in Sources */,
 				006A93C41ADE09090093BEBE /* NSURL+GinUnit.m in Sources */,
 				006A93C21ADE09090093BEBE /* NSString+formatContentString.m in Sources */,
 				00A16FF71DEC1D300020EAE4 /* ImageCollectionCell.m in Sources */,
@@ -3388,7 +3004,6 @@
 				00217B6D1EB1BD0800CF41AE /* BaseTableViewCell.m in Sources */,
 				00B0DBD71DED4B4A00701EFD /* page1Controller.m in Sources */,
 				00E79C9D1DEFBBFF00969571 /* ExtendMenuTableCell.m in Sources */,
-				008E07CE1DF12272001F74C5 /* RLMPerson.m in Sources */,
 				00A1701E1DEC1D300020EAE4 /* ThemeManager.m in Sources */,
 				00A1700C1DEC1D300020EAE4 /* GinFindPasswordViewController.m in Sources */,
 				00D04C161D6A91C400B4C27C /* GinImageButton.m in Sources */,
@@ -3452,52 +3067,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				0031C54F1DEBEC2A009A85A4 /* AppRouter.m in Sources */,
-				00B997EB1B9EA0C4008EE8A1 /* GinQuickLoginViewControllerSpec.m in Sources */,
 				0031C55D1DEBEC2A009A85A4 /* AppRouter+LoggerDemo.m in Sources */,
-				000603E51B9D768E0026D80F /* GinLoginViewControllerSpec.m in Sources */,
 				0031C55F1DEBEC2A009A85A4 /* AppRouter+Login.m in Sources */,
 				000603EC1B9D7AF80026D80F /* NSString+GinUnit.m in Sources */,
 				0031C5721DEBEC69009A85A4 /* AppRouter+WKWebView.m in Sources */,
-				00B997ED1B9EA12C008EE8A1 /* GinLoginWithPhoneViewControllerSpec.m in Sources */,
 				0031C5611DEBEC2A009A85A4 /* AppRouter+Networking.m in Sources */,
 				0031C56D1DEBEC2A009A85A4 /* AppRouter+ThemeDemo.m in Sources */,
 				0031C5651DEBEC2A009A85A4 /* AppRouter+PullDownMenu.m in Sources */,
-				00B997F11B9EA1DE008EE8A1 /* GinResetPasswordViewModelSpec.m in Sources */,
-				00B997E91B9EA0BA008EE8A1 /* GinFindPasswordViewControllerSpec.m in Sources */,
 				0031C5671DEBEC2A009A85A4 /* AppRouter+StepperView.m in Sources */,
 				0031C5551DEBEC2A009A85A4 /* AppRouter+DemoCode.m in Sources */,
 				0031C56B1DEBEC2A009A85A4 /* AppRouter+TabsViewController.m in Sources */,
 				0031C5591DEBEC2A009A85A4 /* AppRouter+GinSystemButton.m in Sources */,
 				0031C5531DEBEC2A009A85A4 /* AppRouter+Demo4ExtendMenu.m in Sources */,
-				000603F01B9D88910026D80F /* NSString+RegExSpec.m in Sources */,
-				000603E31B9D75B80026D80F /* GinLoginViewModelSpec.m in Sources */,
 				0031C5631DEBEC2A009A85A4 /* AppRouter+PhotoGallery.m in Sources */,
-				000603D71B9C36210026D80F /* ModelTest.m in Sources */,
 				0031C55B1DEBEC2A009A85A4 /* AppRouter+HZTableVC.m in Sources */,
-				00B997EF1B9EA188008EE8A1 /* GinResetPasswordViewControllerSpec.m in Sources */,
 				0031C5511DEBEC2A009A85A4 /* AppRouter+ContactsBook.m in Sources */,
 				0031C5571DEBEC2A009A85A4 /* AppRouter+EmptyTableView.m in Sources */,
-				00B997E51B9E9DF9008EE8A1 /* GinLoginWithPhoneViewModelSpec.m in Sources */,
 				0031C5691DEBEC2A009A85A4 /* AppRouter+TableViewController.m in Sources */,
-				000603E91B9D7ACA0026D80F /* NSString+UnitSpec.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		00B0DBFE1DEE81A400701EFD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00B0DC081DEE81A400701EFD /* TodayViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		00E79C441DEFB5E000969571 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00E79C541DEFB5E000969571 /* ExtensionDelegate.m in Sources */,
-				00E79C511DEFB5E000969571 /* InterfaceController.m in Sources */,
-				00E79C571DEFB5E000969571 /* NotificationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3508,21 +3094,6 @@
 			isa = PBXTargetDependency;
 			target = 000B52871ADBCF8100946853 /* FrameworkDemo */;
 			targetProxy = 000B52A21ADBCF8100946853 /* PBXContainerItemProxy */;
-		};
-		00B0DC0E1DEE81A400701EFD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 00B0DC011DEE81A400701EFD /* myWidget */;
-			targetProxy = 00B0DC0D1DEE81A400701EFD /* PBXContainerItemProxy */;
-		};
-		00E79C4B1DEFB5E000969571 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 00E79C471DEFB5E000969571 /* myWatchApp Extension */;
-			targetProxy = 00E79C4A1DEFB5E000969571 /* PBXContainerItemProxy */;
-		};
-		00E79C5C1DEFB5E000969571 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 00E79C3B1DEFB5E000969571 /* myWatchApp */;
-			targetProxy = 00E79C5B1DEFB5E000969571 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -3541,14 +3112,6 @@
 				000B529B1ADBCF8100946853 /* Base */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		00E79C3E1DEFB5E000969571 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				00E79C3F1DEFB5E000969571 /* Base */,
-			);
-			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -3646,16 +3209,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				CODE_SIGN_ENTITLEMENTS = FrameworkDemo/FrameworkDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 34NWS6URJR;
+				DEVELOPMENT_TEAM = BNF96XZHV7;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = FrameworkDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = FrameworkDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.Framework-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ginhoor.demo4framework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FrameworkDemo/FrameworkDemo-Bridging-Header.h";
 			};
@@ -3668,16 +3230,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				CODE_SIGN_ENTITLEMENTS = FrameworkDemo/FrameworkDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 34NWS6URJR;
+				DEVELOPMENT_TEAM = BNF96XZHV7;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = FrameworkDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = FrameworkDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.Framework-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ginhoor.demo4framework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FrameworkDemo/FrameworkDemo-Bridging-Header.h";
 			};
@@ -3717,129 +3278,6 @@
 			};
 			name = Release;
 		};
-		00B0DC111DEE81A400701EFD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 900D4DDFCE38CB8296B25C9D /* Pods-myWidget.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CODE_SIGN_ENTITLEMENTS = myWidget/myWidget.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 34NWS6URJR;
-				INFOPLIST_FILE = myWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.Framework-Demo.myWidget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		00B0DC121DEE81A400701EFD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16866D4A6DE8FF8F3D16D065 /* Pods-myWidget.release.xcconfig */;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CODE_SIGN_ENTITLEMENTS = myWidget/myWidget.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 34NWS6URJR;
-				INFOPLIST_FILE = myWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.Framework-Demo.myWidget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		00E79C5E1DEFB5E000969571 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 34NWS6URJR;
-				IBSC_MODULE = myWatchApp_Extension;
-				INFOPLIST_FILE = myWatchApp/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.Framework-Demo.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
-			};
-			name = Debug;
-		};
-		00E79C5F1DEFB5E000969571 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 34NWS6URJR;
-				IBSC_MODULE = myWatchApp_Extension;
-				INFOPLIST_FILE = myWatchApp/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.Framework-Demo.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
-			};
-			name = Release;
-		};
-		00E79C601DEFB5E000969571 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 34NWS6URJR;
-				INFOPLIST_FILE = "myWatchApp Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.Framework-Demo.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
-			};
-			name = Debug;
-		};
-		00E79C611DEFB5E000969571 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = 34NWS6URJR;
-				INFOPLIST_FILE = "myWatchApp Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ginhoor.Framework-Demo.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.1;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3866,33 +3304,6 @@
 			buildConfigurations = (
 				000B52AF1ADBCF8100946853 /* Debug */,
 				000B52B01ADBCF8100946853 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		00B0DC101DEE81A400701EFD /* Build configuration list for PBXNativeTarget "myWidget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00B0DC111DEE81A400701EFD /* Debug */,
-				00B0DC121DEE81A400701EFD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		00E79C621DEFB5E000969571 /* Build configuration list for PBXNativeTarget "myWatchApp Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00E79C601DEFB5E000969571 /* Debug */,
-				00E79C611DEFB5E000969571 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		00E79C641DEFB5E000969571 /* Build configuration list for PBXNativeTarget "myWatchApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00E79C5E1DEFB5E000969571 /* Debug */,
-				00E79C5F1DEFB5E000969571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

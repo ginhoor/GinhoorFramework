@@ -39,11 +39,11 @@
     return controller;
 }
 
-- (UIResponder *)objectInResponder:(UIResponder *)responder class:(Class)class{
-    if ([responder isKindOfClass:class]) {
+- (UIResponder *)objectInResponder:(UIResponder *)responder class:(Class)className{
+    if ([responder isKindOfClass:className]) {
         return responder;
     } else {
-        return [self objectInResponder:responder.nextResponder class:class];
+        return [self objectInResponder:responder.nextResponder class:className];
     }
 }
 
