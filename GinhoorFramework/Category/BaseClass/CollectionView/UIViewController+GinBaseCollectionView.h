@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import <MJRefresh/MJRefresh.h>
 
 #import "UIViewController+GinBaseClass.h"
 #import "UICollectionView+GinBaseClass.h"

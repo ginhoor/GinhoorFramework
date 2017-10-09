@@ -7,7 +7,7 @@
 //
 
 #import "TableViewController.h"
-#import "MJRefresh.h"
+//#import "MJRefresh.h"
 #import "Masonry.h"
 
 @interface TableViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -16,67 +16,67 @@
 
 @implementation TableViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    self.table.backgroundColor = [UIColor lightGrayColor];
-    
-    [self.view addSubview:self.table];
-
-    __weak typeof(self) weak = self;
-    
-    self.table.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [weak.table.mj_header endRefreshing];
-        });
-    }];
-    
-    self.table.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [weak.table.mj_footer endRefreshing];
-        });
-    }];
-
-    [self setConstraints];
-    
-}
-
-// 设置 view 的初次约束
-- (void)setConstraints
-{
-    [self.table mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
-    }];
-}
-
-- (UITableView *)table
-{
-    if (!_table) {
-        _table = [[UITableView alloc] init];
-        _table.delegate = self;
-        _table.dataSource = self;
-        _table.tableFooterView = [[UIView alloc] init];
-        [_table registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    }
-    return _table;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 20;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    cell.textLabel.text = @"测试";
-    return cell;
-}
-
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+//- (void)viewDidLoad {
+//    [super viewDidLoad];
+//
+//    self.table.backgroundColor = [UIColor lightGrayColor];
+//
+//    [self.view addSubview:self.table];
+//
+//    __weak typeof(self) weak = self;
+//
+//    self.table.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [weak.table.mj_header endRefreshing];
+//        });
+//    }];
+//
+//    self.table.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [weak.table.mj_footer endRefreshing];
+//        });
+//    }];
+//
+//    [self setConstraints];
+//
+//}
+//
+//// 设置 view 的初次约束
+//- (void)setConstraints
+//{
+//    [self.table mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.equalTo(self.view);
+//    }];
+//}
+//
+//- (UITableView *)table
+//{
+//    if (!_table) {
+//        _table = [[UITableView alloc] init];
+//        _table.delegate = self;
+//        _table.dataSource = self;
+//        _table.tableFooterView = [[UIView alloc] init];
+//        [_table registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+//    }
+//    return _table;
+//}
+//
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+//{
+//    return 20;
+//}
+//
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+//    cell.textLabel.text = @"测试";
+//    return cell;
+//}
+//
+//
+//
+//- (void)didReceiveMemoryWarning {
+//    [super didReceiveMemoryWarning];
+//    // Dispose of any resources that can be recreated.
+//}
 @end

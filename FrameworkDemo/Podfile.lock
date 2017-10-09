@@ -47,7 +47,6 @@ PODS:
     - Mantle/extobjc (= 2.0.7)
   - Mantle/extobjc (2.0.7)
   - Masonry (1.0.2)
-  - MJRefresh (3.1.12)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -72,7 +71,6 @@ DEPENDENCIES:
   - LEETheme (~> 1.0.7)
   - Mantle (~> 2.0.7)
   - Masonry (~> 1.0.2)
-  - MJRefresh (~> 3.1.12)
   - ReactiveCocoa (~> 2.5)
   - SDWebImage (~> 3.8.2)
   - UMengAnalyticsSDK (~> 3.6.5)
@@ -89,11 +87,10 @@ SPEC CHECKSUMS:
   LEETheme: 3bdf9a87ce21cb7d856c188f5dbc0a413af99434
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   UMengAnalyticsSDK: 995da0b94da156de77da7ec6666b3801f3db20a4
 
-PODFILE CHECKSUM: d0918527564f1cf98c57ea1651691f6553b6886c
+PODFILE CHECKSUM: f3a89fe804099f4545312be4b8c1cfc0fe954077
 
 COCOAPODS: 1.2.0.beta.3

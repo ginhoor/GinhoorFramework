@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "GinhoorFramework"
-    s.version      = "2.1.23"
+    s.version      = "2.1.24"
     s.summary      = "This is one of my personal library."
     s.homepage     = "https://github.com/ginhoor/GinhoorFramework"
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
     s.subspec 'Category' do |ss|
         ss.dependency 'GinhoorFramework/GinSysInfo'
         ss.dependency 'BlocksKit', '~> 2.2.5'
-        ss.dependency 'MJRefresh', '~> 3.1.12'
+#        ss.dependency 'MJRefresh', '~> 3.1.12'
 
         ss.source_files = 'GinhoorFramework/Category/**/*.{h,m}',
                          'GinhoorFramework/Category/**/**/*.{h,m}'
