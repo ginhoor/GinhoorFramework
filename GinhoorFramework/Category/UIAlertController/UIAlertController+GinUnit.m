@@ -67,9 +67,13 @@
     } else {
         presentedViewController = [UIViewController lastPresentedViewController];
     }
-    
-    
-    
+
     [presentedViewController presentViewController:alertController animated:YES completion:completionBlock];
 }
+
+- (BOOL)shouldAutorotate
+{
+    return NO;
+}
+
 @end
