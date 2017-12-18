@@ -56,7 +56,7 @@
             [subscriber sendCompleted];
             
         } else {
-            [UIAlertController alert:@"提示" message:@"请输入正确的手机号" cancelTitle:@"确认" cancelBlock:^{
+            [UIAlertController alert:@"提示" message:@"请输入正确的手机号" cancelTitle:@"确认" cancelBlock:^(UIAlertAction *action){
                 [subscriber sendCompleted];
             } completionBlock:nil];
         }

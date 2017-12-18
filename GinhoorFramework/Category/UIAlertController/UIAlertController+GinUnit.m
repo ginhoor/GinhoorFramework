@@ -11,27 +11,27 @@
 
 @implementation UIAlertController (GinUnit)
 
-+ (void)alertOnFirstWindow:(NSString *)title message:(NSString *)message cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
++ (void)alertOnFirstWindow:(NSString * __nullable)title message:(NSString * __nullable)message cancelTitle:(NSString *)cancelTitle cancelBlock:(void (^ __nullable)(UIAlertAction *action))cancelBlock completionBlock:(void(^ __nullable)(void))completionBlock
 {
     [self alertOnWindow:[UIApplication sharedApplication].windows.firstObject title:title message:message cancelTitle:cancelTitle cancelBlock:cancelBlock completionBlock:completionBlock];
 }
 
-+ (void)alertOnFirstWindow:(NSString *)title message:(NSString *)message submitTitle:(NSString *)submitTitle submitBlock:(void(^)())submitBlock cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
++ (void)alertOnFirstWindow:(NSString * __nullable)title message:(NSString * __nullable)message submitTitle:(NSString * __nullable)submitTitle submitBlock:(void (^ __nullable)(UIAlertAction *action))submitBlock cancelTitle:(NSString * __nullable)cancelTitle cancelBlock:(void (^ __nullable)(UIAlertAction *action))cancelBlock completionBlock:(void(^ __nullable)(void))completionBlock
 {
     [self alertOnWindow:[UIApplication sharedApplication].windows.firstObject title:title message:message submitTitle:submitTitle submitBlock:submitBlock cancelTitle:cancelTitle cancelBlock:cancelBlock completionBlock:completionBlock];
 }
 
-+ (void)alert:(NSString *)title message:(NSString *)message cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
++ (void)alert:(NSString * __nullable)title message:(NSString * __nullable)message cancelTitle:(NSString * __nullable)cancelTitle cancelBlock:(void (^ __nullable)(UIAlertAction *action))cancelBlock completionBlock:(void(^ __nullable)(void))completionBlock
 {
     [self alertOnWindow:nil title:title message:message cancelTitle:cancelTitle cancelBlock:cancelBlock completionBlock:completionBlock];
 }
 
-+ (void)alert:(NSString *)title message:(NSString *)message submitTitle:(NSString *)submitTitle submitBlock:(void(^)())submitBlock cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
++ (void)alert:(NSString * __nullable)title message:(NSString * __nullable)message submitTitle:(NSString * __nullable)submitTitle submitBlock:(void (^ __nullable)(UIAlertAction *action))submitBlock cancelTitle:(NSString * __nullable)cancelTitle cancelBlock:(void (^ __nullable)(UIAlertAction *action))cancelBlock completionBlock:(void(^ __nullable)(void))completionBlock
 {
     [self alertOnWindow:nil title:title message:message submitTitle:submitTitle submitBlock:submitBlock cancelTitle:cancelTitle cancelBlock:cancelBlock completionBlock:completionBlock];
 }
 
-+ (void)alertOnWindow:(UIWindow *)window title:(NSString *)title message:(NSString *)message cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
++ (void)alertOnWindow:(UIWindow * __nullable)window title:(NSString * __nullable)title message:(NSString * __nullable)message cancelTitle:(NSString * __nullable)cancelTitle cancelBlock:(void (^)(UIAlertAction *action))cancelBlock completionBlock:(void(^)(void))completionBlock
 {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     
@@ -49,7 +49,7 @@
     [presentedViewController presentViewController:alertController animated:YES completion:completionBlock];
 }
 
-+ (void)alertOnWindow:(UIWindow *)window title:(NSString *)title message:(NSString *)message submitTitle:(NSString *)submitTitle submitBlock:(void(^)())submitBlock cancelTitle:(NSString *)cancelTitle cancelBlock:(void(^)())cancelBlock completionBlock:(void(^)())completionBlock
++ (void)alertOnWindow:(UIWindow * __nullable)window title:(NSString * __nullable)title message:(NSString * __nullable)message submitTitle:(NSString * __nullable)submitTitle submitBlock:(void (^)(UIAlertAction *action))submitBlock cancelTitle:(NSString * __nullable)cancelTitle cancelBlock:(void (^)(UIAlertAction *action))cancelBlock completionBlock:(void(^)(void))completionBlock
 {
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];

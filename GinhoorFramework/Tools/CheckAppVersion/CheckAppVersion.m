@@ -46,14 +46,14 @@
                     NSString *releaseNotes = [releaseInfo objectForKey:@"releaseNotes"];
                     
                     dispatch_async(dispatch_get_main_queue(),^{
-                        [UIAlertController alert:@"有新版本" message:releaseNotes submitTitle:@"更新" submitBlock:^{
+                        [UIAlertController alert:@"有新版本" message:releaseNotes submitTitle:@"更新" submitBlock:^(UIAlertAction *action){
                             
                             NSString *trackViewUrl = [releaseInfo objectForKey:@"trackViewUrl"];
                             NSURL *url = [NSURL URLWithString:trackViewUrl];
                             [[UIApplication sharedApplication]openURL:url];
                             [[NSUserDefaults standardUserDefaults] setObject:appVersion forKey:@"GinCheckAppVersion"];
                             
-                        } cancelTitle:@"取消" cancelBlock:^{
+                        } cancelTitle:@"取消" cancelBlock:^(UIAlertAction *action){
                             [[NSUserDefaults standardUserDefaults] setObject:appVersion forKey:@"GinCheckAppVersion"];
                         } completionBlock:^{
                             if (completion) {

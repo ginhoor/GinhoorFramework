@@ -43,7 +43,7 @@
     if(authStatus == AVAuthorizationStatusRestricted ||
        authStatus == AVAuthorizationStatusDenied){
         
-        [UIAlertController alert:@"相机功能受到限制" message:@"请检查设置中的相机权限是否开启。" cancelTitle:@"确认" cancelBlock:^{
+        [UIAlertController alert:@"相机功能受到限制" message:@"请检查设置中的相机权限是否开启。" cancelTitle:@"确认" cancelBlock:^(UIAlertAction *action){
             [self.navigationController popViewControllerAnimated:YES];
             [self.presentingViewController dismissViewControllerAnimated:YES completion:^{}];
         } completionBlock:^{
