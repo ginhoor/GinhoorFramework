@@ -102,19 +102,22 @@
     }
 }
 
-+ (BOOL)checkLocationEnable
+- (BOOL)checkLocationEnable
 {
-    if ([CLLocationManager locationServicesEnabled] &&
-        ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse || [CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined || [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedAlways)) {
-        //定位功能可用
-        return YES;
-    } else if ([CLLocationManager authorizationStatus] ==kCLAuthorizationStatusDenied) {
+    BOOL serviceEnabled = [CLLocationManager locationServicesEnabled];
+    CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
+    
+    if (serviceEnabled &&
+        (status == kCLAuthorizationStatusAuthorizedWhenInUse ||
+         status == kCLAuthorizationStatusAuthorizedAlways)) {
+            //定位功能可用
+            return YES;
+    } else if (status == kCLAuthorizationStatusDenied ||
+               status == kCLAuthorizationStatusNotDetermined) {
         //定位不能用
         return NO;
     }
     return NO;
 }
-
-
 
 @end

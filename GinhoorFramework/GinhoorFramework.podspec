@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "GinhoorFramework"
-    s.version      = "2.2.1"
+    s.version      = "2.2.2"
     s.summary      = "This is one of my personal library."
     s.homepage     = "https://github.com/ginhoor/GinhoorFramework"
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
