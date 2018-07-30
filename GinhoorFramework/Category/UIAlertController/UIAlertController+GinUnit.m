@@ -68,7 +68,9 @@
         presentedViewController = [UIViewController lastPresentedViewController];
     }
 
-    [presentedViewController presentViewController:alertController animated:YES completion:completionBlock];
+    dispatch_async(dispatch_get_main_queue(),^{
+        [presentedViewController presentViewController:alertController animated:YES completion:completionBlock];
+    });
 }
 
 - (BOOL)shouldAutorotate

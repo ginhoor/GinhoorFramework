@@ -26,7 +26,7 @@ typedef NS_ENUM(NSUInteger, GinPullDownMenuItemType) {
 
 @property (copy, nonatomic) void(^tapBlock)(GinPullDownMenuItem *item);
 
-- (void)animateIndicator:(BOOL)selected completedBlock:(void(^)())completedBlock;
+- (void)animateIndicator:(BOOL)selected completedBlock:(void(^)(void))completedBlock;
 - (void)animateTitleLabel:(BOOL)selected;
 
 

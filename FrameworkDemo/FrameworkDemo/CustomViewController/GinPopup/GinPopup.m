@@ -35,7 +35,7 @@
 }
 
 
-+ (void)dismissWhenCompletion:(void(^)())block
++ (void)dismissWhenCompletion:(void(^)(void))block
 {
     GinPopup *pop = [GinPopup sharedInstance];
     [pop.viewController hideAnimated:YES completion:^{

@@ -212,7 +212,7 @@
     
     self.titleLabel.font = selected?[UIFont boldSystemFontOfSize:pointSize]:[UIFont systemFontOfSize:pointSize];
 }
-- (void)animateIndicator:(BOOL)selected completedBlock:(void(^)())completedBlock
+- (void)animateIndicator:(BOOL)selected completedBlock:(void(^)(void))completedBlock
 {
     if (self.type == GinPullDownMenuItemTypeNormal) {
         [CATransaction begin];

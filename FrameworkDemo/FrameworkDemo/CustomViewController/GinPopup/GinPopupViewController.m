@@ -65,7 +65,7 @@ CGFloat const kPopupTransformPart2AnimationDuration = 0.1;
     });
 }
 
-- (void)hideAnimated:(BOOL)animated completion:(void(^)())completion
+- (void)hideAnimated:(BOOL)animated completion:(void(^)(void))completion
 {
     if (!animated) {
         return;

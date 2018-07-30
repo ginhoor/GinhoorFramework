@@ -65,11 +65,11 @@
 }
 
 
-- (void)setCellDataList:(NSMutableArray *)cellDataList
+- (void)setCellDataList:(NSArray *)cellDataList
 {
     [self setValue:cellDataList key:@"GinBaseTableCellDataList" policy:OBJC_ASSOCIATION_COPY_NONATOMIC owner:self];
 }
-- (NSMutableArray *)cellDataList
+- (NSArray *)cellDataList
 {
     return [self getValueForKey:@"GinBaseTableCellDataList"];
 }

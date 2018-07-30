@@ -57,7 +57,7 @@
 
 }
 
-- (void)addButton:(NSString *)title index:(NSUInteger)index tap:(void(^)())block
+- (void)addButton:(NSString *)title index:(NSUInteger)index tap:(void(^)(void))block
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     [button setTitle:title forState:UIControlStateNormal];

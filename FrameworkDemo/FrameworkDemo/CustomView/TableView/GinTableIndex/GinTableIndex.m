@@ -12,13 +12,14 @@
 
 #define RGB(r,g,b,a)  [UIColor colorWithRed:(double)r/255.0f green:(double)g/255.0f blue:(double)b/255.0f alpha:a]
 
-@interface GinTableIndex (){
+@interface GinTableIndex ()
+{
     BOOL isLayedOut;
     CAShapeLayer *shapeLayer;
-    CGFloat letterHeight;
 }
 
 @property (strong, nonatomic) NSArray *letters;
+@property (assign, nonatomic) CGFloat letterHeight;
 
 @end
 
@@ -63,7 +64,8 @@
 }
 
 
-- (void)layoutSubviews{
+- (void)layoutSubviews
+{
     [super layoutSubviews];
     [self setup];
     
@@ -75,17 +77,17 @@
         UIBezierPath *bezierPath = [UIBezierPath bezierPath];
         [bezierPath moveToPoint:CGPointZero];
         [bezierPath addLineToPoint:CGPointMake(0, self.frame.size.height)];
-        letterHeight = 16; //self.frame.size.height / [letters count];
+        self.letterHeight = 16; //self.frame.size.height / [letters count];
         CGFloat fontSize = 12;
-        if (letterHeight < 14){
+        if (self.letterHeight < 14){
             fontSize = 11;
         }
         
         [self.letters enumerateObjectsUsingBlock:^(NSString *letter, NSUInteger idx, BOOL *stop) {
-            CGFloat originY = idx * letterHeight;
+            CGFloat originY = idx * self.letterHeight;
             CATextLayer *ctl = [self textLayerWithSize:fontSize
                                                 string:letter
-                                              andFrame:CGRectMake(0, originY, self.frame.size.width, letterHeight)];
+                                              andFrame:CGRectMake(0, originY, self.frame.size.width, self.letterHeight)];
             [self.layer addSublayer:ctl];
             [bezierPath moveToPoint:CGPointMake(0, originY)];
             [bezierPath addLineToPoint:CGPointMake(ctl.frame.size.width, originY)];
@@ -133,7 +135,7 @@
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint point = [touch locationInView:self];
     
-    NSInteger index = ((NSInteger) floorf(point.y) / letterHeight);
+    NSInteger index = ((NSInteger) floorf(point.y) / self.letterHeight);
     
     if (index< 0 || index > self.letters.count - 1) {
         return;

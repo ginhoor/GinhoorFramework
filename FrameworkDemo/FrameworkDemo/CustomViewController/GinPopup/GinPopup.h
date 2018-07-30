@@ -20,7 +20,7 @@ static NSString *const kGinPopupDidHideNotification = @"kGinPopupDidHideNotifica
 + (instancetype)sharedInstance;
 
 + (void)showWithContentView:(UIView *)contentView;
-+ (void)dismissWhenCompletion:(void(^)())block;
++ (void)dismissWhenCompletion:(void(^)(void))block;
 
 
 @end

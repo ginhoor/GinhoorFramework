@@ -36,14 +36,7 @@
     return YES;
 }
 
-
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
-{
-    [self testWidgetOpenUrl:url];
-    return YES;
-}
-
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
     [self testWidgetOpenUrl:url];
     return YES;
@@ -55,9 +48,6 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:@"ExtenicationNotification" object:url.host];
         NSLog(@"toMyWiget--->%@",url);
     }
-    
 }
-
-
 
 @end

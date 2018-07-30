@@ -10,8 +10,8 @@
 
 @interface GinScanQRCoderController : GinQRCodePickerBaseController
 
-@property (copy, nonatomic) void(^didDismissBlock)();
+@property (copy, nonatomic) void(^didDismissBlock)(void);
 
-+ (void)startScanQRCorder:(UIViewController *)controller receivedBlock:(void(^)(NSString * resultString))resultDidReceivedBlock dismissBlock:(void(^)())dismissBlock;
++ (void)startScanQRCorder:(UIViewController *)controller receivedBlock:(void(^)(NSString * resultString))resultDidReceivedBlock dismissBlock:(void(^)(void))dismissBlock;
 
 @end

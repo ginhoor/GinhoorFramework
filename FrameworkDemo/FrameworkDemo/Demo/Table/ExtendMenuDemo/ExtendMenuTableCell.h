@@ -10,6 +10,6 @@
 
 @interface ExtendMenuTableCell : BaseTableViewCell<GinBaseTableCell>
 
-@property (nonatomic, copy) void(^buttonClickBlock)();
+@property (nonatomic, copy) void(^buttonClickBlock)(void);
 
 @end

@@ -223,7 +223,7 @@
     }
 }
 
-- (void)animateBackgroundControl:(BOOL)selected completedBlock:(void(^)())completedBlock
+- (void)animateBackgroundControl:(BOOL)selected completedBlock:(void(^)(void))completedBlock
 {
     if (selected) {
         
@@ -257,7 +257,7 @@
     }
 }
 
-- (void)animateTableView:(BOOL)selected completedBlock:(void(^)())completedBlock
+- (void)animateTableView:(BOOL)selected completedBlock:(void(^)(void))completedBlock
 {
     if (selected) {
         [self.tableView reloadData];

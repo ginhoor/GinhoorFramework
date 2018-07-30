@@ -164,11 +164,11 @@ static CGFloat          const MRInfinityFactor = 0.01;
     self = [super init];
     if (self)
     {
-        _presentAnimation = YES;
+        self.presentAnimation = YES;
         _presentingViewController = controller;
-        _shadowView = [[UIView alloc] initWithFrame:CGRectZero];
-        _shadowView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.8];
-        _shadowView.layer.opacity = 0.0;
+        self.shadowView = [[UIView alloc] initWithFrame:CGRectZero];
+        self.shadowView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.8];
+        self.shadowView.layer.opacity = 0.0;
     }
     
     return self;
@@ -176,7 +176,7 @@ static CGFloat          const MRInfinityFactor = 0.01;
 
 - (void)present:(UIViewController *)viewController from:(MRFlipTransitionPresentingStyle)direction completion:(void (^)(void))completion
 {
-    if (!_presentAnimation || !viewController || self.presentingViewController.presentedViewController)
+    if (!self.presentAnimation || !viewController || self.presentingViewController.presentedViewController)
     {
         return;
     }
@@ -189,7 +189,7 @@ static CGFloat          const MRInfinityFactor = 0.01;
 
 - (void)dismissTo:(MRFlipTransitionPresentingStyle)direction completion:(void(^)(void))completion
 {
-    if (_presentAnimation || !self.presentingViewController.presentedViewController || self.presentingViewController.presentedViewController.isBeingDismissed)
+    if (self.presentAnimation || !self.presentingViewController.presentedViewController || self.presentingViewController.presentedViewController.isBeingDismissed)
     {
         return;
     }
@@ -240,12 +240,12 @@ static CGFloat          const MRInfinityFactor = 0.01;
     UIView *toView = [toViewController viewForTransitionContext:transitionContext];
     UIView *containerView = [transitionContext containerView];
     
-    _transformView.upperFrontLayer.contents = (__bridge id)(self.coverImage.CGImage);
+    self.transformView.upperFrontLayer.contents = (__bridge id)(self.coverImage.CGImage);
     
-    if (_presentAnimation)
-    {
-        _transformView = [[MRTransformView alloc] initWithFrame:containerView.bounds];
-        _shadowView.frame = containerView.bounds;
+    __weak typeof(self) _WeakSelf = self;
+    if (self.presentAnimation) {
+        self.transformView = [[MRTransformView alloc] initWithFrame:containerView.bounds];
+        self.shadowView.frame = containerView.bounds;
         
         [self prepareLayersWithCompletionBlock:^{
             
@@ -254,63 +254,60 @@ static CGFloat          const MRInfinityFactor = 0.01;
             toView.alpha = 0.0;
             
             [containerView addSubview:toView];
-            [containerView addSubview:_shadowView];
-            [containerView addSubview:_transformView];
+            [containerView addSubview:_WeakSelf.shadowView];
+            [containerView addSubview:_WeakSelf.transformView];
             
-            _transformView.upperBackLayer.contents = (__bridge id)(self.contentImage.CGImage);
-            _transformView.lowerLayer.contents = (__bridge id)(self.contentImage.CGImage);
+            _WeakSelf.transformView.upperBackLayer.contents = (__bridge id)(self.contentImage.CGImage);
+            _WeakSelf.transformView.lowerLayer.contents = (__bridge id)(self.contentImage.CGImage);
             
-            [self animateEaseInAnimationWithCompletionBlock:^{
-                [self animateFlipFrontLayerWithCompletionBlock:^{
+            [_WeakSelf animateEaseInAnimationWithCompletionBlock:^{
+                [_WeakSelf animateFlipFrontLayerWithCompletionBlock:^{
                     
-                    _transformView.upperFrontLayer.opacity = 0.0;
-                    _transformView.upperBackLayer.opacity = 1.0;
+                    _WeakSelf.transformView.upperFrontLayer.opacity = 0.0;
+                    _WeakSelf.transformView.upperBackLayer.opacity = 1.0;
                     
-                    [self animateFlipBackLayerWithCompletionBlock:^{
+                    [_WeakSelf animateFlipBackLayerWithCompletionBlock:^{
                         
                         BOOL isCancelled = [transitionContext transitionWasCancelled];
-                        if (!isCancelled)
-                        {
-                            [_transformView removeFromSuperview];
-                            [_shadowView removeFromSuperview];
+                        if (!isCancelled) {
+                            [_WeakSelf.transformView removeFromSuperview];
+                            [_WeakSelf.shadowView removeFromSuperview];
                         }
                         
-                        _presentAnimation = isCancelled;
+                        _WeakSelf.presentAnimation = isCancelled;
                         toView.alpha = isCancelled ? 0.0 : 1.0;
                         [transitionContext completeTransition:!isCancelled];
                     }];
                 }];
             }];
         }];
-    }
-    else
-    {
+    } else {
         [self updateContentSnapshot:fromViewController.view afterScreenUpdate:NO];
         
         [fromView removeFromSuperview];
         [containerView addSubview:toView];
-        [containerView addSubview:_shadowView];
-        [containerView addSubview:_transformView];
+        [containerView addSubview:self.shadowView];
+        [containerView addSubview:self.transformView];
         
-        _transformView.upperBackLayer.contents = (__bridge id)(self.contentImage.CGImage);
-        _transformView.lowerLayer.contents = (__bridge id)(self.contentImage.CGImage);
+        self.transformView.upperBackLayer.contents = (__bridge id)(self.contentImage.CGImage);
+        self.transformView.lowerLayer.contents = (__bridge id)(self.contentImage.CGImage);
         
         [self animateFlipBackLayerWithCompletionBlock:^{
             
-            _transformView.upperBackLayer.opacity = 0.0;
-            _transformView.upperFrontLayer.opacity = 1.0;
+            _WeakSelf.transformView.upperBackLayer.opacity = 0.0;
+            _WeakSelf.transformView.upperFrontLayer.opacity = 1.0;
             
-            [self animateFlipFrontLayerWithCompletionBlock:^{
-                [self animateEaseInAnimationWithCompletionBlock:^{
+            [_WeakSelf animateFlipFrontLayerWithCompletionBlock:^{
+                [_WeakSelf animateEaseInAnimationWithCompletionBlock:^{
                     
                     BOOL isCancelled = [transitionContext transitionWasCancelled];
                     if (!isCancelled)
                     {
-                        [_transformView removeFromSuperview];
-                        [_shadowView removeFromSuperview];
-                        _transformView = nil;
+                        [_WeakSelf.transformView removeFromSuperview];
+                        [_WeakSelf.shadowView removeFromSuperview];
+                        _WeakSelf.transformView = nil;
                     }
-                    _presentAnimation = !isCancelled;
+                    _WeakSelf.presentAnimation = !isCancelled;
                     [transitionContext completeTransition:!isCancelled];
                 }];
             }];
@@ -325,35 +322,29 @@ static CGFloat          const MRInfinityFactor = 0.01;
     [CATransaction setValue:[NSNumber numberWithFloat:0.0] forKey:kCATransactionAnimationDuration];
     [CATransaction setCompletionBlock:block];
     
-    if (_presentAnimation)
-    {
-        _transformView.upperFrontLayer.transform = CATransform3DIdentity;
-        _transformView.upperBackLayer.transform = CATransform3DMakeRotation(-M_PI_2, 1.0, 0.0, 0.0);
-        _transformView.upperBackLayer.shadowCover.opacity = 0.5;
-        _transformView.lowerLayer.transform = CATransform3DIdentity;
-        _transformView.lowerLayer.shadowCover.opacity = 1.0;
+    if (self.presentAnimation) {
+        self.transformView.upperFrontLayer.transform = CATransform3DIdentity;
+        self.transformView.upperBackLayer.transform = CATransform3DMakeRotation(-M_PI_2, 1.0, 0.0, 0.0);
+        self.transformView.upperBackLayer.shadowCover.opacity = 0.5;
+        self.transformView.lowerLayer.transform = CATransform3DIdentity;
+        self.transformView.lowerLayer.shadowCover.opacity = 1.0;
         
-        CATransform3D transform = _transformView.layer.transform;
-        if (_style == MRFlipTransitionPresentingFromBottom)
-        {
+        CATransform3D transform = self.transformView.layer.transform;
+        if (_style == MRFlipTransitionPresentingFromBottom) {
             transform = CATransform3DScale(transform, MRScaleFactor, MRScaleFactor, 1.0);
             transform = CATransform3DTranslate(transform, 0, CGRectGetHeight([UIScreen mainScreen].bounds), 0);
-        }
-        else
-        {
+        } else {
             transform = CATransform3DScale(transform, MRInfinityFactor * MRScaleFactor, MRInfinityFactor * MRScaleFactor, 1.0);
             transform = CATransform3DTranslate(transform, 0, MRInfinityMerginY, 0);
         }
-        _transformView.layer.transform = transform;
-    }
-    else
-    {
-        _transformView.upperFrontLayer.transform = CATransform3DMakeRotation(M_PI_2, 1.0, 0.0, 0.0);
-        _transformView.upperBackLayer.transform = CATransform3DIdentity;
-        _transformView.upperBackLayer.shadowCover.opacity = 0.0;
-        _transformView.lowerLayer.transform = CATransform3DIdentity;
-        _transformView.lowerLayer.shadowCover.opacity = 0.0;
-        _transformView.layer.transform = CATransform3DIdentity;
+        self.transformView.layer.transform = transform;
+    } else {
+        self.transformView.upperFrontLayer.transform = CATransform3DMakeRotation(M_PI_2, 1.0, 0.0, 0.0);
+        self.transformView.upperBackLayer.transform = CATransform3DIdentity;
+        self.transformView.upperBackLayer.shadowCover.opacity = 0.0;
+        self.transformView.lowerLayer.transform = CATransform3DIdentity;
+        self.transformView.lowerLayer.shadowCover.opacity = 0.0;
+        self.transformView.layer.transform = CATransform3DIdentity;
     }
     
     [CATransaction commit];
@@ -369,23 +360,20 @@ static CGFloat          const MRInfinityFactor = 0.01;
     
     BOOL fromBottom = _style == MRFlipTransitionPresentingFromBottom;
     
-    CATransform3D transform = _transformView.layer.transform;
-    if (fromBottom)
-    {
-        transform = CATransform3DTranslate(transform, 0, (CGRectGetHeight([UIScreen mainScreen].bounds) + MREaseInExtraDistance) * (_presentAnimation ? -1 : 1) , 0);
+    CATransform3D transform = self.transformView.layer.transform;
+    if (fromBottom) {
+        transform = CATransform3DTranslate(transform, 0, (CGRectGetHeight([UIScreen mainScreen].bounds) + MREaseInExtraDistance) * (self.presentAnimation ? -1 : 1) , 0);
         
         CABasicAnimation *easeInAnimation = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
-        easeInAnimation.fromValue = _presentAnimation ? @(CGRectGetHeight([UIScreen mainScreen].bounds)) : @(-MREaseInExtraDistance);
-        easeInAnimation.toValue = _presentAnimation ? @(-MREaseInExtraDistance) : @(CGRectGetHeight([UIScreen mainScreen].bounds));
+        easeInAnimation.fromValue = self.presentAnimation ? @(CGRectGetHeight([UIScreen mainScreen].bounds)) : @(-MREaseInExtraDistance);
+        easeInAnimation.toValue = self.presentAnimation ? @(-MREaseInExtraDistance) : @(CGRectGetHeight([UIScreen mainScreen].bounds));
         easeInAnimation.fillMode = kCAFillModeForwards;
         easeInAnimation.removedOnCompletion = NO;
-        [_transformView.layer addAnimation:easeInAnimation forKey:nil];
-        _transformView.layer.transform = transform;
-    }
-    else
-    {
-        CGFloat factor = _presentAnimation ? 1 / MRInfinityFactor : MRInfinityFactor;
-        CGFloat distance = _presentAnimation ? - MREaseInExtraDistance - MRInfinityMerginY * MRInfinityFactor :  (MREaseInExtraDistance + MRInfinityMerginY) * (1 / MRInfinityFactor);
+        [self.transformView.layer addAnimation:easeInAnimation forKey:nil];
+        self.transformView.layer.transform = transform;
+    } else {
+        CGFloat factor = self.presentAnimation ? 1 / MRInfinityFactor : MRInfinityFactor;
+        CGFloat distance = self.presentAnimation ? - MREaseInExtraDistance - MRInfinityMerginY * MRInfinityFactor :  (MREaseInExtraDistance + MRInfinityMerginY) * (1 / MRInfinityFactor);
         CATransform3D presentTransform = CATransform3DScale(transform, factor, factor, 1.0);
         presentTransform = CATransform3DTranslate(presentTransform, 0, distance, 0);
         
@@ -394,17 +382,17 @@ static CGFloat          const MRInfinityFactor = 0.01;
         animation.toValue = [NSValue valueWithCATransform3D:presentTransform];
         animation.fillMode = kCAFillModeForwards;
         animation.removedOnCompletion = NO;
-        [_transformView.layer addAnimation:animation forKey:nil];
-        _transformView.layer.transform = presentTransform;
+        [self.transformView.layer addAnimation:animation forKey:nil];
+        self.transformView.layer.transform = presentTransform;
     }
     
     CABasicAnimation *shadowAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-    shadowAnimation.fromValue = _presentAnimation ? @0.0 : @0.4;
-    shadowAnimation.toValue = _presentAnimation ? @0.4 : @0.0;
+    shadowAnimation.fromValue = self.presentAnimation ? @0.0 : @0.4;
+    shadowAnimation.toValue = self.presentAnimation ? @0.4 : @0.0;
     shadowAnimation.removedOnCompletion = NO;
     shadowAnimation.fillMode = kCAFillModeForwards;
-    [_shadowView.layer addAnimation:shadowAnimation forKey:nil];
-    _shadowView.layer.opacity = _presentAnimation ? 0.4 : 0.0;
+    [self.shadowView.layer addAnimation:shadowAnimation forKey:nil];
+    self.shadowView.layer.opacity = self.presentAnimation ? 0.4 : 0.0;
     
     [CATransaction commit];
 }
@@ -413,32 +401,32 @@ static CGFloat          const MRInfinityFactor = 0.01;
 {
     [CATransaction begin];
     [CATransaction setValue:[NSNumber numberWithFloat:MRFlipLayerDuration / 2.0] forKey:kCATransactionAnimationDuration];
-	[CATransaction setValue:[CAMediaTimingFunction functionWithName:_presentAnimation ? kCAMediaTimingFunctionEaseIn : kCAMediaTimingFunctionEaseOut] forKey:kCATransactionAnimationTimingFunction];
+	[CATransaction setValue:[CAMediaTimingFunction functionWithName:self.presentAnimation ? kCAMediaTimingFunctionEaseIn : kCAMediaTimingFunctionEaseOut] forKey:kCATransactionAnimationTimingFunction];
     [CATransaction setCompletionBlock:block];
     
     CABasicAnimation *rotateAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.x"];
-    rotateAnimation.fromValue = _presentAnimation ? @0 : @(M_PI_2);
-    rotateAnimation.toValue = _presentAnimation ? @(M_PI_2) : @0;
+    rotateAnimation.fromValue = self.presentAnimation ? @0 : @(M_PI_2);
+    rotateAnimation.toValue = self.presentAnimation ? @(M_PI_2) : @0;
     rotateAnimation.fillMode = kCAFillModeForwards;
     rotateAnimation.removedOnCompletion = NO;
-    [_transformView.upperFrontLayer addAnimation:rotateAnimation forKey:nil];
-    _transformView.upperFrontLayer.transform = CATransform3DRotate(_transformView.upperFrontLayer.transform, M_PI_2 * (_presentAnimation ? 1 : -1), 1.0, 0, 0);
+    [self.transformView.upperFrontLayer addAnimation:rotateAnimation forKey:nil];
+    self.transformView.upperFrontLayer.transform = CATransform3DRotate(self.transformView.upperFrontLayer.transform, M_PI_2 * (self.presentAnimation ? 1 : -1), 1.0, 0, 0);
     
     CABasicAnimation *opacityLowerAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-    opacityLowerAnimation.fromValue = _presentAnimation ? @1 : @0.5;
-    opacityLowerAnimation.toValue = _presentAnimation ? @0.5 : @1;
+    opacityLowerAnimation.fromValue = self.presentAnimation ? @1 : @0.5;
+    opacityLowerAnimation.toValue = self.presentAnimation ? @0.5 : @1;
     opacityLowerAnimation.fillMode = kCAFillModeForwards;
     opacityLowerAnimation.removedOnCompletion = NO;
-    [_transformView.lowerLayer.shadowCover addAnimation:opacityLowerAnimation forKey:nil];
-    _transformView.lowerLayer.shadowCover.opacity = _presentAnimation ? 0.5 : 1.0;
+    [self.transformView.lowerLayer.shadowCover addAnimation:opacityLowerAnimation forKey:nil];
+    self.transformView.lowerLayer.shadowCover.opacity = self.presentAnimation ? 0.5 : 1.0;
     
     CABasicAnimation *shadowAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-    shadowAnimation.fromValue = _presentAnimation ? @0.4 : @0.7;
-    shadowAnimation.toValue = _presentAnimation ? @0.7 : @0.4;
+    shadowAnimation.fromValue = self.presentAnimation ? @0.4 : @0.7;
+    shadowAnimation.toValue = self.presentAnimation ? @0.7 : @0.4;
     shadowAnimation.removedOnCompletion = NO;
     shadowAnimation.fillMode = kCAFillModeForwards;
-    [_shadowView.layer addAnimation:shadowAnimation forKey:nil];
-    _shadowView.layer.opacity = _presentAnimation ? 0.7 : 0.4;
+    [self.shadowView.layer addAnimation:shadowAnimation forKey:nil];
+    self.shadowView.layer.opacity = self.presentAnimation ? 0.7 : 0.4;
     
     [CATransaction commit];
 }
@@ -447,53 +435,51 @@ static CGFloat          const MRInfinityFactor = 0.01;
 {
     [CATransaction begin];
     [CATransaction setValue:[NSNumber numberWithFloat:MRFlipLayerDuration / 2.0] forKey:kCATransactionAnimationDuration];
-	[CATransaction setValue:[CAMediaTimingFunction functionWithName:_presentAnimation ? kCAMediaTimingFunctionEaseOut : kCAMediaTimingFunctionEaseIn] forKey:kCATransactionAnimationTimingFunction];
+	[CATransaction setValue:[CAMediaTimingFunction functionWithName:self.presentAnimation ? kCAMediaTimingFunctionEaseOut : kCAMediaTimingFunctionEaseIn] forKey:kCATransactionAnimationTimingFunction];
     [CATransaction setCompletionBlock:block];
     
-    CATransform3D transform = _transformView.layer.transform;
-    if (_presentAnimation)
-    {
+    CATransform3D transform = self.transformView.layer.transform;
+    if (self.presentAnimation) {
         transform = CATransform3DTranslate(transform, 0, MREaseInExtraDistance, 0);
         transform = CATransform3DScale(transform, 1 / MRScaleFactor, 1 / MRScaleFactor, 1.0);
-    }
-    else
-    {
+    } else {
         transform = CATransform3DTranslate(transform, 0, - MREaseInExtraDistance, 0);
         transform = CATransform3DScale(transform, MRScaleFactor, MRScaleFactor, 1.0);
     }
+    
     CABasicAnimation *transformLayerAnimation = [CABasicAnimation animationWithKeyPath:@"transform"];
-    transformLayerAnimation.fromValue = [NSValue valueWithCATransform3D:_transformView.layer.transform];
+    transformLayerAnimation.fromValue = [NSValue valueWithCATransform3D:self.transformView.layer.transform];
     transformLayerAnimation.toValue = [NSValue valueWithCATransform3D:transform];
     transformLayerAnimation.fillMode = kCAFillModeForwards;
     transformLayerAnimation.removedOnCompletion = NO;
-    [_transformView.layer addAnimation:transformLayerAnimation forKey:nil];
-    _transformView.layer.transform = transform;
+    [self.transformView.layer addAnimation:transformLayerAnimation forKey:nil];
+    self.transformView.layer.transform = transform;
     
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.x"];
-    animation.fromValue = _presentAnimation ? @(-M_PI_2) : @0;
-    animation.toValue = _presentAnimation ? @0 : @(-M_PI_2);
+    animation.fromValue = self.presentAnimation ? @(-M_PI_2) : @0;
+    animation.toValue = self.presentAnimation ? @0 : @(-M_PI_2);
     animation.fillMode = kCAFillModeForwards;
     animation.removedOnCompletion = NO;
-    [_transformView.upperBackLayer addAnimation:animation forKey:nil];
-    _transformView.upperBackLayer.transform = CATransform3DRotate(_transformView.upperBackLayer.transform, M_PI_2 * (_presentAnimation ? 1 : -1), 1.0, 0, 0);
+    [self.transformView.upperBackLayer addAnimation:animation forKey:nil];
+    self.transformView.upperBackLayer.transform = CATransform3DRotate(self.transformView.upperBackLayer.transform, M_PI_2 * (self.presentAnimation ? 1 : -1), 1.0, 0, 0);
     
     CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-    opacityAnimation.fromValue = _presentAnimation ? @0.5 : @0.0;
-    opacityAnimation.toValue = _presentAnimation ? @0.0 : @0.5;
+    opacityAnimation.fromValue = self.presentAnimation ? @0.5 : @0.0;
+    opacityAnimation.toValue = self.presentAnimation ? @0.0 : @0.5;
     opacityAnimation.fillMode = kCAFillModeForwards;
     opacityAnimation.removedOnCompletion = NO;
-    [_transformView.upperBackLayer.shadowCover addAnimation:opacityAnimation forKey:nil];
-    [_transformView.lowerLayer.shadowCover addAnimation:opacityAnimation forKey:nil];
-    _transformView.upperBackLayer.shadowCover.opacity = _presentAnimation ? 0.0 : 0.5;
-    _transformView.lowerLayer.shadowCover.opacity = _presentAnimation ? 0.0 : 0.5;
+    [self.transformView.upperBackLayer.shadowCover addAnimation:opacityAnimation forKey:nil];
+    [self.transformView.lowerLayer.shadowCover addAnimation:opacityAnimation forKey:nil];
+    self.transformView.upperBackLayer.shadowCover.opacity = self.presentAnimation ? 0.0 : 0.5;
+    self.transformView.lowerLayer.shadowCover.opacity = self.presentAnimation ? 0.0 : 0.5;
     
     CABasicAnimation *shadowAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-    shadowAnimation.fromValue = _presentAnimation ? @0.7 : @1.0;
-    shadowAnimation.toValue = _presentAnimation ? @1.0 : @0.7;
+    shadowAnimation.fromValue = self.presentAnimation ? @0.7 : @1.0;
+    shadowAnimation.toValue = self.presentAnimation ? @1.0 : @0.7;
     shadowAnimation.removedOnCompletion = NO;
     shadowAnimation.fillMode = kCAFillModeForwards;
-    [_shadowView.layer addAnimation:shadowAnimation forKey:nil];
-    _shadowView.layer.opacity = _presentAnimation ? 1.0 : 0.7;
+    [self.shadowView.layer addAnimation:shadowAnimation forKey:nil];
+    self.shadowView.layer.opacity = self.presentAnimation ? 1.0 : 0.7;
     
     [CATransaction commit];
 }

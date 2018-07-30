@@ -15,7 +15,7 @@
 @property (strong, nonatomic) UIView *contentView;
 @property (assign, nonatomic) BOOL extended;
 
-@property (copy, nonatomic) BOOL(^isExtendedBlock)();
+@property (copy, nonatomic) BOOL(^isExtendedBlock)(void);
 @property (copy, nonatomic) void(^extendedCompletedBlock)(BOOL extended);
 
 @end

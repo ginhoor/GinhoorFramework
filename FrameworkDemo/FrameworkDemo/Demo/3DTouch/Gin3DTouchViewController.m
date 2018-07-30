@@ -32,9 +32,9 @@
     //check if the device supports 3DTouch
     if(self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable){
         [self registerForPreviewingWithDelegate:self sourceView:self.view];
-    }else{
+    } else {
         
-        [[[UIAlertView alloc] initWithTitle:@"Error" message:@"3DTouch not available" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+//        [[[UIAlertView alloc] initWithTitle:@"Error" message:@"3DTouch not available" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
     }
 
     

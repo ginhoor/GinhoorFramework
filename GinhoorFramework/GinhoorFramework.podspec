@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "GinhoorFramework"
-    s.version      = "2.2.2"
+    s.version      = "2.2.4"
     s.summary      = "This is one of my personal library."
     s.homepage     = "https://github.com/ginhoor/GinhoorFramework"
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
     # 表示需要保留的文件路径
     # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
-    s.frameworks = "Foundation", "CoreGraphics", "UIKit", "AddressBook", "AddressBookUI", "CoreLocation"
+    s.frameworks = "Foundation", "CoreGraphics", "UIKit"
 
     # s.library   = "libxml2"
     # s.libraries = "iconv", "xml2"
@@ -35,7 +35,6 @@ Pod::Spec.new do |s|
     s.subspec 'Category' do |ss|
         ss.dependency 'GinhoorFramework/GinSysInfo'
         ss.dependency 'BlocksKit', '~> 2.2.5'
-#        ss.dependency 'MJRefresh', '~> 3.1.12'
 
         ss.source_files = 'GinhoorFramework/Category/**/*.{h,m}',
                          'GinhoorFramework/Category/**/**/*.{h,m}'
@@ -52,15 +51,5 @@ Pod::Spec.new do |s|
 
         ss.source_files = 'GinhoorFramework/Tools/**/*.{h,m}'
     end
-
-
-#   s.subspec 'CustomView' do |ss|
-#    ss.dependency 'GinhoorFramework/GinSysInfo'
-#    ss.dependency 'GinhoorFramework/Category'
-#   ss.source_files =   'GinhoorFramework/CustomView/**/*.{h,m}',
-#
-#   ss.resources =  "GinhoorFramework/CustomView/**/**/*.png",
-#
-#   end
 
 end

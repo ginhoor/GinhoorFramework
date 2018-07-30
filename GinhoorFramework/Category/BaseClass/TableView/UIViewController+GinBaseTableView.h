@@ -15,7 +15,7 @@
 
 @interface UIViewController (GinBaseTableView)
 
-@property (strong, nonatomic) NSMutableArray *cellDataList;
+@property (strong, nonatomic) NSArray *cellDataList;
 @property (strong, nonatomic) UITableView *tableView;
 /**
  *   default value is 1.(request use setup_GinBaseTableView)

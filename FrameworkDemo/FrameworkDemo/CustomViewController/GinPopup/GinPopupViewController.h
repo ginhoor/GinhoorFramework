@@ -11,11 +11,11 @@
 @interface GinPopupViewController : UIViewController
 
 @property (copy, nonatomic) void(^backgroundTapBlock)(id sender);
-@property (copy, nonatomic) void(^modelDidHideBlock)();
+@property (copy, nonatomic) void(^modelDidHideBlock)(void);
 
 - (void)setPopupContentView:(UIView*)contentView;
 
 - (void)showAnimated:(BOOL)animated;
-- (void)hideAnimated:(BOOL)animated completion:(void(^)())completion;
+- (void)hideAnimated:(BOOL)animated completion:(void(^)(void))completion;
 
 @end

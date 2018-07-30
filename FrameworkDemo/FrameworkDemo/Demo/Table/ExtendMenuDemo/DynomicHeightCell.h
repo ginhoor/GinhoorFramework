@@ -11,6 +11,6 @@
 @interface DynomicHeightCell : BaseTableViewCell <GinBaseTableCell>
 
 
-@property (nonatomic, copy) void(^btnClickBlock)();
+@property (nonatomic, copy) void(^btnClickBlock)(void);
 
 @end

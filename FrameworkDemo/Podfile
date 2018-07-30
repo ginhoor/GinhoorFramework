@@ -7,7 +7,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'FrameworkDemo' do
     #pod 'GinhoorFramework', :podspec => '../GinhoorFramework.podspec'  #指定podspec文件
-
+    inhibit_all_warnings!
+    
 #    pod 'AFNetworking', '~> 2.6.0'
     pod 'AFNetworking', '~> 3.1.0'
     pod 'Masonry', '~> 1.0.2'
@@ -19,7 +20,6 @@ target 'FrameworkDemo' do
     pod 'ReactiveCocoa', '~> 2.5'
 
     #pod 'libextobjc', '~> 0.4.1'
-    pod 'CocoaLumberjack', '~> 3.0.0'
     pod 'UMengAnalyticsSDK', '~> 3.6.5'
     
     pod 'BlocksKit', '~> 2.2.5'
@@ -29,7 +29,6 @@ target 'FrameworkDemo' do
     pod 'SDWebImage', '~> 3.8.2'
     pod 'DateTools', '~> 1.5.0'
     pod 'DZNEmptyDataSet', '~> 1.8.1'
-    pod 'Baidu-Maps-iOS-SDK', '~> 3.0.0'
     
     pod 'Aspects','~> 1.4.1'
     
@@ -37,7 +36,6 @@ target 'FrameworkDemo' do
 end
 
 target 'FrameworkDemoTests' do
-    pod 'Kiwi', '~> 2.4.0'
 end
 
 
