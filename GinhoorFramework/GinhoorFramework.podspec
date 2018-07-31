@@ -44,12 +44,4 @@ Pod::Spec.new do |s|
         ss.source_files = 'GinhoorFramework/Debug/*.{h,m}'
     end
 
-    s.subspec 'Tools' do |ss|
-        ss.dependency 'BlocksKit', '~> 2.2.5'
-        ss.dependency 'GinhoorFramework/GinSysInfo'
-        ss.dependency 'GinhoorFramework/Category'
-
-        ss.source_files = 'GinhoorFramework/Tools/**/*.{h,m}'
-    end
-
 end

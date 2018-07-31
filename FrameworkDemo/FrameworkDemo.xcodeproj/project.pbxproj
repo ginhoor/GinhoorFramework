@@ -1036,7 +1036,6 @@
 				00F7FC6A1AEDEB840080AFC7 /* Debug */,
 				006A93231ADE09090093BEBE /* Category */,
 				006A93A51ADE09090093BEBE /* GinSysInfo */,
-				00F4C9A31AE65B4F00B3F485 /* Tools */,
 			);
 			name = GinhoorFramework;
 			path = ../GinhoorFramework;
@@ -2064,13 +2063,6 @@
 				00E79C8E1DEFBBFF00969571 /* PullDownMenuVCAction.m */,
 			);
 			path = Actions;
-			sourceTree = "<group>";
-		};
-		00F4C9A31AE65B4F00B3F485 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tools;
 			sourceTree = "<group>";
 		};
 		00F7FC631AEDDA6B0080AFC7 /* NSObject */ = {
