@@ -1,15 +1,15 @@
 Pod::Spec.new do |s|
     s.name         = "GinhoorFramework"
-    s.version      = "2.2.4"
+    s.version      = "2.2.5"
     s.summary      = "This is one of my personal library."
-    s.homepage     = "https://github.com/ginhoor/GinhoorFramework"
+    s.homepage     = "https://gitee.com/ginhoor/GinhoorSpecs.git"
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author       = { "JunhuaShao" => "ginhoor@gmail.com" }
 
     s.requires_arc = true
     s.platform     = :ios, "10.0"
 
-    s.source       = { :git => "https://github.com/ginhoor/GinhoorFramework.git", :tag => s.version.to_s }
+    s.source       = { :git => "https://gitee.com/ginhoor/GinhoorFramework.git", :tag => s.version.to_s }
 
     s.source_files  = "GinhoorFramework/GinhoorFramework.h"
     s.public_header_files = 'GinhoorFramework/GinhoorFramework.h'
