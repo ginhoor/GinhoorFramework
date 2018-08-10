@@ -116,20 +116,20 @@
     return YES;
 }
 
-- (void)emptyDataSetDidTapView:(UIScrollView *)scrollView
-{
-    NSLog(@"%s",__FUNCTION__);
-}
-
-- (void)emptyDataSetDidTapButton:(UIScrollView *)scrollView
-{
-    UISearchBar *searchBar = self.searchDisplayController.searchBar;
-    
-    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://itunes.com/apps/%@", searchBar.text]];
-    
-    if ([[UIApplication sharedApplication] canOpenURL:URL]) {
-        [[UIApplication sharedApplication] openURL:URL];
-    }
-}
+//- (void)emptyDataSetDidTapView:(UIScrollView *)scrollView
+//{
+//    NSLog(@"%s",__FUNCTION__);
+//}
+//
+//- (void)emptyDataSetDidTapButton:(UIScrollView *)scrollView
+//{
+//    UISearchBar *searchBar = self.searchDisplayController.searchBar;
+//    
+//    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://itunes.com/apps/%@", searchBar.text]];
+//    
+//    if ([[UIApplication sharedApplication] canOpenURL:URL]) {
+//        [[UIApplication sharedApplication] openURL:URL];
+//    }
+//}
 
 @end

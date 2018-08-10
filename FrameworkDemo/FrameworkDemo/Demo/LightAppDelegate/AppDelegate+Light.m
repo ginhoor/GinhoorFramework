@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate+Light.h"
-#import <CocoaLumberjack.h>
+
 #import <MobClick.h>
 
 

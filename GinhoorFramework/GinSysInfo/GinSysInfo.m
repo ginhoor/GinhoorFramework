@@ -50,16 +50,6 @@
     return bundleSeedID;
 }
 
-+ (BOOL)iOS8
-{
-    return [self iOSVersion:8.0];
-}
-
-+ (BOOL)iOS7
-{
-    return [self iOSVersion:7.0];
-}
-
 + (BOOL)iOSVersion:(CGFloat)version
 {
     return [self iOSSystemVersion].floatValue >= version && [self iOSSystemVersion].floatValue < version+1;
@@ -71,7 +61,6 @@
 }
 
 + (BOOL)isJailbrokenUser
-
 {
     /* Cydia.app */
     NSString *cydiaPath = @"/Applications/Cydia.app";
@@ -100,24 +89,6 @@
     } else {
         return YES;
     }
-}
-
-- (BOOL)checkLocationEnable
-{
-    BOOL serviceEnabled = [CLLocationManager locationServicesEnabled];
-    CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
-    
-    if (serviceEnabled &&
-        (status == kCLAuthorizationStatusAuthorizedWhenInUse ||
-         status == kCLAuthorizationStatusAuthorizedAlways)) {
-            //定位功能可用
-            return YES;
-    } else if (status == kCLAuthorizationStatusDenied ||
-               status == kCLAuthorizationStatusNotDetermined) {
-        //定位不能用
-        return NO;
-    }
-    return NO;
 }
 
 @end

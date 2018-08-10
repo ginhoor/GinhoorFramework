@@ -13,16 +13,11 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #import <UIKit/UIKit.h>
-#import <CocoaLumberjack/CocoaLumberjack.h>
+
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused-variable"
 
-#ifdef DEBUG
-static const int ddLogLevel = DDLogLevelDebug;
-#else
-static const int ddLogLevel = DDLogLevelError;
-#endif
 
 #pragma clang diagnostic pop
 

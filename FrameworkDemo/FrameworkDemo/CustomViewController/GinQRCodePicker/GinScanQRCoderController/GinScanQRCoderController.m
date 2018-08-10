@@ -24,7 +24,7 @@
 @implementation GinScanQRCoderController
 
 
-+ (void)startScanQRCorder:(UIViewController *)controller receivedBlock:(void(^)(NSString * resultString))resultDidReceivedBlock dismissBlock:(void(^)())dismissBlock;
++ (void)startScanQRCorder:(UIViewController *)controller receivedBlock:(void(^)(NSString * resultString))resultDidReceivedBlock dismissBlock:(void(^)(void))dismissBlock;
 {
     GinScanQRCoderController *picker = [[GinScanQRCoderController alloc] init];
     

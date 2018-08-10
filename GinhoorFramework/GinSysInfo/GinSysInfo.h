@@ -21,11 +21,7 @@
 + (BOOL)isJailbrokenUser;
 + (BOOL)isPiratedUser;
 
-+ (BOOL)iOS7;
-+ (BOOL)iOS8;
 + (BOOL)iOSVersion:(CGFloat)version;
 + (BOOL)laterThanVersion:(CGFloat)version;
-+ (BOOL)checkLocationEnable;
-
 
 @end

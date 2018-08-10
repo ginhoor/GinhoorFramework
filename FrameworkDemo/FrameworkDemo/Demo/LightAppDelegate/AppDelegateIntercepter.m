@@ -9,7 +9,7 @@
 #import "AppDelegateIntercepter.h"
 #import "AppDelegate.h"
 #import <Aspects.h>
-#import <CocoaLumberjack.h>
+
 #import <MobClick.h>
 
 @implementation AppDelegateIntercepter
