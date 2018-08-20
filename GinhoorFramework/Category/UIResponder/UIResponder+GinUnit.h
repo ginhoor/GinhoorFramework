@@ -13,7 +13,7 @@
 @interface UIResponder (GinUnit)
 
 - (UIViewController *)recentlyController;
-- (UIViewController *)controlerByClass:(Class)mClass;
+- (id)controlerByClass:(Class)mClass;
 - (UINavigationController *)recentlyNavigationContoller;
 - (UIResponder *)findObjectInResponderByclass:(Class)className;
 

@@ -12,30 +12,17 @@
 
 - (UIViewController *)recentlyController
 {
-    if (!self.nextResponder) {
-        return nil;
-    }
-    UIViewController *controller = (UIViewController *)[self objectInResponder:self.nextResponder class:[UIViewController class]];
-    return controller;
+    return (UIViewController *)[self findObjectInResponderByclass:[UIViewController class]];
 }
 
-- (UIViewController *)controlerByClass:(Class)mClass
+- (id)controlerByClass:(Class)mClass
 {
-    if (!self.nextResponder) {
-        return nil;
-    }
-    UIViewController *controller = (UIViewController *)[self objectInResponder:self.nextResponder class:mClass];
-    return controller;
+    return [self findObjectInResponderByclass:mClass];
 }
 
 - (UINavigationController *)recentlyNavigationContoller
 {
-    if (!self.nextResponder) {
-        return nil;
-    }
-    UINavigationController *controller = (UINavigationController *)[self objectInResponder:self.nextResponder class:[UINavigationController class]];
-    
-    return controller;
+    return (UINavigationController *)[self findObjectInResponderByclass:[UINavigationController class]];
 }
 
 - (UIResponder *)findObjectInResponderByclass:(Class)className
