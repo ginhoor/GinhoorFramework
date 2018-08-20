@@ -28,7 +28,6 @@
     return controller;
 }
 
-
 - (UINavigationController *)recentlyNavigationContoller
 {
     if (!self.nextResponder) {
@@ -39,12 +38,12 @@
     return controller;
 }
 
-- (UIResponder *)objectInResponder:(UIResponder *)responder class:(Class)className
+- (UIResponder *)findObjectInResponderByclass:(Class)className
 {
-    if ([responder isKindOfClass:className]) {
-        return responder;
-    } else if (responder.nextResponder) {
-        return [self objectInResponder:responder.nextResponder class:className];
+    if ([self isKindOfClass:className]) {
+        return self;
+    } else if (self.nextResponder) {
+        return [self.nextResponder findObjectInResponderByclass:className];
     } else {
         return nil;
     }
