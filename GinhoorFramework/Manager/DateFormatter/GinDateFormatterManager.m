@@ -46,12 +46,12 @@
 
 + (NSDateFormatter *)formatter
 {
-    return [CEDateFormatterManager sharedInstance].formatter;
+    return [GinDateFormatterManager sharedInstance].formatter;
 }
 
 + (NSCalendar *)calendar
 {
-    return [CEDateFormatterManager sharedInstance].calendar;
+    return [GinDateFormatterManager sharedInstance].calendar;
 }
 
 + (NSString *)getStringOfSecond:(NSUInteger)second
