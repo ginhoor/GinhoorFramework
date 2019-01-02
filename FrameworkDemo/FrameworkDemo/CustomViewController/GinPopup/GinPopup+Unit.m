@@ -19,7 +19,6 @@
     [GinPopup showWithContentView:[self viewWithTitle:title text:text]];
 }
 
-
 + (void)showTitle:(NSString *)title text:(NSString *)text submitButton:(NSString *)buttonTitle onClick:(void(^)(void))onClock
 {
     UIView *view = [self viewWithTitle:title text:text button:buttonTitle];

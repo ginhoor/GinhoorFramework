@@ -24,7 +24,6 @@
     return instance;
 }
 
-
 - (void)showTitle:(NSString *)title content:(NSString *)content submit:(void(^)(void))submitBlock cancel:(void(^)(void)) cancelBlock
 {
     TitleAndButtonAlertView *view = [[TitleAndButtonAlertView alloc] initWithFrame:CGRectMake(0, 0, 400, 250)];

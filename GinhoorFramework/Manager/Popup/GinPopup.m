@@ -11,7 +11,6 @@
 @interface GinPopup()
 
 @property (strong, nonatomic,readwrite) UIWindow *window;
-@property (strong, nonatomic) GinPopupViewController *viewController;
 
 @end
 
@@ -28,12 +27,19 @@
     return share;
 }
 
++ (void)showWithContentViewWithoutBackgroundTapDimsmiss:(UIView *)contentView
+{
+    GinPopup *pop = [GinPopup sharedInstance];
+    [pop showWithContentView:contentView andAnimated:YES];
+    [GinPopup sharedInstance].viewController.backgroundView.userInteractionEnabled = NO;
+}
+
 + (void)showWithContentView:(UIView *)contentView
 {
     GinPopup *pop = [GinPopup sharedInstance];
     [pop showWithContentView:contentView andAnimated:YES];
+    [GinPopup sharedInstance].viewController.backgroundView.userInteractionEnabled = YES;
 }
-
 
 + (void)dismissWhenCompletion:(void(^)(void))block
 {
@@ -45,7 +51,6 @@
     }];
 }
 
-
 - (instancetype)init
 {
     self = [super init];
@@ -55,7 +60,6 @@
     return self;
 }
 
-
 - (void)setup
 {
 }
@@ -63,7 +67,6 @@
 - (void)showWithContentView:(UIView *)contentView andAnimated:(BOOL)animated
 {
     [self.window makeKeyAndVisible];
-    
     [self.viewController setPopupContentView:contentView];
     [self.viewController showAnimated:YES];
 }
@@ -101,7 +104,5 @@
     }
     return _window;
 }
-
-
 
 @end

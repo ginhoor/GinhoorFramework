@@ -8,9 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
 @interface GetLaunchImage : NSObject
-
-
-
 
 @end

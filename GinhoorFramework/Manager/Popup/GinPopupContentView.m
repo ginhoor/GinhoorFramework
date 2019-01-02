@@ -10,8 +10,6 @@
 
 @implementation GinPopupContentView
 
-
-
 - (instancetype)init
 {
     self = [super init];
@@ -23,8 +21,6 @@
 
 - (void)setup
 {
-    ;
 }
-
 
 @end
