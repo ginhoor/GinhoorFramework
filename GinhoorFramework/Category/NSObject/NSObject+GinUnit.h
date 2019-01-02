@@ -10,9 +10,6 @@
 
 @interface NSObject (GinUnit)
 
-
 + (BOOL)isClassExist:(NSString *)className;
-
-
 
 @end

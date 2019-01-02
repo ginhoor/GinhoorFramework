@@ -140,6 +140,7 @@
 		00B0DC211DEE921000701EFD /* Demo3DTouchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC201DEE921000701EFD /* Demo3DTouchManager.m */; };
 		00B0DC251DEE956600701EFD /* Demo4AppDelegateWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC241DEE956600701EFD /* Demo4AppDelegateWidget.m */; };
 		00B961FE1E962A020051F59F /* UIView+GinDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B961FD1E962A020051F59F /* UIView+GinDebug.m */; };
+		00CF0BA021D08EAD009279F3 /* GinDateFormatterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CF0B9F21D08EAD009279F3 /* GinDateFormatterManager.m */; };
 		00D04C141D6A91C400B4C27C /* GinFloatedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04BA61D6A91C400B4C27C /* GinFloatedButton.m */; };
 		00D04C151D6A91C400B4C27C /* GinHorizontalLayoutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04BA91D6A91C400B4C27C /* GinHorizontalLayoutButton.m */; };
 		00D04C161D6A91C400B4C27C /* GinImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04BAC1D6A91C400B4C27C /* GinImageButton.m */; };
@@ -476,6 +477,8 @@
 		00B0DC241DEE956600701EFD /* Demo4AppDelegateWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4AppDelegateWidget.m; sourceTree = "<group>"; };
 		00B961FC1E962A020051F59F /* UIView+GinDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GinDebug.h"; sourceTree = "<group>"; };
 		00B961FD1E962A020051F59F /* UIView+GinDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GinDebug.m"; sourceTree = "<group>"; };
+		00CF0B9E21D08EAD009279F3 /* GinDateFormatterManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GinDateFormatterManager.h; sourceTree = "<group>"; };
+		00CF0B9F21D08EAD009279F3 /* GinDateFormatterManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GinDateFormatterManager.m; sourceTree = "<group>"; };
 		00D04BA51D6A91C400B4C27C /* GinFloatedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinFloatedButton.h; sourceTree = "<group>"; };
 		00D04BA61D6A91C400B4C27C /* GinFloatedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinFloatedButton.m; sourceTree = "<group>"; };
 		00D04BA81D6A91C400B4C27C /* GinHorizontalLayoutButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinHorizontalLayoutButton.h; sourceTree = "<group>"; };
@@ -1101,6 +1104,8 @@
 				006A936A1ADE09090093BEBE /* NSDate+RCUtility.m */,
 				00E5E5551B15FE340095C7A5 /* NSDate+Range.h */,
 				00E5E5561B15FE340095C7A5 /* NSDate+Range.m */,
+				00CF0B9E21D08EAD009279F3 /* GinDateFormatterManager.h */,
+				00CF0B9F21D08EAD009279F3 /* GinDateFormatterManager.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -2358,6 +2363,7 @@
 				00217B6F1EB1BD0800CF41AE /* UIView+GinBaseClass.m in Sources */,
 				00D04C191D6A91C400B4C27C /* GinVerticalLayoutButton.m in Sources */,
 				00A16FF81DEC1D300020EAE4 /* ImageWithTitleCollectionCell.m in Sources */,
+				00CF0BA021D08EAD009279F3 /* GinDateFormatterManager.m in Sources */,
 				00A16FFE1DEC1D300020EAE4 /* MTLModel+BaseData.m in Sources */,
 				00D04C231D6A91C400B4C27C /* GinPullDownMenuCell.m in Sources */,
 				00217B691EB1BD0800CF41AE /* BaseViewModel.m in Sources */,

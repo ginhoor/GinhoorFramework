@@ -15,7 +15,6 @@
     return [string dataUsingEncoding:NSUTF8StringEncoding];
 }
 
-
 - (NSString *)dataToString
 {
     return [[NSString alloc]initWithData:self encoding:NSUTF8StringEncoding];
