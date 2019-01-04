@@ -81,7 +81,7 @@
 
 + (UIImage *)imageByColor:(UIColor *)color
 {
-    return [self imageByColor:color size:CGSizeMake(1, 1)];
+    return [self imageByColor:color imageSize:CGSizeMake(1, 1)];
 }
 
 + (UIImage *)imageByColor:(UIColor *)color imageSize:(CGSize)imageSize
