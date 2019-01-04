@@ -50,7 +50,7 @@
  @param imageSize 图片大小
  @return 图片
  */
-+ (UIImage *)imageByColor:(UIColor *)color size:(CGSize)imageSize;
++ (UIImage *)imageByColor:(UIColor *)color imageSize:(CGSize)imageSize;
 
 /**
  获得灰度图片

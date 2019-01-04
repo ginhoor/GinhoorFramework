@@ -84,7 +84,7 @@
     return [self imageByColor:color size:CGSizeMake(1, 1)];
 }
 
-+ (UIImage *)imageByColor:(UIColor *)color size:(CGSize)imageSize
++ (UIImage *)imageByColor:(UIColor *)color imageSize:(CGSize)imageSize
 {
     UIGraphicsBeginImageContextWithOptions(imageSize, 0, [UIScreen mainScreen].scale);
     [color set];
