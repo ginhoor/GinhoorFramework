@@ -8,6 +8,3 @@
 
 #import "Gin_Macro.h"
 #import "GinSysInfo.h"
-
-
-

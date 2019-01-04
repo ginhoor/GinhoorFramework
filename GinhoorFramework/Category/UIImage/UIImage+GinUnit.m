@@ -36,7 +36,7 @@
 }
 
 
-- (UIImage *)changeColor:(UIColor*)color
+- (UIImage *)changeColor:(UIColor *)color
 {
     UIGraphicsBeginImageContextWithOptions(self.size, YES, [[UIScreen mainScreen] scale]);
     
@@ -54,7 +54,6 @@
     UIGraphicsBeginImageContextWithOptions(contextRect.size, NO, [[UIScreen mainScreen] scale]);
     
     CGContextRef c = UIGraphicsGetCurrentContext();
-    
     // Setup shadow
     // Setup transparency layer and clip to mask
     CGContextBeginTransparencyLayer(c, NULL);
@@ -65,10 +64,9 @@
     CGColorSpaceModel model = CGColorSpaceGetModel(colorSpace);
     const CGFloat* colors = CGColorGetComponents(color.CGColor);
     
-    if(model == kCGColorSpaceModelMonochrome)
-    {
+    if(model == kCGColorSpaceModelMonochrome) {
         CGContextSetRGBFillColor(c, colors[0], colors[0], colors[0], colors[1]);
-    }else{
+    } else {
         CGContextSetRGBFillColor(c, colors[0], colors[1], colors[2], colors[3]);
     }
     contextRect.size.height = -contextRect.size.height;
@@ -80,7 +78,6 @@
     UIGraphicsEndImageContext();
     return img;
 }
-
 
 + (UIImage *)imageByColor:(UIColor *)color
 {
@@ -142,7 +139,6 @@
     return [UIImage imageWithData:UIImageJPEGRepresentation([self scaleToSize:CGSizeMake(size.width, size.height)],maxQuality)];
 }
 
-
 - (UIImage *)scaleImageTo:(CGFloat)scaleSize
 {
     UIGraphicsBeginImageContext(CGSizeMake(self.size.width * scaleSize, self.size.height * scaleSize));
@@ -183,7 +179,7 @@
         dataKBytes = data.length / 1000.0;
         if (lastData == dataKBytes) {
             break;
-        }else{
+        } else {
             lastData = dataKBytes;
         }
     }
@@ -217,12 +213,10 @@
         scaledHeight = height * scaleFactor;
         
         // center the image
-        if (widthFactor > heightFactor)
-        {
+        if (widthFactor > heightFactor) {
             thumbnailPoint.y = (targetHeight - scaledHeight) * 0.5;
         }
-        else if (widthFactor < heightFactor)
-        {
+        else if (widthFactor < heightFactor) {
             thumbnailPoint.x = (targetWidth - scaledWidth) * 0.5;
         }
     }
@@ -237,8 +231,9 @@
     [sourceImage drawInRect:thumbnailRect];
     
     newImage = UIGraphicsGetImageFromCurrentImageContext();
-    if(newImage == nil)
+    if(newImage == nil) {
         NSLog(@"could not scale image");
+    }
     
     //pop the context to get back to the default
     UIGraphicsEndImageContext();
@@ -249,8 +244,7 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
                                  float ovalHeight)
 {
     float fw, fh;
-    if (ovalWidth == 0 || ovalHeight == 0)
-    {
+    if (ovalWidth == 0 || ovalHeight == 0) {
         CGContextAddRect(context, rect);
         return;
     }
@@ -301,7 +295,6 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
 {
     return [UIImage imageWithCGImage:self.CGImage scale:1 orientation:orientation];
 }
-
 
 // 解决保存图片或重绘图片后旋转90度的方法
 - (UIImage *)fixOrientation
@@ -380,7 +373,6 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
     CGImageRelease(cgimg);
     return img;
 }
-
 
 + (UIImage *)imageWithView:(UIView *)view
 {
