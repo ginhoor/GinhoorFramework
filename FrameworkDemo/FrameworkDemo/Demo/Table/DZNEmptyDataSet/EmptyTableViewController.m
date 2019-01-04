@@ -7,11 +7,14 @@
 //
 
 #import "EmptyTableViewController.h"
-#import "UIViewController+GinBaseTableView.h"
 #import "UIScrollView+EmptyDataSet.h"
 #import "UIColor+Hex.h"
 
 @interface EmptyTableViewController () <UITableViewDelegate,UITableViewDataSource,DZNEmptyDataSetSource,DZNEmptyDataSetDelegate>
+
+@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) NSArray *cellDataList;
+
 
 @end
 
@@ -19,21 +22,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    [self.tableView config:^(UITableView *tableView) {
-        tableView.delegate = self;
-        tableView.dataSource = self;
-        tableView.emptyDataSetDelegate = self;
-        tableView.emptyDataSetSource = self;
-        [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-        tableView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
-    }];
+    self.tableView = [[UITableView alloc] init];
+    [self.view addSubview:self.tableView];
     
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    self.tableView.emptyDataSetDelegate = self;
+    self.tableView.emptyDataSetSource = self;
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    self.tableView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
+
     self.cellDataList = @[];
     
     [self.tableView reloadData];
-    
-    [self.view addSubview:self.tableView];
     
 }
 

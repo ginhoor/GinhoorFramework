@@ -10,10 +10,8 @@
 
 @implementation UIView (Layer)
 
-
 - (void)cornerMask:(UIRectCorner)type radii:(CGFloat)radii
 {
-//    UIRectCornerTopLeft | UIRectCornerTopRight
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:type cornerRadii:CGSizeMake(radii, radii)];
     CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
     maskLayer.frame = self.bounds;

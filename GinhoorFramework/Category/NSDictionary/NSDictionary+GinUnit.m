@@ -7,7 +7,16 @@
 //
 
 #import "NSDictionary+GinUnit.h"
+#import "NSArray+GinUnit.h"
 
 @implementation NSDictionary (GinUnit)
+
+- (BOOL)containKey:(NSString *)key
+{
+    if (![self.allKeys containAnyElements]) {
+        return NO;
+    }
+    return [self.allKeys containsObject:key];
+}
 
 @end

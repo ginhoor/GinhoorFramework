@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define RootVCInWindow [UIApplication sharedApplication].delegate.window.rootViewController
+#define currentRootVC [UIApplication sharedApplication].delegate.window.rootViewController
 
 @interface UIResponder (GinUnit)
 
@@ -16,6 +16,5 @@
 - (id)controlerByClass:(Class)mClass;
 - (UINavigationController *)recentlyNavigationContoller;
 - (UIResponder *)findObjectInResponderByclass:(Class)className;
-
 
 @end

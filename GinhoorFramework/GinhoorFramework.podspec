@@ -47,8 +47,4 @@ Pod::Spec.new do |s|
                         'GinhoorFramework/Manager/**/**/*.{h,m}'
     end
 
-    s.subspec 'Debug' do |ss|
-        ss.source_files = 'GinhoorFramework/Debug/*.{h,m}'
-    end
-
 end

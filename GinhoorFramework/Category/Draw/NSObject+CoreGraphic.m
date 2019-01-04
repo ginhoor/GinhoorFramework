@@ -8,12 +8,10 @@
 
 #import "NSObject+CoreGraphic.h"
 
-
 @implementation NSObject (CoreGraphic)
 
 - (UIImage *)maskImage:(CGRect)rect clearRect:(CGRect)clearRect custom:(void (^)(CGRect frame,CGRect clearRect))customBlock
 {
-    
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetRGBFillColor(context, 0,0,0,0.5);

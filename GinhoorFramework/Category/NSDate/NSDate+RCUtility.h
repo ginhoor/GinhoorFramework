@@ -1,9 +1,9 @@
 //
 //  NSDate+RCUtility.h
-//  RemoteController
+//  FrameworkDemo
 //
-//  Created by 吴 辉斌 on 12-11-5.
-//  Copyright (c) 2012年 智屏科技. All rights reserved.
+//  Created by JunhuaShao on 15/5/27.
+//  Copyright (c) 2015年 JunhuaShao. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -85,10 +85,6 @@
  *  @return NSString
  */
 - (NSString *)customDateString:(NSString *)format;
-
-
-// 判断是否是今天 (统一使用Datetools)
-//- (BOOL)isToday;
 
 /**
  *  判断两天是否相等

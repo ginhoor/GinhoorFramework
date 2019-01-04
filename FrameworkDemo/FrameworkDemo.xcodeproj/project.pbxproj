@@ -16,10 +16,6 @@
 		000B529C1ADBCF8100946853 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000B529A1ADBCF8100946853 /* LaunchScreen.xib */; };
 		0018B9851B100883001E52D5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018B9841B100883001E52D5 /* UIColor+Hex.m */; };
 		0018BC6E1B118C7F001E52D5 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018BC6D1B118C7F001E52D5 /* NSString+MD5.m */; };
-		00217B3F1EB1BCB400CF41AE /* UICollectionView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B311EB1BCB400CF41AE /* UICollectionView+GinBaseClass.m */; };
-		00217B401EB1BCB400CF41AE /* UIViewController+GinBaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B331EB1BCB400CF41AE /* UIViewController+GinBaseCollectionView.m */; };
-		00217B411EB1BCB400CF41AE /* UITableView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B361EB1BCB400CF41AE /* UITableView+GinBaseClass.m */; };
-		00217B421EB1BCB400CF41AE /* UIViewController+GinBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B381EB1BCB400CF41AE /* UIViewController+GinBaseTableView.m */; };
 		00217B431EB1BCB400CF41AE /* UIView+GinCGRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B3B1EB1BCB400CF41AE /* UIView+GinCGRect.m */; };
 		00217B441EB1BCB400CF41AE /* UIViewController+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B3E1EB1BCB400CF41AE /* UIViewController+GinBaseClass.m */; };
 		00217B4A1EB1BCDA00CF41AE /* GinCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B471EB1BCDA00CF41AE /* GinCollectionLayout.m */; };
@@ -28,10 +24,6 @@
 		00217B671EB1BD0800CF41AE /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B511EB1BD0800CF41AE /* BaseView.m */; };
 		00217B681EB1BD0800CF41AE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B531EB1BD0800CF41AE /* BaseViewController.m */; };
 		00217B691EB1BD0800CF41AE /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B551EB1BD0800CF41AE /* BaseViewModel.m */; };
-		00217B6A1EB1BD0800CF41AE /* BaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B581EB1BD0800CF41AE /* BaseCollectionCell.m */; };
-		00217B6B1EB1BD0800CF41AE /* BaseCollectionViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B5A1EB1BD0800CF41AE /* BaseCollectionViewContoller.m */; };
-		00217B6D1EB1BD0800CF41AE /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B601EB1BD0800CF41AE /* BaseTableViewCell.m */; };
-		00217B6E1EB1BD0800CF41AE /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B621EB1BD0800CF41AE /* BaseTableViewController.m */; };
 		00217B6F1EB1BD0800CF41AE /* UIView+GinBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 00217B651EB1BD0800CF41AE /* UIView+GinBaseClass.m */; };
 		002F21A71D66F3500021E6F4 /* CustomerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F21A61D66F3500021E6F4 /* CustomerView.m */; };
 		002F315D1B2A72AC00080B37 /* NSAttributedString+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F315C1B2A72AC00080B37 /* NSAttributedString+GinUnit.m */; };
@@ -50,7 +42,6 @@
 		006A93C81ADE09090093BEBE /* UIImage+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A937C1ADE09090093BEBE /* UIImage+GinUnit.m */; };
 		006A93C91ADE09090093BEBE /* UIResponder+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A937F1ADE09090093BEBE /* UIResponder+GinUnit.m */; };
 		006A93CA1ADE09090093BEBE /* UIView+Layer.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93821ADE09090093BEBE /* UIView+Layer.m */; };
-		006A93CB1ADE09090093BEBE /* UIView+view2Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93841ADE09090093BEBE /* UIView+view2Image.m */; };
 		006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93881ADE09090093BEBE /* UIWindow+fullScreenshots.m */; };
 		006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A93A81ADE09090093BEBE /* GinSysInfo.m */; };
 		006A94CF1ADFFF570093BEBE /* NSString+GinJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A94CE1ADFFF570093BEBE /* NSString+GinJSON.m */; };
@@ -109,7 +100,6 @@
 		00B0DC171DEE830F00701EFD /* AppDelegate+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC161DEE830F00701EFD /* AppDelegate+Notification.m */; };
 		00B0DC211DEE921000701EFD /* Demo3DTouchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC201DEE921000701EFD /* Demo3DTouchManager.m */; };
 		00B0DC251DEE956600701EFD /* Demo4AppDelegateWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DC241DEE956600701EFD /* Demo4AppDelegateWidget.m */; };
-		00B961FE1E962A020051F59F /* UIView+GinDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B961FD1E962A020051F59F /* UIView+GinDebug.m */; };
 		00D04C141D6A91C400B4C27C /* GinFloatedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04BA61D6A91C400B4C27C /* GinFloatedButton.m */; };
 		00D04C151D6A91C400B4C27C /* GinHorizontalLayoutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04BA91D6A91C400B4C27C /* GinHorizontalLayoutButton.m */; };
 		00D04C161D6A91C400B4C27C /* GinImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D04BAC1D6A91C400B4C27C /* GinImageButton.m */; };
@@ -161,13 +151,6 @@
 		00E5E5571B15FE340095C7A5 /* NSDate+Range.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E5E5561B15FE340095C7A5 /* NSDate+Range.m */; };
 		00E79C971DEFBBFF00969571 /* EmptyTableVCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79C6B1DEFBBFF00969571 /* EmptyTableVCAction.m */; };
 		00E79C981DEFBBFF00969571 /* EmptyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79C6D1DEFBBFF00969571 /* EmptyTableViewController.m */; };
-		00E79C991DEFBBFF00969571 /* ExtendMenuAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79C711DEFBBFF00969571 /* ExtendMenuAction.m */; };
-		00E79C9A1DEFBBFF00969571 /* DynomicHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79C731DEFBBFF00969571 /* DynomicHeightCell.m */; };
-		00E79C9B1DEFBBFF00969571 /* DynomicHeightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79C751DEFBBFF00969571 /* DynomicHeightController.m */; };
-		00E79C9C1DEFBBFF00969571 /* DynomicHeightController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E79C761DEFBBFF00969571 /* DynomicHeightController.storyboard */; };
-		00E79C9D1DEFBBFF00969571 /* ExtendMenuTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79C781DEFBBFF00969571 /* ExtendMenuTableCell.m */; };
-		00E79C9E1DEFBBFF00969571 /* ExtendMenuTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79C7A1DEFBBFF00969571 /* ExtendMenuTableController.m */; };
-		00E79C9F1DEFBBFF00969571 /* ExtendMenuTableController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E79C7B1DEFBBFF00969571 /* ExtendMenuTableController.storyboard */; };
 		00E79CA01DEFBBFF00969571 /* HZTableVCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79C7F1DEFBBFF00969571 /* HZTableVCAction.m */; };
 		00E79CA11DEFBBFF00969571 /* HZTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79C811DEFBBFF00969571 /* HZTableViewController.m */; };
 		00E79CA21DEFBBFF00969571 /* HZTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E79C821DEFBBFF00969571 /* HZTableViewController.storyboard */; };
@@ -176,7 +159,6 @@
 		00E79CAC1DEFBC1D00969571 /* demo4Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E79CAB1DEFBC1D00969571 /* demo4Exception.m */; };
 		00F7FC661AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7FC651AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m */; };
 		00F7FC691AEDDA860080AFC7 /* NSObject+GinUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7FC681AEDDA860080AFC7 /* NSObject+GinUnit.m */; };
-		00F7FC701AEDEB840080AFC7 /* NSString+GinDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7FC6D1AEDEB840080AFC7 /* NSString+GinDebug.m */; };
 		3A364FF95F2FF0A0B8EFF7AB /* libPods-FrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 942A530AFADF27DF6D6C523D /* libPods-FrameworkDemo.a */; };
 		40294FA0A44F068C32D896EE /* libPods-FrameworkDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC6A53074C7699614DC1B7A /* libPods-FrameworkDemoTests.a */; };
 /* End PBXBuildFile section */
@@ -233,14 +215,6 @@
 		0018B9841B100883001E52D5 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		0018BC6C1B118C7F001E52D5 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		0018BC6D1B118C7F001E52D5 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
-		00217B301EB1BCB400CF41AE /* UICollectionView+GinBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+GinBaseClass.h"; sourceTree = "<group>"; };
-		00217B311EB1BCB400CF41AE /* UICollectionView+GinBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+GinBaseClass.m"; sourceTree = "<group>"; };
-		00217B321EB1BCB400CF41AE /* UIViewController+GinBaseCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GinBaseCollectionView.h"; sourceTree = "<group>"; };
-		00217B331EB1BCB400CF41AE /* UIViewController+GinBaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GinBaseCollectionView.m"; sourceTree = "<group>"; };
-		00217B351EB1BCB400CF41AE /* UITableView+GinBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+GinBaseClass.h"; sourceTree = "<group>"; };
-		00217B361EB1BCB400CF41AE /* UITableView+GinBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+GinBaseClass.m"; sourceTree = "<group>"; };
-		00217B371EB1BCB400CF41AE /* UIViewController+GinBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GinBaseTableView.h"; sourceTree = "<group>"; };
-		00217B381EB1BCB400CF41AE /* UIViewController+GinBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GinBaseTableView.m"; sourceTree = "<group>"; };
 		00217B3A1EB1BCB400CF41AE /* UIView+GinCGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GinCGRect.h"; sourceTree = "<group>"; };
 		00217B3B1EB1BCB400CF41AE /* UIView+GinCGRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GinCGRect.m"; sourceTree = "<group>"; };
 		00217B3D1EB1BCB400CF41AE /* UIViewController+GinBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GinBaseClass.h"; sourceTree = "<group>"; };
@@ -257,14 +231,6 @@
 		00217B531EB1BD0800CF41AE /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		00217B541EB1BD0800CF41AE /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
 		00217B551EB1BD0800CF41AE /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
-		00217B571EB1BD0800CF41AE /* BaseCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionCell.h; sourceTree = "<group>"; };
-		00217B581EB1BD0800CF41AE /* BaseCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionCell.m; sourceTree = "<group>"; };
-		00217B591EB1BD0800CF41AE /* BaseCollectionViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewContoller.h; sourceTree = "<group>"; };
-		00217B5A1EB1BD0800CF41AE /* BaseCollectionViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewContoller.m; sourceTree = "<group>"; };
-		00217B5F1EB1BD0800CF41AE /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
-		00217B601EB1BD0800CF41AE /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
-		00217B611EB1BD0800CF41AE /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
-		00217B621EB1BD0800CF41AE /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		00217B641EB1BD0800CF41AE /* UIView+GinBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GinBaseClass.h"; sourceTree = "<group>"; };
 		00217B651EB1BD0800CF41AE /* UIView+GinBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GinBaseClass.m"; sourceTree = "<group>"; };
 		002F21A51D66F3500021E6F4 /* CustomerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerView.h; sourceTree = "<group>"; };
@@ -302,8 +268,6 @@
 		006A937F1ADE09090093BEBE /* UIResponder+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+GinUnit.m"; sourceTree = "<group>"; };
 		006A93811ADE09090093BEBE /* UIView+Layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layer.h"; sourceTree = "<group>"; };
 		006A93821ADE09090093BEBE /* UIView+Layer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layer.m"; sourceTree = "<group>"; };
-		006A93831ADE09090093BEBE /* UIView+view2Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+view2Image.h"; sourceTree = "<group>"; };
-		006A93841ADE09090093BEBE /* UIView+view2Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+view2Image.m"; sourceTree = "<group>"; };
 		006A93871ADE09090093BEBE /* UIWindow+fullScreenshots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+fullScreenshots.h"; sourceTree = "<group>"; };
 		006A93881ADE09090093BEBE /* UIWindow+fullScreenshots.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+fullScreenshots.m"; sourceTree = "<group>"; };
 		006A93A41ADE09090093BEBE /* GinhoorFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinhoorFramework.h; sourceTree = "<group>"; };
@@ -414,8 +378,6 @@
 		00B0DC201DEE921000701EFD /* Demo3DTouchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo3DTouchManager.m; sourceTree = "<group>"; };
 		00B0DC231DEE956600701EFD /* Demo4AppDelegateWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4AppDelegateWidget.h; sourceTree = "<group>"; };
 		00B0DC241DEE956600701EFD /* Demo4AppDelegateWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4AppDelegateWidget.m; sourceTree = "<group>"; };
-		00B961FC1E962A020051F59F /* UIView+GinDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GinDebug.h"; sourceTree = "<group>"; };
-		00B961FD1E962A020051F59F /* UIView+GinDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GinDebug.m"; sourceTree = "<group>"; };
 		00D04BA51D6A91C400B4C27C /* GinFloatedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinFloatedButton.h; sourceTree = "<group>"; };
 		00D04BA61D6A91C400B4C27C /* GinFloatedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GinFloatedButton.m; sourceTree = "<group>"; };
 		00D04BA81D6A91C400B4C27C /* GinHorizontalLayoutButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GinHorizontalLayoutButton.h; sourceTree = "<group>"; };
@@ -509,18 +471,6 @@
 		00E79C6B1DEFBBFF00969571 /* EmptyTableVCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyTableVCAction.m; sourceTree = "<group>"; };
 		00E79C6C1DEFBBFF00969571 /* EmptyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyTableViewController.h; sourceTree = "<group>"; };
 		00E79C6D1DEFBBFF00969571 /* EmptyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyTableViewController.m; sourceTree = "<group>"; };
-		00E79C701DEFBBFF00969571 /* ExtendMenuAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendMenuAction.h; sourceTree = "<group>"; };
-		00E79C711DEFBBFF00969571 /* ExtendMenuAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendMenuAction.m; sourceTree = "<group>"; };
-		00E79C721DEFBBFF00969571 /* DynomicHeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynomicHeightCell.h; sourceTree = "<group>"; };
-		00E79C731DEFBBFF00969571 /* DynomicHeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynomicHeightCell.m; sourceTree = "<group>"; };
-		00E79C741DEFBBFF00969571 /* DynomicHeightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynomicHeightController.h; sourceTree = "<group>"; };
-		00E79C751DEFBBFF00969571 /* DynomicHeightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynomicHeightController.m; sourceTree = "<group>"; };
-		00E79C761DEFBBFF00969571 /* DynomicHeightController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynomicHeightController.storyboard; sourceTree = "<group>"; };
-		00E79C771DEFBBFF00969571 /* ExtendMenuTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendMenuTableCell.h; sourceTree = "<group>"; };
-		00E79C781DEFBBFF00969571 /* ExtendMenuTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendMenuTableCell.m; sourceTree = "<group>"; };
-		00E79C791DEFBBFF00969571 /* ExtendMenuTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendMenuTableController.h; sourceTree = "<group>"; };
-		00E79C7A1DEFBBFF00969571 /* ExtendMenuTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendMenuTableController.m; sourceTree = "<group>"; };
-		00E79C7B1DEFBBFF00969571 /* ExtendMenuTableController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExtendMenuTableController.storyboard; sourceTree = "<group>"; };
 		00E79C7E1DEFBBFF00969571 /* HZTableVCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZTableVCAction.h; sourceTree = "<group>"; };
 		00E79C7F1DEFBBFF00969571 /* HZTableVCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZTableVCAction.m; sourceTree = "<group>"; };
 		00E79C801DEFBBFF00969571 /* HZTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZTableViewController.h; sourceTree = "<group>"; };
@@ -536,8 +486,6 @@
 		00F7FC651AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GinSetterAndGetter.m"; sourceTree = "<group>"; };
 		00F7FC671AEDDA860080AFC7 /* NSObject+GinUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GinUnit.h"; sourceTree = "<group>"; };
 		00F7FC681AEDDA860080AFC7 /* NSObject+GinUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GinUnit.m"; sourceTree = "<group>"; };
-		00F7FC6C1AEDEB840080AFC7 /* NSString+GinDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GinDebug.h"; sourceTree = "<group>"; };
-		00F7FC6D1AEDEB840080AFC7 /* NSString+GinDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GinDebug.m"; sourceTree = "<group>"; };
 		016255F5CA01AF11EBC81E0E /* Pods-FrameworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo.release.xcconfig"; sourceTree = "<group>"; };
 		16866D4A6DE8FF8F3D16D065 /* Pods-myWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-myWidget/Pods-myWidget.release.xcconfig"; sourceTree = "<group>"; };
 		40C0F0D260BCFF2B33CEC02B /* Pods-FrameworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkDemo/Pods-FrameworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -634,34 +582,10 @@
 		00217B2E1EB1BCB400CF41AE /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				00217B2F1EB1BCB400CF41AE /* CollectionView */,
-				00217B341EB1BCB400CF41AE /* TableView */,
 				00217B391EB1BCB400CF41AE /* View */,
 				00217B3C1EB1BCB400CF41AE /* ViewController */,
 			);
 			path = BaseClass;
-			sourceTree = "<group>";
-		};
-		00217B2F1EB1BCB400CF41AE /* CollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				00217B301EB1BCB400CF41AE /* UICollectionView+GinBaseClass.h */,
-				00217B311EB1BCB400CF41AE /* UICollectionView+GinBaseClass.m */,
-				00217B321EB1BCB400CF41AE /* UIViewController+GinBaseCollectionView.h */,
-				00217B331EB1BCB400CF41AE /* UIViewController+GinBaseCollectionView.m */,
-			);
-			path = CollectionView;
-			sourceTree = "<group>";
-		};
-		00217B341EB1BCB400CF41AE /* TableView */ = {
-			isa = PBXGroup;
-			children = (
-				00217B351EB1BCB400CF41AE /* UITableView+GinBaseClass.h */,
-				00217B361EB1BCB400CF41AE /* UITableView+GinBaseClass.m */,
-				00217B371EB1BCB400CF41AE /* UIViewController+GinBaseTableView.h */,
-				00217B381EB1BCB400CF41AE /* UIViewController+GinBaseTableView.m */,
-			);
-			path = TableView;
 			sourceTree = "<group>";
 		};
 		00217B391EB1BCB400CF41AE /* View */ = {
@@ -703,8 +627,6 @@
 				00217B531EB1BD0800CF41AE /* BaseViewController.m */,
 				00217B541EB1BD0800CF41AE /* BaseViewModel.h */,
 				00217B551EB1BD0800CF41AE /* BaseViewModel.m */,
-				00217B561EB1BD0800CF41AE /* Collection */,
-				00217B5E1EB1BD0800CF41AE /* Table */,
 				00217B631EB1BD0800CF41AE /* View */,
 			);
 			path = BaseClass;
@@ -717,28 +639,6 @@
 				00217B4F1EB1BD0800CF41AE /* BaseData.m */,
 			);
 			path = BaseData;
-			sourceTree = "<group>";
-		};
-		00217B561EB1BD0800CF41AE /* Collection */ = {
-			isa = PBXGroup;
-			children = (
-				00217B571EB1BD0800CF41AE /* BaseCollectionCell.h */,
-				00217B581EB1BD0800CF41AE /* BaseCollectionCell.m */,
-				00217B591EB1BD0800CF41AE /* BaseCollectionViewContoller.h */,
-				00217B5A1EB1BD0800CF41AE /* BaseCollectionViewContoller.m */,
-			);
-			path = Collection;
-			sourceTree = "<group>";
-		};
-		00217B5E1EB1BD0800CF41AE /* Table */ = {
-			isa = PBXGroup;
-			children = (
-				00217B5F1EB1BD0800CF41AE /* BaseTableViewCell.h */,
-				00217B601EB1BD0800CF41AE /* BaseTableViewCell.m */,
-				00217B611EB1BD0800CF41AE /* BaseTableViewController.h */,
-				00217B621EB1BD0800CF41AE /* BaseTableViewController.m */,
-			);
-			path = Table;
 			sourceTree = "<group>";
 		};
 		00217B631EB1BD0800CF41AE /* View */ = {
@@ -786,7 +686,6 @@
 				00ABC3291D6AC3B8003EDAB7 /* GinhoorFramework.podspec */,
 				006A93A41ADE09090093BEBE /* GinhoorFramework.h */,
 				009FE00B21DC99A800CD042D /* Manager */,
-				00F7FC6A1AEDEB840080AFC7 /* Debug */,
 				006A93231ADE09090093BEBE /* Category */,
 				006A93A51ADE09090093BEBE /* GinSysInfo */,
 			);
@@ -922,8 +821,6 @@
 			children = (
 				006A93811ADE09090093BEBE /* UIView+Layer.h */,
 				006A93821ADE09090093BEBE /* UIView+Layer.m */,
-				006A93831ADE09090093BEBE /* UIView+view2Image.h */,
-				006A93841ADE09090093BEBE /* UIView+view2Image.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1751,7 +1648,6 @@
 			isa = PBXGroup;
 			children = (
 				00E79C681DEFBBFF00969571 /* DZNEmptyDataSet */,
-				00E79C6E1DEFBBFF00969571 /* ExtendMenuDemo */,
 				00E79C7C1DEFBBFF00969571 /* HZTableView */,
 				00E79C8B1DEFBBFF00969571 /* PullDownMenu */,
 			);
@@ -1773,33 +1669,6 @@
 			children = (
 				00E79C6A1DEFBBFF00969571 /* EmptyTableVCAction.h */,
 				00E79C6B1DEFBBFF00969571 /* EmptyTableVCAction.m */,
-			);
-			path = Actions;
-			sourceTree = "<group>";
-		};
-		00E79C6E1DEFBBFF00969571 /* ExtendMenuDemo */ = {
-			isa = PBXGroup;
-			children = (
-				00E79C6F1DEFBBFF00969571 /* Actions */,
-				00E79C721DEFBBFF00969571 /* DynomicHeightCell.h */,
-				00E79C731DEFBBFF00969571 /* DynomicHeightCell.m */,
-				00E79C741DEFBBFF00969571 /* DynomicHeightController.h */,
-				00E79C751DEFBBFF00969571 /* DynomicHeightController.m */,
-				00E79C761DEFBBFF00969571 /* DynomicHeightController.storyboard */,
-				00E79C771DEFBBFF00969571 /* ExtendMenuTableCell.h */,
-				00E79C781DEFBBFF00969571 /* ExtendMenuTableCell.m */,
-				00E79C791DEFBBFF00969571 /* ExtendMenuTableController.h */,
-				00E79C7A1DEFBBFF00969571 /* ExtendMenuTableController.m */,
-				00E79C7B1DEFBBFF00969571 /* ExtendMenuTableController.storyboard */,
-			);
-			path = ExtendMenuDemo;
-			sourceTree = "<group>";
-		};
-		00E79C6F1DEFBBFF00969571 /* Actions */ = {
-			isa = PBXGroup;
-			children = (
-				00E79C701DEFBBFF00969571 /* ExtendMenuAction.h */,
-				00E79C711DEFBBFF00969571 /* ExtendMenuAction.m */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -1855,17 +1724,6 @@
 				0037BE371BB1085C007C7DCE /* NSObject+GinJSON.m */,
 			);
 			path = NSObject;
-			sourceTree = "<group>";
-		};
-		00F7FC6A1AEDEB840080AFC7 /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-				00B961FC1E962A020051F59F /* UIView+GinDebug.h */,
-				00B961FD1E962A020051F59F /* UIView+GinDebug.m */,
-				00F7FC6C1AEDEB840080AFC7 /* NSString+GinDebug.h */,
-				00F7FC6D1AEDEB840080AFC7 /* NSString+GinDebug.m */,
-			);
-			path = Debug;
 			sourceTree = "<group>";
 		};
 		2461F8143DE68CC857B37A80 /* Pods */ = {
@@ -2001,11 +1859,9 @@
 				00D04C251D6A91C400B4C27C /* arrow_down_44x44.png in Resources */,
 				000B52991ADBCF8100946853 /* Images.xcassets in Resources */,
 				00D04C2F1D6A91C400B4C27C /* list_indicator_arrow@2x.png in Resources */,
-				00E79C9F1DEFBBFF00969571 /* ExtendMenuTableController.storyboard in Resources */,
 				00B0DBEF1DED4B4A00701EFD /* ThemeDemoViewController.storyboard in Resources */,
 				00B0DBF21DED4B4A00701EFD /* Demo4WKWebViewController.storyboard in Resources */,
 				00D04C2A1D6A91C400B4C27C /* arrow_up_44x44@3x.png in Resources */,
-				00E79C9C1DEFBBFF00969571 /* DynomicHeightController.storyboard in Resources */,
 				00B0DBD51DED4B4A00701EFD /* GinSystemButtonViewController.storyboard in Resources */,
 				00D04C2E1D6A91C400B4C27C /* list_indicator_arrow.png in Resources */,
 				00D04C291D6A91C400B4C27C /* arrow_up_44x44@2x.png in Resources */,
@@ -2091,7 +1947,6 @@
 				00D04C1F1D6A91C400B4C27C /* IconTextField.m in Sources */,
 				002F326D1B32795F00080B37 /* NSDictionary+GinUnit.m in Sources */,
 				00D04C4D1D6A922300B4C27C /* UICollectionViewCell+GinAnimation.m in Sources */,
-				00217B6A1EB1BD0800CF41AE /* BaseCollectionCell.m in Sources */,
 				00B0DBF01DED4B4A00701EFD /* Demo4WKWebViewAction.m in Sources */,
 				00D04C181D6A91C400B4C27C /* GinTagButton.m in Sources */,
 				00E79CA71DEFBBFF00969571 /* PullDownMenuViewController.m in Sources */,
@@ -2102,7 +1957,6 @@
 				00D04C2B1D6A91C400B4C27C /* GinStepperView.m in Sources */,
 				00217B661EB1BD0800CF41AE /* BaseData.m in Sources */,
 				008660111B816F7000B76218 /* NSObject+TYSwizzle.m in Sources */,
-				00E79C991DEFBBFF00969571 /* ExtendMenuAction.m in Sources */,
 				006A93C31ADE09090093BEBE /* NSString+Size.m in Sources */,
 				00A16FF61DEC1D300020EAE4 /* GinBaseTitleHeader.m in Sources */,
 				00D04C4F1D6A922300B4C27C /* UIViewController+MRFlipTransitino.m in Sources */,
@@ -2118,13 +1972,11 @@
 				00D0EAE81ECBF13900438933 /* GinContactsBook.m in Sources */,
 				00B0DBE41DED4B4A00701EFD /* StepperVCAction.m in Sources */,
 				00D04C401D6A91C400B4C27C /* GinWebViewController.m in Sources */,
-				00E79C9B1DEFBBFF00969571 /* DynomicHeightController.m in Sources */,
 				00D04C151D6A91C400B4C27C /* GinHorizontalLayoutButton.m in Sources */,
 				00B0DBEE1DED4B4A00701EFD /* ThemeDemoViewController.m in Sources */,
 				00D04C501D6A922300B4C27C /* UITableView+Wave.m in Sources */,
 				00A3E3F31B8FF9C60065C3EA /* NSString+RegEx.m in Sources */,
 				006A93CC1ADE09090093BEBE /* UIWindow+fullScreenshots.m in Sources */,
-				00B961FE1E962A020051F59F /* UIView+GinDebug.m in Sources */,
 				00217B6F1EB1BD0800CF41AE /* UIView+GinBaseClass.m in Sources */,
 				00D04C191D6A91C400B4C27C /* GinVerticalLayoutButton.m in Sources */,
 				00A16FF81DEC1D300020EAE4 /* ImageWithTitleCollectionCell.m in Sources */,
@@ -2156,7 +2008,6 @@
 				00B0DBC51DED4B4A00701EFD /* Gin3DTouchViewController.m in Sources */,
 				00A16FFA1DEC1D300020EAE4 /* GetLaunchImage.m in Sources */,
 				009312061E48600100D7A272 /* UIAlertController+GinUnit.m in Sources */,
-				00217B6B1EB1BD0800CF41AE /* BaseCollectionViewContoller.m in Sources */,
 				00D04C171D6A91C400B4C27C /* GinSystemButton.m in Sources */,
 				009FE02021DCA03900CD042D /* GinPopup.m in Sources */,
 				00B0DBC41DED4B4A00701EFD /* Gin3DTouchAction.m in Sources */,
@@ -2176,14 +2027,12 @@
 				009FE01F21DCA03900CD042D /* GinPopupViewController.m in Sources */,
 				006A93C21ADE09090093BEBE /* NSString+formatContentString.m in Sources */,
 				00A16FF71DEC1D300020EAE4 /* ImageCollectionCell.m in Sources */,
-				00217B421EB1BCB400CF41AE /* UIViewController+GinBaseTableView.m in Sources */,
 				00B0DC171DEE830F00701EFD /* AppDelegate+Notification.m in Sources */,
 				000B52941ADBCF8100946853 /* ViewController.m in Sources */,
 				006A93C51ADE09090093BEBE /* NSURL+Videos.m in Sources */,
 				00F7FC661AEDDA7B0080AFC7 /* NSObject+GinSetterAndGetter.m in Sources */,
 				00B0DBF11DED4B4A00701EFD /* Demo4WKWebViewController.m in Sources */,
 				00D04C701D6A9D4D00B4C27C /* CodeSnippetLibrary.m in Sources */,
-				00217B401EB1BCB400CF41AE /* UIViewController+GinBaseCollectionView.m in Sources */,
 				00B0DC251DEE956600701EFD /* Demo4AppDelegateWidget.m in Sources */,
 				00D04C211D6A91C400B4C27C /* UITextView+Keyboard.m in Sources */,
 				00D04C311D6A91C400B4C27C /* GinIndexTableView.m in Sources */,
@@ -2193,34 +2042,25 @@
 				00A16FFF1DEC1D300020EAE4 /* Person.m in Sources */,
 				00D04C3D1D6A91C400B4C27C /* GinScanQRCoderController.m in Sources */,
 				00D04C201D6A91C400B4C27C /* UITextField+Keyboard.m in Sources */,
-				00217B6D1EB1BD0800CF41AE /* BaseTableViewCell.m in Sources */,
-				00E79C9D1DEFBBFF00969571 /* ExtendMenuTableCell.m in Sources */,
 				00A1701E1DEC1D300020EAE4 /* ThemeManager.m in Sources */,
 				00D04C161D6A91C400B4C27C /* GinImageButton.m in Sources */,
 				00D04C341D6A91C400B4C27C /* GinPageViewController.m in Sources */,
-				00E79C9E1DEFBBFF00969571 /* ExtendMenuTableController.m in Sources */,
 				009FE01D21DCA03900CD042D /* GinPopupGradientView.m in Sources */,
-				00217B411EB1BCB400CF41AE /* UITableView+GinBaseClass.m in Sources */,
 				00217B671EB1BD0800CF41AE /* BaseView.m in Sources */,
 				0037BE381BB1085C007C7DCE /* NSObject+GinJSON.m in Sources */,
 				00A16FF51DEC1D300020EAE4 /* TitleAndButtonAlertView.m in Sources */,
 				00A16FFB1DEC1D300020EAE4 /* AppDelegate+Light.m in Sources */,
 				00D04C371D6A91C400B4C27C /* GinPopup+Unit.m in Sources */,
 				00D04C3F1D6A91C400B4C27C /* HMSegmentedControl.m in Sources */,
-				00217B6E1EB1BD0800CF41AE /* BaseTableViewController.m in Sources */,
 				000B52911ADBCF8100946853 /* AppDelegate.m in Sources */,
 				006A93BC1ADE09090093BEBE /* NSObject+CoreGraphic.m in Sources */,
-				00F7FC701AEDEB840080AFC7 /* NSString+GinDebug.m in Sources */,
 				00D04C2C1D6A91C400B4C27C /* GinPanCell.m in Sources */,
 				000B528E1ADBCF8100946853 /* main.m in Sources */,
-				00E79C9A1DEFBBFF00969571 /* DynomicHeightCell.m in Sources */,
 				006A93C11ADE09090093BEBE /* NSDate+RCUtility.m in Sources */,
 				0018B9851B100883001E52D5 /* UIColor+Hex.m in Sources */,
 				00E79C981DEFBBFF00969571 /* EmptyTableViewController.m in Sources */,
 				008660121B816F7000B76218 /* TYSwizzle.m in Sources */,
-				00217B3F1EB1BCB400CF41AE /* UICollectionView+GinBaseClass.m in Sources */,
 				006A93C91ADE09090093BEBE /* UIResponder+GinUnit.m in Sources */,
-				006A93CB1ADE09090093BEBE /* UIView+view2Image.m in Sources */,
 				00D04C1B1D6A91C400B4C27C /* HZCollectionViewLayout.m in Sources */,
 				006A93AA1ADE09090093BEBE /* UIImage+Base64.m in Sources */,
 				006A93CA1ADE09090093BEBE /* UIView+Layer.m in Sources */,

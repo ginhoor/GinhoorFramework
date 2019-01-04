@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define isEmptyArray(array) !array || ((NSArray*)array).count == 0
-#define isHasElementsArray(array) array && ((NSArray*)array).count > 0
-
 @interface NSArray (GinUnit)
-
+- (BOOL)containAnyElements;
 @end

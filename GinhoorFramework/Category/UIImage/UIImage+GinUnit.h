@@ -54,12 +54,8 @@
 
 /**
  获得灰度图片
-
- @return 图片
  */
 - (UIImage *)getGrayImage;
-
-// 缩放图片大小
 
 /**
  缩放图片大小
@@ -79,15 +75,26 @@
 - (UIImage *)scaleImageTo:(CGFloat)scaleSize;
 - (UIImage *)scaleImageByWidth:(CGFloat)width;
 
-// 改变图片方向
+/**
+ 改变图片方向
+ */
 - (UIImage *)changeOrientationTo:(UIImageOrientation)orientation;
 // 解决保存图片或重绘图片后旋转90度的方法
 - (UIImage *)fixOrientation;
 
-// 压缩图片到指定文件大小
+/**
+ *  压缩图片到指定文件大小
+ *
+ *  @param image 目标图片
+ *  @param maxQuality 目标大小（最大值）
+ *
+ *  @return 返回的图片文件
+ */
 - (NSData *)compressToMaxDataSizeKBytes:(CGFloat)size maxQuality:(CGFloat)maxQuality;
 
-// 裁剪图片到指定大小
+/**
+ 裁剪图片到指定大小
+ */
 - (UIImage *)imageByScalingAndCroppingForSize:(CGSize)targetSize;
 
 /**

@@ -8,12 +8,13 @@
 #import <Masonry.h>
 
 #import "ViewController.h"
-#import "UIViewController+GinBaseTableView.h"
 
 #import "Gin3DTouchAction.h"
 #import "GinPopup+Unit.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) NSArray *cellDataList;
 
 @end
 
@@ -29,15 +30,12 @@
 {
     [super viewDidLoad];
     
+    self.tableView = [[UITableView alloc] init];
     [self.view addSubview:self.tableView];
     
-    [self.tableView config:^(UITableView *tableView) {
-        tableView.delegate = self;
-        tableView.dataSource = self;
-        [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-        
-    }];
-    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.offset(0);
     }];
@@ -115,6 +113,7 @@
     }
 
 }
+
 
 
 @end

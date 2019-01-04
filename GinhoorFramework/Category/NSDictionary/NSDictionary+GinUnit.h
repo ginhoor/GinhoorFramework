@@ -8,9 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#define isEmptyDictionary(dic) !dic || ((NSDictionary*)dic).allKeys.count == 0
-#define isHasElementsDictionary(dic) dic && ((NSDictionary*)dic).allKeys.count > 0
-
 @interface NSDictionary (GinUnit)
+
+- (BOOL)containKey:(NSString *)key;
 
 @end

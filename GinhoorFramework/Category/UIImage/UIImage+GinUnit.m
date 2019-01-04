@@ -160,14 +160,6 @@
     return scaledImage;
 }
 
-/**
- *  压缩图片到指定文件大小
- *
- *  @param image 目标图片
- *  @param size  目标大小（最大值）
- *
- *  @return 返回的图片文件
- */
 - (NSData *)compressToMaxDataSizeKBytes:(CGFloat)size maxQuality:(CGFloat)maxQuality
 {
     NSData * data = UIImageJPEGRepresentation(self, 1.0);
@@ -382,6 +374,5 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
     UIGraphicsEndImageContext();
     return img;
 }
-
 
 @end

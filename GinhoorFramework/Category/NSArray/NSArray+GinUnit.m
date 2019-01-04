@@ -10,4 +10,9 @@
 
 @implementation NSArray (GinUnit)
 
+- (BOOL)containAnyElements
+{
+    return self && self.count > 0;
+}
+
 @end
