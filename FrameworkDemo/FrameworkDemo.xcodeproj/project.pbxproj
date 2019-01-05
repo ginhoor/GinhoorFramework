@@ -71,6 +71,10 @@
 		00A1701C1DEC1D300020EAE4 /* default_theme_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 00A16FED1DEC1D300020EAE4 /* default_theme_config.json */; };
 		00A1701D1DEC1D300020EAE4 /* night_theme_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 00A16FEE1DEC1D300020EAE4 /* night_theme_config.json */; };
 		00A1701E1DEC1D300020EAE4 /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A16FF01DEC1D300020EAE4 /* ThemeManager.m */; };
+		00A2509521E08C4500B77C72 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2509421E08C4500B77C72 /* UIImage+Color.m */; };
+		00A2509E21E08D9A00B77C72 /* UIImage+Compress.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2509D21E08D9A00B77C72 /* UIImage+Compress.m */; };
+		00A250A121E08DEF00B77C72 /* UIImage+Edit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A250A021E08DEF00B77C72 /* UIImage+Edit.m */; };
+		00A250A421E08EF400B77C72 /* UIImage+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A250A321E08EF400B77C72 /* UIImage+Filter.m */; };
 		00A3E3F31B8FF9C60065C3EA /* NSString+RegEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A3E3F21B8FF9C60065C3EA /* NSString+RegEx.m */; };
 		00ABC32A1D6AC3B8003EDAB7 /* GinhoorFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 00ABC3291D6AC3B8003EDAB7 /* GinhoorFramework.podspec */; };
 		00B0DBC41DED4B4A00701EFD /* Gin3DTouchAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B0DB481DED4B4A00701EFD /* Gin3DTouchAction.m */; };
@@ -326,6 +330,14 @@
 		00A16FEE1DEC1D300020EAE4 /* night_theme_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = night_theme_config.json; sourceTree = "<group>"; };
 		00A16FEF1DEC1D300020EAE4 /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
 		00A16FF01DEC1D300020EAE4 /* ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManager.m; sourceTree = "<group>"; };
+		00A2509321E08C4500B77C72 /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		00A2509421E08C4500B77C72 /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		00A2509C21E08D9A00B77C72 /* UIImage+Compress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Compress.h"; sourceTree = "<group>"; };
+		00A2509D21E08D9A00B77C72 /* UIImage+Compress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compress.m"; sourceTree = "<group>"; };
+		00A2509F21E08DEF00B77C72 /* UIImage+Edit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Edit.h"; sourceTree = "<group>"; };
+		00A250A021E08DEF00B77C72 /* UIImage+Edit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Edit.m"; sourceTree = "<group>"; };
+		00A250A221E08EF400B77C72 /* UIImage+Filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Filter.h"; sourceTree = "<group>"; };
+		00A250A321E08EF400B77C72 /* UIImage+Filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Filter.m"; sourceTree = "<group>"; };
 		00A3E3F11B8FF9C60065C3EA /* NSString+RegEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RegEx.h"; sourceTree = "<group>"; };
 		00A3E3F21B8FF9C60065C3EA /* NSString+RegEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegEx.m"; sourceTree = "<group>"; };
 		00ABC3291D6AC3B8003EDAB7 /* GinhoorFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GinhoorFramework.podspec; sourceTree = "<group>"; };
@@ -803,6 +815,14 @@
 			children = (
 				006A937B1ADE09090093BEBE /* UIImage+GinUnit.h */,
 				006A937C1ADE09090093BEBE /* UIImage+GinUnit.m */,
+				00A2509321E08C4500B77C72 /* UIImage+Color.h */,
+				00A2509421E08C4500B77C72 /* UIImage+Color.m */,
+				00A2509F21E08DEF00B77C72 /* UIImage+Edit.h */,
+				00A250A021E08DEF00B77C72 /* UIImage+Edit.m */,
+				00A2509C21E08D9A00B77C72 /* UIImage+Compress.h */,
+				00A2509D21E08D9A00B77C72 /* UIImage+Compress.m */,
+				00A250A221E08EF400B77C72 /* UIImage+Filter.h */,
+				00A250A321E08EF400B77C72 /* UIImage+Filter.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -1953,6 +1973,7 @@
 				00A16FFC1DEC1D300020EAE4 /* AppDelegateIntercepter.m in Sources */,
 				006A93C81ADE09090093BEBE /* UIImage+GinUnit.m in Sources */,
 				009FE01E21DCA03900CD042D /* GinPopupContentView.m in Sources */,
+				00A2509E21E08D9A00B77C72 /* UIImage+Compress.m in Sources */,
 				00A1701B1DEC1D300020EAE4 /* NSKeyedArchiverDemo.m in Sources */,
 				00D04C2B1D6A91C400B4C27C /* GinStepperView.m in Sources */,
 				00217B661EB1BD0800CF41AE /* BaseData.m in Sources */,
@@ -1983,6 +2004,7 @@
 				00A16FFE1DEC1D300020EAE4 /* MTLModel+BaseData.m in Sources */,
 				00D04C231D6A91C400B4C27C /* GinPullDownMenuCell.m in Sources */,
 				00217B691EB1BD0800CF41AE /* BaseViewModel.m in Sources */,
+				00A250A421E08EF400B77C72 /* UIImage+Filter.m in Sources */,
 				002F315D1B2A72AC00080B37 /* NSAttributedString+GinUnit.m in Sources */,
 				00217B441EB1BCB400CF41AE /* UIViewController+GinBaseClass.m in Sources */,
 				006A93D71ADE09090093BEBE /* GinSysInfo.m in Sources */,
@@ -2003,6 +2025,7 @@
 				00B0DBC81DED4B4A00701EFD /* CodeDemo.m in Sources */,
 				009FE01321DC99A800CD042D /* GinOperationQueueManager.m in Sources */,
 				00A16FF41DEC1D300020EAE4 /* GinAlertManager.m in Sources */,
+				00A250A121E08DEF00B77C72 /* UIImage+Edit.m in Sources */,
 				00217B4A1EB1BCDA00CF41AE /* GinCollectionLayout.m in Sources */,
 				00D04C1E1D6A91C400B4C27C /* GinTextView.m in Sources */,
 				00B0DBC51DED4B4A00701EFD /* Gin3DTouchViewController.m in Sources */,
@@ -2054,6 +2077,7 @@
 				00D04C3F1D6A91C400B4C27C /* HMSegmentedControl.m in Sources */,
 				000B52911ADBCF8100946853 /* AppDelegate.m in Sources */,
 				006A93BC1ADE09090093BEBE /* NSObject+CoreGraphic.m in Sources */,
+				00A2509521E08C4500B77C72 /* UIImage+Color.m in Sources */,
 				00D04C2C1D6A91C400B4C27C /* GinPanCell.m in Sources */,
 				000B528E1ADBCF8100946853 /* main.m in Sources */,
 				006A93C11ADE09090093BEBE /* NSDate+RCUtility.m in Sources */,
