@@ -69,15 +69,16 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
 }
 
 #pragma mark- 马赛克
+//每个颜色值8bit
+#define kBitsPerComponent (8)
+#define kBitsPerPixel (32)
+//每一行的像素点占用的字节数，每个像素点的ARGB四个通道各占8个bit
+#define kPixelChannelCount (4)
+
 - (UIImage *)transToMosaicImageByblockLevel:(NSUInteger)level
 {
-    // 每个颜色值8bit
-    NSInteger bitsPerComponent = 8;
-    NSInteger bitsPerPixel = 32
-    // 每一行的像素点占用的字节数，每个像素点的ARGB四个通道各占8个bit
-    NSInteger pixelChannelCount = 4;
-    
     // 获取BitmapData
+    
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGImageRef imgRef = self.CGImage;
     CGFloat width = CGImageGetWidth(imgRef);
@@ -86,16 +87,16 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
                                                   width,
                                                   height,
                                                   //每个颜色值8bit
-                                                  bitsPerComponent,
+                                                  kBitsPerComponent,
                                                   //每一行的像素点占用的字节数，每个像素点的ARGB四个通道各占8个bit
-                                                  width*pixelChannelCount,
+                                                  width*kPixelChannelCount,
                                                   colorSpace,
                                                   kCGImageAlphaPremultipliedLast);
     CGContextDrawImage(context, CGRectMake(0, 0, width, height), imgRef);
     unsigned char *bitmapData = CGBitmapContextGetData (context);
     
     // 这里把BitmapData进行马赛克转换,就是用一个点的颜色填充一个level*level的正方形
-    unsigned char pixel[pixelChannelCount] = {0};
+    unsigned char pixel[kPixelChannelCount] = {0};
     NSUInteger index,preIndex;
     for (NSUInteger i = 0; i < height - 1 ; i++) {
         for (NSUInteger j = 0; j < width - 1; j++) {
@@ -108,18 +109,18 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
                 }
             } else {
                 preIndex = (i-1)*width +j;
-                memcpy(bitmapData + pixelChannelCount*index, bitmapData + pixelChannelCount*preIndex, pixelChannelCount);
+                memcpy(bitmapData + kPixelChannelCount*index, bitmapData + kPixelChannelCount*preIndex, kPixelChannelCount);
             }
         }
     }
     
-    NSInteger dataLength = width*height * pixelChannelCount;
+    NSInteger dataLength = width*height * kPixelChannelCount;
     CGDataProviderRef provider = CGDataProviderCreateWithData(nil, bitmapData, dataLength, nil);
     // 创建要输出的图像
     CGImageRef mosaicImageRef = CGImageCreate(width, height,
-                                              bitsPerComponent,
-                                              bitsPerPixel,
-                                              width*pixelChannelCount ,
+                                              kBitsPerComponent,
+                                              kBitsPerPixel,
+                                              width*kPixelChannelCount ,
                                               colorSpace,
                                               kCGBitmapByteOrderDefault,
                                               provider,
@@ -128,8 +129,8 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
     CGContextRef outputContext = CGBitmapContextCreate(nil,
                                                        width,
                                                        height,
-                                                       bitsPerComponent,
-                                                       width*pixelChannelCount,
+                                                       kBitsPerComponent,
+                                                       width*kPixelChannelCount,
                                                        colorSpace,
                                                        kCGImageAlphaPremultipliedLast);
     CGContextDrawImage(outputContext, CGRectMake(0.0f, 0.0f, width, height), mosaicImageRef);
